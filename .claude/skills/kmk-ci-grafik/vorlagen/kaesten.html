@@ -1,0 +1,17 @@
+<!-- Prompt-Kasten: den echten Prompt zeigen (Praxistest). Nur Tills echten Prompt verwenden. -->
+<div class="kmk-prompt"><p class="kmk-prompt__label">Mein Prompt an Claude</p><p class="kmk-prompt__text">{{PROMPT, Zeilenumbrüche als <br>}}</p></div>
+
+<!-- Hinweis-Kasten: These, Fehler, Checkliste, Rechtsfrage -->
+<div class="kmk-errors"><p class="kmk-errors__head">{{ÜBERSCHRIFT}}</p><p>{{ABSATZ 1}}</p><p>{{ABSATZ 2}}</p></div>
+
+<!-- Serienkopf: ganz oben im Beitrag (Praxistest: „Selbst ausprobiert“, Lagebericht: „Status Quo“) -->
+<p class="kmk-series"><span class="kmk-series__name">{{SERIE}}</span>{{UNTERTITEL}}</p>
+
+<!-- Abschnittskopf mit Nummer (Lagebericht) -->
+<p class="kmk-sec__eyebrow"><span class="kmk-sec__num">{{01}}</span>{{STICHWORT}}</p><h2 class="kmk-sec__title">{{FRAGE ODER AUSSAGE}}</h2><p class="kmk-lede">{{EIN SATZ LEAD}}</p>
+
+<!-- Einordnungs-Box am Ende eines Lageberichts. Nur Tills Einordnung oder als INTERN-Vorschlag markiert. -->
+<div class="kmk-takeaway"><p class="kmk-sec__eyebrow">Meine Einordnung</p><h2>{{KERNAUSSAGE}}</h2><p>{{ABSATZ}}</p></div>
+
+<!-- Quellenliste mit Nummern -->
+<div class="kmk-sources"><h2>Quellen &amp; Datenbasis</h2><ol><li><b>01</b><span><strong>{{HERAUSGEBER · TITEL}}.</strong> {{DATUM; Stichprobe}}. <a href="{{URL}}">Originalveröffentlichung ↗</a></span></li></ol><p class="kmk-sources__note">Hinweis zur Vergleichbarkeit: {{…}} Grafiken: eigene Darstellung auf Grundlage der verlinkten Primärquellen. Stand: {{TT.MM.JJJJ}}.</p></div>

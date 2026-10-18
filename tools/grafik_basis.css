@@ -1,0 +1,28 @@
+/* Basis für Erklär-Schaubilder (PNG) im CI von KLEIN. MITTEL. KI.
+   Nur diese Klassen verwenden. Breite 800 px, gerendert in doppelter Auflösung. */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { width: 800px; background: #fff; color: #111111; font-family: 'Instrument Sans'; }
+.g { padding: 40px; }
+.g-kicker { font: 600 13px/1 'Instrument Sans'; letter-spacing: 3px; text-transform: uppercase; color: #45453F; }
+.g-titel { margin-top: 12px; font: 700 30px/1.15 'Schibsted Grotesk'; letter-spacing: -0.3px; }
+.g-sub { margin-top: 8px; font: 500 16px/1.4 'Instrument Sans'; color: #5E5E57; }
+.g-strich { width: 64px; height: 6px; background: #D7FF00; margin-top: 18px; }
+
+/* Ebenen / Stufen untereinander */
+.g-stapel { margin-top: 28px; display: grid; gap: 12px; }
+/* Spalten nebeneinander (2–4) */
+.g-reihe { margin-top: 28px; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 12px; }
+
+.g-box { background: #F4F4EF; border-top: 3px solid #111111; padding: 16px 18px 18px; }
+.g-box--dunkel { background: #111111; color: #F4F3EE; border-top-color: #D7FF00; }
+.g-box--akzent { border-top-color: #D7FF00; border-left: 6px solid #D7FF00; }
+.g-name { font: 700 14px/1.2 'Instrument Sans'; letter-spacing: 1.5px; text-transform: uppercase; }
+.g-text { margin-top: 8px; font: 500 16px/1.45 'Instrument Sans'; }
+.g-box--dunkel .g-text { color: #F4F3EE; }
+.g-beispiel { margin-top: 10px; font: 500 14px/1.4 'Instrument Sans'; color: #5E5E57; }
+.g-box--dunkel .g-beispiel { color: #D7FF00; }
+
+/* Pfeil zwischen Stufen (Text: ↓ oder →) */
+.g-pfeil { text-align: center; font: 700 22px/1 'Schibsted Grotesk'; color: #45453F; }
+
+.g-quelle { margin-top: 24px; font: 500 13px/1.4 'Instrument Sans'; color: #5E5E57; }
