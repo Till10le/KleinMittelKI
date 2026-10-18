@@ -1,0 +1,771 @@
+{
+  "stand": "2026-10-18T11:04:13+00:00",
+  "anzahl": 25,
+  "beitraege": [
+    {
+      "id": "6ad49df03ff4030001b24ef1",
+      "slug": "3-was-ki-agenten-konnen-und-warum-gepflegtes-wissen-zahlt",
+      "titel": "#3: Was KI-Agenten können und warum gepflegtes Wissen zählt",
+      "status": "scheduled",
+      "veroeffentlicht": "2026-10-20",
+      "geaendert": "2026-10-18",
+      "kategorie": "",
+      "interne_tags": [
+        "#newsletter"
+      ],
+      "teaser": "Was nach dem Chatbot kommt, wie ein Industriebetrieb sein Wissen sichert, eine Zahl zu KI-Agenten in der EU und ein Gedanke für deinen Betrieb.",
+      "url": "https://www.kleinmittelki.de/email/6cf38ed6-08f9-4e38-832d-2455c87ce733/",
+      "zwischenueberschriften": [
+        "01 · Neu im Blog: Was nach dem Chatbot kommt",
+        "02 · Aktuell eingeordnet: Wenn der Meister in Rente geht",
+        "03 · Eine Zahl, genau gelesen",
+        "04 · Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/",
+        "https://www.kleinmittelki.de/ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben/",
+        "https://www.kleinmittelki.de/wenn-der-meister-in-rente-geht-was-ki-im-wissensmanagement-wirklich-leistet/"
+      ],
+      "zahlen": [],
+      "woerter": 382
+    },
+    {
+      "id": "6ad3924bbb342700019d7c48",
+      "slug": "ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben",
+      "titel": "KI-Agenten: Was nach dem Chatbot kommt und was KMU davon haben",
+      "status": "scheduled",
+      "veroeffentlicht": "2026-10-18",
+      "geaendert": "2026-10-17",
+      "kategorie": "Grundlagen",
+      "interne_tags": [
+        "#wissen"
+      ],
+      "teaser": "KI-Agenten sollen Aufgaben nicht nur beantworten, sondern erledigen. Was dahintersteckt und wo kleine und mittlere Unternehmen sinnvoll einsteigen können.",
+      "url": "https://www.kleinmittelki.de/p/c6fe3b26-1431-456c-966f-f1df8a5217ec/",
+      "zwischenueberschriften": [
+        "Warum gerade jetzt alle über KI-Agenten sprechen",
+        "Was ist überhaupt ein KI-Agent?",
+        "Chatbot, Automatisierung oder Agent?",
+        "Vier Beispiele, die ich für KMU spannend finde",
+        "Woran du einen guten ersten Anwendungsfall erkennst",
+        "Warum Zugriff das eigentliche Risiko ist",
+        "Mein pragmatischer Einstieg in vier Stufen",
+        "Wo du heute einen Agenten aufsetzen kannst",
+        "Meine Einschätzung",
+        "Ein Gedanke zum Mitnehmen",
+        "Quellen"
+      ],
+      "quellen": [
+        "https://cloud.google.com/blog/topics/startups/how-to-grow-your-small-business-using-google-gemini",
+        "https://n8n.io/ai-agents/",
+        "https://openai.com/index/chatgpt-for-your-most-ambitious-work/",
+        "https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/",
+        "https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork",
+        "https://support.microsoft.com/en-us/microsoft-365-copilot/build-your-own-agent-with-microsoft-365-copilot",
+        "https://www.langdock.com/products/workflows",
+        "https://www.make.com/ai-agents",
+        "https://www.weforum.org/publications/ai-agents-in-action-a-playbook-for-trusted-adoption-authorization-and-scaling/",
+        "https://zapier.com/agents"
+      ],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 1977
+    },
+    {
+      "id": "6ad39cb5bb342700019d7c6a",
+      "slug": "wenn-der-meister-in-rente-geht-was-ki-im-wissensmanagement-wirklich-leistet",
+      "titel": "Wenn der Meister in Rente geht: Was KI im Wissensmanagement wirklich leistet",
+      "status": "published",
+      "veroeffentlicht": "2026-10-18",
+      "geaendert": "2026-10-18",
+      "kategorie": "Entwicklungen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "Ein Hersteller bekommt mit einer KI-Wissensdatenbank weniger Support-Anrufe, sagt der Anbieter. Der Haken: Das klappt nur mit gepflegten Daten.",
+      "url": "https://www.kleinmittelki.de/wenn-der-meister-in-rente-geht-was-ki-im-wissensmanagement-wirklich-leistet/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://help.openai.com/en/articles/12143177-sharepoint-connectors-in-chatgpt",
+        "https://help.openai.com/en/articles/8555545-file-uploads-faq",
+        "https://openai.com/enterprise-privacy/",
+        "https://www.handelsblatt.com/unternehmen/industrie/ki-im-wissensmanagement-wie-ki-das-wissen-von-industrieunternehmen-sichert-01/100247981.html"
+      ],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 459
+    },
+    {
+      "id": "6ac66183a389f50001809195",
+      "slug": "2-newsletter-vom-13-oktober-vorgemerkt",
+      "titel": "#2: Protokoll per KI – was gut lief und wo die Fehler steckten",
+      "status": "sent",
+      "veroeffentlicht": "2026-10-13",
+      "geaendert": "2026-10-13",
+      "kategorie": "",
+      "interne_tags": [
+        "#newsletter"
+      ],
+      "teaser": "Ein Selbstversuch mit zwei lehrreichen Fehlern, eine Zahl zu KI-Preisen und ein Gedanke für deinen Betrieb.",
+      "url": "https://www.kleinmittelki.de/email/98f09be7-434c-44a5-a638-f9c166bfce1d/",
+      "zwischenueberschriften": [
+        "01 · Selbst ausprobiert: Protokoll per KI",
+        "02 · Neu im Blog: Was hinter ChatGPT steckt",
+        "03 · Eine Zahl, genau gelesen",
+        "04 · Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/",
+        "https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/",
+        "https://www.kleinmittelki.de/protokoll-per-ki-selbstversuch/"
+      ],
+      "zahlen": [],
+      "woerter": 381
+    },
+    {
+      "id": "6ac7ff3f3074ca0001c00a63",
+      "slug": "wenn-azubis-die-ki-fragen-wird-dein-betrieb-empfohlen",
+      "titel": "Wenn Azubis die KI fragen: Wird dein Betrieb empfohlen?",
+      "status": "published",
+      "veroeffentlicht": "2026-10-08",
+      "geaendert": "2026-10-08",
+      "kategorie": "Entwicklungen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "Wer eine Lehrstelle sucht, fragt heute oft die KI. Empfohlen wird aber nur, über wen sie im Netz auch etwas findet.",
+      "url": "https://www.kleinmittelki.de/wenn-azubis-die-ki-fragen-wird-dein-betrieb-empfohlen/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://www.handwerksblatt.de/betriebsfuehrung/mit-ki-leichter-fachkraefte-fuer-den-handwerksbetrieb-finden"
+      ],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 303
+    },
+    {
+      "id": "6ac0d93dfdaa30000132ac72",
+      "slug": "chatgpt-claude-gemini-ki-modelle-erklaert",
+      "titel": "ChatGPT ist nicht das KI-Modell. Was hinter ChatGPT, Claude und Gemini steckt",
+      "status": "published",
+      "veroeffentlicht": "2026-10-08",
+      "geaendert": "2026-10-12",
+      "kategorie": "Grundlagen",
+      "interne_tags": [
+        "#wissen"
+      ],
+      "teaser": "Welche Anbieter es gibt, wie Unterschiede zwischen KI-Modellen entstehen – und was ein „neues Modell“ für deinen Betrieb ändert.",
+      "url": "https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/",
+      "zwischenueberschriften": [
+        "ChatGPT ist nicht das Modell",
+        "Was ein KI-Modell eigentlich ist",
+        "Warum Modelle unterschiedlich gut sind",
+        "Was „neues Modell“ konkret bedeutet",
+        "Mehr als drei Anbieter",
+        "Wo sich die Anbieter wirklich unterscheiden",
+        "Was das für den Mittelstand bedeutet",
+        "Ein Gedanke zum Mitnehmen",
+        "Quellen"
+      ],
+      "quellen": [
+        "https://ai.google.dev/gemini-api/docs/models",
+        "https://ai.google.dev/gemma/docs",
+        "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/",
+        "https://ai.meta.com/blog/introducing-muse-spark-msl/",
+        "https://api-docs.deepseek.com/news/news260910",
+        "https://cdn.deepseek.com/policies/en-US/deepseek-privacy-policy.html",
+        "https://cohere.com/blog/cohere-and-aleph-alpha-sign-agreement",
+        "https://developers.openai.com/api/docs/models",
+        "https://docs.mistral.ai/getting-started/models/models_overview/",
+        "https://docs.x.ai/docs/models",
+        "https://github.com/meta-llama/llama-models",
+        "https://help.openai.com/en/articles/5722486-how-your-data-is-used-to-improve-model-performance",
+        "https://help.openai.com/en/articles/7842364-how-chatgpt-and-our-foundation-models-are-developed",
+        "https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq",
+        "https://mistral.ai/news/hallo-deutschland/",
+        "https://mistral.ai/news/mistral-large-4/",
+        "https://model-spec.openai.com/",
+        "https://openai.com/index/introducing-gpt-oss/",
+        "https://platform.claude.com/docs/en/about-claude/models/choosing-a-model",
+        "https://platform.claude.com/docs/en/models/overview",
+        "https://www.anthropic.com/constitution",
+        "https://www.microsoft.com/en-us/copilot/blog/2025/09/24/expanding-model-choice-in-microsoft-365-copilot/"
+      ],
+      "interne_links": [],
+      "zahlen": [
+        "1-Flash hat 552 Milliarden Parameter und gehört damit ins Rechenzentrum, nicht auf den Büro-PC."
+      ],
+      "woerter": 1919
+    },
+    {
+      "id": "6ab0e7dbde9ff00001cac4c9",
+      "slug": "ausgabe-1-deine-mitarbeiter-nutzen-ki-vielleicht-langst",
+      "titel": "#1: KI-Plakate müssen nicht nach KI aussehen",
+      "status": "sent",
+      "veroeffentlicht": "2026-10-06",
+      "geaendert": "2026-10-06",
+      "kategorie": "",
+      "interne_tags": [
+        "#newsletter"
+      ],
+      "teaser": "Mein Vorher-nachher-Test und ob du KI-Bilder jetzt kennzeichnen musst.",
+      "url": "https://www.kleinmittelki.de/email/33be0021-b672-4ace-9e52-6614a4df5bfc/",
+      "zwischenueberschriften": [
+        "Selbst ausprobiert: KI-Plakate müssen nicht nach KI aussehen",
+        "Neu im Blog: Muss ich KI-Bilder jetzt kennzeichnen?",
+        "Hat dir diese Ausgabe etwas gebracht?"
+      ],
+      "quellen": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/#newsletter",
+        "https://www.kleinmittelki.de/ai-act-ki-bilder-kennzeichnen/",
+        "https://www.kleinmittelki.de/ki-plakate-muessen-nicht-nach-ki-aussehen/"
+      ],
+      "zahlen": [],
+      "woerter": 258
+    },
+    {
+      "id": "6ab650051d376f0001d50323",
+      "slug": "ki-plakate-muessen-nicht-nach-ki-aussehen",
+      "titel": "KI-Plakate müssen nicht nach KI aussehen",
+      "status": "published",
+      "veroeffentlicht": "2026-10-05",
+      "geaendert": "2026-10-05",
+      "kategorie": "KI in der Praxis",
+      "interne_tags": [
+        "#notiz"
+      ],
+      "teaser": "Warum KI-Werbemittel gerade alle gleich aussehen – und wie aus demselben Anlass mit echtem Foto, eigenem CI und kurzem Briefing ein deutlich besseres Plakat wird.",
+      "url": "https://www.kleinmittelki.de/ki-plakate-muessen-nicht-nach-ki-aussehen/",
+      "zwischenueberschriften": [
+        "Welches Problem soll gelöst werden?",
+        "Wie lief der Test ab?",
+        "Was ist dabei herausgekommen?",
+        "Sechs Regeln für dein nächstes Werbemittel",
+        "Wo sind die Grenzen?",
+        "Mein Fazit"
+      ],
+      "quellen": [
+        "https://meine.spd.de/fileadmin/kampagne/Dokumente/Gestaltung/Corporate_Design/SPD-CD-Manual_2024_RZ.pdf"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ai-act-ki-bilder-kennzeichnen/"
+      ],
+      "zahlen": [],
+      "woerter": 1192
+    },
+    {
+      "id": "6abeaad54c568c00018c8d7c",
+      "slug": "ai-act-ki-bilder-kennzeichnen",
+      "titel": "Muss ich KI-Bilder jetzt kennzeichnen? Was der AI Act für Unternehmen wirklich bedeutet",
+      "status": "published",
+      "veroeffentlicht": "2026-10-03",
+      "geaendert": "2026-10-05",
+      "kategorie": "Leitfäden",
+      "interne_tags": [
+        "#wissen"
+      ],
+      "teaser": "Seit August 2026 gelten die Transparenzpflichten des AI Act. Nicht jedes KI-Bild braucht einen Hinweis – bei Deepfakes und Chatbots sieht es anders aus.",
+      "url": "https://www.kleinmittelki.de/ai-act-ki-bilder-kennzeichnen/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://digital-strategy.ec.europa.eu/de/policies/guidelines-ai-transparency-obligations",
+        "https://digital-strategy.ec.europa.eu/en/faqs/transparency-obligations-under-article-50-ai-act",
+        "https://www.bundesnetzagentur.de/DE/Fachthemen/Digitales/KI/4_Transparenzpflichten/artikel.html"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-plakate-muessen-nicht-nach-ki-aussehen/"
+      ],
+      "zahlen": [],
+      "woerter": 1750
+    },
+    {
+      "id": "6ab10bddea38bb0001175dd3",
+      "slug": "protokoll-per-ki-selbstversuch",
+      "titel": "Protokoll per KI: Ein Selbstversuch, zwei Fehler und eine klare Lehre für Betriebe",
+      "status": "published",
+      "veroeffentlicht": "2026-09-21",
+      "geaendert": "2026-10-05",
+      "kategorie": "KI in der Praxis",
+      "interne_tags": [
+        "#notiz"
+      ],
+      "teaser": "Ein Protokoll komplett per KI: erstaunlich gut – doch die Fehler steckten genau dort, wo es auch im Betrieb darauf ankommt.",
+      "url": "https://www.kleinmittelki.de/protokoll-per-ki-selbstversuch/",
+      "zwischenueberschriften": [
+        "Welches Problem soll gelöst werden?",
+        "Wie lief der Test ab?",
+        "Was ist dabei herausgekommen?",
+        "Wo sind die Grenzen?",
+        "Mein Fazit"
+      ],
+      "quellen": [
+        "https://noota.io/"
+      ],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 719
+    },
+    {
+      "id": "6ab0f9c0de9ff00001cac50a",
+      "slug": "ki-mittelstand-lagebericht-september-2026",
+      "titel": "KI im deutschen Mittelstand: Wo stehen wir im September 2026?",
+      "status": "published",
+      "veroeffentlicht": "2026-09-21",
+      "geaendert": "2026-10-03",
+      "kategorie": "Lageberichte",
+      "interne_tags": [
+        "#wissen",
+        "#status-quo"
+      ],
+      "teaser": "Wie viel KI in deutschen Unternehmen ist schon produktiver Alltag – und wie viel noch Experiment?",
+      "url": "https://www.kleinmittelki.de/ki-mittelstand-lagebericht-september-2026/",
+      "zwischenueberschriften": [
+        "Nutzt der Mittelstand überhaupt schon KI?",
+        "Wo kommt KI heute tatsächlich zum Einsatz?",
+        "Ausprobieren ist noch keine Integration.",
+        "Was hält Unternehmen zurück?",
+        "Lohnt sich KI wirtschaftlich?",
+        "Die KI-Nutzung ist im Mittelstand angekommen. Die Umsetzung in den Abläufen steht vielerorts noch am Anfang.",
+        "Quellen &amp; Datenbasis"
+      ],
+      "quellen": [
+        "https://www.bitkom.org/Presse/Presseinformation/Erstmals-nutzt-Mehrheit-Unternehmen-KI",
+        "https://www.destatis.de/DE/Themen/Branchen-Unternehmen/Unternehmen/IKT-in-Unternehmen-IKT-Branche/Tabellen/ikti-unternehmen-kuenstliche-intelligenz.html",
+        "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/News-Details_902336.html",
+        "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/News-Details_907072.html",
+        "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_880896.html"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/kfw-studie-ki-unternehmenserfolg/",
+        "https://www.kleinmittelki.de/ki-nutzung-unternehmen-bitkom-2026/",
+        "https://www.kleinmittelki.de/schatten-ki-deine-mitarbeiter-nutzen-ki-vielleicht-langst-weisst-du-wofur/"
+      ],
+      "zahlen": [
+        "Die KfW ermittelte für den Zeitraum 2022 bis 2024 eine KI-Nutzung von 20 Prozent unter mittelständischen Unternehmen – einschließlich Kleinstbetrieben.",
+        "[2] Die jüngere Bitkom-Befragung vom September 2026 kommt auf 57 Prozent, untersucht aber nur Unternehmen ab 20 Beschäftigten.",
+        "Unternehmen mit KI-Nutzung nach Beschäftigtengröße · Deutschland 2025 10–49 Beschäftigte 23 % 50–249 Beschäftigte 36 % 250 und mehr Beschäftigte 57 % Anteil innerhalb der jeweiligen Größenklasse.",
+        "Laut KfW sind im Mittelstand die Erzeugung natürlicher Sprache (14 Prozent) und Texterkennung (10 Prozent) deutlich verbreiteter als Data Analytics (3 Prozent) oder KI zur autonomen Bewegung von Maschinen (1 Prozent).",
+        "Anteil unter den Unternehmen, die KI bereits nutzen · 2026 Kundenkontakt 72 % Marketing und Kommunikation 54 % Controlling / Rechnungswesen 25 % Internes Wissensmanagement 22 % Produktionsabläufe 22 % Quelle: Bitkom, September 2026; befragte Unternehmen ab 20 Beschäftigten, hier nur KI-Anwender.",
+        "[4] Bemerkenswert ist das interne Wissensmanagement: Dort stieg der Anteil der KI-Anwender von 11 Prozent im Jahr 2025 auf 22 Prozent.",
+        "87 % der KI-nutzenden Unternehmen schöpfen das Potenzial nach eigener Einschätzung wenig oder überhaupt nicht aus.",
+        "Bitkom, September 2026: 28 % „wenig“ + 59 % „überhaupt nicht“.",
+        "[4] Warum ich die 87 Prozent eher als Hinweis denn als Versäumnis lese, steht in meiner Einordnung der Bitkom-Studie .",
+        "Anteil unter den Unternehmen ohne KI-Einsatz · 2026 Fehlendes technisches Know-how 85 % Rechtliche Unsicherheit 66 % Schwer kalkulierbare Kosten 63 % Fehlende personelle Ressourcen 51 % Quelle: Bitkom, September 2026.",
+        "[4] Nur 30 Prozent der Nichtanwender sehen keine passenden Anwendungsfälle.",
+        "48 % der KI-Anwender berichten von deutlich beschleunigten internen Prozessen.",
+        "[4] 45 % sehen laut Selbstauskunft einen messbaren Beitrag zum Unternehmenserfolg."
+      ],
+      "woerter": 927
+    },
+    {
+      "id": "6ab0e5b8de9ff00001cac4c1",
+      "slug": "schatten-ki-deine-mitarbeiter-nutzen-ki-vielleicht-langst-weisst-du-wofur",
+      "titel": "Schatten-KI: Deine Mitarbeiter nutzen KI vielleicht längst. Weißt du, wofür?",
+      "status": "published",
+      "veroeffentlicht": "2026-09-21",
+      "geaendert": "2026-09-22",
+      "kategorie": "Studien & Zahlen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "Viele Beschäftigte nutzen KI-Tools, die der Arbeitgeber nicht bereitgestellt hat. Die interessantere Frage ist, warum.",
+      "url": "https://www.kleinmittelki.de/schatten-ki-deine-mitarbeiter-nutzen-ki-vielleicht-langst-weisst-du-wofur/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://www.iwkoeln.de/studien/barbara-engels-andrea-hammermann-schatten-ki-beschaeftigte-sind-schneller-als-ihre-betriebe.html"
+      ],
+      "interne_links": [],
+      "zahlen": [
+        "793 Befragten, die KI beruflich nutzen, verwenden 29,1 Prozent auch Anwendungen, die ihr Arbeitgeber nicht bereitgestellt hat.",
+        "In Betrieben mit weniger als 50 Beschäftigten sind es 33,5 Prozent, in Unternehmen ab 250 Beschäftigten 25,5 Prozent.",
+        "Der überraschendste Befund steckt aber weiter hinten: Wo Beschäftigte eine starke Förderung ihrer KI-Kompetenzen durch den Arbeitgeber wahrnehmen, nutzen 44,5 Prozent auch nicht bereitgestellte Tools, ohne wahrgenommene Förderung sind es 21,3 Prozent."
+      ],
+      "woerter": 322
+    },
+    {
+      "id": "6aafa9ae39cfae0001a49c68",
+      "slug": "frag-eine-ki-nach-deinem-eigenen-unternehmen-ein-selbsttest-in-20-minuten",
+      "titel": "Frag eine KI nach deinem eigenen Unternehmen. Ein Selbsttest in 20 Minuten.",
+      "status": "published",
+      "veroeffentlicht": "2026-09-20",
+      "geaendert": "2026-10-03",
+      "kategorie": "Leitfäden",
+      "interne_tags": [
+        "#wissen"
+      ],
+      "teaser": "Was antwortet eine KI, wenn jemand nach einem Anbieter wie dir fragt? Fünf Fragen, vier Prüfpunkte und ein klarer Blick auf die eigene Website.",
+      "url": "https://www.kleinmittelki.de/frag-eine-ki-nach-deinem-eigenen-unternehmen-ein-selbsttest-in-20-minuten/",
+      "zwischenueberschriften": [
+        "Warum das gerade jetzt zählt",
+        "So machst du den Test",
+        "Worauf du bei den Antworten achtest",
+        "Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/werbung-chatgpt-sponsored-agents/"
+      ],
+      "zahlen": [],
+      "woerter": 540
+    },
+    {
+      "id": "6aaefca6ef7b440001358a7f",
+      "slug": "kmu-case-der-woche-rechnungen-automatisch-erfassen-statt-abtippen",
+      "titel": "Rechnungen automatisch erfassen statt abtippen: Was KI in der Buchhaltung heute schon kann",
+      "status": "draft",
+      "veroeffentlicht": "2026-09-19",
+      "geaendert": "2026-09-28",
+      "kategorie": "KI in der Praxis",
+      "interne_tags": [
+        "#notiz"
+      ],
+      "teaser": "Viele Buchhaltungstools erfassen Rechnungen per KI. Was das im Alltag bringt – und wo die Grenzen liegen.",
+      "url": "https://www.kleinmittelki.de/p/9832b796-e281-4b0e-894f-a2e014c6ecf0/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 269
+    },
+    {
+      "id": "6aad4f02339d450001427cb4",
+      "slug": "ki-nutzung-unternehmen-bitkom-2026",
+      "titel": "57 Prozent der Unternehmen nutzen KI. Aber wie weit sind sie wirklich?",
+      "status": "published",
+      "veroeffentlicht": "2026-09-18",
+      "geaendert": "2026-09-28",
+      "kategorie": "Studien & Zahlen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "Laut Bitkom setzen 57 Prozent der befragten Unternehmen KI ein. Die interessantere Zahl ist allerdings eine andere.",
+      "url": "https://www.kleinmittelki.de/ki-nutzung-unternehmen-bitkom-2026/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://www.bitkom.org/Presse/Presseinformation/Erstmals-nutzt-Mehrheit-Unternehmen-KI"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-mittelstand-lagebericht-september-2026/"
+      ],
+      "zahlen": [
+        "Das Ergebnis: 57 Prozent von ihnen setzen KI ein, vor zwei Jahren waren es noch 20 Prozent.",
+        "Gleichzeitig geben 87 Prozent der KI-Nutzer an, die Möglichkeiten der Technologie bislang wenig oder überhaupt nicht auszuschöpfen.",
+        "Meine Einordnung Die 57 Prozent klingen nach Durchbruch, beschreiben aber zunächst nur, dass KI im Unternehmen vorkommt.",
+        "Aufschlussreicher finde ich die 87 Prozent: Sie beruhen auf einer Selbsteinschätzung und zeigen, dass viele Unternehmen selbst eine Lücke zwischen Zugang und Nutzen sehen."
+      ],
+      "woerter": 301
+    },
+    {
+      "id": "6aad4f02339d450001427cb5",
+      "slug": "claude-kleine-unternehmen-integrationen",
+      "titel": "KI für kleine Unternehmen: Claude verbindet sich jetzt mit Shopify, Stripe und Co.",
+      "status": "published",
+      "veroeffentlicht": "2026-09-18",
+      "geaendert": "2026-09-28",
+      "kategorie": "Entwicklungen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "Anthropic verbindet Claude mit Shopify, Stripe, Zoom und Salesforce. Spannender als die Zahl ist das Prinzip dahinter.",
+      "url": "https://www.kleinmittelki.de/claude-kleine-unternehmen-integrationen/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-unternehmenszahlen-data-agent/"
+      ],
+      "zahlen": [],
+      "woerter": 285
+    },
+    {
+      "id": "6aad4f02339d450001427cb6",
+      "slug": "kfw-studie-ki-unternehmenserfolg",
+      "titel": "Mehr Umsatz durch KI? Was eine neue KfW-Studie zeigt.",
+      "status": "published",
+      "veroeffentlicht": "2026-09-18",
+      "geaendert": "2026-09-28",
+      "kategorie": "Studien & Zahlen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "Mittelständler mit KI-Einsatz wachsen im Schnitt stärker. Die KfW-Studie zeigt aber einen Zusammenhang, keinen Beweis.",
+      "url": "https://www.kleinmittelki.de/kfw-studie-ki-unternehmenserfolg/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/News-Details_907072.html"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-mittelstand-lagebericht-september-2026/"
+      ],
+      "zahlen": [],
+      "woerter": 256
+    },
+    {
+      "id": "6aad4f02339d450001427cb7",
+      "slug": "werbung-chatgpt-sponsored-agents",
+      "titel": "Werbung direkt in ChatGPT: Entsteht hier ein neuer Kanal für Unternehmen?",
+      "status": "published",
+      "veroeffentlicht": "2026-09-18",
+      "geaendert": "2026-09-28",
+      "kategorie": "Entwicklungen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "OpenAI testet Werbung in ChatGPT, auch gesponserte Gespräche mit Firmen. Für Betriebe geht es vor allem um Sichtbarkeit.",
+      "url": "https://www.kleinmittelki.de/werbung-chatgpt-sponsored-agents/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://openai.com/index/reimagining-advertising-with-ai/"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/frag-eine-ki-nach-deinem-eigenen-unternehmen-ein-selbsttest-in-20-minuten/"
+      ],
+      "zahlen": [],
+      "woerter": 283
+    },
+    {
+      "id": "6aad4f02339d450001427cb8",
+      "slug": "ki-unternehmenszahlen-data-agent",
+      "titel": "Mit KI Unternehmenszahlen auswerten – ohne selbst ein Dashboard zu bauen?",
+      "status": "published",
+      "veroeffentlicht": "2026-09-18",
+      "geaendert": "2026-09-28",
+      "kategorie": "Entwicklungen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "OpenAI zeigt einen Data Agent, der Unternehmensdaten auf Zuruf auswertet. Entscheidend bleibt die eigene Datenqualität.",
+      "url": "https://www.kleinmittelki.de/ki-unternehmenszahlen-data-agent/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://openai.com/index/put-data-to-work/"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/claude-kleine-unternehmen-integrationen/"
+      ],
+      "zahlen": [],
+      "woerter": 284
+    },
+    {
+      "id": "6ab29a197af57d000189c7bd",
+      "slug": "immobiliensuche-ki-chatgpt-notion-excel",
+      "titel": "Immobiliensuche mit KI: So habe ich ChatGPT, Notion und Excel kombiniert",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-09-25",
+      "kategorie": "KI in der Praxis",
+      "interne_tags": [
+        "#notiz"
+      ],
+      "teaser": "Ein echter Praxistest mit ChatGPT, Notion und Excel – mit Schritt-für-Schritt-Anleitung für Makler, Projektentwickler und Kapitalanleger.",
+      "url": "https://www.kleinmittelki.de/p/152d747f-9b0a-41e2-af39-57ec34bdf2a7/",
+      "zwischenueberschriften": [
+        "Was ich wirklich gebaut habe",
+        "Wer übernimmt welche Aufgabe?",
+        "Der Pilot: ein erster Durchlauf in unter einer Stunde",
+        "Erst aussortieren, dann bewerten",
+        "Als die KI das Exposé nicht lesen konnte",
+        "Drei Einsatzfälle für Immobilienunternehmen",
+        "Was funktioniert – und was nicht?",
+        "Was du misst, bevor du automatisierst",
+        "Die mögliche Ausbaustufe: ein täglicher Bericht",
+        "Mein Fazit",
+        "Quellen und Hinweise"
+      ],
+      "quellen": [
+        "https://commission.europa.eu/law/law-topic/data-protection/information-business-and-organisations/application-gdpr_en",
+        "https://commission.europa.eu/law/law-topic/data-protection/reform/rules-business-and-organisations/principles-gdpr/overview-principles/what-data-can-we-process-and-under-which-conditions_en",
+        "https://www.immobilienscout24.de/agb/nutzungsagb.html",
+        "https://www.notion.com/de/help/export-your-content"
+      ],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 2557
+    },
+    {
+      "id": "6ab0fbe0de9ff00001cac51a",
+      "slug": "intern-status-quo-fahrplan-und-datenquellen",
+      "titel": "INTERN – Status Quo: Fahrplan und Datenquellen",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-09-21",
+      "kategorie": "",
+      "interne_tags": [
+        "#status-quo"
+      ],
+      "teaser": "",
+      "url": "https://www.kleinmittelki.de/p/1f393daa-2f6d-4292-ad61-4404dee388d5/",
+      "zwischenueberschriften": [
+        "Termine",
+        "So entsteht eine Ausgabe",
+        "Feste Datenquellen",
+        "Regeln"
+      ],
+      "quellen": [],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 192
+    },
+    {
+      "id": "6aaf9fae39cfae0001a49c30",
+      "slug": "intern-themenideen-fur-ki-in-der-praxis",
+      "titel": "INTERN – Themenideen für \"KI in der Praxis\"",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-09-20",
+      "kategorie": "",
+      "interne_tags": [
+        "#notiz"
+      ],
+      "teaser": "Interne Ideensammlung für weitere Praxistests.",
+      "url": "https://www.kleinmittelki.de/p/7ad6e436-91a5-43ca-89d9-afbbcc214d8e/",
+      "zwischenueberschriften": [
+        "Vorschlag 1: Wie belastbar ist KI als Rechercheassistent?",
+        "Vorschlag 2: Wie zuverlässig liest KI Angaben aus PDF-Dokumenten aus?",
+        "Auswahlkriterien für künftige Themen"
+      ],
+      "quellen": [],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 253
+    },
+    {
+      "id": "6aaf9f9139cfae0001a49c2b",
+      "slug": "ki-in-der-praxis-kann-ki-aus-kundenanfragen-brauchbare-antwortentwurfe-erstellen-testaufbau",
+      "titel": "KI in der Praxis: Kann KI aus Kundenanfragen brauchbare Antwortentwürfe erstellen? (Testaufbau)",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-09-20",
+      "kategorie": "KI in der Praxis",
+      "interne_tags": [
+        "#notiz"
+      ],
+      "teaser": "Testaufbau für den ersten Praxisversuch: zehn fiktive Kundenanfragen, vier Bewertungskriterien, offener Ausgang.",
+      "url": "https://www.kleinmittelki.de/p/e9b95f2a-6401-49d0-a31c-2b53b4054c00/",
+      "zwischenueberschriften": [
+        "Welches Problem soll gelöst werden?",
+        "Wie lief der Test ab?",
+        "Was ist dabei herausgekommen?",
+        "Wo sind die Grenzen?",
+        "Mein Fazit"
+      ],
+      "quellen": [],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 575
+    },
+    {
+      "id": "6aaf9f5e39cfae0001a49c26",
+      "slug": "ki-in-der-praxis-beitragsvorlage-bitte-duplizieren-nicht-veroffentlichen",
+      "titel": "KI in der Praxis – Beitragsvorlage (bitte duplizieren, nicht veröffentlichen)",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-09-20",
+      "kategorie": "KI in der Praxis",
+      "interne_tags": [
+        "#notiz"
+      ],
+      "teaser": "Struktur für eigene Praxistests: Ausgangssituation, Experiment, Ergebnis, Grenzen, Fazit.",
+      "url": "https://www.kleinmittelki.de/p/de5a1f7d-0efa-441e-a009-e8c2ecaf694e/",
+      "zwischenueberschriften": [
+        "Welches Problem soll gelöst werden?",
+        "Wie lief der Test ab?",
+        "Was ist dabei herausgekommen?",
+        "Wo sind die Grenzen?",
+        "Mein Fazit"
+      ],
+      "quellen": [],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 239
+    },
+    {
+      "id": "6aaf9ee639cfae0001a49c03",
+      "slug": "vorlage-nachrichten-beitrag-bitte-duplizieren-nicht-veroffentlichen",
+      "titel": "VORLAGE – Nachrichten-Beitrag (bitte duplizieren, nicht veröffentlichen)",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-09-20",
+      "kategorie": "",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "Verbindliche Struktur für Nachrichten-Beiträge: Was ist passiert, Meine Einordnung, Was bedeutet das für den Mittelstand, Ein Gedanke zum Mitnehmen.",
+      "url": "https://www.kleinmittelki.de/p/ec125d0d-e527-4e17-8333-4d445ce00e3d/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [],
+      "interne_links": [],
+      "zahlen": [],
+      "woerter": 239
+    }
+  ]
+}

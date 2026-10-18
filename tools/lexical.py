@@ -9,6 +9,7 @@ Unterstützte Syntax im Beitragstext (alles andere wird ein normaler Absatz):
     ![Alt-Text](https://bild.png "Bildunterschrift")   -> Bildkarte (allein in einer Zeile)
     ```html … ```                      -> HTML-Karte (Grafik-Bausteine)
     :::bookmark URL | Titel | Herausgeber | Beschreibung   -> Bookmark-Karte (Quelle)
+    :::button Text | URL               -> Button-Karte (Newsletter)
     ---                                -> Trennlinie
 
 Kopf der Datei (Frontmatter zwischen zwei Zeilen mit ---):
@@ -153,6 +154,10 @@ def bookmark_card(url: str, title: str, publisher: str, desc: str) -> dict:
             "caption": ""}
 
 
+def button_card(text: str, url: str) -> dict:
+    return {"type": "button", "version": 1, "buttonText": text, "alignment": "left", "buttonUrl": url}
+
+
 def divider() -> dict:
     return {"type": "horizontalrule", "version": 1}
 
@@ -212,6 +217,12 @@ def to_nodes(body: str) -> list:
             if not fields[0].startswith("http"):
                 raise ValueError(f"Bookmark ohne URL: {stripped}")
             nodes.append(bookmark_card(*fields[:4]))
+        elif stripped.startswith(":::button"):
+            flush_para(); flush_list()
+            fields = [f.strip() for f in stripped[len(":::button"):].split("|")]
+            if len(fields) != 2 or not fields[0] or not fields[1].startswith("http"):
+                raise ValueError(f"Button braucht 'Text | URL': {stripped}")
+            nodes.append(button_card(*fields))
         elif IMG.match(stripped):
             flush_para(); flush_list()
             m = IMG.match(stripped)

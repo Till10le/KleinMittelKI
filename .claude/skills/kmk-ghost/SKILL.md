@@ -45,6 +45,7 @@ passwortgeschützt, nie ein Passwort eingeben – Till fragen.
 
 ## Bekannte offene Punkte
 
-- In welchem Feld die „Für KMU“-Zeile der Aktuell-Karten steht, ist noch zu klären (siehe `kmk-formate`).
+- Die „Für KMU“-Zeile steht in `twitter_description` (siehe `kmk-formate`). `draft` überträgt das
+  Frontmatter-Feld `fuer_kmu` dorthin (seit 18.10.2026, mit Tills Freigabe).
 - Änderungen an Code-Injection oder Theme (z. B. „Eine Zahl, genau gelesen“) kann die Admin-API mit Integrations-Key
   nicht vornehmen. Solche Änderungen als Vorschlag an Till.

@@ -32,8 +32,10 @@ Anleitungen, Praxistests), `#newsletter` (Newsletter-Ausgaben), `#zur-freigabe` 
 - Teaser (`custom_excerpt`): höchstens zwei Sätze, sachlich, wiederholt nicht die Überschrift, 90–160 Zeichen,
   ähnlich lang wie die bestehenden Teaser (sonst werden die Karten ungleich hoch).
 - Aktuell-Beiträge brauchen zusätzlich die Zeile „**Für KMU:** …“ (ein konkreter Satz für Betriebe).
-  OFFEN: In welchem Ghost-Feld sie steht, ist noch nicht dokumentiert. Vor dem ersten Aktuell-Beitrag einen bestehenden
-  Beitrag mit `python3 tools/ghost.py get <slug> --raw` lesen, das Feld finden und hier eintragen.
+  Im Frontmatter als `fuer_kmu: …` (ohne „Für KMU:“ davor). In Ghost steht der Satz im Feld **`twitter_description`**;
+  das Theme zeigt ihn auf der Startseite als „**Für KMU:** …“ unter der Aktuell-Karte (geprüft am 18.10.2026 an sechs
+  Beiträgen). Länge wie bei den bestehenden: ein Satz, 50–120 Zeichen. Achtung: Dasselbe Feld ist auch die
+  Vorschau-Beschreibung beim Teilen auf X – der Satz muss also ohne den Beitrag verständlich sein.
 
 ## Format 1: Nachricht (Aktuell)
 
