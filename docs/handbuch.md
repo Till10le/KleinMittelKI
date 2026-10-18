@@ -28,7 +28,7 @@ Die menschenlesbare Fassung pflegt Till als Claude Doc „Redaktionshandbuch KLE
 - [ ] Lime-Farbwert: #D7FF00 (Blog) oder #D4FF00 (Logo-Paket v4). Bis dahin gilt #D7FF00.
 - [ ] Lagebericht: monatlich (Woche 1 im Rhythmus) oder vierteljährlich (Serienkopf)?
 - [ ] Titelbild: Vorschaubild zusätzlich als Beitragsbild oben im Beitrag (so bei den veröffentlichten Beiträgen)?
-- [x] „Für KMU“-Zeile: steht in `twitter_description` (am 18.10.2026 ausgelesen). Ergänzung in `tools/ghost.py` am 18.10.2026 freigegeben, Till trägt sie ein (Datei gesperrt).
+- [x] „Für KMU“-Zeile: steht in `twitter_description` (am 18.10.2026 ausgelesen). `draft` überträgt `fuer_kmu` seit 18.10.2026 dorthin.
 - [ ] Instagram: Konto für den Blog vorhanden? Business- oder Creator-Konto?
 - [ ] Posten nach Freigabe: Buffer oder ein anderes Werkzeug für LinkedIn und Instagram?
 - [ ] Benachrichtigung: zusätzlich per E-Mail (Gmail-Connector) über jeden Ghost-Lauf?
