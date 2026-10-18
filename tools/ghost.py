@@ -362,7 +362,13 @@ def cmd_newsletter(a) -> None:
 
 # ---------- Blog-Index ----------
 
-ZAHL = re.compile(r"[^.!?]*\b\d[\d.,]*\s?(?:%|Prozent|Prozentpunkte|Mio\.|Milliarden|Millionen)[^.!?]*[.!?]")
+SATZ_ENDE = re.compile(r"(?<=[.!?])\s+(?=[A-ZÄÖÜ„\"0-9])")
+ZAHL = re.compile(r"\b\d[\d.,]*\s?(?:%|Prozent|Prozentpunkte|Mio\.|Millionen|Milliarden|Euro|€|×|-mal|mal so)")
+
+
+def _zahlensaetze(text: str) -> list[str]:
+    """Sätze mit belegten Zahlen (Prozent, Euro, Faktor …) – Tausenderpunkte trennen keine Sätze."""
+    return [s.strip() for s in SATZ_ENDE.split(text) if ZAHL.search(s) and len(s) < 400]
 
 
 def _plain(html: str) -> str:
@@ -394,7 +400,7 @@ def cmd_index(_a) -> None:
             "teaser": p.get("custom_excerpt") or "", "url": p.get("url"),
             "zwischenueberschriften": re.findall(r"<h2[^>]*>(.*?)</h2>", html),
             "quellen": quellen[:30], "interne_links": intern,
-            "zahlen": [z.strip() for z in ZAHL.findall(text)][:15],
+            "zahlen": _zahlensaetze(text)[:15],
             "woerter": len(text.split()),
         })
     INDEX_JSON.parent.mkdir(parents=True, exist_ok=True)

@@ -67,6 +67,33 @@ Daneben: `verworfen` (mit Grund in `entscheidungen.md`), `zurueck` (Till will Ä
 - Braucht von Till: Einschätzung
 - Verlauf: 2026-10-12 vorgeschlagen
 
+### rechnungen-automatisch-erfassen (Entwurf von Till in Ghost)
+- Status: frage-an-till
+- Titel: Rechnungen automatisch erfassen statt abtippen: Was KI in der Praxis leistet
+- Rubrik/Kategorie: Praxistests / KI in der Praxis
+- Format: Praxistest
+- Quelle: Tills eigener Ghost-Entwurf (19.09.2026, ca. 270 Wörter)
+- Braucht von Till: Soll die Redaktion den Entwurf fertigstellen? Liegen die Testergebnisse vor?
+- Verlauf: 2026-10-18 im Blog-Index als Entwurf gefunden
+
+### immobiliensuche-mit-ki (Entwurf von Till in Ghost)
+- Status: frage-an-till
+- Titel: Immobiliensuche mit KI: So habe ich ChatGPT, Notion und Excel kombiniert
+- Rubrik/Kategorie: Praxistests / KI in der Praxis
+- Format: Praxistest
+- Quelle: Tills eigener Ghost-Entwurf (ca. 2.560 Wörter)
+- Braucht von Till: Fertigstellen und veröffentlichen? Inhalt ist privat – passt der KMU-Bezug?
+- Verlauf: 2026-10-18 im Blog-Index als Entwurf gefunden
+
+### kundenanfragen-antworten-praxistest (Entwurf von Till in Ghost)
+- Status: frage-an-till
+- Titel: KI in der Praxis: Kann KI aus Kundenanfragen brauchbare Antworten machen?
+- Rubrik/Kategorie: Praxistests / KI in der Praxis
+- Format: Praxistest
+- Quelle: Tills eigener Ghost-Entwurf
+- Braucht von Till: Gibt es schon Testergebnisse? Ohne sie bleibt der Beitrag ein Entwurf.
+- Verlauf: 2026-10-18 im Blog-Index als Entwurf gefunden
+
 ## Archiv
 
 (noch leer)
