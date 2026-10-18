@@ -19,7 +19,7 @@ Versprechen auf der Seite: „KI verstehen. Ohne jeden Tag alles lesen zu müsse
 
 ## Aufbau einer Ausgabe
 
-Übernommen aus den Ausgaben 2 (13.10.2026) und 3 (20.10.2026) in Ghost, ausgelesen am 18.10.2026.
+Übernommen aus den Ausgaben 2 (13.10.2026) und 3 (20.10.2026) in Ghost, von Till am 18.10.2026 als feste Vorlage bestätigt.
 Ausgabe 1 hatte noch einen anderen Aufbau und gilt nicht als Vorlage.
 
 - INTERN-Absatz oben (wird beim Einplanen entfernt): vorgeschlagene Stellen, Checkliste
@@ -33,7 +33,7 @@ Ausgabe 1 hatte noch einen anderen Aufbau und gilt nicht als Vorlage.
   `Neu im Blog: …`, `Selbst ausprobiert: …` (Praxistest), `Aktuell eingeordnet: …` (Nachricht).
   Darunter 2–3 kurze Absätze (Worum geht es, was ist der Haken, was steht im Beitrag), dann die Bookmark-Karte:
   `:::bookmark <URL> | <Titel> | KLEIN. MITTEL. KI. | <Teaser>`
-- `## 0X · Eine Zahl, genau gelesen` – Zahlenblock (HTML, unten), nur mit belegter Zahl
+- `## 0X · Eine Zahl, genau gelesen` – Zahlenblock (HTML, unten), nur mit belegter Zahl, darunter „Quelle: …“ mit Link
 - `## 0X · Ein Gedanke zum Mitnehmen` – ein Absatz, höchstens 40 Wörter, greift die Themen der Ausgabe auf
 - Button: `:::button Alle Beiträge auf kleinmittelki.de | https://www.kleinmittelki.de/`
 - Trennlinie `---`
@@ -51,9 +51,8 @@ Wörtlich aus Ausgabe 2 und 3. Oben steht die Quelle als Kopfzeile (`Herausgeber
 
 Zeichen wie `>` im HTML als `&gt;` schreiben (Ausgabe 3: `&gt;8×`).
 
-OFFEN (Vorschlag an Till, 18.10.2026): Der Block in Ausgabe 2 und 3 verlinkt die Originalquelle nicht.
-Nach Regel 3 in `CLAUDE.md` sollte sie verlinkt sein – Vorschlag: ein Absatz direkt unter dem Block
-„Quelle: [Herausgeber, Titel](URL)“. Bis Till entscheidet, den Absatz setzen.
+Direkt unter dem Block ein Absatz mit Link zur Originalquelle: „Quelle: [Herausgeber, Titel](URL)“
+(Till, 18.10.2026).
 
 ## Ton
 

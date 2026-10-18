@@ -18,3 +18,6 @@ Nur der Chefredakteur schreibt hier, und nur, was Till tatsächlich gesagt hat. 
 ## Laufende Entscheidungen
 
 (neue Einträge unten anfügen)
+- 2026-10-18 · „Für KMU“-Zeile automatisch nach Ghost (Feld twitter_description) · JA · „1 ja“
+- 2026-10-18 · Newsletter-Vorlage nach Ausgabe 2 und 3 als feste Vorlage · JA · „2 ja“
+- 2026-10-18 · Zeile „Quelle: …“ mit Link unter dem Zahlenblock im Newsletter · JA · „3 ja“

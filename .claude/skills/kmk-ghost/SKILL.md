@@ -45,8 +45,8 @@ passwortgeschützt, nie ein Passwort eingeben – Till fragen.
 
 ## Bekannte offene Punkte
 
-- Die „Für KMU“-Zeile steht in `twitter_description` (siehe `kmk-formate`). Stand 18.10.2026 überträgt `draft`
-  das Frontmatter-Feld `fuer_kmu` noch nicht – Ergänzung in `tools/ghost.py` liegt Till zur Freigabe vor
-  (`redaktion/berichte/2026-10-18.md`). Bis dahin fehlt die Zeile auf der Karte; im Bericht an Till vermerken.
+- Die „Für KMU“-Zeile steht in `twitter_description` (siehe `kmk-formate`). Till hat am 18.10.2026 zugestimmt,
+  dass `draft` das Frontmatter-Feld `fuer_kmu` dorthin überträgt. Die Datei ist gesperrt, Till ändert sie selbst.
+  Bis das in `tools/ghost.py` steht, fehlt die Zeile auf der Karte; im Bericht an Till vermerken.
 - Änderungen an Code-Injection oder Theme (z. B. „Eine Zahl, genau gelesen“) kann die Admin-API mit Integrations-Key
   nicht vornehmen. Solche Änderungen als Vorschlag an Till.
