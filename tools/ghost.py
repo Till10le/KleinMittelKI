@@ -234,6 +234,8 @@ def cmd_draft(a) -> None:
         post["email_subject"] = meta["titel"]
     if meta.get("meta_description"):
         post["meta_description"] = meta["meta_description"]
+    if meta.get("fuer_kmu"):
+        post["twitter_description"] = meta["fuer_kmu"]
 
     bild = folder / (meta.get("vorschaubild") or "vorschaubild.png")
     if bild.exists() and state.get("vorschaubild_hash") != hashlib.sha256(bild.read_bytes()).hexdigest():
