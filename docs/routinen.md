@@ -10,6 +10,9 @@ neue Themen (Nummern), fertige Entwürfe mit Vorschau-Link (Buchstaben), ggf. de
 Till antwortet einfach, z. B. „1 und 3. Zu 1: … · 2 nein, zu technisch · A ja · N ja“.
 Sonntags gegen 10:20 Uhr kommt der Newsletter-Vorschlag für Dienstag mit vollem Text. Till schreibt Änderungen
 zurück (Antworten um 12:17, 15:17, 18:17, 21:17) und gibt mit „N ja“ frei – dann wird er angelegt und für Dienstag 7:00 eingeplant.
+Eigene Ideen: jederzeit eine Mail an sich selbst mit Betreff „KMK Idee: …“ (Satz, Link, weitergeleitete Mail, Foto).
+Der nächste Mail-Lauf nimmt sie auf, der Scout prüft die Quelle, die Idee kommt geprüft als I1 … in die nächste Redaktions-Mail.
+Mit „ausarbeiten“ im Text wird sie direkt geschrieben.
 Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden Mo–Fr um 12:17 und 18:17 gelesen
 (und um 8:17); Veröffentlichungen laufen eine halbe Stunde später.
 

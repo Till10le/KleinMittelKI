@@ -50,17 +50,19 @@ Stell fest, in welchem Lauf du bist: Der Prompt der Routine sagt es dir.
 
 Lies den Skill `kmk-mail` vollständig. Dann:
 
-1. **Antworten auswerten:** alle Verläufe aus `redaktion/mail.json` lesen, neue Antworten von Till nach `kmk-mail`
+1. **Ideen:** neue „KMK Idee“-Mails von Till nach `kmk-mail` ins Board (Vermerk „Idee von Till“), kurz bestätigen.
+2. **Antworten auswerten:** alle Verläufe aus `redaktion/mail.json` lesen, neue Antworten von Till nach `kmk-mail`
    auswerten: Board, `entscheidungen.md`, Freigaben über `tools/mailfreigabe.py`. Kurz im Verlauf bestätigen.
-2. **Rückmeldungen:** Was der Ghost-Lauf seit der letzten Mail veröffentlicht, eingeplant oder wegen der Sperre
+3. **Rückmeldungen:** Was der Ghost-Lauf seit der letzten Mail veröffentlicht, eingeplant oder wegen der Sperre
    nicht veröffentlicht hat, im passenden Verlauf melden.
-3. **Nur Mo, Mi, Fr um 8:17:** neue Redaktions-Mail nach `kmk-mail` mit allen Themen `vorgeschlagen`, allen Entwürfen
-   `wartet-auf-till` (mit Vorschau-Link) und dem Newsletter, falls er auf Freigabe wartet. Nichts zu entscheiden: keine Mail.
-4. `redaktion/mail.json` aktualisieren, Commit „Mail <Datum> <Zeit>“, push. Nichts passiert: sofort beenden, kein Commit.
+4. **Nur Mo, Mi, Fr um 8:17:** neue Redaktions-Mail nach `kmk-mail` mit allen Themen `vorgeschlagen`, Tills geprüften
+   Ideen (I1 …), allen Entwürfen `wartet-auf-till` (mit Vorschau-Link) und dem Newsletter, falls er auf Freigabe wartet.
+   Nichts zu entscheiden: keine Mail.
+5. `redaktion/mail.json` aktualisieren, Commit „Mail <Datum> <Zeit>“, push. Nichts passiert: sofort beenden, kein Commit.
 
 **Sonntags** (So 10:17, 12:17, 15:17, 18:17, 21:17): um 10:17 die Newsletter-Mail nach `kmk-mail` schicken; danach Tills
 Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), prüfen (Prüfer), neue Fassung zurückmailen;
-„N ja“ über `mailfreigabe.py --art newsletter-text` eintragen. Mo–Fr gelten Schritte 1–4 auch für den Newsletter-Verlauf.
+„N ja“ über `mailfreigabe.py --art newsletter-text` eintragen. Mo–Fr gelten Schritte 1–5 auch für den Newsletter-Verlauf; Idee-Mails werden auch sonntags erfasst.
 
 ## Sonntags-Lauf (So 9:47)
 
