@@ -59,6 +59,14 @@ Der Chefredakteur ist der einzige, der Till Fragen stellt und Freigaben einträg
 - `tools/vorschaubild.py` – Vorschaubild 1200 × 630 im CI.
 - `tools/grafik.py` – rendert Erklär-Schaubilder als PNG im CI.
 
+## Übersicht des Systems
+
+`docs/uebersicht.html` ist die Gesamtübersicht für Till (Systemkarte, Takt, Ablauf, Spickzettel), veröffentlicht unter
+https://claude.ai/artifact/XKyusNKpi7LA2nyGiUGVJ1. **Wer das System ändert** (Läufe, Zeiten, Kanäle, Agenten, Regeln,
+Werkzeuge, Freigabe-Weg), passt im selben Commit `docs/uebersicht.html` und `docs/routinen.md` an und veröffentlicht die
+Seite neu unter derselben Adresse (Artifact-Werkzeug mit `url`). Geplante Läufe ändern das System nicht; der Sonntags-Lauf
+prüft nur, ob Übersicht und Wirklichkeit noch übereinstimmen.
+
 ## Sprache
 
 Alles auf Deutsch. Kurze Sätze, keine Floskeln. Siehe Skill `kmk-schreibstil`.

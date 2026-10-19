@@ -73,7 +73,10 @@ Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), p
    vom **Prüfer** prüfen lassen, Status `newsletter-vorschlag`. **Nicht nach Ghost** – der Mail-Lauf Sonntag 10:17 schickt
    ihn Till; erst nach „N ja“ legt der Ghost-Lauf ihn an und plant ihn ein.
 4. **Social**: Paket für die Woche nach Skill `kmk-social`.
-5. Commit „Sonntag <Datum>“, push.
+5. **Übersicht prüfen:** Stimmt `docs/uebersicht.html` noch mit `docs/routinen.md`, den Agenten und Skills überein (Läufe,
+   Zeiten, Kanäle, Mail-Befehle)? Abweichungen in den Wochenbericht und als Frage F… in die Montags-Mail
+   („Übersicht veraltet: … – bitte im Chat aktualisieren lassen“). Selbst nichts an Regeln oder Übersicht ändern.
+6. Commit „Sonntag <Datum>“, push.
 
 ## Freigaben – die harte Regel
 

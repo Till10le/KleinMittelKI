@@ -1,0 +1,360 @@
+<title>KMK Redaktionssystem</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Schibsted+Grotesk:wght@700;800&display=swap">
+<style>
+/* Layout: eine Lesespalte im CI von KLEIN. MITTEL. KI., oben die große Systemkarte (SVG), darunter Takt, Weg eines Beitrags, Bausteine */
+:root{
+  --bg:#ffffff; --fg:#111111; --muted:#45453F; --soft:#F4F3EE; --line:#E2E2DE; --lime:#D7FF00; --on-lime:#111111;
+  --box:#ffffff; --dark:#111111; --on-dark:#F4F3EE;
+  --display:'Schibsted Grotesk','Helvetica Neue',Arial,sans-serif;
+  --body:'Instrument Sans','Helvetica Neue',Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121211; --fg:#F4F3EE; --muted:#B9B9B0; --soft:#1C1C1A; --line:#34342F; --box:#181816; --dark:#F4F3EE; --on-dark:#111111; color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121211; --fg:#F4F3EE; --muted:#B9B9B0; --soft:#1C1C1A; --line:#34342F; --box:#181816; --dark:#F4F3EE; --on-dark:#111111; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-weight:500;font-size:17px;line-height:1.55;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 72px}
+.kicker{display:inline-block;font-weight:600;font-size:13px;letter-spacing:3px;text-transform:uppercase}
+.kicker::after{content:"";display:block;height:5px;background:var(--lime);margin-top:7px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(32px,5.4vw,56px);line-height:1.03;letter-spacing:-.8px;margin:18px 0 14px;text-wrap:balance;max-width:20ch}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(24px,3.2vw,32px);line-height:1.1;letter-spacing:-.4px;margin:0 0 6px;text-wrap:balance}
+h3{font-family:var(--display);font-weight:700;font-size:19px;line-height:1.2;margin:0 0 4px}
+p{margin:0}
+.lead{font-size:19px;color:var(--muted);max-width:62ch}
+section{margin-top:64px;display:grid;gap:22px}
+.sub{color:var(--muted);max-width:66ch}
+
+/* Systemkarte */
+.map{border:2px solid var(--fg);background:var(--box);overflow-x:auto;margin-top:30px}
+.map svg{display:block;width:100%;min-width:940px;height:auto}
+.map-legend{display:flex;flex-wrap:wrap;gap:10px 22px;padding:14px 18px;border-top:1.5px solid var(--fg);font-size:14px;color:var(--muted)}
+.map-legend span{display:inline-flex;align-items:center;gap:8px}
+.dot{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--lime);color:var(--on-lime);font-weight:700;font-size:12px;font-family:var(--display)}
+.sw{display:inline-block;width:26px;height:0;border-top:2px solid var(--fg)}
+.sw.dash{border-top-style:dashed}
+.sw.dk{height:12px;width:16px;border:0;background:var(--dark)}
+
+svg text{font-family:var(--body);fill:var(--fg)}
+svg .t{font-family:var(--display);font-weight:700;font-size:15px}
+svg .s{font-size:12.5px;fill:var(--muted)}
+svg .lab{font-weight:600;font-size:11.5px;letter-spacing:2.2px;text-transform:uppercase;fill:var(--muted)}
+svg .al{font-size:11.5px;font-weight:600;fill:var(--fg)}
+svg .box{fill:var(--box);stroke:var(--fg);stroke-width:2}
+svg .soft{fill:var(--soft);stroke:none}
+svg .dark{fill:var(--dark);stroke:var(--dark);stroke-width:2}
+svg .dark-t{fill:var(--on-dark)}
+svg .dark-s{fill:var(--on-dark);opacity:.78;font-size:12.5px}
+svg .lime{fill:var(--lime)}
+svg .on-lime{fill:var(--on-lime)}
+svg .dashbox{fill:none;stroke:var(--fg);stroke-width:1.5;stroke-dasharray:6 5}
+svg .ln{fill:none;stroke:var(--fg);stroke-width:2}
+svg .ln.d{stroke-dasharray:6 5}
+svg .ln.lm{stroke:var(--lime);stroke-width:5}
+svg .head{fill:var(--fg)}
+svg .chip{fill:var(--box);stroke:var(--fg);stroke-width:1.5}
+
+/* Wochentakt */
+.tablewrap{overflow-x:auto;border:2px solid var(--fg)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:14.5px;font-variant-numeric:tabular-nums}
+th,td{padding:10px 12px;text-align:left;vertical-align:top;border-top:1.5px solid var(--line)}
+thead th{border-top:0;font-weight:600;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);background:var(--soft)}
+tbody th{font-family:var(--display);font-size:16px;font-weight:700;white-space:nowrap}
+tbody th small{display:block;font-family:var(--body);font-weight:500;font-size:12.5px;color:var(--muted);white-space:normal}
+td.on{font-weight:600}
+td.you{background:var(--lime);color:var(--on-lime);font-weight:600}
+tr.you th{color:var(--fg)}
+
+/* Weg eines Beitrags */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1.5px solid var(--fg)}
+.steps li{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:16px;align-items:start;padding:16px 0;border-bottom:1.5px solid var(--fg)}
+.num{font-family:var(--display);font-weight:800;font-size:22px;background:var(--lime);color:var(--on-lime);text-align:center;padding:8px 0;line-height:1}
+.steps .when{font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);white-space:nowrap;padding-top:4px}
+.steps li.you .num{background:var(--dark);color:var(--on-dark)}
+.steps p{color:var(--muted);max-width:68ch}
+.quote{font-weight:600;color:var(--fg)}
+
+/* Karten-Raster */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.card{border:2px solid var(--fg);padding:16px 18px;display:grid;gap:6px;align-content:start;min-width:0}
+.card p{color:var(--muted);font-size:15.5px}
+.card .tag{justify-self:start;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;background:var(--lime);color:var(--on-lime);padding:2px 7px}
+.card.dk{background:var(--dark);border-color:var(--dark)}
+.card.dk h3,.card.dk p{color:var(--on-dark)}
+.card ul{margin:4px 0 0;padding-left:18px;font-size:15px;color:var(--muted);display:grid;gap:3px}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;background:var(--soft);padding:1px 5px}
+
+/* Spickzettel */
+.cheat{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border:2px solid var(--fg)}
+.cheat div{display:grid;grid-template-columns:150px minmax(0,1fr);gap:12px;padding:12px 16px;border-bottom:1.5px solid var(--line)}
+.cheat b{font-family:var(--display);font-size:16px}
+.cheat span{color:var(--muted);font-size:15px}
+
+.open{border-left:8px solid var(--lime);background:var(--soft);padding:16px 18px;display:grid;gap:8px}
+.open ul{margin:0;padding-left:18px;display:grid;gap:4px;color:var(--muted)}
+.foot{margin-top:56px;padding-top:14px;border-top:1.5px solid var(--fg);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.foot b{color:var(--fg)}
+@media (max-width:560px){.steps li{grid-template-columns:44px minmax(0,1fr)}.steps .when{grid-column:2;padding-top:0}.cheat div{grid-template-columns:1fr;gap:2px}}
+</style>
+
+<div class="wrap">
+  <span class="kicker">KLEIN. MITTEL. KI. · Redaktion</span>
+  <h1>So arbeitet deine Blog-Redaktion</h1>
+  <p class="lead">Acht KI-Agenten recherchieren, schreiben, gestalten und prüfen in der Cloud, auch wenn dein Rechner aus ist. Du sprichst nur per Mail mit ihnen. Nichts geht online ohne dein Ja.</p>
+
+  <div class="map" role="img" aria-label="Systemkarte: Du, Gmail, die geplanten Läufe in der Claude-Cloud, GitHub als Gedächtnis, Ghost und der Blog">
+  <svg viewBox="0 0 1200 870" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="head"/></marker>
+    </defs>
+
+    <!-- Spaltenköpfe -->
+    <text class="lab" x="20" y="34">Du</text>
+    <text class="lab" x="270" y="34">Kanäle</text>
+    <text class="lab" x="570" y="34">Claude-Cloud · läuft ohne deinen Rechner</text>
+    <text class="lab" x="970" y="34">Blog &amp; Reichweite</text>
+
+    <!-- DU -->
+    <rect class="dark" x="20" y="56" width="210" height="70"/>
+    <text class="t dark-t" x="36" y="86">Till</text>
+    <text class="dark-s" x="36" y="108">entscheidet und gibt frei</text>
+
+    <rect class="box" x="20" y="170" width="210" height="104"/>
+    <text class="t" x="36" y="196">Gmail-App</text>
+    <text class="s" x="36" y="218">Handy oder Mac</text>
+    <text class="s" x="36" y="238">liest Vorschläge in Stichworten,</text>
+    <text class="s" x="36" y="256">antwortet „1 und 3“ · „A ja“</text>
+
+    <rect class="box" x="20" y="560" width="210" height="104"/>
+    <text class="t" x="36" y="586">Claude-Chat</text>
+    <text class="s" x="36" y="608">dieses Projekt „Blog“</text>
+    <text class="s" x="36" y="628">einrichten, Regeln ändern,</text>
+    <text class="s" x="36" y="646">Fragen, prüfen lassen</text>
+
+    <!-- KANÄLE -->
+    <rect class="box" x="270" y="150" width="240" height="196"/>
+    <text class="t" x="286" y="176">Gmail-Postfach</text>
+    <text class="s" x="286" y="196">till.zehnle@gmail.com</text>
+    <line x1="286" y1="210" x2="494" y2="210" stroke="var(--line)" stroke-width="1.5"/>
+    <text class="s" x="286" y="232">Mo · Mi · Fr ~8:20 Redaktions-Mail</text>
+    <text class="s" x="286" y="252">So ~10:20 Newsletter-Vorschlag</text>
+    <text class="s" x="286" y="272">jederzeit: deine Ideen per Mail</text>
+    <text class="s" x="286" y="292">Bestätigungen, Vorschau-Links</text>
+    <text class="s" x="286" y="318">nur deine eigene Adresse zählt</text>
+
+    <rect class="box" x="270" y="404" width="240" height="118"/>
+    <text class="t" x="286" y="430">Internet</text>
+    <text class="s" x="286" y="452">Originalquellen: Gerichte, EU-Recht,</text>
+    <text class="s" x="286" y="472">Studien, Hersteller, Verbände</text>
+    <text class="s" x="286" y="498">nur lesen, jede Zahl belegt</text>
+
+    <!-- CLOUD-Container -->
+    <rect class="dashbox" x="555" y="48" width="370" height="626"/>
+
+    <rect class="box" x="572" y="66" width="336" height="96"/>
+    <text class="t" x="588" y="92">Mail-Lauf</text>
+    <text class="s" x="588" y="113">Mo–Fr 8:17 · 12:17 · 18:17 · So 10:17–21:17</text>
+    <text class="s" x="588" y="133">liest deine Antworten, trägt Freigaben ein,</text>
+    <text class="s" x="588" y="151">schickt Mails · Zugang: nur Gmail</text>
+
+    <rect class="box" x="572" y="176" width="336" height="96"/>
+    <text class="t" x="588" y="202">Redaktions-Lauf</text>
+    <text class="s" x="588" y="223">Mo · Mi · Fr 6:47 · mit Websuche</text>
+    <text class="s" x="588" y="243">Themen finden, freigegebene Beiträge</text>
+    <text class="s" x="588" y="261">schreiben, Schaubilder bauen, prüfen</text>
+
+    <rect class="box" x="572" y="286" width="336" height="80"/>
+    <text class="t" x="588" y="312">Sonntags-Lauf</text>
+    <text class="s" x="588" y="333">So 9:47 · Ideen, Wochenbericht,</text>
+    <text class="s" x="588" y="352">Newsletter-Entwurf, Social-Paket</text>
+
+    <rect class="dark" x="572" y="380" width="336" height="96"/>
+    <text class="t dark-t" x="588" y="406">Ghost-Lauf</text>
+    <text class="dark-s" x="588" y="427">So–Fr 7:47 · 12:47 · 18:47 · 21:47</text>
+    <text class="dark-s" x="588" y="447">legt Entwürfe an, veröffentlicht Freigegebenes</text>
+    <text class="dark-s" x="588" y="465">Zugang: nur Ghost-Schlüssel, kein Mail</text>
+
+    <text class="lab" x="572" y="506">Das Team in jedem Lauf</text>
+    <!-- Agenten-Chips 4 x 2 -->
+    <g>
+      <rect class="chip" x="572" y="518" width="78" height="64"/><text class="al" x="580" y="540">Chef-</text><text class="al" x="580" y="555">redakteur</text><text class="s" x="580" y="573" style="font-size:11px">koordiniert</text>
+      <rect class="chip" x="658" y="518" width="78" height="64"/><text class="al" x="666" y="540">Scout</text><text class="s" x="666" y="557" style="font-size:11px">findet</text><text class="s" x="666" y="572" style="font-size:11px">Themen</text>
+      <rect class="chip" x="744" y="518" width="78" height="64"/><text class="al" x="752" y="540">Ideen</text><text class="s" x="752" y="557" style="font-size:11px">Formate,</text><text class="s" x="752" y="572" style="font-size:11px">Serien</text>
+      <rect class="chip" x="830" y="518" width="78" height="64"/><text class="al" x="838" y="540">Autor</text><text class="s" x="838" y="557" style="font-size:11px">schreibt</text><text class="s" x="838" y="572" style="font-size:11px">in deinem Stil</text>
+      <rect class="chip" x="572" y="590" width="78" height="64"/><text class="al" x="580" y="612">Grafik</text><text class="s" x="580" y="629" style="font-size:11px">Schaubilder</text><text class="s" x="580" y="644" style="font-size:11px">im CI</text>
+      <rect class="chip" x="658" y="590" width="78" height="64"/><text class="al" x="666" y="612">Prüfer</text><text class="s" x="666" y="629" style="font-size:11px">Fakten, Ton,</text><text class="s" x="666" y="644" style="font-size:11px">Aufbau</text>
+      <rect class="chip" x="744" y="590" width="78" height="64"/><text class="al" x="752" y="612">Social</text><text class="s" x="752" y="629" style="font-size:11px">LinkedIn,</text><text class="s" x="752" y="644" style="font-size:11px">Instagram</text>
+      <rect class="chip" x="830" y="590" width="78" height="64"/><text class="al" x="838" y="612">Analyst</text><text class="s" x="838" y="629" style="font-size:11px">Wochen-</text><text class="s" x="838" y="644" style="font-size:11px">auswertung</text>
+    </g>
+
+    <!-- GITHUB -->
+    <rect class="box" x="555" y="716" width="370" height="140"/>
+    <rect class="lime" x="555" y="716" width="370" height="8"/>
+    <text class="t" x="572" y="748">GitHub · das gemeinsame Gedächtnis</text>
+    <text class="s" x="572" y="768">Till10le/KleinMittelKI</text>
+    <text class="s" x="572" y="792">Themenboard · Entscheidungen · Freigaben · Mail-Status</text>
+    <text class="s" x="572" y="811">Entwürfe · alle Beiträge als Vorbild · Berichte</text>
+    <text class="s" x="572" y="830">Regeln: CI, Formate, Schreibstil · Werkzeuge · Sperre</text>
+    <text class="s" x="572" y="848">jede Änderung mit Verlauf, nichts wird gelöscht</text>
+
+    <!-- RECHTS: Social, Ghost, Blog, Newsletter -->
+    <rect class="dashbox" x="970" y="150" width="210" height="122"/>
+    <text class="t" x="986" y="176">LinkedIn · Instagram</text>
+    <text class="s" x="986" y="198">WhatsApp-Status</text>
+    <text class="s" x="986" y="222">Posts und Kacheln 1080 × 1350</text>
+    <text class="s" x="986" y="240">werden vorbereitet,</text>
+    <text class="s" x="986" y="258">posten: noch von Hand</text>
+
+    <rect class="box" x="970" y="380" width="210" height="96"/>
+    <text class="t" x="986" y="406">Ghost</text>
+    <text class="s" x="986" y="427">klein-mittel-ki.ghost.io</text>
+    <text class="s" x="986" y="447">Entwurf · Bilder · einplanen ·</text>
+    <text class="s" x="986" y="465">veröffentlichen, nie löschen</text>
+
+    <rect class="box" x="970" y="540" width="100" height="96"/>
+    <text class="t" x="982" y="566">Blog</text>
+    <text class="s" x="982" y="587">kleinmittel-</text>
+    <text class="s" x="982" y="604">ki.de</text>
+    <rect class="box" x="1080" y="540" width="100" height="96"/>
+    <text class="t" x="1092" y="566">Newsletter</text>
+    <text class="s" x="1092" y="587">Di 7:00 an</text>
+    <text class="s" x="1092" y="604">Abonnenten</text>
+
+    <!-- PFEILE -->
+    <!-- Till <-> Gmail-App -->
+    <line class="ln" x1="125" y1="128" x2="125" y2="168" marker-start="url(#ar)" marker-end="url(#ar)"/>
+    <!-- Gmail-App <-> Postfach -->
+    <line class="ln" x1="232" y1="222" x2="268" y2="222" marker-start="url(#ar)" marker-end="url(#ar)"/>
+    <!-- Postfach <-> Mail-Lauf -->
+    <path class="ln" d="M512,186 H540 V114 H570" marker-start="url(#ar)" marker-end="url(#ar)"/>
+    <!-- Internet -> Redaktions-Lauf und Sonntags-Lauf -->
+    <path class="ln" d="M512,440 H540 V224 H570" marker-end="url(#ar)"/>
+    <path class="ln" d="M540,326 H570" marker-end="url(#ar)"/>
+    <text class="al" x="286" y="394">liest Originale</text>
+    <!-- Cloud <-> GitHub -->
+    <line class="ln" x1="740" y1="676" x2="740" y2="714" marker-start="url(#ar)" marker-end="url(#ar)"/>
+    <text class="al" x="752" y="700">jeder Lauf liest Regeln und schreibt Ergebnisse zurück</text>
+    <!-- Ghost-Lauf -> Ghost -->
+    <line class="ln" x1="910" y1="428" x2="968" y2="428" marker-end="url(#ar)"/>
+    <!-- Ghost -> Blog, Newsletter -->
+    <line class="ln" x1="1020" y1="478" x2="1020" y2="538" marker-end="url(#ar)"/>
+    <line class="ln" x1="1130" y1="478" x2="1130" y2="538" marker-end="url(#ar)"/>
+    <text class="al" x="1032" y="514">online</text>
+    <text class="al" x="1142" y="514">Versand</text>
+    <!-- Sonntags-Lauf -> Social (vorbereitet) -->
+    <path class="ln d" d="M910,326 H944 V212 H968" marker-end="url(#ar)"/>
+    <!-- Claude-Chat -> GitHub -->
+    <path class="ln" d="M232,612 H250 V786 H553" marker-end="url(#ar)"/>
+    <text class="al" x="262" y="776">Regeln ändern, einrichten, prüfen</text>
+    <!-- Mails mit Vorschau-Link: Ghost-Lauf schreibt Link ins Gedächtnis, Mail-Lauf schickt ihn -->
+
+    <!-- Freigabe-Weg 1–4 -->
+    <g>
+      <circle class="lime" cx="216" cy="196" r="13"/><text x="216" y="201" text-anchor="middle" class="on-lime" style="font-family:var(--display);font-weight:800;font-size:13px">1</text>
+      <circle class="lime" cx="908" cy="96" r="13"/><text x="908" y="101" text-anchor="middle" class="on-lime" style="font-family:var(--display);font-weight:800;font-size:13px">2</text>
+      <circle class="lime" cx="908" cy="748" r="13"/><text x="908" y="753" text-anchor="middle" class="on-lime" style="font-family:var(--display);font-weight:800;font-size:13px">3</text>
+      <circle class="lime" cx="939" cy="428" r="13"/><text x="939" y="433" text-anchor="middle" class="on-lime" style="font-family:var(--display);font-weight:800;font-size:13px">4</text>
+    </g>
+  </svg>
+  <div class="map-legend">
+    <span><i class="dot">1</i>du antwortest „A ja“</span>
+    <span><i class="dot">2</i>Mail-Lauf prüft Absender und trägt die Freigabe mit deinem Zitat ein</span>
+    <span><i class="dot">3</i>Freigabe liegt im Gedächtnis, gebunden an den Stand, den du gesehen hast</span>
+    <span><i class="dot">4</i>Ghost-Lauf veröffentlicht nur, wenn sich seitdem nichts geändert hat</span>
+    <span><i class="sw"></i>Verbindung</span>
+    <span><i class="sw dash"></i>vorbereitet, noch nicht automatisch</span>
+    <span><i class="sw dk"></i>einziger Lauf mit Zugang zu Ghost</span>
+  </div>
+  </div>
+
+  <section>
+    <div><span class="kicker">Der Takt</span></div>
+    <h2>Wann was läuft</h2>
+    <p class="sub">Alle Zeiten deutscher Zeit. Läufe, die nichts zu tun haben, beenden sich sofort. Lime markiert, wann du etwas bekommst.</p>
+    <div class="tablewrap">
+      <table>
+        <thead><tr><th>Lauf</th><th>Mo</th><th>Di</th><th>Mi</th><th>Do</th><th>Fr</th><th>Sa</th><th>So</th></tr></thead>
+        <tbody>
+          <tr><th>Redaktions-Lauf<small>Themen, Texte, Grafiken, Prüfung</small></th><td class="on">6:47</td><td>–</td><td class="on">6:47</td><td>–</td><td class="on">6:47</td><td>–</td><td>–</td></tr>
+          <tr><th>Sonntags-Lauf<small>Ideen, Newsletter, Wochenbericht, Social</small></th><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td><td>–</td><td class="on">9:47</td></tr>
+          <tr><th>Ghost-Lauf<small>Entwürfe 7:47, Freigaben immer</small></th><td class="on">7:47 · 12:47 · 18:47 · 21:47</td><td class="on">7:47 · 12:47 · 18:47 · 21:47</td><td class="on">7:47 · 12:47 · 18:47 · 21:47</td><td class="on">7:47 · 12:47 · 18:47 · 21:47</td><td class="on">7:47 · 12:47 · 18:47 · 21:47</td><td>–</td><td class="on">7:47 · 12:47 · 18:47 · 21:47</td></tr>
+          <tr><th>Mail-Lauf<small>Antworten lesen, bestätigen, Ideen</small></th><td class="on">8:17 · 12:17 · 18:17</td><td class="on">8:17 · 12:17 · 18:17</td><td class="on">8:17 · 12:17 · 18:17</td><td class="on">8:17 · 12:17 · 18:17</td><td class="on">8:17 · 12:17 · 18:17</td><td>–</td><td class="on">10:17 · 12:17 · 15:17 · 18:17 · 21:17</td></tr>
+          <tr class="you"><th>Deine Post<small>was bei dir ankommt</small></th><td class="you">Redaktions-Mail ~8:20</td><td class="you">Newsletter geht 7:00 raus</td><td class="you">Redaktions-Mail ~8:20</td><td>–</td><td class="you">Redaktions-Mail ~8:20</td><td>–</td><td class="you">Newsletter-Vorschlag ~10:20</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <div><span class="kicker">Der Ablauf</span></div>
+    <h2>Der Weg eines Beitrags</h2>
+    <p class="sub">Schwarze Nummern sind deine Schritte. Alles andere passiert von selbst.</p>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h3>Thema finden</h3><p>Der Scout sucht neue Meldungen und deine eigenen Ideen, liest die Originalquelle und bewertet die Relevanz für Betriebe mit 1 bis 300 Beschäftigten.</p></div><span class="when">Mo · Mi · Fr 6:47</span></li>
+      <li><span class="num">2</span><div><h3>Vorschläge per Mail</h3><p>Du bekommst bis zu fünf Themen in Stichworten: worum es geht, für wen, welche Quelle, welche Grafik.</p></div><span class="when">8:17</span></li>
+      <li class="you"><span class="num">3</span><div><h3>Du wählst aus</h3><p><span class="quote">„1 und 3. Zu 1: …“</span> Deine Einschätzung landet wörtlich im Beitrag.</p></div><span class="when">wann du willst</span></li>
+      <li><span class="num">4</span><div><h3>Schreiben, gestalten, prüfen</h3><p>Der Autor schreibt im festen Format, die Grafik baut Schaubilder im CI plus Social-Kacheln. Der Prüfer gleicht jede Zahl mit der Quelle ab und den Aufbau mit deinen bisherigen Beiträgen.</p></div><span class="when">nächster Redaktions-Lauf</span></li>
+      <li><span class="num">5</span><div><h3>Entwurf in Ghost, Vorschau an dich</h3><p>Der Ghost-Lauf legt den Beitrag unveröffentlicht an. Du bekommst den Vorschau-Link als A, B …</p></div><span class="when">7:47 / 8:17</span></li>
+      <li class="you"><span class="num">6</span><div><h3>Du gibst frei</h3><p><span class="quote">„A ja“</span>, <span class="quote">„A Dienstag“</span> oder <span class="quote">„A ändern: …“</span></p></div><span class="when">wann du willst</span></li>
+      <li><span class="num">7</span><div><h3>Online und bestätigt</h3><p>Der nächste Ghost-Lauf veröffentlicht, aber nur, wenn der Beitrag noch genau so ist wie in deiner Vorschau. Du bekommst den Live-Link.</p></div><span class="when">spätestens 30 Min. später</span></li>
+    </ol>
+  </section>
+
+  <section>
+    <div><span class="kicker">Die Bausteine</span></div>
+    <h2>Was wie angebunden ist</h2>
+    <div class="grid">
+      <div class="card"><span class="tag">Kanal</span><h3>Gmail</h3><p>Dein einziger Arbeitskanal. Die Redaktion schreibt nur an till.zehnle@gmail.com und zählt nur Mails, die du selbst aus diesem Konto geschickt hast.</p></div>
+      <div class="card"><span class="tag">Gehirn</span><h3>Claude-Cloud</h3><p>Fünf geplante Läufe auf Anthropic-Servern. Jeder startet frisch, liest zuerst das Gedächtnis auf GitHub und schreibt seine Ergebnisse zurück.</p></div>
+      <div class="card"><span class="tag">Gedächtnis</span><h3>GitHub</h3><p>Ablage für alles, was die Agenten wissen und tun:</p><ul><li>Themenboard und deine Entscheidungen</li><li>Freigaben mit Zitat und Mail-ID</li><li>Entwürfe, Schaubilder, Vorschaubilder</li><li>alle veröffentlichten Beiträge als Vorbild</li><li>Regeln für CI, Formate, Schreibstil</li></ul></div>
+      <div class="card dk"><span class="tag">Blog</span><h3>Ghost</h3><p>Angebunden über die Admin-API. Der Schlüssel liegt nur in der Umgebung des Ghost-Laufs, die außer deinem Blog nichts erreicht. Beiträge gehen nie per Mail raus, nur der Newsletter.</p></div>
+      <div class="card"><span class="tag">Recherche</span><h3>Internet</h3><p>Redaktions- und Sonntags-Lauf suchen und lesen Originalquellen. Was nicht lesbar war, steht als „ungeprüft“ im Board und in deiner Mail.</p></div>
+      <div class="card"><span class="tag">Werkstatt</span><h3>Claude-Chat</h3><p>Hier richten wir ein und ändern Regeln. Nach jedem echten Lauf kann ich nachsehen, was passiert ist, und Fehler beheben.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div><span class="kicker">Spickzettel</span></div>
+    <h2>Was du in eine Mail schreiben kannst</h2>
+    <div class="cheat">
+      <div><b>1 und 3</b><span>diese Themen ausarbeiten</span></div>
+      <div><b>Zu 1: …</b><span>deine Einschätzung, kommt in den Text</span></div>
+      <div><b>2 nein, weil …</b><span>verworfen, die Redaktion lernt daraus</span></div>
+      <div><b>3 später</b><span>bleibt vorgemerkt</span></div>
+      <div><b>A ja</b><span>so veröffentlichen</span></div>
+      <div><b>A Dienstag</b><span>zu dieser Zeit einplanen</span></div>
+      <div><b>A ändern: …</b><span>überarbeiten, neue Vorschau kommt</span></div>
+      <div><b>A stopp</b><span>Einplanung zurücknehmen</span></div>
+      <div><b>N: …</b><span>Newsletter ändern (sonntags)</span></div>
+      <div><b>N ja</b><span>Newsletter für Di 7:00 einplanen</span></div>
+      <div><b>I1 ja</b><span>deine geprüfte Idee ausarbeiten</span></div>
+      <div><b>Betreff „KMK Idee: …“</b><span>neue Idee, jederzeit, mit Link oder Foto</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div><span class="kicker">Sicherheitsnetz</span></div>
+    <h2>Warum nichts ohne dich passiert</h2>
+    <div class="grid">
+      <div class="card"><h3>Freigabe-Sperre</h3><p>Veröffentlicht wird nur über ein Werkzeug, das eine Freigabe von dir verlangt. Ändert sich der Beitrag danach, blockiert es.</p></div>
+      <div class="card"><h3>Absender-Prüfung</h3><p>Nur Mails aus deinem eigenen Gmail im passenden Verlauf zählen. Weitergeleitete Inhalte und fremde Mails sind nie eine Anweisung.</p></div>
+      <div class="card"><h3>Getrennte Schlüssel</h3><p>Der Mail-Lauf hat keinen Zugang zu Ghost, der Ghost-Lauf keinen zu Gmail.</p></div>
+      <div class="card"><h3>Nichts wird gelöscht</h3><p>Weder Beiträge in Ghost noch Einträge im Gedächtnis. Jede Änderung steht im Verlauf auf GitHub.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="open">
+      <h3>Noch offen</h3>
+      <ul>
+        <li>Erster kompletter Durchlauf mit dem OLG-Hamm-Beitrag am Mittwoch, 21.10. Ich prüfe ihn danach selbst.</li>
+        <li>Automatisches Posten auf LinkedIn und Instagram braucht ein Posting-Werkzeug (z. B. Buffer) und ein Instagram-Business-Konto.</li>
+        <li>Der Wochenbericht sieht nur Zahlen aus Ghost, keine LinkedIn-Reichweite.</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="foot"><span>Stand: 19. Oktober 2026</span><b>kleinmittelki.de</b></div>
+</div>
