@@ -42,6 +42,7 @@ Alle Agenten lesen hier zuerst und schreiben ihre Ergebnisse hierher zurück.
 | `redaktion/entscheidungen.md` | Tills Ja/Nein mit Grund – die Lernschleife | Chefredakteur nach Tills Antwort |
 | `redaktion/freigaben.jsonl` | Veröffentlichungsfreigaben (nur Tills Mail-Antwort oder Chat) | `tools/mailfreigabe.py`, `tools/ghost.py freigabe` |
 | `redaktion/mail.json` | Mail-Verläufe mit Till, verarbeitete Antworten | Mail-Lauf |
+| `redaktion/eingang/` | Recherche-Hinweise anderer Werkzeuge (z. B. ChatGPT), nur Material für den Scout | Mail-Lauf |
 | `redaktion/themenspeicher.md` | Offene Ideen und Serien | Ideen-Agent, Till |
 | `redaktion/berichte/` | Tages- und Wochenberichte | Chefredakteur, Analyst |
 | `entwuerfe/<slug>/` | Beitrag als `beitrag.md`, Grafiken, Vorschaubild, Quellen | Autor, Grafik |

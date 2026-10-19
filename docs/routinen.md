@@ -13,6 +13,8 @@ zurück (Antworten um 12:17, 15:17, 18:17, 21:17) und gibt mit „N ja“ frei �
 Eigene Ideen: jederzeit eine Mail an sich selbst mit Betreff „KMK Idee: …“ (Satz, Link, weitergeleitete Mail, Foto).
 Der nächste Mail-Lauf nimmt sie auf, der Scout prüft die Quelle, die Idee kommt geprüft als I1 … in die nächste Redaktions-Mail.
 Mit „ausarbeiten“ im Text wird sie direkt geschrieben.
+Ergebnisse anderer Recherche-Werkzeuge (z. B. ChatGPT-Aufgabe): an sich selbst weiterleiten mit Betreff „KMK Recherche“.
+Der Mail-Lauf legt sie in `redaktion/eingang/` ab, der Scout prüft jeden Hinweis an der Originalquelle und führt ihn mit den eigenen Funden zusammen.
 Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden Mo–Fr um 12:17 und 18:17 gelesen
 (und um 8:17); Veröffentlichungen laufen eine halbe Stunde später.
 
