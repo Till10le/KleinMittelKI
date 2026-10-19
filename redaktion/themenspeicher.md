@@ -21,6 +21,11 @@ Aktuell-Nachrichten zusätzlich, sobald eine Meldung kommt. Immer 1–2 fertige 
 - [ ] Google: Agenten-Konten in Workspace – was ändert sich für kleine Teams?
 - [ ] Google: KI-Zusammenfassungen von Bewertungen lokaler Betriebe
 - [ ] Microsoft Copilot Business: nutzungsbasierte Abrechnung – was kostet das einen 15-Personen-Betrieb?
+  - Hinweis Scout 2026-10-19 (ungeprüft, nur Zweitquellen): Neue Copilot-Business-Abos sollen nutzungsbasierte Abrechnung
+    standardmäßig aktiviert bekommen, Standardlimit 4.000 Copilot Credits pro Nutzer und Monat; über CSP-Partner ab
+    01.12.2026 (verschoben von 02.11.). Microsoft-Original (Message Center MC1476200, Partner-Center-Ankündigungen Oktober 2026)
+    war nicht lesbar. Gelesen: Microsoft Learn „Managing AI experiences enabled by usage-based billing“ (Stand 02.10.2026) –
+    nennt keine Standardwerte. Vor Vorschlag Original beschaffen; Zeitfenster bis 01.12.2026.
 - [ ] Glossar „Das ehrliche KI-Wörterbuch“ als lebender Wissensbeitrag (Idee aus der Konzeptphase, nicht entschieden)
 - [ ] „Was KI wirklich kostet“: Lizenzen, Tokens, Einführungsaufwand (Idee aus der Konzeptphase, nicht entschieden)
 

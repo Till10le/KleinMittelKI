@@ -39,3 +39,36 @@ Pressemitteilung des OLG Hamm gelesen hat.
 ## Offen für Prüfer
 1. Originalentscheidung/Pressemitteilung beschaffen und Az., Datum, Revisionszulassung gegenlesen.
 2. Prüfen, ob das Urteil im 72h-Fenster neue Entwicklung hat (BGH-Revision eingelegt? Aktenzeichen BGH?). Nicht belegt.
+
+---
+
+## Nachtrag 2026-10-19 (Scout, Redaktions-Lauf): Original gelesen
+
+**Originalquelle selbst gelesen:** Pressemitteilung des Oberlandesgerichts Hamm vom 12.05.2026,
+https://www.justiz.nrw/presse/2026-05-12 (abgerufen 19.10.2026). Pressedezernent: Daniel Große-Kreul.
+
+Damit bestätigt (aus dem Original):
+- OLG Hamm, 4. Zivilsenat, Urteil vom 12. Mai 2026, Az. **4 UKl 3/25**.
+- Kläger: Verbraucherzentrale Nordrhein-Westfalen e. V.; Beklagte: Aesthetify GmbH.
+- Sachverhalt: Website-Chatbot zur Terminbuchung und für Fragen; er bezeichnete die beiden Ärzte hinter dem Unternehmen
+  mit verschiedenen ästhetischen Facharzttiteln, die es nicht gibt. Nach Abmahnung wurde der Chatbot deaktiviert, die
+  strafbewehrte Unterlassungserklärung aber nicht abgegeben.
+- Ergebnis: Unterlassungsklage stattgegeben. Die Antworten des Chatbots sind unzulässige geschäftliche Handlungen.
+- Begründung: Die Beklagte muss sich die Falschangaben zurechnen lassen, auch wenn sie den Chatbot nur mit korrekten
+  Daten hat programmieren lassen. Der Chatbot ist kein „Dritter“; Grundsätze der Verkehrssicherungspflicht helfen nicht.
+- Rechtsgrundlage: § 5 Abs. 1 und Abs. 2 Nr. 3 UWG (irreführende Angaben u. a. zu Befähigung/Status des Unternehmers).
+- Revision zum BGH **zugelassen** (neue Rechtsfragen zur Zurechnung von Chatbot-Falschangaben). Ob sie eingelegt wurde,
+  sagt die PM nicht; Rechtskraft wird nicht erwähnt. → Im Beitrag: „nicht rechtskräftig, Revision zugelassen (Stand PM)“.
+- Volltext soll in der NRWE-Datenbank erscheinen, sobald die Urteilsgründe vorliegen (Stand PM: noch nicht).
+
+Weiterhin **ungeprüft** (nur Zweitquellen, nicht in der PM):
+- Aussage, ein Warnhinweis „KI kann irren“ entlaste nicht. Steht nicht in der PM; erst nach Volltext verwenden.
+- LG München I, 28.05.2026, Az. 26 O 869/26.
+- Ob die Revision eingelegt wurde (BGH-Aktenzeichen).
+
+Verwechslungsgefahr: Die Verbraucherzentrale NRW führte gegen dieselbe Beklagte ein **anderes** Verfahren
+(OLG Hamm I-4 UKl 2/24, Werbung mit Vorher-Nachher-Bildern, § 11 HWG; BGH I ZR 170/24, laut VZ-Seite rechtskräftig).
+Quelle: https://www.verbraucherzentrale.nrw/verbandsklagen/unterlassungsklage-gegen-die-aesthetify-gmbh-94286 (Stand 27.08.2025).
+Nicht mit dem Chatbot-Fall vermischen.
+
+Offen für Prüfer: NRWE-Volltext prüfen, sobald veröffentlicht.

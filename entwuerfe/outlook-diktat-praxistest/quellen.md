@@ -30,3 +30,24 @@ nicht abrufbar, DNS-Fehler). Unten stehen Angaben aus einer Suchtreffer-Zusammen
 ## Offen
 1. Microsoft-Seite lesen und prüfen, ob es die Aufräum-Funktion gibt und wann sie kam (Neuheit, Lizenz).
 2. Klären, ob Till Microsoft 365 / Copilot-Lizenz hat und testen will.
+
+---
+
+## Nachtrag 2026-10-19 (Scout, Redaktions-Lauf)
+
+- Die Outlook-Supportseite (de-de) wurde erneut versucht: **Abruf nicht freigegeben** (Berechtigungsanfrage nicht
+  beantwortet). Inhalt weiterhin **ungeprüft**.
+- Gefunden und gelesen: Microsoft-Support „Fluid dictation“ (Windows-Sprachzugriff),
+  https://support.microsoft.com/en-US/accessibility/windows/voice-access/fluid-dictation
+  (ms.date 29.01.2026, Update-Zeitstempel 24.08.2026). Inhalt (eigene Worte): korrigiert beim Diktieren Grammatik,
+  Zeichensetzung und **Füllwörter**; Rückgängig per Sprachbefehl „Revert“/„Undo that“. Läuft lokal mit kleinen
+  Sprachmodellen. **Nur Copilot+ PCs**, Sprachen laut Seite: **alle englischen Varianten**, Deutsch nicht genannt.
+  Funktioniert in Textfeldern aller Apps, die Seite zeigt Outlook als Beispiel.
+- Folgerung: Das „Aufräumen“ diktierter Texte ist (Stand dieser Quelle) eine **Windows**-Funktion, nicht Outlook,
+  und für deutschsprachige Nutzer laut Seite nicht verfügbar. Arbeitstitel „Outlook räumt diktierte Texte auf“ ist für
+  einen deutschen Test nicht haltbar.
+- Gelesen, nicht einschlägig: Microsoft-365-Roadmap 552595 „Outlook: Draft, edit and format emails conversationally with
+  Copilot in Outlook“ (Mac, GA Mai 2026) – kein Diktat erwähnt.
+  https://www.microsoft.com/releasecommunications/api/v2/m365/552595
+- Möglicher Ersatz-Test (Vorschlag, nicht von Till): normales Outlook-Diktat auf Deutsch + anschließend Copilot
+  „Überarbeiten“ – nur wenn Till eine Copilot-Lizenz hat.
