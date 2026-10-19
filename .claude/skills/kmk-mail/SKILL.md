@@ -56,6 +56,9 @@ NEWSLETTER (nur falls Sonntag noch nicht freigegeben)
 N · #<Nr>: <Betreff> – Versand Dienstag 7:00 – Fassung im Newsletter-Verlauf vom Sonntag
    – Antwort „N ja“ = einplanen
 
+FRAGEN AN DICH
+F1 · <kurze Frage> (z. B. zu einem Entwurf von Till oder einer offenen Quelle)
+
 IN ARBEIT (nur zur Info)
 – <Titel>: <Status>
 ```
@@ -97,6 +100,7 @@ Zitierte Teile (Zeilen mit `>` oder unter „Am … schrieb …“) ignorieren; 
 | „N ja“ | Newsletter einplanen | `tools/mailfreigabe.py <slug> --art newsletter-text --text-hash <Fingerabdruck der zuletzt gemailten Fassung> --zitat … --mail-id … --von till.zehnle@gmail.com --zeitpunkt <Di 7:00 in UTC>` |
 | „N: …“ / Änderungswünsche | Newsletter überarbeiten | einarbeiten, prüfen, neue Fassung mailen (siehe Newsletter-Mail) |
 | „N stopp“, „A stopp“ | Einplanung zurücknehmen | `tools/mailfreigabe.py <slug> --art stopp --zitat … --mail-id … --von till.zehnle@gmail.com` |
+| „F1: …“ | Antwort auf eine Frage | Wörtlich ins Board beim betreffenden Eintrag, in `entscheidungen.md`, wenn es eine Entscheidung ist |
 | Unklar, mehrdeutig, Nummer existiert nicht | – | Nichts tun, kurz im Verlauf zurückfragen |
 
 „Alle ja“ gilt für die neuen Themen, nicht für Veröffentlichungen. Veröffentlicht wird nur, was Till mit Buchstaben benennt.
