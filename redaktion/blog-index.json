@@ -1,5 +1,5 @@
 {
-  "stand": "2026-10-18T11:04:13+00:00",
+  "stand": "2026-10-19T07:44:07+00:00",
   "anzahl": 25,
   "beitraege": [
     {
@@ -27,22 +27,24 @@
         "https://www.kleinmittelki.de/ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben/",
         "https://www.kleinmittelki.de/wenn-der-meister-in-rente-geht-was-ki-im-wissensmanagement-wirklich-leistet/"
       ],
-      "zahlen": [],
+      "zahlen": [
+        "Till Zehnle 03 · Eine Zahl, genau gelesen OpenAI · Oktober 2026 >8× So stark ist laut OpenAI die Zahl der wöchentlichen Nutzer von Codex und ChatGPT Work bei kleinen und mittleren Unternehmen in der EU seit Mai gestiegen."
+      ],
       "woerter": 382
     },
     {
       "id": "6ad3924bbb342700019d7c48",
       "slug": "ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben",
       "titel": "KI-Agenten: Was nach dem Chatbot kommt und was KMU davon haben",
-      "status": "scheduled",
+      "status": "published",
       "veroeffentlicht": "2026-10-18",
-      "geaendert": "2026-10-17",
+      "geaendert": "2026-10-18",
       "kategorie": "Grundlagen",
       "interne_tags": [
         "#wissen"
       ],
       "teaser": "KI-Agenten sollen Aufgaben nicht nur beantworten, sondern erledigen. Was dahintersteckt und wo kleine und mittlere Unternehmen sinnvoll einsteigen können.",
-      "url": "https://www.kleinmittelki.de/p/c6fe3b26-1431-456c-966f-f1df8a5217ec/",
+      "url": "https://www.kleinmittelki.de/ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben/",
       "zwischenueberschriften": [
         "Warum gerade jetzt alle über KI-Agenten sprechen",
         "Was ist überhaupt ein KI-Agent?",
@@ -127,7 +129,9 @@
         "https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/",
         "https://www.kleinmittelki.de/protokoll-per-ki-selbstversuch/"
       ],
-      "zahlen": [],
+      "zahlen": [
+        "Till Zehnle 03 · Eine Zahl, genau gelesen OpenAI · Anthropic · Oktober 2026 100× So viel kostet das größte Modell pro Million Tokens im Vergleich zum kleinsten, bei OpenAI wie inzwischen auch bei Anthropic."
+      ],
       "woerter": 381
     },
     {
@@ -207,7 +211,7 @@
       ],
       "interne_links": [],
       "zahlen": [
-        "1-Flash hat 552 Milliarden Parameter und gehört damit ins Rechenzentrum, nicht auf den Büro-PC."
+        "DeepSeek-V4.1-Flash hat 552 Milliarden Parameter und gehört damit ins Rechenzentrum, nicht auf den Büro-PC."
       ],
       "woerter": 1919
     },
@@ -362,19 +366,17 @@
         "https://www.kleinmittelki.de/schatten-ki-deine-mitarbeiter-nutzen-ki-vielleicht-langst-weisst-du-wofur/"
       ],
       "zahlen": [
-        "Die KfW ermittelte für den Zeitraum 2022 bis 2024 eine KI-Nutzung von 20 Prozent unter mittelständischen Unternehmen – einschließlich Kleinstbetrieben.",
-        "[2] Die jüngere Bitkom-Befragung vom September 2026 kommt auf 57 Prozent, untersucht aber nur Unternehmen ab 20 Beschäftigten.",
+        "Die KfW ermittelte für den Zeitraum 2022 bis 2024 eine KI-Nutzung von 20 Prozent unter mittelständischen Unternehmen – einschließlich Kleinstbetrieben. [2] Die jüngere Bitkom-Befragung vom September 2026 kommt auf 57 Prozent, untersucht aber nur Unternehmen ab 20 Beschäftigten. [4] Ein direkter Vergleich wäre deshalb irreführend.",
         "Unternehmen mit KI-Nutzung nach Beschäftigtengröße · Deutschland 2025 10–49 Beschäftigte 23 % 50–249 Beschäftigte 36 % 250 und mehr Beschäftigte 57 % Anteil innerhalb der jeweiligen Größenklasse.",
         "Laut KfW sind im Mittelstand die Erzeugung natürlicher Sprache (14 Prozent) und Texterkennung (10 Prozent) deutlich verbreiteter als Data Analytics (3 Prozent) oder KI zur autonomen Bewegung von Maschinen (1 Prozent).",
         "Anteil unter den Unternehmen, die KI bereits nutzen · 2026 Kundenkontakt 72 % Marketing und Kommunikation 54 % Controlling / Rechnungswesen 25 % Internes Wissensmanagement 22 % Produktionsabläufe 22 % Quelle: Bitkom, September 2026; befragte Unternehmen ab 20 Beschäftigten, hier nur KI-Anwender.",
-        "[4] Bemerkenswert ist das interne Wissensmanagement: Dort stieg der Anteil der KI-Anwender von 11 Prozent im Jahr 2025 auf 22 Prozent.",
+        "Mehrfachnennungen möglich. [4] Bemerkenswert ist das interne Wissensmanagement: Dort stieg der Anteil der KI-Anwender von 11 Prozent im Jahr 2025 auf 22 Prozent.",
         "87 % der KI-nutzenden Unternehmen schöpfen das Potenzial nach eigener Einschätzung wenig oder überhaupt nicht aus.",
         "Bitkom, September 2026: 28 % „wenig“ + 59 % „überhaupt nicht“.",
-        "[4] Warum ich die 87 Prozent eher als Hinweis denn als Versäumnis lese, steht in meiner Einordnung der Bitkom-Studie .",
+        "Zwischen dem Einstieg und der Ausschöpfung des Potenzials bleibt dennoch eine große Lücke. [4] Warum ich die 87 Prozent eher als Hinweis denn als Versäumnis lese, steht in meiner Einordnung der Bitkom-Studie .",
         "Anteil unter den Unternehmen ohne KI-Einsatz · 2026 Fehlendes technisches Know-how 85 % Rechtliche Unsicherheit 66 % Schwer kalkulierbare Kosten 63 % Fehlende personelle Ressourcen 51 % Quelle: Bitkom, September 2026.",
-        "[4] Nur 30 Prozent der Nichtanwender sehen keine passenden Anwendungsfälle.",
-        "48 % der KI-Anwender berichten von deutlich beschleunigten internen Prozessen.",
-        "[4] 45 % sehen laut Selbstauskunft einen messbaren Beitrag zum Unternehmenserfolg."
+        "Unternehmen ohne KI-Einsatz, ab 20 Beschäftigten; Mehrfachnennungen möglich. [4] Nur 30 Prozent der Nichtanwender sehen keine passenden Anwendungsfälle.",
+        "48 % der KI-Anwender berichten von deutlich beschleunigten internen Prozessen. [4] 45 % sehen laut Selbstauskunft einen messbaren Beitrag zum Unternehmenserfolg. [4] Wichtig: Die KfW-Ergebnisse zeigen einen Zusammenhang, keinen eindeutigen Kausalnachweis."
       ],
       "woerter": 927
     },
@@ -403,7 +405,7 @@
       ],
       "interne_links": [],
       "zahlen": [
-        "793 Befragten, die KI beruflich nutzen, verwenden 29,1 Prozent auch Anwendungen, die ihr Arbeitgeber nicht bereitgestellt hat.",
+        "Von den 2.793 Befragten, die KI beruflich nutzen, verwenden 29,1 Prozent auch Anwendungen, die ihr Arbeitgeber nicht bereitgestellt hat.",
         "In Betrieben mit weniger als 50 Beschäftigten sind es 33,5 Prozent, in Unternehmen ab 250 Beschäftigten 25,5 Prozent.",
         "Der überraschendste Befund steckt aber weiter hinten: Wo Beschäftigte eine starke Förderung ihrer KI-Kompetenzen durch den Arbeitgeber wahrnehmen, nutzen 44,5 Prozent auch nicht bereitgestellte Tools, ohne wahrgenommene Förderung sind es 21,3 Prozent."
       ],
@@ -642,7 +644,9 @@
         "https://www.notion.com/de/help/export-your-content"
       ],
       "interne_links": [],
-      "zahlen": [],
+      "zahlen": [
+        "Je Kriterium null bis fünf Rohpunkte, die gewichtete Punktzahl ist Rohpunkte ÷ 5 × Gewicht."
+      ],
       "woerter": 2557
     },
     {
