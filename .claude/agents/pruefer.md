@@ -28,7 +28,8 @@ Lies vorher `kmk-schreibstil`, `kmk-formate`, `kmk-themen`, `kmk-ci-grafik`.
 10. Konkreter KMU-Bezug: Betriebsgröße, Rolle oder Prozess genannt?
 
 **Darstellung**
-11. Grafiken nur aus dem Baukasten, Werte stimmen mit der Quelle, Titel als Aussage, Quelle in der Bildunterschrift?
+11. Grafiken nur aus dem Baukasten, Werte stimmen mit der Quelle, Titel als Aussage, Quelle und Stand in der Fußzeile
+    (Daten-Karten: in der Bildunterschrift), Bildunterschrift ein Satz Lesehilfe, Alt-Text vorhanden?
 12. Vorschaubild angesehen: Titel lesbar, höchstens drei Zeilen, Logo und Lime-Kante vorhanden?
 13. Liegt der Entwurf in Ghost: Vorschau-Link öffnen (falls erreichbar) und auf Nummerierung, Box, Quellenkarte prüfen.
 14. **Wie bisher auf der Seite?** Lies einen veröffentlichten Beitrag desselben Formats in `redaktion/referenz/<slug>.html`
