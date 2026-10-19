@@ -21,7 +21,8 @@ nie als Textfarbe auf Weiß, nie flächig.
 | Kastenfläche | `#F4F4EF` | Karten in Grafiken |
 | Linie | `#E2E2DE` | Rahmen von Listen-Karten |
 
-OFFEN: Das Logo-Paket v4 nutzt `#D4FF00`. Bis Till entscheidet, gilt `#D7FF00` für alles, was wir erzeugen.
+Entschieden 19.10.2026: Für alles, was wir erzeugen, gilt `#D7FF00` – so steht es in allen veröffentlichten Beiträgen.
+Das Logo-Paket v4 (`#D4FF00`) bleibt unverändert; der Unterschied ist nicht sichtbar.
 
 ## Schriften
 
@@ -40,7 +41,7 @@ Vor jeder Grafik einen Beitrag desselben Formats dort ansehen. Was die Auswertun
 
 | Format | Grafiken im Beitrag | Art |
 |---|---|---|
-| Nachricht | meist 0, höchstens 1 | ein PNG-Schaubild, wenn ein Ablauf oder Stufen es klarer machen |
+| Nachricht | meist 0, höchstens 1 | ein PNG-Schaubild, wenn ein Ablauf oder Stufen es klarer machen; **neu (Till, 19.10.):** hat die Meldung eine starke, belegte Zahl, eine Kennzahl-Grafik (`g-zahlen` oder HTML `kennzahl`) |
 | Langtext (Grundlagen) | 4–5 | PNG-Schaubilder im Karten-System, je Hauptabschnitt eins |
 | Leitfaden Rechtslage | 2 | HTML-Karten: Rollen/Fälle (`urteil-und-pruefliste`), Prüfliste |
 | Lagebericht | 3+ | HTML-Karten: Balken und Kennzahlen mit Quelle `[n]` |
@@ -107,6 +108,8 @@ Das Skript verweigert Grafiken ohne Kicker, Titel oder Fußzeile und setzt die L
 Im `beitrag.md`: `![Schaubild: …](kmk-<thema>-g1.png "Ein Satz Lesehilfe")` – `tools/ghost.py draft` lädt lokale Bilder hoch.
 **Ansehen ist Pflicht:** Jedes PNG mit dem Read-Werkzeug öffnen (abgeschnittene Wörter, Überlappungen, Trennstriche im Titel).
 Texte in der Grafik kurz halten: Titel höchstens zwei Zeilen, Kastentext höchstens zwei Zeilen.
+**Immer mit `--social`** rendern: Das erzeugt zusätzlich `kmk-<thema>-gN-social.png` (1080 × 1350) für LinkedIn und Instagram.
+Die Kachel nicht in den Beitrag einbinden; auch sie ansehen.
 
 ## Vorschaubild (Pflicht für jeden Beitrag, 1200 × 630)
 

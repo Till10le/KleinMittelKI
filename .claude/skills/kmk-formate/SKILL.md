@@ -52,7 +52,8 @@ Zwischenüberschriften (H2) exakt so – das Theme erzeugt daraus Nummerierung 0
    Beschreibung „Originalveröffentlichung vom TT.MM.JJJJ“.
 
 Tags: Kategorie + `#empfehlung`. Umfang 260–330 Wörter; mit Schaubild bis ca. 460 Wörter.
-Höchstens ein PNG-Schaubild (z. B. Stufen), nur wenn es den Kern klarer macht – Vorbild: „Wenn der Meister in Rente geht“.
+Höchstens eine Grafik, nur wenn sie den Kern klarer macht – Vorbild: „Wenn der Meister in Rente geht“.
+Neu (Till, 19.10.2026): Hat die Meldung eine starke, belegte Zahl, bekommt sie eine Kennzahl-Grafik nach `Was ist passiert?`.
 
 ## Format 2: Anleitung (Wissen / Leitfäden)
 
@@ -63,6 +64,7 @@ Tags: `Leitfäden` + `#wissen`. Kein Quellenabschnitt nötig, Quellen im Text ve
 dann die Nachricht-Gliederung (`Was ist passiert?` … `Zum Originalartikel`), ca. 1.800 Wörter, zwei HTML-Karten
 (Rollen/Fälle und Prüfliste aus `urteil-und-pruefliste`), Bildunterschrift „Vereinfachte Orientierung, keine Rechtsberatung …“.
 Tags `Leitfäden` + `#wissen`.
+Neu (Till, 19.10.2026): Ab ca. 1.000 Wörtern auch hier die Box „Das Wichtigste in 30 Sekunden“ (Baustein `kurz`) nach dem Einstieg.
 
 ## Format 3: Langtext (Wissen / Grundlagen, Leitfäden)
 

@@ -45,8 +45,9 @@ Bildtext: <höchstens 3 Sätze>
 
 ## Instagram-Karussell im CI
 
-- Format 1080 × 1350 (4:5). OFFEN: Ein eigener Renderer dafür wird gebaut, sobald das Instagram-Konto steht.
-  Bis dahin nur die Folientexte vorbereiten.
+- Format 1080 × 1350 (4:5). Jedes Schaubild eines Beitrags gibt es fertig als Kachel `kmk-<thema>-gN-social.png`
+  im Entwurfsordner (`tools/grafik.py … --social`). Ein Karussell = Titelfolie (Vorschaubild-Text) + diese Kacheln.
+  Auch für LinkedIn-Posts als Bild nutzen (Dokument-Post mit mehreren Kacheln).
 - Weißer Grund, Ink-Schrift, ein Lime-Element pro Folie, Kategorie-Label oben, „kleinmittelki.de“ unten.
 - Keine Fotos von Personen außer Till, keine Stockbilder.
 

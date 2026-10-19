@@ -17,6 +17,7 @@ Das Fragment enthält nur den Inhalt im Karten-System der veröffentlichten Scha
 
 Pflicht: .g-kicker, .g-titel, .g-fuss (mit „kleinmittelki.de“). Die Lime-Kante unten setzt das Skript selbst.
 Bausteine und Beispiele: tools/grafik_basis.css und Skill kmk-ci-grafik.
+Mit --social zusätzlich eine Hochformat-Kachel 1080 × 1350 (<name>-social.png) für LinkedIn/Instagram.
 Ausgabe: 1600 px breit (doppelte Auflösung), auf 48 Farben reduziert. Danach das PNG ansehen!
 """
 from __future__ import annotations
@@ -28,6 +29,10 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 FONTS = ROOT / "assets" / "fonts"
 CSS = ROOT / "tools" / "grafik_basis.css"
+
+# Hochformat 4:5 für LinkedIn/Instagram: dieselbe Karte, 800 × 1000 CSS-px, Fußzeile unten → 1080 × 1350 px
+SOCIAL_CSS = (".g{min-height:1000px;display:flex;flex-direction:column}.g-kicker{align-self:flex-start}"
+              ".g-titel{font-size:46px}.g-titel+*{margin-top:auto}.g-fuss{margin-top:auto}")
 
 VERBOTEN = ["linear-gradient", "radial-gradient", "box-shadow", "<script", "font-family"]
 
@@ -41,7 +46,7 @@ def fonts_css() -> str:
     return "".join(out)
 
 
-def render(fragment: Path, out: Path) -> None:
+def render(fragment: Path, out: Path, social: bool = False) -> None:
     from playwright.sync_api import sync_playwright
     from PIL import Image
     inhalt = fragment.read_text(encoding="utf-8")
@@ -56,7 +61,8 @@ def render(fragment: Path, out: Path) -> None:
     for v in VERBOTEN:
         if v in inhalt:
             sys.exit(f"FEHLER: '{v}' ist im Schaubild nicht erlaubt (CI). Nur Klassen aus grafik_basis.css verwenden.")
-    doc = (f"<!doctype html><html><head><meta charset='utf-8'><style>{fonts_css()}{CSS.read_text()}</style>"
+    extra = SOCIAL_CSS if social else ""
+    doc = (f"<!doctype html><html><head><meta charset='utf-8'><style>{fonts_css()}{CSS.read_text()}{extra}</style>"
            f"</head><body>{inhalt}</body></html>")
     tmp = out.with_suffix(".tmp.html")
     tmp.write_text(doc, encoding="utf-8")
@@ -70,7 +76,12 @@ def render(fragment: Path, out: Path) -> None:
         pg.locator(".g").first.screenshot(path=str(out))
         b.close()
     tmp.unlink()
-    img = Image.open(out).convert("RGB").quantize(colors=48, method=Image.Quantize.MEDIANCUT)
+    img = Image.open(out).convert("RGB")
+    if social:
+        if img.height > 2000:
+            print("WARNUNG: Für die Social-Kachel zu viel Inhalt (höher als 4:5) – Text kürzen oder Kachel weglassen.")
+        img = img.resize((1080, round(img.height * 1080 / img.width)), Image.LANCZOS)
+    img = img.quantize(colors=48, method=Image.Quantize.MEDIANCUT)
     img.save(out, optimize=True)
     w, h = Image.open(out).size
     print(f"Schaubild: {out} ({w} × {h} px){' – WARNUNG: Text läuft über' if ueberlauf else ''}")
@@ -80,5 +91,10 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("fragment")
     ap.add_argument("--out", required=True)
+    ap.add_argument("--social", action="store_true",
+                    help="zusätzlich <name>-social.png im Hochformat 1080 × 1350 für LinkedIn/Instagram")
     a = ap.parse_args()
     render(Path(a.fragment), Path(a.out))
+    if a.social:
+        out = Path(a.out)
+        render(Path(a.fragment), out.with_name(out.stem + "-social.png"), social=True)
