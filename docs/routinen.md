@@ -20,6 +20,12 @@ Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden
 | KMK Mail-Lauf | Mo–Fr 8:17, 12:17, 18:17 | Standard | Gmail |
 | KMK Sonntags-Lauf | So 17:47 | KMK-Recherche | keine |
 
+Stand 19.10.2026: Redaktions-, Ghost- und Sonntags-Lauf laufen tatsächlich alle in derselben Umgebung
+(`env_01NVQBpACuFaAxhDNrjjRWve`, die Umgebung, in der sie angelegt wurden – vermutlich „KMK-Ghost“).
+Recherche läuft über die Websuche-Werkzeuge und ist davon nicht betroffen. Die Trennung „Redaktions-Lauf spricht
+Ghost nicht an“ ist damit eine Regel, keine technische Sperre; veröffentlichen kann trotzdem nur `ghost.py` mit Freigabe.
+Der Mail-Lauf läuft in der Standard-Umgebung mit Gmail.
+
 ## Ein Beispiel-Durchlauf
 
 - Mo 6:47 Scout findet 3 Themen → Mo 8:17 Mail an Till
