@@ -1,0 +1,30 @@
+KLEIN. MITTEL. KI. – Logo v4 (Block-System)
+
+Idee
+  klein → mittel → KI: drei Quadrate, das kleinste in Lime = der Punkt aus der Wortmarke.
+  Das K ist als Negativschnitt „|<“ in das große Quadrat geschnitten.
+
+Raster
+  Quadrate 50 / 80 / 130  (5 : 8 : 13, Fibonacci ≈ 1 : 1,6 : 2,6)
+  Fuge zwischen den Quadraten = Schnittbreite im K = 10
+  K-Stamm = 50 (= kleines Quadrat), Diagonalen treffen sich auf halber Höhe
+
+Farben
+  Schwarz (Ink)     #111111
+  Off-White (Paper) #F4F3EE
+  Lime (Akzent)     #D4FF00
+
+Schriften (im Logo als Pfade, keine Installation nötig)
+  Wortmarke:  Inter Tight ExtraBold (Google Fonts, OFL) – kräftiger Partner zu Instrument Sans im Blog
+  Unterzeile: Instrument Sans Medium, Sperrung 0.26em
+
+Dateien
+  kmk-logo-*                  Hauptlogo gestapelt
+  kmk-horizontal-*            Querformat mit Unterzeile (Header, Newsletter, LinkedIn-Banner)
+  kmk-horizontal-compact-*    Querformat ohne Unterzeile (Blog-Navigation)
+  kmk-wordmark-*              nur Schriftzug
+  kmk-mark-*                  nur Bildzeichen
+  kmk-avatar-*                Profilbild 512 px (LinkedIn, Ghost)
+  kmk-k-block-*               nur K-Block, für sehr kleine Größen
+  favicon.svg                 Browser-Tab
+  *-transparent               ohne Hintergrund

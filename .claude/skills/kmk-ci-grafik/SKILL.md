@@ -28,9 +28,10 @@ OFFEN: Das Logo-Paket v4 nutzt `#D4FF00`. Bis Till entscheidet, gilt `#D7FF00` f
 - **Schibsted Grotesk 700/800** – Überschriften, Titel im Vorschaubild, große Zahlen
 - **Instrument Sans 400–600** – Fließtext, Labels, Kategorie in Versalien mit Laufweite
 - Dateien liegen in `assets/fonts/` (SIL Open Font License). Nie andere Schriften verwenden.
-- Logo: Block-System v4 (drei Quadrate 5:8:13, Lime-Quadrat als Punkt). Datei: `assets/logo.png`.
-  Fehlt sie, lädt `tools/vorschaubild.py` sie beim ersten Lauf von storage.ghost.io (geht in der Umgebung „KMK-Recherche“).
-  Danach `assets/logo.png` committen, damit alle Umgebungen sie haben.
+- Logo: Block-System v4 (drei Quadrate 5:8:13, Lime-Quadrat als Punkt). Tills Original-Paket liegt in
+  `assets/logo-v4/` (SVG und PNG, alle Varianten, `Markenbasics.txt`). Nur diese Dateien verwenden, nie nachbauen.
+  Vorschaubild: `assets/logo.png` = `kmk-horizontal-light-transparent.png` (Querformat mit Unterzeile).
+  Dunkler Grund: `*-dark-*`; Profilbild/Social: `kmk-avatar-*`; sehr klein: `kmk-k-block-*`.
 
 ## Typografische Muster
 
