@@ -20,7 +20,7 @@ Aktuell-Nachrichten zusätzlich, sobald eine Meldung kommt. Immer 1–2 fertige 
 - [ ] Stimmklon-Betrug („Chef-Anruf“): woran Betriebe ihn erkennen
 - [ ] Google: Agenten-Konten in Workspace – was ändert sich für kleine Teams?
 - [ ] Google: KI-Zusammenfassungen von Bewertungen lokaler Betriebe
-- [ ] Microsoft Copilot Business: nutzungsbasierte Abrechnung – was kostet das einen 15-Personen-Betrieb?
+- [ ] Microsoft Copilot Business: nutzungsbasierte Abrechnung – was kostet das einen 15-Personen-Betrieb? (2026-10-19 Scout: Original gelesen, Microsoft Partner Center 01.10./14.10.2026 – für neue CSP-Lizenzen ab 01.12.2026 standardmäßig an, Limit 4.000 Credits/Nutzer/Monat; Deutschland zum Start ausgenommen → derzeit kein Vorschlag)
   - Hinweis Scout 2026-10-19 (ungeprüft, nur Zweitquellen): Neue Copilot-Business-Abos sollen nutzungsbasierte Abrechnung
     standardmäßig aktiviert bekommen, Standardlimit 4.000 Copilot Credits pro Nutzer und Monat; über CSP-Partner ab
     01.12.2026 (verschoben von 02.11.). Microsoft-Original (Message Center MC1476200, Partner-Center-Ankündigungen Oktober 2026)

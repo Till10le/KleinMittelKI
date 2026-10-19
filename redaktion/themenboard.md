@@ -24,19 +24,19 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 ## Aktiv
 
 ### eu-eurobarometer-ki-unternehmen
-- Status: freigegeben
+- Status: geprueft
 - Idee von Till (Mail „KMK Idee: bitte direkt fertig ausarbeiten und Entwurf schicken“, 2026-10-19 13:42, ID 1a153f817ec2e14b)
-- Titel (Arbeitstitel): „KI ist verfügbar. Warum kleine Unternehmen trotzdem noch zögern.“ (Headline-Vorschlag aus der Mail)
+- Titel: „Kosten, Recht, Wissen: Was EU-Betriebe bei KI und Personalsoftware bremst“ (Redaktion; Mail-Headline „KI ist verfügbar …“ verworfen, weil die Umfrage Verfügbarkeit nicht abfragt – Till entscheidet)
 - Rubrik/Kategorie: Aktuell / Studien & Zahlen (vorläufig, Chefredakteur)
 - Format: Nachricht (vorläufig)
-- Quelle (Hinweis aus der Mail, vom Scout NICHT gelesen, ungeprüft): Europäische Kommission, Flash Eurobarometer 578, https://europa.eu/eurobarometer/surveys/detail/3696 (laut Mail veröffentlicht 14.10.2026, Erhebung 20.03.–13.04.2026)
+- Quelle: Pressemitteilung IP/26/2160 (14.10.2026) gelesen, https://ec.europa.eu/commission/presscorner/detail/de/ip_26_2160; Bericht nur als Spiegel-PDF gelesen (Größenklassen 41/49/56/64 % nur dort, ungeprüft am europa.eu-Original); ursprünglicher Hinweis aus der Mail: Europäische Kommission, Flash Eurobarometer 578, https://europa.eu/eurobarometer/surveys/detail/3696 (laut Mail veröffentlicht 14.10.2026, Erhebung 20.03.–13.04.2026)
 - Zahlen laut Mail (alle ungeprüft, am Original prüfen): 42 % nutzen KI oder algorithmische Managementsysteme, 21 % planen es, Hürden: 50 % Investitionskosten, 49 % rechtliche Unsicherheit, 48 % fehlendes Fachwissen; rund 12.800 Unternehmen aus 27 EU-Staaten. Laut Mail: 42 % sind keine reine KI-Quote.
 - Text der Mail (wörtlich, Auszug ohne Zahlenliste): „Relevanz für KMU: Die drei größten Hürden sind nicht überraschend: Kosten, Rechtssicherheit und fehlendes Wissen. Genau diese Fragen beschäftigen einen Betrieb, der nicht über eine eigene IT-Abteilung verfügt.“ · „Meine Einordnung: Besonders interessant ist, dass technische Verfügbarkeit offenbar nicht der entscheidende Engpass ist. KI-Anwendungen gibt es mittlerweile reichlich. Schwieriger ist es, daraus einen sicheren und wirtschaftlich sinnvollen Unternehmensprozess zu machen.“ · „Redaktionelle Bewertung: 9,5/10“
 - Achtung: Der Mailtext trägt Merkmale einer ChatGPT-Ausgabe (Link mit utm_source=chatgpt.com). Ob „Meine Einordnung“ Tills eigene Einschätzung ist, ist offen → im Entwurf bis zur Bestätigung als Vorschlag (INTERN) markieren; Frage an Till gestellt.
 - Warum für KMU: Hürden Kosten, Rechtssicherheit, Wissen – betrifft Betriebe ohne eigene IT-Abteilung; Größenklassen-Auswertung im Original suchen.
 - Relevanz: vom Scout zu bewerten (Mail nennt 9,5/10)
 - Braucht von Till: Bestätigung, ob „Meine Einordnung“ von ihm stammt
-- Verlauf: 2026-10-19 Till per Mail („KMK Idee: bitte direkt fertig ausarbeiten und Entwurf schicken“) → freigegeben; Scout prüft zuerst das Original und Dubletten (Blog-Index: kein Treffer zu Eurobarometer)
+- Verlauf: 2026-10-19 Till per Mail („KMK Idee: bitte direkt fertig ausarbeiten und Entwurf schicken“) → freigegeben; Scout prüft zuerst das Original und Dubletten (Blog-Index: kein Treffer zu Eurobarometer) · 2026-10-19 Redaktions-Lauf (Abend): Autor prüfte jede Mail-Zahl am Original – alle bestätigt; 42 % = KI ODER automatisierte Systeme für Arbeit/Personal, nur KMU/Mid-Caps 1–749 Beschäftigte, 12.826 Interviews. Grafik: Balken nach Betriebsgröße + Vorschaubild. Prüfer Runde 1 nicht bestanden (Titel), Runde 2 bestanden → geprueft. Details: entwuerfe/eu-eurobarometer-ki-unternehmen/quellen.md, pruefung.md. „Meine Einordnung“ weiter INTERN-Vorschlag.
 
 ### outlook-diktat-praxistest
 - Status: vorgeschlagen
@@ -63,16 +63,16 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Verlauf: 2026-09-21 im Protokoll-Beitrag angekündigt · 2026-10-19 Scout: keine Quelle lesbar, nichts recherchiert, nur Gerüst angelegt · 2026-10-19 Scout (Redaktions-Lauf): drei Quellen gelesen – GDD-Kurzpapier 4 „Gesprächstranskription“ (Jan. 2026), GDD-Erfa-Konzept „KI-gestützte Transkription von Videokonferenzen“ v1.2 (09.06.2026, mit Vorlagen auch für Betriebe ohne Betriebsrat), Microsoft-Datenschutzseite zu Teams „intelligent recap“ (Herstellerangabe). Keine Aufsichtsbehörden-Quelle gefunden; Google/Zoom/Noota-Doku offen. Relevanz neu: 8/10 (Betroffenheit 2, Handlung 2, Quelle 1, Neuheit 1, Passung 2) – Quelle 1, weil Fachverband statt Aufsicht. · 2026-10-19 Scout (Test 2): Aufsichtsquelle gelesen – LfDI Baden-Württemberg, Leitfaden KI-Transkription (10.06.2026), allerdings für Gemeinderäte; übertragbar: Training mit Daten grundsätzlich unzulässig, Löschung nach Protokoll, menschliche Kontrolle, EU-Verarbeitung. Google-Meet-Hilfe „Take notes for me“ gelesen (Deutsch unterstützt, Zustimmungspflicht standardmäßig aus). Zoom-Seite nicht lesbar (ungeprüft). Aufsichtsquelle speziell für Unternehmen fehlt weiter. Relevanz bleibt 8/10.
 
 ### olg-hamm-chatbot-haftung
-- Status: freigegeben
+- Status: geprueft
 - Titel (Arbeitstitel): Wenn der Chatbot sich irrt, haftet der Betrieb
 - Rubrik/Kategorie: Aktuell / Entwicklungen
 - Format: Nachricht
 - Quelle: OLG Hamm, Urteil 12.05.2026, Az. 4 UKl 3/25 – Aktenzeichen und Datum nur aus Zweitquellen (beck-aktuell, Ärzteblatt u. a.), **Original (Pressemitteilung/Volltext) nicht gelesen, URL offen, ungeprüft** → überholt 2026-10-19: PM gelesen, https://www.justiz.nrw/presse/2026-05-12 (Volltext noch nicht veröffentlicht)
 - Warum für KMU: Jeder Betrieb mit Chatbot auf der Website ist betroffen (laut Urteil Fall einer Klinik; Übertragung auf andere Branchen ist Auslegung von Kommentatoren). Sachverhalt: Chatbot nannte Ärzte Fachärzte mit nicht existierenden Titeln, § 5 UWG.
-- Relevanz: vorläufig 9/10 (Betroffenheit 2, Handlung 2, Quelle 1, Neuheit 2, Passung 2) – hängt an Beschaffung des Originals. Hinweis: Urteil ist vom Mai, kein 72h-Ereignis; laut Zweitquellen nicht rechtskräftig, Revision zum BGH zugelassen.
+- Relevanz: vorläufig 9/10 (Betroffenheit 2, Handlung 2, Quelle 1, Neuheit 2, Passung 2) – hängt an Beschaffung des Originals. Hinweis: Urteil ist vom Mai, kein 72h-Ereignis; Revision zugelassen; laut NRWE rechtskräftig (Stand 19.10.2026) – Angabe „nicht rechtskräftig“ aus Zweitquellen überholt.
 - Braucht von Till: Einschätzung (noch offen – Till hat freigegeben, aber keine Einschätzung geschrieben)
 - Details: entwuerfe/olg-hamm-chatbot-haftung/quellen.md
-- Verlauf: 2026-10-12 als stärkster Kandidat vorgeschlagen · 2026-10-19 Scout: Az. und Eckdaten durch mehrere Zweitquellen gestützt, Original nicht abrufbar; vor Schreiben Original beschaffen · 2026-10-19 Scout (Redaktions-Lauf): **Original gelesen** – PM OLG Hamm vom 12.05.2026, https://www.justiz.nrw/presse/2026-05-12. Bestätigt: Az. 4 UKl 3/25, VZ NRW gg. Aesthetify GmbH, § 5 Abs. 1, Abs. 2 Nr. 3 UWG, Zurechnung trotz korrekter Daten, Chatbot kein „Dritter“, Revision zum BGH zugelassen. Nicht in der PM (weiter ungeprüft): Warnhinweis „KI kann irren“ entlastet nicht; ob Revision eingelegt; LG München I 26 O 869/26. Volltext (NRWE) steht aus. Relevanz neu: 10/10 (Quelle 2). Achtung: anderes Verfahren gegen dieselbe Firma (4 UKl 2/24, HWG) nicht verwechseln. · 2026-10-19 Scout (Test 2): **Volltext gelesen** (NRWE, https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html). Wichtig: NRWE weist das Urteil als **rechtskräftig** aus – Angabe „nicht rechtskräftig“ aus Zweitquellen damit überholt (Prüfer gegenlesen). Kein „KI kann irren“-Hinweis im Urteil; Gericht verneint aber, dass Verbraucher mit KI-Fehlern rechnen. Zurechnung: Chatbot ist technisches Mittel unter Steuerungsgewalt des Betreibers; Halluzinationen waren vorhersehbar. Relevanz bleibt 10/10. · 2026-10-19 Till per Mail (Antwort im Verlauf „KMK-Redaktion · Mo 19.10. (Test)“, 12:08): „Thema 1 bitte ausarbeiten“ → freigegeben.
+- Verlauf: 2026-10-12 als stärkster Kandidat vorgeschlagen · 2026-10-19 Scout: Az. und Eckdaten durch mehrere Zweitquellen gestützt, Original nicht abrufbar; vor Schreiben Original beschaffen · 2026-10-19 Scout (Redaktions-Lauf): **Original gelesen** – PM OLG Hamm vom 12.05.2026, https://www.justiz.nrw/presse/2026-05-12. Bestätigt: Az. 4 UKl 3/25, VZ NRW gg. Aesthetify GmbH, § 5 Abs. 1, Abs. 2 Nr. 3 UWG, Zurechnung trotz korrekter Daten, Chatbot kein „Dritter“, Revision zum BGH zugelassen. Nicht in der PM (weiter ungeprüft): Warnhinweis „KI kann irren“ entlastet nicht; ob Revision eingelegt; LG München I 26 O 869/26. Volltext (NRWE) steht aus. Relevanz neu: 10/10 (Quelle 2). Achtung: anderes Verfahren gegen dieselbe Firma (4 UKl 2/24, HWG) nicht verwechseln. · 2026-10-19 Scout (Test 2): **Volltext gelesen** (NRWE, https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html). Wichtig: NRWE weist das Urteil als **rechtskräftig** aus – Angabe „nicht rechtskräftig“ aus Zweitquellen damit überholt (Prüfer gegenlesen). Kein „KI kann irren“-Hinweis im Urteil; Gericht verneint aber, dass Verbraucher mit KI-Fehlern rechnen. Zurechnung: Chatbot ist technisches Mittel unter Steuerungsgewalt des Betreibers; Halluzinationen waren vorhersehbar. Relevanz bleibt 10/10. · 2026-10-19 Till per Mail (Antwort im Verlauf „KMK-Redaktion · Mo 19.10. (Test)“, 12:08): „Thema 1 bitte ausarbeiten“ → freigegeben. · 2026-10-19 Redaktions-Lauf (Abend): Autor schrieb Nachricht aus PM und NRWE-Volltext (beide selbst gelesen), „Meine Einordnung“ als INTERN-Vorschlag. Vorschaubild, keine Grafik. Prüfer Runde 1 nicht bestanden (zwei Bookmark-Karten), Runde 2 bestanden → geprueft. Vor Veröffentlichung Rechtskraft in NRWE nochmal ansehen. Querverweis: LG München I 26 O 869/26 jetzt am Original bestätigt (siehe ki-suche-falsche-aussagen-ueber-betrieb).
 
 ### eu-produkthaftung-software-ki
 - Status: vorgeschlagen
@@ -97,6 +97,18 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Braucht von Till: Einschätzung in 2–3 Sätzen; ob als Nachricht oder als Aufhänger für den Stimmklon-Leitfaden
 - Details: entwuerfe/ki-sicherheitsstudie-bsi-tuev/quellen.md
 - Verlauf: 2026-10-19 Scout (Redaktions-Lauf): vorgeschlagen
+
+### ki-suche-falsche-aussagen-ueber-betrieb
+- Status: vorgeschlagen
+- Titel (Arbeitstitel): Wenn Googles KI Falsches über deinen Betrieb sagt: Gerichte sehen Google in der Pflicht
+- Rubrik/Kategorie: Aktuell / Entwicklungen
+- Format: Nachricht
+- Quelle: LG München I, Endurteil 28.05.2026, Az. 26 O 869/26. Volltext gelesen: https://cdn.arstechnica.net/wp-content/uploads/2026/06/Google-AI-Overview-Munich-Court-Ruling.pdf (Kopie bei Ars Technica). Pressemitteilung 13/26 vom 12.06.2026 gelesen: https://www.justiz.bayern.de/gerichte-und-behoerden/landgericht/muenchen-1/presse/2026/13.php. Aktueller Anlass: LG Aachen, Beschluss 24.09.2026, Az. 8 O 268/26, bekannt seit 10.10.2026 – Original ist ein Scan, nicht lesbar, ungeprüft.
+- Warum für KMU: Jeder Betrieb wird gegoogelt. Die „Übersicht mit KI“ kann ihn mit Betrug oder schlechten Bewertungen in Verbindung bringen. Laut LG München I ist die KI-Übersicht ein eigener Inhalt von Google; nach konkretem Hinweis muss Google prüfen. Für Inhaber: eigenen Firmennamen suchen, Falsches mit Datum und Wortlaut sichern, über den Meldeweg konkret beanstanden, Antwort dokumentieren. Fall dort: zwei Verlage. Einstweiliger Rechtsschutz, laut PM nicht rechtskräftig.
+- Relevanz: 9/10 (Betroffenheit 2, Handlung 2, Quelle 2, Neuheit 1, Passung 2) – Neuheit 1, weil München aus Mai/Juni; neu ist die Folgeentscheidung aus Aachen. Ergänzt „Frag eine KI nach deinem eigenen Unternehmen“ und „Wenn Azubis die KI fragen“.
+- Braucht von Till: Einschätzung in 2–3 Sätzen; optional: Selbsttest mit Googles KI-Übersicht gemacht?
+- Details: entwuerfe/ki-suche-falsche-aussagen-ueber-betrieb/quellen.md
+- Verlauf: 2026-10-19 Scout (Redaktions-Lauf Abend): vorgeschlagen. Abgrenzung zu olg-hamm-chatbot-haftung: dort haftet der Betrieb für seinen eigenen Chatbot, hier spricht die KI-Suche eines Dritten über den Betrieb – gegenseitig verlinken, nicht zusammenlegen. LG Hamburg 324 O 404/25 nicht verwenden (Original nicht gelesen, Handel). Googles Meldeweg für KI-Übersichten nicht gelesen.
 
 ### rechnungen-automatisch-erfassen (Entwurf von Till in Ghost)
 - Status: frage-an-till
