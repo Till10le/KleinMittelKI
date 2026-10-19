@@ -1,0 +1,18 @@
+{
+  "bilder": {
+    "kmk-eurobarometer-g1.png": {
+      "hash": "98118e2c345ee7e495cb5220ae812b28764a47ccaf6f2cbeccd3caa6fd9b824c",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-eurobarometer-g1.png"
+    }
+  },
+  "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/vorschaubild.png",
+  "vorschaubild_hash": "6128ea371a110b29a714e0419396d67e00df9f0dc7331ab2a1da9e86ce2eb78c",
+  "id": "6ad65aed4ad712000114ea38",
+  "uuid": "d77e3c23-2a20-4e08-902e-c7eb02041c7e",
+  "slug": "eu-eurobarometer-ki-unternehmen",
+  "titel": "Kosten, Recht, Wissen: Was EU-Betriebe bei KI und Personalsoftware bremst",
+  "status": "draft",
+  "updated_at": "2026-10-19T18:01:17.000Z",
+  "vorschau": "https://www.kleinmittelki.de/p/d77e3c23-2a20-4e08-902e-c7eb02041c7e/",
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6ad65aed4ad712000114ea38"
+}
