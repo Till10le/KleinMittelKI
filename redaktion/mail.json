@@ -16,11 +16,22 @@
         "rechnungen-automatisch-erfassen",
         "immobiliensuche-mit-ki",
         "kundenanfragen-antworten-praxistest"
+      ],
+      "fragen_offen": [
+        {
+          "nr": "F1",
+          "slug": "olg-hamm-chatbot-haftung",
+          "frage": "Einschätzung (2–3 Sätze)",
+          "mail_id": "1a153abb707e8177"
+        }
       ]
     }
   ],
   "eigene_ids": [
-    "1a1538fd261463cc"
+    "1a1538fd261463cc",
+    "1a153abb707e8177"
   ],
-  "verarbeitet": []
+  "verarbeitet": [
+    "1a153a1b83bc9cc0"
+  ]
 }
