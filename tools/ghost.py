@@ -18,6 +18,7 @@ Befehle:
                                   Veröffentlichen/einplanen. Nur mit gültiger Freigabe. Nie mit E-Mail-Versand.
     newsletter <slug> [--newsletter <newsletter-slug>] --zeitpunkt ISO
                                   Newsletter-Ausgabe einplanen. Nur mit gültiger Freigabe (art newsletter).
+    referenz [--auch <slug> …]    Nur lesen: HTML aller veröffentlichten Beiträge nach redaktion/referenz/
     abarbeiten                    Alle offenen Freigaben ausführen (auch die per Mail von tools/mailfreigabe.py).
 
 Es gibt bewusst keinen Löschbefehl.
@@ -473,6 +474,23 @@ def _plain(html: str) -> str:
     return re.sub(r"\s+", " ", t).strip()
 
 
+def cmd_referenz(a) -> None:
+    """Nur lesen: HTML und Metadaten aller veröffentlichten Beiträge nach redaktion/referenz/ (Vorbild für Aufbau und Grafiken)."""
+    out = ROOT / "redaktion" / "referenz"
+    out.mkdir(parents=True, exist_ok=True)
+    posts = api("GET", "posts/", {"limit": "all", "formats": "html,lexical", "include": "tags",
+                                  "filter": "status:[published,sent,scheduled]"})["posts"]
+    for slug in a.auch or []:
+        posts.append(find_post(slug, formats="html,lexical"))
+    for p in posts:
+        (out / f"{p['slug']}.html").write_text(p.get("html") or "", encoding="utf-8")
+        meta = {k: p.get(k) for k in ("title", "slug", "status", "published_at", "custom_excerpt", "feature_image",
+                                     "og_image", "twitter_description", "url", "email_only", "lexical")}
+        meta["tags"] = [t["name"] for t in p.get("tags", [])]
+        (out / f"{p['slug']}.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"{len(posts)} Beiträge nach {out} geschrieben")
+
+
 def cmd_index(_a) -> None:
     posts = api("GET", "posts/", {"limit": "all", "formats": "html", "include": "tags",
                                   "order": "published_at desc"})["posts"]
@@ -520,6 +538,8 @@ def main(argv=None) -> int:
     s = sub.add_parser("upload"); s.add_argument("datei"); s.set_defaults(fn=cmd_upload)
     s = sub.add_parser("draft"); s.add_argument("ordner"); s.set_defaults(fn=cmd_draft)
     sub.add_parser("index").set_defaults(fn=cmd_index)
+    s = sub.add_parser("referenz"); s.add_argument("--auch", nargs="*", help="zusätzliche Slugs (z. B. Vorlagen-Entwürfe)")
+    s.set_defaults(fn=cmd_referenz)
     s = sub.add_parser("freigabe"); s.add_argument("ref"); s.add_argument("--art", required=True, choices=["beitrag", "newsletter"])
     s.add_argument("--zitat", required=True); s.set_defaults(fn=cmd_freigabe)
     s = sub.add_parser("publish"); s.add_argument("ref"); s.add_argument("--zeitpunkt"); s.set_defaults(fn=cmd_publish)
