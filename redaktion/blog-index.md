@@ -1,6 +1,6 @@
 # Blog-Index
 
-Stand: 2026-10-19T07:44:07+00:00 · 25 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
+Stand: 2026-10-19T08:12:46+00:00 · 25 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
 
 | Datum | Status | Kategorie | Titel | Quellen | Zahlen |
 |---|---|---|---|---|---|
