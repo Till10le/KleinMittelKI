@@ -13,14 +13,16 @@ dass die Redaktion verlässlich, konkret und im CI liefert – und dass nichts o
 
 ## Der Wochenrhythmus
 
-Till entscheidet per Mail, montags, mittwochs und freitags. Drei Läufe arbeiten zusammen (`docs/routinen.md`):
+Till entscheidet per Mail: montags, mittwochs und freitags über Themen und Entwürfe, sonntags über den Newsletter.
+Die Läufe arbeiten zusammen (`docs/routinen.md`):
 
 | Lauf | Wann | Umgebung | Aufgabe |
 |---|---|---|---|
-| Redaktions-Lauf | Mo, Mi, Fr 6:47 | KMK-Recherche (offenes Internet, kein Ghost) | Scout; freigegebene Themen schreiben, Grafiken, Prüfung |
-| Ghost-Lauf | Mo–Fr 7:47, 12:47, 18:47 | KMK-Ghost (nur Ghost) | Index; geprüfte Entwürfe nach Ghost; Freigaben ausführen |
+| Redaktions-Lauf | Mo, Mi, Fr 6:47 | Standard (Websuche/Webabruf, kein Ghost) | Scout; freigegebene Themen schreiben, Grafiken, Prüfung |
+| Ghost-Lauf | So–Fr 7:47, 12:47, 18:47, 21:47 | KMK-Ghost (nur Ghost) | Index; geprüfte Entwürfe nach Ghost; Freigaben ausführen |
 | Mail-Lauf | Mo–Fr 8:17, 12:17, 18:17 | Standard, mit Gmail | Redaktions-Mail Mo/Mi/Fr 8:17; Tills Antworten auswerten; Bestätigungen |
-| Sonntags-Lauf | So 17:47 | KMK-Recherche | Ideen, Wochenbericht, Newsletter-Entwurf, Social-Paket |
+| Mail-Lauf Sonntag | So 10:17, 12:17, 15:17, 18:17, 21:17 | Standard, mit Gmail | Newsletter-Mail 10:17; Änderungen einarbeiten; „N ja“ eintragen |
+| Sonntags-Lauf | So 9:47 | Standard (Websuche/Webabruf) | Ideen, Wochenbericht, Newsletter-Entwurf, Social-Paket |
 
 Stell fest, in welchem Lauf du bist: Der Prompt der Routine sagt es dir.
 
@@ -32,9 +34,10 @@ Stell fest, in welchem Lauf du bist: Der Prompt der Routine sagt es dir.
    zwei Runden, danach `frage-an-till` mit den offenen Punkten. Bestanden → Status `geprueft`.
 3. Bericht `redaktion/berichte/JJJJ-MM-TT.md` (Abschnitt „Redaktion“), Commit „Redaktion <Datum>“, push.
 
-## Ghost-Lauf (Mo–Fr 7:47, 12:47, 18:47)
+## Ghost-Lauf (So–Fr 7:47, 12:47, 18:47, 21:47)
 
-1. `python3 tools/ghost.py abarbeiten` – führt alle offenen Freigaben aus (von Till per Mail oder Chat).
+1. `python3 tools/ghost.py abarbeiten` – führt alle offenen Freigaben aus (von Till per Mail oder Chat), auch
+   „newsletter-text“ (legt den freigegebenen Newsletter an und plant ihn ein) und „stopp“ (Einplanung zurück).
    Ergebnis ins Board: veröffentlicht → Status `veroeffentlicht` mit URL; eingeplant → `eingeplant` mit Zeit;
    Sperre („nach Freigabe geändert“) → Status `wartet-auf-till` und Vermerk „neu freigeben“.
 2. Nur um 7:47 Uhr: `python3 tools/ghost.py index`, dann jeden Eintrag mit Status `geprueft`:
@@ -55,13 +58,18 @@ Lies den Skill `kmk-mail` vollständig. Dann:
    `wartet-auf-till` (mit Vorschau-Link) und dem Newsletter, falls er auf Freigabe wartet. Nichts zu entscheiden: keine Mail.
 4. `redaktion/mail.json` aktualisieren, Commit „Mail <Datum> <Zeit>“, push. Nichts passiert: sofort beenden, kein Commit.
 
-## Sonntags-Lauf (So 17:47)
+**Sonntags** (So 10:17, 12:17, 15:17, 18:17, 21:17): um 10:17 die Newsletter-Mail nach `kmk-mail` schicken; danach Tills
+Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), prüfen (Prüfer), neue Fassung zurückmailen;
+„N ja“ über `mailfreigabe.py --art newsletter-text` eintragen. Mo–Fr gelten Schritte 1–4 auch für den Newsletter-Verlauf.
+
+## Sonntags-Lauf (So 9:47)
 
 1. **Ideen**-Agent: 3–5 neue Ideen über Nachrichten hinaus, Monatsrhythmus prüfen, Puffer prüfen. Die zwei stärksten
    als `vorgeschlagen` ins Board – sie kommen Montag in die Mail.
 2. **Analyst**: Wochenbericht.
 3. Newsletter-Entwurf für Dienstag nach Skill `kmk-newsletter` als `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md`,
-   vom **Prüfer** prüfen lassen, Status `geprueft`. Der Ghost-Lauf Montag 7:47 legt ihn in Ghost an, die Montags-Mail fragt Till.
+   vom **Prüfer** prüfen lassen, Status `newsletter-vorschlag`. **Nicht nach Ghost** – der Mail-Lauf Sonntag 10:17 schickt
+   ihn Till; erst nach „N ja“ legt der Ghost-Lauf ihn an und plant ihn ein.
 4. **Social**: Paket für die Woche nach Skill `kmk-social`.
 5. Commit „Sonntag <Datum>“, push.
 

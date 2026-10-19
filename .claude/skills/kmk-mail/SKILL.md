@@ -5,7 +5,8 @@ description: Wie die KMK-Redaktion per Gmail mit Till spricht – Redaktions-Mai
 
 # Mail mit Till
 
-Till entscheidet per Mail. Er bekommt **montags, mittwochs und freitags** eine Redaktions-Mail und antwortet darauf.
+Till entscheidet per Mail. Er bekommt **montags, mittwochs und freitags** eine Redaktions-Mail und **sonntags** den
+Newsletter-Vorschlag für Dienstag und antwortet darauf.
 Nur der **Mail-Lauf** schickt und liest Mails (Gmail-Connector, Konto `till.zehnle@gmail.com`). Absender und Empfänger
 sind dieselbe Adresse – Till schreibt sich selbst.
 
@@ -51,8 +52,8 @@ A · <Titel>
    – Veröffentlichung: sofort / Dienstag 7:00 (Vorschlag)
    – Antwort „A ja“ = so veröffentlichen · „A ändern: …“ = überarbeiten
 
-NEWSLETTER
-N · #<Nr>: <Betreff> – Versand Dienstag 7:00 – Vorschau: <Link>
+NEWSLETTER (nur falls Sonntag noch nicht freigegeben)
+N · #<Nr>: <Betreff> – Versand Dienstag 7:00 – Fassung im Newsletter-Verlauf vom Sonntag
    – Antwort „N ja“ = einplanen
 
 IN ARBEIT (nur zur Info)
@@ -62,6 +63,20 @@ IN ARBEIT (nur zur Info)
 Regeln: höchstens 5 neue Themen. Fertige Entwürfe nur mit Vorschau-Link aus `entwuerfe/<slug>/ghost.json`.
 Aktuell-Nachrichten Vorschlag „sofort“, Hauptbeiträge (Wissen, Praxistest) Vorschlag „Dienstag 7:00“.
 Kein Fließtext, keine Floskeln – Stichworte, die Till in zwei Minuten liest.
+
+## Newsletter-Mail (Sonntag 10:17, eigener Verlauf)
+
+Betreff: `KMK-Newsletter · Di 27.10. · Fassung 1`. Inhalt: oben 3–5 Stichpunkte (Thema der Woche, Zahl der Woche,
+was neu auf dem Blog ist), darunter der **vollständige Text** so, wie er verschickt wird (HTML wie im Newsletter,
+INTERN-Absätze weglassen, Quelle mit Link). Unten: „Antwort: Änderungen einfach dazuschreiben · „N ja“ = so für
+Dienstag 7:00 einplanen · „N stopp“ = Einplanung zurücknehmen“.
+
+Vor dem Senden: `python3 tools/mailfreigabe.py hash <slug>` und den Fingerabdruck mit der Fassungsnummer im Verlauf
+in `mail.json` speichern (`"fassungen": [{"nr": 1, "hash": "…", "mail_id": "…"}]`).
+
+Ändert Till etwas: einarbeiten (Autor), Prüfer prüft, neue Fassung im selben Verlauf (`Fassung 2`), neuen Fingerabdruck
+speichern. „N ja“ gilt immer für die **zuletzt gemailte** Fassung – deren Fingerabdruck geht als `--text-hash` an
+`mailfreigabe.py`. Kam nach dieser Fassung noch ein Änderungswunsch, ist „N ja“ unklar → zurückfragen.
 
 ## Tills Antwort auswerten
 
@@ -79,7 +94,9 @@ Zitierte Teile (Zeilen mit `>` oder unter „Am … schrieb …“) ignorieren; 
 | „A ja“, „A veröffentlichen“, „A raus“ | Veröffentlichen | `python3 tools/mailfreigabe.py <slug> --art beitrag --zitat "<sein Text>" --mail-id <ID> --von till.zehnle@gmail.com --zeitpunkt <sofort oder UTC>` |
 | „A Dienstag“, „A morgen 8 Uhr“ | Zu dieser Zeit | wie oben, Zeitpunkt in UTC umrechnen |
 | „A ändern: …“ | Überarbeiten | Status `zurueck`, Wünsche wörtlich ins Board |
-| „N ja“ | Newsletter einplanen | `tools/mailfreigabe.py <slug> --art newsletter … --zeitpunkt <Di 7:00 in UTC>` |
+| „N ja“ | Newsletter einplanen | `tools/mailfreigabe.py <slug> --art newsletter-text --text-hash <Fingerabdruck der zuletzt gemailten Fassung> --zitat … --mail-id … --von till.zehnle@gmail.com --zeitpunkt <Di 7:00 in UTC>` |
+| „N: …“ / Änderungswünsche | Newsletter überarbeiten | einarbeiten, prüfen, neue Fassung mailen (siehe Newsletter-Mail) |
+| „N stopp“, „A stopp“ | Einplanung zurücknehmen | `tools/mailfreigabe.py <slug> --art stopp --zitat … --mail-id … --von till.zehnle@gmail.com` |
 | Unklar, mehrdeutig, Nummer existiert nicht | – | Nichts tun, kurz im Verlauf zurückfragen |
 
 „Alle ja“ gilt für die neuen Themen, nicht für Veröffentlichungen. Veröffentlicht wird nur, was Till mit Buchstaben benennt.

@@ -45,6 +45,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
 import lexical  # noqa: E402
+from mailfreigabe import inhalt_hash  # noqa: E402
 
 FREIGABEN = ROOT / "redaktion" / "freigaben.jsonl"
 INDEX_JSON = ROOT / "redaktion" / "blog-index.json"
@@ -216,7 +217,11 @@ def _tags(meta: dict) -> list[dict]:
 
 
 def cmd_draft(a) -> None:
-    folder = Path(a.ordner)
+    state = _draft(Path(a.ordner))
+    print(json.dumps({k: state[k] for k in ("id", "status", "vorschau", "admin")}, ensure_ascii=False, indent=2))
+
+
+def _draft(folder: Path) -> dict:
     md = folder / "beitrag.md"
     if not md.exists():
         raise GhostFehler(f"{md} fehlt")
@@ -268,7 +273,7 @@ def cmd_draft(a) -> None:
                   "updated_at": p["updated_at"], "vorschau": f"{PUBLIC_SITE}/p/{p['uuid']}/",
                   "admin": f"{base_url()}/ghost/#/editor/post/{p['id']}"})
     state_file.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
-    print(json.dumps({k: state[k] for k in ("id", "status", "vorschau", "admin")}, ensure_ascii=False, indent=2))
+    return state
 
 # ---------- Freigabe-Sperre ----------
 
@@ -347,10 +352,13 @@ def _aktiver_newsletter() -> str:
     return nls[0]["slug"]
 
 
-def _newsletter(p: dict, nl_slug: str | None, zeitpunkt: str) -> dict:
+def _newsletter(p: dict, nl_slug: str | None, zeitpunkt: str, text_freigabe: dict | None = None) -> dict:
     if not zeitpunkt or zeitpunkt == "sofort":
         raise GhostFehler("Newsletter werden nur eingeplant: Zeitpunkt in UTC angeben (Dienstag 7:00 Uhr deutscher Zeit).")
-    _pruefe_freigabe(p, "newsletter")
+    if text_freigabe is None:
+        _pruefe_freigabe(p, "newsletter")
+    # sonst: Freigabe des Mail-Texts; _newsletter_aus_text hat den Inhalt gegen den Hash geprüft
+    # und den Entwurf eben selbst aus genau diesem Stand angelegt.
     lex, removed = _ohne_intern(p["lexical"])
     rest = _restliche_platzhalter(lex)
     if rest:
@@ -377,28 +385,72 @@ def cmd_newsletter(a) -> None:
     print(json.dumps(_newsletter(p, a.newsletter, a.zeitpunkt), ensure_ascii=False, indent=2))
 
 
+def _newsletter_aus_text(f: dict) -> dict | None:
+    """Till hat den Newsletter-Text per Mail freigegeben: Inhalt prüfen, Entwurf anlegen, einplanen."""
+    folder = ROOT / "entwuerfe" / f["slug"]
+    jetzt = inhalt_hash(folder)
+    if jetzt != f.get("text_hash"):
+        raise GhostFehler(f"SPERRE: Der Newsletter wurde nach Tills Freigabe geändert "
+                          f"(freigegeben: {str(f.get('text_hash'))[:12]}, jetzt: {jetzt[:12]}). Neu freigeben lassen.")
+    state_file = folder / "ghost.json"
+    if state_file.exists():
+        alt = json.loads(state_file.read_text())
+        if alt.get("id"):
+            cur = find_post(alt["id"], formats="lexical")
+            if cur["status"] != "draft":
+                return None  # schon eingeplant oder versendet
+    state = _draft(folder)
+    p = find_post(state["id"], formats="lexical")
+    erg = _newsletter(p, None, f.get("zeitpunkt", ""), text_freigabe=f)
+    erg["vorschau"] = state.get("vorschau")
+    state.update({"status": erg["status"], "published_at": erg.get("published_at")})
+    state_file.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
+    return erg
+
+
+def _zurueckziehen(f: dict) -> dict | None:
+    """Till hat per Mail „stopp“ gesagt: eingeplanten Beitrag/Newsletter zurück auf Entwurf (nichts wird gelöscht)."""
+    state_file = ROOT / "entwuerfe" / f["slug"] / "ghost.json"
+    if not state_file.exists():
+        return None
+    p = find_post(json.loads(state_file.read_text())["id"], formats="lexical")
+    if p["status"] == "draft":
+        return None  # nichts eingeplant (oder schon zurückgezogen)
+    if p["status"] != "scheduled":
+        return {"slug": f["slug"], "status": p["status"], "hinweis": "stopp kam zu spät: bereits veröffentlicht/versendet"}
+    q = api("PUT", f"posts/{p['id']}/", body={"posts": [{"status": "draft", "updated_at": p["updated_at"]}]})["posts"][0]
+    return {"slug": q["slug"], "status": q["status"], "hinweis": "Einplanung zurückgezogen"}
+
+
 def cmd_abarbeiten(_a) -> None:
-    """Führt alle offenen Freigaben aus: Entwurf + passende Freigabe zum aktuellen Stand → veröffentlichen/einplanen."""
+    """Führt die jeweils neueste Freigabe je Entwurf aus: veröffentlichen, einplanen, Newsletter aus Mail-Text, stopp."""
     ergebnisse = []
     gesehen = set()
     for f in reversed(_freigaben()):
-        if f["post_id"] in gesehen:
+        key = f.get("slug") or f.get("post_id")
+        if key in gesehen:
             continue
-        gesehen.add(f["post_id"])
+        gesehen.add(key)
         try:
+            if f["art"] == "stopp":
+                r = _zurueckziehen(f)
+                if r:
+                    ergebnisse.append(r)
+                continue
+            if f["art"] == "newsletter-text":
+                r = _newsletter_aus_text(f)
+                if r:
+                    ergebnisse.append(r)
+                continue
             p = find_post(f["post_id"], formats="lexical")
-        except GhostFehler as e:
-            ergebnisse.append({"slug": f["slug"], "fehler": str(e)})
-            continue
-        if p["status"] != "draft":
-            continue
-        try:
+            if p["status"] != "draft":
+                continue
             if f["art"] == "newsletter":
                 ergebnisse.append(_newsletter(p, None, f.get("zeitpunkt", "")))
             else:
                 ergebnisse.append(_publish(p, f.get("zeitpunkt")))
         except GhostFehler as e:
-            ergebnisse.append({"slug": f["slug"], "fehler": str(e)})
+            ergebnisse.append({"slug": f.get("slug"), "fehler": str(e)})
     print(json.dumps({"ausgefuehrt": ergebnisse}, ensure_ascii=False, indent=2))
 
 # ---------- Blog-Index ----------

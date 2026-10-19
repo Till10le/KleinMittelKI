@@ -8,6 +8,8 @@ Geplante Claude-Läufe in der Cloud. Sie laufen, auch wenn Tills Rechner aus ist
 Montags, mittwochs und freitags gegen 8:20 Uhr kommt eine Mail an `till.zehnle@gmail.com`:
 neue Themen (Nummern), fertige Entwürfe mit Vorschau-Link (Buchstaben), ggf. der Newsletter (N).
 Till antwortet einfach, z. B. „1 und 3. Zu 1: … · 2 nein, zu technisch · A ja · N ja“.
+Sonntags gegen 10:20 Uhr kommt der Newsletter-Vorschlag für Dienstag mit vollem Text. Till schreibt Änderungen
+zurück (Antworten um 12:17, 15:17, 18:17, 21:17) und gibt mit „N ja“ frei – dann wird er angelegt und für Dienstag 7:00 eingeplant.
 Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden Mo–Fr um 12:17 und 18:17 gelesen
 (und um 8:17); Veröffentlichungen laufen eine halbe Stunde später.
 
@@ -16,9 +18,10 @@ Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden
 | Name | Zeitplan | Umgebung | Connectors |
 |---|---|---|---|
 | KMK Redaktions-Lauf | Mo, Mi, Fr 6:47 | Standard (Websuche + Webabruf) | – |
-| KMK Ghost-Lauf | Mo–Fr 7:47, 12:47, 18:47 | KMK-Ghost | keine |
+| KMK Ghost-Lauf | So–Fr 7:47, 12:47, 18:47, 21:47 | KMK-Ghost | keine |
 | KMK Mail-Lauf | Mo–Fr 8:17, 12:17, 18:17 | Standard | Gmail |
-| KMK Sonntags-Lauf | So 17:47 | Standard (Websuche + Webabruf) | – |
+| KMK Mail-Lauf Sonntag | So 10:17, 12:17, 15:17, 18:17, 21:17 | Standard | Gmail |
+| KMK Sonntags-Lauf | So 9:47 | Standard (Websuche + Webabruf) | – |
 
 Stand 19.10.2026: Der erste Testlauf zeigte, dass Redaktions- und Sonntags-Lauf in der Ghost-Umgebung liefen und
 kein Internet hatten (DNS-Fehler, keine Originalquelle lesbar). Beide sind deshalb neu angelegt und laufen in der

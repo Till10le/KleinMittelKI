@@ -10,12 +10,18 @@ Versprechen auf der Seite: „KI verstehen. Ohne jeden Tag alles lesen zu müsse
 
 ## Ablauf
 
-1. **Sonntagabend** (Routine): Entwurf schreiben – `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md` mit Tag `#newsletter`,
-   Kategorie leer lassen. Als Ghost-Entwurf anlegen. Vorher prüfen, ob es für diesen Dienstag schon einen gibt (keine Dubletten).
-   Themen der Vorwoche nicht wiederholen (frühere `newsletter-*`-Ordner und Index lesen).
-2. **Till** liest die Vorschau und antwortet „Newsletter ja“ oder mit Änderungen.
-3. Chefredakteur: Freigabe der Art `newsletter` eintragen, dann
-   `python3 tools/ghost.py newsletter <slug> --newsletter <slug-des-newsletters> --zeitpunkt <Dienstag 7:00 in UTC>`.
+Till will den Vorschlag **sonntags per Mail**, schreibt ggf. hin und her und gibt dann frei. Erst danach entsteht
+der Ghost-Entwurf, und er wird sofort für Dienstag 7:00 eingeplant.
+
+1. **Sonntag 9:47** (Sonntags-Lauf): Entwurf schreiben – `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md` mit Tag `#newsletter`,
+   Kategorie leer lassen, Prüfer prüft. **Nicht in Ghost anlegen.** Vorher prüfen, ob es für diesen Dienstag schon einen gibt
+   (keine Dubletten). Themen der Vorwoche nicht wiederholen (frühere `newsletter-*`-Ordner und Index lesen).
+2. **Sonntag 10:17** (Mail-Lauf Sonntag): Newsletter-Mail an Till mit vollem Text (Skill `kmk-mail`, Abschnitt Newsletter).
+3. **Sonntag 12:17, 15:17, 18:17, 21:17:** Tills Änderungswünsche einarbeiten, Prüfer erneut, neue Fassung zurückmailen.
+4. **„N ja“** → `tools/mailfreigabe.py … --art newsletter-text --text-hash <Fingerabdruck der zuletzt gemailten Fassung>`.
+   Der nächste Ghost-Lauf (12:47, 18:47, 21:47 bzw. Montag) legt den Entwurf an und plant ihn ein (`ghost.py abarbeiten`).
+   Bestätigung mit Vorschau-Link im nächsten Mail-Lauf. Spätestmögliche Freigabe: Montag 18:17.
+5. **„N stopp“** → `--art stopp`: der nächste Ghost-Lauf nimmt die Einplanung zurück (Entwurf bleibt).
 
 ## Aufbau einer Ausgabe
 
