@@ -25,13 +25,30 @@
           "mail_id": "1a153abb707e8177"
         }
       ]
+    },
+    {
+      "datum": "2026-10-19",
+      "thread_id": "1a153f817ec2e14b",
+      "betreff": "KMK Idee: bitte direkt fertig ausarbeiten und Entwurf schicken",
+      "art": "idee",
+      "eintraege": {},
+      "fragen_offen": [
+        {
+          "nr": "F1",
+          "slug": "eu-eurobarometer-ki-unternehmen",
+          "frage": "Ist „Meine Einordnung“ Tills eigene Einschätzung?",
+          "mail_id": "1a154f5d78916f05"
+        }
+      ]
     }
   ],
   "eigene_ids": [
     "1a1538fd261463cc",
-    "1a153abb707e8177"
+    "1a153abb707e8177",
+    "1a154f5d78916f05"
   ],
   "verarbeitet": [
-    "1a153a1b83bc9cc0"
+    "1a153a1b83bc9cc0",
+    "1a153f817ec2e14b"
   ]
 }

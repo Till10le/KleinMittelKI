@@ -23,6 +23,21 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 
 ## Aktiv
 
+### eu-eurobarometer-ki-unternehmen
+- Status: freigegeben
+- Idee von Till (Mail „KMK Idee: bitte direkt fertig ausarbeiten und Entwurf schicken“, 2026-10-19 13:42, ID 1a153f817ec2e14b)
+- Titel (Arbeitstitel): „KI ist verfügbar. Warum kleine Unternehmen trotzdem noch zögern.“ (Headline-Vorschlag aus der Mail)
+- Rubrik/Kategorie: Aktuell / Studien & Zahlen (vorläufig, Chefredakteur)
+- Format: Nachricht (vorläufig)
+- Quelle (Hinweis aus der Mail, vom Scout NICHT gelesen, ungeprüft): Europäische Kommission, Flash Eurobarometer 578, https://europa.eu/eurobarometer/surveys/detail/3696 (laut Mail veröffentlicht 14.10.2026, Erhebung 20.03.–13.04.2026)
+- Zahlen laut Mail (alle ungeprüft, am Original prüfen): 42 % nutzen KI oder algorithmische Managementsysteme, 21 % planen es, Hürden: 50 % Investitionskosten, 49 % rechtliche Unsicherheit, 48 % fehlendes Fachwissen; rund 12.800 Unternehmen aus 27 EU-Staaten. Laut Mail: 42 % sind keine reine KI-Quote.
+- Text der Mail (wörtlich, Auszug ohne Zahlenliste): „Relevanz für KMU: Die drei größten Hürden sind nicht überraschend: Kosten, Rechtssicherheit und fehlendes Wissen. Genau diese Fragen beschäftigen einen Betrieb, der nicht über eine eigene IT-Abteilung verfügt.“ · „Meine Einordnung: Besonders interessant ist, dass technische Verfügbarkeit offenbar nicht der entscheidende Engpass ist. KI-Anwendungen gibt es mittlerweile reichlich. Schwieriger ist es, daraus einen sicheren und wirtschaftlich sinnvollen Unternehmensprozess zu machen.“ · „Redaktionelle Bewertung: 9,5/10“
+- Achtung: Der Mailtext trägt Merkmale einer ChatGPT-Ausgabe (Link mit utm_source=chatgpt.com). Ob „Meine Einordnung“ Tills eigene Einschätzung ist, ist offen → im Entwurf bis zur Bestätigung als Vorschlag (INTERN) markieren; Frage an Till gestellt.
+- Warum für KMU: Hürden Kosten, Rechtssicherheit, Wissen – betrifft Betriebe ohne eigene IT-Abteilung; Größenklassen-Auswertung im Original suchen.
+- Relevanz: vom Scout zu bewerten (Mail nennt 9,5/10)
+- Braucht von Till: Bestätigung, ob „Meine Einordnung“ von ihm stammt
+- Verlauf: 2026-10-19 Till per Mail („KMK Idee: bitte direkt fertig ausarbeiten und Entwurf schicken“) → freigegeben; Scout prüft zuerst das Original und Dubletten (Blog-Index: kein Treffer zu Eurobarometer)
+
 ### outlook-diktat-praxistest
 - Status: vorgeschlagen
 - Titel (Arbeitstitel): Outlook räumt diktierte Texte auf – ein Praxistest
