@@ -26,13 +26,22 @@ Die Läufe arbeiten zusammen (`docs/routinen.md`):
 
 Stell fest, in welchem Lauf du bist: Der Prompt der Routine sagt es dir.
 
-## Redaktions-Lauf (Mo, Mi, Fr 6:47)
+## Redaktions-Lauf (Mo, Mi, Fr 6:47 – und als Express-Lauf sofort nach Tills Ja)
+
+**Express-Lauf:** Der Mail-Lauf startet den Redaktions-Lauf außer der Reihe, sobald Till ein Thema freigibt
+(„1 und 3“, „I1 ja“, „A ändern: …“, Idee-Mail mit „ausarbeiten“). Steht im Start-Text „Express“: Schritt 1 (Scout)
+auslassen, nur Schritt 2–4. So hat Till den Vorschau-Link meist innerhalb einer Stunde.
 
 1. **Scout**: neue Meldungen seit dem letzten Lauf, höchstens 3 Vorschläge, Status `vorgeschlagen`.
 2. Für jedes Thema mit Status `freigegeben` oder `zurueck`: **Autor** (Text, mit Tills Einschätzung aus dem Board),
    dann **Grafik** (Schaubilder, Vorschaubild), dann **Prüfer**. Nicht bestanden → zurück an Autor/Grafik, höchstens
    zwei Runden, danach `frage-an-till` mit den offenen Punkten. Bestanden → Status `geprueft`.
 3. Bericht `redaktion/berichte/JJJJ-MM-TT.md` (Abschnitt „Redaktion“), Commit „Redaktion <Datum>“, push.
+4. **Weitergeben:** Ist in diesem Lauf mindestens ein Eintrag `geprueft` geworden: Ghost-Lauf starten
+   (`fire_trigger` trig_01DYxG6NMz2Lfzf6wG8BTikR, ohne Zusatztext). Dann alle 30 Sekunden `git pull`, bis für diese
+   Einträge `entwuerfe/<slug>/ghost.json` mit Vorschau-Link im Repo liegt (höchstens 15 Minuten), dann den Mail-Lauf
+   starten (`fire_trigger` trig_018YcDaop5Q99WuB1JMAueRE, ohne Zusatztext). Kommt ghost.json nicht: im Bericht vermerken,
+   der nächste geplante Ghost- und Mail-Lauf holt es nach.
 
 ## Ghost-Lauf (So–Fr 7:47, 12:47, 18:47, 21:47)
 
@@ -40,8 +49,9 @@ Stell fest, in welchem Lauf du bist: Der Prompt der Routine sagt es dir.
    „newsletter-text“ (legt den freigegebenen Newsletter an und plant ihn ein) und „stopp“ (Einplanung zurück).
    Ergebnis ins Board: veröffentlicht → Status `veroeffentlicht` mit URL; eingeplant → `eingeplant` mit Zeit;
    Sperre („nach Freigabe geändert“) → Status `wartet-auf-till` und Vermerk „neu freigeben“.
-2. Nur um 7:47 Uhr: `python3 tools/ghost.py index` und `python3 tools/ghost.py referenz` (Vorbilder aktuell halten), dann jeden Eintrag mit Status `geprueft`:
+2. **In jedem Lauf:** jeden Eintrag mit Status `geprueft`:
    `python3 tools/ghost.py draft entwuerfe/<slug>` → Status `wartet-auf-till`, Vorschau-Link aus `ghost.json` ins Board.
+   Nur um 7:47 Uhr zusätzlich: `python3 tools/ghost.py index` und `python3 tools/ghost.py referenz` (Vorbilder aktuell halten).
    `entwuerfe/<slug>/ghost.json` immer mit committen – der Mail-Lauf braucht ihn.
 3. Hat sich nichts geändert: sofort beenden, kein Commit, keine Nachricht. Sonst Bericht ergänzen, Commit „Ghost <Datum> <Zeit>“, push.
 4. Du schreibst Till keine Mail – das macht der Mail-Lauf.
@@ -58,6 +68,12 @@ Lies den Skill `kmk-mail` vollständig. Dann:
 4. **Nur Mo, Mi, Fr um 8:17:** neue Redaktions-Mail nach `kmk-mail` mit allen Themen `vorgeschlagen`, Tills geprüften
    Ideen (I1 …), allen Entwürfen `wartet-auf-till` (mit Vorschau-Link) und dem Newsletter, falls er auf Freigabe wartet.
    Nichts zu entscheiden: keine Mail.
+   **In jedem Lauf außerdem:** Gibt es Entwürfe `wartet-auf-till`, deren Vorschau-Link Till noch nicht bekommen hat
+   (`mail.json` → `vorschau_gemailt`): sofort eine kurze Mail „Vorschau bereit“ mit diesen Entwürfen als A, B …
+   (Format wie im Abschnitt „Fertig zur Veröffentlichung“ von `kmk-mail`), Slugs in `vorschau_gemailt` eintragen.
+   **Express:** Hat Till in diesem Lauf ein Thema freigegeben, sofort den Redaktions-Lauf starten
+   (`fire_trigger` trig_014MXZRLtHdAje8fQVoadh3t, Zusatztext „Express: nur freigegebene Themen ausarbeiten“) und
+   in der Bestätigung schreiben: „Wird jetzt ausgearbeitet, Vorschau-Link kommt in etwa einer Stunde.“
 5. `redaktion/mail.json` aktualisieren, Commit „Mail <Datum> <Zeit>“, push. Nichts passiert: sofort beenden, kein Commit.
 
 **Sonntags** (So 10:17, 12:17, 15:17, 18:17, 21:17): um 10:17 die Newsletter-Mail nach `kmk-mail` schicken; danach Tills

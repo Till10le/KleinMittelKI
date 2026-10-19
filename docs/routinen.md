@@ -15,6 +15,8 @@ Der nächste Mail-Lauf nimmt sie auf, der Scout prüft die Quelle, die Idee komm
 Mit „ausarbeiten“ im Text wird sie direkt geschrieben.
 Ergebnisse anderer Recherche-Werkzeuge (z. B. ChatGPT-Aufgabe): an sich selbst weiterleiten mit Betreff „KMK Recherche“.
 Der Mail-Lauf legt sie in `redaktion/eingang/` ab, der Scout prüft jeden Hinweis an der Originalquelle und führt ihn mit den eigenen Funden zusammen.
+Express: Sobald Till ein Thema freigibt, startet der Mail-Lauf sofort einen Redaktions-Lauf (ohne Scout). Der startet nach der Prüfung
+den Ghost-Lauf (Entwurf) und danach den Mail-Lauf (Mail „Vorschau bereit“). Vorschau-Link meist nach etwa einer Stunde.
 Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden Mo–Fr um 12:17 und 18:17 gelesen
 (und um 8:17); Veröffentlichungen laufen eine halbe Stunde später.
 
@@ -22,8 +24,8 @@ Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden
 
 | Name | Zeitplan | Umgebung | Connectors |
 |---|---|---|---|
-| KMK Redaktions-Lauf | Mo, Mi, Fr 6:47 | Standard (Websuche + Webabruf) | – |
-| KMK Ghost-Lauf | So–Fr 7:47, 12:47, 18:47, 21:47 | KMK-Ghost | keine |
+| KMK Redaktions-Lauf | Mo, Mi, Fr 6:47 + Express nach Tills Ja | Standard (Websuche + Webabruf) | – |
+| KMK Ghost-Lauf | So–Fr 7:47, 12:47, 18:47, 21:47 + bei Bedarf | KMK-Ghost | keine |
 | KMK Mail-Lauf | Mo–Fr 8:17, 12:17, 18:17 | Standard | Gmail |
 | KMK Mail-Lauf Sonntag | So 10:17, 12:17, 15:17, 18:17, 21:17 | Standard | Gmail |
 | KMK Sonntags-Lauf | So 9:47 | Standard (Websuche + Webabruf) | – |
