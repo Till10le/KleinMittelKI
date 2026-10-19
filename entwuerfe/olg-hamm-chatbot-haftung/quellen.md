@@ -72,3 +72,31 @@ Quelle: https://www.verbraucherzentrale.nrw/verbandsklagen/unterlassungsklage-ge
 Nicht mit dem Chatbot-Fall vermischen.
 
 Offen für Prüfer: NRWE-Volltext prüfen, sobald veröffentlicht.
+
+---
+
+## Nachtrag 2026-10-19 (Scout, Test 2): Volltext gelesen
+
+**Volltext selbst gelesen (NRWE):** https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html
+(abgerufen 19.10.2026). ECLI:DE:OLGHAM:2026:0512.4UKL3.25.00. Keine Leitsätze veröffentlicht.
+
+- **Rechtskraft: Die NRWE-Kopfdaten weisen das Urteil als „rechtskräftig“ aus.** Das widerspricht den Zweitquellen
+  („nicht rechtskräftig“) und der Board-Angabe. Revision war zugelassen (grundsätzliche Bedeutung, § 6 Abs. 2 UKlaG
+  i. V. m. § 543 Abs. 1 Nr. 1 ZPO), wurde aber offenbar nicht (erfolgreich) eingelegt. → Im Beitrag „rechtskräftig
+  (laut NRWE, Stand 19.10.2026)“; vom Prüfer per Kopfzeile gegenlesen.
+- Erstinstanzlich beim OLG (§ 6 Abs. 1 UKlaG), keine Vorinstanz.
+- Tenor (gekürzt): Unterlassung, die Geschäftsführer als „Fachärzte für plastische und ästhetische Chirurgie“ (ohne
+  entsprechende Weiterbildung), „Fachärzte für ästhetische Medizin“ oder „Fachärzte für ästhetische Behandlungen“ zu
+  bezeichnen; Ordnungsgeld bis 250.000 Euro je Zuwiderhandlung; 260,00 Euro Abmahnkosten nebst Zinsen.
+- Begründung (eigene Worte): Betreiber haftet als Verletzer für eigenes Handeln; Chatbot ist „(lediglich) ein
+  technisches Mittel“, über das die Beklagte „hinreichende Steuerungsgewalt“ hatte (nachträgliche Prompt-Anweisung und
+  Keyword-Filter belegen das). Black-Box-Charakter ändert nichts. Training nur mit eigenen korrekten Inhalten entlastet
+  nicht: Es war vorhersehbar, dass der Chatbot auf naheliegende Fragen falsche Antworten „halluzinieren“ kann; das hätte
+  vor Inbetriebnahme verhindert werden müssen.
+- **Warnhinweis:** Ein „KI kann irren“-Hinweis auf der Website kommt im Urteil laut Abruf nicht vor. Das Gericht weist aber
+  das Argument zurück, Verbraucher wüssten um die Fehleranfälligkeit von KI: „Dahingehende Erfahrungssätze zeigt die
+  Beklagte nicht auf und existieren auch nicht.“ → Die Zweitquellen-Aussage „Warnhinweis entlastet nicht“ ist so NICHT
+  belegt; nur: Verbraucher dürfen auf KI-Antworten vertrauen.
+- Branchen: Keine branchenübergreifende Aussage; besonders strenge Maßstäbe im Gesundheitsbereich. Allgemein: Einsatz eines
+  Chatbots ist grundsätzlich geschäftliche Handlung des Betreibers.
+- Einschränkung: Inhalt über KI-Zusammenfassung der Seite gelesen; wörtliche Zitate vor Verwendung im Volltext gegenlesen.

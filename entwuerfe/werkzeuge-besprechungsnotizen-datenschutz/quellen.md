@@ -69,3 +69,37 @@ Stand: 2026-10-19 (Scout). **Status: noch keine Quelle gelesen.** In diesem Lauf
   (vermutlich Hinweise der Behörde zu eigenen VKs, nicht Orientierungshilfe).
 - Google Meet („Notizen für mich“/Gemini), Zoom AI Companion, Noota: Herstellerdoku noch nicht gelesen.
 - Welche Werkzeuge Till nutzt: offen (nicht erfinden).
+
+---
+
+## Nachtrag 2026-10-19 (Scout, Test 2): Aufsichtsbehörde und Herstellerseiten
+
+### 4. LfDI Baden-Württemberg: Leitfaden KI-Transkription (gelesen, Aufsichtsbehörde)
+- „Datenschutz-Leitfaden für KI-Transkription von Gemeinderatssitzungen in Baden-Württemberg“, Der Landesbeauftragte für
+  den Datenschutz und die Informationsfreiheit Baden-Württemberg, Version 1.0, Stand 10.06.2026:
+  https://www.baden-wuerttemberg.datenschutz.de/wp-content/uploads/2026/06/Leitfaden-Ki-Transkription-Gemeinderat-260611.pdf
+- **Zielgruppe: öffentliche Stellen (Gemeinden)**, nicht Unternehmen. Rechtsgrundlage über Landesrecht (GemO, LDSG) –
+  für Betriebe nicht übertragbar. Der Leitfaden steht unter Vorbehalt künftiger DSK-/EDSA-Aussagen.
+- Übertragbare DSGVO-Punkte (eigene Worte): Hinweis an Teilnehmende während der Sitzung, Informationspflichten Art. 13;
+  Audio und Transkript löschen, sobald das Protokoll beschlossen ist (oder Höchstspeicherdauer); AV-Vertrag nach Art. 28,
+  Verarbeitung möglichst in der EU; **Nutzung der Daten zum Training grundsätzlich unzulässig**; On-Premise/abgeschottete
+  Instanz bevorzugt, bei Cloud BSI-Grundschutz/C5; Zusammenfassung dauerhaft menschlich kontrollieren, Transkript
+  mindestens stichprobenartig prüfen und Prüfung dokumentieren; Schwellwertanalyse/ggf. DSFA.
+- § 201 StGB und AI Act werden nicht behandelt.
+- Für den Beitrag: als Orientierung einer Aufsicht zitierbar, aber ausdrücklich „für Kommunen geschrieben“ kennzeichnen.
+- Eine Aufsichtsquelle speziell für Unternehmen (DSK, BfDI) wurde weiterhin **nicht gefunden**.
+  Hinweis, nicht gelesen (Abruf scheiterte): datenschutz.de „Neue Praxishilfen zu KI in der Verwaltung und KI-Transkription“.
+
+### 5. Google Meet „Take notes for me“ (gelesen, Herstellerangabe)
+- https://support.google.com/meet/answer/14754931?hl=en&co=GENIE.Platform%3DDesktop
+- Braucht eine berechtigte Workspace-Edition oder einen Google-AI-Plan des Organisators (Editionen nicht genannt).
+  Sprachen: Englisch, Französisch, **Deutsch**, Italienisch, Japanisch, Koreanisch, Portugiesisch, Spanisch – eine Sprache
+  pro Meeting.
+- Notizen als Google-Doc im Drive des Organisators; Organisator wählt Freigabe (alle Eingeladenen inkl. Externer, nur
+  interne, nur Hosts). „Eingeladene“ = alle aus der Kalendereinladung, nicht nur Anwesende.
+- Teilnehmende werden benachrichtigt (Stift-Symbol). Admins können ausdrückliche Zustimmung vor Notizen/Aufnahme/
+  Transkription verlangen – **standardmäßig aus**. Aufbewahrung nach Meet-Richtlinie der Organisation.
+- Keine Aussage zum Modelltraining auf dieser Seite.
+
+### 6. Zoom AI Companion – NICHT gelesen
+- Datenschutzseite leitet auf https://library.zoom.com/ai/ai-whitepaper.md weiter; Abruf nicht freigegeben. **Ungeprüft.**

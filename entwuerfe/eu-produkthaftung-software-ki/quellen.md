@@ -86,3 +86,24 @@ Zweitquellen und gelten als **ungeprüft**.
 ### Weiterhin offen
 - Bundesrat-Ergebnis und BGBl.-Fundstelle.
 - Wer genau betroffen ist (reine Anwender von Standard-KI vermutlich nicht – weiterhin Auslegung, ungeprüft).
+
+---
+
+## Nachtrag 2026-10-19 (Scout, Test 2): EUR-Lex-Original gelesen
+
+- Amtliches PDF auf EUR-Lex (deutsche Fassung) gelesen:
+  https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=OJ:L_202402853 (ABl. L, 18.11.2024; ELI
+  http://data.europa.eu/eli/dir/2024/2853/oj). Damit sind die bisher nur aus der Dritt-Kopie stammenden Stellen
+  **bestätigt** (Wortlaut-Anfänge):
+  - Art. 2 Abs. 1: „Diese Richtlinie gilt für Produkte, die nach dem 9. Dezember 2026 in Verkehr gebracht oder in
+    Betrieb genommen werden.“
+  - Art. 2 Abs. 2: gilt nicht für freie und quelloffene Software, die außerhalb einer Geschäftstätigkeit entwickelt
+    oder bereitgestellt wird.
+  - Art. 4 Nr. 1: Produkt = jede bewegliche Sache …, ausdrücklich auch Software, digitale Konstruktionsunterlagen.
+  - Art. 8 Abs. 1: haftbar Hersteller (Produkt/Komponente), bei Herstellern außerhalb der EU Importeur, Bevollmächtigter,
+    ggf. Fulfilment-Dienstleister. Art. 8 Abs. 2: Wer ein Produkt außerhalb der Kontrolle des Herstellers wesentlich
+    verändert und dann bereitstellt/in Betrieb nimmt, gilt als Hersteller.
+- **Nicht gelesen:** Art. 12 Abs. 2, Art. 21, Art. 22 (Umsetzungsfrist), Art. 23. Der Abruf bricht im PDF bei Art. 10
+  ab; EUR-Lex-HTML-Seiten (ALL, ELI deu) liefern nur Metadaten; konsolidierte EN-Fassung leer. Die Frist für die
+  Mitgliedstaaten (Art. 22) bleibt daher **ungeprüft**; das Datum 9.12.2026 ist aber durch Art. 2 Abs. 1 und das
+  deutsche Gesetz (BR-Drs. 584/26, Art. 17) belegt.
