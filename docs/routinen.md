@@ -15,16 +15,15 @@ Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden
 
 | Name | Zeitplan | Umgebung | Connectors |
 |---|---|---|---|
-| KMK Redaktions-Lauf | Mo, Mi, Fr 6:47 | KMK-Recherche | keine |
+| KMK Redaktions-Lauf | Mo, Mi, Fr 6:47 | Standard (Websuche + Webabruf) | – |
 | KMK Ghost-Lauf | Mo–Fr 7:47, 12:47, 18:47 | KMK-Ghost | keine |
 | KMK Mail-Lauf | Mo–Fr 8:17, 12:17, 18:17 | Standard | Gmail |
-| KMK Sonntags-Lauf | So 17:47 | KMK-Recherche | keine |
+| KMK Sonntags-Lauf | So 17:47 | Standard (Websuche + Webabruf) | – |
 
-Stand 19.10.2026: Redaktions-, Ghost- und Sonntags-Lauf laufen tatsächlich alle in derselben Umgebung
-(`env_01NVQBpACuFaAxhDNrjjRWve`, die Umgebung, in der sie angelegt wurden – vermutlich „KMK-Ghost“).
-Recherche läuft über die Websuche-Werkzeuge und ist davon nicht betroffen. Die Trennung „Redaktions-Lauf spricht
-Ghost nicht an“ ist damit eine Regel, keine technische Sperre; veröffentlichen kann trotzdem nur `ghost.py` mit Freigabe.
-Der Mail-Lauf läuft in der Standard-Umgebung mit Gmail.
+Stand 19.10.2026: Der erste Testlauf zeigte, dass Redaktions- und Sonntags-Lauf in der Ghost-Umgebung liefen und
+kein Internet hatten (DNS-Fehler, keine Originalquelle lesbar). Beide sind deshalb neu angelegt und laufen in der
+Standard-Umgebung; Recherche über WebSearch und WebFetch. Die alten Versionen sind pausiert („alt, ohne Internet“).
+Die Shell dort erreicht das Internet nicht – das Logo liegt deshalb als `assets/logo.png` im Repo.
 
 ## Ein Beispiel-Durchlauf
 

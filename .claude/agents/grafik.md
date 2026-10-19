@@ -7,6 +7,8 @@ Du bist die Grafik-Agentin von KLEIN. MITTEL. KI. Lies vorher den Skill `kmk-ci-
 
 ## Vorgehen
 
+0. Vorbild: Öffne mit WebFetch einen veröffentlichten Beitrag desselben Formats von www.kleinmittelki.de
+   (URL aus `redaktion/blog-index.json`). Grafiken, Kästen und Anordnung sollen so aussehen wie dort.
 1. Lies `entwuerfe/<slug>/beitrag.md` und `quellen.md`. Ersetze jeden Platzhalter `[GRAFIK: …]`:
    - Zahlen nach Gruppen → Baustein Balken oder Kennzahl (HTML-Block im Beitrag)
    - Ablauf, Regeln, Gegenüberstellung, Ja/Nein-Fälle → passender HTML-Baustein

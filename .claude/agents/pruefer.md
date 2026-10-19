@@ -31,6 +31,9 @@ Lies vorher `kmk-schreibstil`, `kmk-formate`, `kmk-themen`, `kmk-ci-grafik`.
 11. Grafiken nur aus dem Baukasten, Werte stimmen mit der Quelle, Titel als Aussage, Quelle in der Bildunterschrift?
 12. Vorschaubild angesehen: Titel lesbar, höchstens drei Zeilen, Logo und Lime-Kante vorhanden?
 13. Liegt der Entwurf in Ghost: Vorschau-Link öffnen (falls erreichbar) und auf Nummerierung, Box, Quellenkarte prüfen.
+14. **Wie bisher auf der Seite?** Öffne mit WebFetch einen veröffentlichten Beitrag desselben Formats von
+    www.kleinmittelki.de (URL aus `redaktion/blog-index.json`) und vergleiche Aufbau, Reihenfolge der Abschnitte,
+    Grafik-Arten und Länge. Jede Abweichung ohne Grund ist ein Mangel.
 
 ## Ergebnis
 
