@@ -40,7 +40,7 @@ Stell fest, in welchem Lauf du bist: Der Prompt der Routine sagt es dir.
    „newsletter-text“ (legt den freigegebenen Newsletter an und plant ihn ein) und „stopp“ (Einplanung zurück).
    Ergebnis ins Board: veröffentlicht → Status `veroeffentlicht` mit URL; eingeplant → `eingeplant` mit Zeit;
    Sperre („nach Freigabe geändert“) → Status `wartet-auf-till` und Vermerk „neu freigeben“.
-2. Nur um 7:47 Uhr: `python3 tools/ghost.py index`, dann jeden Eintrag mit Status `geprueft`:
+2. Nur um 7:47 Uhr: `python3 tools/ghost.py index` und `python3 tools/ghost.py referenz` (Vorbilder aktuell halten), dann jeden Eintrag mit Status `geprueft`:
    `python3 tools/ghost.py draft entwuerfe/<slug>` → Status `wartet-auf-till`, Vorschau-Link aus `ghost.json` ins Board.
    `entwuerfe/<slug>/ghost.json` immer mit committen – der Mail-Lauf braucht ihn.
 3. Hat sich nichts geändert: sofort beenden, kein Commit, keine Nachricht. Sonst Bericht ergänzen, Commit „Ghost <Datum> <Zeit>“, push.

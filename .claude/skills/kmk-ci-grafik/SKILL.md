@@ -33,21 +33,35 @@ OFFEN: Das Logo-Paket v4 nutzt `#D4FF00`. Bis Till entscheidet, gilt `#D7FF00` f
   Vorschaubild: `assets/logo.png` = `kmk-horizontal-light-transparent.png` (Querformat mit Unterzeile).
   Dunkler Grund: `*-dark-*`; Profilbild/Social: `kmk-avatar-*`; sehr klein: `kmk-k-block-*`.
 
-## Typografische Muster
+## Vorbild: die veröffentlichten Beiträge (Stand 19.10.2026)
 
-- Nummerierung „01 · Abschnitt“
-- Kategorie-Label in Versalien mit Laufweite, darunter ein Lime-Balken
-- Grafik-Kopf: „Grafik 01 / Thema“, dann die **Aussage als Titel** (nicht das Thema)
+Alle Beiträge liegen als HTML in `redaktion/referenz/` (`python3 tools/ghost.py referenz`, nur lesen).
+Vor jeder Grafik einen Beitrag desselben Formats dort ansehen. Was die Auswertung von 16 Beiträgen ergab:
+
+| Format | Grafiken im Beitrag | Art |
+|---|---|---|
+| Nachricht | meist 0, höchstens 1 | ein PNG-Schaubild, wenn ein Ablauf oder Stufen es klarer machen |
+| Langtext (Grundlagen) | 4–5 | PNG-Schaubilder im Karten-System, je Hauptabschnitt eins |
+| Leitfaden Rechtslage | 2 | HTML-Karten: Rollen/Fälle (`urteil-und-pruefliste`), Prüfliste |
+| Lagebericht | 3+ | HTML-Karten: Balken und Kennzahlen mit Quelle `[n]` |
+| Praxistest | 1–4 | echte Fotos/Screenshots (anonymisiert) + höchstens ein Schaubild |
+| Newsletter | keine Grafik | Bookmark-Karten zu den Beiträgen |
 
 ## Regeln für jede Grafik
 
-1. Eine Grafik nur, wenn sie etwas zeigt, das Text schlechter kann: Zahlen, Abläufe, Vergleiche, Entscheidungen.
-   Ziel pro Beitrag: Nachricht 0–1, Anleitung 1–2, Langtext und Lagebericht 3–4.
-2. Kopfzeile „Grafik NR / Thema“, Titel als Aussage, Unterzeile: was, wo, wann.
-3. Bildunterschrift mit Quelle, Grundgesamtheit und Stand; bei Bedarf „Vereinfachte Darstellung“ oder „keine Rechtsberatung“.
-4. Direkt danach im Text ein Satz „Was die Grafik zeigt: …“ mit der Grenze der Aussage.
-5. Nur Werte aus der Quelle (`entwuerfe/<slug>/quellen.md`). Eigene Darstellung kennzeichnen.
-6. Nur Bausteine aus `vorlagen/`. Keine neuen Farben, Schatten, Verläufe, Icons oder Emojis.
+1. Eine Grafik nur, wenn sie etwas zeigt, das Text schlechter kann: Ebenen, Abläufe, Vergleiche, Checklisten, Zahlen.
+2. Aufbau wie veröffentlicht: **Kicker** (kurzes Stichwort, z. B. „So hängt es zusammen“, „Woher die Unterschiede kommen“),
+   **Titel als Aussage**, Inhalt, **Fußzeile** links „Vereinfachte Darstellung · Stand: TT.MM.JJJJ · Quelle: …“, rechts **kleinmittelki.de**,
+   unten Lime-Kante. Keine Nummerierung „Grafik 01“ im Bild.
+3. **Bildunterschrift** in Ghost: ein Satz, der beim Lesen hilft – die Kernaussage oder die Grenze, nicht die Quelle.
+   Beispiele: „Der entscheidende Unterschied: Du musst nicht mehr jeden Schritt selbst anstoßen.“ ·
+   „Vereinfachte Einordnung. Die genannten Anbieter sind Beispiele, keine Empfehlung.“ ·
+   „Zum Abhaken: Je mehr Ja, desto besser eignet sich der Ablauf als Einstieg.“
+   Ausnahme Daten-Karten (Balken, Kennzahl): Bildunterschrift nennt Quelle, Grundgesamtheit und Stand.
+4. **Alt-Text** beschreibt Art und Inhalt: „Schaubild: …“, „Checkliste mit fünf Fragen: …“, „Stufenmodell mit vier Stufen: …“.
+5. „Was die Grafik zeigt: …“ im Text nur bei Daten-Karten (Lagebericht, Studien), nicht bei Erklär-Schaubildern.
+6. Nur Werte aus der Quelle (`entwuerfe/<slug>/quellen.md`). Eigene Darstellung kennzeichnen.
+7. Nur Bausteine aus `vorlagen/` und `tools/grafik_basis.css`. Keine neuen Farben, Schatten, Verläufe, Icons oder Emojis.
 
 ## Baukasten (HTML-Karten im Beitrag, Vorlagen in `vorlagen/`)
 
@@ -70,14 +84,29 @@ Im `beitrag.md` werden Bausteine als HTML-Block geschrieben:
 
 `tools/lexical.py` macht daraus eine HTML-Karte in Ghost.
 
-## Erklär-Schaubilder als PNG
+## Erklär-Schaubilder als PNG (Karten-System)
 
-Für Zusammenhänge mit Ebenen, Stufen oder Gruppen (z. B. „Anbieter, Produkt, Modell“): `tools/grafik.py`.
-Du schreibst ein kleines HTML-Fragment mit den CSS-Klassen aus `tools/grafik_basis.css`, das Skript rendert es mit den
-CI-Schriften in 1600 px Breite (doppelte Auflösung) als PNG und reduziert auf 48 Farben.
-Dateiname `kmk-<thema>-g1.png` im Entwurfsordner, Bildunterschrift mit „Stand: TT.MM.JJJJ“. Im `beitrag.md` als
-`![Alt](kmk-<thema>-g1.png "Bildunterschrift")` einbinden – `tools/ghost.py draft` lädt lokale Bilder selbst hoch.
-**Ansehen ist Pflicht:** Jedes PNG nach dem Rendern mit dem Read-Werkzeug öffnen und prüfen (abgeschnittene Wörter, Überlappungen).
+So sehen die veröffentlichten Schaubilder aus (`kmk-ki-modelle-g1…g4`, `kmk-ki-agenten-g1…g5`), und so baut sie `tools/grafik.py`:
+weiße Karte 800 px (gerendert 1600 px), Rand 44 px, Kicker in Versalien mit Lime-Strich, Titel Schibsted 38 px,
+Kästen mit 2 px schwarzem Rahmen, eine Hervorhebung schwarz (`--dunkel`) oder Lime, Fußzeile mit Linie, Lime-Kante 8 px.
+
+| Baustein (`tools/grafik_basis.css`) | Wofür | Vorbild |
+|---|---|---|
+| `g-spalten` / `g-spalten--pfeile` + `g-box`, `g-pfeil`, `g-kopf`, `g-trenner` | Ebenen nebeneinander, Ablauf links → rechts | Anbieter → Produkt → Modell |
+| `g-stufen` + `g-stufe`, `g-nr` | Stufen, Schritte, Reifegrad untereinander | Vier Stufen (Modelle), Einstieg in vier Stufen (Agenten) |
+| `g-check` | Fragen zum Abhaken | Fünf Fragen für den ersten Anwendungsfall |
+| `g-tabelle` + `g-zeile--dunkel/--lime`, `g-lv`, `g-ja/g-nein` | Vergleich nach Merkmalen | Chatbot · Automatisierung · Agent; Modellstufen |
+| `g-zahlen` + `g-zahl(--dunkel)` | zwei Zahlen mit Lesehilfe | „× 100“ / „× 10“ |
+| `g-raster(--3)` + `g-karte(--dunkel)`, `g-tag`, `g-legende` | Anbieter, Wege, Beispiele als Karten | Weitere Anbieter; drei Wege zum Agenten |
+| `g-vergleich` | zwei Spalten gegenüber (Vorher/Nachher, Chatbot/Agent) | Chatbot vs. Agent an der Mietanfrage |
+| `g-notiz` mit `<mark>` | ein Merksatz unter dem Inhalt | „Ein Produkt, Motoren von zwei Herstellern.“ |
+
+Ablauf: HTML-Fragment `entwuerfe/<slug>/g1.html` (Beispiel im Kopf von `tools/grafik.py`) →
+`python3 tools/grafik.py entwuerfe/<slug>/g1.html --out entwuerfe/<slug>/kmk-<thema>-g1.png`.
+Das Skript verweigert Grafiken ohne Kicker, Titel oder Fußzeile und setzt die Lime-Kante selbst.
+Im `beitrag.md`: `![Schaubild: …](kmk-<thema>-g1.png "Ein Satz Lesehilfe")` – `tools/ghost.py draft` lädt lokale Bilder hoch.
+**Ansehen ist Pflicht:** Jedes PNG mit dem Read-Werkzeug öffnen (abgeschnittene Wörter, Überlappungen, Trennstriche im Titel).
+Texte in der Grafik kurz halten: Titel höchstens zwei Zeilen, Kastentext höchstens zwei Zeilen.
 
 ## Vorschaubild (Pflicht für jeden Beitrag, 1200 × 630)
 

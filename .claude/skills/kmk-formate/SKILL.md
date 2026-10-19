@@ -16,8 +16,10 @@ description: Die festen Beitragsformate von KLEIN. MITTEL. KI. (Nachricht, Anlei
 | 02 · Wissen | `Lageberichte` | Eigene Analyse mehrerer Quellen: Wo steht der Mittelstand? | Lagebericht |
 | 03 · Praxistests | `KI in der Praxis` | Nur eigene Tests von Till mit echten Ergebnissen | Praxistest |
 
-Interne Tags (mit `#`, nicht öffentlich): `#empfehlung` (jede Nachricht mit Originalquelle), `#notiz` (eigene Texte,
-Anleitungen, Praxistests), `#newsletter` (Newsletter-Ausgaben), `#zur-freigabe` (Entwurf wartet auf Till).
+Interne Tags (mit `#`, nicht öffentlich) – so in allen veröffentlichten Beiträgen (geprüft 19.10.2026):
+`#empfehlung` (jede Nachricht in Aktuell), `#wissen` (jeder Beitrag in Wissen: Grundlagen, Leitfäden, Lageberichte),
+`#status-quo` (zusätzlich beim Lagebericht), `#notiz` (Praxistests), `#newsletter` (Newsletter-Ausgaben),
+`#zur-freigabe` (Entwurf wartet auf Till, wird beim Veröffentlichen entfernt).
 
 **Entscheidungsregel:**
 1. Hat Till es selbst ausprobiert und Ergebnisse ermittelt? → Praxistests.
@@ -49,21 +51,29 @@ Zwischenüberschriften (H2) exakt so – das Theme erzeugt daraus Nummerierung 0
 5. `Zum Originalartikel` – danach eine Bookmark-Karte mit der echten Quelle,
    Beschreibung „Originalveröffentlichung vom TT.MM.JJJJ“.
 
-Tags: Kategorie + `#empfehlung`. Umfang ca. 300 Wörter.
+Tags: Kategorie + `#empfehlung`. Umfang 260–330 Wörter; mit Schaubild bis ca. 460 Wörter.
+Höchstens ein PNG-Schaubild (z. B. Stufen), nur wenn es den Kern klarer macht – Vorbild: „Wenn der Meister in Rente geht“.
 
 ## Format 2: Anleitung (Wissen / Leitfäden)
 
 H2: `Warum das gerade jetzt zählt` · `So machst du den Test` · `Worauf du bei den Antworten achtest` · `Ein Gedanke zum Mitnehmen`.
-Tags: Kategorie + `#notiz`. Kein Quellenabschnitt nötig, Quellen im Text verlinken.
+Tags: `Leitfäden` + `#wissen`. Kein Quellenabschnitt nötig, Quellen im Text verlinken. Umfang ca. 550 Wörter.
+
+**Variante Rechtslage einfach erklärt** (Vorbild „Muss ich KI-Bilder jetzt kennzeichnen?“): Einstieg mit Alltagsszene in Du-Form,
+dann die Nachricht-Gliederung (`Was ist passiert?` … `Zum Originalartikel`), ca. 1.800 Wörter, zwei HTML-Karten
+(Rollen/Fälle und Prüfliste aus `urteil-und-pruefliste`), Bildunterschrift „Vereinfachte Orientierung, keine Rechtsberatung …“.
+Tags `Leitfäden` + `#wissen`.
 
 ## Format 3: Langtext (Wissen / Grundlagen, Leitfäden)
 
 - Einleitung (2 Absätze) mit konkreter Alltagsszene.
 - Box „Das Wichtigste in 30 Sekunden“ (Baustein `kurz`) mit fünf Punkten direkt nach der Einleitung.
 - Eigene H2-Abschnitte, 3–4 Grafiken.
-- Endet mit `Was das für den Mittelstand bedeutet` (mit „**Meine Einordnung:**“-Absatz) · `Ein Gedanke zum Mitnehmen` · `Quellen`
-  (mit Abrufdatum „Abgerufen am …, zuletzt geprüft am …“).
-- 8–9 Minuten Lesezeit.
+- H2 als Fragen oder klare Aussagen aus Lesersicht („Was ist überhaupt ein KI-Agent?“, „Warum Zugriff das eigentliche Risiko ist“).
+- Gern ein praktischer Abschnitt `Zum Ausprobieren: …` mit nummerierten Schritten und Beispiel-Prompt (Vorbild Agenten-Beitrag).
+- Endet mit `Was das für den Mittelstand bedeutet` **oder** `Meine Einschätzung` (Ich-Form, nur mit Tills Worten, sonst INTERN-Vorschlag)
+  · `Ein Gedanke zum Mitnehmen` · `Quellen` (verlinkte Originale mit Datum; „Abgerufen am …, zuletzt geprüft am …“).
+- 1.900–2.000 Wörter (8–9 Minuten Lesezeit), 4–5 PNG-Schaubilder im Karten-System. Tags `Grundlagen`/`Leitfäden` + `#wissen`.
 
 ## Format 4: Lagebericht (Wissen / Lageberichte)
 
@@ -71,6 +81,7 @@ Tags: Kategorie + `#notiz`. Kein Quellenabschnitt nötig, Quellen im Text verlin
   OFFEN: Rhythmus (monatlich oder vierteljährlich) ist mit Till zu klären.
 - Nummerierte Abschnitte (Baustein `abschnitt`): 01 Verbreitung · 02 Anwendungen · 03 Integration · 04 Hürden · 05 Wirkung.
 - Je Abschnitt mindestens eine Balkengrafik oder Kennzahl.
+- Ca. 900 Wörter. Tags `Lageberichte` + `#wissen` + `#status-quo`.
 - Box „Meine Einordnung“ (Baustein `einordnung`), dann „Quellen & Datenbasis“ (Baustein `quellen`) mit nummerierten Quellen [1]–[n]
   und Hinweis zur Vergleichbarkeit der Erhebungen.
 
@@ -79,6 +90,9 @@ Tags: Kategorie + `#notiz`. Kein Quellenabschnitt nötig, Quellen im Text verlin
 - Serienkopf „Selbst ausprobiert“ mit Untertitel, z. B. „Erfahrungsbericht · Generalversammlung am 18. September 2026“.
 - H2: `Welches Problem soll gelöst werden?` · `Wie lief der Test ab?` · `Was ist dabei herausgekommen?` · `Wo sind die Grenzen?` · `Mein Fazit`.
 - Pflicht: Prompt-Kasten „Mein Prompt an Claude“ (Baustein `prompt`), Grenzen- oder Fehler-Kasten (`hinweis`), Transparenz-Absatz.
+- Erlaubt: ein zusätzlicher Nutzwert-Abschnitt vor `Wo sind die Grenzen?`, z. B. „Sechs Regeln für dein nächstes Werbemittel“.
+- Bilder: echte Fotos und anonymisierte Screenshots aus dem Test, Bildunterschrift erklärt, was man sieht.
+- 700–1.200 Wörter.
 - Nie Ergebnisse eintragen, die Till nicht selbst ermittelt hat. Fehlen sie: Platzhalter `[TILL: Ergebnis eintragen]` und im Board vermerken.
 - Tags: `KI in der Praxis` + `#notiz`. Vorlage in Ghost: Entwurf „KI in der Praxis – Beitragsvorlage“.
 

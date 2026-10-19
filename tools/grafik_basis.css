@@ -1,28 +1,117 @@
-/* Basis für Erklär-Schaubilder (PNG) im CI von KLEIN. MITTEL. KI.
-   Nur diese Klassen verwenden. Breite 800 px, gerendert in doppelter Auflösung. */
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { width: 800px; background: #fff; color: #111111; font-family: 'Instrument Sans'; }
-.g { padding: 40px; }
-.g-kicker { font: 600 13px/1 'Instrument Sans'; letter-spacing: 3px; text-transform: uppercase; color: #45453F; }
-.g-titel { margin-top: 12px; font: 700 30px/1.15 'Schibsted Grotesk'; letter-spacing: -0.3px; }
-.g-sub { margin-top: 8px; font: 500 16px/1.4 'Instrument Sans'; color: #5E5E57; }
-.g-strich { width: 64px; height: 6px; background: #D7FF00; margin-top: 18px; }
+/* Erklär-Schaubilder (PNG) im CI von KLEIN. MITTEL. KI.
+   Nachgebaut 1:1 nach dem Karten-System der veröffentlichten Schaubilder
+   (z. B. kmk-ki-modelle-g1…g4, kmk-ki-agenten-g1…g5): 800 px breit, doppelte Auflösung → 1600 px.
+   Nur diese Klassen verwenden. Keine eigenen Farben, Schatten, Verläufe, Icons. */
 
-/* Ebenen / Stufen untereinander */
-.g-stapel { margin-top: 28px; display: grid; gap: 12px; }
-/* Spalten nebeneinander (2–4) */
-.g-reihe { margin-top: 28px; display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 12px; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; color: #111111; font-family: 'Instrument Sans', sans-serif; font-weight: 500;
+       -webkit-font-smoothing: antialiased; width: 800px; }
 
-.g-box { background: #F4F4EF; border-top: 3px solid #111111; padding: 16px 18px 18px; }
-.g-box--dunkel { background: #111111; color: #F4F3EE; border-top-color: #D7FF00; }
-.g-box--akzent { border-top-color: #D7FF00; border-left: 6px solid #D7FF00; }
-.g-name { font: 700 14px/1.2 'Instrument Sans'; letter-spacing: 1.5px; text-transform: uppercase; }
-.g-text { margin-top: 8px; font: 500 16px/1.45 'Instrument Sans'; }
-.g-box--dunkel .g-text { color: #F4F3EE; }
-.g-beispiel { margin-top: 10px; font: 500 14px/1.4 'Instrument Sans'; color: #5E5E57; }
-.g-box--dunkel .g-beispiel { color: #D7FF00; }
+/* ---------- Rahmen jeder Grafik ---------- */
+.g { width: 800px; padding: 44px 44px 30px; background: #fff; position: relative; }
+/* Kicker: kurzes Stichwort in Versalien, darunter Lime-Strich (z. B. „So hängt es zusammen“) */
+.g-kicker { display: inline-block; font-weight: 600; font-size: 17px; letter-spacing: 3px; text-transform: uppercase; }
+.g-kicker::after { content: ''; display: block; height: 5px; background: #D7FF00; margin-top: 8px; }
+/* Titel: die Aussage der Grafik */
+.g-titel { font-family: 'Schibsted Grotesk'; font-weight: 700; font-size: 38px; line-height: 1.08;
+           letter-spacing: -.5px; margin: 18px 0 28px; }
+/* Fußzeile: links „Vereinfachte Darstellung · Stand: … · Quelle: …“, rechts <b>kleinmittelki.de</b> */
+.g-fuss { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin-top: 28px;
+          padding-top: 14px; border-top: 1.5px solid #111; font-size: 15px; line-height: 1.35; color: #45453F; }
+.g-fuss b { font-weight: 600; color: #111; white-space: nowrap; }
+/* Lime-Kante unten über die volle Breite (setzt tools/grafik.py automatisch, falls sie fehlt) */
+.g-kante { position: absolute; left: 0; right: 0; bottom: 0; height: 8px; background: #D7FF00; }
 
-/* Pfeil zwischen Stufen (Text: ↓ oder →) */
-.g-pfeil { text-align: center; font: 700 22px/1 'Schibsted Grotesk'; color: #45453F; }
+/* ---------- Hinweiszeile mit Markierung ---------- */
+.g-notiz { margin-top: 18px; font-size: 19px; line-height: 1.35; }
+mark, .g-mark { background: #D7FF00; color: #111; padding: 1px 4px; font-weight: 600; }
 
-.g-quelle { margin-top: 24px; font: 500 13px/1.4 'Instrument Sans'; color: #5E5E57; }
+/* ---------- Spalten mit Pfeilen (Ebenen, Ablauf von links nach rechts) ----------
+   <div class="g-spalten" style="--n:3">  Kopf: .g-kopf · Inhalt: .g-box · Pfeil: .g-pfeil  */
+.g-spalten { display: grid; grid-template-columns: repeat(var(--n, 3), 1fr); column-gap: 34px; row-gap: 14px; align-items: stretch; }
+.g-spalten--pfeile { grid-template-columns: 1fr 34px 1fr 34px 1.25fr; column-gap: 0; }
+.g-kopf { font-weight: 600; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; color: #45453F; }
+.g-kopf small { display: block; letter-spacing: 0; text-transform: none; font-size: 15px; font-weight: 500; }
+.g-box { border: 2px solid #111; padding: 14px 16px; font-size: 23px; font-weight: 600; line-height: 1.15;
+         display: flex; flex-direction: column; justify-content: center; min-height: 74px; }
+.g-box span, .g-box small { font-weight: 500; font-size: 17px; line-height: 1.3; color: #45453F; margin-top: 3px; }
+.g-box--dunkel { background: #111; color: #fff; border-color: #111; }
+.g-box--dunkel span, .g-box--dunkel small { color: #cfcfc6; }
+.g-box--lime { background: #D7FF00; }
+.g-pfeil { display: flex; align-items: center; justify-content: center; font-family: 'Schibsted Grotesk'; font-size: 26px; }
+.g-trenner { grid-column: 1 / -1; border-top: 2px dashed #111; margin: 8px 0 2px; position: relative; }
+.g-trenner i { position: absolute; top: -14px; left: 0; background: #fff; padding-right: 10px; font-style: normal;
+               font-weight: 600; font-size: 15px; letter-spacing: 2px; text-transform: uppercase; }
+
+/* ---------- Stufen / nummerierte Schritte untereinander ----------
+   <div class="g-stufen"><div class="g-stufe"><div class="g-nr">01</div><div><h3>…</h3><p><b>Frage?</b> Text</p></div></div>… */
+.g-stufen { display: flex; flex-direction: column; }
+.g-stufe { display: grid; grid-template-columns: 64px 1fr; gap: 18px; align-items: start; padding: 18px 0; border-bottom: 1.5px solid #111; }
+.g-stufe:first-child { border-top: 1.5px solid #111; }
+.g-stufe:last-child { border-bottom: none; }
+.g-nr { font-family: 'Schibsted Grotesk'; font-weight: 700; font-size: 34px; line-height: 1; background: #D7FF00; text-align: center; padding: 10px 0; }
+.g-stufe h3 { font-family: 'Schibsted Grotesk'; font-weight: 700; font-size: 26px; line-height: 1.1; margin-bottom: 6px; }
+.g-stufe p { font-size: 19px; line-height: 1.35; color: #222; }
+.g-stufe p b { font-weight: 600; color: #111; }
+
+/* ---------- Checkliste (Fragen zum Abhaken) ----------
+   <ul class="g-check"><li><b>Frage?</b> Erläuterung</li>…</ul> */
+.g-check { list-style: none; display: flex; flex-direction: column; }
+.g-check li { display: grid; grid-template-columns: 34px 1fr; gap: 16px; align-items: start; padding: 16px 0;
+              border-bottom: 1.5px solid #111; font-size: 19px; line-height: 1.35; color: #222; }
+.g-check li:first-child { border-top: 1.5px solid #111; }
+.g-check li::before { content: ''; width: 30px; height: 30px; border: 2.5px solid #111; margin-top: 1px; }
+.g-check li b { display: block; font-family: 'Schibsted Grotesk'; font-weight: 700; font-size: 23px; line-height: 1.15; color: #111; margin-bottom: 3px; }
+
+/* ---------- Vergleichstabelle ----------
+   <table class="g-tabelle"><tr><th>…</th>…</tr><tr class="g-zeile--dunkel"><td class="g-lv">Groß<span>…</span></td>…</tr></table> */
+.g-tabelle { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.g-tabelle th { font-weight: 600; font-size: 16px; letter-spacing: 2px; text-transform: uppercase; text-align: left; padding: 0 10px 10px; color: #45453F; }
+.g-tabelle th:first-child { width: 170px; padding-left: 0; }
+.g-tabelle td { border-top: 2px solid #111; padding: 16px 10px; vertical-align: top; font-size: 21px; font-weight: 600; line-height: 1.2; }
+.g-tabelle td:first-child { padding-left: 0; }
+.g-tabelle td small { display: block; font-weight: 500; font-size: 15px; margin-top: 4px; opacity: .75; }
+.g-lv { font-family: 'Schibsted Grotesk'; font-size: 24px; font-weight: 700; }
+.g-lv span { display: block; font-family: 'Instrument Sans'; font-weight: 500; font-size: 16px; color: #45453F; margin-top: 4px; line-height: 1.3; }
+.g-zeile--dunkel td { background: #111; color: #fff; }
+.g-zeile--dunkel .g-lv span { color: #cfcfc6; }
+.g-zeile--lime td { background: #D7FF00; }
+.g-zeile--dunkel td:first-child, .g-zeile--lime td:first-child, .g-zeile--eingerueckt td:first-child { padding-left: 14px; }
+.g-ja { background: #D7FF00; padding: 2px 8px; font-weight: 600; }
+.g-nein { border: 1.5px solid #111; padding: 1px 7px; font-weight: 600; }
+
+/* ---------- Kennzahlen (zwei große Zahlen) ----------
+   <div class="g-zahlen"><div class="g-zahl"><b>× 100</b><span>Lesehilfe in einem Satz.</span></div>…</div> */
+.g-zahlen { margin-top: 22px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.g-zahl { border: 2px solid #111; padding: 14px 16px; }
+.g-zahl b { display: block; font-family: 'Schibsted Grotesk'; font-weight: 700; font-size: 40px; line-height: 1; }
+.g-zahl span { display: block; margin-top: 6px; font-size: 17px; line-height: 1.3; }
+.g-zahl--dunkel { background: #111; color: #fff; border-color: #111; }
+.g-zahl--dunkel b { color: #D7FF00; }
+
+/* ---------- Karten-Raster (Anbieter, Wege, Beispiele) ----------
+   <div class="g-raster"><div class="g-karte"><div class="g-karte-kopf"><h3>…</h3><span>LAND</span></div><dl><dt>…</dt><dd>…</dd></dl><span class="g-tag">…</span></div>… */
+.g-raster { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.g-raster--3 { grid-template-columns: 1fr 1fr 1fr; }
+.g-karte { border: 2px solid #111; padding: 16px 18px; display: flex; flex-direction: column; gap: 8px; }
+.g-karte-kopf { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+.g-karte h3 { font-family: 'Schibsted Grotesk'; font-weight: 700; font-size: 25px; line-height: 1.08; }
+.g-karte-kopf span { font-weight: 600; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #45453F; white-space: nowrap; }
+.g-karte p { font-size: 18px; line-height: 1.38; }
+.g-karte dl { display: grid; grid-template-columns: 86px 1fr; gap: 3px 8px; font-size: 17px; line-height: 1.3; }
+.g-karte dt { color: #45453F; }
+.g-karte dd { font-weight: 600; }
+.g-karte--dunkel { background: #111; color: #fff; border-color: #111; }
+.g-karte--dunkel .g-karte-kopf span, .g-karte--dunkel dt { color: #cfcfc6; }
+.g-tag { align-self: flex-start; font-weight: 600; font-size: 14px; padding: 3px 8px; margin-top: 2px; background: #D7FF00; color: #111; }
+.g-tag--rahmen { background: none; border: 1.5px solid #111; }
+.g-karte--dunkel .g-tag--rahmen { border-color: #fff; color: #fff; }
+.g-legende { margin-top: 16px; display: flex; align-items: center; gap: 10px; font-size: 16px; }
+.g-legende span { background: #D7FF00; padding: 2px 8px; font-weight: 600; font-size: 14px; }
+
+/* ---------- Vorher / Nachher, Chatbot / Agent: zwei Spalten mit Kopf ---------- */
+.g-vergleich { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.g-vergleich > div { border: 2px solid #111; padding: 16px 18px; }
+.g-vergleich > div.g-box--dunkel { background: #111; color: #fff; }
+.g-vergleich h3 { font-family: 'Schibsted Grotesk'; font-weight: 700; font-size: 25px; line-height: 1.1; margin-bottom: 10px; }
+.g-vergleich ol, .g-vergleich ul { padding-left: 22px; font-size: 18px; line-height: 1.4; display: grid; gap: 6px; }
