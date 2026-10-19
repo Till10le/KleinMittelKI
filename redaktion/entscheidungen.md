@@ -22,3 +22,7 @@ Nur der Chefredakteur schreibt hier, und nur, was Till tatsächlich gesagt hat. 
 - 2026-10-18 · Newsletter-Vorlage nach Ausgabe 2 und 3 als feste Vorlage · JA · „2 ja“
 - 2026-10-18 · Zeile „Quelle: …“ mit Link unter dem Zahlenblock im Newsletter · JA · „3 ja“
 - 2026-10-19 · olg-hamm-chatbot-haftung · JA · „Thema 1 bitte ausarbeiten“ (Mail-Antwort, keine Einschätzung mitgeschickt)
+- 2026-10-19 · Grafik-Baukasten nach den veröffentlichten Schaubildern, Regeln aus 16 Beiträgen · JA · „passt so für mich“ (Chat)
+- 2026-10-19 · Kennzahl-Grafik in Nachrichten, 30-Sekunden-Box in langen Leitfäden, Social-Kacheln 1080 × 1350 · JA · „passt so für mich“ (Chat)
+- 2026-10-19 · Lime-Wert · Redaktion entscheidet: #D7FF00 · „nimm die Lime Farbe welche du denkst am besten ist“ (Chat)
+- 2026-10-19 · Newsletter-Vorschlag sonntags per Mail, Hin und Her, Einplanung nach Freigabe am Sonntag · JA · „den newslettervorschlag für dienstag brauche ich immer am Sonntag davor von dir via mail …“ (Chat)
