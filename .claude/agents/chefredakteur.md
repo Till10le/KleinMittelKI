@@ -29,8 +29,9 @@ Stell fest, in welchem Lauf du bist: Der Prompt der Routine sagt es dir.
 ## Redaktions-Lauf (Mo, Mi, Fr 6:47 – und als Express-Lauf sofort nach Tills Ja)
 
 **Express-Lauf:** Der Mail-Lauf startet den Redaktions-Lauf außer der Reihe, sobald Till ein Thema freigibt
-(„1 und 3“, „I1 ja“, „A ändern: …“, Idee-Mail mit „ausarbeiten“). Steht im Start-Text „Express“: Schritt 1 (Scout)
-auslassen, nur Schritt 2–4. So hat Till den Vorschau-Link meist innerhalb einer Stunde.
+(„1 und 3“, „I1 ja“, „A ändern: …“, Idee-Mail mit „ausarbeiten“) – per `fire_trigger` **ohne Zusatztext**.
+Ein Lauf außerhalb von Mo/Mi/Fr 6:30–7:30 Uhr ist ein Express-Lauf: Schritt 1 (Scout) auslassen, nur Schritt 2–4.
+(Zusatztexte beim Starten kommen erst nach dem eigentlichen Lauf an – deshalb entscheidet die Uhrzeit.) So hat Till den Vorschau-Link meist innerhalb einer Stunde.
 
 1. **Scout**: neue Meldungen seit dem letzten Lauf, höchstens 3 Vorschläge, Status `vorgeschlagen`.
 2. Für jedes Thema mit Status `freigegeben` oder `zurueck`: **Autor** (Text, mit Tills Einschätzung aus dem Board),
@@ -72,7 +73,7 @@ Lies den Skill `kmk-mail` vollständig. Dann:
    (`mail.json` → `vorschau_gemailt`): sofort eine kurze Mail „Vorschau bereit“ mit diesen Entwürfen als A, B …
    (Format wie im Abschnitt „Fertig zur Veröffentlichung“ von `kmk-mail`), Slugs in `vorschau_gemailt` eintragen.
    **Express:** Hat Till in diesem Lauf ein Thema freigegeben, sofort den Redaktions-Lauf starten
-   (`fire_trigger` trig_014MXZRLtHdAje8fQVoadh3t, Zusatztext „Express: nur freigegebene Themen ausarbeiten“) und
+   (`fire_trigger` trig_014MXZRLtHdAje8fQVoadh3t, ohne Zusatztext) und
    in der Bestätigung schreiben: „Wird jetzt ausgearbeitet, Vorschau-Link kommt in etwa einer Stunde.“
 5. `redaktion/mail.json` aktualisieren, Commit „Mail <Datum> <Zeit>“, push. Nichts passiert: sofort beenden, kein Commit.
 
