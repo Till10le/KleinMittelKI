@@ -46,6 +46,8 @@ class H(BaseHTTPRequestHandler):
         p = u.path.replace("/ghost/api/admin", "")
         if p == "/site/":
             return self.send(200, {"site": {"title": "KLEIN. MITTEL. KI.", "url": "https://www.kleinmittelki.de/"}})
+        if p == "/newsletters/" and method == "GET":
+            return self.send(200, {"newsletters": [{"slug": "default-newsletter", "status": "active"}]})
         if p == "/images/upload/" and method == "POST":
             assert b'name="file"' in raw
             return self.send(201, {"images": [{"url": f"https://storage.example/{_uuid.uuid4().hex}.png"}]})

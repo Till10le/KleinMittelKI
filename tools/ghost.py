@@ -16,8 +16,9 @@ Befehle:
                                   Tills Freigabe eintragen. NUR auf Tills ausdrückliche Anweisung im Chat.
     publish <slug> [--zeitpunkt ISO]
                                   Veröffentlichen/einplanen. Nur mit gültiger Freigabe. Nie mit E-Mail-Versand.
-    newsletter <slug> --newsletter <newsletter-slug> --zeitpunkt ISO
+    newsletter <slug> [--newsletter <newsletter-slug>] --zeitpunkt ISO
                                   Newsletter-Ausgabe einplanen. Nur mit gültiger Freigabe (art newsletter).
+    abarbeiten                    Alle offenen Freigaben ausführen (auch die per Mail von tools/mailfreigabe.py).
 
 Es gibt bewusst keinen Löschbefehl.
 """
@@ -263,7 +264,7 @@ def cmd_draft(a) -> None:
                               f"Dublette? Sonst Slug ändern oder ghost.json mit der id anlegen.")
         res = api("POST", "posts/", body={"posts": [post]})
     p = res["posts"][0]
-    state.update({"id": p["id"], "uuid": p["uuid"], "slug": p["slug"], "status": p["status"],
+    state.update({"id": p["id"], "uuid": p["uuid"], "slug": p["slug"], "titel": p["title"], "status": p["status"],
                   "updated_at": p["updated_at"], "vorschau": f"{PUBLIC_SITE}/p/{p['uuid']}/",
                   "admin": f"{base_url()}/ghost/#/editor/post/{p['id']}"})
     state_file.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
@@ -321,11 +322,7 @@ def _restliche_platzhalter(lex: str) -> list[str]:
     return sorted(set(re.findall(r"\[TILL:[^\]]*\]|\{\{[^}]*\}\}", lex)))
 
 
-def cmd_publish(a) -> None:
-    p = find_post(a.ref, formats="lexical")
-    if p["status"] == "published":
-        print("Bereits veröffentlicht.")
-        return
+def _publish(p: dict, zeitpunkt: str | None) -> dict:
     _pruefe_freigabe(p, "beitrag")
     lex, removed = _ohne_intern(p["lexical"])
     rest = _restliche_platzhalter(lex)
@@ -333,19 +330,26 @@ def cmd_publish(a) -> None:
         raise GhostFehler(f"SPERRE: Offene Platzhalter im Beitrag: {rest}")
     tags = [{"name": t["name"]} for t in p.get("tags", []) if t["name"] != "#zur-freigabe"]
     update = {"lexical": lex, "tags": tags, "updated_at": p["updated_at"]}
-    if a.zeitpunkt:
-        update.update({"status": "scheduled", "published_at": a.zeitpunkt})
+    if zeitpunkt and zeitpunkt != "sofort":
+        update.update({"status": "scheduled", "published_at": zeitpunkt})
     else:
         update["status"] = "published"
     # Bewusst ohne newsletter-Parameter: Beiträge gehen nie per E-Mail raus.
-    res = api("PUT", f"posts/{p['id']}/", body={"posts": [update]})
-    q = res["posts"][0]
-    print(json.dumps({"status": q["status"], "url": q.get("url"), "published_at": q.get("published_at"),
-                      "intern_absaetze_entfernt": removed}, ensure_ascii=False, indent=2))
+    q = api("PUT", f"posts/{p['id']}/", body={"posts": [update]})["posts"][0]
+    return {"slug": q["slug"], "status": q["status"], "url": q.get("url"),
+            "published_at": q.get("published_at"), "intern_absaetze_entfernt": removed}
 
 
-def cmd_newsletter(a) -> None:
-    p = find_post(a.ref, formats="lexical")
+def _aktiver_newsletter() -> str:
+    nls = api("GET", "newsletters/", {"filter": "status:active", "limit": "all"}).get("newsletters", [])
+    if len(nls) != 1:
+        raise GhostFehler(f"Es gibt {len(nls)} aktive Newsletter – bitte --newsletter angeben.")
+    return nls[0]["slug"]
+
+
+def _newsletter(p: dict, nl_slug: str | None, zeitpunkt: str) -> dict:
+    if not zeitpunkt or zeitpunkt == "sofort":
+        raise GhostFehler("Newsletter werden nur eingeplant: Zeitpunkt in UTC angeben (Dienstag 7:00 Uhr deutscher Zeit).")
     _pruefe_freigabe(p, "newsletter")
     lex, removed = _ohne_intern(p["lexical"])
     rest = _restliche_platzhalter(lex)
@@ -353,12 +357,49 @@ def cmd_newsletter(a) -> None:
         raise GhostFehler(f"SPERRE: Offene Platzhalter: {rest}")
     tags = [{"name": t["name"]} for t in p.get("tags", []) if t["name"] != "#zur-freigabe"]
     update = {"lexical": lex, "tags": tags, "updated_at": p["updated_at"], "status": "scheduled",
-              "published_at": a.zeitpunkt, "email_only": True}
-    res = api("PUT", f"posts/{p['id']}/", body={"posts": [update]},
-              query={"newsletter": a.newsletter, "email_segment": "all"})
-    q = res["posts"][0]
-    print(json.dumps({"status": q["status"], "published_at": q.get("published_at"),
-                      "intern_absaetze_entfernt": removed}, ensure_ascii=False, indent=2))
+              "published_at": zeitpunkt, "email_only": True}
+    q = api("PUT", f"posts/{p['id']}/", body={"posts": [update]},
+            query={"newsletter": nl_slug or _aktiver_newsletter(), "email_segment": "all"})["posts"][0]
+    return {"slug": q["slug"], "status": q["status"], "published_at": q.get("published_at"),
+            "intern_absaetze_entfernt": removed}
+
+
+def cmd_publish(a) -> None:
+    p = find_post(a.ref, formats="lexical")
+    if p["status"] == "published":
+        print("Bereits veröffentlicht.")
+        return
+    print(json.dumps(_publish(p, a.zeitpunkt), ensure_ascii=False, indent=2))
+
+
+def cmd_newsletter(a) -> None:
+    p = find_post(a.ref, formats="lexical")
+    print(json.dumps(_newsletter(p, a.newsletter, a.zeitpunkt), ensure_ascii=False, indent=2))
+
+
+def cmd_abarbeiten(_a) -> None:
+    """Führt alle offenen Freigaben aus: Entwurf + passende Freigabe zum aktuellen Stand → veröffentlichen/einplanen."""
+    ergebnisse = []
+    gesehen = set()
+    for f in reversed(_freigaben()):
+        if f["post_id"] in gesehen:
+            continue
+        gesehen.add(f["post_id"])
+        try:
+            p = find_post(f["post_id"], formats="lexical")
+        except GhostFehler as e:
+            ergebnisse.append({"slug": f["slug"], "fehler": str(e)})
+            continue
+        if p["status"] != "draft":
+            continue
+        try:
+            if f["art"] == "newsletter":
+                ergebnisse.append(_newsletter(p, None, f.get("zeitpunkt", "")))
+            else:
+                ergebnisse.append(_publish(p, f.get("zeitpunkt")))
+        except GhostFehler as e:
+            ergebnisse.append({"slug": f["slug"], "fehler": str(e)})
+    print(json.dumps({"ausgefuehrt": ergebnisse}, ensure_ascii=False, indent=2))
 
 # ---------- Blog-Index ----------
 
@@ -430,8 +471,9 @@ def main(argv=None) -> int:
     s = sub.add_parser("freigabe"); s.add_argument("ref"); s.add_argument("--art", required=True, choices=["beitrag", "newsletter"])
     s.add_argument("--zitat", required=True); s.set_defaults(fn=cmd_freigabe)
     s = sub.add_parser("publish"); s.add_argument("ref"); s.add_argument("--zeitpunkt"); s.set_defaults(fn=cmd_publish)
-    s = sub.add_parser("newsletter"); s.add_argument("ref"); s.add_argument("--newsletter", required=True)
+    s = sub.add_parser("newsletter"); s.add_argument("ref"); s.add_argument("--newsletter")
     s.add_argument("--zeitpunkt", required=True); s.set_defaults(fn=cmd_newsletter)
+    sub.add_parser("abarbeiten").set_defaults(fn=cmd_abarbeiten)
     a = ap.parse_args(argv)
     try:
         a.fn(a)

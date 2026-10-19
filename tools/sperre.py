@@ -11,7 +11,8 @@ import json
 import re
 import sys
 
-GESCHUETZT = ("redaktion/freigaben.jsonl", "tools/ghost.py", "tools/sperre.py", ".claude/settings.json")
+GESCHUETZT = ("redaktion/freigaben.jsonl", "tools/ghost.py", "tools/sperre.py", "tools/mailfreigabe.py",
+              ".claude/settings.json")
 
 
 def block(grund: str) -> None:
@@ -35,7 +36,8 @@ def main() -> None:
         cmd = str(inp.get("command", ""))
         if "ghost/api/admin" in cmd or re.search(r"curl[^|;]*ghost\.io", cmd):
             block("Ghost nur über tools/ghost.py ansprechen.")
-        if re.search(r"(>|tee|sed -i|truncate|rm )[^|;]*(freigaben\.jsonl|tools/ghost\.py|tools/sperre\.py|settings\.json)", cmd):
+        if re.search(r"(>|tee|sed -i|truncate|rm )[^|;]*(freigaben\.jsonl|tools/ghost\.py|tools/sperre\.py|"
+                     r"tools/mailfreigabe\.py|settings\.json)", cmd):
             block("Geschützte Datei darf nicht per Shell verändert werden.")
         if re.search(r"\brm\b[^|;]*(redaktion/|entwuerfe/)", cmd) or re.search(r"git\s+rm\b", cmd):
             block("Im Gedächtnis und in Entwürfen wird nichts gelöscht.")

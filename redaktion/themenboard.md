@@ -3,7 +3,7 @@
 Der gemeinsame Arbeitsstand der Redaktion. Jeder Agent liest das Board vor seiner Arbeit und trägt Änderungen ein.
 Nichts wird gelöscht: Erledigtes wandert in den Abschnitt „Archiv“.
 
-**Status:** `vorgeschlagen` → `freigegeben` → `in-arbeit` → `geprueft` → `wartet-auf-till` → `veroeffentlicht` → `beworben`
+**Status:** `vorgeschlagen` → `freigegeben` → `in-arbeit` → `geprueft` → `wartet-auf-till` → `eingeplant` / `veroeffentlicht` → `beworben`
 Daneben: `verworfen` (mit Grund in `entscheidungen.md`), `zurueck` (Till will Änderungen), `frage-an-till`.
 
 **Format je Eintrag:**

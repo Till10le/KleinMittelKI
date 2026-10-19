@@ -1,73 +1,37 @@
 # Routinen der KMK-Redaktion
 
-Routinen sind geplante Claude-Code-Läufe in der Cloud. Sie laufen, auch wenn Tills Rechner aus ist.
-Anlegen unter claude.ai/code/routines → **New routine**. Repo jeweils `Till10le/KleinMittelKI`.
+Geplante Claude-Läufe in der Cloud. Sie laufen, auch wenn Tills Rechner aus ist. Die Regeln stehen im Repo
+(`CLAUDE.md`, `.claude/agents/chefredakteur.md`, Skills) – die Prompts der Routinen sind bewusst kurz.
 
-Der Prompt jeder Routine ist bewusst kurz: Die eigentlichen Regeln stehen in `CLAUDE.md`, den Skills und
-`.claude/agents/chefredakteur.md`. So ändern wir das Verhalten im Repo, nicht in der Routine.
+## Wie Till mitarbeitet
 
-## Reihenfolge beim Einschalten
+Montags, mittwochs und freitags gegen 8:20 Uhr kommt eine Mail an `till.zehnle@gmail.com`:
+neue Themen (Nummern), fertige Entwürfe mit Vorschau-Link (Buchstaben), ggf. der Newsletter (N).
+Till antwortet einfach, z. B. „1 und 3. Zu 1: … · 2 nein, zu technisch · A ja · N ja“.
+Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden Mo–Fr um 12:17 und 18:17 gelesen
+(und um 8:17); Veröffentlichungen laufen eine halbe Stunde später.
 
-1. Erst **Ghost-Lauf** einmal mit „Run now“ testen (nur lesen: Verbindung und Index).
-2. Dann **Redaktions-Lauf** zwei Wochen werktags laufen lassen, Ergebnisse gemeinsam ansehen.
-3. Danach **Sonntags-Lauf** dazunehmen.
-Social und Analyst folgen in Etappe 4.
+## Die Läufe
 
-## 1. Redaktions-Lauf
+| Name | Zeitplan | Umgebung | Connectors |
+|---|---|---|---|
+| KMK Redaktions-Lauf | Mo, Mi, Fr 6:47 | KMK-Recherche | keine |
+| KMK Ghost-Lauf | Mo–Fr 7:47, 12:47, 18:47 | KMK-Ghost | keine |
+| KMK Mail-Lauf | Mo–Fr 8:17, 12:17, 18:17 | Standard | Gmail |
+| KMK Sonntags-Lauf | So 17:47 | KMK-Recherche | keine |
 
-- **Umgebung:** KMK-Recherche (Network access: Full, keine Variablen)
-- **Zeitplan:** werktags 6:47 Uhr
-- **Connectors:** keine
-- **Prompt:**
+## Ein Beispiel-Durchlauf
 
-```
-Du bist der Chefredakteur der KMK-Redaktion. Lies .claude/agents/chefredakteur.md und führe den
-„Redaktions-Lauf“ aus. Arbeite auf main (vorher git pull --rebase, am Ende commit und push).
-Veröffentliche nichts und sprich Ghost nicht an. Wenn nichts zu tun ist, schreib das in einer Zeile in den Tagesbericht.
-```
-
-## 2. Ghost-Lauf
-
-- **Umgebung:** KMK-Ghost (Network access: Custom mit klein-mittel-ki.ghost.io und www.kleinmittelki.de,
-  Variablen GHOST_URL und GHOST_ADMIN_API_KEY)
-- **Zeitplan:** werktags 7:47 Uhr
-- **Connectors:** optional Gmail, damit die Nachricht an Till zusätzlich per Mail kommt
-- **Prompt:**
-
-```
-Du bist der Chefredakteur der KMK-Redaktion. Lies .claude/agents/chefredakteur.md und führe den
-„Ghost-Lauf“ aus. Arbeite auf main (vorher git pull --rebase, am Ende commit und push).
-Beende den Lauf mit der Nachricht an Till aus der Anleitung. Veröffentliche in diesem Lauf nichts:
-Freigaben gibt Till, indem er in dieser Sitzung antwortet.
-```
-
-## 3. Sonntags-Lauf
-
-- **Umgebung:** KMK-Recherche
-- **Zeitplan:** sonntags 17:47 Uhr
-- **Prompt:**
-
-```
-Du bist der Chefredakteur der KMK-Redaktion. Lies .claude/agents/chefredakteur.md und führe den
-„Sonntags-Lauf“ aus (Ideen, Newsletter-Entwurf für Dienstag, Wochenbericht). Arbeite auf main.
-Den Newsletter nur als beitrag.md vorbereiten; angelegt wird er im nächsten Ghost-Lauf. Veröffentliche nichts.
-```
-
-## Wie Till freigibt
-
-Jeder Lauf ist eine Sitzung, die in der Claude-App unter Code erscheint. Till öffnet die Sitzung des Ghost-Laufs
-und antwortet, z. B.:
-
-> 1 ja, meine Einschätzung: … · 2 nein, zu technisch · 3 veröffentlichen
-
-Der Chefredakteur trägt das ein, veröffentlicht Punkt 3 über die Freigabe-Sperre und meldet den Link zurück.
-Freigaben zum Veröffentlichen nur in Sitzungen der Umgebung „KMK-Ghost“.
+- Mo 6:47 Scout findet 3 Themen → Mo 8:17 Mail an Till
+- Mo 10:00 Till antwortet „1 und 3“ → Mo 12:17 Mail-Lauf trägt ein, bestätigt
+- Mi 6:47 Redaktion schreibt 1 und 3 mit Grafiken, Prüfer prüft → Mi 7:47 Entwürfe in Ghost → Mi 8:17 Mail mit Vorschau-Links
+- Mi 9:00 Till: „A ja, B Dienstag“ → Mi 12:17 Freigaben eingetragen → Mi 12:47 A ist online, B eingeplant → Mi 18:17 Bestätigung mit Link
 
 ## Sicherheit
 
-- Ghost-Schlüssel nur in „KMK-Ghost“. Diese Umgebung erreicht nur den Blog, kein offenes Internet.
+- Ghost-Schlüssel nur in „KMK-Ghost“. Diese Umgebung erreicht nur den Blog und liest keine Mails.
+- Der Mail-Lauf hat keinen Ghost-Zugang. Er trägt Freigaben nur ein, wenn die Antwort aus Tills eigenem Gmail kommt
+  (`till.zehnle@gmail.com`, Label „Gesendet“) und im Verlauf einer Redaktions-Mail steht – mit Zitat und Gmail-ID.
+- `tools/ghost.py` veröffentlicht nur mit einer Freigabe, die zum Stand passt, den Till in der Vorschau gesehen hat.
 - `tools/sperre.py` blockiert direkte Ghost-Aufrufe, Änderungen an der Sperre und Löschen im Gedächtnis.
-- `tools/ghost.py publish` veröffentlicht nur mit einer Freigabe, die zum aktuellen Stand des Beitrags passt.
-- Ehrlich: Die Sperre ist eine feste Regel im Code, keine kryptografische Sicherung. Ein Agent, der alle Regeln
-  ignoriert, könnte sie theoretisch umgehen. Deshalb veröffentlichen Routinen nie selbständig; das passiert nur in
-  einer Sitzung, in der Till selbst geantwortet hat.
+- Ehrlich: Das sind feste Regeln im Code, keine kryptografische Sicherung.

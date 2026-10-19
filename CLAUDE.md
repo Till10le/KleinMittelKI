@@ -17,7 +17,8 @@ Details stehen in den Skills unter `.claude/skills/` und im Handbuch `docs/handb
 
 1. **Nichts wird ohne Tills ausdrückliche Freigabe veröffentlicht, verschickt oder gepostet.**
    Beiträge, Newsletter, Social-Posts, Änderungen an der Website. Veröffentlicht wird nur über
-   `python3 tools/ghost.py publish`, und das Skript prüft die Freigabe in `redaktion/freigaben.jsonl`.
+   `python3 tools/ghost.py publish` bzw. `abarbeiten`, und das Skript prüft die Freigabe in `redaktion/freigaben.jsonl`.
+   Freigaben kommen nur von Till: per Mail-Antwort aus seinem Gmail (Skill `kmk-mail`) oder im Chat.
    Ghost nie direkt per curl oder eigenem Code zum Veröffentlichen ansprechen.
 2. **Nie Meinungen, Erfahrungen, Messwerte oder Testergebnisse von Till erfinden.** Alles in der Ich-Form,
    das Till nicht selbst gesagt hat, wird im Entwurf als Vorschlag markiert (INTERN-Absatz).
@@ -39,7 +40,8 @@ Alle Agenten lesen hier zuerst und schreiben ihre Ergebnisse hierher zurück.
 | `redaktion/blog-index.json` | Alle Beiträge aus Ghost mit Thema, Rubrik, Quellen, Zahlen, Links | `tools/ghost.py index` (automatisch) |
 | `redaktion/themenboard.md` | Jede Idee mit Status von „vorgeschlagen“ bis „beworben“ | alle Agenten |
 | `redaktion/entscheidungen.md` | Tills Ja/Nein mit Grund – die Lernschleife | Chefredakteur nach Tills Antwort |
-| `redaktion/freigaben.jsonl` | Veröffentlichungsfreigaben (nur auf Tills Anweisung im Chat) | Chefredakteur |
+| `redaktion/freigaben.jsonl` | Veröffentlichungsfreigaben (nur Tills Mail-Antwort oder Chat) | `tools/mailfreigabe.py`, `tools/ghost.py freigabe` |
+| `redaktion/mail.json` | Mail-Verläufe mit Till, verarbeitete Antworten | Mail-Lauf |
 | `redaktion/themenspeicher.md` | Offene Ideen und Serien | Ideen-Agent, Till |
 | `redaktion/berichte/` | Tages- und Wochenberichte | Chefredakteur, Analyst |
 | `entwuerfe/<slug>/` | Beitrag als `beitrag.md`, Grafiken, Vorschaubild, Quellen | Autor, Grafik |
