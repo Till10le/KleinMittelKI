@@ -28,11 +28,12 @@ Daneben: `verworfen` (mit Grund in `entscheidungen.md`), `zurueck` (Till will Ä
 - Titel (Arbeitstitel): Outlook räumt diktierte Texte auf – ein Praxistest
 - Rubrik/Kategorie: Praxistests / KI in der Praxis
 - Format: Praxistest
-- Quelle: Microsoft-Dokumentation (vom Scout zu ergänzen)
+- Quelle: Microsoft-Support "Diktieren Ihrer E-Mails in Outlook" https://support.microsoft.com/de-de/accessibility/outlook/dictate-your-emails-in-outlook (Datum der Seite unbekannt; vom Scout NICHT selbst gelesen, Abruf nicht möglich, ungeprüft)
 - Warum für KMU: Diktieren statt Tippen spart Inhabern Zeit bei Kundenmails; läuft im Abo, das viele Betriebe schon haben.
-- Relevanz: offen
-- Braucht von Till: eigenen Test durchführen und Ergebnisse liefern
-- Verlauf: 2026-10-12 Till: als künftigen Praxistest vorgemerkt
+- Relevanz: vorläufig 6/10 (Betroffenheit 1, Handlung 1, Quelle 1, Neuheit 2, Passung 1) – unter Schwelle. Grund: Die Behauptung "Outlook räumt diktierte Texte auf" ist nicht belegt; Treffer nennen nur Diktat mit automatischer Zeichensetzung, Aufräumen wäre Copilot. Titel ungeprüft.
+- Braucht von Till: eigenen Test durchführen und Ergebnisse liefern; ob er Microsoft 365/Copilot hat
+- Details: entwuerfe/outlook-diktat-praxistest/quellen.md
+- Verlauf: 2026-10-12 Till: als künftigen Praxistest vorgemerkt · 2026-10-19 Scout: Quelle benannt, Originalseite nicht lesbar, Kernbehauptung nicht belegt, Relevanz unter 7
 
 ### werkzeuge-besprechungsnotizen-datenschutz
 - Status: vorgeschlagen
@@ -41,31 +42,34 @@ Daneben: `verworfen` (mit Grund in `entscheidungen.md`), `zurueck` (Till will Ä
 - Format: Langtext
 - Quelle: Hersteller-Dokumentationen, Datenschutz-Aufsicht (vom Scout zu recherchieren)
 - Warum für KMU: Im Beitrag „Protokoll per KI“ angekündigt; jede Teamrunde betroffen.
-- Relevanz: offen
+- Relevanz: vorläufig 7/10 (Betroffenheit 2, Handlung 2, Quelle 0, Neuheit 1, Passung 2) – Quelle fehlt noch, daher nicht belastbar
 - Braucht von Till: Einschätzung, welche Werkzeuge er selbst nutzt
-- Verlauf: 2026-09-21 im Protokoll-Beitrag angekündigt
+- Details: entwuerfe/werkzeuge-besprechungsnotizen-datenschutz/quellen.md (Quellenliste noch leer; Auftrag für nächsten Lauf mit funktionierendem Abruf)
+- Verlauf: 2026-09-21 im Protokoll-Beitrag angekündigt · 2026-10-19 Scout: keine Quelle lesbar, nichts recherchiert, nur Gerüst angelegt
 
 ### olg-hamm-chatbot-haftung
 - Status: vorgeschlagen
 - Titel (Arbeitstitel): Wenn der Chatbot sich irrt, haftet der Betrieb
 - Rubrik/Kategorie: Aktuell / Entwicklungen
 - Format: Nachricht
-- Quelle: OLG Hamm, Az. 4 UKl 3/25 (Originalentscheidung vom Scout zu prüfen)
-- Warum für KMU: Jeder Betrieb mit Chatbot auf der Website ist betroffen.
-- Relevanz: offen
+- Quelle: OLG Hamm, Urteil 12.05.2026, Az. 4 UKl 3/25 – Aktenzeichen und Datum nur aus Zweitquellen (beck-aktuell, Ärzteblatt u. a.), **Original (Pressemitteilung/Volltext) nicht gelesen, URL offen, ungeprüft**
+- Warum für KMU: Jeder Betrieb mit Chatbot auf der Website ist betroffen (laut Urteil Fall einer Klinik; Übertragung auf andere Branchen ist Auslegung von Kommentatoren). Sachverhalt: Chatbot nannte Ärzte Fachärzte mit nicht existierenden Titeln, § 5 UWG.
+- Relevanz: vorläufig 9/10 (Betroffenheit 2, Handlung 2, Quelle 1, Neuheit 2, Passung 2) – hängt an Beschaffung des Originals. Hinweis: Urteil ist vom Mai, kein 72h-Ereignis; laut Zweitquellen nicht rechtskräftig, Revision zum BGH zugelassen.
 - Braucht von Till: Einschätzung
-- Verlauf: 2026-10-12 als stärkster Kandidat vorgeschlagen
+- Details: entwuerfe/olg-hamm-chatbot-haftung/quellen.md
+- Verlauf: 2026-10-12 als stärkster Kandidat vorgeschlagen · 2026-10-19 Scout: Az. und Eckdaten durch mehrere Zweitquellen gestützt, Original nicht abrufbar; vor Schreiben Original beschaffen
 
 ### eu-produkthaftung-software-ki
 - Status: vorgeschlagen
 - Titel (Arbeitstitel): Neue Produkthaftung für Software und KI ab 9.12.2026
 - Rubrik/Kategorie: Wissen / Leitfäden
 - Format: Langtext
-- Quelle: EU-Produkthaftungsrichtlinie (Original vom Scout zu prüfen)
-- Warum für KMU: Betriebe, die Software oder KI-Funktionen in Produkte einbauen oder anbieten.
-- Relevanz: offen (Frist beachten)
+- Quelle: Richtlinie (EU) 2024/2853 (EUR-Lex, CELEX 32024L2853) – **Original nicht gelesen** (Abruf nicht möglich); Frist 9.12.2026 nur aus Zweitquellen (IHK Frankfurt, Heuking), **ungeprüft**. Deutsches Umsetzungsgesetz: Stand widersprüchlich (Abstimmung 08.10.2026 vs. Rechtsausschuss), BT-Drs.-Nummer 21/4297 ungeprüft.
+- Warum für KMU: Betriebe, die Software oder KI-Funktionen in Produkte einbauen oder anbieten. Reine Anwender von Standard-KI vermutlich nicht betroffen (ungeprüft).
+- Relevanz: vorläufig 8/10 (Betroffenheit 1, Handlung 2, Quelle 1, Neuheit 2, Passung 2) – Frist beachten; Aussagen zum deutschen Recht erst nach Klärung des Gesetzesstands
 - Braucht von Till: Einschätzung
-- Verlauf: 2026-10-12 vorgeschlagen
+- Details: entwuerfe/eu-produkthaftung-software-ki/quellen.md
+- Verlauf: 2026-10-12 vorgeschlagen · 2026-10-19 Scout: Frist durch Zweitquellen gestützt, Original und Gesetzesstand ungeklärt, als ungeprüft markiert
 
 ### rechnungen-automatisch-erfassen (Entwurf von Till in Ghost)
 - Status: frage-an-till
