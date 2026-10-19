@@ -40,16 +40,38 @@
           "mail_id": "1a154f5d78916f05"
         }
       ]
+    },
+    {
+      "datum": "2026-10-19",
+      "thread_id": "1a155544e8f82a47",
+      "betreff": "KMK-Redaktion · Vorschau bereit · Mo 19.10.",
+      "art": "vorschau",
+      "eintraege": {
+        "A": "olg-hamm-chatbot-haftung",
+        "B": "eu-eurobarometer-ki-unternehmen"
+      },
+      "fragen_offen": [
+        {
+          "nr": "F1",
+          "slug": "olg-hamm-chatbot-haftung, eu-eurobarometer-ki-unternehmen",
+          "frage": "„Meine Einordnung“ selbst schreiben oder Vorschlag übernehmen?",
+          "mail_id": "1a155544e8f82a47"
+        }
+      ]
     }
   ],
   "eigene_ids": [
     "1a1538fd261463cc",
     "1a153abb707e8177",
-    "1a154f5d78916f05"
+    "1a154f5d78916f05",
+    "1a155544e8f82a47"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
     "1a153f817ec2e14b"
   ],
-  "vorschau_gemailt": []
+  "vorschau_gemailt": [
+    "olg-hamm-chatbot-haftung",
+    "eu-eurobarometer-ki-unternehmen"
+  ]
 }
