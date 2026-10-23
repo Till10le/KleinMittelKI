@@ -94,13 +94,23 @@
         }
       ],
       "erledigt": {
-        "A": "freigegeben sofort (Mail 1a168344dae06238)"
+        "A": "freigegeben sofort (Mail 1a168344dae06238) · veröffentlicht 23.10. 12:47, gemeldet (Mail 1a16859704304390)"
       }
     },
     {
       "datum": "2026-10-23",
       "thread_id": "1a1683f4a5c48ad8",
       "betreff": "KMK-Redaktion · Vorschau bereit · Fr 23.10.",
+      "art": "vorschau",
+      "eintraege": {
+        "A": "ki-ergebnisse-pruefen-leitfaden"
+      },
+      "fragen_offen": []
+    },
+    {
+      "datum": "2026-10-23",
+      "thread_id": "1a168596c5f5c06a",
+      "betreff": "KMK-Redaktion · Vorschau bereit · Fr 23.10. · überarbeitete Fassung",
       "art": "vorschau",
       "eintraege": {
         "A": "ki-ergebnisse-pruefen-leitfaden"
@@ -115,7 +125,9 @@
     "1a155544e8f82a47",
     "1a1676dd6e688eb5",
     "1a1683f12c5b0433",
-    "1a1683f4a5c48ad8"
+    "1a1683f4a5c48ad8",
+    "1a168596c5f5c06a",
+    "1a16859704304390"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
@@ -125,6 +137,8 @@
   "vorschau_gemailt": [
     "olg-hamm-chatbot-haftung",
     "eu-eurobarometer-ki-unternehmen",
-    "ki-ergebnisse-pruefen-leitfaden"
+    "ki-ergebnisse-pruefen-leitfaden",
+    "ki-ergebnisse-pruefen-leitfaden@2026-10-23T10:38:44.000Z",
+    "eu-eurobarometer-ki-unternehmen@2026-10-19T18:01:17.000Z"
   ]
 }
