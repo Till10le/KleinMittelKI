@@ -1,10 +1,10 @@
 # Blog-Index
 
-Stand: 2026-10-19T08:12:46+00:00 · 25 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
+Stand: 2026-10-23T05:48:25+00:00 · 27 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
 
 | Datum | Status | Kategorie | Titel | Quellen | Zahlen |
 |---|---|---|---|---|---|
-| 2026-10-20 | scheduled |  | [#3: Was KI-Agenten können und warum gepflegtes Wissen zählt](https://www.kleinmittelki.de/email/6cf38ed6-08f9-4e38-832d-2455c87ce733/) | 0 | 1 |
+| 2026-10-20 | sent |  | [#3: Was KI-Agenten können und warum gepflegtes Wissen zählt](https://www.kleinmittelki.de/email/6cf38ed6-08f9-4e38-832d-2455c87ce733/) | 0 | 1 |
 | 2026-10-18 | published | Grundlagen | [KI-Agenten: Was nach dem Chatbot kommt und was KMU davon haben](https://www.kleinmittelki.de/ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben/) | 10 | 0 |
 | 2026-10-18 | published | Entwicklungen | [Wenn der Meister in Rente geht: Was KI im Wissensmanagement wirklich leistet](https://www.kleinmittelki.de/wenn-der-meister-in-rente-geht-was-ki-im-wissensmanagement-wirklich-leistet/) | 4 | 0 |
 | 2026-10-13 | sent |  | [#2: Protokoll per KI – was gut lief und wo die Fehler steckten](https://www.kleinmittelki.de/email/98f09be7-434c-44a5-a638-f9c166bfce1d/) | 0 | 1 |
@@ -23,6 +23,8 @@ Stand: 2026-10-19T08:12:46+00:00 · 25 Beiträge (automatisch aus Ghost, nicht v
 | 2026-09-18 | published | Studien & Zahlen | [Mehr Umsatz durch KI? Was eine neue KfW-Studie zeigt.](https://www.kleinmittelki.de/kfw-studie-ki-unternehmenserfolg/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Werbung direkt in ChatGPT: Entsteht hier ein neuer Kanal für Unternehmen?](https://www.kleinmittelki.de/werbung-chatgpt-sponsored-agents/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Mit KI Unternehmenszahlen auswerten – ohne selbst ein Dashboard zu bauen?](https://www.kleinmittelki.de/ki-unternehmenszahlen-data-agent/) | 1 | 0 |
+| – | draft | Entwicklungen | [Wenn der Chatbot sich irrt, haftet der Betrieb: Was ein Urteil des OLG Hamm zeigt](https://www.kleinmittelki.de/p/1843fcaf-e8d6-4e41-ad9f-f14ddc24e14a/) | 2 | 0 |
+| – | draft | Studien & Zahlen | [Kosten, Recht, Wissen: Was EU-Betriebe bei KI und Personalsoftware bremst](https://www.kleinmittelki.de/p/d77e3c23-2a20-4e08-902e-c7eb02041c7e/) | 2 | 11 |
 | – | draft | KI in der Praxis | [Immobiliensuche mit KI: So habe ich ChatGPT, Notion und Excel kombiniert](https://www.kleinmittelki.de/p/152d747f-9b0a-41e2-af39-57ec34bdf2a7/) | 4 | 1 |
 | – | draft |  | [INTERN – Status Quo: Fahrplan und Datenquellen](https://www.kleinmittelki.de/p/1f393daa-2f6d-4292-ad61-4404dee388d5/) | 0 | 0 |
 | – | draft |  | [INTERN – Themenideen für "KI in der Praxis"](https://www.kleinmittelki.de/p/7ad6e436-91a5-43ca-89d9-afbbcc214d8e/) | 0 | 0 |

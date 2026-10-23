@@ -1,14 +1,14 @@
 {
-  "stand": "2026-10-19T08:12:46+00:00",
-  "anzahl": 25,
+  "stand": "2026-10-23T05:48:25+00:00",
+  "anzahl": 27,
   "beitraege": [
     {
       "id": "6ad49df03ff4030001b24ef1",
       "slug": "3-was-ki-agenten-konnen-und-warum-gepflegtes-wissen-zahlt",
       "titel": "#3: Was KI-Agenten können und warum gepflegtes Wissen zählt",
-      "status": "scheduled",
+      "status": "sent",
       "veroeffentlicht": "2026-10-20",
-      "geaendert": "2026-10-18",
+      "geaendert": "2026-10-20",
       "kategorie": "",
       "interne_tags": [
         "#newsletter"
@@ -610,6 +610,80 @@
       ],
       "zahlen": [],
       "woerter": 284
+    },
+    {
+      "id": "6ad65af14ad712000114ea42",
+      "slug": "olg-hamm-chatbot-haftung",
+      "titel": "Wenn der Chatbot sich irrt, haftet der Betrieb: Was ein Urteil des OLG Hamm zeigt",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-10-19",
+      "kategorie": "Entwicklungen",
+      "interne_tags": [
+        "#empfehlung",
+        "#zur-freigabe"
+      ],
+      "teaser": "Ein Website-Chatbot erfand Facharzttitel. Das Gericht rechnet die Falschangaben dem Betreiber zu, nicht der Technik.",
+      "url": "https://www.kleinmittelki.de/p/1843fcaf-e8d6-4e41-ad9f-f14ddc24e14a/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html",
+        "https://www.justiz.nrw/presse/2026-05-12"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben/"
+      ],
+      "zahlen": [],
+      "woerter": 480
+    },
+    {
+      "id": "6ad65aed4ad712000114ea38",
+      "slug": "eu-eurobarometer-ki-unternehmen",
+      "titel": "Kosten, Recht, Wissen: Was EU-Betriebe bei KI und Personalsoftware bremst",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-10-19",
+      "kategorie": "Studien & Zahlen",
+      "interne_tags": [
+        "#empfehlung",
+        "#zur-freigabe"
+      ],
+      "teaser": "Eine EU-Umfrage unter 12.826 Betrieben zeigt, wie verbreitet solche Systeme schon sind. Die 42 Prozent messen aber etwas anderes, als es klingt.",
+      "url": "https://www.kleinmittelki.de/p/d77e3c23-2a20-4e08-902e-c7eb02041c7e/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_2160",
+        "https://europa.eu/eurobarometer/surveys/detail/3696"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-nutzung-unternehmen-bitkom-2026/"
+      ],
+      "zahlen": [
+        "Für den Prüfer: Die 42 Prozent sind keine reine KI-Quote (Frage nach „artificial intelligence or automated systems“ zur Organisation von Arbeit und Personal, mit oder ohne KI).",
+        "Die Gesamtzahlen (42, 12, 30, 21, 50/49/48, 90 Prozent, 12.826 Betriebe, Feldzeit) decken sich mit der Pressemitteilung IP/26/2160 und der offiziellen Infografik der GD Beschäftigung.",
+        "Nur aus dem Spiegel-PDF (Prüfer, 19.10.2026: bei europa.eu nicht gefunden) stammen die Größenklassen-Werte 41/49/56/64 Prozent in der Grafik und die Aussage, dass größere Betriebe die Hürden häufiger nennen.",
+        "Ergebnis: 42 Prozent nutzen KI oder automatisierte Systeme, um Arbeit und Personal zu organisieren.",
+        "12 Prozent tun das umfangreich, 30 Prozent begrenzt oder zum Ausprobieren.",
+        "Weitere 21 Prozent planen es.",
+        "Als wichtige Hürden nennen 50 Prozent hohe Investitionskosten, 49 Prozent rechtliche Unsicherheit und 48 Prozent fehlendes Fachwissen im Haus.",
+        "Was die Grafik zeigt: Je größer der Betrieb, desto häufiger sind solche Systeme im Einsatz, von 41 Prozent bei bis zu 9 Beschäftigten bis 64 Prozent bei 250 bis 749.",
+        "Die 42 Prozent sind keine KI-Quote.",
+        "Mit den 57 Prozent aus der Bitkom-Umfrage ist das nicht vergleichbar.",
+        "Die Umfrage zeigt auch: 90 Prozent der Nutzer lassen am Ende Menschen entscheiden."
+      ],
+      "woerter": 693
     },
     {
       "id": "6ab29a197af57d000189c7bd",
