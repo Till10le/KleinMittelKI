@@ -49,5 +49,7 @@ Die Shell dort erreicht das Internet nicht – das Logo liegt deshalb als `asset
 - Der Mail-Lauf hat keinen Ghost-Zugang. Er trägt Freigaben nur ein, wenn die Antwort aus Tills eigenem Gmail kommt
   (`till.zehnle@gmail.com`, Label „Gesendet“) und im Verlauf einer Redaktions-Mail steht – mit Zitat und Gmail-ID.
 - `tools/ghost.py` veröffentlicht nur mit einer Freigabe, die zum Stand passt, den Till in der Vorschau gesehen hat.
+- Beitragsbild ist immer das Titelbild (`tools/titelbild.py`), nie die Titel-Kachel; `draft` und `publish` blockieren sonst.
+  Ein Titelbild an einem veröffentlichten Beitrag tauscht der Ghost-Lauf nur mit Tills Freigabe der Art `titelbild`.
 - `tools/sperre.py` blockiert direkte Ghost-Aufrufe, Änderungen an der Sperre und Löschen im Gedächtnis.
 - Ehrlich: Das sind feste Regeln im Code, keine kryptografische Sicherung.

@@ -217,6 +217,36 @@ def _tags(meta: dict) -> list[dict]:
     return out
 
 
+def _titelbild_datei(folder: Path, meta: dict) -> Path | None:
+    """Titelbild = Beitragsbild oben im Beitrag und Kachel in der Übersicht (tools/titelbild.py), NICHT die Titel-Kachel."""
+    if str(meta.get("titelbild", "")).strip().lower() == "nein":
+        return None
+    name = meta.get("titelbild") or f"titel-{meta.get('slug') or folder.name}.jpg"
+    bild = folder / name
+    if not bild.exists():
+        raise GhostFehler(f"Titelbild fehlt: {bild}. Mit tools/titelbild.py erzeugen (Einordnungs-Grafik, nicht der Titel). "
+                          f"Ohne Titelbild nur mit 'titelbild: nein' im Frontmatter.")
+    vorschau = folder / (meta.get("vorschaubild") or "vorschaubild.png")
+    vorschau_jpg = vorschau.with_suffix(".jpg")
+    h = hashlib.sha256(bild.read_bytes()).hexdigest()
+    for v in (vorschau, vorschau_jpg):
+        if v.exists() and hashlib.sha256(v.read_bytes()).hexdigest() == h:
+            raise GhostFehler(f"{bild.name} ist die Titel-Kachel. Als Beitragsbild doppelt sie die Überschrift. "
+                              f"Titelbild mit tools/titelbild.py bauen.")
+    return bild
+
+
+def _titelbild_hochladen(folder: Path, meta: dict, state: dict) -> str | None:
+    bild = _titelbild_datei(folder, meta)
+    if not bild:
+        return None
+    h = hashlib.sha256(bild.read_bytes()).hexdigest()
+    if state.get("titelbild_hash") != h or not state.get("titelbild_url"):
+        state["titelbild_url"] = upload(bild)
+        state["titelbild_hash"] = h
+    return state["titelbild_url"]
+
+
 def cmd_draft(a) -> None:
     state = _draft(Path(a.ordner))
     print(json.dumps({k: state[k] for k in ("id", "status", "vorschau", "admin")}, ensure_ascii=False, indent=2))
@@ -250,9 +280,12 @@ def _draft(folder: Path) -> dict:
         state["vorschaubild_url"] = url
         state["vorschaubild_hash"] = hashlib.sha256(bild.read_bytes()).hexdigest()
     if state.get("vorschaubild_url"):
+        # Titel-Kachel nur zum Teilen (LinkedIn, WhatsApp …), nie als Beitragsbild: das Theme zeigt den Titel schon.
         post["og_image"] = post["twitter_image"] = state["vorschaubild_url"]
-        if meta.get("titelbild", "ja") != "nein":
-            post["feature_image"] = state["vorschaubild_url"]
+    if not newsletter:
+        url = _titelbild_hochladen(folder, meta, state)
+        if url:
+            post["feature_image"] = url
 
     if state.get("id"):
         current = find_post(state["id"], formats="lexical")
@@ -292,6 +325,14 @@ def cmd_freigabe(a) -> None:
              "updated_at": p["updated_at"], "zitat": a.zitat.strip(),
              "zeit": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
              "sitzung": os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID", "")}
+    if a.art == "titelbild":
+        # gebunden an die Bilddatei, die Till gesehen hat (nicht an den Textstand)
+        folder = ROOT / "entwuerfe" / p["slug"]
+        meta, _ = lexical.build((folder / "beitrag.md").read_text(encoding="utf-8"))
+        bild = _titelbild_datei(folder, meta)
+        if not bild:
+            raise GhostFehler("Kein Titelbild im Entwurfsordner.")
+        entry["datei_hash"] = hashlib.sha256(bild.read_bytes()).hexdigest()
     FREIGABEN.parent.mkdir(parents=True, exist_ok=True)
     with FREIGABEN.open("a") as f:
         f.write(json.dumps(entry, ensure_ascii=False) + "\n")
@@ -334,6 +375,9 @@ def _publish(p: dict, zeitpunkt: str | None) -> dict:
     rest = _restliche_platzhalter(lex)
     if rest:
         raise GhostFehler(f"SPERRE: Offene Platzhalter im Beitrag: {rest}")
+    if p.get("feature_image") and p.get("feature_image") == p.get("og_image"):
+        raise GhostFehler("SPERRE: Beitragsbild ist die Titel-Kachel (doppelte Überschrift). "
+                          "Titelbild mit tools/titelbild.py bauen und Entwurf neu anlegen (ghost.py draft).")
     tags = [{"name": t["name"]} for t in p.get("tags", []) if t["name"] != "#zur-freigabe"]
     update = {"lexical": lex, "tags": tags, "updated_at": p["updated_at"]}
     if zeitpunkt and zeitpunkt != "sofort":
@@ -423,16 +467,43 @@ def _zurueckziehen(f: dict) -> dict | None:
     return {"slug": q["slug"], "status": q["status"], "hinweis": "Einplanung zurückgezogen"}
 
 
+def _titelbild_tauschen(f: dict) -> dict | None:
+    """Till hat ein neues Titelbild für einen (auch veröffentlichten) Beitrag freigegeben: nur feature_image ändern."""
+    folder = ROOT / "entwuerfe" / f["slug"]
+    state_file = folder / "ghost.json"
+    state = json.loads(state_file.read_text()) if state_file.exists() else {}
+    meta, _ = lexical.build((folder / "beitrag.md").read_text(encoding="utf-8"))
+    bild = _titelbild_datei(folder, meta)
+    if not bild:
+        return None
+    h = hashlib.sha256(bild.read_bytes()).hexdigest()
+    if h != f.get("datei_hash"):
+        raise GhostFehler(f"SPERRE: Titelbild wurde nach Tills Freigabe geändert ({bild.name}). Neu freigeben lassen.")
+    p = find_post(f["post_id"], formats="lexical")
+    if state.get("titelbild_hash") == h and p.get("feature_image") == state.get("titelbild_url"):
+        return None  # schon getauscht
+    url = _titelbild_hochladen(folder, meta, state)
+    q = api("PUT", f"posts/{p['id']}/", body={"posts": [{"feature_image": url, "updated_at": p["updated_at"]}]})["posts"][0]
+    state.update({"updated_at": q["updated_at"]})
+    state_file.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
+    return {"slug": q["slug"], "status": q["status"], "hinweis": f"Titelbild getauscht ({bild.name})"}
+
+
 def cmd_abarbeiten(_a) -> None:
     """Führt die jeweils neueste Freigabe je Entwurf aus: veröffentlichen, einplanen, Newsletter aus Mail-Text, stopp."""
     ergebnisse = []
     gesehen = set()
     for f in reversed(_freigaben()):
-        key = f.get("slug") or f.get("post_id")
+        key = (f.get("slug") or f.get("post_id"), f["art"] == "titelbild")
         if key in gesehen:
             continue
         gesehen.add(key)
         try:
+            if f["art"] == "titelbild":
+                r = _titelbild_tauschen(f)
+                if r:
+                    ergebnisse.append(r)
+                continue
             if f["art"] == "stopp":
                 r = _zurueckziehen(f)
                 if r:
@@ -540,7 +611,7 @@ def main(argv=None) -> int:
     sub.add_parser("index").set_defaults(fn=cmd_index)
     s = sub.add_parser("referenz"); s.add_argument("--auch", nargs="*", help="zusätzliche Slugs (z. B. Vorlagen-Entwürfe)")
     s.set_defaults(fn=cmd_referenz)
-    s = sub.add_parser("freigabe"); s.add_argument("ref"); s.add_argument("--art", required=True, choices=["beitrag", "newsletter"])
+    s = sub.add_parser("freigabe"); s.add_argument("ref"); s.add_argument("--art", required=True, choices=["beitrag", "newsletter", "titelbild"])
     s.add_argument("--zitat", required=True); s.set_defaults(fn=cmd_freigabe)
     s = sub.add_parser("publish"); s.add_argument("ref"); s.add_argument("--zeitpunkt"); s.set_defaults(fn=cmd_publish)
     s = sub.add_parser("newsletter"); s.add_argument("ref"); s.add_argument("--newsletter")

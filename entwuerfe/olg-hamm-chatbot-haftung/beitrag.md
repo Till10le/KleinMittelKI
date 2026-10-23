@@ -6,6 +6,7 @@ tags: [#empfehlung]
 teaser: Ein Website-Chatbot erfand Facharzttitel. Das Gericht rechnet die Falschangaben dem Betreiber zu, nicht der Technik.
 fuer_kmu: Was dein Website-Chatbot sagt, sagst rechtlich du. Prüf ihn mit den Fragen, die Kunden wirklich stellen.
 vorschaubild: vorschaubild.png
+titelbild: titel-olg-hamm-chatbot-haftung.jpg
 ---
 
 INTERN – vor Veröffentlichung entfernen: Till hat das Thema freigegeben, aber keine eigene Einschätzung geliefert. Der gesamte Abschnitt „Meine Einordnung“ ist ein Vorschlag der Redaktion (Satzanfänge: „Ich lese das Urteil …“, „Bemerkenswert finde ich …“, „Die Grenze ist klar …“, „Was leicht übersehen wird …“). Ebenfalls Vorschlag: der Gedanke zum Mitnehmen und die Testempfehlung im Mittelstand-Abschnitt (Beispiel Handwerksbetrieb 20–150 Leute ist redaktionell gewählt, kein Fall aus dem Urteil). Bitte ersetzen oder freigeben. Für den Prüfer: Rechtskraft steht nur in den Kopfdaten der NRWE-Datenbank („rechtskräftig“, abgerufen 19.10.2026); die Pressemitteilung vom 12.05.2026 sagt nur „Revision zugelassen“, Zweitquellen schreiben „nicht rechtskräftig“. Bitte vor Veröffentlichung erneut prüfen. Nicht verwendet, weil vom Original nicht getragen: „Warnhinweis ‚KI kann irren‘ entlastet nicht“ und das LG-München-Urteil.

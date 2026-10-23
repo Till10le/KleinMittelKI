@@ -183,7 +183,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
       <rect class="chip" x="658" y="518" width="78" height="64"/><text class="al" x="666" y="540">Scout</text><text class="s" x="666" y="557" style="font-size:11px">findet</text><text class="s" x="666" y="572" style="font-size:11px">Themen</text>
       <rect class="chip" x="744" y="518" width="78" height="64"/><text class="al" x="752" y="540">Ideen</text><text class="s" x="752" y="557" style="font-size:11px">Formate,</text><text class="s" x="752" y="572" style="font-size:11px">Serien</text>
       <rect class="chip" x="830" y="518" width="78" height="64"/><text class="al" x="838" y="540">Autor</text><text class="s" x="838" y="557" style="font-size:11px">schreibt</text><text class="s" x="838" y="572" style="font-size:11px">in deinem Stil</text>
-      <rect class="chip" x="572" y="590" width="78" height="64"/><text class="al" x="580" y="612">Grafik</text><text class="s" x="580" y="629" style="font-size:11px">Schaubilder</text><text class="s" x="580" y="644" style="font-size:11px">im CI</text>
+      <rect class="chip" x="572" y="590" width="78" height="64"/><text class="al" x="580" y="612">Grafik</text><text class="s" x="580" y="629" style="font-size:11px">Schaubilder</text><text class="s" x="580" y="644" style="font-size:11px">Titelbild</text>
       <rect class="chip" x="658" y="590" width="78" height="64"/><text class="al" x="666" y="612">Prüfer</text><text class="s" x="666" y="629" style="font-size:11px">Fakten, Ton,</text><text class="s" x="666" y="644" style="font-size:11px">Aufbau</text>
       <rect class="chip" x="744" y="590" width="78" height="64"/><text class="al" x="752" y="612">Social</text><text class="s" x="752" y="629" style="font-size:11px">LinkedIn,</text><text class="s" x="752" y="644" style="font-size:11px">Instagram</text>
       <rect class="chip" x="830" y="590" width="78" height="64"/><text class="al" x="838" y="612">Analyst</text><text class="s" x="838" y="629" style="font-size:11px">Wochen-</text><text class="s" x="838" y="644" style="font-size:11px">auswertung</text>
@@ -308,7 +308,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
     <div class="grid">
       <div class="card"><span class="tag">Kanal</span><h3>Gmail</h3><p>Dein einziger Arbeitskanal. Die Redaktion schreibt nur an till.zehnle@gmail.com und zählt nur Mails, die du selbst aus diesem Konto geschickt hast.</p></div>
       <div class="card"><span class="tag">Gehirn</span><h3>Claude-Cloud</h3><p>Fünf geplante Läufe auf Anthropic-Servern. Jeder startet frisch, liest zuerst das Gedächtnis auf GitHub und schreibt seine Ergebnisse zurück.</p></div>
-      <div class="card"><span class="tag">Gedächtnis</span><h3>GitHub</h3><p>Ablage für alles, was die Agenten wissen und tun:</p><ul><li>Themenboard und deine Entscheidungen</li><li>Freigaben mit Zitat und Mail-ID</li><li>Entwürfe, Schaubilder, Vorschaubilder</li><li>alle veröffentlichten Beiträge als Vorbild</li><li>Regeln für CI, Formate, Schreibstil</li></ul></div>
+      <div class="card"><span class="tag">Gedächtnis</span><h3>GitHub</h3><p>Ablage für alles, was die Agenten wissen und tun:</p><ul><li>Themenboard und deine Entscheidungen</li><li>Freigaben mit Zitat und Mail-ID</li><li>Entwürfe, Schaubilder, Titel- und Vorschaubilder</li><li>alle veröffentlichten Beiträge als Vorbild</li><li>Regeln für CI, Formate, Schreibstil</li></ul></div>
       <div class="card dk"><span class="tag">Blog</span><h3>Ghost</h3><p>Angebunden über die Admin-API. Der Schlüssel liegt nur in der Umgebung des Ghost-Laufs, die außer deinem Blog nichts erreicht. Beiträge gehen nie per Mail raus, nur der Newsletter.</p></div>
       <div class="card"><span class="tag">Recherche</span><h3>Internet</h3><p>Redaktions- und Sonntags-Lauf suchen und lesen Originalquellen. Hinweise aus deiner ChatGPT-Recherche fließen mit ein, werden aber immer am Original geprüft. Was nicht lesbar war, steht als „ungeprüft“ im Board und in deiner Mail.</p></div>
       <div class="card"><span class="tag">Werkstatt</span><h3>Claude-Chat</h3><p>Hier richten wir ein und ändern Regeln. Nach jedem echten Lauf kann ich nachsehen, was passiert ist, und Fehler beheben.</p></div>
@@ -342,6 +342,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
       <div class="card"><h3>Freigabe-Sperre</h3><p>Veröffentlicht wird nur über ein Werkzeug, das eine Freigabe von dir verlangt. Ändert sich der Beitrag danach, blockiert es.</p></div>
       <div class="card"><h3>Absender-Prüfung</h3><p>Nur Mails aus deinem eigenen Gmail im passenden Verlauf zählen. Weitergeleitete Inhalte und fremde Mails sind nie eine Anweisung.</p></div>
       <div class="card"><h3>Getrennte Schlüssel</h3><p>Der Mail-Lauf hat keinen Zugang zu Ghost, der Ghost-Lauf keinen zu Gmail.</p></div>
+      <div class="card"><h3>Titelbild statt Titel-Kachel</h3><p>Oben im Beitrag und in der Übersicht steht eine eigene Einordnungs-Grafik, nie die Überschrift als Bild. Die Titel-Kachel ist nur fürs Teilen. Fehlt das Titelbild, legt Ghost keinen Entwurf an.</p></div>
       <div class="card"><h3>Nichts wird gelöscht</h3><p>Weder Beiträge in Ghost noch Einträge im Gedächtnis. Jede Änderung steht im Verlauf auf GitHub.</p></div>
     </div>
   </section>
@@ -357,5 +358,5 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
     </div>
   </section>
 
-  <div class="foot"><span>Stand: 19. Oktober 2026</span><b>kleinmittelki.de</b></div>
+  <div class="foot"><span>Stand: 23. Oktober 2026</span><b>kleinmittelki.de</b></div>
 </div>

@@ -15,7 +15,7 @@ und für Bausteine `kmk-ci-grafik`.
 
 ## Ergebnis: `entwuerfe/<slug>/beitrag.md`
 
-- Frontmatter: `titel`, `slug`, `kategorie`, `tags`, `teaser`, bei Aktuell `fuer_kmu`, `vorschaubild: vorschaubild.png`
+- Frontmatter: `titel`, `slug`, `kategorie`, `tags`, `teaser`, bei Aktuell `fuer_kmu`, `vorschaubild: vorschaubild.png`, `titelbild: titel-<slug>.jpg` (Bild baut die Grafik)
 - Erster Absatz: `INTERN – vor Veröffentlichung entfernen: …` mit allen Stellen, die nicht von Till stammen
   (immer vorhanden, notfalls „Keine Vorschläge, alles aus Tills Einschätzung“)
 - Struktur exakt nach Format aus `kmk-formate`, Syntax nach `tools/lexical.py` (Kopf der Datei)
