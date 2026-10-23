@@ -23,6 +23,24 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 
 ## Aktiv
 
+### ki-ergebnisse-pruefen-leitfaden
+- Status: freigegeben
+- Idee von Till (Chat 23.10.2026, LinkedIn-Anlass + ChatGPT-Entwurf, siehe redaktion/eingang/2026-10-23-chatgpt-ki-fehler-pruefen.md)
+- Titel (Arbeitstitel): KI klingt sicher. Aber stimmt es auch? So prüfst du KI-Ergebnisse im Betrieb
+- Rubrik/Kategorie: Wissen / Leitfäden
+- Format: Langtext (ca. 1.900–2.000 Wörter, Box „Das Wichtigste in 30 Sekunden“, 4–5 Schaubilder im Karten-System, Abschnitt „Zum Ausprobieren“)
+- Kern: Nicht jede KI-Antwort braucht dieselbe Kontrolle. Drei Stufen nach Folgen eines Fehlers: frei nutzen (Ideen, Entwürfe) · gezielt prüfen (Angebote, Exposés, Auswertungen) · nur mit Freigabe (Buchungen, Preise, Zahlungen). Fünf Regeln als Checkliste.
+- Vorgaben aus dem Chat (Till: „Ja“ auf diese Punkte):
+  - KEIN Hund-Tiger-Meme und keine fremden Bilder; eigenes Beispiel als Schaubild.
+  - KEIN Einzelhandels-Beispiel (Regel 4). Beispiele z. B. Handwerksbetrieb (Angebot mit erfundenen Materialpreisen), Hausverwaltung (Nebenkosten), Gastronomie (Allergen-Angaben), Immobilien-Exposé (Vermutung wird Tatsache).
+  - Keine Ampelfarben: Stufen-Schaubild nur in Schwarz/Lime (g-stufen oder g-tabelle).
+  - Quellen am Original lesen: OpenAI-Hinweise zu Halluzinationen, OWASP Top 10 for LLM Applications (Misinformation), ggf. BSI. LinkedIn-Beitrag von Alex Lichtenberger nur als Anlass nennen, nicht als Beleg (nicht gelesen).
+  - Intern verlinken: OLG-Hamm-Beitrag (olg-hamm-chatbot-haftung, sobald online) und KI-Agenten-Beitrag (Zugriffsrechte, Stufen).
+  - Ich-Aussagen nur als INTERN-Vorschlag, bis Till eigene Sätze liefert. Kein Praxistest-Ergebnis erfinden; „Zum Ausprobieren“ als Anleitung für den Leser.
+- Später: Praxistest als Fortsetzung (Till testet; Redaktion bereitet Beispiel-Preisliste und Prompt vor).
+- Braucht von Till: 2–3 Sätze eigene Erfahrung, wo KI überzeugend falschlag
+- Verlauf: 2026-10-23 Till im Chat: „Ja“ → freigegeben, Express-Lauf gestartet
+
 ### eu-eurobarometer-ki-unternehmen
 - Status: wartet-auf-till
 - Vorschau: https://www.kleinmittelki.de/p/d77e3c23-2a20-4e08-902e-c7eb02041c7e/
