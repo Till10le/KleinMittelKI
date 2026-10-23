@@ -28,3 +28,4 @@ Nur der Chefredakteur schreibt hier, und nur, was Till tatsächlich gesagt hat. 
 - 2026-10-19 · Newsletter-Vorschlag sonntags per Mail, Hin und Her, Einplanung nach Freigabe am Sonntag · JA · „den newslettervorschlag für dienstag brauche ich immer am Sonntag davor von dir via mail …“ (Chat)
 - 2026-10-19 · eu-eurobarometer-ki-unternehmen · JA (Idee von Till) · „KMK Idee: bitte direkt fertig ausarbeiten und Entwurf schicken“ (Mail-Betreff; Einordnung im Text ggf. aus ChatGPT, offen)
 - 2026-10-23 · ki-ergebnisse-pruefen-leitfaden (Langtext, Wissen/Leitfäden, ohne Meme, ohne Handel, Stufen in Schwarz/Lime) · JA · „Ja“ (Chat)
+- 2026-10-23 · olg-hamm-chatbot-haftung veröffentlichen (sofort), Vorschlag „Meine Einordnung“ übernommen · JA · „Beitrag A ja / Vorher interne Notizen wegmachen“ (Mail-Antwort)

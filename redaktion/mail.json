@@ -92,7 +92,20 @@
           "frage": "Microsoft 365 mit Copilot vorhanden?",
           "mail_id": "1a1676dd6e688eb5"
         }
-      ]
+      ],
+      "erledigt": {
+        "A": "freigegeben sofort (Mail 1a168344dae06238)"
+      }
+    },
+    {
+      "datum": "2026-10-23",
+      "thread_id": "1a1683f4a5c48ad8",
+      "betreff": "KMK-Redaktion · Vorschau bereit · Fr 23.10.",
+      "art": "vorschau",
+      "eintraege": {
+        "A": "ki-ergebnisse-pruefen-leitfaden"
+      },
+      "fragen_offen": []
     }
   ],
   "eigene_ids": [
@@ -100,14 +113,18 @@
     "1a153abb707e8177",
     "1a154f5d78916f05",
     "1a155544e8f82a47",
-    "1a1676dd6e688eb5"
+    "1a1676dd6e688eb5",
+    "1a1683f12c5b0433",
+    "1a1683f4a5c48ad8"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
-    "1a153f817ec2e14b"
+    "1a153f817ec2e14b",
+    "1a168344dae06238"
   ],
   "vorschau_gemailt": [
     "olg-hamm-chatbot-haftung",
-    "eu-eurobarometer-ki-unternehmen"
+    "eu-eurobarometer-ki-unternehmen",
+    "ki-ergebnisse-pruefen-leitfaden"
   ]
 }
