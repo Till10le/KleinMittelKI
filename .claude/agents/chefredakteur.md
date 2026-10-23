@@ -72,9 +72,10 @@ Lies den Skill `kmk-mail` vollständig. Dann:
    und den Ausfall in den Bericht schreiben. Dann neue Redaktions-Mail nach `kmk-mail` mit allen Themen `vorgeschlagen`, Tills geprüften
    Ideen (I1 …), allen Entwürfen `wartet-auf-till` (mit Vorschau-Link) und dem Newsletter, falls er auf Freigabe wartet.
    Nichts zu entscheiden: keine Mail.
-   **In jedem Lauf außerdem:** Gibt es Entwürfe `wartet-auf-till`, deren Vorschau-Link Till noch nicht bekommen hat
-   (`mail.json` → `vorschau_gemailt`): sofort eine kurze Mail „Vorschau bereit“ mit diesen Entwürfen als A, B …
-   (Format wie im Abschnitt „Fertig zur Veröffentlichung“ von `kmk-mail`), Slugs in `vorschau_gemailt` eintragen.
+   **In jedem Lauf außerdem:** Gibt es Entwürfe `wartet-auf-till`, deren aktuellen Stand Till noch nicht bekommen hat
+   (`mail.json` → `vorschau_gemailt` enthält `<slug>@<updated_at aus ghost.json>`; ein reiner Slug ohne `@` zählt als alter Stand):
+   sofort eine kurze Mail „Vorschau bereit“ mit diesen Entwürfen als A, B … (Format wie im Abschnitt „Fertig zur Veröffentlichung“
+   von `kmk-mail`; bei einer Überarbeitung „überarbeitete Fassung“ dazuschreiben), dann `<slug>@<updated_at>` eintragen.
    **Express:** Hat Till in diesem Lauf ein Thema freigegeben, sofort den Redaktions-Lauf starten
    (`fire_trigger` trig_014MXZRLtHdAje8fQVoadh3t, ohne Zusatztext) und
    in der Bestätigung schreiben: „Wird jetzt ausgearbeitet, Vorschau-Link kommt in etwa einer Stunde.“
