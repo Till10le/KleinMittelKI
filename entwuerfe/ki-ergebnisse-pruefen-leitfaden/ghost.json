@@ -1,0 +1,30 @@
+{
+  "bilder": {
+    "kmk-ki-pruefen-g1.png": {
+      "hash": "7e2bb81abfcba56e57972902e5b3b577914a1f5f35704070ae299f0a4d783cf9",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g1.png"
+    },
+    "kmk-ki-pruefen-g2.png": {
+      "hash": "2c23c0a0f1ed1e717a57b7ebc5997cbc93c243978bb82c9413fe9ad9daa9039f",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g2.png"
+    },
+    "kmk-ki-pruefen-g3.png": {
+      "hash": "21745cffbfd691eba76e3914510d99cab5a01d7f80d3aeefd1f1247027584380",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g3.png"
+    },
+    "kmk-ki-pruefen-g5.png": {
+      "hash": "8f9a4740eec0d7bb33ea0ed3270ae41a12a61a69f55c6b8fe93ddafb3dd4693b",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g5.png"
+    }
+  },
+  "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/vorschaubild-2.png",
+  "vorschaubild_hash": "a8f48197b5a1b6fa60007830a4e3c872525d81637ef6997069f61e6da67eccb4",
+  "id": "6adb327eb21d370001a498fb",
+  "uuid": "3aa0ec3b-67f5-440d-9514-2a9509cbbfd0",
+  "slug": "ki-ergebnisse-pruefen-leitfaden",
+  "titel": "KI klingt sicher. Aber stimmt es auch? So prüfst du KI-Ergebnisse im Betrieb",
+  "status": "draft",
+  "updated_at": "2026-10-23T10:10:06.000Z",
+  "vorschau": "https://www.kleinmittelki.de/p/3aa0ec3b-67f5-440d-9514-2a9509cbbfd0/",
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6adb327eb21d370001a498fb"
+}
