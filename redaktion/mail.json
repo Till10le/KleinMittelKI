@@ -58,13 +58,49 @@
           "mail_id": "1a155544e8f82a47"
         }
       ]
+    },
+    {
+      "datum": "2026-10-23",
+      "thread_id": "1a1676dd6e688eb5",
+      "betreff": "KMK-Redaktion · Fr 23.10.",
+      "art": "redaktion",
+      "eintraege": {
+        "1": "php-sicherheitsluecken-website-hoster",
+        "2": "ki-suche-falsche-aussagen-ueber-betrieb",
+        "3": "eu-produkthaftung-software-ki",
+        "4": "ki-sicherheitsstudie-bsi-tuev",
+        "5": "werkzeuge-besprechungsnotizen-datenschutz",
+        "A": "olg-hamm-chatbot-haftung",
+        "B": "eu-eurobarometer-ki-unternehmen"
+      },
+      "fragen_offen": [
+        {
+          "nr": "F1",
+          "slug": "olg-hamm-chatbot-haftung, eu-eurobarometer-ki-unternehmen",
+          "frage": "„Meine Einordnung“ selbst schreiben oder Vorschlag übernehmen?",
+          "mail_id": "1a1676dd6e688eb5"
+        },
+        {
+          "nr": "F2",
+          "slug": "rechnungen-automatisch-erfassen, immobiliensuche-mit-ki, kundenanfragen-antworten-praxistest",
+          "frage": "Fertigstellen lassen? Testergebnisse?",
+          "mail_id": "1a1676dd6e688eb5"
+        },
+        {
+          "nr": "F3",
+          "slug": "outlook-diktat-praxistest",
+          "frage": "Microsoft 365 mit Copilot vorhanden?",
+          "mail_id": "1a1676dd6e688eb5"
+        }
+      ]
     }
   ],
   "eigene_ids": [
     "1a1538fd261463cc",
     "1a153abb707e8177",
     "1a154f5d78916f05",
-    "1a155544e8f82a47"
+    "1a155544e8f82a47",
+    "1a1676dd6e688eb5"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
