@@ -99,3 +99,93 @@ Nachgeprüft: beitrag.md, kmk-ki-pruefen-g2.png/-social, kmk-ki-pruefen-g5.png/-
 | G4 Bildunterschrift g1 | ok – „Wer raten darf, rät – das gilt auch für Sprachmodelle.“ |
 
 Keine neuen Mängel. Offen bleiben bewusst für Till: `[TILL: …]` in „Meine Einschätzung“, INTERN-Vorschläge (Einschätzung, Gedanke, Protokoll-Bezug), LinkedIn-Anlass bestätigen, OLG-Hamm-Link nach dessen Veröffentlichung. Die Hinweise aus Runde 1 (Z. 38, 40, 42; Social-Leerraum) bleiben Hinweise, kein Mangel.
+
+## Runde 3 – 23.10.2026 (Prüfer, Express-Lauf, Überarbeitung mit Tills drei Fällen)
+
+**Ergebnis: NICHT BESTANDEN** (zwei kleine Autor-Mängel; Grafik ohne Mangel)
+
+Geprüft: beitrag.md, quellen.md, alle PNGs (g1–g5, g4/g5-social, vorschaubild.png angesehen), g4.html/g5.html,
+`redaktion/eingang/2026-10-23-till-eigene-ki-fehler.md`, Board-Vorgaben, `git diff` gegen die bestandene Fassung,
+Vergleich mit `redaktion/referenz/ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben.html`,
+`python3 tools/lexical.py` (fehlerfrei, rc 0, auch nach meiner Korrektur).
+
+**Quellen:** Erneuter WebFetch der vier Originale (OpenAI Blog, OpenAI Help, OWASP LLM09, Anthropic-Doku) war in diesem Lauf
+gesperrt (Berechtigungsanfrage nicht beantwortet). Laut `git diff` sind alle quellengestützten Sätze inhaltlich unverändert
+gegenüber der in Runde 1 gegen die Originale geprüften Fassung (nur umgestellt; „KI-Anwendungen“ → „Anwendungen mit
+Sprachmodellen“ = Hinweis aus Runde 1 umgesetzt). Regel 2 hält die korrigierte Anthropic-Formulierung (A2). A1–A4, G1–G4
+nicht zurückgekehrt – außer dem Muster von A1 (veralteter INTERN-Absatz), siehe A5.
+
+**Rechnungen nachgerechnet:** 10 − 6 − 1 = 3 € Deckungsbeitrag; 3 × 100 × 0,95 = 285 €; (3 ÷ 10) × 100 × 0,95 = 28,50;
+100.000 × 1,1 = 110.000; × 1,1 = 121.000; linear 120.000. Text Z. 64/68, Box „Zum Ausprobieren“ und g4 stimmen überein.
+
+**Ich-Aussagen gegen Tills Eingang:** alle belegt (Einstieg Z. 12, Z. 38, Fall 1–3, Regel 2 „Wenn ich heute …“, Prompt-Zusatz
+wörtlich, „Meine Einschätzung“). Abschwächungen („unglaublich“, „enorm“, „begeistert“) und Streichung „Einzelhändler“ im
+INTERN-Absatz offengelegt. Steckachse: nirgends behauptet, die Achse habe nicht gepasst – ok. „Beruflich“ nicht übernommen – ok.
+**Ich-Form in den Fallabschnitten:** vertretbar. Es sind Tills echte, von ihm freigegebene Erfahrungen (Eingang: „dürfen in
+Ich-Form verwendet werden“); auch der veröffentlichte KI-Agenten-Beitrag hat Ich-Form außerhalb der Einschätzung
+(„Vier Beispiele, die ich für KMU spannend finde“). Rubrik bleibt Leitfäden: Die Fälle sind Anlass, kein Test mit ermittelten Ergebnissen.
+
+### Checkliste
+
+| # | Punkt | Ergebnis |
+|---|---|---|
+| 1 | Zahlen/Namen/Daten | ok (Quellen s. o., Rechnungen nachgerechnet) |
+| 2 | Einschränkungen | ok – Beispielzahlen „nicht die Originaldaten“, Schwund „vereinfacht“, ausgedachte Beispiele gekennzeichnet |
+| 3 | Originale verlinkt | ok |
+| 4 | Nichts erfunden | ok (s. o.) |
+| 5 | Platzhalter | ok – keine `[TILL]`/`[GRAFIK]` mehr. **Mangel A5:** INTERN-Absatz nennt noch einen Grafik-Platzhalter |
+| 6 | Format, Länge, Teaser | ok – Einleitung 2 Absätze, Box 5 Punkte, H2 als Aussagen/Fragen, Zum Ausprobieren, Meine Einschätzung · Gedanke · Quellen; Teaser 141 Zeichen ≠ Titel. Länge ca. 2.100 Wörter inkl. Boxen (Hinweis) |
+| 7 | Rubrik/Tags | ok – Wissen / Leitfäden + `#wissen` |
+| 8 | Für KMU | entfällt |
+| 9 | Ton/Verbote | ok – kein Handel, kein Arbeitgeber, kein CTA, Steigerungen entschärft |
+| 10 | KMU-Bezug | ok – Handwerksbetrieb, Bäckerei/Gastronom, Betrieb mit 30 Leuten, Bürokraft/Küchenchefin |
+| 11 | Grafiken | ok – g4 `g-vergleich` + `g-box--dunkel` aus dem Baukasten, Werte = Text, Titel als Aussage, Fußzeile mit Stand, Bildunterschrift ein Satz, Alt-Text vollständig; g5 neu passt zu Regeln 3/4 |
+| 12 | Vorschaubild | ok – drei Zeilen, Logo, Lime-Kante |
+| 13 | Ghost-Vorschau | nicht geprüft – Ghost enthält noch die alte Fassung; nach Korrektur neu hochladen |
+| 14 | Wie bisher | ok – Aufbau wie KI-Agenten-Beitrag, 5 Schaubilder (Rahmen 4–5), `kmk-errors`/`kmk-prompt` aus `kaesten.html` |
+| – | Inhaltliche Genauigkeit „Zum Ausprobieren“ | **Mangel A6** |
+
+### Mängel Autor
+
+**A5 – INTERN-Absatz veraltet** (Z. 10, letzter Satz: „Grafiken: g1, g2, g3, g5 bleiben; neu ein Grafik-Platzhalter für die Excel-Rechnung (Fall 2).“)
+g4 ist eingebunden, g5 wurde geändert. → „Grafiken: fünf Schaubilder eingebunden; neu g4 (Excel-Rechnung 28,50 vs. 285 €), g5 an die neuen Regeln 3 und 4 angepasst.“
+
+**A6 – Schritt 4 in „Zum Ausprobieren“ kann eine richtige Tabelle als falsch erscheinen lassen** (Z. 133, Schritt 4)
+Im Text (Z. 64) ist 285 € ausdrücklich an die Vereinfachung „Schwund mindert die Absatzmenge“ gebunden. In der Box fehlt das.
+Rechnet die Tabelle des Lesers den Schwund anders (z. B. als Aufschlag auf den Wareneinsatz), kommt korrekt ein anderer Wert
+heraus, und „Sonst such die vertauschte Zelle“ schickt ihn auf Fehlersuche.
+→ Schritt 4 ersetzen durch: „Rechne von Hand nach: Behandelt die Tabelle den Schwund als weniger verkaufte Stück, sind es
+3 € × 100 × 0,95 = 285 €. Zeigt sie 28,50, wird wahrscheinlich durch den Verkaufspreis geteilt. Bei anderen Werten prüf, wie
+die Tabelle den Schwund rechnet und ob Zellen vertauscht sind.“
+
+### Mängel Grafik
+
+Keine.
+
+### Selbst korrigiert
+
+- Z. 14: „Hier geht es um die Frage danach:“ → „Hier geht es um die Frage, die daraus folgt:“ (missverständlich). lexical.py danach fehlerfrei.
+
+### Hinweise (kein Mangel)
+
+- Länge ca. 2.100 Wörter inkl. Boxen, knapp über 1.900–2.000; begründet durch Tills drei Fälle. Falls kürzen: Z. 74 letzter Satz
+  doppelt sich mit Regel 4 und „Meine Einschätzung“.
+- g5 Regel 2 „Die KI markiert, was nicht aus deinen Unterlagen stammt“ – der Fließtext sagt das nicht mehr wörtlich (jetzt „weiß ich
+  nicht“ + Prompt „Trenne Fakten von Annahmen“); passt sinngemäß. Fußzeile „u. a. nach OWASP, OpenAI, Anthropic“, Text nennt für
+  die Regeln nur OWASP und Anthropic – durch „u. a.“ gedeckt.
+- Z. 46 „ChatGPT hatte nicht alle nötigen Informationen“: Till schrieb „nicht zwingend alle“; durch seinen Satz „Für diese
+  Sicherheit fehlten entscheidende Informationen“ gedeckt.
+- Unverändert aus Runde 1: OLG-Hamm-Link erst nach dessen Veröffentlichung; Social-Kacheln mit großem Leerraum (Werkzeugverhalten).
+- Ghost-Entwurf nach Umsetzung neu laden (g4 hochladen, g5 ersetzen).
+
+## Runde 4 – 23.10.2026 (Prüfer, Express-Lauf, nur Nachprüfung A5/A6)
+
+**Ergebnis: BESTANDEN**
+
+| Mangel | Prüfung |
+|---|---|
+| A5 INTERN-Absatz | ok – „Grafiken: fünf Schaubilder eingebunden; neu g4 (Excel-Rechnung 28,50 vs. 285 €), g5 an die neuen Regeln 3 und 4 angepasst.“ Zusätzlich ist die Überschrift des Prompt-Kastens („Mein Zusatz für technische Fragen“) unter (2) als redaktionell markiert, wie es sein soll. |
+| A6 Schritt 4 | ok – wörtlich nach Vorschlag, die Schwund-Annahme steht jetzt auch in der Box |
+
+Z. 74 bleibt bewusst stehen (Pointe von Fall 3), das war nur ein Hinweis. Die Korrektur aus Runde 3 in Z. 14 ist erhalten.
+`python3 tools/lexical.py` läuft fehlerfrei (rc 0). Der Ghost-Entwurf muss neu hochgeladen werden: g4 neu, g5 ersetzt.

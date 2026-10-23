@@ -79,6 +79,46 @@ Kein Datum auf der Seite. Herstellerangabe (Entwickler-Doku, gilt sinngemäß f�
   Pressemitteilung und NRWE-Volltext konnte der Autor am 23.10.2026 nicht selbst abrufen (robots-Sperre); Inhalt im
   Beitrag deshalb nicht wiedergegeben.
 
+## 6. Tills eigene Fälle (Quelle: Till, Chat 23.10.2026)
+
+Datei: `redaktion/eingang/2026-10-23-till-eigene-ki-fehler.md` (Tills Text, nach seiner Angabe mit ChatGPT formuliert).
+Ich-Form im Beitrag nur so, wie dort beschrieben. Keine externe Quelle, keine Messung, keine Originalchats eingesehen.
+
+**Fall 1 – Steckachse (Fahrradanhänger am Mountainbike):**
+- ChatGPT empfahl eine Steckachse mit Gewindesteigung, Achslänge und Zubehör, war sich „100 %“ sicher.
+- Schluss von der Hinterrad-Einbaubreite **148 Millimeter** auf die Achskonfiguration; Einbaubreite ≠ Steckachsenlänge;
+  Gewindesteigung nicht überprüft. Auf Nachfrage zunächst weiter sicher, später Einräumung: Originalachse genauer prüfen.
+- **Grenze:** Dokumentiert ist nur die unbegründete „100 %“-Zusage, NICHT eine gemessene Abweichung.
+  Im Beitrag nicht behaupten, die Achse habe nachweislich nicht gepasst.
+
+**Fall 2 – Excel-Kalkulation (Geschäftsmodell, Originaldaten vertraulich):**
+- Schwund (Prozent) und Verbrauchsmaterial (Euro pro Einheit) wiederholt in den Zellzuordnungen verwechselt.
+  Tills Illustration: Schwund z. B. fünf Prozent vs. Verbrauchsmaterial zehn Cent pro verkaufter Einheit.
+- Formel wörtlich: `=((B8-B9-B11)/B8)*C34*(1-B10/100)` – B8 Verkaufspreis/Einheit, B9 Einkaufspreis/Einheit,
+  B10 Schwund in Prozent, B11 Verbrauchsmaterial/Einheit, C34 Verkäufe pro Jahr. Fehler: Division durch B8 macht
+  aus dem Gewinn pro Einheit eine Marge, die dann mit der Stückzahl multipliziert wird.
+- Beispielzahlen (bewusst einfach, nicht die Originaldaten): Verkaufspreis **10,00 €**, Einkaufspreis **6,00 €**,
+  Verbrauchsmaterial **1,00 €**, Verkäufe pro Jahr **100**, Schwund **5 %**. Deckungsbeitrag pro Einheit **3 €**.
+  Richtig (vereinfacht, Schwund als 5-%-Minderung der Absatzmenge): 3 € × 100 × 0,95 = **285 €**.
+  Fehlerhafte Formel: (3 / 10) × 100 × 0,95 = **28,50** (Zahlenwert, kein Eurobetrag).
+- Umsatzsteigerung zunächst nicht auf Vorjahr bezogen; richtig kumulativ: **100.000 € → 110.000 € → 121.000 €**
+  bei **10 %** p. a., nicht 120.000 € im dritten Jahr.
+- **Nachgerechnet** vom Autor am 23.10.2026 mit python3: 0,3 × 100 × 0,95 = 28,5; 3 × 100 × 0,95 = 285;
+  100.000 × 1,1 = 110.000; × 1,1 = 121.000; linear wäre 120.000. Alles stimmt.
+
+**Fall 3 – Selbst-Audit:**
+- Frage sinngemäß: „Kannst du unsere bisherigen Chats analysieren und herausfinden, wo du falsche Informationen geliefert
+  hast oder ich dich korrigieren musste?“ – ChatGPT fand u. a. Excel-Fall und Steckachse.
+- **Grenze:** nicht sichergestellt, dass alle alten Chats und Anhänge zugänglich waren; Belegtes vs. Zusammenfassung/Interpretation
+  musste Till selbst trennen.
+
+**Prompt-Zusatz (wörtlich aus Tills Text):** „Nenne mir ausdrücklich alle Angaben, die für eine zuverlässige Empfehlung noch
+fehlen. Trenne bestätigte Fakten von Annahmen und behaupte keine Sicherheit, wenn wichtige Informationen nicht geprüft wurden.“
+
+Nicht übernommen aus Tills Text: „Einzelhändler“ (Regel 4), der Hinweis „Excel-Fall vom 25. April 2025“ (steht nur in der
+ChatGPT-Vorbemerkung, nicht in Tills Fallbeschreibung), „beruflich“ (kein Bezug zum Arbeitgeber).
+Tills Text nennt den LinkedIn-Beitrag von Alex Lichtenberger als Denkanstoß für seinen Rückblick → im Beitrag so genannt, weiter unverlinkt.
+
 ## Ungeprüft / nicht verwendet
 
 - BSI, „Generative KI-Modelle: Chancen und Risiken für Industrie und Behörden“ (Landingpage gelesen, Stand 21.01.2025):
@@ -87,4 +127,5 @@ Kein Datum auf der Seite. Herstellerangabe (Entwickler-Doku, gilt sinngemäß f�
 - OpenAI-Paper-PDF (s. o.): nicht gelesen.
 - Rechtliche Pflichten zu Allergenangaben in der Gastronomie: nicht recherchiert → im Beitrag keine Rechtsaussage, nur Folgen.
 - Alle Branchenbeispiele (Malerbetrieb, Hausverwaltung, Gastronomie, Exposé) sind **redaktionell konstruierte Beispiele**,
-  keine dokumentierten Fälle. So im Text kenntlich gemacht.
+  keine dokumentierten Fälle. So im Text kenntlich gemacht. Stand Überarbeitung 23.10.2026: nur noch Exposé und Gastronomie
+  im Beitrag; Malerbetrieb und Hausverwaltung entfallen (durch Tills Fälle abgedeckt).
