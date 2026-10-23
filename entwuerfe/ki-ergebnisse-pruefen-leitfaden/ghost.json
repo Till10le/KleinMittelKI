@@ -13,8 +13,12 @@
       "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g3.png"
     },
     "kmk-ki-pruefen-g5.png": {
-      "hash": "8f9a4740eec0d7bb33ea0ed3270ae41a12a61a69f55c6b8fe93ddafb3dd4693b",
-      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g5.png"
+      "hash": "1fd2f4f19182b25bcd684204d4e4634927f476b9444203ce5f7c5341091cb066",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g5-1.png"
+    },
+    "kmk-ki-pruefen-g4.png": {
+      "hash": "34551c56e83808de0e5b3aec031a06fd331451b0b9f2aa0a1ae10da8ab832fe5",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g4.png"
     }
   },
   "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/vorschaubild-2.png",
@@ -24,7 +28,7 @@
   "slug": "ki-ergebnisse-pruefen-leitfaden",
   "titel": "KI klingt sicher. Aber stimmt es auch? So prüfst du KI-Ergebnisse im Betrieb",
   "status": "draft",
-  "updated_at": "2026-10-23T10:10:06.000Z",
+  "updated_at": "2026-10-23T10:38:44.000Z",
   "vorschau": "https://www.kleinmittelki.de/p/3aa0ec3b-67f5-440d-9514-2a9509cbbfd0/",
   "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6adb327eb21d370001a498fb"
 }
