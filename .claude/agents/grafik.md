@@ -16,7 +16,9 @@ Du bist die Grafik-Agentin von KLEIN. MITTEL. KI. Lies vorher den Skill `kmk-ci-
      einbinden als `![Alt](kmk-<thema>-g1.png "Bildunterschrift")` (wird beim Anlegen in Ghost automatisch hochgeladen)
 2. Prüfe, ob eine Grafik fehlt, die dem Leser helfen würde (Zielwerte je Format in `kmk-ci-grafik`). Wenn ja: ergänzen.
    Wenn eine Grafik nichts zeigt, was der Text nicht schon sagt: weglassen.
-3. Vorschaubild: `python3 tools/vorschaubild.py --kategorie "<Kategorie>" --titel "<Titel>" --out entwuerfe/<slug>/vorschaubild.png`.
+3. Vorschaubild (nur zum Teilen): `python3 tools/vorschaubild.py --kategorie "<Kategorie>" --titel "<Titel>" --out entwuerfe/<slug>/vorschaubild.png`.
+   Titelbild (Beitragsbild und Übersicht, Pflicht): Einordnungs-Grafik ohne Titel mit `tools/titelbild.py`
+   (Skill `kmk-ci-grafik`, Abschnitt Titelbild) nach `entwuerfe/<slug>/titel-<slug>.jpg`, im Frontmatter `titelbild: titel-<slug>.jpg`.
 4. **Jedes erzeugte Bild mit dem Read-Werkzeug ansehen.** Abgeschnittene Wörter, Überlappungen, falsche Farben → korrigieren.
 5. Bildunterschrift = ein Satz Lesehilfe (Kernaussage oder Grenze), Alt-Text „Schaubild: …“. „Was die Grafik zeigt: …“ nur bei Daten-Karten.
 

@@ -1,6 +1,6 @@
 ---
 name: kmk-ci-grafik
-description: CI von KLEIN. MITTEL. KI. (Farben, Schriften, Logo, Bildsprache) und der feste Grafik-Baukasten für Beiträge – HTML-Bausteine, PNG-Schaubilder und Vorschaubild. Laden, bevor eine Grafik, ein Schaubild, ein Vorschaubild oder ein Newsletter-Element entsteht oder geprüft wird.
+description: CI von KLEIN. MITTEL. KI. (Farben, Schriften, Logo, Bildsprache) und der feste Grafik-Baukasten für Beiträge – HTML-Bausteine, PNG-Schaubilder, Titelbild und Vorschaubild. Laden, bevor eine Grafik, ein Schaubild, ein Vorschaubild oder ein Newsletter-Element entsteht oder geprüft wird.
 ---
 
 # CI und Grafik-Baukasten
@@ -119,8 +119,25 @@ Die Kachel nicht in den Beitrag einbinden; auch sie ansehen.
 - Oben Kategorie in Versalien (Instrument Sans 600, 24 px, Laufweite 4 px, `#111111`), darunter Lime-Balken 6 px in Textbreite
 - Titel Schibsted Grotesk 700, Start 68 px, Zeilenhöhe 1,1, höchstens 3 Zeilen, in 4-px-Schritten bis 48 px verkleinern
 - Unten links Logo (340 px breit), unten rechts „kleinmittelki.de“ in `#45453F`, unten Lime-Kante 14 px über die volle Breite
-- Wird als `og_image`, `twitter_image` und als Titelbild `titel-<slug>.jpg` (`feature_image`) gesetzt.
-  OFFEN: Ob das Titelbild auch `feature_image` sein soll, ist mit Till zu klären; die veröffentlichten Beiträge nutzen es so.
+- Wird **nur** als `og_image` und `twitter_image` gesetzt (Teilen auf LinkedIn, WhatsApp usw.).
+- **Nie als Beitragsbild:** Das Theme zeigt den Titel direkt über dem Beitragsbild. Eine Titel-Kachel dort doppelt die
+  Überschrift und fehlt als Bild in der Beitragsübersicht (Fehler beim OLG-Hamm-Beitrag, 23.10.2026).
+
+## Titelbild (Pflicht für jeden Beitrag, 1600 × 1000)
+
+Das Beitragsbild oben im Beitrag und die Kachel in der Beitragsübersicht (`feature_image`). Vorbild:
+`titel-ki-wissensmanagement.jpg` („Wenn der Meister in Rente geht“), `titel-azubis-ki-empfehlung-betrieb.jpg`.
+
+`python3 tools/titelbild.py entwuerfe/<slug>/titelbild.html --kategorie "<Kategorie>" --satz "<Merksatz>" --titel "<Beitragstitel>" --out entwuerfe/<slug>/titel-<slug>.jpg`
+
+- Paper-Grund `#F4F3EE`, oben links „EINORDNUNG“, in der Mitte ein kleines Schaubild, darunter **ein** Merksatz
+  (höchstens 70 Zeichen), unten Linie mit Wortmarke links und Kategorie rechts. Keine Lime-Kante.
+- **Nie den Beitragstitel ins Bild.** Das Schaubild zeigt den Kern des Beitrags (Stufen, Frage + Liste, Chat,
+  Vorher → Nachher, eine Zahl). Bausteine: die `t-`-Klassen im Kopf von `tools/titelbild.py`, sonst nichts.
+- Zahlen nur, wenn sie exakt so in `quellen.md` stehen. Im Zweifel ohne Zahl.
+- Im Frontmatter: `titelbild: titel-<slug>.jpg`. `tools/ghost.py draft` verweigert den Entwurf ohne Titelbild
+  (Ausnahme nur `titelbild: nein`, z. B. Newsletter) und wenn das Titelbild die Titel-Kachel ist.
+- Ansehen ist Pflicht (Read-Werkzeug).
 
 ## „Eine Zahl, genau gelesen“ (Startseite)
 

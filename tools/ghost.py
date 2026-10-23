@@ -325,6 +325,14 @@ def cmd_freigabe(a) -> None:
              "updated_at": p["updated_at"], "zitat": a.zitat.strip(),
              "zeit": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
              "sitzung": os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID", "")}
+    if a.art == "titelbild":
+        # gebunden an die Bilddatei, die Till gesehen hat (nicht an den Textstand)
+        folder = ROOT / "entwuerfe" / p["slug"]
+        meta, _ = lexical.build((folder / "beitrag.md").read_text(encoding="utf-8"))
+        bild = _titelbild_datei(folder, meta)
+        if not bild:
+            raise GhostFehler("Kein Titelbild im Entwurfsordner.")
+        entry["datei_hash"] = hashlib.sha256(bild.read_bytes()).hexdigest()
     FREIGABEN.parent.mkdir(parents=True, exist_ok=True)
     with FREIGABEN.open("a") as f:
         f.write(json.dumps(entry, ensure_ascii=False) + "\n")
@@ -603,7 +611,7 @@ def main(argv=None) -> int:
     sub.add_parser("index").set_defaults(fn=cmd_index)
     s = sub.add_parser("referenz"); s.add_argument("--auch", nargs="*", help="zusätzliche Slugs (z. B. Vorlagen-Entwürfe)")
     s.set_defaults(fn=cmd_referenz)
-    s = sub.add_parser("freigabe"); s.add_argument("ref"); s.add_argument("--art", required=True, choices=["beitrag", "newsletter"])
+    s = sub.add_parser("freigabe"); s.add_argument("ref"); s.add_argument("--art", required=True, choices=["beitrag", "newsletter", "titelbild"])
     s.add_argument("--zitat", required=True); s.set_defaults(fn=cmd_freigabe)
     s = sub.add_parser("publish"); s.add_argument("ref"); s.add_argument("--zeitpunkt"); s.set_defaults(fn=cmd_publish)
     s = sub.add_parser("newsletter"); s.add_argument("ref"); s.add_argument("--newsletter")

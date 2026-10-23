@@ -25,8 +25,13 @@ nie über den Ghost-Editor, nie per curl. Die Werkzeuge brauchen die Umgebung **
 
 ## Was die Werkzeuge garantieren
 
-- `draft` legt immer nur **Entwürfe** an, setzt den Tag `#zur-freigabe`, lädt das Vorschaubild hoch
-  (`og_image`, `twitter_image`, `feature_image`) und schreibt Vorschau-Link und Ghost-ID nach `entwuerfe/<slug>/ghost.json`.
+- `draft` legt immer nur **Entwürfe** an, setzt den Tag `#zur-freigabe`, lädt die Titel-Kachel `vorschaubild.png`
+  als `og_image`/`twitter_image` und das Titelbild `titel-<slug>.jpg` als `feature_image` hoch und schreibt Vorschau-Link
+  und Ghost-ID nach `entwuerfe/<slug>/ghost.json`. Ohne Titelbild (oder wenn es die Titel-Kachel ist) bricht `draft` ab.
+- `publish` blockiert, wenn das Beitragsbild in Ghost die Titel-Kachel ist (doppelte Überschrift). Dann `draft` neu.
+- Titelbild an einem **veröffentlichten** Beitrag tauschen: nur mit Tills Freigabe der Art `titelbild`
+  (`ghost.py freigabe <slug> --art titelbild --zitat "…"`, gebunden an die Bilddatei). `abarbeiten` tauscht dann nur
+  `feature_image`, sonst nichts. Ändert sich die Bilddatei danach, blockiert es.
   Ein bereits veröffentlichter Beitrag wird nie überschrieben. Gleicher Slug schon vorhanden → Abbruch (Dublette?).
 - `publish` und `newsletter` laufen nur mit einer Freigabe aus `redaktion/freigaben.jsonl`, die **zum aktuellen Stand**
   des Beitrags passt. Jede Änderung nach der Freigabe macht sie ungültig. Der INTERN-Absatz wird beim Veröffentlichen

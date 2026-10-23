@@ -100,4 +100,5 @@ Neu (Till, 19.10.2026): Ab ca. 1.000 Wörtern auch hier die Box „Das Wichtigst
 
 ## Vorschaubild
 
-Jeder Beitrag bekommt ein eigenes Vorschaubild (Skill `kmk-ci-grafik`, `tools/vorschaubild.py`).
+Jeder Beitrag bekommt ein eigenes Vorschaubild zum Teilen (`tools/vorschaubild.py`) und ein eigenes Titelbild als
+Beitragsbild (`tools/titelbild.py`, Einordnungs-Grafik ohne Titel). Details im Skill `kmk-ci-grafik`.

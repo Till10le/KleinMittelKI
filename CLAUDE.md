@@ -57,7 +57,8 @@ Der Chefredakteur ist der einzige, der Till Fragen stellt und Freigaben einträg
 - `tools/ghost.py` – Ghost Admin API: lesen, Entwürfe anlegen/ändern, Bilder hochladen, Index bauen,
   veröffentlichen nur mit Freigabe. Braucht `GHOST_URL` und `GHOST_ADMIN_API_KEY` (Umgebung „KMK-Ghost“).
 - `tools/lexical.py` – macht aus `beitrag.md` Ghosts Editor-Format. Nie im Ghost-Editor tippen.
-- `tools/vorschaubild.py` – Vorschaubild 1200 × 630 im CI.
+- `tools/vorschaubild.py` – Vorschaubild 1200 × 630 im CI (Titel-Kachel, nur zum Teilen).
+- `tools/titelbild.py` – Titelbild 1600 × 1000: Einordnungs-Grafik als Beitragsbild und Übersichts-Kachel, nie mit Titel.
 - `tools/grafik.py` – rendert Erklär-Schaubilder als PNG im CI.
 
 ## Übersicht des Systems
