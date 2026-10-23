@@ -26,6 +26,13 @@ Aktuell-Nachrichten zusätzlich, sobald eine Meldung kommt. Immer 1–2 fertige 
     01.12.2026 (verschoben von 02.11.). Microsoft-Original (Message Center MC1476200, Partner-Center-Ankündigungen Oktober 2026)
     war nicht lesbar. Gelesen: Microsoft Learn „Managing AI experiences enabled by usage-based billing“ (Stand 02.10.2026) –
     nennt keine Standardwerte. Vor Vorschlag Original beschaffen; Zeitfenster bis 01.12.2026.
+- [ ] Google: Gemini-„Business-Startseite“ für kleine Betriebe (Markenstil, Belege auswerten, Unternehmensprofil) – möglicher Selbsttest
+  - Hinweis Scout 2026-10-23: Google-Blog vom 20.10.2026 gelesen (https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/):
+    Rollout „in the coming days globally“, keine Angaben zu Sprachen, Tarifen, EU-Verfügbarkeit, Datenverarbeitung.
+    Die Vorgänger-Ankündigung vom 10.06.2026 schloss EWR und UK aus. Hilfeseite Unternehmensprofil in Gemini gelesen
+    (https://support.google.com/business/answer/17142585): nur mit persönlichem Google-Konto (nicht Workspace),
+    nur genau ein Profil, „Keep Activity“ muss an sein, ab 18. Verfügbarkeit in Deutschland ungeklärt → kein Vorschlag.
+    Erst Selbsttest mit deutschem Konto, dann ggf. Praxistest mit Datenschutz-Blick.
 - [ ] Glossar „Das ehrliche KI-Wörterbuch“ als lebender Wissensbeitrag (Idee aus der Konzeptphase, nicht entschieden)
 - [ ] „Was KI wirklich kostet“: Lizenzen, Tokens, Einführungsaufwand (Idee aus der Konzeptphase, nicht entschieden)
 
