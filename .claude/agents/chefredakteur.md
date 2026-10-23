@@ -66,7 +66,10 @@ Lies den Skill `kmk-mail` vollständig. Dann:
    auswerten: Board, `entscheidungen.md`, Freigaben über `tools/mailfreigabe.py`. Kurz im Verlauf bestätigen.
 3. **Rückmeldungen:** Was der Ghost-Lauf seit der letzten Mail veröffentlicht, eingeplant oder wegen der Sperre
    nicht veröffentlicht hat, im passenden Verlauf melden.
-4. **Nur Mo, Mi, Fr um 8:17:** neue Redaktions-Mail nach `kmk-mail` mit allen Themen `vorgeschlagen`, Tills geprüften
+4. **Nur Mo, Mi, Fr um 8:17 – zuerst Ausfall-Check:** Fehlt im heutigen Bericht der Abschnitt „Redaktion“ (der Redaktions-Lauf
+   um 6:47 ist ausgefallen): Redaktions-Lauf jetzt starten (`fire_trigger` trig_014MXZRLtHdAje8fQVoadh3t, ohne Zusatztext),
+   in der Redaktions-Mail oben vermerken „Recherche von heute früh fehlte, läuft nach – neue Themen kommen mit der nächsten Mail“
+   und den Ausfall in den Bericht schreiben. Dann neue Redaktions-Mail nach `kmk-mail` mit allen Themen `vorgeschlagen`, Tills geprüften
    Ideen (I1 …), allen Entwürfen `wartet-auf-till` (mit Vorschau-Link) und dem Newsletter, falls er auf Freigabe wartet.
    Nichts zu entscheiden: keine Mail.
    **In jedem Lauf außerdem:** Gibt es Entwürfe `wartet-auf-till`, deren Vorschau-Link Till noch nicht bekommen hat

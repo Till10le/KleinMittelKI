@@ -17,6 +17,7 @@ Ergebnisse anderer Recherche-Werkzeuge (z. B. ChatGPT-Aufgabe): an sich selbst w
 Der Mail-Lauf legt sie in `redaktion/eingang/` ab, der Scout prüft jeden Hinweis an der Originalquelle und führt ihn mit den eigenen Funden zusammen.
 Express: Sobald Till ein Thema freigibt, startet der Mail-Lauf sofort einen Redaktions-Lauf (ohne Scout). Der startet nach der Prüfung
 den Ghost-Lauf (Entwurf) und danach den Mail-Lauf (Mail „Vorschau bereit“). Vorschau-Link meist nach etwa einer Stunde.
+Ausfall-Check: Fehlt um 8:17 (Mo/Mi/Fr) der Bericht des Redaktions-Laufs, startet der Mail-Lauf ihn nach und sagt es Till in der Mail.
 Die Redaktion bestätigt im selben Verlauf und arbeitet weiter. Antworten werden Mo–Fr um 12:17 und 18:17 gelesen
 (und um 8:17); Veröffentlichungen laufen eine halbe Stunde später.
 
