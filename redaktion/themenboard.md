@@ -23,6 +23,29 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 
 ## Aktiv
 
+### iab-betriebe-sehen-keine-ki-anwendung
+- Status: geprueft
+- Idee von Till (Chat 23.10.2026, zwei fertige Entwürfe „Gelesen & eingeordnet“ aus einem anderen Werkzeug; Till: „Ja bitte beide Beiträge als Entwürfe anlegen. Perfekt für KMK machen!“)
+- Titel: „Ein Bäcker braucht keine KI zum Brotbacken. Aber vielleicht fürs Büro.“ (Tills Titel)
+- Rubrik/Kategorie: Aktuell / Studien & Zahlen · Format: Nachricht · eine Grafik (Potenzial vs. Nutzung, nur Zahlen aus der IAB-Pressemitteilung)
+- Quelle: https://iab-forum.de/weshalb-die-meisten-betriebe-kuenstliche-intelligenz-noch-nicht-nutzen/ (20.10.2026) + IAB-Pressemitteilung (idw)
+- Warum für KMU: Kleinbetriebe (Handwerk, Bäckerei) suchen KI im Kerngeschäft statt bei Büroaufgaben
+- Braucht von Till: Einschätzung in 2–3 Sätzen oder Freigabe des Vorschlags
+- Vorschlag „Eine Zahl, genau gelesen“: zahl „88 %“ · text „der Betriebe ohne KI sehen dafür keine passende Anwendung.“ · genau „Gemeint sind nur Betriebe, die KI weder nutzen noch planen – im zweiten Halbjahr 2025 zwei Drittel aller Betriebe. Selbstauskunft. Quelle: IAB, Oktober 2026.“ · link: Beitrag nach Veröffentlichung. Ändern nur nach Freigabe (Code-Injection, nicht per API).
+- Reihenfolge: vor nicht-jedes-problem-braucht-ki veröffentlichen
+- Verlauf: 2026-10-23 Chat: Till „Ja“ → freigegeben · Autor/Grafik/Prüfung im Chat-Lauf, Einzelwerte aus Zweitverwertung bewusst weggelassen → geprueft, Ghost-Lauf angestoßen
+
+### nicht-jedes-problem-braucht-ki
+- Status: geprueft
+- Idee von Till (Chat 23.10.2026, siehe oben)
+- Titel: „Nicht jedes Problem braucht KI. Manchmal reicht die einfachere Lösung.“ (Tills Titel, leicht gekürzt)
+- Rubrik/Kategorie: Aktuell / Entwicklungen · Format: Nachricht · eine Grafik (Stufenmodell, eigene Darstellung)
+- Quelle: https://www.infoworld.com/article/4230874/dont-buy-a-consultants-ai-framework.html (06.10.2026, Original; Computerwoche 16.10. ist Übersetzung) + Fraunhofer HNFIZ (02.10.2026)
+- Warum für KMU: Hausverwaltung/Kleinbetrieb – einfachste ausreichende Lösung vor KI-System
+- Braucht von Till: Einschätzung in 2–3 Sätzen oder Freigabe des Vorschlags
+- Nach Veröffentlichung des IAB-Beitrags: Querverweis darauf ergänzen
+- Verlauf: 2026-10-23 Chat: Till „Ja“ → freigegeben · Autor/Grafik/Prüfung im Chat-Lauf → geprueft, Ghost-Lauf angestoßen
+
 ### ki-ergebnisse-pruefen-leitfaden
 - Status: wartet-auf-till
 - Idee von Till (Chat 23.10.2026, LinkedIn-Anlass + ChatGPT-Entwurf, siehe redaktion/eingang/2026-10-23-chatgpt-ki-fehler-pruefen.md)
