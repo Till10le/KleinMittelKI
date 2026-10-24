@@ -13,27 +13,29 @@ dass die Redaktion verlässlich, konkret und im CI liefert – und dass nichts o
 
 ## Der Wochenrhythmus
 
-Till entscheidet per Mail: montags, mittwochs und freitags über Themen und Entwürfe, sonntags über den Newsletter.
+Till entscheidet per Mail: **donnerstags** über neue Themen (ein Redaktionsbriefing pro Woche), über fertige Entwürfe,
+sobald die Vorschau bereit ist, und sonntags über den Newsletter. Mehr Post bekommt er nicht.
 Die Läufe arbeiten zusammen (`docs/routinen.md`):
 
 | Lauf | Wann | Umgebung | Aufgabe |
 |---|---|---|---|
-| Redaktions-Lauf | Mo, Mi, Fr 6:47 | Standard (Websuche/Webabruf, kein Ghost) | Scout; freigegebene Themen schreiben, Grafiken, Prüfung |
+| Redaktions-Lauf | Do 6:47 + Express | Standard (Websuche/Webabruf, kein Ghost) | Scout (nur Do); freigegebene Themen schreiben, Grafiken, Prüfung |
 | Ghost-Lauf | So–Fr 7:47, 12:47, 18:47, 21:47 | KMK-Ghost (nur Ghost) | Index; geprüfte Entwürfe nach Ghost; Freigaben ausführen |
-| Mail-Lauf | Mo–Fr 8:17, 12:17, 18:17 | Standard, mit Gmail | Redaktions-Mail Mo/Mi/Fr 8:17; Tills Antworten auswerten; Bestätigungen |
+| Mail-Lauf | Mo–Fr 8:17, 12:17, 18:17 | Standard, mit Gmail | Redaktionsbriefing Do 8:17; Vorschau-Mails; Tills Antworten auswerten; Bestätigungen |
 | Mail-Lauf Sonntag | So 10:17, 12:17, 15:17, 18:17, 21:17 | Standard, mit Gmail | Newsletter-Mail 10:17; Änderungen einarbeiten; „N ja“ eintragen |
 | Sonntags-Lauf | So 9:47 | Standard (Websuche/Webabruf) | Ideen, Wochenbericht, Newsletter-Entwurf, Social-Paket |
 
 Stell fest, in welchem Lauf du bist: Der Prompt der Routine sagt es dir.
 
-## Redaktions-Lauf (Mo, Mi, Fr 6:47 – und als Express-Lauf sofort nach Tills Ja)
+## Redaktions-Lauf (Do 6:47 – und als Express-Lauf sofort nach Tills Ja)
 
 **Express-Lauf:** Der Mail-Lauf startet den Redaktions-Lauf außer der Reihe, sobald Till ein Thema freigibt
 („1 und 3“, „I1 ja“, „A ändern: …“, Idee-Mail mit „ausarbeiten“) – per `fire_trigger` **ohne Zusatztext**.
-Ein Lauf außerhalb von Mo/Mi/Fr 6:30–7:30 Uhr ist ein Express-Lauf: Schritt 1 (Scout) auslassen, nur Schritt 2–4.
+Ein Lauf außerhalb von Donnerstag 6:30–7:30 Uhr ist ein Express-Lauf: Schritt 1 (Scout) auslassen, nur Schritt 2–4.
 (Zusatztexte beim Starten kommen erst nach dem eigentlichen Lauf an – deshalb entscheidet die Uhrzeit.) So hat Till den Vorschau-Link meist innerhalb einer Stunde.
 
-1. **Scout**: neue Meldungen seit dem letzten Lauf, höchstens 3 Vorschläge, Status `vorgeschlagen`.
+1. **Scout** (nur Donnerstag): Meldungen der letzten 7 Tage, höchstens 4 Vorschläge, nie aufgefüllt, Status `vorgeschlagen`.
+   Seine Empfehlung (welches Thema zuerst und warum) und ob der Dublettencheck vollständig war, in den Bericht – das Briefing braucht beides.
 2. Für jedes Thema mit Status `freigegeben` oder `zurueck`: **Autor** (Text, mit Tills Einschätzung aus dem Board),
    dann **Grafik** (Schaubilder, Vorschaubild), dann **Prüfer**. Nicht bestanden → zurück an Autor/Grafik, höchstens
    zwei Runden, danach `frage-an-till` mit den offenen Punkten. Bestanden → Status `geprueft`.
@@ -66,15 +68,17 @@ Lies den Skill `kmk-mail` vollständig. Dann:
    auswerten: Board, `entscheidungen.md`, Freigaben über `tools/mailfreigabe.py`. Kurz im Verlauf bestätigen.
 3. **Rückmeldungen:** Was der Ghost-Lauf seit der letzten Mail veröffentlicht, eingeplant oder wegen der Sperre
    nicht veröffentlicht hat, im passenden Verlauf melden.
-4. **Nur Mo, Mi, Fr um 8:17 – zuerst Ausfall-Check:** Fehlt im heutigen Bericht der Abschnitt „Redaktion“ (der Redaktions-Lauf
+4. **Nur Donnerstag um 8:17 – zuerst Ausfall-Check:** Fehlt im heutigen Bericht der Abschnitt „Redaktion“ (der Redaktions-Lauf
    um 6:47 ist ausgefallen): Redaktions-Lauf jetzt starten (`fire_trigger` trig_014MXZRLtHdAje8fQVoadh3t, ohne Zusatztext),
-   in der Redaktions-Mail oben vermerken „Recherche von heute früh fehlte, läuft nach – neue Themen kommen mit der nächsten Mail“
-   und den Ausfall in den Bericht schreiben. Dann neue Redaktions-Mail nach `kmk-mail` mit allen Themen `vorgeschlagen`, Tills geprüften
-   Ideen (I1 …), allen Entwürfen `wartet-auf-till` (mit Vorschau-Link) und dem Newsletter, falls er auf Freigabe wartet.
+   keine Briefing-Mail schicken und den Ausfall in den Bericht schreiben. Der Lauf um 12:17 schickt das Briefing dann nach
+   (einmalig; steht der Abschnitt „Redaktion“ um 12:17 noch immer nicht im Bericht: kurze Mail „Briefing fehlt heute, Recherche ausgefallen“).
+   Sonst das **Redaktionsbriefing** nach `kmk-mail`: höchstens 4 Themen `vorgeschlagen`, die Till noch nicht gemailt bekommen hat
+   (Vermerk „gemailt <Datum>“ fehlt im Verlauf) – die stärksten zuerst, Tills geprüfte Ideen (I1 …), offene Fragen (F1 …) und
+   eine Zeile je Entwurf, der noch auf ihn wartet. Danach bei jedem gemailten Thema im Verlauf „gemailt <Datum>“ vermerken.
    Nichts zu entscheiden: keine Mail.
    **In jedem Lauf außerdem:** Gibt es Entwürfe `wartet-auf-till`, deren aktuellen Stand Till noch nicht bekommen hat
    (`mail.json` → `vorschau_gemailt` enthält `<slug>@<updated_at aus ghost.json>`; ein reiner Slug ohne `@` zählt als alter Stand):
-   sofort eine kurze Mail „Vorschau bereit“ mit diesen Entwürfen als A, B … (Format wie im Abschnitt „Fertig zur Veröffentlichung“
+   sofort eine kurze Mail „Vorschau bereit“ mit diesen Entwürfen als A, B … (Format wie im Abschnitt „Vorschau bereit“
    von `kmk-mail`; bei einer Überarbeitung „überarbeitete Fassung“ dazuschreiben), dann `<slug>@<updated_at>` eintragen.
    **Express:** Hat Till in diesem Lauf ein Thema freigegeben, sofort den Redaktions-Lauf starten
    (`fire_trigger` trig_014MXZRLtHdAje8fQVoadh3t, ohne Zusatztext) und
@@ -88,14 +92,14 @@ Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), p
 ## Sonntags-Lauf (So 9:47)
 
 1. **Ideen**-Agent: 3–5 neue Ideen über Nachrichten hinaus, Monatsrhythmus prüfen, Puffer prüfen. Die zwei stärksten
-   als `vorgeschlagen` ins Board – sie kommen Montag in die Mail.
+   als `vorgeschlagen` ins Board – sie kommen Donnerstag ins Briefing (zusammen mit dem Scout höchstens 4 Themen).
 2. **Analyst**: Wochenbericht.
 3. Newsletter-Entwurf für Dienstag nach Skill `kmk-newsletter` als `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md`,
    vom **Prüfer** prüfen lassen, Status `newsletter-vorschlag`. **Nicht nach Ghost** – der Mail-Lauf Sonntag 10:17 schickt
    ihn Till; erst nach „N ja“ legt der Ghost-Lauf ihn an und plant ihn ein.
 4. **Social**: Paket für die Woche nach Skill `kmk-social`.
 5. **Übersicht prüfen:** Stimmt `docs/uebersicht.html` noch mit `docs/routinen.md`, den Agenten und Skills überein (Läufe,
-   Zeiten, Kanäle, Mail-Befehle)? Abweichungen in den Wochenbericht und als Frage F… in die Montags-Mail
+   Zeiten, Kanäle, Mail-Befehle)? Abweichungen in den Wochenbericht und als Frage F… ins Donnerstags-Briefing
    („Übersicht veraltet: … – bitte im Chat aktualisieren lassen“). Selbst nichts an Regeln oder Übersicht ändern.
 6. Commit „Sonntag <Datum>“, push.
 
@@ -104,7 +108,7 @@ Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), p
 Eine Freigabe zum Veröffentlichen gibt es nur auf zwei Wegen:
 
 1. **Per Mail:** Tills Antwort aus seinem eigenen Gmail (`till.zehnle@gmail.com`, Label `SENT`) im Verlauf einer
-   Redaktions-Mail, eingetragen mit `tools/mailfreigabe.py` (Zitat und Gmail-ID). Regeln in `kmk-mail`.
+   Mail der Redaktion (Briefing, Vorschau oder Newsletter), eingetragen mit `tools/mailfreigabe.py` (Zitat und Gmail-ID). Regeln in `kmk-mail`.
 2. **Im Chat:** Till schreibt in einer Sitzung, die Ghost erreicht. Dann
    `python3 tools/ghost.py freigabe <slug> --art beitrag --zitat "<Tills Worte wörtlich>"` und `python3 tools/ghost.py abarbeiten`.
 

@@ -15,7 +15,9 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Rubrik/Kategorie: Aktuell / Studien & Zahlen
 - Format: Nachricht
 - Quelle: <URL der Originalveröffentlichung> (Datum)
-- Warum für KMU: … (Betriebsgröße, Rolle oder Prozess)
+- Worum es geht: … (ein, zwei Sätze, nur aus der gelesenen Quelle)
+- Warum für KMU: … (Betriebsgröße, Rolle oder Prozess; Einschränkung offen nennen)
+- Unsere Idee: „<Arbeitstitel>“ – <Ansatz in einem Satz>
 - Relevanz: 8/10 (Betroffenheit 2, Handlung 2, Quelle 2, Neuheit 1, Passung 1)
 - Braucht von Till: Einschätzung in 2–3 Sätzen / Testergebnis / nichts
 - Verlauf: 2026-10-18 Scout: vorgeschlagen
