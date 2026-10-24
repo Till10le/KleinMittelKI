@@ -1,15 +1,15 @@
 ---
-titel: "Ein Bäcker braucht keine KI zum Brotbacken. Aber vielleicht fürs Büro."
+titel: "Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz. Vielleicht suchen sie an der falschen Stelle."
 slug: iab-betriebe-sehen-keine-ki-anwendung
 kategorie: Studien & Zahlen
 tags: [#empfehlung]
-teaser: Fast neun von zehn Betrieben ohne KI sehen laut IAB keinen Einsatzzweck. Der liegt oft nicht im Kerngeschäft, sondern daneben.
+teaser: Laut IAB fehlt vielen Betrieben weder Geld noch Technik, sondern ein Anwendungsfall. Der liegt oft nicht im Kerngeschäft, sondern daneben.
 fuer_kmu: Der Einstieg liegt selten im Handwerk selbst, sondern bei Anfragen, Angeboten und Rückfragen im Büro.
 vorschaubild: vorschaubild.png
 titelbild: titel-iab-betriebe-sehen-keine-ki-anwendung.jpg
 ---
 
-INTERN – vor Veröffentlichung entfernen: Thema und Titel sind Tills Idee (Chat 23.10.2026, Entwurf aus einem anderen Werkzeug). Eine eigene Einschätzung von Till liegt noch nicht vor. Deshalb ist der gesamte Abschnitt „Meine Einordnung“ ein Vorschlag der Redaktion („Mich überrascht weniger …“, „Zwei Grenzen gehören dazu …“, „Dass Bitkom …“). Ebenfalls redaktionell gewählt: die Beispiele im Mittelstand-Abschnitt (Bäckerei mit drei Filialen, Anfrage für 150 belegte Brötchen) und der Gedanke zum Mitnehmen. Bitte ersetzen oder freigeben. Alle Zahlen stammen aus der IAB-Pressemitteilung vom 20.10.2026; das IAB-Forum selbst lädt nur per JavaScript. Bewusst weggelassen, weil nur in einer Zweitverwertung (Smart Up News) lesbar: die Einzelwerte 36/34/33/32/30/7 Prozent und der Vergleich nach Betriebsgröße. Vorschlag für „Eine Zahl, genau gelesen“ steht im Themenboard.
+INTERN – vor Veröffentlichung entfernen: Thema ist Tills Idee (Chat 23.10.2026, Entwurf aus einem anderen Werkzeug). Titel von Till am 24.10.2026 im Chat gewählt. Eine eigene Einschätzung von Till liegt noch nicht vor. Deshalb ist der gesamte Abschnitt „Meine Einordnung“ ein Vorschlag der Redaktion („Mich überrascht weniger …“, „Zwei Grenzen gehören dazu …“, „Dass Bitkom …“). Ebenfalls redaktionell gewählt: die Beispiele im Mittelstand-Abschnitt (Bäckerei mit drei Filialen, Anfrage für 150 belegte Brötchen) und der Gedanke zum Mitnehmen. Bitte ersetzen oder freigeben. Alle Zahlen stammen aus der IAB-Pressemitteilung vom 20.10.2026; das IAB-Forum selbst lädt nur per JavaScript. Bewusst weggelassen, weil nur in einer Zweitverwertung (Smart Up News) lesbar: die Einzelwerte 36/34/33/32/30/7 Prozent und der Vergleich nach Betriebsgröße. Vorschlag für „Eine Zahl, genau gelesen“ steht im Themenboard.
 
 ## Was ist passiert?
 
