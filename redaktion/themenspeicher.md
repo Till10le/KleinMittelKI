@@ -36,6 +36,40 @@ Aktuell-Nachrichten zusätzlich, sobald eine Meldung kommt. Immer 1–2 fertige 
 - [ ] Glossar „Das ehrliche KI-Wörterbuch“ als lebender Wissensbeitrag (Idee aus der Konzeptphase, nicht entschieden)
 - [ ] „Was KI wirklich kostet“: Lizenzen, Tokens, Einführungsaufwand (Idee aus der Konzeptphase, nicht entschieden)
 
+### Ideen-Agent, Sonntags-Lauf 2026-10-25
+
+Monatsrhythmus-Check: Di 27.10. (Woche 4, Wissen) → `ki-ergebnisse-pruefen-leitfaden` geprüft, wartet auf Till – in Sicht.
+Di 03.11. (Woche 1, Lagebericht) → nichts im Board; Rhythmus „monatlich oder vierteljährlich“ weiter offen. Bei vierteljährlich
+wäre die nächste Ausgabe Dezember, dann braucht 03.11. einen Wissensbeitrag (Kandidat: `eu-produkthaftung-software-ki`, Frist 09.12.).
+Puffer: genau ein fertiger Wissensartikel (der Prüf-Leitfaden); nach dem 27.10. ist der Puffer leer. Praxistest-Woche (17.11.) ohne Kandidat mit Ergebnissen.
+Ins Board als `vorgeschlagen`: `angebot-aus-preisliste-praxistest`, `ki-kompetenz-pflicht-mitarbeiter`.
+
+- [ ] **status-quo-november-2026** – Lagebericht „Status Quo“, Ausgabe November 2026 (Update des Lageberichts vom 21.09.2026)
+  - Rubrik/Format: Wissen / Lageberichte, Lagebericht (ca. 900 Wörter, Abschnitte 01–05, je eine Kennzahl/Balkengrafik).
+  - Für wen: Inhaber und Geschäftsführer 10–250 Beschäftigte, die wissen wollen, wo andere Betriebe stehen.
+  - Neu seit September (alle schon von der Redaktion am Original gelesen, siehe Board-Einträge): IAB-Befragung (20.10.2026, Gründe der
+    Nichtnutzung), Flash Eurobarometer 578 (14.10.2026, Hürden nach Größenklasse, 1–749 Beschäftigte), TÜV-Verband/BSI (07.10.2026,
+    KI-gestützte Angriffe, ab 20 Beschäftigten). Destatis-Werte 2026 (IKT-Erhebung) prüfen, ob schon erschienen – bei der Suche am
+    25.10. nur die PM vom November 2024 gefunden (ungeprüft, ob es eine neuere gibt). Vergleichbarkeitshinweis Pflicht (verschiedene Grundgesamtheiten).
+  - Leser kann danach: eigenen Stand an Verbreitung/Hürden messen, nächsten Schritt (z. B. Büroaufgaben statt Kerngeschäft) wählen.
+  - Braucht von Till: Entscheidung Rhythmus (monatlich/vierteljährlich) und damit Termin (03.11. oder Dezember); 2–3 Sätze Einordnung.
+  - Hängt an: Veröffentlichung von `iab-betriebe-sehen-keine-ki-anwendung` und `eu-eurobarometer-ki-unternehmen` (intern verlinken, nicht doppeln).
+- [ ] **kundendaten-in-ki-datenschutz** – „Darf ich Kundendaten in ChatGPT eingeben? Was Datenschützer kleinen Betrieben raten“
+  - Rubrik/Format: Wissen / Leitfäden, Anleitung (ca. 550 Wörter) mit Prüfliste „Vor dem Einfügen drei Fragen“.
+  - Für wen: Büro, Inhaber, Sachbearbeitung in Betrieben 5–100 Beschäftigte, die Kundenmails, Angebote oder Listen in KI-Werkzeuge kopieren.
+  - Quelle: DSK-Orientierungshilfe „Künstliche Intelligenz und Datenschutz“ (06.05.2024) – nur die Pressemitteilung gelesen
+    (https://datenschutzkonferenz-online.de/media/pm/2024_05_06_DSK_PM_OH_KI_und_Datenschutz.pdf: Zielgruppe Verantwortliche,
+    Schwerpunkt LLM-Anwendungen, Zweckbindung, Transparenz, Betroffenenrechte, Richtigkeit). Volltext, Aussagen zu Training/Opt-out
+    und Firmenkonten der Anbieter ungeprüft; ggf. neuere DSK- oder LfDI-Papiere suchen.
+  - Leser kann danach: entscheiden, welche Daten ins Werkzeug dürfen, Einstellungen (Training, Verlauf) prüfen, Regel fürs Team festlegen.
+  - Abgrenzung: `werkzeuge-besprechungsnotizen-datenschutz` (Board) behandelt Aufnahmen/Transkription; hier geht es um Texteingaben. Gegenseitig verlinken.
+  - Braucht von Till: Einschätzung; welche Werkzeuge/Tarife er selbst nutzt (Privat- vs. Firmenkonto). Relevanz vorläufig 7/10 (Quelle 1, Neuheit 1).
+- [ ] **ki-modelle-beitrag-halbjahres-update** – Update-Vorschlag für „ChatGPT ist nicht das KI-Modell“ (08.10.2026, 22 Quellen)
+  - Modellnamen, Tarife und Funktionen veralten schnell. Vorschlag: im April 2027 (oder bei großem Modellwechsel vorher) Quellen
+    prüfen, Stand-Zeile ergänzen, Veraltetes markieren statt löschen. Kein neuer Beitrag. Braucht von Till: nichts, nur Ja zum Turnus.
+- [ ] Nebenbefund 2026-10-25: Der AI-Act-Beitrag vom 03.10. enthält die Omnibus-Übergangsfrist bis 02.12.2026 für Art. 50 bereits – kein Update nötig.
+  Nach dem 02.12.2026 kurz prüfen, ob „Übergangsfrist“ im Präsens noch stimmt.
+
 ## Erledigt
 
 - [x] 2026-10-08 Azubis fragen die KI – wird dein Betrieb empfohlen?
