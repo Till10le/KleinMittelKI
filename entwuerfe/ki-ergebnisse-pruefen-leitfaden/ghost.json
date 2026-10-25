@@ -27,6 +27,10 @@
     "ki-beispielbild-hund-tiger.jpg": {
       "hash": "2b23166389061cf8295d0d4917dcceae7af501accef76c16f5225f3a16765408",
       "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/ki-beispielbild-hund-tiger.jpg"
+    },
+    "kmk-ki-pruefen-g7.png": {
+      "hash": "c9417ea179f2d53d703fe834d90a145e47495e4c72755428b30764f775d4f8a7",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g7.png"
     }
   },
   "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/vorschaubild-5.png",
@@ -36,7 +40,7 @@
   "slug": "ki-ergebnisse-pruefen-leitfaden",
   "titel": "KI irrt sich und klingt trotzdem sicher: So prüfst du KI-Ergebnisse im Betrieb",
   "status": "draft",
-  "updated_at": "2026-10-25T16:41:38.000Z",
+  "updated_at": "2026-10-25T17:19:52.000Z",
   "vorschau": "https://www.kleinmittelki.de/p/3aa0ec3b-67f5-440d-9514-2a9509cbbfd0/",
   "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6adb327eb21d370001a498fb",
   "titelbild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/titel-ki-ergebnisse-pruefen-leitfaden.jpg",
