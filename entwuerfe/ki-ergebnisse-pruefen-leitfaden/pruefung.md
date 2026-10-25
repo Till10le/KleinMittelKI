@@ -325,3 +325,52 @@ Steht noch: „Verworfen gemäß Tills Vorgaben: Hund-Tiger-Meme“ und „OLG H
 - **H14** Z. 91 OLG Hamm: Der Satz verallgemeinert ein Urteil aus dem Gesundheitsbereich. Der verlinkte Beitrag ordnet das ein; genauer wäre „… sagst am Ende du. So hat das OLG Hamm die Falschangaben eines Website-Chatbots dem Betreiber zugerechnet.“
 - **H15** Ghost hat noch die Fassung vom 23.10. (alter Titel, g2 statt g6). Nach Korrektur `ghost.py draft` neu, g4/g6/Vorschaubild hochladen, dann Punkt 13 nachholen.
 - **H16** Social-Kacheln g4/g6: großer Leerraum (Werkzeugverhalten, bekannt), nicht Teil des Beitrags.
+
+## Runde 6 – 25.10.2026 (Prüfer, Nachprüfung Runde 5)
+
+**Ergebnis: NICHT BESTANDEN** (ein neuer Mangel aus der Umsetzung von V1, ein Satz; sonst alles sauber)
+
+Geprüft: beitrag.md (neu), quellen.md (Nachtrag 25.10.), g4/g6 und ihre Social-Kacheln (neu gerendert 22:53, angesehen),
+`python3 tools/lexical.py` (rc 0). Quellen für die neuen Aussagen: OpenAI Help 8914046 und 8983136 (am 25.10. gelesen, siehe Runde 5),
+`entwuerfe/olg-hamm-chatbot-haftung/beitrag.md`, Tills Eingang `redaktion/eingang/2026-10-23-till-eigene-ki-fehler.md`.
+
+### Mängel aus Runde 5
+
+| Mangel | Prüfung |
+|---|---|
+| F1 OWASP | ok – Z. 87 „Dazu nennt es ein verwandtes Problem: übermäßiges Vertrauen … Das verstärkt den Schaden.“ = „related issue … exacerbates the impact“ |
+| F2 „gemeinnützig“ | ok – „eine weltweite, offene Initiative von Fachleuten für IT-Sicherheit“ = Charta „global, open-source initiative“, „community-driven“ |
+| F3 neuer Chat | ok – siehe unten |
+| F4 Anthropic | ok – „in der Dokumentation zu seinem Modell Claude, dass diese Erlaubnis … deutlich verringern kann“ |
+| F5 „genauso sicher“ | ok – Z. 15 und Box Punkt 1 „kann … genauso sicher klingen“ |
+| F6 „Genau dort“ | ok – „Bei solchen Fakten entstehen Halluzinationen.“, Satz geteilt |
+| F7 Kalai | ok – Vergangenheit, „einem der Autoren des Forschungsbeitrags“, „gab er drei verschiedene Antworten. Keine davon stimmte.“ |
+| F8 „die meisten“ | ok – „Fünf Regeln, die viele Fehler abfangen“ |
+| V1 Steckachse | Erklärung ok, **aber neuer Mangel R6-1** (siehe unten) |
+| V2 Doppelte Verneinung | ok – „kein Naturgesetz“ |
+| V3 Tiger → Halluzination | ok |
+| V4 100 vs. 95 | ok – Text, Box Schritt 3, g4 („100 Stück eingeplant“, Fußzeile „95 von 100 Stück verkauft“) |
+| V5 „bewertet“ | ok – „Die Tests, mit denen Sprachmodelle trainiert und verglichen werden, zählen meist nur richtige Antworten.“ |
+| Q1 quellen.md | ok – Nachtrag 25.10., alte Vermerke als überholt markiert, nicht gelöscht |
+| H1–H9, H12, H14 | umgesetzt; H10, H11, H13 bewusst offen (begründet) |
+
+### Neue Aussagen
+
+- **Temporärer Chat (Z. 125):** „Bei ChatGPT geht das am sichersten in einem temporären Chat, denn ein normaler neuer Chat kann je nach Einstellung frühere Gespräche einbeziehen.“ – ok. 8983136: „Chat history allows ChatGPT to reference past conversations“, abschaltbar in den Einstellungen; 8914046: Temporary Chat „won’t access or create memories“, nutzt frühere Gespräche nur „for limited safety and security purposes“ → „am sichersten“ statt „sicher“ ist genau richtig. „Je nach Einstellung“ deckt auch ab, dass der Chatverlauf nur bei bestimmten Konten verfügbar ist. Beide Quellen stehen in der Quellenliste.
+- **OLG-Satz (Z. 91):** „So hat das OLG Hamm die Falschangaben eines Website-Chatbots dem Betreiber zugerechnet.“ – ok, deckt sich mit dem OLG-Beitrag („irreführende geschäftliche Handlung nach § 5 UWG, die dem Betreiber zuzurechnen ist“). Keine Verallgemeinerung über den Fall hinaus.
+- **Schwund-Absatz (Z. 73):** 10 − 6 − 1 = 3 €; 30 % = 3/10 ✓; 100 × 0,95 = 95 ✓; 3 × 95 = 285 € ✓; 0,3 × 100 × 0,95 = 28,50 ✓; „Anteil statt Euro“ = Faktor 10 = Verkaufspreis ✓. Box Schritt 3/4 und g4 stimmen überein.
+
+### Mangel
+
+**R6-1 – Steckachse: „aus einem einzigen Maß“ geht über Tills Text hinaus** (Z. 53, Satz 2)
+Tills Eingang: „ChatGPT hatte **unter anderem** aus der bekannten Hinterrad-Einbaubreite von 148 Millimetern … geschlossen.“ „Aus einem einzigen Maß“ behauptet in Tills Ich-Fall mehr, als er gesagt hat. Der Fehler kommt aus meinem Formulierungsvorschlag V1 in Runde 5.
+→ „ChatGPT hatte unter anderem aus der Breite der Hinterradnabe von 148 Millimetern auf die passende Achse geschlossen.“ (Rest des Absatzes bleibt.)
+
+### Hinweise (kein Mangel)
+
+- Z. 33 „nach dem Titel seiner Doktorarbeit“: „seiner“ kann sich auch auf den Chatbot oder das Team beziehen → „nach dem Titel der Doktorarbeit dieses Autors“.
+- Z. 87 letzter Satz steht direkt nach dem übermäßigen Vertrauen und liest sich als dessen Folge. OWASP nennt die Folgen für Fehlinformation insgesamt → „Als mögliche Folgen von Fehlinformation nennt OWASP …“.
+- Z. 73 „Das ist der Bruttogewinn, den die Formel liefern sollte.“ → genauer „… den die Formel nach ihrer eigenen Logik liefern sollte.“ Der Satz danach grenzt das ohnehin ab.
+- Formelkasten Z. 66 nennt C34 weiter „Anzahl der Verkäufe pro Jahr“ (Tills Originalbezeichnung), der Text „100 Stück eingeplant“. Vertretbar, weil es die Originalformel ist.
+- INTERN-Absatz (e) erwähnt die neue Steckachsen-Formulierung nicht ausdrücklich; nach R6-1 gibt es keinen Grund mehr dafür.
+- Ghost hat weiter die Fassung vom 23.10. → nach der Korrektur neu laden (g4, g6, Vorschaubild), dann Punkt 13.

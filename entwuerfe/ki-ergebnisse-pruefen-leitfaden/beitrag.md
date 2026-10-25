@@ -30,7 +30,7 @@ Wenn ein Sprachmodell wie ChatGPT auf diese Weise etwas Falsches behauptet, hei�
 
 Woher die Fehler kommen, erklärt OpenAI so: Sprachmodelle lernen zuerst an riesigen Textmengen, wie ein Text weitergeht. Rechtschreibung folgt festen Mustern. Solche Fehler verschwinden, je größer die Modelle werden. Seltene Einzelfakten wie der Geburtstag eines Haustiers folgen keinem Muster. Bei solchen Fakten entstehen Halluzinationen.
 
-Wie das aussieht, zeigt OpenAI an einem der Autoren des Forschungsbeitrags. Als das Team einen verbreiteten Chatbot nach dem Titel seiner Doktorarbeit fragte, gab er drei verschiedene Antworten. Keine davon stimmte. Beim Geburtstag war es genauso.
+Wie das aussieht, zeigt OpenAI an einem der Autoren des Forschungsbeitrags. Als das Team einen verbreiteten Chatbot nach dem Titel der Doktorarbeit dieses Autors fragte, gab er drei verschiedene Antworten. Keine davon stimmte. Beim Geburtstag war es genauso.
 
 Dazu kommt: Die Tests, mit denen Sprachmodelle trainiert und verglichen werden, zählen meist nur richtige Antworten. So lohnt sich Raten mehr als ein ehrliches „Ich weiß es nicht“. OpenAI vergleicht das mit einem Test: Wer den Geburtstag einer Person nicht kennt und rät, liegt immerhin mit einer Chance von 1 zu 365 richtig. Wer „weiß ich nicht“ schreibt, bekommt sicher null Punkte. Also rät das Modell.
 
@@ -50,7 +50,7 @@ In den vergangenen Monaten habe ich mehrfach erlebt, dass ChatGPT etwas mit gro�
 
 Für einen Fahrradanhänger an meinem Mountainbike brauchte ich eine passende Steckachse, also die Achse, die das Hinterrad im Rahmen hält und an der der Anhänger befestigt wird. ChatGPT empfahl ein Modell, mit Gewindesteigung, Achslänge und Zubehör, und war sich irgendwann „100 %“ sicher, dass es passt.
 
-Für diese Sicherheit fehlten entscheidende Informationen. ChatGPT hatte aus einem einzigen Maß, der Breite der Hinterradnabe von 148 Millimetern, auf die passende Achse geschlossen. Wie lang die Achse sein muss und welches Gewinde der Rahmen hat, folgt daraus aber nicht. Beides war nicht überprüft. Auf Nachfrage blieb es zunächst trotzdem dabei. Erst später räumte ChatGPT ein, dass man für eine verlässliche Aussage die Originalachse genauer prüfen müsste.
+Für diese Sicherheit fehlten entscheidende Informationen. ChatGPT hatte unter anderem aus der Breite der Hinterradnabe von 148 Millimetern auf die passende Achse geschlossen. Wie lang die Achse sein muss und welches Gewinde der Rahmen hat, folgt daraus aber nicht. Beides war nicht überprüft. Auf Nachfrage blieb es zunächst trotzdem dabei. Erst später räumte ChatGPT ein, dass man für eine verlässliche Aussage die Originalachse genauer prüfen müsste.
 
 ChatGPT hatte nicht alle nötigen Informationen, aber trotzdem eine eindeutige Antwort. Für einen Handwerksbetrieb wird das relevant, wenn die KI ein Ersatzteil oder Material empfiehlt. Eine plausible Produktempfehlung ersetzt keine geprüften technischen Daten und erst recht keine Freigabe des Herstellers.
 
@@ -70,7 +70,7 @@ Fällt dir der Fehler auf?
 
 Die Division durch den Verkaufspreis macht aus dem Gewinn pro Einheit eine Marge, also einen Anteil am Preis: 3 von 10 Euro sind 30 Prozent. Diesen Anteil hat die Formel dann aber nicht mit dem Umsatz in Euro multipliziert, sondern mit der Stückzahl. Ein Anteil mal Stückzahl ergibt keinen Bruttogewinn in Euro.
 
-Mit einfachen Beispielzahlen statt der Originaldaten: Verkaufspreis 10,00 €, Einkaufspreis 6,00 €, Verbrauchsmaterial 1,00 €, 100 Stück im Jahr eingeplant, 5 % Schwund (verkauft werden also 95). Pro Stück bleiben nach Einkauf und Material 3 Euro übrig, der sogenannte Deckungsbeitrag. Rechnet man den Schwund so wie die Tabelle, also vereinfacht als weniger verkaufte Stück, ergibt sich 3 € × 100 × 0,95 = 285 €. Das ist der Bruttogewinn, den die Formel liefern sollte. Sie liefert aber nur 28,50. Eine vollständige Kalkulation müsste außerdem berücksichtigen, dass die verdorbene Ware trotzdem eingekauft wurde. Darum geht es hier aber nicht: Schon dieser eine Fehler, ein Anteil statt Euro, macht aus 285 Euro 28,50.
+Mit einfachen Beispielzahlen statt der Originaldaten: Verkaufspreis 10,00 €, Einkaufspreis 6,00 €, Verbrauchsmaterial 1,00 €, 100 Stück im Jahr eingeplant, 5 % Schwund (verkauft werden also 95). Pro Stück bleiben nach Einkauf und Material 3 Euro übrig, der sogenannte Deckungsbeitrag. Rechnet man den Schwund so wie die Tabelle, also vereinfacht als weniger verkaufte Stück, ergibt sich 3 € × 100 × 0,95 = 285 €. Das ist der Bruttogewinn, den die Formel nach ihrer eigenen Logik liefern sollte. Sie liefert aber nur 28,50. Eine vollständige Kalkulation müsste außerdem berücksichtigen, dass die verdorbene Ware trotzdem eingekauft wurde. Darum geht es hier aber nicht: Schon dieser eine Fehler, ein Anteil statt Euro, macht aus 285 Euro 28,50.
 
 ![Schaubild: Vergleich mit Beispielzahlen (Verkaufspreis 10 €, Einkaufspreis 6 €, Material 1 €, 100 Stück eingeplant, 5 % Schwund) – die Formel aus der KI-Tabelle =((B8-B9-B11)/B8)*C34*(1-B10/100) ergibt 28,50, in Euro gerechnet sind es 3 € × 100 × 0,95 = 285 €](kmk-ki-pruefen-g4.png "Wer mit einfachen Zahlen nachrechnet, sieht sofort, dass die Formel keine Euro liefert.")
 
@@ -84,7 +84,7 @@ Aber woher weiß ich, ob diese Selbstprüfung vollständig und richtig ist? Chat
 
 ## Das eigentliche Risiko: Niemand schaut mehr hin
 
-Das OWASP Gen AI Security Project, eine weltweite, offene Initiative von Fachleuten für IT-Sicherheit, führt Fehlinformation durch Sprachmodelle in seiner Liste der zehn wichtigsten Risiken für Anwendungen mit Sprachmodellen (Stand 2025). Dazu nennt es ein verwandtes Problem: übermäßiges Vertrauen. Menschen prüfen die Ausgaben nicht genug und übernehmen falsche Angaben in Entscheidungen und Abläufe. Das verstärkt den Schaden. Als mögliche Folgen nennt OWASP Reputationsschäden und rechtliche Haftung.
+Das OWASP Gen AI Security Project, eine weltweite, offene Initiative von Fachleuten für IT-Sicherheit, führt Fehlinformation durch Sprachmodelle in seiner Liste der zehn wichtigsten Risiken für Anwendungen mit Sprachmodellen (Stand 2025). Dazu nennt es ein verwandtes Problem: übermäßiges Vertrauen. Menschen prüfen die Ausgaben nicht genug und übernehmen falsche Angaben in Entscheidungen und Abläufe. Das verstärkt den Schaden. Als mögliche Folgen von Fehlinformation nennt OWASP Reputationsschäden und rechtliche Haftung.
 
 Fall 2 zeigt, warum das so leicht passiert: Je professioneller ein Ergebnis aussieht, desto fertiger wirkt es. Auch im [Protokoll-Selbstversuch](https://www.kleinmittelki.de/protokoll-per-ki-selbstversuch/) hier im Blog waren im fertig wirkenden Entwurf einige Namen falsch geschrieben.
 
