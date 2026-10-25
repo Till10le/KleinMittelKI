@@ -20,6 +20,8 @@ Befehle:
                                   Newsletter-Ausgabe einplanen. Nur mit gültiger Freigabe (art newsletter).
     referenz [--auch <slug> …]    Nur lesen: HTML aller veröffentlichten Beiträge nach redaktion/referenz/
     abarbeiten                    Alle offenen Freigaben ausführen (auch die per Mail von tools/mailfreigabe.py).
+    testmail <newsletter-ordner>  Newsletter als Entwurf anlegen/aktualisieren (ohne INTERN) und Ghosts Testmail
+                                  NUR an till.zehnle@gmail.com schicken. Plant nichts ein, verschickt nichts an Abonnenten.
 
 Es gibt bewusst keinen Löschbefehl.
 """
@@ -52,6 +54,7 @@ FREIGABEN = ROOT / "redaktion" / "freigaben.jsonl"
 INDEX_JSON = ROOT / "redaktion" / "blog-index.json"
 INDEX_MD = ROOT / "redaktion" / "blog-index.md"
 PUBLIC_SITE = "https://www.kleinmittelki.de"
+TESTMAIL_AN = "till.zehnle@gmail.com"  # fest: Testmails gehen nie an eine andere Adresse
 INTERN_PREFIX = "INTERN"
 
 
@@ -525,6 +528,32 @@ def cmd_abarbeiten(_a) -> None:
             ergebnisse.append({"slug": f.get("slug"), "fehler": str(e)})
     print(json.dumps({"ausgefuehrt": ergebnisse}, ensure_ascii=False, indent=2))
 
+# ---------- Testmail (Till 25.10.2026: Newsletter vor der Freigabe so sehen, wie er ankommt) ----------
+
+def cmd_testmail(a) -> None:
+    folder = Path(a.ordner)
+    meta, _ = lexical.build((folder / "beitrag.md").read_text(encoding="utf-8"))
+    if "#newsletter" not in (meta.get("tags") or []):
+        raise GhostFehler("Testmails nur für Newsletter. Beiträge gehen nie per E-Mail raus.")
+    fingerabdruck = inhalt_hash(folder)
+    state = _draft(folder)  # bricht ab, wenn der Newsletter in Ghost nicht mehr Entwurf ist
+    p = find_post(state["id"], formats="lexical")
+    lex, removed = _ohne_intern(p["lexical"])
+    rest = _restliche_platzhalter(lex)
+    if rest:
+        raise GhostFehler(f"SPERRE: Offene Platzhalter: {rest}")
+    if removed:
+        p = api("PUT", f"posts/{p['id']}/", body={"posts": [{"lexical": lex, "updated_at": p["updated_at"]}]})["posts"][0]
+    if p["status"] != "draft":
+        raise GhostFehler(f"Newsletter ist '{p['status']}', keine Testmail.")
+    api("POST", f"email_previews/posts/{p['id']}/", body={"emails": [TESTMAIL_AN], "newsletter": _aktiver_newsletter()})
+    state.update({"updated_at": p["updated_at"], "testmail_hash": fingerabdruck, "testmail_an": TESTMAIL_AN,
+                  "testmail_zeit": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+                  "intern_absaetze_entfernt": removed})
+    (folder / "ghost.json").write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
+    print(json.dumps({k: state.get(k) for k in ("slug", "status", "vorschau", "testmail_hash", "testmail_an",
+                                                  "testmail_zeit")}, ensure_ascii=False, indent=2))
+
 # ---------- Blog-Index ----------
 
 SATZ_ENDE = re.compile(r"(?<=[.!?])\s+(?=[A-ZÄÖÜ„\"0-9])")
@@ -617,6 +646,7 @@ def main(argv=None) -> int:
     s = sub.add_parser("newsletter"); s.add_argument("ref"); s.add_argument("--newsletter")
     s.add_argument("--zeitpunkt", required=True); s.set_defaults(fn=cmd_newsletter)
     sub.add_parser("abarbeiten").set_defaults(fn=cmd_abarbeiten)
+    s = sub.add_parser("testmail"); s.add_argument("ordner"); s.set_defaults(fn=cmd_testmail)
     a = ap.parse_args(argv)
     try:
         a.fn(a)

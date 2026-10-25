@@ -10,14 +10,17 @@ Versprechen auf der Seite: „KI verstehen. Ohne jeden Tag alles lesen zu müsse
 
 ## Ablauf
 
-Till will den Vorschlag **sonntags per Mail**, schreibt ggf. hin und her und gibt dann frei. Erst danach entsteht
-der Ghost-Entwurf, und er wird sofort für Dienstag 7:00 eingeplant.
+Till will den Vorschlag **sonntags** so sehen, wie er bei den Lesern ankommt (25.10.2026): Ghost schickt ihm die echte
+Testmail, er schreibt ggf. hin und her und gibt dann frei. Der Newsletter liegt dafür als **Entwurf** in Ghost; eingeplant
+wird er erst nach „N ja“, für **Dienstag 7:05** (der Hauptbeitrag geht um 7:00 online, so funktioniert sein Link schon).
 
 1. **Sonntag 9:47** (Sonntags-Lauf): Entwurf schreiben – `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md` mit Tag `#newsletter`,
-   Kategorie leer lassen, Prüfer prüft. **Nicht in Ghost anlegen.** Vorher prüfen, ob es für diesen Dienstag schon einen gibt
+   Kategorie leer lassen, Prüfer prüft, dann Ghost-Lauf starten. Der legt den Entwurf an und schickt die Testmail
+   (`python3 tools/ghost.py testmail entwuerfe/<slug>`: nur an till.zehnle@gmail.com, INTERN entfernt, nichts eingeplant). Vorher prüfen, ob es für diesen Dienstag schon einen gibt
    (keine Dubletten). Themen der Vorwoche nicht wiederholen (frühere `newsletter-*`-Ordner und Index lesen).
-2. **Sonntag 10:17** (Mail-Lauf Sonntag): Newsletter-Mail an Till mit vollem Text (Skill `kmk-mail`, Abschnitt Newsletter).
-3. **Sonntag 12:17, 15:17, 18:17, 21:17:** Tills Änderungswünsche einarbeiten, Prüfer erneut, neue Fassung zurückmailen.
+2. **Sobald die Testmail raus ist** (Mail-Lauf Sonntag): kurzer Begleitzettel an Till (Skill `kmk-mail`, Abschnitt Newsletter).
+3. **Sonntag 12:17, 15:17, 18:17, 21:17:** Tills Änderungswünsche einarbeiten, Prüfer erneut, Ghost-Lauf starten (neue Testmail),
+   dann Begleitzettel zur neuen Fassung. Ghost erlaubt höchstens 10 Testmails pro Stunde.
 4. **„N ja“** → `tools/mailfreigabe.py … --art newsletter-text --text-hash <Fingerabdruck der zuletzt gemailten Fassung>`.
    Der nächste Ghost-Lauf (12:47, 18:47, 21:47 bzw. Montag) legt den Entwurf an und plant ihn ein (`ghost.py abarbeiten`).
    Bestätigung mit Vorschau-Link im nächsten Mail-Lauf. Spätestmögliche Freigabe: Montag 18:17.

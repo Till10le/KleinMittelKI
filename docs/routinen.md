@@ -10,8 +10,11 @@ oben die Empfehlung, darunter höchstens 4 Themen (Nummern), jedes gleich aufgeb
 Unsere Idee (Arbeitstitel) · Rubrik · Quelle. Nie aufgefüllt; schon gemailte Themen kommen nicht wieder.
 Fertige Entwürfe warten nicht auf Donnerstag: Sobald einer bereit ist, kommt eine kurze Mail „Vorschau bereit“ (Buchstaben).
 Till antwortet einfach, z. B. „1 und 3. Zu 1: … · 2 nein, zu technisch · A ja“.
-Sonntags gegen 10:20 Uhr kommt der Newsletter-Vorschlag für Dienstag mit vollem Text. Till schreibt Änderungen
-zurück (Antworten um 12:17, 15:17, 18:17, 21:17) und gibt mit „N ja“ frei – dann wird er angelegt und für Dienstag 7:00 eingeplant.
+Sonntags kommt der Newsletter-Vorschlag für Dienstag als **echte Testmail von Ghost** (seit 25.10.2026): genau so, wie ihn
+die Leser bekommen, nur an Till. Dazu ein kurzer Begleitzettel der Redaktion (was neu ist, was Vorschlag ist). Ablauf: Sonntags-Lauf
+schreibt und prüft, startet den Ghost-Lauf, der legt den Newsletter als Entwurf an und schickt die Testmail (`ghost.py testmail`).
+Till schreibt Änderungen zurück (Antworten um 12:17, 15:17, 18:17, 21:17; jede neue Fassung kommt wieder als Testmail) und gibt mit
+„N ja“ frei – dann wird er für Dienstag 7:05 eingeplant, fünf Minuten nach dem Hauptbeitrag, damit dessen Link schon geht.
 Eigene Ideen: jederzeit eine Mail an sich selbst mit Betreff „KMK Idee: …“ (Satz, Link, weitergeleitete Mail, Foto).
 Der nächste Mail-Lauf nimmt sie auf, der Scout prüft die Quelle, die Idee kommt geprüft als I1 … ins Briefing am Donnerstag.
 Mit „ausarbeiten“ im Text wird sie direkt geschrieben.

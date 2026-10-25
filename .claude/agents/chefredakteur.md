@@ -63,6 +63,11 @@ Ein Lauf außerhalb von Donnerstag 6:30–7:30 Uhr ist ein Express-Lauf: Schritt
    Sperre („nach Freigabe geändert“) → Status `wartet-auf-till` und Vermerk „neu freigeben“.
 2. **In jedem Lauf:** jeden Eintrag mit Status `geprueft`:
    `python3 tools/ghost.py draft entwuerfe/<slug>` → Status `wartet-auf-till`, Vorschau-Link aus `ghost.json` ins Board.
+   **Newsletter-Testmail:** Für jeden Eintrag mit Status `newsletter-vorschlag`, dessen `entwuerfe/<slug>/ghost.json`
+   kein `testmail_hash` hat oder dessen `testmail_hash` nicht mehr gleich dem Fingerabdruck der Fassung ist
+   (`hash <slug>` aus dem Freigabe-Werkzeug für Mails): `python3 tools/ghost.py testmail entwuerfe/<slug>`. Ghost schickt
+   die echte Newsletter-Mail nur an Till (fest eingestellt), der Entwurf bleibt Entwurf. Eine Testmail je Fassung;
+   schlägt sie fehl, Fehler in den Bericht.
    Nur um 7:47 Uhr zusätzlich: `python3 tools/ghost.py index` und `python3 tools/ghost.py referenz` (Vorbilder aktuell halten).
    `entwuerfe/<slug>/ghost.json` immer mit committen – der Mail-Lauf braucht ihn.
 3. Hat sich nichts geändert: sofort beenden, kein Commit, keine Nachricht. Sonst Bericht ergänzen, Commit „Ghost <Datum> <Zeit>“, push.
@@ -94,8 +99,10 @@ Lies den Skill `kmk-mail` vollständig. Dann:
    in der Bestätigung schreiben: „Wird jetzt ausgearbeitet, Vorschau-Link kommt in etwa einer Stunde.“
 5. `redaktion/mail.json` aktualisieren, Commit „Mail <Datum> <Zeit>“, push. Nichts passiert: sofort beenden, kein Commit.
 
-**Sonntags** (So 10:17, 12:17, 15:17, 18:17, 21:17): um 10:17 die Newsletter-Mail nach `kmk-mail` schicken; danach Tills
-Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), prüfen (Prüfer), neue Fassung zurückmailen;
+**Sonntags** (So 10:17, 12:17, 15:17, 18:17, 21:17): sobald die Testmail der aktuellen Fassung raus ist (`ghost.json` →
+`testmail_hash` gleich dem Fingerabdruck), die kurze Newsletter-Mail nach `kmk-mail` schicken; danach Tills
+Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), prüfen (Prüfer), pushen, Ghost-Lauf starten
+(`fire_trigger` trig_01DYxG6NMz2Lfzf6wG8BTikR, ohne Zusatztext) für die neue Testmail, dann kurze Mail zur neuen Fassung;
 „N ja“ über `mailfreigabe.py --art newsletter-text` eintragen. Mo–Fr gelten Schritte 1–5 auch für den Newsletter-Verlauf; Idee-Mails werden auch sonntags erfasst.
 
 ## Sonntags-Lauf (So 9:47)
@@ -104,8 +111,9 @@ Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), p
    als `vorgeschlagen` ins Board – sie kommen Donnerstag ins Briefing (zusammen mit dem Scout höchstens 4 Themen).
 2. **Analyst**: Wochenbericht.
 3. Newsletter-Entwurf für Dienstag nach Skill `kmk-newsletter` als `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md`,
-   vom **Prüfer** prüfen lassen, Status `newsletter-vorschlag`. **Nicht nach Ghost** – der Mail-Lauf Sonntag 10:17 schickt
-   ihn Till; erst nach „N ja“ legt der Ghost-Lauf ihn an und plant ihn ein.
+   vom **Prüfer** prüfen lassen, Status `newsletter-vorschlag`. Nicht selbst nach Ghost: Nach dem Push (Schritt 6) den
+   Ghost-Lauf starten (`fire_trigger` trig_01DYxG6NMz2Lfzf6wG8BTikR, ohne Zusatztext). Er legt den Newsletter als Entwurf an
+   und schickt Till Ghosts echte Testmail. Eingeplant wird erst nach „N ja“.
 4. **Social**: Paket für die Woche nach Skill `kmk-social`.
 5. **Übersicht prüfen:** Stimmt `docs/uebersicht.html` noch mit `docs/routinen.md`, den Agenten und Skills überein (Läufe,
    Zeiten, Kanäle, Mail-Befehle)? Abweichungen in den Wochenbericht und als Frage F… ins Donnerstags-Briefing

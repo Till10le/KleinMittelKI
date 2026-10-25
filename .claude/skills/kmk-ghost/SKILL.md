@@ -22,6 +22,7 @@ nie über den Ghost-Editor, nie per curl. Die Werkzeuge brauchen die Umgebung **
 | Freigabe eintragen | `python3 tools/ghost.py freigabe <slug> --art beitrag --zitat "<Tills Worte>"` |
 | Veröffentlichen | `python3 tools/ghost.py publish <slug>` (optional `--zeitpunkt 2026-10-20T05:00:00Z`) |
 | Newsletter einplanen | `python3 tools/ghost.py newsletter <slug> --newsletter <newsletter-slug> --zeitpunkt …` |
+| Newsletter-Testmail an Till | `python3 tools/ghost.py testmail entwuerfe/<newsletter-slug>` (nur Newsletter, nur an till.zehnle@gmail.com, bleibt Entwurf) |
 
 ## Was die Werkzeuge garantieren
 

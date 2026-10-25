@@ -95,13 +95,24 @@ vier Terminen (z. B. „Di 27.10. A · Do 29.10. C · Di 3.11. frei · Do 5.11. 
 
 ## Newsletter-Mail (Sonntag 10:17, eigener Verlauf)
 
-Betreff: `KMK-Newsletter · Di 27.10. · Fassung 1`. Inhalt: oben 3–5 Stichpunkte (Thema der Woche, Zahl der Woche,
-was neu auf dem Blog ist), darunter der **vollständige Text** so, wie er verschickt wird (HTML wie im Newsletter,
-INTERN-Absätze weglassen, Quelle mit Link). Unten: „Antwort: Änderungen einfach dazuschreiben · „N ja“ = so für
-Dienstag 7:00 einplanen · „N stopp“ = Einplanung zurücknehmen“.
+Till will den Newsletter so sehen, wie er ankommt (25.10.2026). Deshalb schickt **Ghost** die echte Testmail
+(Ghost-Lauf, `ghost.py testmail`, nur an Till). Die Redaktions-Mail ist nur der Begleitzettel und kommt erst, wenn
+`entwuerfe/<slug>/ghost.json` → `testmail_hash` gleich `python3 tools/mailfreigabe.py hash <slug>` ist. Fehlt die Testmail
+oder passt der Fingerabdruck nicht: keine Mail, warten (der Ghost-Lauf holt es nach).
 
-Vor dem Senden: `python3 tools/mailfreigabe.py hash <slug>` und den Fingerabdruck mit der Fassungsnummer im Verlauf
-in `mail.json` speichern (`"fassungen": [{"nr": 1, "hash": "…", "mail_id": "…"}]`).
+Betreff: `KMK-Newsletter · Di 27.10. · Fassung 1`. Inhalt kurz, ohne den Newslettertext:
+
+```
+Die Testmail von Ghost ist in deinem Postfach (Betreff „#4: …“). So sieht der Newsletter bei den Lesern aus.
+– Neu in dieser Fassung: <ein Satz, ab Fassung 2>
+– Als Vorschlag markiert (nicht von dir): <Stellen>
+– Links: <welche Beiträge erst ab Dienstag 7:00 gehen>
+– Versand: Dienstag 7:05 (5 Minuten nach dem Hauptbeitrag, damit sein Link schon geht)
+Antwort: Änderungen einfach dazuschreiben · „N ja“ = so einplanen · „N stopp“ = Einplanung zurücknehmen
+```
+
+Den Fingerabdruck aus `testmail_hash` mit der Fassungsnummer im Verlauf in `mail.json` speichern
+(`"fassungen": [{"nr": 1, "hash": "…", "mail_id": "…"}]`).
 
 Ändert Till etwas: einarbeiten (Autor), Prüfer prüft, neue Fassung im selben Verlauf (`Fassung 2`), neuen Fingerabdruck
 speichern. „N ja“ gilt immer für die **zuletzt gemailte** Fassung – deren Fingerabdruck geht als `--text-hash` an
@@ -157,7 +168,7 @@ Zitierte Teile (Zeilen mit `>` oder unter „Am … schrieb …“) ignorieren; 
 | „A sofort“ | Sofort, außerhalb des Takts | wie oben mit `--zeitpunkt sofort`; im Fahrplan als Ausnahme vermerken |
 | „A Dienstag“, „A 4.11.“, „A morgen 8 Uhr“ | Zu dieser Zeit | wie oben, Zeitpunkt in UTC umrechnen; liegt dort schon ein Beitrag, in der Bestätigung darauf hinweisen |
 | „A ändern: …“ | Überarbeiten | Status `zurueck`, Wünsche wörtlich ins Board |
-| „N ja“ | Newsletter einplanen | `tools/mailfreigabe.py <slug> --art newsletter-text --text-hash <Fingerabdruck der zuletzt gemailten Fassung> --zitat … --mail-id … --von till.zehnle@gmail.com --zeitpunkt <Di 7:00 in UTC>` |
+| „N ja“ | Newsletter einplanen | `tools/mailfreigabe.py <slug> --art newsletter-text --text-hash <Fingerabdruck der zuletzt gemailten Fassung> --zitat … --mail-id … --von till.zehnle@gmail.com --zeitpunkt <Di 7:05 in UTC>` (7:05, damit der Hauptbeitrag von 7:00 schon online ist) |
 | „N: …“ / Änderungswünsche | Newsletter überarbeiten | einarbeiten, prüfen, neue Fassung mailen (siehe Newsletter-Mail) |
 | „N stopp“, „A stopp“ | Einplanung zurücknehmen | `tools/mailfreigabe.py <slug> --art stopp --zitat … --mail-id … --von till.zehnle@gmail.com` |
 | „I1 ja“ / „I1 nein“ | Entscheidung zu Tills eigener Idee | wie „1 ja“ / „2 nein“ |

@@ -5,7 +5,7 @@ Die Redaktion (Chefredakteur, Mail-Lauf) legt fest, wann ein freigegebener Beitr
 
 ## Takt
 
-- **Dienstag 7:00** – Hauptbeitrag (Leitfäden, KI in der Praxis, Grundlagen, Lagebericht) zusammen mit dem Newsletter.
+- **Dienstag 7:00** – Hauptbeitrag (Leitfäden, KI in der Praxis, Grundlagen, Lagebericht); der Newsletter folgt um 7:05, damit der Link schon geht.
 - **Donnerstag 7:00** – kürzerer Beitrag (Entwicklungen, Studien & Zahlen).
 - **Höchstens ein Beitrag je Termin, höchstens zwei pro Woche.** Ist für einen Termin kein passender Typ fertig,
   nimmt die Redaktion den nächsten freigegebenen Beitrag des anderen Typs, damit kein Termin leer bleibt.
@@ -27,7 +27,7 @@ Wer etwas einträgt oder verschiebt, pflegt diese Tabelle. Status: `eingeplant` 
 | Termin | Beitrag | Status |
 |---|---|---|
 | So 25.10. 21:47 (Ausnahme) | D eu-eurobarometer-ki-unternehmen | sofort, Tills Wahl am 25.10. („nur einer heute“) |
-| Di 27.10. 7:00 | A ki-ergebnisse-pruefen-leitfaden + Newsletter #4 | A eingeplant (Freigabe 25.10.); Newsletter wartet auf „N ja“ zu Fassung 2 |
+| Di 27.10. 7:00 | A ki-ergebnisse-pruefen-leitfaden (7:00) + Newsletter #4 (7:05) | A eingeplant (Freigabe 25.10.); Newsletter wartet auf „N ja“ zu Fassung 2 |
 | Do 29.10. 7:00 | C nicht-jedes-problem-braucht-ki | Tills Wahl: einreihen. Freigabe steht noch auf „sofort“ – Till antwortet „C Donnerstag“, sonst geht C am 25.10. um 21:47 online |
 | Di 03.11. 7:00 | Kandidat: ki-recherche-assistent-selbstversuch | wartet-auf-till |
 | Do 05.11. 7:00 | Kandidat: iab-betriebe-sehen-keine-ki-anwendung | wartet-auf-till |
