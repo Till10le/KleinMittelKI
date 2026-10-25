@@ -507,3 +507,58 @@ Zum Vergleich gelesen: eigener Beitrag `ai-act-ki-bilder-kennzeichnen` (Referenz
   - Der Bildaufbau (grüner Rahmen „Tiger“, Pfeil „Context“) gleicht dem LinkedIn-/Siali-Bild. Bitte bei Till klären: Hat er das Bild nur aus einem Text-Prompt erzeugt oder das Original als Vorlage hochgeladen? Im zweiten Fall wäre es eine Bearbeitung eines fremden Bildes, und die Rechtefrage stellt sich wieder.
 - **H10-5 INTERN (b)** enthält noch den alten Satz „Ursprünglich als eigene Grafik nachgestellt … falls du einen Löwen meinst …“ – für Till verwirrend, kürzen.
 - **H10-6** Bewusst offen wie in Runde 9: Länge, Titel, Bestätigung der Prompt-Sätze. Vor der Freigabe Ghost neu laden (neues Bild, g4, Vorschaubild), dann Punkt 13.
+
+## Runde 11 – 25.10.2026 (Prüfer, gekürzte Fassung, Commit 3321372)
+
+**Ergebnis: NICHT BESTANDEN** (fünf kleine Mängel, alle durch das Kürzen entstanden, jeder mit einem Satz lösbar)
+
+Geprüft: gesamte neue Fassung von beitrag.md (Text, Kurzfassung, Box, Bildzeilen, Quellen) gegen die in Runde 5–10 gelesenen Originale und gegen
+Tills Eingang, dazu `entscheidungen.md`, g4 und g5 gegen den neuen Text. `python3 tools/lexical.py` läuft ohne Fehler (rc 0).
+Die Kurzfassung hat 5 Punkte. Format Langtext ok: Einleitung 2 Absätze, Kurzfassung, H2-Abschnitte, Box „Zum Ausprobieren“, Meine Einschätzung · Gedanke · Quellen.
+Bilder: KI-Foto + g1, g4, g3, g5.
+
+### Nachgerechnet
+10 − 6 − 1 = 3 € · 3 × 100 = **300 €** (Box Schritt 2, ohne Schwund) · 3 × 100 × 0,95 = 285 € · (3/10) × 100 × 0,95 = 28,50 · 100.000 × 1,1² = 121.000 (linear 120.000) – alles richtig.
+
+### Weiter korrekt (Stichproben am Original)
+- OpenAI-Definition, Pretraining/Haustier-Geburtstag, 1 zu 365, „kein Naturgesetz“ (= „not inevitable … abstain“), „ersten Entwurf, nicht endgültige Quelle“ (Hilfeseite).
+- Regel 2 „laut OpenAI kann die KI auch bei falschen Antworten sehr sicher klingen“ (Hilfeseite).
+- OWASP: Fehlinformation in den Top 10, Overreliance verstärkt den Schaden, Folgen Reputation/Haftung.
+- Studie: 300 Fälle, je ein erfundener Begriff, sechs Modelle, 66 → 44 %, Einschränkung „nicht für den Alltag“.
+- Steckachse „unter anderem aus der Breite der Hinterradnabe“, Protokoll, OLG Hamm, Exposé/Speisekarte als ausgedacht.
+- Die entfernten Quellen (Temporary Chat, Memory) werden im Text nicht mehr gebraucht – konsistent.
+
+### Mängel
+
+**K1 – Fall 2: Der Fehler der Formel ist verkürzt falsch beschrieben**
+Text: „eine zentrale Formel teilte den Gewinn pro Stück durch den Verkaufspreis, machte daraus also einen Anteil statt eines Eurobetrags.“
+Das Teilen allein ist nicht der Fehler. Tills Text sagt ausdrücklich: „grundsätzlich sinnvoll, wenn man diese Marge anschließend mit einem Umsatzbetrag in Euro multipliziert.“ Falsch war das Malnehmen mit der Stückzahl.
+→ „Und eine zentrale Formel machte aus dem Gewinn pro Stück einen Anteil am Preis und nahm diesen dann mit der Stückzahl mal statt mit dem Umsatz. Heraus kam kein Eurobetrag.“
+
+**K2 – Fall 3: „unter anderem“ fehlt**
+Text: „Es fand die Excel-Kalkulation und die Steckachse.“ Till: „Darunter auch die Excel-Kalkulation und die Steckachse.“
+→ „Es fand unter anderem die Excel-Kalkulation und die Steckachse.“
+
+**K3 – Regel 2: Anthropic-Aussage wieder ohne Claude-Bezug** (Rückfall von F4, Runde 5)
+Text: „Laut Anthropic kann das falsche Angaben deutlich verringern.“ Die Doku sagt das für Claude („Explicitly give Claude permission …“).
+→ „Laut Anthropics Dokumentation zu Claude kann das falsche Angaben deutlich verringern.“
+
+**K4 – Kurzfassung Punkt 2 hat keine Entsprechung mehr im Text**
+„Datumsangaben, Zitate und Quellen“ standen im gestrichenen Hilfeseiten-Absatz. Im Text steht jetzt nur noch „seltene Einzelfakten“.
+→ Im Absatz „Halluzinationen sind laut OpenAI trotzdem kein Naturgesetz …“ vor dem letzten Satz einfügen: „Als typische Fehler nennt OpenAI falsche Datumsangaben sowie erfundene Zitate und Quellen.“ (Hilfeseite, bereits verlinkt.)
+
+**K5 – Prompt-Kasten „Mein Zusatz“: zwei redaktionelle Sätze ohne Kennzeichnung**
+„Wenn du etwas nicht sicher weißt, sag das, statt zu raten. Erfinde keine Zahlen, Quellen oder technischen Daten.“ hat die Redaktion ergänzt (Runde 8, INTERN f: „bitte bestätigen“). Der neue INTERN-Absatz erwähnt das nicht mehr und sagt sogar „Deine Ich-Fälle … nichts hinzugefügt“. Eine Bestätigung steht nicht in `entscheidungen.md`. Verstoß gegen harte Regel 2 (Ich-Form).
+→ In den INTERN-Absatz aufnehmen: „Im Kasten ‚Mein Zusatz‘ sind die ersten zwei Sätze von der Redaktion ergänzt (deine Idee ‚Erfinde keine Fakten‘) – bitte bestätigen.“ Oder Tills Bestätigung in `entscheidungen.md` nachtragen, falls sie im Chat schon kam.
+
+### Hinweise (kein Mangel)
+
+- **OWASP-Absatz:** „zu den zehn wichtigsten Risiken für solche Anwendungen“ hat kein Bezugswort → „für Anwendungen mit Sprachmodellen“. Der letzte Satz steht wieder direkt nach dem übermäßigen Vertrauen → „Als mögliche Folgen von Fehlinformation nennt OWASP …“ (war in Runde 7 schon so).
+- **„Genau dort setzt du mit deinem Prompt an (Regel 2).“** OpenAI meint Training und Bewertung, nicht den Prompt → „Ähnlich kannst du mit deinem Prompt nachhelfen (Regel 2).“
+- **Fall 1:** Ohne „und an der der Anhänger befestigt wird“ versteht ein Laie nicht, warum der Anhänger eine Achse braucht → Halbsatz wieder ergänzen.
+- **Fall 2:** „Sie verwechselte Zellen“ – die Tabelle verwechselt nichts, ChatGPT tat es beim Bauen → „ChatGPT verwechselte dabei Zellen für Prozent und Euro.“ Für die 285 € braucht man die 5 % Schwund, die nur im Schaubild stehen → „(Zahlen im Schaubild)“ anhängen.
+- **Box Schritt 2 (300 €) und g4 (285 €)** mit fast denselben Zahlen können irritieren → „Hier bleiben 3 € pro Stück, also 300 € (ohne Schwund), bevor weitere Kosten abgehen.“
+- **Regel 2 Studie:** „zeigt die Größenordnung“ widerspricht leicht dem Satz „nicht für den Alltag“ → „zeigt, wie viel so eine Anweisung bringen kann“.
+- **Regel 3:** „deckt oft den Fehler auf“ – „oft“ ist nicht belegt → „kann den Fehler aufdecken“.
+- **g5 und Text:** In g5 heißt Regel 3 „Zahlen nicht der KI glauben“, im Text „Zahlen von Hand nachrechnen“ → eins angleichen (am einfachsten den Text). Sonst passt g5 zu den fünf Regeln. g4 passt zum Text und ist jetzt der einzige Ort mit der Herleitung – richtig so.
+- **Bild:** Laut INTERN und `entscheidungen.md` ist das Foto mit dem Originalbild aus dem Netz als Vorlage erzeugt. Till hat es nach dem Hinweis auf das Urheberrechts-Risiko bewusst freigegeben („Nimm das Foto“). Die Kennzeichnung „Mit KI nachgestelltes Beispielbild nach einem Motiv, das im Netz kursiert“ ist ehrlich. Das Rechtsrisiko bleibt Tills Entscheidung; g6 liegt als Ersatz bereit.
