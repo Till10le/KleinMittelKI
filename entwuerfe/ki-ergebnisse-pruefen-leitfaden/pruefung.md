@@ -587,3 +587,48 @@ Die Beispielzahlen sind eine nachträgliche Veranschaulichung, nicht Tills echte
 
 ### Hinweis
 - Die Kurzfassung hat weiter 5 Punkte, die Bilder sind unverändert (KI-Foto, g1, g4, g3, g5). Vor der Freigabe Ghost neu laden und die Vorschau prüfen (Punkt 13).
+
+## Runde 13 – 25.10.2026 (Prüfer, fokussierte Fassung, Commit a0e3609)
+
+**Ergebnis: NICHT BESTANDEN** (zwei kleine Mängel, je ein Satz; Fakten, Rechnungen, g7 und Format sonst in Ordnung)
+
+Geprüft: ganze neue Fassung von beitrag.md, `kmk-ki-pruefen-g7.png` (angesehen) und `g7.html`, Tills Eingang Z. 130–155 (Wachstum),
+`tools/grafik_basis.css` (Farbe #cfcfc6 ist dort definiert → CI ok). `python3 tools/lexical.py` läuft ohne Fehler (rc 0).
+Die Kurzfassung hat 5 Punkte. Teaser 123 Zeichen ≠ Titel. Bilder: g7, KI-Foto, g1, g3.
+
+### Fakten und Zuschreibungen
+- **OWASP (Regel 1):** „Gib der KI diese Unterlagen mit und gleiche das Ergebnis damit ab. Das empfiehlt auch das OWASP Gen AI Security Project …“ – ok. OWASP: „retrieving … verified information from trusted external databases“ und „Encourage users to cross-check LLM outputs with trusted external sources“. Die Beschreibung des Projekts entspricht der Charta.
+- **OpenAI:** Definition (Forschungsbeitrag 09/2025), Pretraining/Haustier-Geburtstag, Tests belohnen Raten („Wer ‚weiß ich nicht‘ sagt, bekommt sicher null Punkte“) – ok. Hilfeseite: Datumsangaben, erfundene Zitate und Quellen, „ersten Entwurf, nicht endgültige Quelle“; Regel 2 „kann auch bei falschen Antworten sehr sicher klingen“ – ok.
+- **Anthropic:** „Laut Anthropics Dokumentation zu Claude …“ – ok.
+- **Studie:** 300 Fälle, sechs Modelle, 66 → 44 %, „nicht für den Alltag“, „seltener, aber nicht null“ – ok.
+- **Protokoll, OLG Hamm, Schatten-KI:** unverändert ok.
+
+### Tills Ich-Aussagen
+- **Wachstum:** ok. „Ich wollte, dass sich die jährliche Steigerung auf das jeweilige Vorjahr bezieht. Die Tabelle rechnete das zunächst anders.“ entspricht Tills „zunächst nicht so modelliert, wie ich es vorgegeben hatte … Mein Wunsch war, dass sich die jährliche Steigerung jeweils auf das Vorjahr bezieht“. Danach folgt ausdrücklich „Ein einfaches Beispiel zeigt …“. Nirgends steht, die Tabelle habe 120.000 gezeigt. g7 trägt „Beispielzahlen“ in der Fußzeile (siehe Hinweis 1).
+- **Prozent-Formel:** ok. „eine Formel, die mit einem Prozentwert weiterrechnete, wo ein Eurobetrag hingehört hätte“ trifft sowohl die Marge × Stückzahl als auch die Verwechslung Schwund % / Material €.
+- **„Ähnliches habe ich öfter erlebt“:** ok (Till: „mehrfach erlebt“).
+- **Steckachse:** ok. „‚100 %‘ sicher, obwohl entscheidende Angaben fehlten“ (Till: „Für diese Sicherheit fehlten entscheidende Informationen“).
+- **„Rechen- oder Logikfehler wie in meiner Tabelle“:** ok (Till: „Verarbeitungs- oder Logikfehler“).
+- **„Meine Einschätzung“:** gekürzter Tilltext, nichts hinzugefügt. Prompt-Kasten: Delegation dokumentiert.
+
+### Rechnungen
+100.000 × 1,1 = 110.000; × 1,1 = 121.000; linear +10.000 → 120.000. Die Tabelle in g7 stimmt. „Über mehrere Jahre wird der Unterschied größer“ ist richtig (Zinseszinseffekt).
+
+### Mängel
+
+**N1 – Selbstprüfung: Grund verschoben**
+Text: „… konnte aber nicht garantieren, dass es alle gefunden hatte.“ Till: „konnte ChatGPT nicht garantieren, dass ihm sämtliche ursprünglichen Gespräche und Anhänge vollständig zur Verfügung standen.“
+→ „… konnte aber nicht garantieren, dass ihm alle früheren Chats zur Verfügung standen.“
+
+**N2 – Regel 3: „reicht oft“ ist zu stark**
+Text: „Bei Zahlen reicht oft ein einziger Wert, den du von Hand nachrechnest.“ Ein Wert kann einen Fehler aufdecken, aber nicht belegen, dass alles stimmt. Till: „Wenn das Ergebnis dabei nicht stimmt, gehört die gesamte Kalkulation noch einmal auf den Prüfstand.“
+→ „Bei Zahlen hilft schon ein einziger Wert, den du von Hand nachrechnest. Stimmt er nicht, gehört die ganze Tabelle auf den Prüfstand.“
+
+### Hinweise (kein Mangel)
+
+1. **g7 „Falsch“:** Direkt nach „Die Tabelle rechnete das zunächst anders“ liest man die Zeile „Falsch: immer + 10.000 €“ als Tills Tabelle. Till schreibt nur „Nicht 120.000“, das ist gedeckt. Noch sicherer wäre die Bildunterschrift „Mit Beispielzahlen sieht man sofort, ob eine Steigerung richtig gerechnet ist.“
+2. **Hinweis auf ein eigenes Vorhaben:** Kein „Geschäftsmodell“, kein Zweck – gut. Eine mehrjährige Umsatzplanung mit „Preisen, Einkauf, Material“ lässt aber weiter auf eine Planung schließen. Etwas neutraler: „Die Tabelle rechnete mit Preisen, Kosten und Umsatz, so wie es auch eine Bäckerei oder ein Handwerksbetrieb tut.“ Ganz verschwinden kann das Signal nur ohne das Wachstumsbeispiel – das entscheidet Till.
+3. **Steckachse ohne Erklärung:** „Bei einer Steckachse für einen Fahrradanhänger …“ ist für den Bäcker ein Fremdwort → „Bei einem Ersatzteil für einen Fahrradanhänger, einer sogenannten Steckachse, …“.
+4. **Format:** etwa 1.000 Wörter und 3 Schaubilder + 1 Foto statt 1.900–2.000 Wörtern und 4–5 Schaubildern. Abweichung begründet (Tills ausdrücklicher Wunsch, `entscheidungen.md` 25.10.), kein Mangel.
+5. **g1:** Der Text nennt die Chance 1 zu 365 nicht mehr, g1 zeigt sie mit Quelle. Das ist ok, das Schaubild ergänzt den Text.
+6. **Vor der Freigabe:** Ghost neu laden (g7 neu, g4/g5 entfallen), Vorschau prüfen.
