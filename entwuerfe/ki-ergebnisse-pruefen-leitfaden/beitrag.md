@@ -1,14 +1,14 @@
 ---
-titel: KI klingt sicher. Aber stimmt es auch? So prüfst du KI-Ergebnisse im Betrieb
+titel: "KI irrt sich und klingt trotzdem sicher: So prüfst du KI-Ergebnisse im Betrieb"
 slug: ki-ergebnisse-pruefen-leitfaden
 kategorie: Leitfäden
 tags: [#wissen]
-teaser: Nicht jede KI-Antwort braucht dieselbe Kontrolle. Drei eigene Fehlerfälle, drei Stufen und fünf Regeln helfen, Fehler rechtzeitig abzufangen.
+teaser: Drei echte Fälle zeigen, wie KI danebenliegt. Drei Stufen und fünf Regeln helfen, Fehler abzufangen, bevor sie Geld kosten.
 vorschaubild: vorschaubild.png
 titelbild: titel-ki-ergebnisse-pruefen-leitfaden.jpg
 ---
 
-INTERN – vor Veröffentlichung entfernen: Überarbeitet mit Tills drei eigenen Fällen (Chat 23.10.2026). Alles in Ich-Form stammt aus Tills Text, sprachlich geglättet und gekürzt; abgeschwächt wurden nur Steigerungen („unglaublich nützlich“ → „sehr nützlich“, „begeistert“ und „enorm“ gestrichen) und das Handelsbeispiel aus deinem Text gestrichen (Regel 4). Bitte prüfen: (1) Steckachse – der Text sagt nur, dass für die „100 %“ Angaben fehlten, nicht dass die Achse nicht gepasst hat. (2) Redaktionell formuliert (nicht Ich-Form, aber bitte gegenlesen): Einleitungsabsatz 2, der Gedanke zum Mitnehmen, die Schritte in „Zum Ausprobieren“ und die Überschrift des Prompt-Kastens („Mein Zusatz für technische Fragen“). (3) Ausgedacht und im Text so gekennzeichnet: nur noch Exposé und Speisekarte (zeigen Vermutung → Tatsache bzw. Sicherheitsangaben, was deine Fälle nicht zeigen); Malerbetrieb und Hausverwaltung sind entfallen. (4) LinkedIn-Beitrag von Alex Lichtenberger: nach deinem Text als Anstoß genannt, aber nicht verlinkt (Redaktion konnte ihn nicht lesen) – Link bitte selbst ergänzen oder so lassen. (5) OLG-Hamm-Beitrag (olg-hamm-chatbot-haftung) verlinken, sobald er online ist: Abschnitt „Das eigentliche Risiko …“, Satz „Was ein Chatbot auf der Website …“. Titel-Alternative aus deinem Text: „ChatGPT lag falsch. Und war sich trotzdem sicher.“ Grafiken: fünf Schaubilder eingebunden; neu g4 (Excel-Rechnung 28,50 vs. 285 €), g5 an die neuen Regeln 3 und 4 angepasst.
+INTERN – vor Veröffentlichung entfernen: Überarbeitung 25.10.2026 nach deinem Wunsch (Chat): (a) Neue Überschrift, selbsterklärend; Vorschaubild neu. (b) Bild-Beispiel aus dem LinkedIn-Material als eigene Grafik nachgestellt (Hund im Zaunschatten wird als „Tiger“ erkannt – so zeigt es das Bild in deinem Material; falls du einen Löwen meinst, tauschen wir das Tier). Das Original-Bild nutzen wir nicht: Rechte und Herkunft sind unklar, und der CI-Baukasten erlaubt keine fremden Bilder. Im Text steht ausdrücklich, dass es eine Illustration ist und streng genommen eine falsche Bilderkennung, keine Halluzination. (c) Fachlich korrigiert nach erneutem Abgleich mit den Originalquellen: OpenAI sagt nicht, dass Sprachmodelle „nie fehlerfrei“ werden, sondern dass sie nie alle Fragen richtig beantworten können und Halluzinationen vermeidbar sind, wenn das Modell Unsicherheit zugibt; der Satz „Darauf hast du keinen Einfluss“ widersprach Regel 2; „falsche Daten“ heißt jetzt „falsche Datumsangaben“ (OpenAI meint dates); der Tipp „in einem neuen Chat“ ist jetzt als unser eigener Zusatz erkennbar, nicht als Anthropic-Zitat; die Excel-Rechnung sagt jetzt klar, dass 285 € die Formel ohne den Einheitenfehler ist, nicht eine vollständige Schwundkalkulation. Neu und belegt: OpenAIs Erklärung, woher Halluzinationen kommen (Rechtschreibung folgt Mustern, der Geburtstag eines Haustiers nicht). (d) Verständlicher: Fachwörter erklärt (Sprachmodell, Deckungsbeitrag, Marge, Prompt), „Audit“ und „Zellbezüge“ ersetzt. Schaubild Exposé entfällt (der Text erklärt es), damit es bei fünf Grafiken bleibt. OLG-Hamm-Beitrag ist jetzt verlinkt. Weiter offen von dir: (1) Steckachse – dein Text sagt nur, dass für die „100 %“ Angaben fehlten, nicht dass die Achse nicht gepasst hat; so steht es auch im Beitrag. (2) Redaktionell formuliert, bitte gegenlesen: Einleitungsabsatz 2, der Gedanke zum Mitnehmen, die Schritte in „Zum Ausprobieren“, die Überschrift des Prompt-Kastens. (3) Exposé und Speisekarte sind ausgedachte Beispiele und so gekennzeichnet. (4) Der LinkedIn-Beitrag von Alex Lichtenberger ist als Anstoß genannt, aber nicht verlinkt (für die Redaktion nicht lesbar).
 
 Die Excel-Datei, die ChatGPT mir für ein Geschäftsmodell gebaut hatte, sah professionell aus: saubere Tabellen, Eingabefelder, automatisch berechnete Kennzahlen. Alles wirkte durchdacht. Nur: Einige Berechnungen stimmten nicht. Ohne meine eigene Kontrolle hätte ich die Fehler möglicherweise übersehen.
 
@@ -20,17 +20,25 @@ Genau das ist das Tückische: KI liegt nicht nur manchmal falsch. Sie liegt fals
 
 ## Warum KI so überzeugend danebenliegen kann
 
-Der Fachbegriff dafür ist **Halluzination**. OpenAI beschreibt das in einem Forschungsbeitrag vom September 2025 als plausible, aber falsche Aussagen, die ein Sprachmodell erzeugt.
+Ein Bild macht das Prinzip greifbar. Stell dir ein Foto vor: Ein Hund steht im Schatten eines Zauns, die Schattenstreifen lassen sein Fell gestreift aussehen. Eine Bilderkennung soll sagen, was auf dem Foto ist, und antwortet: Tiger.
+
+![Schaubild: Ein Hund im Schatten eines Zauns, dessen Fell dadurch gestreift wirkt, wird von einer Bilderkennung als „Tiger“ bezeichnet; Merksatz: Mustererkennung ist kein Verständnis](kmk-ki-pruefen-g6.png "Ein nachgestelltes Beispiel: Die KI erkennt das Muster, nicht das Tier.")
+
+Die KI hat ein Muster erkannt, aber nicht verstanden, was sie sieht. Und sie zweifelt nicht. Streng genommen ist das keine Halluzination, sondern eine falsche Bilderkennung, und das Beispiel ist eine Illustration, kein Messergebnis. Das Grundproblem ist aber dasselbe wie bei ChatGPT: Die Antwort folgt einem Muster, nicht geprüftem Wissen.
+
+Bei Texten heißt das **Halluzination**. OpenAI, der Hersteller von ChatGPT, beschreibt das in einem Forschungsbeitrag vom September 2025 als plausible, aber falsche Aussagen, die ein Sprachmodell erzeugt. Sprachmodelle sind die Technik hinter ChatGPT und ähnlichen KI-Assistenten.
+
+Woher die Fehler kommen, erklärt OpenAI so: Sprachmodelle lernen zuerst an riesigen Textmengen, wie ein Text weitergeht. Rechtschreibung folgt festen Mustern, solche Fehler verschwinden, je größer die Modelle werden. Seltene Einzelfakten wie der Geburtstag eines Haustiers folgen keinem Muster. Genau dort entstehen Halluzinationen.
 
 Wie das aussieht, zeigt OpenAI an einem eigenen Mitautor. Fragt man einen verbreiteten Chatbot nach dem Titel seiner Doktorarbeit, nennt er drei verschiedene Titel. Keiner davon stimmt. Beim Geburtstag passiert dasselbe.
 
-Sprachmodelle werden so trainiert und bewertet, dass Raten sich mehr lohnt als ein ehrliches „Ich weiß es nicht“. OpenAI vergleicht das mit einem Test: Wer den Geburtstag einer Person nicht kennt und rät, liegt immerhin mit einer Chance von 1 zu 365 richtig. Wer „weiß ich nicht“ schreibt, bekommt sicher null Punkte. Also rät das Modell.
+Dazu kommt: Sprachmodelle werden so trainiert und bewertet, dass Raten sich mehr lohnt als ein ehrliches „Ich weiß es nicht“. OpenAI vergleicht das mit einem Test: Wer den Geburtstag einer Person nicht kennt und rät, liegt immerhin mit einer Chance von 1 zu 365 richtig. Wer „weiß ich nicht“ schreibt, bekommt sicher null Punkte. Also rät das Modell.
 
-Wichtig ist auch, was OpenAI daraus folgert: Fehlerfrei werden Sprachmodelle nie, weil manche Fragen sich schlicht nicht beantworten lassen. Unvermeidbar sind Halluzinationen aber auch nicht, denn ein Modell kann sich bei Unsicherheit zurückhalten. Darauf hast du als Anwender keinen Einfluss. Auf deinen eigenen Ablauf schon.
+Wichtig ist auch, was OpenAI daraus folgert: Alle Fragen richtig beantworten werden Sprachmodelle nie, weil sich manche Fragen schlicht nicht beantworten lassen. Halluzinationen sind trotzdem nicht unvermeidbar, denn ein Modell kann bei Unsicherheit sagen, dass es etwas nicht weiß. Wie ein Modell trainiert wird, kannst du nicht beeinflussen. Wie du fragst und mit den Antworten umgehst, schon.
 
 ![Schaubild: Warum Sprachmodelle lieber raten – „Ich weiß es nicht“ bringt sicher 0 Punkte, Raten beim Geburtstag immerhin eine Chance von 1 zu 365; Merksatz: Raten wird belohnt, Zugeben nicht](kmk-ki-pruefen-g1.png "Wer raten darf, rät – das gilt auch für Sprachmodelle.")
 
-Auch die Hilfeseite von OpenAI zu ChatGPT sagt ausdrücklich, dass ChatGPT sicher klingen kann, auch wenn es falschliegt. Als typische Fehler nennt sie falsche Daten und Fakten sowie erfundene Zitate, Studien und Verweise auf Quellen, die es nicht gibt. Die Empfehlung des Herstellers selbst: ChatGPT als ersten Entwurf nutzen, nicht als endgültige Quelle.
+Auch die Hilfeseite von OpenAI zu ChatGPT sagt ausdrücklich, dass ChatGPT sicher klingen kann, auch wenn es falschliegt. Als typische Fehler nennt sie falsche Datumsangaben und Fakten sowie erfundene Zitate, Studien und Verweise auf Quellen, die es nicht gibt. Die Empfehlung des Herstellers selbst: ChatGPT als ersten Entwurf nutzen, nicht als endgültige Quelle.
 
 Nicht jeder Fehler ist dabei eine Halluzination. Eine falsch zugeordnete Excel-Zelle kann auch ein Logikfehler sein. Für dich macht das wenig Unterschied: **Eine KI-Antwort ist ein Vorschlag, kein Ergebnis.**
 
@@ -44,7 +52,7 @@ Für einen Fahrradanhänger an meinem Mountainbike brauchte ich eine passende St
 
 Für diese Sicherheit fehlten entscheidende Informationen. ChatGPT hatte aus der Hinterrad-Einbaubreite von 148 Millimetern auf die Achse geschlossen. Die Einbaubreite einer Nabe ist aber nicht dasselbe wie die nötige Steckachsenlänge, und die Gewindesteigung war nicht überprüft. Auf Nachfrage blieb es zunächst trotzdem dabei. Erst später räumte ChatGPT ein, dass man für eine verlässliche Aussage die Originalachse genauer prüfen müsste.
 
-ChatGPT hatte nicht alle nötigen Informationen, aber trotzdem eine eindeutige Antwort. Für einen Handwerksbetrieb wird das relevant, wenn die KI ein Ersatzteil oder Material empfiehlt. Eine plausible Produktempfehlung ersetzt keine geprüften Spezifikationen und erst recht keine Herstellerfreigabe.
+ChatGPT hatte nicht alle nötigen Informationen, aber trotzdem eine eindeutige Antwort. Für einen Handwerksbetrieb wird das relevant, wenn die KI ein Ersatzteil oder Material empfiehlt. Eine plausible Produktempfehlung ersetzt keine geprüften technischen Daten und erst recht keine Freigabe des Herstellers.
 
 ### Fall 2: Eine professionelle Excel-Kalkulation mit falscher Rechnung
 
@@ -60,11 +68,11 @@ Der zweite Fehler steckte in der Formel für den jährlichen Bruttogewinn:
 
 Fällt dir der Fehler auf?
 
-Die Division durch den Verkaufspreis macht aus dem Gewinn pro Einheit eine Marge. Die wurde dann aber nicht mit einem Umsatz in Euro, sondern mit der Stückzahl multipliziert. Eine Prozentmarge mal Stückzahl ergibt keinen Bruttogewinn in Euro.
+Die Division durch den Verkaufspreis macht aus dem Gewinn pro Einheit eine Marge, also einen Anteil am Preis. Diesen Anteil hat die Formel dann aber nicht mit dem Umsatz in Euro multipliziert, sondern mit der Stückzahl. Ein Anteil mal Stückzahl ergibt keinen Bruttogewinn in Euro.
 
-Mit einfachen Beispielzahlen statt der Originaldaten: Verkaufspreis 10,00 €, Einkaufspreis 6,00 €, Verbrauchsmaterial 1,00 €, 100 Verkäufe im Jahr, 5 % Schwund. Der Deckungsbeitrag pro Einheit liegt bei 3 Euro. Wirkt der Schwund vereinfacht als Minderung der Absatzmenge, ergibt sich 3 € × 100 × 0,95 = 285 €. Die fehlerhafte Formel liefert nur 28,50. Das ersetzt keine vollständige Schwundkalkulation, zeigt aber den Unterschied.
+Mit einfachen Beispielzahlen statt der Originaldaten: Verkaufspreis 10,00 €, Einkaufspreis 6,00 €, Verbrauchsmaterial 1,00 €, 100 Verkäufe im Jahr, 5 % Schwund. Pro Stück bleiben nach Einkauf und Material 3 Euro übrig, der sogenannte Deckungsbeitrag. Rechnet man den Schwund so wie die Tabelle, also vereinfacht als weniger verkaufte Stück, ergibt sich 3 € × 100 × 0,95 = 285 €. Die fehlerhafte Formel liefert nur 28,50. Eine vollständige Kalkulation müsste außerdem berücksichtigen, dass die verdorbene Ware trotzdem eingekauft wurde. Darum geht es hier aber nicht: Schon der Einheitenfehler allein macht aus 285 Euro 28,50.
 
-![Schaubild: Vergleich mit Beispielzahlen (Verkaufspreis 10 €, Einkaufspreis 6 €, Material 1 €, 100 Verkäufe, 5 % Schwund) – die Formel aus der KI-Tabelle =((B8-B9-B11)/B8)*C34*(1-B10/100) ergibt 28,50, richtig gerechnet sind es 3 € × 100 × 0,95 = 285 €](kmk-ki-pruefen-g4.png "Wer mit einfachen Zahlen nachrechnet, sieht sofort, dass die Formel keine Euro liefert.")
+![Schaubild: Vergleich mit Beispielzahlen (Verkaufspreis 10 €, Einkaufspreis 6 €, Material 1 €, 100 Verkäufe, 5 % Schwund) – die Formel aus der KI-Tabelle =((B8-B9-B11)/B8)*C34*(1-B10/100) ergibt 28,50, ohne den Einheitenfehler sind es 3 € × 100 × 0,95 = 285 €](kmk-ki-pruefen-g4.png "Wer mit einfachen Zahlen nachrechnet, sieht sofort, dass die Formel keine Euro liefert.")
 
 Dazu kam das Wachstum. Es sollte sich jeweils auf das Vorjahr beziehen: Bei 100.000 Euro Umsatz und zehn Prozent pro Jahr sind das 110.000 Euro im zweiten und 121.000 Euro im dritten Jahr, nicht 120.000 Euro. Das musste ich ausdrücklich korrigieren lassen.
 
@@ -72,7 +80,7 @@ Dazu kam das Wachstum. Es sollte sich jeweils auf das Vorjahr beziehen: Bei 100.
 
 Danach fragte ich ChatGPT sinngemäß: „Kannst du unsere bisherigen Chats analysieren und herausfinden, wo du falsche Informationen geliefert hast oder ich dich korrigieren musste?“ Die Antwort war hilfreich: ChatGPT fand unter anderem die Excel-Kalkulation und die Steckachse.
 
-Aber woher weiß ich, ob dieses Audit selbst vollständig und richtig ist? ChatGPT konnte nicht garantieren, dass ihm alle früheren Gespräche und Anhänge zur Verfügung standen. Und ich musste trennen, was sich an Gesprächsstellen belegen ließ und was nur Interpretation war. Auch die Kontrolle musste ich also wieder hinterfragen. KI kann Unstimmigkeiten aufdecken und Formeln hinterfragen. Eine Selbstprüfung ist aber kein unabhängiger Beweis, dass alles stimmt.
+Aber woher weiß ich, ob diese Selbstprüfung vollständig und richtig ist? ChatGPT konnte nicht garantieren, dass ihm alle früheren Gespräche und Anhänge zur Verfügung standen. Und ich musste trennen, was sich an Gesprächsstellen belegen ließ und was nur Interpretation war. Auch die Kontrolle musste ich also wieder hinterfragen. KI kann Unstimmigkeiten aufdecken und Formeln hinterfragen. Eine Selbstprüfung ist aber kein unabhängiger Beweis, dass alles stimmt.
 
 ## Das eigentliche Risiko: Niemand schaut mehr hin
 
@@ -80,13 +88,11 @@ Das OWASP-Projekt, eine gemeinnützige Gemeinschaft für IT-Sicherheit, führt F
 
 Fall 2 zeigt, warum das so leicht passiert: Je professioneller ein Ergebnis aussieht, desto fertiger wirkt es. Auch im [Protokoll-Selbstversuch](https://www.kleinmittelki.de/protokoll-per-ki-selbstversuch/) hier im Blog waren im fertig wirkenden Entwurf einige Namen falsch geschrieben.
 
-Was ein Chatbot auf der Website deines Betriebs sagt, sagst am Ende du. Und was die KI ins Angebot schreibt, unterschreibst du.
+Was ein Chatbot auf der Website deines Betriebs sagt, sagst am Ende du, wie ein [Urteil des OLG Hamm](https://www.kleinmittelki.de/olg-hamm-chatbot-haftung/) zeigt. Und was die KI ins Angebot schreibt, unterschreibst du.
 
 Zwei ausgedachte, aber typische Beispiele zeigen weitere Fehlerarten:
 
 **Immobilien: das Exposé.** Der Makler notiert: „Dach vermutlich um 2010 erneuert, Eigentümer unsicher“. Im Exposé steht: „Dach 2010 komplett saniert.“ Aus einer Vermutung ist eine Tatsache geworden, die keiner belegen kann.
-
-![Schaubild: Vergleich am Beispiel eines Exposés – die Notiz „Dach vermutlich um 2010 erneuert, Eigentümer unsicher“ wird im KI-Text zu „Dach 2010 komplett saniert“](kmk-ki-pruefen-g2.png "Der gefährlichste Fehler ist der, der wie eine Verbesserung aussieht.")
 
 **Gastronomie: die neue Speisekarte.** Die Inhaberin lässt die Karte von der KI kürzer formulieren. Dabei fällt bei einem Gericht der Hinweis auf Nüsse weg, bei einem anderen steht plötzlich „glutenfrei“. Hier geht es nicht mehr um Stil, sondern um die Gesundheit von Gästen.
 
@@ -110,13 +116,13 @@ Für den Einstieg reicht eine kurze Teamrunde: Sammelt, wofür bei euch KI genut
 
 ## Fünf Regeln, die die meisten Fehler abfangen
 
-Für Stufe 2 und 3 helfen fünf Regeln. Regel 1 und 2 stützen sich auf die Empfehlungen von OWASP und die Hinweise des Anbieters Anthropic selbst; Regel 3 bis 5 sind praktische Ergänzungen aus den drei Fällen und dem Betriebsalltag.
+Für Stufe 2 und 3 helfen fünf Regeln. Regel 1 und 2 stützen sich auf Empfehlungen von OWASP und von Anthropic, dem Hersteller des KI-Assistenten Claude. Regel 3 bis 5 sind praktische Ergänzungen aus den drei Fällen und dem Betriebsalltag.
 
 ![Checkliste mit fünf Regeln: mit eigenen Unterlagen abgleichen, Fakten und Annahmen trennen lassen, Zahlen nicht der KI glauben und von Hand nachrechnen, KI prüft mit und ein Mensch entscheidet, testen, was bei fehlenden Angaben passiert](kmk-ki-pruefen-g5.png "Zum Abhaken: Je mehr davon in deinem Ablauf steckt, desto weniger rutscht durch.")
 
 **1. Mit eigenen Unterlagen abgleichen.** Preise gehören in die Preisliste, Allergene in die Rezeptur, technische Maße ins Datenblatt des Herstellers. Gib der KI diese Unterlagen mit und gleiche das Ergebnis mit ihnen ab. OWASP empfiehlt genau das: Antworten auf geprüfte, vertrauenswürdige Quellen stützen und kritische Inhalte von Menschen gegenprüfen lassen.
 
-**2. Fakten und Annahmen trennen lassen.** Erlaube der KI, „weiß ich nicht“ zu sagen. Anthropic schreibt in seiner Dokumentation, dass allein diese Erlaubnis falsche Angaben deutlich verringern kann. Ein weiterer Tipp aus derselben Dokumentation: Stell dieselbe Frage mehrmals, am besten jeweils in einem neuen Chat, und vergleiche die Antworten. Abweichungen sind ein Warnsignal. Wenn ich heute nach technischen Produkten frage, will ich auch wissen, welche Angaben für eine sichere Aussage fehlen. Ein hilfreicher Zusatz im Prompt:
+**2. Fakten und Annahmen trennen lassen.** Erlaube der KI, „weiß ich nicht“ zu sagen. Anthropic schreibt in seiner Dokumentation, dass allein diese Erlaubnis falsche Angaben deutlich verringern kann. Ein weiterer Tipp von dort: Stell dieselbe Frage mehrmals und vergleiche die Antworten. Weichen sie voneinander ab, ist das ein Warnsignal. Praktisch heißt das: Frag am besten jeweils in einem neuen Chat, damit die erste Antwort die nächste nicht beeinflusst. Wenn ich heute nach technischen Produkten frage, will ich auch wissen, welche Angaben für eine sichere Aussage fehlen. Ein hilfreicher Zusatz für die Anweisung an die KI, den sogenannten Prompt:
 
 ```html
 <div class="kmk-prompt"><p class="kmk-prompt__label">Mein Zusatz für technische Fragen</p><p class="kmk-prompt__text">„Nenne mir ausdrücklich alle Angaben, die für eine zuverlässige Empfehlung noch fehlen. Trenne bestätigte Fakten von Annahmen und behaupte keine Sicherheit, wenn wichtige Informationen nicht geprüft wurden.“</p></div>
@@ -124,7 +130,7 @@ Für Stufe 2 und 3 helfen fünf Regeln. Regel 1 und 2 stützen sich auf die Empf
 
 Das verbessert die Ausgangslage, garantiert aber keine richtige Antwort. Auch Anthropic schreibt, dass solche Techniken Halluzinationen verringern, aber nicht ganz beseitigen.
 
-**3. Zahlen nicht der KI glauben.** Bei Kalkulationen prüfst du nicht nur das Ergebnis, sondern die Logik: Stimmen die Zellbezüge? Werden Prozent und Euro unterschieden, Umsatz und Absatzmenge getrennt? Bezieht sich eine Steigerung auf die richtige Basis? Passt eine unabhängig gerechnete Stichprobe? Wenn nicht, gehört die ganze Kalkulation auf den Prüfstand.
+**3. Zahlen nicht der KI glauben.** Bei Kalkulationen prüfst du nicht nur das Ergebnis, sondern die Logik: Greifen die Formeln auf die richtigen Zellen zu? Werden Prozent und Euro unterschieden, Umsatz und Absatzmenge getrennt? Bezieht sich eine Steigerung auf die richtige Basis? Passt eine unabhängig gerechnete Stichprobe? Wenn nicht, gehört die ganze Kalkulation auf den Prüfstand.
 
 **4. Die KI darf mitprüfen, aber nicht allein über ihre eigene Arbeit entscheiden.** Fall 3 zeigt die Grenze. Bei wichtigen Ergebnissen braucht es eine unabhängige Kontrolle: eine separate Rechnung, den Abgleich mit Originaldokumenten oder jemanden mit Fachwissen. Eine zweite KI kann helfen, ersetzt aber keine unabhängige Faktenbasis. Bei Stufe 3 gibt eine benannte Person frei. In einem Betrieb mit 30 Leuten kann das die Bürokraft für Angebote sein und die Küchenchefin für die Speisekarte.
 
@@ -148,7 +154,7 @@ Nimm die letzte Kalkulation oder das letzte Angebot, an dem bei euch eine KI mit
 
 ## Quellen
 
-Abgerufen und geprüft am 23.10.2026
+Abgerufen am 23.10.2026, zuletzt geprüft am 25.10.2026
 
 - [OpenAI: Why language models hallucinate (05.09.2025)](https://openai.com/index/why-language-models-hallucinate/)
 - [OpenAI Help Center: Does ChatGPT tell the truth? (abgerufen 23.10.2026)](https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth)
