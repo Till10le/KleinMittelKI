@@ -133,6 +133,18 @@
         }
       ],
       "fragen_offen": []
+    },
+    {
+      "datum": "2026-10-25",
+      "thread_id": "1a173632fc68c2bd",
+      "betreff": "KMK-Redaktion · Vorschau bereit · So 25.10.",
+      "art": "vorschau",
+      "eintraege": {
+        "A": "ki-ergebnisse-pruefen-leitfaden",
+        "B": "iab-betriebe-sehen-keine-ki-anwendung",
+        "C": "nicht-jedes-problem-braucht-ki",
+        "D": "eu-eurobarometer-ki-unternehmen"
+      }
     }
   ],
   "eigene_ids": [
@@ -145,7 +157,8 @@
     "1a1683f4a5c48ad8",
     "1a168596c5f5c06a",
     "1a16859704304390",
-    "1a1725c28e258a9a"
+    "1a1725c28e258a9a",
+    "1a173632fc68c2bd"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
@@ -157,6 +170,10 @@
     "eu-eurobarometer-ki-unternehmen",
     "ki-ergebnisse-pruefen-leitfaden",
     "ki-ergebnisse-pruefen-leitfaden@2026-10-23T10:38:44.000Z",
-    "eu-eurobarometer-ki-unternehmen@2026-10-19T18:01:17.000Z"
+    "eu-eurobarometer-ki-unternehmen@2026-10-19T18:01:17.000Z",
+    "ki-ergebnisse-pruefen-leitfaden@2026-10-25T14:05:05.000Z",
+    "iab-betriebe-sehen-keine-ki-anwendung@2026-10-25T06:48:04.000Z",
+    "nicht-jedes-problem-braucht-ki@2026-10-25T06:48:09.000Z",
+    "eu-eurobarometer-ki-unternehmen@2026-10-23T16:48:10.000Z"
   ]
 }
