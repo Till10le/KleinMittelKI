@@ -112,3 +112,39 @@ Hinweise (kein Mangel):
 - Der INTERN-Absatz nennt beim Ersatz-Gedanken „21 Wörter“, es sind 22 (der Fehler stammt aus meinem Vorschlag in Runde 1). Liegt im Rahmen, wird mit dem INTERN-Absatz entfernt.
 - Originalquellen (OpenAI, NRWE) waren in diesem Lauf weiterhin nicht selbst abrufbar; der Abgleich beruht auf den am Original geprüften quellen.md (siehe Runde 1).
 - Vor dem Einplanen gilt die CHECKLISTE im INTERN-Absatz, vor allem: Leitfaden-Link erst nach Veröffentlichung gültig.
+
+---
+
+## Runde 3 – 25.10.2026 (Prüfer, Fassung 2)
+
+**Ergebnis: NICHT BESTANDEN** (ein Mangel, schnell behebbar)
+
+Geprüft: `git diff HEAD` (INTERN, Einstieg, Abschnitt 01, Bookmark) gegen den freigegebenen Leitfaden
+`entwuerfe/ki-ergebnisse-pruefen-leitfaden/beitrag.md` (Freigabe in `redaktion/freigaben.jsonl`, 25.10., Zeitpunkt 27.10. 06:00 UTC).
+
+### Mangel
+
+**M1 – Tiger im Indikativ, schärfer als der Leitfaden** (Abschnitt 01, erster Absatz, Sätze 3 und 4)
+Newsletter: „Sie erkennt das Muster, aber nicht den Zusammenhang. Und sie zweifelt nicht.“
+Leitfaden: „Die KI würde das Muster erkennen, aber nicht den Zusammenhang … Und sie würde nicht zweifeln.“
+Das Bild ist ein mit KI nachgestelltes Beispiel, kein Messergebnis; der Satz davor steht korrekt im Konjunktiv („könnte sagen: Tiger“).
+→ Ersatz: „Sie würde das Muster erkennen, aber nicht den Zusammenhang. Und sie würde nicht zweifeln.“
+
+### Ok
+
+- Einstieg: „ein Hund, den eine KI für einen Tiger halten könnte“ – Konjunktiv, gedeckt.
+- Steckachse: „100 %“, Länge und Gewinde nicht geprüft – gedeckt.
+- Excel: „sah professionell aus, rechnete die jährliche Steigerung aber zunächst falsch“ – gedeckt („sieht professionell aus und rechnet trotzdem falsch“, „rechnete das zunächst anders“).
+- Drei Stufen mit Leitfrage wörtlich, drei Regeln, Kundenantwort (Stufe 2), Allergenangabe/Speisekarte (Stufe 3) – gedeckt. Keine 28,50/285 €, keine fünf Regeln, kein Instagram mehr.
+- Bookmark-Karte: Titel und Teaser zeichengleich mit dem Frontmatter des Leitfadens.
+- Format `kmk-newsletter`: Einstieg 2 Sätze, Abschnitt 01 drei Absätze plus Karte, Titel 55 Zeichen, Teaser 129, Gedanke 26 Wörter.
+- Teaser passt weiter. Gedanke „Ob Kalkulation oder Chatbot“ passt weiter, die Excel-Kalkulation steht noch in 01.
+- Ich-Sätze („Mir hat ChatGPT …“, „Im Beitrag zeige ich …“) im INTERN-Absatz als Vorschlag markiert, Inhalt aus Tills freigegebenem Leitfaden.
+- Keine Floskeln, kein Hype, keine CTAs, kein Arbeitgeber-/Handelsbezug.
+- `python3 tools/lexical.py entwuerfe/newsletter-2026-10-27/beitrag.md` fehlerfrei (rc 0).
+
+### Hinweise (kein Mangel)
+
+- H1 „drei Regeln, mit denen du der KI den Zusammenhang mitgibst“: genau genommen tun das Regel 1 und 2, Regel 3 ist Selbst-Nachrechnen. Gedeckt durch die Leitfaden-Überschrift „Drei Regeln: Gib der KI den Zusammenhang“.
+- H2 Der Leitfaden-Teaser in der Bookmark-Karte („Eine KI hält einen Hund für einen Tiger.“) steht im Indikativ; er ist von Till freigegeben und muss gleich bleiben. M1 gilt trotzdem für den eigenen Text.
+- H3 Lokale `ghost.json` des Leitfadens zeigt `status: draft` (updated_at 17:39 UTC). Vor dem Einplanen des Newsletters prüfen, dass der Leitfaden in Ghost für 27.10. 7:00 geplant ist.

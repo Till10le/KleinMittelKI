@@ -130,6 +130,11 @@
           "nr": 1,
           "hash": "d2fad33352d0c68c0db0ba28aa5905c39afaeaa94d1f48f94e338a5d33869435",
           "mail_id": "1a1725c28e258a9a"
+        },
+        {
+          "nr": 2,
+          "hash": "f436cb09f4c59c071f6c9b79fde6312065b563cc893f6d5acb069ef23cf9dbf4",
+          "mail_id": "1a174acfa893c632"
         }
       ],
       "fragen_offen": []
@@ -190,7 +195,9 @@
     "1a173f22500167ff",
     "1a174149f9a85de7",
     "1a174272d82886a1",
-    "1a174276c5fd0a0b"
+    "1a174276c5fd0a0b",
+    "1a174a9bc65fbdbf",
+    "1a174acfa893c632"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",

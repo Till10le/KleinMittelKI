@@ -248,7 +248,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Versand: Dienstag 27.10.2026, 7:00 (nach Tills „N ja“)
 - Inhalt: 01 Leitfaden ki-ergebnisse-pruefen-leitfaden (nur wenn Till ihn bis Di 7:00 freigibt) · 02 olg-hamm-chatbot-haftung (live) · 03 Zahl „1 zu 365“ (OpenAI, 05.09.2025) · 04 Gedanke
 - Datei: entwuerfe/newsletter-2026-10-27/beitrag.md, Prüfung: pruefung.md
-- Braucht von Till: erst über den Leitfaden entscheiden, dann „N ja“; Vorschläge in Ich-Form (INTERN) bestätigen oder ersetzen
+- Braucht von Till: „N ja“ auf Fassung 2 (gemailt 25.10. abends, Verlauf 1a1725c28e258a9a). Leitfaden ist freigegeben und für Di 7:00 eingeplant; Fassung 2 passt Einstieg und Abschnitt 01 an die Tiger-Fassung an (Prüfer Runde 3, M1 umgesetzt).
 - Verlauf: 2026-10-25 Sonntags-Lauf: Autor Entwurf, Prüfer Runde 1 nicht bestanden (T1–T3 Formulierungen, I1–I4 Ersatztexte/Freigabe-Reihenfolge), Runde 2 bestanden → newsletter-vorschlag. Mail-Lauf 10:17 schickt ihn Till. Nicht in Ghost. 2026-10-25 Mail-Lauf 10:17: Fassung 1 gemailt (Mail 1a1725c28e258a9a, Fingerabdruck d2fad333…), wartet auf Tills Antwort.
 
 ### ki-recherche-assistent-selbstversuch
