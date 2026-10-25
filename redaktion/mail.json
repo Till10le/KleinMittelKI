@@ -164,6 +164,15 @@
       "eintraege": {
         "A": "ki-ergebnisse-pruefen-leitfaden"
       }
+    },
+    {
+      "datum": "2026-10-25",
+      "thread_id": "1a174276c5fd0a0b",
+      "betreff": "KMK-Redaktion · Vorschau bereit · So 25.10. · Tiger-Fassung",
+      "art": "vorschau",
+      "eintraege": {
+        "A": "ki-ergebnisse-pruefen-leitfaden"
+      }
     }
   ],
   "eigene_ids": [
@@ -179,12 +188,15 @@
     "1a1725c28e258a9a",
     "1a173632fc68c2bd",
     "1a173f22500167ff",
-    "1a174149f9a85de7"
+    "1a174149f9a85de7",
+    "1a174272d82886a1",
+    "1a174276c5fd0a0b"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
     "1a153f817ec2e14b",
-    "1a168344dae06238"
+    "1a168344dae06238",
+    "1a17417b727d7bfb"
   ],
   "vorschau_gemailt": [
     "olg-hamm-chatbot-haftung",
@@ -198,6 +210,7 @@
     "eu-eurobarometer-ki-unternehmen@2026-10-23T16:48:10.000Z",
     "ki-ergebnisse-pruefen-leitfaden@2026-10-25T16:41:38.000Z",
     "ki-recherche-assistent-selbstversuch@2026-10-25T16:41:43.000Z",
-    "ki-ergebnisse-pruefen-leitfaden@2026-10-25T17:19:52.000Z"
+    "ki-ergebnisse-pruefen-leitfaden@2026-10-25T17:19:52.000Z",
+    "ki-ergebnisse-pruefen-leitfaden@2026-10-25T17:39:35.000Z"
   ]
 }
