@@ -391,3 +391,63 @@ Geprüft: `git diff --word-diff HEAD~1 HEAD` auf beitrag.md (Commit a600f6b). Ge
 
 Damit sind alle Mängel aus Runde 5 und 6 behoben. Offen bleiben nur bewusst entschiedene Punkte: Länge (H10), Titel (H11), Eintrag zu Tills Bild-Wunsch in `entscheidungen.md` (H13) sowie die INTERN-Punkte für Till.
 Vor der Freigabe: Ghost-Entwurf neu laden (g4, g6, Vorschaubild) und die Vorschau prüfen (Punkt 13, doppelter Titel).
+
+## Runde 8 – 25.10.2026 (Prüfer, neue Stellen aus Commit 879fa0c: Ton, Kurzfassung, Regel 2 mit Studie, Prompt)
+
+**Ergebnis: NICHT BESTANDEN** (vier kleine Mängel, alle mit je einem Satz lösbar; der Ton ist jetzt ausgewogen)
+
+Geprüft: `git diff HEAD~1` auf beitrag.md (nur die neuen Stellen), quellen.md, `python3 tools/lexical.py` (rc 0).
+Studie selbst gelesen: PubMed 40753316 (Abstract) und medRxiv-Preprint 10.1101/2025.03.18.25324184 (Volltext-PDF).
+doi.org/10.1038/s43856-025-01021-3 (Nature-Seite) war für mich nicht abrufbar (WebFetch-Freigabe nicht beantwortet).
+Die Angaben aus PubMed decken sich mit Titel, Band 5, Artikel 330, 02.08.2025 und DOI.
+
+### Abgleich der neuen Aussagen
+
+| Stelle | Quelle | Ergebnis |
+|---|---|---|
+| Studie: „Communications Medicine, August 2025“ | PubMed: Commun Med 5(1):330, 02.08.2025 | ok |
+| „in 300 Fallbeschreibungen je einen erfundenen Begriff, etwa einen Laborwert, den es nicht gibt“ | 300 ärztlich geprüfte Vignetten, je ein erfundenes Detail (Laborwert, körperliches/radiologisches Zeichen, Krankheit) | ok |
+| „sechs KI-Modellen“ | 6 LLMs, 5.400 Ausgaben | ok |
+| „im Schnitt in 66 Prozent … auf den erfundenen Begriff ein, als gäbe es ihn“ | „elaborated on the fabricated detail“; Mittel über alle Modelle 66 % (Preprint 65,9 %) | ok |
+| „nur gesicherte Informationen … Unsicherheit zuzugeben, statt zu spekulieren … 44 Prozent“ | „use only clinically validated information and acknowledge uncertainty instead of speculating further“; 44 % (44,2 %), p < 0,001 | ok („gesicherte“ für „clinically validated“ ist vertretbar) |
+| „Die Anweisung verringert Fehler, beseitigt sie aber nicht.“ | „While prompt engineering reduces errors, it does not eliminate them.“ | ok |
+| „Der Test war absichtlich schwer“ | adversarial attack, erfundene Angaben bewusst eingebaut | ok, aber Einschränkung fehlt → M3 |
+| Regel 2: „Laut OpenAI kann sie auch bei falschen Antworten große Sicherheit ausdrücken.“ | Help: „The model may express high confidence even in incorrect answers.“ | ok |
+| „denn die KI bemerkt nicht immer, dass sie falschliegt“ | eigene Folgerung, durch den OpenAI-Satz gedeckt | ok (Hinweis H-c) |
+| Kurzfassung Punkt 2: „Anfällig sind vor allem seltene Fakten, Datumsangaben, Zitate und Quellen sowie Fragen, bei denen wichtige Angaben fehlen.“ | OpenAI-Paper: seltene Einzelfakten („arbitrary low-frequency facts“) führen zu Halluzinationen. Hilfeseite: „Incorrect definitions, dates, or facts“, „Fabricated quotes, studies, citations or references“, „Overconfident answers to ambiguous or complex questions“ als Beispiele. Fehlende Angaben: Tills Fall 1 | **die Inhalte sind gedeckt, „vor allem“ und „nicht wahllos“ nicht** → M2 |
+| Kurzfassung Punkt 4: „Ein Zusatz im Prompt hilft nachweislich: … „weiß ich nicht“ … und Fakten von Annahmen trennen lassen.“ | Studie testete „nur gesicherte Informationen + Unsicherheit zugeben“; Anthropic: Herstellerangabe zu „I don’t know“; „Fakten und Annahmen trennen“ hat niemand getestet | **„nachweislich“ überdehnt** → M1 |
+| Einleitung, Satz nach Regel 5 | keine Faktenaussage | ok |
+| Prompt-Kasten, zwei neue Sätze | redaktionell, im INTERN-Absatz (f) als „bitte bestätigen“ markiert | ok |
+| Quellenliste | Originalveröffentlichung (DOI) verlinkt, Titel, Band, Nummer, Datum korrekt | ok |
+
+Kurzfassung: genau 5 Punkte – ok. `lexical.py` – ok.
+
+### Ton
+
+Ausgewogen, ohne zu beschönigen. Die Einleitung stellt das Vertrauen klar. Die Kurzfassung ist jetzt lösungsorientiert (Stufen, Prompt, Test), und der Satz nach Regel 5 begrenzt den Aufwand auf Stufe 2 und 3. Die Studie nennt beide Zahlen und sagt ausdrücklich „nicht auf null“. Einziges Risiko für den Ton: Ohne Einordnung liest man 66 Prozent als allgemeine Fehlerquote (M3) – das wäre wieder zu negativ und fachlich falsch.
+
+### Mängel
+
+**M1 – Kurzfassung Punkt 4: „nachweislich“ deckt nicht beide Hälften**
+Belegt ist eine Anweisung, bei Unsicherheit nichts zu erfinden (Studie; Anthropic als Herstellerangabe). „Fakten von Annahmen trennen“ hat niemand getestet.
+→ „Ein Zusatz im Prompt hilft: der KI erlauben, „weiß ich nicht“ zu sagen. In einer Studie senkte eine solche Anweisung die Fehler deutlich, aber nicht auf null.“
+
+**M2 – Kurzfassung Punkt 2: „nicht wahllos … vor allem“ ist eine Rangfolge ohne Beleg**
+Die Hilfeseite nennt Beispiele, keine Häufigkeiten. Die Inhalte sind gedeckt, die Gewichtung nicht.
+→ „Typische Fehlerstellen nennt OpenAI selbst: seltene Fakten, Datumsangaben, Zitate und Quellen. Dazu kommen Fragen, bei denen wichtige Angaben fehlen.“
+
+**M3 – Studie: Geltungsbereich der Prozentwerte fehlt** (Regel 2, Absatz 2, nach „… waren es 44 Prozent.“)
+Checkliste Punkt 2: Die Zahlen gelten für Fallbeschreibungen mit absichtlich eingebauten falschen Angaben in der Medizin, nicht für normale Fragen. Ohne diesen Satz liest der Bäcker „KI geht in zwei von drei Fällen auf Erfundenes ein“.
+→ Einfügen: „Die Prozentwerte gelten für diesen Test mit absichtlich falschen Angaben, nicht für normale Fragen im Alltag.“
+
+**M4 – `quellen.md` ohne die Studie**
+Kein Eintrag zu Omar, Klang u. a. → ergänzen: DOI, PubMed 40753316, medRxiv 10.1101/2025.03.18.25324184, 300 Vignetten, 6 Modelle, 5.400 Ausgaben, 65,9 % → 44,2 % (Abstract 66 → 44 %), Wortlaut des Mitigation-Prompts laut Preprint, Temperatur 0 ohne Effekt, Fazit-Zitat. Dazu der Vermerk, dass die Nature-Seite nicht selbst gelesen wurde.
+
+### Hinweise (kein Mangel)
+
+- **H-a Einleitung:** „Das heißt nicht, dass man KI nicht vertrauen kann.“ ist eine doppelte Verneinung, und „wissen sollte … und dort gezielt hinschaut“ ist grammatisch schief → „Das heißt nicht, dass man KI misstrauen muss. Man sollte aber wissen, wo sie danebenliegen kann, und dort gezielt hinschauen.“
+- **H-b Prompt:** Der Satz davor spricht von „technischen Produkten“, der Kasten heißt jetzt „für wichtige Fragen“ → Einleitungssatz anpassen oder den Kasten wieder „für technische Fragen“ nennen. Till muss die zwei neuen Sätze im Kasten bestätigen (INTERN f).
+- **H-c Regel 2:** „bemerkt nicht immer“ vermenschlicht. Genauer: „denn die KI kann auch bei falschen Antworten sehr sicher klingen“ – dann lässt sich der zweite Halbsatz mit „Laut OpenAI …“ kürzen.
+- **H-d Regel 2, Satz Z. 119:** „Regel 1 und 2 stützen sich auf Empfehlungen von OWASP und von Anthropic“ – jetzt kommt auch eine Studie dazu. Optional: „… von OWASP, Anthropic und einer Studie“.
+- **H-e Länge:** etwa 2.370 Wörter Fließtext + 330 in Boxen ≈ 2.700 (Runde 5: ≈ 2.350; Format 1.900–2.000). Regel 2 ist jetzt der längste Abschnitt. Wenn kürzen: Kalai-Absatz (Z. 33), Z. 43 und Z. 89 Satz 1.
+- **H-f Ghost:** weiter Fassung vom 23.10. → nach Korrektur neu laden, dann Punkt 13.

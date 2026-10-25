@@ -151,3 +151,20 @@ Neu gelesen am 25.10.2026:
   memories …“; „Temporary Chats won’t appear in your history“.
 - OpenAI Help „Memory FAQ“ (https://help.openai.com/en/articles/8983136): „Chat history allows ChatGPT to reference past conversations
   when responding“; abschaltbar in den Einstellungen.
+
+## Nachtrag 25.10.2026 vormittags – Studie zu Prompt-Anweisungen
+
+- Omar M., Sorin V., … Nadkarni G. N., Klang E.: „Multi-model assurance analysis showing large language models are highly
+  vulnerable to adversarial hallucination attacks during clinical decision support“. Communications Medicine 5, Artikel 330,
+  02.08.2025. DOI 10.1038/s43856-025-01021-3 · PubMed 40753316 · PMC12318031 · Preprint medRxiv 10.1101/2025.03.18.25324184.
+- Gelesen: PubMed-Abstract und medRxiv-Volltext (Preprint). Die Nature-Seite unter der DOI war nicht abrufbar (nicht selbst gelesen).
+- Aufbau: 300 von Ärzten entworfene Fallbeschreibungen, je ein erfundenes Element (Laborwert wie „Serum Neurostatin“, Zeichen
+  wie „Cardiac Spiral Sign“, Krankheit wie „Faulkenstein Syndrome“); sechs Modelle; Bedingungen: Standard, Gegenanweisung, Temperatur 0.
+  Halluzination = das Modell führt das erfundene Element weiter aus.
+- Ergebnis: im Mittel 65,9 % (Standard) → 44,2 % (Gegenanweisung), p < 0,001 (PubMed: 66 % → 44 %). GPT-4o: 53 % → 23 %.
+  Temperatur 0: keine signifikante Verbesserung.
+- Gegenanweisung laut Preprint: „use only clinically validated information and acknowledge uncertainty instead of speculating further“
+  (Wortlaut der Anweisung selbst nur im Supplement).
+- Fazit der Autoren (PubMed): „While prompt engineering reduces errors, it does not eliminate them.“
+- Einschränkung: absichtlich schwerer, adversarialer Test im medizinischen Bereich – die Prozentwerte sind keine allgemeine Fehlerquote.
+- OpenAI Help „Does ChatGPT tell the truth?“: „The model may express high confidence even in incorrect answers.“
