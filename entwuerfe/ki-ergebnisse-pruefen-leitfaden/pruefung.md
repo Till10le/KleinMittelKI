@@ -672,3 +672,28 @@ Absatz 1 („… sieht Streifen und sagt: Tiger.“) und Absatz 2 („Die KI erk
 3. **„Beim Tiger fehlte der Zaun.“** Der Zaun ist im Bild zu sehen, die KI hat ihn übersehen → „Beim Tiger übersah die KI den Zaun.“
 4. **Rest-Signal Planung:** Eine mehrjährige Umsatzsteigerung in einer Kalkulation „mit Preisen, Kosten und Umsatz“ lässt weiter auf ein Vorhaben schließen. Neutraler geht es nur ohne das Wachstumsbeispiel. Till hat das Beispiel in dieser Form gewollt – zur Kenntnis.
 5. **Vor der Freigabe:** Ghost neu laden (g7 neu, g4/g5 entfallen, KI-Foto), Vorschau prüfen.
+
+## Runde 15 – 25.10.2026 (Prüfer, Nachprüfung Runde 14, Commit 82e13bb)
+
+**Ergebnis: NICHT BESTANDEN** (ein Halbsatz im OWASP-Beleg; alles andere ok)
+
+Geprüft: `git diff --word-diff HEAD~1` auf beitrag.md. OWASP LLM09 erneut per WebFetch gelesen (25.10.2026). `python3 tools/lexical.py` läuft ohne Fehler (rc 0).
+
+| Punkt | Prüfung |
+|---|---|
+| P1 „kann … klingen“ | ok |
+| P2 Anthropic | ok – „kann schon die Erlaubnis, Unsicherheit zuzugeben, falsche Angaben deutlich verringern“ = „permission to admit uncertainty … can drastically reduce false information“ |
+| P3 Kennzeichnung | ok – Einstieg im Konjunktiv („könnte Streifen sehen und sagen: Tiger“, „würde … erkennen“, „würde nicht zweifeln“). „Das Bild ist eine Illustration, kein Messergebnis …“ steht direkt nach dem Bild und ist im späteren Abschnitt gestrichen, keine Doppelung |
+| H2 Überschrift | ok – „Ein ähnliches Prinzip bei ChatGPT“, im Text „passiert etwas Ähnliches“ |
+| H3 Zaun | ok – „Beim Tiger übersah die KI den Zaun.“ |
+| H1 OWASP-Beleg | **Mangel Q1** |
+
+### Mangel
+
+**Q1 – OWASP-Satz lässt „in ihren Trainingsdaten“ weg**
+Text: „Das IT-Sicherheitsprojekt OWASP beschreibt es ähnlich: Sprachmodelle füllen Lücken mit statistischen Mustern, ohne den Inhalt wirklich zu verstehen.“
+Quelle: „Hallucinations occur when LLMs fill gaps in their training data using statistical patterns, without truly understanding [the content]“. OWASP spricht von Lücken im Trainingswissen und davon, wie Halluzinationen entstehen. Ohne diese Angabe wirkt der Beleg für die Brücke („fehlt ihr der Zusammenhang“) stärker, als er ist.
+→ „Das IT-Sicherheitsprojekt OWASP beschreibt es ähnlich: Halluzinationen entstehen, wenn Sprachmodelle Lücken in ihren Trainingsdaten mit statistischen Mustern füllen, ohne den Inhalt wirklich zu verstehen.“
+
+### Hinweis
+- Der Rest der Fassung ist unverändert gegenüber Runde 14 (dort geprüft). Vor der Freigabe Ghost neu laden und die Vorschau prüfen.
