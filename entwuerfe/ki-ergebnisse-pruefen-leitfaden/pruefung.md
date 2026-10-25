@@ -475,3 +475,35 @@ Geprüft: `git diff --word-diff HEAD~1` (Commit 66e6d28) auf beitrag.md und quel
 - quellen.md nennt die Koautoren Sorin und Nadkarni, PMC12318031 und die Beispiel-Begriffe („Serum Neurostatin“ usw.). Das habe ich nicht selbst gegengelesen. Es steht nur intern, nicht im Beitrag.
 - Bewusst offen: Länge (≈ 2.700 Wörter, H-e), Titel (H11), Eintrag in `entscheidungen.md` (H13), Bestätigung der zwei neuen Prompt-Sätze durch Till (INTERN f).
 - Vor der Freigabe: Ghost-Entwurf neu laden (g4, g6, Vorschaubild) und die Vorschau prüfen (Punkt 13).
+
+## Runde 10 – 25.10.2026 (Prüfer, Tills KI-Beispielbild statt g6)
+
+**Ergebnis: BESTANDEN** (nur Hinweise)
+
+Geprüft: `git diff HEAD~1` (Commit 8327dcb) auf beitrag.md und entscheidungen.md, `ki-beispielbild-hund-tiger.jpg` angesehen
+(1122 × 1402, 405 KB). `python3 tools/lexical.py` läuft ohne Fehler (rc 0). `lexical.IMG` erkennt alle 5 Bildzeilen,
+die Bildkarte hat Alt-Text und Bildunterschrift. `ghost.py` lädt lokale Bilder unabhängig von der Endung hoch (.jpg ok).
+Zum Vergleich gelesen: eigener Beitrag `ai-act-ki-bilder-kennzeichnen` (Referenz).
+
+| Punkt | Ergebnis |
+|---|---|
+| Text passt zum Bild | ok – „Ein Hund **liegt** im Schatten eines Zauns“ (im Bild liegt er, früher hieß es „steht“). „Die Schattenstreifen lassen sein Fell gestreift aussehen“, grüner Rahmen „Tiger“, „den Zaun, der den Schatten wirft“ = Pfeil „Context“ auf das Gitter. Ausschnitt unten im Alt-Text beschrieben |
+| KI-Kennzeichnung ehrlich | ok – Bildunterschrift beginnt mit „Mit KI erstelltes Beispielbild“, Alt-Text mit „Mit KI erstelltes Foto“. Im Text „könnte daraus einen Tiger machen“, „Das Beispiel ist ausgedacht und das Bild mit KI erstellt, es ist kein Messergebnis“. Nicht als echter Fall lesbar. Entspricht der eigenen Empfehlung im AI-Act-Beitrag („in der ersten Zeile der Bildunterschrift“) |
+| Alt-Text | ok – nennt Art (mit KI erstelltes Foto) und Inhalt, inkl. Rahmen, Pfeil und Ausschnitt |
+| Bildunterschrift | ok – Kennzeichnung plus Lesehilfe. Hat zwei Sätze; die Ein-Satz-Regel in `kmk-ci-grafik` gilt für Grafiken, hier geht die Kennzeichnung vor (Hinweis H10-1) |
+| Bildanzahl | ok – 5 Bilder: KI-Foto, g1, g4, g3, g5 (4 Schaubilder + 1 Foto, Rahmen Langtext 4–5). g6 bleibt als Datei, nicht eingebunden |
+| Bildsprache / CI | ok – Ausnahme zu „echte Fotos“ in `entscheidungen.md` mit Tills Wortlaut festgehalten; kein KI-erzeugter Mensch, kein Logo, keine Marke |
+| entscheidungen.md | ok – Eintrag angehängt, nichts gelöscht |
+
+### Hinweise (kein Mangel)
+
+- **H10-1 Bildunterschrift in einem Satz** (optional, CI-näher): „Mit KI erstelltes Beispielbild: Die Streifen sind nur der Schatten des Zauns – wer das übersieht, sieht einen Tiger.“
+- **H10-2 Satzmodus:** Vor dem Bild steht der Konjunktiv („könnte … machen“), danach der Indikativ („Die KI erkennt … Und sie meldet keinen Zweifel“), dann wieder Konjunktiv („wäre“). Einheitlicher: „Sie würde das Muster erkennen, aber nicht den Zusammenhang: den Zaun, der den Schatten wirft. Und sie würde keinen Zweifel melden.“
+- **H10-3 „Context“:** Das Bild ist auf Englisch beschriftet, der Text sagt „Zusammenhang“. Für Leser ohne Englisch: „… aber nicht den Zusammenhang (im Bild: „Context“) …“.
+- **H10-4 Rechtlich, keine Rechtsberatung:**
+  - Die sichtbare Kennzeichnung direkt am Bild genügt dem, was der eigene AI-Act-Beitrag für realistisch wirkende KI-Bilder empfiehlt.
+  - Wird das Bild ohne Unterschrift gezeigt (Social, Bildersuche), fehlt der Hinweis. Ein kleines „Mit KI erstellt“ in der Bildecke wäre robuster.
+  - Die JPG-Datei enthält keine Herkunfts-Metadaten (nur JFIF). Die maschinenlesbare Markierung ist Pflicht des Anbieters, nicht von Till.
+  - Der Bildaufbau (grüner Rahmen „Tiger“, Pfeil „Context“) gleicht dem LinkedIn-/Siali-Bild. Bitte bei Till klären: Hat er das Bild nur aus einem Text-Prompt erzeugt oder das Original als Vorlage hochgeladen? Im zweiten Fall wäre es eine Bearbeitung eines fremden Bildes, und die Rechtefrage stellt sich wieder.
+- **H10-5 INTERN (b)** enthält noch den alten Satz „Ursprünglich als eigene Grafik nachgestellt … falls du einen Löwen meinst …“ – für Till verwirrend, kürzen.
+- **H10-6** Bewusst offen wie in Runde 9: Länge, Titel, Bestätigung der Prompt-Sätze. Vor der Freigabe Ghost neu laden (neues Bild, g4, Vorschaubild), dann Punkt 13.
