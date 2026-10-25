@@ -51,12 +51,12 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 ### ki-ergebnisse-pruefen-leitfaden
 - Status: wartet-auf-till
 - Idee von Till (Chat 23.10.2026, LinkedIn-Anlass + ChatGPT-Entwurf, siehe redaktion/eingang/2026-10-23-chatgpt-ki-fehler-pruefen.md)
-- Titel (Arbeitstitel): KI klingt sicher. Aber stimmt es auch? So prüfst du KI-Ergebnisse im Betrieb
+- Titel: „KI irrt sich und klingt trotzdem sicher: So prüfst du KI-Ergebnisse im Betrieb“ (25.10.2026, Till: alte Überschrift nicht selbsterklärend; vorher „KI klingt sicher. Aber stimmt es auch? …“)
 - Rubrik/Kategorie: Wissen / Leitfäden
 - Format: Langtext (ca. 1.900–2.000 Wörter, Box „Das Wichtigste in 30 Sekunden“, 4–5 Schaubilder im Karten-System, Abschnitt „Zum Ausprobieren“)
 - Kern: Nicht jede KI-Antwort braucht dieselbe Kontrolle. Drei Stufen nach Folgen eines Fehlers: frei nutzen (Ideen, Entwürfe) · gezielt prüfen (Angebote, Exposés, Auswertungen) · nur mit Freigabe (Buchungen, Preise, Zahlungen). Fünf Regeln als Checkliste.
 - Vorgaben aus dem Chat (Till: „Ja“ auf diese Punkte):
-  - KEIN Hund-Tiger-Meme und keine fremden Bilder; eigenes Beispiel als Schaubild.
+  - KEIN Hund-Tiger-Meme und keine fremden Bilder; eigenes Beispiel als Schaubild. **Überholt 25.10.2026:** Till will das Bild-Beispiel jetzt drin haben (Chat) → als eigene Grafik g6, kein fremdes Bild.
   - KEIN Einzelhandels-Beispiel (Regel 4). Beispiele z. B. Handwerksbetrieb (Angebot mit erfundenen Materialpreisen), Hausverwaltung (Nebenkosten), Gastronomie (Allergen-Angaben), Immobilien-Exposé (Vermutung wird Tatsache).
   - Keine Ampelfarben: Stufen-Schaubild nur in Schwarz/Lime (g-stufen oder g-tabelle).
   - Quellen am Original lesen: OpenAI-Hinweise zu Halluzinationen, OWASP Top 10 for LLM Applications (Misinformation), ggf. BSI. LinkedIn-Beitrag von Alex Lichtenberger nur als Anlass nennen, nicht als Beleg (nicht gelesen).

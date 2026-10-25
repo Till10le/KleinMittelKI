@@ -129,3 +129,25 @@ Tills Text nennt den LinkedIn-Beitrag von Alex Lichtenberger als Denkanstoß fü
 - Alle Branchenbeispiele (Malerbetrieb, Hausverwaltung, Gastronomie, Exposé) sind **redaktionell konstruierte Beispiele**,
   keine dokumentierten Fälle. So im Text kenntlich gemacht. Stand Überarbeitung 23.10.2026: nur noch Exposé und Gastronomie
   im Beitrag; Malerbetrieb und Hausverwaltung entfallen (durch Tills Fälle abgedeckt).
+
+
+## Nachtrag 25.10.2026 (Überarbeitung nach Tills Wunsch, Chat)
+
+Überholt (nicht gelöscht, nur markiert): die Vermerke „Hund-Tiger-Meme verworfen“ und „OLG-Hamm-Beitrag nicht online“ weiter oben.
+Till wünscht das Bild-Beispiel jetzt ausdrücklich; umgesetzt als eigene Grafik g6 (ausgedachtes Beispiel, kein fremdes Bild).
+OLG-Hamm-Beitrag live laut Bericht 23.10.2026: https://www.kleinmittelki.de/olg-hamm-chatbot-haftung/
+
+Neu gelesen am 25.10.2026:
+- OpenAI, „Why language models hallucinate“ (05.09.2025), Abschnitt Pretraining: „Spelling and parentheses follow consistent
+  patterns, so errors there disappear with scale. But arbitrary low-frequency facts, like a pet's birthday, cannot be predicted
+  from patterns alone and hence lead to hallucinations.“ Außerdem: „Accuracy will never reach 100% …“ (manche Fragen sind
+  nicht beantwortbar) und Behauptung „Hallucinations are inevitable“ → Befund: „They are not, because language models can
+  abstain when uncertain.“ Kalai-Beispiel: Autor des Papers; Chatbot gab drei verschiedene, falsche Antworten (Titel und Geburtstag).
+- OpenAI Help „Does ChatGPT tell the truth?“: „Incorrect definitions, dates, or facts“ (dates = Datumsangaben); „might sound confident—even when it’s wrong“.
+- OWASP LLM09:2025: Overreliance ist ein verwandtes Problem, das die Folgen verstärkt, nicht die Ursache (Prüfer Runde 5).
+  OWASP Gen AI Security Project = „global, open-source initiative“, „community-driven“ (Charta), nicht „gemeinnützig“.
+- Anthropic „Reduce hallucinations“: „can drastically reduce false information“ (nicht „allein“); Best-of-N; „don't eliminate them entirely“.
+- OpenAI Help „Temporary Chat FAQ“ (https://help.openai.com/en/articles/8914046): „With Temporary Chat, ChatGPT won't access or create
+  memories …“; „Temporary Chats won’t appear in your history“.
+- OpenAI Help „Memory FAQ“ (https://help.openai.com/en/articles/8983136): „Chat history allows ChatGPT to reference past conversations
+  when responding“; abschaltbar in den Einstellungen.
