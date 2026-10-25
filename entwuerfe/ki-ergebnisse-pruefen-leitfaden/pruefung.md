@@ -451,3 +451,27 @@ Kein Eintrag zu Omar, Klang u. a. → ergänzen: DOI, PubMed 40753316, medRxiv 1
 - **H-d Regel 2, Satz Z. 119:** „Regel 1 und 2 stützen sich auf Empfehlungen von OWASP und von Anthropic“ – jetzt kommt auch eine Studie dazu. Optional: „… von OWASP, Anthropic und einer Studie“.
 - **H-e Länge:** etwa 2.370 Wörter Fließtext + 330 in Boxen ≈ 2.700 (Runde 5: ≈ 2.350; Format 1.900–2.000). Regel 2 ist jetzt der längste Abschnitt. Wenn kürzen: Kalai-Absatz (Z. 33), Z. 43 und Z. 89 Satz 1.
 - **H-f Ghost:** weiter Fassung vom 23.10. → nach Korrektur neu laden, dann Punkt 13.
+
+## Runde 9 – 25.10.2026 (Prüfer, Nachprüfung Runde 8)
+
+**Ergebnis: BESTANDEN**
+
+Geprüft: `git diff --word-diff HEAD~1` (Commit 66e6d28) auf beitrag.md und quellen.md. Geändert sind nur die genannten Stellen.
+`python3 tools/lexical.py` läuft ohne Fehler (rc 0). Die Kurzfassung hat weiter genau 5 Punkte.
+
+| Punkt | Prüfung |
+|---|---|
+| M1 Kurzfassung 4 | ok – „Ein Zusatz im Prompt hilft: der KI erlauben, „weiß ich nicht“ zu sagen. In einer Studie senkte eine solche Anweisung die Fehler deutlich, aber nicht auf null.“ Deckt sich mit 66 → 44 % und „does not eliminate them“ |
+| M2 Kurzfassung 2 | ok – „Typische Fehlerstellen nennt OpenAI selbst: seltene Fakten, Datumsangaben, Zitate und Quellen. Dazu kommen Fragen, bei denen wichtige Angaben fehlen.“ Keine Rangfolge mehr; die Aufzählung ist durch das Paper und die Hilfeseite gedeckt |
+| M3 Geltungsbereich | ok – „Die Prozentwerte gelten für diesen Test mit absichtlich falschen Angaben, nicht für normale Fragen im Alltag.“ |
+| M4 quellen.md | ok – Nachtrag mit DOI, PubMed, medRxiv, Aufbau, 65,9 → 44,2 %, GPT-4o 53 → 23 %, Temperatur 0, Wortlaut laut Preprint, Fazit-Zitat, Einschränkung, Vermerk „Nature-Seite nicht selbst gelesen“. Alle Zahlen stimmen mit meiner Lektüre aus Runde 8 überein |
+| H-a Einleitung | ok – „Das heißt nicht, dass man KI misstrauen muss. Man sollte aber wissen, wo sie danebenliegen kann, und dort gezielt hinschauen.“ |
+| H-b Prompt-Kasten | ok – wieder „Mein Zusatz für technische Fragen“, passt zum Satz davor |
+| H-c Regel 2 | ok – „denn laut OpenAI kann die KI auch bei falschen Antworten sehr sicher klingen“ = „may express high confidence even in incorrect answers“ |
+| H-d Z. 119 | ok – „… sowie auf eine Studie“ |
+
+### Hinweise (kein Mangel)
+
+- quellen.md nennt die Koautoren Sorin und Nadkarni, PMC12318031 und die Beispiel-Begriffe („Serum Neurostatin“ usw.). Das habe ich nicht selbst gegengelesen. Es steht nur intern, nicht im Beitrag.
+- Bewusst offen: Länge (≈ 2.700 Wörter, H-e), Titel (H11), Eintrag in `entscheidungen.md` (H13), Bestätigung der zwei neuen Prompt-Sätze durch Till (INTERN f).
+- Vor der Freigabe: Ghost-Entwurf neu laden (g4, g6, Vorschaubild) und die Vorschau prüfen (Punkt 13).
