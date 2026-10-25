@@ -259,8 +259,8 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Quelle: eigene Systemunterlagen + Hilfeseiten OpenAI (Tasks), Microsoft (Scheduled prompts), Anthropic (Scheduled tasks), abgerufen 25.10.2026 – siehe quellen.md
 - Warum für KMU: Prinzip übertragbar auf Ausschreibungen, Förderprogramme, Normen; fünf Schritte, Beispiel-Anfrage Malerbetrieb, drei Wege nach Ausstattung
 - Wichtig (Till, Chat 25.10.2026): Der Beitrag zeigt nur die Recherche. Nichts darüber, dass KI Texte oder Beiträge schreibt – und auch nicht, dass Till selbst schreibt; das bleibt offen.
-- Braucht von Till: INTERN-Vorschläge bestätigen, [TILL: Aufwand und Kosten der Einrichtung], optional Screenshot des Briefings vom 29.10.
-- Verlauf: 2026-10-25 Chat: Till „Erstelle mir diesen Beitrag …“ → Text, Grafiken, Quellen im Chat erstellt und geprüft (ohne separaten Prüfer-Lauf; Zahlen nur aus quellen.md, alle Bilder angesehen, lexical.py fehlerfrei) · 2026-10-25 Chat: Till will KI-Schreiben nicht erwähnt haben → alle Hinweise darauf entfernt → geprueft
+- Braucht von Till: nur noch „A ja“ (Aufwand/Kosten auf Tills Bitte aus den Chats eingeschätzt, 25.10.)
+- Verlauf: 2026-10-25 Chat: Till „Erstelle mir diesen Beitrag …“ → Text, Grafiken, Quellen im Chat erstellt und geprüft (ohne separaten Prüfer-Lauf; Zahlen nur aus quellen.md, alle Bilder angesehen, lexical.py fehlerfrei) · 2026-10-25 Chat: Till will KI-Schreiben nicht erwähnt haben → alle Hinweise darauf entfernt → geprueft · 2026-10-25 Chat: Till bittet, Aufwand und Kosten aus den Chats einzuschätzen → Platzhalter ersetzt, bleibt geprueft
 
 ## Archiv
 
