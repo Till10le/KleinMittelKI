@@ -17,18 +17,22 @@
       "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g5-1.png"
     },
     "kmk-ki-pruefen-g4.png": {
-      "hash": "34551c56e83808de0e5b3aec031a06fd331451b0b9f2aa0a1ae10da8ab832fe5",
-      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g4.png"
+      "hash": "18dc82aef4d2ba325e26677da31636e28ecbca5321478fe570b1c1b2469879e5",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g4-1.png"
+    },
+    "kmk-ki-pruefen-g6.png": {
+      "hash": "ef52fc26a0fa3ecb9de9225d693fbbe27ea421af4f9f8555a06dc64999a7c014",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-ki-pruefen-g6.png"
     }
   },
-  "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/vorschaubild-2.png",
-  "vorschaubild_hash": "a8f48197b5a1b6fa60007830a4e3c872525d81637ef6997069f61e6da67eccb4",
+  "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/vorschaubild-5.png",
+  "vorschaubild_hash": "23ac9b4533c4cfecd2acac5e791fe0f7a1551ab5315ee5e66743e5c96a1775ff",
   "id": "6adb327eb21d370001a498fb",
   "uuid": "3aa0ec3b-67f5-440d-9514-2a9509cbbfd0",
   "slug": "ki-ergebnisse-pruefen-leitfaden",
-  "titel": "KI klingt sicher. Aber stimmt es auch? So prüfst du KI-Ergebnisse im Betrieb",
+  "titel": "KI irrt sich und klingt trotzdem sicher: So prüfst du KI-Ergebnisse im Betrieb",
   "status": "draft",
-  "updated_at": "2026-10-23T16:48:08.000Z",
+  "updated_at": "2026-10-25T06:48:13.000Z",
   "vorschau": "https://www.kleinmittelki.de/p/3aa0ec3b-67f5-440d-9514-2a9509cbbfd0/",
   "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6adb327eb21d370001a498fb",
   "titelbild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/titel-ki-ergebnisse-pruefen-leitfaden.jpg",

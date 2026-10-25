@@ -1,0 +1,20 @@
+{
+  "bilder": {
+    "kmk-einfachste-loesung-g1.png": {
+      "hash": "01106c780f8afd708e0d6ea1b3b03cdb77c7095a4d01cd5239da86dcb0cf7df2",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-einfachste-loesung-g1.png"
+    }
+  },
+  "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/vorschaubild-4.png",
+  "vorschaubild_hash": "42744d0d4057945a23249e936013fab0f1911bc8af80b43b3722ba272496da80",
+  "titelbild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/titel-nicht-jedes-problem-braucht-ki.jpg",
+  "titelbild_hash": "63d7511367f16b12278cb6c3720a6987adbd0be6562ae6169e35ffa677d2b5a4",
+  "id": "6adda6294d491100016c470a",
+  "uuid": "e41facba-959c-42e3-bf18-7b13fad14cc9",
+  "slug": "nicht-jedes-problem-braucht-ki",
+  "titel": "Nicht jedes Problem braucht KI. Manchmal reicht die einfachere Lösung.",
+  "status": "draft",
+  "updated_at": "2026-10-25T06:48:09.000Z",
+  "vorschau": "https://www.kleinmittelki.de/p/e41facba-959c-42e3-bf18-7b13fad14cc9/",
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6adda6294d491100016c470a"
+}

@@ -1,0 +1,20 @@
+{
+  "bilder": {
+    "kmk-iab-ki-potenzial-g1.png": {
+      "hash": "0b22d2ebb9c8a3d80e5617eeb95ce86e2c507ba58e4be01a58d3df5a24edacf8",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-iab-ki-potenzial-g1.png"
+    }
+  },
+  "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/vorschaubild-3.png",
+  "vorschaubild_hash": "fb3be2ae94242441012adb73f44f9db23f8935179f85072540671d4146517122",
+  "titelbild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/titel-iab-betriebe-sehen-keine-ki-anwendung.jpg",
+  "titelbild_hash": "24fb66f890c41ee36fa9cb6f1393476e83563863eb8cf09b7881dcdf916d2b10",
+  "id": "6adda6244d491100016c4702",
+  "uuid": "49d77d59-3984-4501-99d4-d71e1b0198c1",
+  "slug": "iab-betriebe-sehen-keine-ki-anwendung",
+  "titel": "Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz. Vielleicht suchen sie an der falschen Stelle.",
+  "status": "draft",
+  "updated_at": "2026-10-25T06:48:04.000Z",
+  "vorschau": "https://www.kleinmittelki.de/p/49d77d59-3984-4501-99d4-d71e1b0198c1/",
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6adda6244d491100016c4702"
+}

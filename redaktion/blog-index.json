@@ -1,7 +1,37 @@
 {
-  "stand": "2026-10-23T05:48:25+00:00",
-  "anzahl": 27,
+  "stand": "2026-10-25T06:48:14+00:00",
+  "anzahl": 30,
   "beitraege": [
+    {
+      "id": "6ad65af14ad712000114ea42",
+      "slug": "olg-hamm-chatbot-haftung",
+      "titel": "Wenn der Chatbot sich irrt, haftet der Betrieb: Was ein Urteil des OLG Hamm zeigt",
+      "status": "published",
+      "veroeffentlicht": "2026-10-23",
+      "geaendert": "2026-10-23",
+      "kategorie": "Entwicklungen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "Ein Website-Chatbot erfand Facharzttitel. Das Gericht rechnet die Falschangaben dem Betreiber zu, nicht der Technik.",
+      "url": "https://www.kleinmittelki.de/olg-hamm-chatbot-haftung/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html",
+        "https://www.justiz.nrw/presse/2026-05-12"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben/"
+      ],
+      "zahlen": [],
+      "woerter": 361
+    },
     {
       "id": "6ad49df03ff4030001b24ef1",
       "slug": "3-was-ki-agenten-konnen-und-warum-gepflegtes-wissen-zahlt",
@@ -612,19 +642,19 @@
       "woerter": 284
     },
     {
-      "id": "6ad65af14ad712000114ea42",
-      "slug": "olg-hamm-chatbot-haftung",
-      "titel": "Wenn der Chatbot sich irrt, haftet der Betrieb: Was ein Urteil des OLG Hamm zeigt",
+      "id": "6adda6294d491100016c470a",
+      "slug": "nicht-jedes-problem-braucht-ki",
+      "titel": "Nicht jedes Problem braucht KI. Manchmal reicht die einfachere Lösung.",
       "status": "draft",
       "veroeffentlicht": "",
-      "geaendert": "2026-10-19",
+      "geaendert": "2026-10-25",
       "kategorie": "Entwicklungen",
       "interne_tags": [
         "#empfehlung",
         "#zur-freigabe"
       ],
-      "teaser": "Ein Website-Chatbot erfand Facharzttitel. Das Gericht rechnet die Falschangaben dem Betreiber zu, nicht der Technik.",
-      "url": "https://www.kleinmittelki.de/p/1843fcaf-e8d6-4e41-ad9f-f14ddc24e14a/",
+      "teaser": "Ein IT-Architekt warnt vor KI-Baukästen von Beratern. Für kleine Betriebe steckt darin eine einfache Frage: Wie viel Technik braucht die Aufgabe?",
+      "url": "https://www.kleinmittelki.de/p/e41facba-959c-42e3-bf18-7b13fad14cc9/",
       "zwischenueberschriften": [
         "Was ist passiert?",
         "Meine Einordnung",
@@ -633,14 +663,107 @@
         "Zum Originalartikel"
       ],
       "quellen": [
-        "https://nrwe.justiz.nrw.de/olgs/hamm/j2026/4_UKl_3_25_Urteil_20260512.html",
-        "https://www.justiz.nrw/presse/2026-05-12"
+        "https://www.computerwoche.de/article/4233774/ki-frameworks-von-beratern-sollten-sie-sich-sparen.html",
+        "https://www.hnfiz.fraunhofer.de/de/aktuelles/so-finden-kmu-den-weg-zum-passenden-ki-projekt.html",
+        "https://www.infoworld.com/article/4230874/dont-buy-a-consultants-ai-framework.html"
       ],
       "interne_links": [
-        "https://www.kleinmittelki.de/ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben/"
+        "https://www.kleinmittelki.de/wenn-der-meister-in-rente-geht-was-ki-im-wissensmanagement-wirklich-leistet/"
       ],
-      "zahlen": [],
-      "woerter": 480
+      "zahlen": [
+        "Der Betrieb koste nach seiner direkten Erfahrung 10- bis 20-mal so viel wie nötig."
+      ],
+      "woerter": 473
+    },
+    {
+      "id": "6adda6244d491100016c4702",
+      "slug": "iab-betriebe-sehen-keine-ki-anwendung",
+      "titel": "Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz. Vielleicht suchen sie an der falschen Stelle.",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-10-25",
+      "kategorie": "Studien & Zahlen",
+      "interne_tags": [
+        "#empfehlung",
+        "#zur-freigabe"
+      ],
+      "teaser": "Laut IAB fehlt vielen Betrieben weder Geld noch Technik, sondern ein Anwendungsfall. Der liegt oft nicht im Kerngeschäft, sondern daneben.",
+      "url": "https://www.kleinmittelki.de/p/49d77d59-3984-4501-99d4-d71e1b0198c1/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://iab-forum.de/weshalb-die-meisten-betriebe-kuenstliche-intelligenz-noch-nicht-nutzen/",
+        "https://idw-online.de/de/news879376"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-mittelstand-lagebericht-september-2026/"
+      ],
+      "zahlen": [
+        "Bewusst weggelassen, weil nur in einer Zweitverwertung (Smart Up News) lesbar: die Einzelwerte 36/34/33/32/30/7 Prozent und der Vergleich nach Betriebsgröße.",
+        "88 Prozent von ihnen sahen keine passenden Anwendungsmöglichkeiten.",
+        "Auffällig: Selbst wo KI viele Tätigkeiten im Betrieb beschleunigen könnte, sehen 85 Prozent der Nichtnutzer keinen Einsatzzweck.",
+        "Dass Bitkom im September nur auf 30 Prozent fehlende Anwendungsfälle kam, widerspricht dem nicht: Dort wurden nur Unternehmen ab 20 Beschäftigten befragt.",
+        "Zum Originalartikel Weshalb die meisten Betriebe Künstliche Intelligenz (noch) nicht nutzen Originalveröffentlichung vom 20.10.2026 IAB-Forum Fast 90 Prozent der Betriebe ohne KI-Nutzung sehen keine Anwendungsmöglichkeiten Originalveröffentlichung vom 20.10.2026 IAB, Pressemitteilung"
+      ],
+      "woerter": 516
+    },
+    {
+      "id": "6adb327eb21d370001a498fb",
+      "slug": "ki-ergebnisse-pruefen-leitfaden",
+      "titel": "KI irrt sich und klingt trotzdem sicher: So prüfst du KI-Ergebnisse im Betrieb",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-10-25",
+      "kategorie": "Leitfäden",
+      "interne_tags": [
+        "#wissen",
+        "#zur-freigabe"
+      ],
+      "teaser": "Drei echte Fälle zeigen, wie KI danebenliegt. Drei Stufen und fünf Regeln helfen, Fehler abzufangen, bevor sie Geld kosten.",
+      "url": "https://www.kleinmittelki.de/p/3aa0ec3b-67f5-440d-9514-2a9509cbbfd0/",
+      "zwischenueberschriften": [
+        "Warum KI so überzeugend danebenliegen kann",
+        "Drei eigene Fälle: sicher im Ton, falsch in der Sache",
+        "Das eigentliche Risiko: Niemand schaut mehr hin",
+        "Nicht jede Antwort braucht dieselbe Kontrolle",
+        "Fünf Regeln, die viele Fehler abfangen",
+        "Meine Einschätzung",
+        "Ein Gedanke zum Mitnehmen",
+        "Quellen"
+      ],
+      "quellen": [
+        "https://genai.owasp.org/llmrisk/llm092025-misinformation/",
+        "https://help.openai.com/en/articles/8313428-does-chatgpt-tell-the-truth",
+        "https://help.openai.com/en/articles/8914046",
+        "https://help.openai.com/en/articles/8983136",
+        "https://openai.com/index/why-language-models-hallucinate/",
+        "https://platform.claude.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-agenten-was-nach-dem-chatbot-kommt-und-was-kmu-davon-haben/",
+        "https://www.kleinmittelki.de/olg-hamm-chatbot-haftung/",
+        "https://www.kleinmittelki.de/protokoll-per-ki-selbstversuch/",
+        "https://www.kleinmittelki.de/schatten-ki-deine-mitarbeiter-nutzen-ki-vielleicht-langst-weisst-du-wofur/"
+      ],
+      "zahlen": [
+        "Fall 1: Eine Steckachse und angeblich 100 Prozent Sicherheit Für einen Fahrradanhänger an meinem Mountainbike brauchte ich eine passende Steckachse, also die Achse, die das Hinterrad im Rahmen hält und an der der Anhänger befestigt wird.",
+        "ChatGPT empfahl ein Modell, mit Gewindesteigung, Achslänge und Zubehör, und war sich irgendwann „100 %“ sicher, dass es passt.",
+        "Die Division durch den Verkaufspreis macht aus dem Gewinn pro Einheit eine Marge, also einen Anteil am Preis: 3 von 10 Euro sind 30 Prozent.",
+        "Mit einfachen Beispielzahlen statt der Originaldaten: Verkaufspreis 10,00 €, Einkaufspreis 6,00 €, Verbrauchsmaterial 1,00 €, 100 Stück im Jahr eingeplant, 5 % Schwund (verkauft werden also 95).",
+        "Pro Stück bleiben nach Einkauf und Material 3 Euro übrig, der sogenannte Deckungsbeitrag.",
+        "Rechnet man den Schwund so wie die Tabelle, also vereinfacht als weniger verkaufte Stück, ergibt sich 3 € × 100 × 0,95 = 285 €.",
+        "Darum geht es hier aber nicht: Schon dieser eine Fehler, ein Anteil statt Euro, macht aus 285 Euro 28,50.",
+        "Es sollte sich jeweils auf das Vorjahr beziehen: Bei 100.000 Euro Umsatz und zehn Prozent pro Jahr sind das 110.000 Euro im zweiten und 121.000 Euro im dritten Jahr, nicht 120.000 Euro.",
+        "3 Trag einfache Zahlen ein: 10,00 € Verkaufspreis, 6,00 € Einkauf, 1,00 € Material, 100 Stück eingeplant, 5 % Schwund.",
+        "4 Rechne von Hand nach: Behandelt die Tabelle den Schwund als weniger verkaufte Stück, sind es 3 € × 100 × 0,95 = 285 €.",
+        "5 Prüf das Wachstum: 100.000 € Umsatz und 10 % pro Jahr müssen im dritten Jahr 121.000 € ergeben, nicht 120.000 €."
+      ],
+      "woerter": 2936
     },
     {
       "id": "6ad65aed4ad712000114ea38",
@@ -648,7 +771,7 @@
       "titel": "Kosten, Recht, Wissen: Was EU-Betriebe bei KI und Personalsoftware bremst",
       "status": "draft",
       "veroeffentlicht": "",
-      "geaendert": "2026-10-19",
+      "geaendert": "2026-10-23",
       "kategorie": "Studien & Zahlen",
       "interne_tags": [
         "#empfehlung",
