@@ -1,0 +1,20 @@
+{
+  "bilder": {
+    "kmk-recherche-assistent-g1.png": {
+      "hash": "e17a691c38dfc1a34c511d819127146fd596bd435380ecd0663f895ebe1fcea9",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/kmk-recherche-assistent-g1.png"
+    }
+  },
+  "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/vorschaubild-6.png",
+  "vorschaubild_hash": "539b0445bb61e5d63584186b35cbfcaf2a7f01c18185847fb01d5a29a4e871de",
+  "titelbild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/10/titel-ki-recherche-assistent-selbstversuch.jpg",
+  "titelbild_hash": "d0e1d33aa30c20ef48123e031e64148d390df4a6baef108270686da8417154da",
+  "id": "6ade31474d491100016c4807",
+  "uuid": "7ef917e2-ee8b-4cc9-b6e7-8e5a18f6a8da",
+  "slug": "ki-recherche-assistent-selbstversuch",
+  "titel": "Mein KI-Rechercheassistent: Die KI sucht. Ich entscheide.",
+  "status": "draft",
+  "updated_at": "2026-10-25T16:41:43.000Z",
+  "vorschau": "https://www.kleinmittelki.de/p/7ef917e2-ee8b-4cc9-b6e7-8e5a18f6a8da/",
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6ade31474d491100016c4807"
+}
