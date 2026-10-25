@@ -8,7 +8,7 @@ Praxistest über Tills eigenes Redaktionssystem. Erstellt im Chat am 25.10.2026.
 - `.claude/skills/kmk-themen/SKILL.md`: Kriterium „Betrieb mit 1 bis 300 Leuten … anders entscheiden, prüfen oder ausprobieren“, fünf Fragen à 0–2 Punkte, ab 7/10; Ausschlüsse Ranglisten, Herstellermarketing, ohne Originalquelle.
 - `redaktion/entscheidungen.md`, 12.10.2026: Microsoft-Copilot-Funktionsgrafik NEIN – „liest sich wie Produktdokumentation statt Einordnung“.
 - `redaktion/berichte/2026-10-23.md`: verworfen u. a. Bitkom-Haftungsleitfaden (Zielgruppe Versicherer), KPMG Global AI Pulse (Großunternehmen).
-- `redaktion/berichte/woche-2026-43.md`: OLG Hamm – 8 Stunden bis Ghost-Entwurf, 3,7 Tage bis „A ja“, 46 Minuten bis online; „Engpass ist die Freigabe“.
+- (nicht verwendet, Till 25.10.: Schreiben bleibt offen) `redaktion/berichte/woche-2026-43.md`: OLG Hamm – 8 Stunden bis Ghost-Entwurf, 3,7 Tage bis „A ja“, 46 Minuten bis online; „Engpass ist die Freigabe“.
 - `docs/routinen.md`, Stand 19.10.2026: erster Testlauf, Redaktions- und Sonntags-Lauf ohne Internet (DNS-Fehler).
 - Tills Aussage (Chat/Memory, Okt. 2026): Themenrecherchen „zu viel und zu unübersichtlich, kann sie so nicht richtig verarbeiten“; ChatGPT-Briefing als Vergleich/Vorbild.
 

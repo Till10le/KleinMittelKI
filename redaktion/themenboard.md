@@ -251,6 +251,17 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Braucht von Till: erst über den Leitfaden entscheiden, dann „N ja“; Vorschläge in Ich-Form (INTERN) bestätigen oder ersetzen
 - Verlauf: 2026-10-25 Sonntags-Lauf: Autor Entwurf, Prüfer Runde 1 nicht bestanden (T1–T3 Formulierungen, I1–I4 Ersatztexte/Freigabe-Reihenfolge), Runde 2 bestanden → newsletter-vorschlag. Mail-Lauf 10:17 schickt ihn Till. Nicht in Ghost. 2026-10-25 Mail-Lauf 10:17: Fassung 1 gemailt (Mail 1a1725c28e258a9a, Fingerabdruck d2fad333…), wartet auf Tills Antwort.
 
+### ki-recherche-assistent-selbstversuch
+- Status: geprueft
+- Idee von Till (Chat 25.10.2026: Praxistest, wie er seinen automatisierten Recherche-Flow nach eigenen Kriterien aufgebaut hat, Ergebnis per Mail)
+- Titel: „Mein KI-Rechercheassistent: Die KI sucht. Ich entscheide.“
+- Rubrik/Kategorie: Praxistests / KI in der Praxis · Format: Praxistest · g1 Ablauf (vier Stufen) + HTML-Karten, Titelbild, Vorschaubild
+- Quelle: eigene Systemunterlagen + Hilfeseiten OpenAI (Tasks), Microsoft (Scheduled prompts), Anthropic (Scheduled tasks), abgerufen 25.10.2026 – siehe quellen.md
+- Warum für KMU: Prinzip übertragbar auf Ausschreibungen, Förderprogramme, Normen; fünf Schritte, Beispiel-Anfrage Malerbetrieb, drei Wege nach Ausstattung
+- Wichtig (Till, Chat 25.10.2026): Der Beitrag zeigt nur die Recherche. Nichts darüber, dass KI Texte oder Beiträge schreibt – und auch nicht, dass Till selbst schreibt; das bleibt offen.
+- Braucht von Till: INTERN-Vorschläge bestätigen, [TILL: Aufwand und Kosten der Einrichtung], optional Screenshot des Briefings vom 29.10.
+- Verlauf: 2026-10-25 Chat: Till „Erstelle mir diesen Beitrag …“ → Text, Grafiken, Quellen im Chat erstellt und geprüft (ohne separaten Prüfer-Lauf; Zahlen nur aus quellen.md, alle Bilder angesehen, lexical.py fehlerfrei) · 2026-10-25 Chat: Till will KI-Schreiben nicht erwähnt haben → alle Hinweise darauf entfernt → geprueft
+
 ## Archiv
 
 (noch leer)
