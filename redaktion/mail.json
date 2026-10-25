@@ -155,6 +155,15 @@
         "A": "ki-ergebnisse-pruefen-leitfaden",
         "B": "ki-recherche-assistent-selbstversuch"
       }
+    },
+    {
+      "datum": "2026-10-25",
+      "thread_id": "1a174149f9a85de7",
+      "betreff": "KMK-Redaktion · Vorschau bereit · So 25.10. · fokussierte Fassung",
+      "art": "vorschau",
+      "eintraege": {
+        "A": "ki-ergebnisse-pruefen-leitfaden"
+      }
     }
   ],
   "eigene_ids": [
@@ -169,7 +178,8 @@
     "1a16859704304390",
     "1a1725c28e258a9a",
     "1a173632fc68c2bd",
-    "1a173f22500167ff"
+    "1a173f22500167ff",
+    "1a174149f9a85de7"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
@@ -187,6 +197,7 @@
     "nicht-jedes-problem-braucht-ki@2026-10-25T06:48:09.000Z",
     "eu-eurobarometer-ki-unternehmen@2026-10-23T16:48:10.000Z",
     "ki-ergebnisse-pruefen-leitfaden@2026-10-25T16:41:38.000Z",
-    "ki-recherche-assistent-selbstversuch@2026-10-25T16:41:43.000Z"
+    "ki-recherche-assistent-selbstversuch@2026-10-25T16:41:43.000Z",
+    "ki-ergebnisse-pruefen-leitfaden@2026-10-25T17:19:52.000Z"
   ]
 }
