@@ -46,7 +46,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Warum für KMU: Hausverwaltung/Kleinbetrieb – einfachste ausreichende Lösung vor KI-System
 - Braucht von Till: Einschätzung in 2–3 Sätzen oder Freigabe des Vorschlags
 - Nach Veröffentlichung des IAB-Beitrags: Querverweis darauf ergänzen
-- Verlauf: 2026-10-23 Chat: Till „Ja“ → freigegeben · Autor/Grafik/Prüfung im Chat-Lauf → geprueft, Ghost-Lauf angestoßen · 2026-10-25 Ghost-Lauf (7:47): Entwurf in Ghost angelegt, Vorschau: https://www.kleinmittelki.de/p/e41facba-959c-42e3-bf18-7b13fad14cc9/ · 2026-10-25 Till per Mail (Verlauf „Vorschau bereit · So 25.10.“, 18:25): „C ja“ → Veröffentlichungsfreigabe sofort über mailfreigabe.py eingetragen (Mail-ID 1a17417b727d7bfb). B nicht freigegeben, C geht damit vor B online. Nächster Ghost-Lauf (21:47) veröffentlicht.
+- Verlauf: 2026-10-23 Chat: Till „Ja“ → freigegeben · Autor/Grafik/Prüfung im Chat-Lauf → geprueft, Ghost-Lauf angestoßen · 2026-10-25 Ghost-Lauf (7:47): Entwurf in Ghost angelegt, Vorschau: https://www.kleinmittelki.de/p/e41facba-959c-42e3-bf18-7b13fad14cc9/ · 2026-10-25 Till per Mail (Verlauf „Vorschau bereit · So 25.10.“, 18:25): „C ja“ → Veröffentlichungsfreigabe sofort über mailfreigabe.py eingetragen (Mail-ID 1a17417b727d7bfb). B nicht freigegeben, C geht damit vor B online. Nächster Ghost-Lauf (21:47) veröffentlicht. · 2026-10-25 Chat: neuer Takt (Di/Do 7:00), Till „nur einer heute“ → C soll auf Do 29.10. 7:00 (redaktion/fahrplan.md). Freigabe steht noch auf „sofort“; braucht Tills Mail-Antwort „C Donnerstag“, sonst geht C am 25.10. 21:47 online.
 
 ### ki-ergebnisse-pruefen-leitfaden
 - Status: wartet-auf-till

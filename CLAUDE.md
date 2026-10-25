@@ -40,6 +40,7 @@ Alle Agenten lesen hier zuerst und schreiben ihre Ergebnisse hierher zurück.
 | `redaktion/blog-index.json` | Alle Beiträge aus Ghost mit Thema, Rubrik, Quellen, Zahlen, Links | `tools/ghost.py index` (automatisch) |
 | `redaktion/themenboard.md` | Jede Idee mit Status von „vorgeschlagen“ bis „beworben“ | alle Agenten |
 | `redaktion/entscheidungen.md` | Tills Ja/Nein mit Grund – die Lernschleife | Chefredakteur nach Tills Antwort |
+| `redaktion/fahrplan.md` | Veröffentlichungs-Takt (Di/Do 7:00, höchstens zwei pro Woche) und die nächsten Termine | Chefredakteur, Mail-Lauf |
 | `redaktion/freigaben.jsonl` | Veröffentlichungsfreigaben (nur Tills Mail-Antwort oder Chat) | `tools/mailfreigabe.py`, `tools/ghost.py freigabe` |
 | `redaktion/mail.json` | Mail-Verläufe mit Till, verarbeitete Antworten | Mail-Lauf |
 | `redaktion/eingang/` | Recherche-Hinweise anderer Werkzeuge (z. B. ChatGPT), nur Material für den Scout | Mail-Lauf |

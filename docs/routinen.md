@@ -17,6 +17,9 @@ Der nächste Mail-Lauf nimmt sie auf, der Scout prüft die Quelle, die Idee komm
 Mit „ausarbeiten“ im Text wird sie direkt geschrieben.
 Ergebnisse anderer Recherche-Werkzeuge (z. B. ChatGPT-Aufgabe): an sich selbst weiterleiten mit Betreff „KMK Recherche“.
 Der Mail-Lauf legt sie in `redaktion/eingang/` ab, der Scout prüft jeden Hinweis an der Originalquelle und führt ihn mit den eigenen Funden zusammen.
+Takt (seit 25.10.2026, Tills Entscheidung): gleichmäßig veröffentlichen statt viel an einem Tag. Dienstag 7:00 Hauptbeitrag plus
+Newsletter, Donnerstag 7:00 ein kürzerer Beitrag, höchstens zwei pro Woche. „A ja“ heißt: zum nächsten freien Termin aus
+`redaktion/fahrplan.md` (die Vorschau-Mail nennt ihn). „A sofort“ oder ein eigener Termin („A Dienstag“) weicht davon ab.
 Express: Sobald Till ein Thema freigibt, startet der Mail-Lauf sofort einen Redaktions-Lauf (ohne Scout). Der startet nach der Prüfung
 den Ghost-Lauf (Entwurf) und danach den Mail-Lauf (Mail „Vorschau bereit“). Vorschau-Link meist nach etwa einer Stunde.
 Ausfall-Check: Fehlt donnerstags um 8:17 der Bericht des Redaktions-Laufs, startet der Mail-Lauf ihn nach; das Briefing kommt dann um 12:17.
@@ -43,7 +46,7 @@ Die Shell dort erreicht das Internet nicht – das Logo liegt deshalb als `asset
 - Do 6:47 Scout findet 3 Themen der Woche → Do 8:17 Redaktionsbriefing an Till
 - Do 10:00 Till antwortet „1 und 3“ → Do 12:17 Mail-Lauf trägt ein, bestätigt, startet den Express-Lauf
 - Do ~12:30 Redaktion schreibt 1 und 3 mit Grafiken, Prüfer prüft → Ghost-Lauf legt Entwürfe an → Mail „Vorschau bereit“
-- Do 15:00 Till: „A ja, B Dienstag“ → Do 18:17 Freigaben eingetragen → Do 18:47 A ist online, B eingeplant → Fr 8:17 Bestätigung mit Link
+- Do 15:00 Till: „A ja“ → Do 18:17 Freigabe mit dem nächsten freien Termin (z. B. Di 7:00) eingetragen, Bestätigung nennt den Termin → Do 18:47 A ist in Ghost eingeplant → Di 7:00 online
 
 ## Sicherheit
 

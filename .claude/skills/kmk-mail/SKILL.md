@@ -71,6 +71,8 @@ Regeln:
 - Die Felder kommen aus dem Board-Eintrag des Scouts. Relevanzpunkte, geplante Grafik und Verworfenes stehen **nicht** in der Mail.
 - Keine Quellenlisten, keine Hintergrundtexte, kein Fließtext, keine Floskeln. Ein Link je Thema.
 - „Wartet noch auf dich“ ist eine Erinnerung, eine Zeile je Entwurf – die eigentliche Vorschau kam schon als „Vorschau bereit“.
+- Unter „Wartet noch auf dich“ eine Zeile „Fahrplan:“ mit den nächsten vier Terminen aus `redaktion/fahrplan.md`.
+  Sind davon weniger als vier mit Kandidaten belegt: im Prüfhinweis „Vorrat: nur noch … Termine belegt“.
 
 ## Vorschau bereit (jederzeit, sobald ein Entwurf fertig ist)
 
@@ -81,12 +83,15 @@ FERTIG ZUR VERÖFFENTLICHUNG – bitte Vorschau ansehen
 A · <Titel>
    – Vorschau: <https://www.kleinmittelki.de/p/<uuid>/>
    – Als Vorschlag markiert (nicht von dir): <Satzanfänge oder „nichts“>
-   – Veröffentlichung: sofort / Dienstag 7:00 (Vorschlag)
-   – Antwort „A ja“ = so veröffentlichen · „A ändern: …“ = überarbeiten
+   – Veröffentlichung: Do 29.10. 7:00 (nächster freier Termin laut Fahrplan)
+   – Antwort „A ja“ = zu diesem Termin veröffentlichen · „A sofort“ = sofort · „A ändern: …“ = überarbeiten
 ```
 
 Fertige Entwürfe nur mit Vorschau-Link aus `entwuerfe/<slug>/ghost.json`.
-Aktuell-Nachrichten Vorschlag „sofort“, Hauptbeiträge (Wissen, Praxistest) Vorschlag „Dienstag 7:00“.
+Termin immer aus `redaktion/fahrplan.md` (Takt Di/Do 7:00, höchstens zwei pro Woche): Hauptbeiträge auf den nächsten freien
+Dienstag, kürzere (Entwicklungen, Studien & Zahlen) auf den nächsten freien Donnerstag. Nie „sofort“ vorschlagen.
+Stehen mehrere Entwürfe in einer Mail, bekommt jeder einen eigenen Termin. Am Ende der Mail eine Zeile „Fahrplan:“ mit den nächsten
+vier Terminen (z. B. „Di 27.10. A · Do 29.10. C · Di 3.11. frei · Do 5.11. frei“).
 
 ## Newsletter-Mail (Sonntag 10:17, eigener Verlauf)
 
@@ -148,8 +153,9 @@ Zitierte Teile (Zeilen mit `>` oder unter „Am … schrieb …“) ignorieren; 
 | „Zu 1: …“ / Text nach der Nummer | Seine Einschätzung | Wörtlich ins Board unter „Tills Einschätzung“ |
 | „2 nein, weil …“ / „2 nicht“ | Abgelehnt | Status `verworfen`, Grund wörtlich in `entscheidungen.md` |
 | „3 später“ | Zurückstellen | Status `vorgeschlagen`, Vermerk „später“ |
-| „A ja“, „A veröffentlichen“, „A raus“ | Veröffentlichen | `python3 tools/mailfreigabe.py <slug> --art beitrag --zitat "<sein Text>" --mail-id <ID> --von till.zehnle@gmail.com --zeitpunkt <sofort oder UTC>` |
-| „A Dienstag“, „A morgen 8 Uhr“ | Zu dieser Zeit | wie oben, Zeitpunkt in UTC umrechnen |
+| „A ja“, „A veröffentlichen“, „A raus“ | Veröffentlichen im Takt | nächsten freien Termin aus `redaktion/fahrplan.md` nehmen (auch wenn in einer älteren Mail „sofort“ stand), dann `python3 tools/mailfreigabe.py <slug> --art beitrag --zitat "<sein Text>" --mail-id <ID> --von till.zehnle@gmail.com --zeitpunkt <Termin in UTC>`; Fahrplan-Tabelle aktualisieren |
+| „A sofort“ | Sofort, außerhalb des Takts | wie oben mit `--zeitpunkt sofort`; im Fahrplan als Ausnahme vermerken |
+| „A Dienstag“, „A 4.11.“, „A morgen 8 Uhr“ | Zu dieser Zeit | wie oben, Zeitpunkt in UTC umrechnen; liegt dort schon ein Beitrag, in der Bestätigung darauf hinweisen |
 | „A ändern: …“ | Überarbeiten | Status `zurueck`, Wünsche wörtlich ins Board |
 | „N ja“ | Newsletter einplanen | `tools/mailfreigabe.py <slug> --art newsletter-text --text-hash <Fingerabdruck der zuletzt gemailten Fassung> --zitat … --mail-id … --von till.zehnle@gmail.com --zeitpunkt <Di 7:00 in UTC>` |
 | „N: …“ / Änderungswünsche | Newsletter überarbeiten | einarbeiten, prüfen, neue Fassung mailen (siehe Newsletter-Mail) |
@@ -168,7 +174,8 @@ Zeiten: Ghost rechnet in UTC. Dienstag 7:00 Uhr deutscher Zeit = 05:00Z im Somme
 Nach dem Auswerten im selben Verlauf kurz antworten (`reply` auf Tills Nachricht, nur an `till.zehnle@gmail.com`):
 
 ```
-Verstanden: 1 und 3 freigegeben, 2 verworfen. A wird beim nächsten Ghost-Lauf veröffentlicht (spätestens 12:47).
+Verstanden: 1 und 3 freigegeben, 2 verworfen. A erscheint Do 29.10. um 7:00 (nächster freier Termin).
+Fahrplan: Di 27.10. B · Do 29.10. A · Di 3.11. frei · Do 5.11. frei
 ```
 
 Ist ein Beitrag laut Board seit der letzten Mail `veroeffentlicht` oder `eingeplant`: im Verlauf melden, mit Live-Link.

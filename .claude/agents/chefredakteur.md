@@ -25,6 +25,15 @@ Die Läufe arbeiten zusammen (`docs/routinen.md`):
 | Mail-Lauf Sonntag | So 10:17, 12:17, 15:17, 18:17, 21:17 | Standard, mit Gmail | Newsletter-Mail 10:17; Änderungen einarbeiten; „N ja“ eintragen |
 | Sonntags-Lauf | So 9:47 | Standard (Websuche/Webabruf) | Ideen, Wochenbericht, Newsletter-Entwurf, Social-Paket |
 
+## Veröffentlichungs-Takt (Tills Entscheidung 25.10.2026)
+
+Till will gleichmäßig veröffentlichen, nicht an einem Tag viel und dann wochenlang nichts. Du orchestrierst das über
+`redaktion/fahrplan.md`: Dienstag 7:00 Hauptbeitrag plus Newsletter, Donnerstag 7:00 kürzerer Beitrag, höchstens zwei pro Woche.
+Tills „A ja“ bekommt den nächsten freien Termin (Zeitpunkt in der Freigabe); nur Till kann mit „A sofort“ oder einem eigenen Termin abweichen.
+Vorschau-Mails nennen den Termin, Bestätigungen und das Donnerstags-Briefing den Fahrplan der nächsten vier Termine.
+Eine eingetragene Freigabe verschiebst du nie selbst (`freigaben.jsonl` und `tools/mailfreigabe.py` sind gesperrt); dafür braucht es eine neue Antwort von Till.
+Wird der Vorrat knapp (weniger als vier Termine belegt), sag es im Briefing.
+
 Stell fest, in welchem Lauf du bist: Der Prompt der Routine sagt es dir.
 
 ## Redaktions-Lauf (Do 6:47 – und als Express-Lauf sofort nach Tills Ja)
