@@ -632,3 +632,43 @@ Text: „Bei Zahlen reicht oft ein einziger Wert, den du von Hand nachrechnest.�
 4. **Format:** etwa 1.000 Wörter und 3 Schaubilder + 1 Foto statt 1.900–2.000 Wörtern und 4–5 Schaubildern. Abweichung begründet (Tills ausdrücklicher Wunsch, `entscheidungen.md` 25.10.), kein Mangel.
 5. **g1:** Der Text nennt die Chance 1 zu 365 nicht mehr, g1 zeigt sie mit Quelle. Das ist ok, das Schaubild ergänzt den Text.
 6. **Vor der Freigabe:** Ghost neu laden (g7 neu, g4/g5 entfallen), Vorschau prüfen.
+
+## Runde 14 – 25.10.2026 (Prüfer, Umbau mit Tiger-Bild als rotem Faden, Commit 1bf8bd3)
+
+**Ergebnis: NICHT BESTANDEN** (drei kleine Mängel, je ein Satz; Aufbau und Logik tragen jetzt gut)
+
+Geprüft: ganze neue Fassung von beitrag.md gegen die Originale (Runde 5–8 gelesen) und gegen Tills Eingang. `python3 tools/lexical.py` läuft ohne Fehler (rc 0).
+Kurzfassung 5 Punkte. Teaser 121 Zeichen ≠ Titel. Bilder: KI-Foto, g1, g7, g3. Langtext-Gerüst: Einleitung 2 Absätze, Kurzfassung, H2, Zum Ausprobieren, Einschätzung · Gedanke · Quellen.
+
+### (1) Brücken-Aussage und Vergleich
+- **„So arbeitet KI im Kern, vereinfacht gesagt: Sie erkennt Muster. Fehlt ihr der Zusammenhang, füllt sie die Lücke mit dem, was am wahrscheinlichsten passt …“** – vertretbar. Gedeckt durch OpenAI (Pretraining = Vorhersage des nächsten Worts; seltene Fakten „cannot be predicted from patterns alone and hence lead to hallucinations“) und noch direkter durch OWASP LLM09: „Hallucinations occur when LLMs fill gaps in their training data using statistical patterns, without truly understanding the content.“ „Am wahrscheinlichsten“ ist bei „vereinfacht gesagt“ ok. **Aber** der Schluss „und klingt dabei genauso sicher …“ ist wieder als Regel formuliert → P1.
+- **Vergleich Bilderkennung ↔ Sprachmodell:** „Es zeigt eine Bilderkennung, aber bei Texten passiert im Grunde dasselbe. Dort heißt es Halluzination“ – auf Prinzip-Ebene vertretbar, „im Grunde“ schwächt ab. Die Kennzeichnung als Illustration kommt aber erst nach der Kurzfassung. Davor stehen Indikativ-Sätze („sagt: Tiger“, „Und sie zweifelt nicht“), als wäre das ein beobachtetes Ergebnis → P3.
+
+### (2) Tills Fälle
+- **Steckachse:** ok – „‚100 %‘ sicher, dass es passt“, „unter anderem aus der Breite der Hinterradnabe“, „Länge/Gewinde nicht geprüft“, „Originalachse genauer prüfen“, alles aus Tills Text. Behauptet nicht, die Achse habe nicht gepasst. „Das ist der Tiger in Textform …“ ist Deutung, keine Ich-Aussage, und deckt sich mit Tills „nicht zwingend alle notwendigen Informationen … trotzdem eine eindeutige Antwort“.
+- **Excel:** ok – „Preisen, Kosten und Umsatz“, „Ich wollte … Vorjahr … Die Tabelle rechnete das zunächst anders. Ein einfaches Beispiel …“. Keine Behauptung, die Tabelle habe 120.000 gezeigt. Selbstprüfung jetzt mit Tills Grund (N1 erledigt). Kein „Geschäftsmodell“, kein Zweck. Rest-Signal siehe Hinweis 4.
+
+### (3) Logik für den Bäcker
+Schlüssig: Bild → Prinzip „Muster ohne Zusammenhang“ → dasselbe bei ChatGPT → zwei eigene Fälle → Stufen → Regeln „Gib der KI den Zusammenhang“ → Test. Die Brücke macht den roten Faden verständlich, die Regeln knüpfen sichtbar an.
+
+### Mängel
+
+**P1 – Einleitung: „klingt dabei genauso sicher“ wieder als Regel** (Rückfall von F5, Runde 5)
+Text: „… füllt sie die Lücke mit dem, was am wahrscheinlichsten passt, und klingt dabei genauso sicher wie bei einer richtigen Antwort.“ OpenAI: „might sound confident“, „may express high confidence“. Die Kurzfassung hat es richtig („kann“).
+→ „… und kann dabei genauso sicher klingen wie bei einer richtigen Antwort.“
+
+**P2 – Regel 2: Anthropic-Aussage deckt jetzt zwei Dinge ab**
+Text: „Erlaube ihr deshalb ausdrücklich, Unsicherheit zuzugeben, und lass sie fehlende Angaben nennen. Laut Anthropics Dokumentation zu Claude kann das falsche Angaben deutlich verringern.“ „Das“ bezieht sich auf beides; Anthropic sagt es nur für die Erlaubnis, Unsicherheit zuzugeben.
+→ „Laut Anthropics Dokumentation zu Claude kann schon die Erlaubnis, Unsicherheit zuzugeben, falsche Angaben deutlich verringern.“
+
+**P3 – Kennzeichnung kommt zu spät, der Einstieg liest sich wie ein echtes Ergebnis**
+Absatz 1 („… sieht Streifen und sagt: Tiger.“) und Absatz 2 („Die KI erkennt … Und sie zweifelt nicht.“) stehen im Indikativ. „Das Bild ist eine Illustration, kein Messergebnis“ folgt erst nach der Kurzfassung. Die Bildunterschrift („Mit KI nachgestelltes Beispielbild“) kennzeichnet das Foto, nicht die angebliche Reaktion der Bilderkennung.
+→ Den Satz „Das Bild ist eine Illustration, kein Messergebnis: Das Motiv kursiert im Netz, unsere Fassung ist mit KI nachgestellt.“ an den Anfang von Absatz 2 setzen (direkt nach dem Bild) und im Abschnitt „Dasselbe Prinzip“ streichen. Alternativ in Absatz 1 „… könnte daraus einen Tiger machen“ (wie in Runde 10).
+
+### Hinweise (kein Mangel)
+
+1. **Quelle für die Brücke:** OWASP sagt fast wörtlich, was die Brücke behauptet. Ein Halbsatz macht sie belastbar: „So beschreibt es auch OWASP: Sprachmodelle füllen Lücken mit statistischen Mustern, ohne den Inhalt wirklich zu verstehen.“ (Quelle ist schon verlinkt.)
+2. **„Dasselbe Prinzip“ / „im Grunde dasselbe“:** Genauer wäre „Ein ähnliches Prinzip bei ChatGPT“ / „bei Texten passiert etwas Ähnliches“. Eine Bilderkennung wählt aus festen Begriffen, ein Sprachmodell erzeugt Text. Vertretbar ist beides, „ähnlich“ ist unangreifbar.
+3. **„Beim Tiger fehlte der Zaun.“** Der Zaun ist im Bild zu sehen, die KI hat ihn übersehen → „Beim Tiger übersah die KI den Zaun.“
+4. **Rest-Signal Planung:** Eine mehrjährige Umsatzsteigerung in einer Kalkulation „mit Preisen, Kosten und Umsatz“ lässt weiter auf ein Vorhaben schließen. Neutraler geht es nur ohne das Wachstumsbeispiel. Till hat das Beispiel in dieser Form gewollt – zur Kenntnis.
+5. **Vor der Freigabe:** Ghost neu laden (g7 neu, g4/g5 entfallen, KI-Foto), Vorschau prüfen.
