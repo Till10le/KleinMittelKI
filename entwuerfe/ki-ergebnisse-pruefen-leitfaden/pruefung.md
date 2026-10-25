@@ -374,3 +374,20 @@ Tills Eingang: „ChatGPT hatte **unter anderem** aus der bekannten Hinterrad-Ei
 - Formelkasten Z. 66 nennt C34 weiter „Anzahl der Verkäufe pro Jahr“ (Tills Originalbezeichnung), der Text „100 Stück eingeplant“. Vertretbar, weil es die Originalformel ist.
 - INTERN-Absatz (e) erwähnt die neue Steckachsen-Formulierung nicht ausdrücklich; nach R6-1 gibt es keinen Grund mehr dafür.
 - Ghost hat weiter die Fassung vom 23.10. → nach der Korrektur neu laden (g4, g6, Vorschaubild), dann Punkt 13.
+
+## Runde 7 – 25.10.2026 (Prüfer, Nachprüfung R6-1 und drei Hinweise)
+
+**Ergebnis: BESTANDEN**
+
+Geprüft: `git diff --word-diff HEAD~1 HEAD` auf beitrag.md (Commit a600f6b). Geändert sind genau die vier Stellen, sonst nichts.
+`python3 tools/lexical.py` läuft ohne Fehler (rc 0).
+
+| Stelle | Prüfung |
+|---|---|
+| R6-1, Z. 53 | ok – „ChatGPT hatte unter anderem aus der Breite der Hinterradnabe von 148 Millimetern auf die passende Achse geschlossen.“ Deckt sich mit Tills „unter anderem aus der … Einbaubreite von 148 Millimetern“, Satz grammatisch sauber |
+| Z. 33 | ok – „nach dem Titel der Doktorarbeit dieses Autors“, Bezug eindeutig |
+| Z. 73 | ok – „den die Formel nach ihrer eigenen Logik liefern sollte“ |
+| Z. 87 | ok – „Als mögliche Folgen von Fehlinformation nennt OWASP …“ = „This vulnerability can lead to … reputational damage, and legal liability“ |
+
+Damit sind alle Mängel aus Runde 5 und 6 behoben. Offen bleiben nur bewusst entschiedene Punkte: Länge (H10), Titel (H11), Eintrag zu Tills Bild-Wunsch in `entscheidungen.md` (H13) sowie die INTERN-Punkte für Till.
+Vor der Freigabe: Ghost-Entwurf neu laden (g4, g6, Vorschaubild) und die Vorschau prüfen (Punkt 13, doppelter Titel).
