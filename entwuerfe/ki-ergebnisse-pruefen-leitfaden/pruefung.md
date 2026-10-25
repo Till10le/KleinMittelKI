@@ -562,3 +562,28 @@ Text: „Laut Anthropic kann das falsche Angaben deutlich verringern.“ Die Dok
 - **Regel 3:** „deckt oft den Fehler auf“ – „oft“ ist nicht belegt → „kann den Fehler aufdecken“.
 - **g5 und Text:** In g5 heißt Regel 3 „Zahlen nicht der KI glauben“, im Text „Zahlen von Hand nachrechnen“ → eins angleichen (am einfachsten den Text). Sonst passt g5 zu den fünf Regeln. g4 passt zum Text und ist jetzt der einzige Ort mit der Herleitung – richtig so.
 - **Bild:** Laut INTERN und `entscheidungen.md` ist das Foto mit dem Originalbild aus dem Netz als Vorlage erzeugt. Till hat es nach dem Hinweis auf das Urheberrechts-Risiko bewusst freigegeben („Nimm das Foto“). Die Kennzeichnung „Mit KI nachgestelltes Beispielbild nach einem Motiv, das im Netz kursiert“ ist ehrlich. Das Rechtsrisiko bleibt Tills Entscheidung; g6 liegt als Ersatz bereit.
+
+## Runde 12 – 25.10.2026 (Prüfer, Nachprüfung Runde 11, Commit 561443a)
+
+**Ergebnis: NICHT BESTANDEN** (ein Satz in Fall 2, neu beim Umsetzen entstanden; sonst alles sauber)
+
+Geprüft: `git diff --word-diff HEAD~1` auf beitrag.md und entscheidungen.md. `python3 tools/lexical.py` läuft ohne Fehler (rc 0).
+
+| Punkt | Prüfung |
+|---|---|
+| K1 Formel | ok – „machte aus dem Gewinn pro Stück einen Anteil am Preis und nahm diesen dann mit der Stückzahl mal statt mit dem Umsatz. Heraus kam kein Eurobetrag“, deckt sich mit Tills Text |
+| K2 Fall 3 | ok – „Es fand unter anderem …“ |
+| K3 Anthropic | ok – „Laut Anthropics Dokumentation zu Claude …“ |
+| K4 Kurzfassung ↔ Text | ok – „Als typische Fehler nennt OpenAI falsche Datumsangaben sowie erfundene Zitate und Quellen.“ (Hilfeseite: „Incorrect … dates“, „Fabricated quotes, … citations or references“). Der Anschluss „trotzdem kein Naturgesetz“ liest sich gut |
+| K5 Prompt-Kasten | ok – Till hat die Entscheidung delegiert („das musst du mir sagen, du bist die KI …“, 25.10.). Das steht im INTERN-Absatz und in `entscheidungen.md` (angehängt, nichts gelöscht). Die zwei Sätze sind fachlich passend (Studie: „acknowledge uncertainty instead of speculating“; Anthropic: Erlaubnis, Unsicherheit zuzugeben) |
+| Hinweise | ok – OWASP „mit Sprachmodellen“ und „Folgen von Fehlinformation“; „Ähnlich kannst du … nachhelfen“; Steckachse mit Anhänger-Halbsatz; „ChatGPT verwechselte“; Studie „wie viel … bringen kann“; Regel 3 „kann … aufdecken“, Titel = g5; Box „300 € (ohne Schwund)“ |
+
+### Mangel
+
+**L1 – Fall 2: „standen … in der Tabelle“ behauptet mehr als Till**
+Text: „Mit einfachen Beispielzahlen standen statt 285 Euro nur 28,50 in der Tabelle (Zahlen im Schaubild).“
+Die Beispielzahlen sind eine nachträgliche Veranschaulichung, nicht Tills echte Tabelle. Tills Text: „Mit der fehlerhaften Formellogik **käme** dagegen lediglich der Zahlenwert 28,50 heraus“ (die Originaldaten sind vertraulich).
+→ „Mit einfachen Beispielzahlen käme statt 285 Euro nur 28,50 heraus (Zahlen im Schaubild).“
+
+### Hinweis
+- Die Kurzfassung hat weiter 5 Punkte, die Bilder sind unverändert (KI-Foto, g1, g4, g3, g5). Vor der Freigabe Ghost neu laden und die Vorschau prüfen (Punkt 13).
