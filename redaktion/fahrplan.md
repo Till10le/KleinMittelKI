@@ -28,8 +28,8 @@ Wer etwas einträgt oder verschiebt, pflegt diese Tabelle. Status: `eingeplant` 
 |---|---|---|
 | So 25.10. 21:47 (Ausnahme) | D eu-eurobarometer-ki-unternehmen | veröffentlicht 25.10. (Ghost-Lauf 21:47) |
 | Di 27.10. 7:00 | A ki-ergebnisse-pruefen-leitfaden (7:00) + Newsletter #4 (7:05) | A in Ghost eingeplant (Ghost-Lauf 21:47); Newsletter wartet auf „N ja“ zu Fassung 2 |
-| Do 29.10. 7:00 | C nicht-jedes-problem-braucht-ki | Tills Wahl: einreihen. Freigabe steht noch auf „sofort“ – Till antwortet „C Donnerstag“, sonst geht C am 25.10. um 21:47 online |
+| Do 29.10. 7:00 | – (C nicht-jedes-problem-braucht-ki schon am 25.10. 21:47 veröffentlicht, Freigabe stand auf „sofort“) | frei – Kandidat B iab-betriebe-sehen-keine-ki-anwendung, Till gefragt (Mail 26.10.) |
 | Di 03.11. 7:00 | Kandidat: ki-recherche-assistent-selbstversuch | wartet-auf-till |
-| Do 05.11. 7:00 | Kandidat: iab-betriebe-sehen-keine-ki-anwendung | wartet-auf-till |
+| Do 05.11. 7:00 | – (IAB rückt auf 29.10., falls Till „B ja“ schreibt) | frei |
 | Di 10.11. 7:00 | – | frei |
 | Do 12.11. 7:00 | – | frei |
