@@ -536,6 +536,26 @@ def cmd_testmail(a) -> None:
     if "#newsletter" not in (meta.get("tags") or []):
         raise GhostFehler("Testmails nur für Newsletter. Beiträge gehen nie per E-Mail raus.")
     fingerabdruck = inhalt_hash(folder)
+    state_file = folder / "ghost.json"
+    vorher = json.loads(state_file.read_text()) if state_file.exists() else {}
+    if vorher.get("id"):
+        geplant = find_post(vorher["id"], formats="lexical")
+        if geplant["status"] == "scheduled":
+            # Till 27.10.2026: auch den schon eingeplanten Newsletter als Testmail sehen.
+            # Nur lesen und Testmail auslösen – am eingeplanten Beitrag wird nichts geändert.
+            lex, intern = _ohne_intern(geplant["lexical"])
+            rest = _restliche_platzhalter(lex)
+            if intern or rest:
+                raise GhostFehler(f"SPERRE: Eingeplanter Newsletter enthält noch INTERN ({intern}) "
+                                  f"oder Platzhalter {rest}. Keine Testmail, nichts geändert.")
+            api("POST", f"email_previews/posts/{geplant['id']}/",
+                body={"emails": [TESTMAIL_AN], "newsletter": _aktiver_newsletter()})
+            vorher.update({"testmail_an": TESTMAIL_AN, "testmail_status": "scheduled",
+                           "testmail_zeit": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")})
+            state_file.write_text(json.dumps(vorher, ensure_ascii=False, indent=2) + "\n")
+            print(json.dumps({k: vorher.get(k) for k in ("slug", "status", "published_at", "testmail_an",
+                                                          "testmail_zeit")}, ensure_ascii=False, indent=2))
+            return
     state = _draft(folder)  # bricht ab, wenn der Newsletter in Ghost nicht mehr Entwurf ist
     p = find_post(state["id"], formats="lexical")
     lex, removed = _ohne_intern(p["lexical"])
