@@ -110,8 +110,14 @@ def api(method: str, path: str, query: dict | None = None, body: dict | None = N
     req = urllib.request.Request(url, data=data, method=method, headers=headers)
     try:
         with urllib.request.urlopen(req, context=_ssl_context(), timeout=60) as r:
-            text = r.read().decode()
-            return json.loads(text) if text else {}
+            text = r.read().decode(errors="replace")
+            if not text.strip():
+                return {}
+            try:
+                return json.loads(text)
+            except json.JSONDecodeError:
+                raise GhostFehler(f"Ghost antwortet {r.status} auf {method} {path} ohne JSON "
+                                  f"(Content-Type {r.headers.get('Content-Type')}): {text[:300]}") from None
     except urllib.error.HTTPError as e:
         detail = e.read().decode(errors="replace")
         try:
@@ -548,8 +554,9 @@ def cmd_testmail(a) -> None:
             if intern or rest:
                 raise GhostFehler(f"SPERRE: Eingeplanter Newsletter enthält noch INTERN ({intern}) "
                                   f"oder Platzhalter {rest}. Keine Testmail, nichts geändert.")
-            api("POST", f"email_previews/posts/{geplant['id']}/",
-                body={"emails": [TESTMAIL_AN], "newsletter": _aktiver_newsletter()})
+            nl = _aktiver_newsletter()
+            api("POST", f"email_previews/posts/{geplant['id']}/", query={"newsletter": nl},
+                body={"emails": [TESTMAIL_AN], "newsletter": nl})
             vorher.update({"testmail_an": TESTMAIL_AN, "testmail_status": "scheduled",
                            "testmail_zeit": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")})
             state_file.write_text(json.dumps(vorher, ensure_ascii=False, indent=2) + "\n")
