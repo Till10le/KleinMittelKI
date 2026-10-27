@@ -46,3 +46,4 @@ Nur der Chefredakteur schreibt hier, und nur, was Till tatsächlich gesagt hat. 
 - 2026-10-25 · ki-ergebnisse-pruefen-leitfaden: veröffentlichen Di 27.10. 7:00 · JA · „A ist gut nun.“ (Mail) und „Habe A freigegeben“ (Chat)
 - 2026-10-25 · Newsletter-Freigabe: Till will den Newsletter vor der Freigabe so sehen, wie er ankommt, auch grafisch → Ghost schickt sonntags die echte Testmail nur an Till (neuer Befehl ghost.py testmail), Redaktions-Mail nur noch als Begleitzettel · JA · „Ich will sehen wie der Newsletter final aussieht auch grafisch“, auf die Frage nach der Änderung an ghost.py: „JA!“ (Chat)
 - 2026-10-25 · Newsletter-Versand Di 7:05 statt 7:00, damit der Link zum Hauptbeitrag (7:00) schon geht · JA · „Okay.“ (Chat, auf den Vorschlag 7:05)
+- 2026-10-27 · newsletter-2026-10-27 (Fassung 2): einplanen Di 27.10. 7:05 · JA · „Ja Freigabe bitte einplanen.“ (Mail, Verlauf KMK-Newsletter · Di 27.10., Antwort auf Fassung 2)
