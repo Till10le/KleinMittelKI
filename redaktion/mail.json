@@ -123,7 +123,8 @@
       "betreff": "KMK-Newsletter · Di 27.10. · Fassung 1",
       "art": "newsletter",
       "eintraege": {
-        "N": "newsletter-2026-10-27"
+        "N": "newsletter-2026-10-27",
+        "B": "iab-betriebe-sehen-keine-ki-anwendung"
       },
       "fassungen": [
         {
@@ -137,7 +138,10 @@
           "mail_id": "1a174acfa893c632"
         }
       ],
-      "fragen_offen": []
+      "fragen_offen": [],
+      "erledigt": {
+        "N": "eingeplant 7:05, versendet 27.10. (Ghost-Lauf 7:47), gemeldet (Mail 1a17c3a48051b111)"
+      }
     },
     {
       "datum": "2026-10-25",
@@ -201,7 +205,8 @@
     "1a17717ccd1e380f",
     "1a17aafc0633023e",
     "1a17ab0291c36e7d",
-    "1a17ac67e6fa0f3c"
+    "1a17ac67e6fa0f3c",
+    "1a17c3a48051b111"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
