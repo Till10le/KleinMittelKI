@@ -182,6 +182,17 @@
       "eintraege": {
         "A": "ki-ergebnisse-pruefen-leitfaden"
       }
+    },
+    {
+      "datum": "2026-11-01",
+      "thread_id": "1a19779addc6b20f",
+      "betreff": "KMK-Newsletter · Di 3.11. · Testmail fehlt noch",
+      "art": "newsletter",
+      "eintraege": {
+        "N": "newsletter-2026-11-03"
+      },
+      "fassungen": [],
+      "testmail_fehlt_gemeldet": "2026-11-01 15:17"
     }
   ],
   "eigene_ids": [
@@ -206,7 +217,8 @@
     "1a17aafc0633023e",
     "1a17ab0291c36e7d",
     "1a17ac67e6fa0f3c",
-    "1a17c3a48051b111"
+    "1a17c3a48051b111",
+    "1a19779addc6b20f"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
