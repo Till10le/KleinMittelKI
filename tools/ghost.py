@@ -307,10 +307,20 @@ def _draft(folder: Path) -> dict:
             existing = find_post(meta["slug"])
         except GhostFehler:
             existing = None
-        if existing:
+        if existing and existing["status"] == "draft" and newsletter:
+            # 01.11.2026 (Till freigegeben): Ein Lauf hatte den Newsletter-Entwurf angelegt, ghost.json aber nicht
+            # committet (Testmail schlug fehl). Ohne Übernahme blockiert jeder weitere Lauf als „Dublette“.
+            # Nur Newsletter-Entwürfe, nie veröffentlichte oder eingeplante Beiträge.
+            print(f"Hinweis: Newsletter-Entwurf '{meta['slug']}' existiert schon (id {existing['id']}) – "
+                  f"wird übernommen und aktualisiert.", file=sys.stderr)
+            current = find_post(existing["id"], formats="lexical")
+            post["updated_at"] = current["updated_at"]
+            res = api("PUT", f"posts/{existing['id']}/", body={"posts": [post]})
+        elif existing:
             raise GhostFehler(f"Es gibt schon einen Beitrag mit Slug '{meta['slug']}' ({existing['status']}). "
                               f"Dublette? Sonst Slug ändern oder ghost.json mit der id anlegen.")
-        res = api("POST", "posts/", body={"posts": [post]})
+        else:
+            res = api("POST", "posts/", body={"posts": [post]})
     p = res["posts"][0]
     state.update({"id": p["id"], "uuid": p["uuid"], "slug": p["slug"], "titel": p["title"], "status": p["status"],
                   "updated_at": p["updated_at"], "vorschau": f"{PUBLIC_SITE}/p/{p['uuid']}/",
