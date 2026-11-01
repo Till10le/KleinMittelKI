@@ -93,7 +93,7 @@ Dienstag, kürzere (Entwicklungen, Studien & Zahlen) auf den nächsten freien Do
 Stehen mehrere Entwürfe in einer Mail, bekommt jeder einen eigenen Termin. Am Ende der Mail eine Zeile „Fahrplan:“ mit den nächsten
 vier Terminen (z. B. „Di 27.10. A · Do 29.10. C · Di 3.11. frei · Do 5.11. frei“).
 
-## Newsletter-Mail (Sonntag 10:17, eigener Verlauf)
+## Newsletter-Mail (Sonntag, sobald die Testmail da ist, eigener Verlauf)
 
 Till will den Newsletter so sehen, wie er ankommt (25.10.2026). Deshalb schickt **Ghost** die echte Testmail
 (Ghost-Lauf, `ghost.py testmail`, nur an Till). Die Redaktions-Mail ist nur der Begleitzettel und kommt erst, wenn

@@ -248,7 +248,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Versand: Dienstag 03.11.2026, 7:05 (erst nach Tills „N ja“)
 - Inhalt: 01 eu-eurobarometer-ki-unternehmen (live) · 02 nicht-jedes-problem-braucht-ki (live) · 03 Zahl „90 %“ (EU-Kommission IP/26/2160) · 04 Gedanke. Wird ki-recherche-assistent-selbstversuch vor Di freigegeben, kommt er als 01 dazu (Fassung 2).
 - Datei: entwuerfe/newsletter-2026-11-03/beitrag.md, Prüfung: pruefung.md
-- Verlauf: 2026-11-01 Sonntags-Lauf: Entwurf Chefredakteur, Prüfer bestanden (2 Formulierungshinweise umgesetzt) → newsletter-vorschlag. Nicht in Ghost; Mail-Lauf 10:17 schickt ihn Till.
+- Verlauf: 2026-11-01 Sonntags-Lauf: Entwurf Chefredakteur, Prüfer bestanden (2 Formulierungshinweise umgesetzt) → newsletter-vorschlag. Nicht in Ghost; Mail-Lauf 10:17 schickt ihn Till. · 2026-11-01 12:47 Ghost-Lauf: keine Testmail (Prompt ohne Testmail-Schritt, repariert 13:30); nächster Versuch Ghost-Lauf 18:47.
 
 ### newsletter-2026-10-27
 - Status: versendet

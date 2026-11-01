@@ -44,6 +44,11 @@ kein Internet hatten (DNS-Fehler, keine Originalquelle lesbar). Beide sind desha
 Standard-Umgebung; Recherche über WebSearch und WebFetch. Die alten Versionen sind pausiert („alt, ohne Internet“).
 Die Shell dort erreicht das Internet nicht – das Logo liegt deshalb als `assets/logo.png` im Repo.
 
+Stand 01.11.2026: Die Newsletter-Testmail kam nicht, weil der Prompt des Ghost-Laufs den Testmail-Schritt nicht nannte (der Lauf
+um 12:47 fand nichts zu tun und endete ohne Spur). Der Prompt nennt jetzt alle Schritte (abarbeiten, Entwürfe, Testmail, Index) und
+verlangt, jeden Fehler in den Bericht zu schreiben und zu committen. Ein Lauf kann einen anderen per `fire_trigger` oft nicht starten
+(Berechtigung, zuletzt 27.10. und 01.11.); dann holt der nächste geplante Lauf es nach.
+
 ## Ein Beispiel-Durchlauf
 
 - Do 6:47 Scout findet 3 Themen der Woche → Do 8:17 Redaktionsbriefing an Till

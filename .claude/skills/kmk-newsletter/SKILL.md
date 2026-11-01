@@ -15,7 +15,7 @@ Testmail, er schreibt ggf. hin und her und gibt dann frei. Der Newsletter liegt 
 wird er erst nach „N ja“, für **Dienstag 7:05** (der Hauptbeitrag geht um 7:00 online, so funktioniert sein Link schon).
 
 1. **Sonntag 9:47** (Sonntags-Lauf): Entwurf schreiben – `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md` mit Tag `#newsletter`,
-   Kategorie leer lassen, Prüfer prüft, dann Ghost-Lauf starten. Der legt den Entwurf an und schickt die Testmail
+   Kategorie leer lassen, Prüfer prüft, dann Ghost-Lauf starten (wird das verweigert: der Ghost-Lauf um 12:47 holt es nach). Der legt den Entwurf an und schickt die Testmail
    (`python3 tools/ghost.py testmail entwuerfe/<slug>`: nur an till.zehnle@gmail.com, INTERN entfernt, nichts eingeplant). Vorher prüfen, ob es für diesen Dienstag schon einen gibt
    (keine Dubletten). Themen der Vorwoche nicht wiederholen (frühere `newsletter-*`-Ordner und Index lesen).
 2. **Sobald die Testmail raus ist** (Mail-Lauf Sonntag): kurzer Begleitzettel an Till (Skill `kmk-mail`, Abschnitt Newsletter).

@@ -20,9 +20,9 @@ Die Läufe arbeiten zusammen (`docs/routinen.md`):
 | Lauf | Wann | Umgebung | Aufgabe |
 |---|---|---|---|
 | Redaktions-Lauf | Do 6:47 + Express | Standard (Websuche/Webabruf, kein Ghost) | Scout (nur Do); freigegebene Themen schreiben, Grafiken, Prüfung |
-| Ghost-Lauf | So–Fr 7:47, 12:47, 18:47, 21:47 | KMK-Ghost (nur Ghost) | Index; geprüfte Entwürfe nach Ghost; Freigaben ausführen |
+| Ghost-Lauf | So–Fr 7:47, 12:47, 18:47, 21:47 | KMK-Ghost (nur Ghost) | Index; geprüfte Entwürfe nach Ghost; Newsletter-Testmail; Freigaben ausführen |
 | Mail-Lauf | Mo–Fr 8:17, 12:17, 18:17 | Standard, mit Gmail | Redaktionsbriefing Do 8:17; Vorschau-Mails; Tills Antworten auswerten; Bestätigungen |
-| Mail-Lauf Sonntag | So 10:17, 12:17, 15:17, 18:17, 21:17 | Standard, mit Gmail | Newsletter-Mail 10:17; Änderungen einarbeiten; „N ja“ eintragen |
+| Mail-Lauf Sonntag | So 10:17, 12:17, 15:17, 18:17, 21:17 | Standard, mit Gmail | Newsletter-Begleitzettel, sobald die Testmail da ist; Änderungen einarbeiten; „N ja“ eintragen |
 | Sonntags-Lauf | So 9:47 | Standard (Websuche/Webabruf) | Ideen, Wochenbericht, Newsletter-Entwurf, Social-Paket |
 
 ## Veröffentlichungs-Takt (Tills Entscheidung 25.10.2026)
@@ -70,7 +70,10 @@ Ein Lauf außerhalb von Donnerstag 6:30–7:30 Uhr ist ein Express-Lauf: Schritt
    schlägt sie fehl, Fehler in den Bericht.
    Nur um 7:47 Uhr zusätzlich: `python3 tools/ghost.py index` und `python3 tools/ghost.py referenz` (Vorbilder aktuell halten).
    `entwuerfe/<slug>/ghost.json` immer mit committen – der Mail-Lauf braucht ihn.
-3. Hat sich nichts geändert: sofort beenden, kein Commit, keine Nachricht. Sonst Bericht ergänzen, Commit „Ghost <Datum> <Zeit>“, push.
+3. Hat sich nichts geändert und ist nichts fehlgeschlagen: sofort beenden, kein Commit, keine Nachricht. Sonst Bericht ergänzen
+   (Abschnitt „Ghost“), Commit „Ghost <Datum> <Zeit>“, push. **Ist ein Befehl fehlgeschlagen** (auch `testmail`): Fehlermeldung
+   wörtlich in den Bericht und trotzdem committen und pushen – ein Fehler darf nie unsichtbar bleiben (01.11.2026: Testmail
+   fehlte, ohne Spur im Repo).
 4. Du schreibst Till keine Mail – das macht der Mail-Lauf.
 
 ## Mail-Lauf (Mo–Fr 8:17, 12:17, 18:17)
@@ -99,11 +102,12 @@ Lies den Skill `kmk-mail` vollständig. Dann:
    in der Bestätigung schreiben: „Wird jetzt ausgearbeitet, Vorschau-Link kommt in etwa einer Stunde.“
 5. `redaktion/mail.json` aktualisieren, Commit „Mail <Datum> <Zeit>“, push. Nichts passiert: sofort beenden, kein Commit.
 
-**Sonntags** (So 10:17, 12:17, 15:17, 18:17, 21:17): sobald die Testmail der aktuellen Fassung raus ist (`ghost.json` →
+**Sonntags** (So 10:17, 12:17, 15:17, 18:17, 21:17): in **jedem** dieser Läufe, sobald die Testmail der aktuellen Fassung raus ist (`ghost.json` →
 `testmail_hash` gleich dem Fingerabdruck), die kurze Newsletter-Mail nach `kmk-mail` schicken; danach Tills
 Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), prüfen (Prüfer), pushen, Ghost-Lauf starten
 (`fire_trigger` trig_01DYxG6NMz2Lfzf6wG8BTikR, ohne Zusatztext) für die neue Testmail, dann kurze Mail zur neuen Fassung;
-„N ja“ über `mailfreigabe.py --art newsletter-text` eintragen. Mo–Fr gelten Schritte 1–5 auch für den Newsletter-Verlauf; Idee-Mails werden auch sonntags erfasst.
+„N ja“ über `mailfreigabe.py --art newsletter-text` eintragen. Fehlt um 12:17 noch immer die Testmail: einmal je Sonntag kurze Mail an Till
+mit dem Grund laut Bericht (Abschnitt „Ghost“) bzw. „Grund unbekannt“, und dass der nächste Ghost-Lauf es erneut versucht. Mo–Fr gelten Schritte 1–5 auch für den Newsletter-Verlauf; Idee-Mails werden auch sonntags erfasst.
 
 ## Sonntags-Lauf (So 9:47)
 
@@ -113,7 +117,8 @@ Antworten im Newsletter-Verlauf auswerten – Änderungen einarbeiten (Autor), p
 3. Newsletter-Entwurf für Dienstag nach Skill `kmk-newsletter` als `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md`,
    vom **Prüfer** prüfen lassen, Status `newsletter-vorschlag`. Nicht selbst nach Ghost: Nach dem Push (Schritt 6) den
    Ghost-Lauf starten (`fire_trigger` trig_01DYxG6NMz2Lfzf6wG8BTikR, ohne Zusatztext). Er legt den Newsletter als Entwurf an
-   und schickt Till Ghosts echte Testmail. Eingeplant wird erst nach „N ja“.
+   und schickt Till Ghosts echte Testmail. Wird der Start verweigert (kommt aus geplanten Läufen vor): nicht wiederholen, im
+   Wochenbericht vermerken – der Ghost-Lauf um 12:47 holt die Testmail nach. Eingeplant wird erst nach „N ja“.
 4. **Social**: Paket für die Woche nach Skill `kmk-social`.
 5. **Übersicht prüfen:** Stimmt `docs/uebersicht.html` noch mit `docs/routinen.md`, den Agenten und Skills überein (Läufe,
    Zeiten, Kanäle, Mail-Befehle)? Abweichungen in den Wochenbericht und als Frage F… ins Donnerstags-Briefing
