@@ -70,6 +70,39 @@ Ins Board als `vorgeschlagen`: `angebot-aus-preisliste-praxistest`, `ki-kompeten
 - [ ] Nebenbefund 2026-10-25: Der AI-Act-Beitrag vom 03.10. enthält die Omnibus-Übergangsfrist bis 02.12.2026 für Art. 50 bereits – kein Update nötig.
   Nach dem 02.12.2026 kurz prüfen, ob „Übergangsfrist“ im Präsens noch stimmt.
 
+### Ideen-Agent, Sonntags-Lauf 2026-11-01
+
+Monatsrhythmus-Check: Di 03.11. (Woche 1, Lagebericht) → kein Lagebericht; Kandidat laut Fahrplan `ki-recherche-assistent-selbstversuch`
+(Praxistest, wartet auf Till). Rhythmus-Frage monatlich/vierteljährlich weiter offen. Di 10.11. (Woche 2, Wissen) → **kein fertiger
+Wissensartikel**; Kandidaten nur als `vorgeschlagen`: `ki-kompetenz-pflicht-mitarbeiter`, `eu-produkthaftung-software-ki` (Frist 09.12.),
+`werkzeuge-besprechungsnotizen-datenschutz`. Puffer: 0 fertige Wissensartikel (Soll 1–2). Di 17.11. (Woche 3, Praxistest) →
+`angebot-aus-preisliste-praxistest` hängt an Tills Test. Rubrik-Mix laut Index: Leitfäden 2, KI in der Praxis 2, Grundlagen 2 gegenüber
+Entwicklungen 6 – Wissen und Praxis bleiben dünn. Ins Board als `vorgeschlagen`: `betriebsrat-ki-einfuehren`, `stellenanzeige-mit-ki-praxistest`.
+
+- [ ] **aufmass-handschrift-praxistest** – „Handzettel vom Aufmaß abtippen lassen: Wie gut liest KI meine Schrift?“
+  - Rubrik/Format: Praxistests / KI in der Praxis, Praxistest (700–1.200 Wörter).
+  - Für wen: Inhaber, Meister und Büro in Handwerksbetrieben 5–50 Beschäftigte, die Aufmaße, Stundenzettel oder Notizen von der Baustelle
+    von Hand ins Büro übertragen.
+  - Testaufbau (unter einer Stunde): Till schreibt drei fiktive Zettel selbst von Hand (Aufmaß mit Maßen und Stückzahlen, Stundenzettel,
+    Notiz mit Abkürzungen), fotografiert sie mit dem Handy (einmal gut, einmal schräg/schlecht beleuchtet) und lässt ChatGPT oder Claude
+    daraus eine Tabelle machen. Redaktion liefert Vorlage-Zettel zum Abschreiben und Zählbogen: falsch gelesene Zahlen, erfundene Einträge,
+    Rückfragen. Keine echten Kundendaten.
+  - Leser kann danach: entscheiden, ob Foto statt Abtippen bei ihm in Stufe „gezielt prüfen“ gehört (Verweis Prüf-Leitfaden), und welche
+    Zahlen er immer gegenliest.
+  - Abgrenzung: `rechnungen-automatisch-erfassen` (Tills Entwurf) behandelt gedruckte Rechnungen; hier Handschrift. Till entscheidet, ob es zusammenpasst.
+  - Quelle: keine externe nötig. Braucht von Till: ja/nein, ca. 45 Min. Test, Zählbogen, Fotos, 2–3 Sätze Fazit. Relevanz vorläufig 8/10.
+- [ ] **kostenlose-ki-hilfe-fuer-betriebe** – „Wo kleine Betriebe kostenlos KI-Hilfe bekommen, die nichts verkaufen will“
+  - Rubrik/Format: Wissen / Leitfäden, Anleitung (ca. 550 Wörter) mit Übersicht der Anlaufstellen.
+  - Für wen: Inhaber 1–50 Beschäftigte ohne IT-Abteilung, die einen ersten Schritt machen wollen, aber keinen Berater kaufen möchten.
+  - Idee: öffentlich finanzierte Anlaufstellen (Mittelstand-Digital Zentren, IHK/Handwerkskammer-Beratung, ggf. Landesprogramme) mit dem,
+    was sie konkret anbieten. **Keine Quelle in diesem Lauf gelesen – Angebote, Kosten, Laufzeiten ungeprüft.** Insbesondere klären, ob
+    frühere Förderprogramme (z. B. „go-digital“) noch laufen; nichts aus Erinnerung übernehmen.
+  - Passung prüfen: kein Vertriebs-CTA, keine Wertung einzelner privater Anbieter, nur öffentliche Stellen. Leser kann danach: eine
+    Anlaufstelle in der Nähe anrufen. Braucht von Till: Einschätzung, ob er das als neutral genug sieht. Relevanz vorläufig 7/10 (Quelle 0 bis Recherche).
+- [ ] **lagebericht-rhythmus-entscheidung** – keine neue Idee, sondern Erinnerung: Die Frage „Status Quo monatlich oder vierteljährlich?“
+  ist seit dem 25.10. offen und blockiert Woche 1. Vorschlag für das Donnerstags-Briefing (Chefredakteur): „Lagebericht vierteljährlich
+  (nächster Dezember), Woche 1 sonst Wissen – ja/nein?“. Material für die nächste Ausgabe steht unter `status-quo-november-2026`.
+
 ## Erledigt
 
 - [x] 2026-10-08 Azubis fragen die KI – wird dein Betrieb empfohlen?

@@ -1,5 +1,66 @@
 # Social-Paket: ki-ergebnisse-pruefen-leitfaden
 
+## Fassung 2 – Stand 2026-11-01 (Social, Sonntags-Lauf) – GILT
+
+Beitrag veröffentlicht am 27.10.2026. Nichts gepostet.
+Die Fassung vom 25.10. (unten, als VERALTET markiert) passt nicht mehr: Die Zahlen 28,50/285 € und die fünf Regeln
+stehen nicht mehr im Beitrag. Fassung 2 folgt der veröffentlichten Tiger-Fassung (drei Stufen, drei Regeln, g1/g3/g7).
+Zahlen nur aus `beitrag.md`. Keine Ich-Sätze.
+
+Plan Woche 2.–8.11.:
+- **WhatsApp-Status:** Di 3.11. vormittags, falls noch nicht am 28.10. gepostet. Geht am 3.11. ein neuer Beitrag online,
+  hat dessen Hinweis Vorrang; dann diesen Status auslassen.
+- **LinkedIn:** Do 5.11. mittags.
+- **Instagram-Karussell:** 5 Folien, alle Kacheln schon vorhanden und angesehen bzw. aus dem Grafik-Lauf. Bereit, sobald ein Konto existiert.
+
+### LinkedIn
+
+Ein Hund liegt im Schatten eines Zauns. Die Streifen lassen sein Fell gestreift aussehen. Eine Bilderkennung, die nur auf das Muster schaut, könnte sagen: Tiger.
+
+So entstehen viele KI-Fehler. Die KI erkennt Muster, aber nicht den Zusammenhang. Fehlt er, füllt sie die Lücke mit dem Wahrscheinlichsten und klingt dabei so sicher wie bei einer richtigen Antwort. Bei Texten heißt das Halluzination: plausible, aber falsche Aussagen, so die Definition von OpenAI (September 2025).
+
+Alles zu prüfen, schafft kein Betrieb. Hilfreicher ist eine Frage vorab: Was passiert, wenn dieser Fehler unbemerkt durchrutscht?
+
+1. Frei nutzen: Ideen, erste Entwürfe.
+2. Gezielt prüfen: Angebote, Exposés, Kundenantworten.
+3. Nur mit Freigabe: Preise, Zahlungen, Allergenangaben.
+
+Ein Beispiel aus der Gastronomie: Die Speisekarte kürzer formulieren lassen ist Stufe 1. Fällt dabei der Hinweis auf Nüsse weg, ist es Stufe 3.
+
+Zum Mitnehmen: Nimm das letzte Angebot oder die letzte Kalkulation, an der bei euch eine KI mitgearbeitet hat. Ist klar geregelt, wer das Ergebnis prüft?
+
+#KI #Mittelstand
+
+(ca. 1.050 Zeichen)
+
+Bild: `kmk-ki-pruefen-g3-social.png` (drei Stufen) als Einzelbild, oder Dokument-Post mit den Karussell-Folien unten.
+Das KI-Foto Hund/„Tiger“ aus dem Beitrag nicht als Social-Bild verwenden, solange die Bildfrage (nachgestellt nach Motiv aus dem Netz) nicht ausdrücklich für Social geklärt ist.
+
+### Erster Kommentar
+
+👉 https://www.kleinmittelki.de/ki-ergebnisse-pruefen-leitfaden/
+
+### WhatsApp-Status
+
+Eine KI hält einen Hund für einen Tiger. Was das mit deinen Angeboten und Tabellen zu tun hat:
+https://www.kleinmittelki.de/ki-ergebnisse-pruefen-leitfaden/
+
+### Instagram (optional)
+
+Folie 1: KI irrt sich und klingt trotzdem sicher → `social/kmk-ki-pruefen-s0-social.png`
+Folie 2: „Weiß ich nicht“ bringt in vielen KI-Tests 0 Punkte, Raten eine Chance. Raten wird belohnt, Zugeben nicht. → `kmk-ki-pruefen-g1-social.png`
+Folie 3: Zehn Prozent pro Jahr, falsch gerechnet. Der Fehler fällt erst auf, wenn man nachrechnet. → `kmk-ki-pruefen-g7-social.png`
+Folie 4: Drei Stufen: frei nutzen, gezielt prüfen, nur mit Freigabe. Je teurer der Fehler, desto enger die Kontrolle. → `kmk-ki-pruefen-g3-social.png`
+Letzte Folie: „Mehr auf kleinmittelki.de“ → `social/kmk-ki-pruefen-s9-social.png`
+Bildtext: KI kann falschliegen und dabei sicher klingen. Drei Stufen helfen zu entscheiden, wie genau du ein Ergebnis prüfst. Der ganze Leitfaden steht auf kleinmittelki.de.
+
+(Pfade relativ zu `entwuerfe/ki-ergebnisse-pruefen-leitfaden/`. g2, g4, g5, g6 sind nicht mehr im Beitrag und daher nicht im Karussell.)
+
+---
+
+## VERALTET – Fassung 1 vom 25.10.2026 (nicht verwenden, nur zur Nachverfolgung)
+
+
 > **ERST NACH VERÖFFENTLICHUNG.** Stand 2026-10-25: Beitrag ist Entwurf (`wartet-auf-till`), Veröffentlichung geplant
 > Di 27.10.2026, nur nach Tills Freigabe. Vorher nichts davon verwenden. URL unten ist die erwartete Adresse
 > (Slug laut ghost.json) – nach Veröffentlichung prüfen.
