@@ -1,7 +1,43 @@
 {
-  "stand": "2026-10-27T06:49:12+00:00",
-  "anzahl": 32,
+  "stand": "2026-11-02T13:38:29+00:00",
+  "anzahl": 33,
   "beitraege": [
+    {
+      "id": "6ae77b55619ac80001c1cc56",
+      "slug": "5-was-betriebe-bei-ki-bremst-und-wie-viel-technik-reicht",
+      "titel": "#5: Was Betriebe bei KI bremst und wie viel Technik reicht",
+      "status": "scheduled",
+      "veroeffentlicht": "2026-11-03",
+      "geaendert": "2026-11-02",
+      "kategorie": "",
+      "interne_tags": [
+        "#newsletter"
+      ],
+      "teaser": "Was EU-Betriebe bei KI und Personalsoftware bremst, wann eine einfache Regel reicht, eine Zahl und ein Gedanke für deinen Betrieb.",
+      "url": "https://www.kleinmittelki.de/email/ba091482-a707-4fda-b51c-69955461cfd6/",
+      "zwischenueberschriften": [
+        "01 · Aktuell eingeordnet: Kosten, Recht, Wissen bremsen KI in EU-Betrieben",
+        "02 · Neu im Blog: Nicht jedes Problem braucht KI",
+        "03 · Eine Zahl, genau gelesen",
+        "04 · Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [
+        "https://ec.europa.eu/commission/presscorner/detail/de/ip_26_2160"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/",
+        "https://www.kleinmittelki.de/eu-eurobarometer-ki-unternehmen/",
+        "https://www.kleinmittelki.de/nicht-jedes-problem-braucht-ki/"
+      ],
+      "zahlen": [
+        "42 Prozent nutzen KI oder automatisierte Systeme, um Arbeit und Personal zu organisieren.",
+        "Der Haken: Die 42 Prozent sind keine KI-Quote.",
+        "Die 42 Prozent messen aber etwas anderes, als es klingt.",
+        "03 · Eine Zahl, genau gelesen EU-Kommission · Oktober 2026 90 % der Betriebe, die KI oder automatisierte Systeme nutzen, lassen am Ende Menschen entscheiden.",
+        "Nur 2 Prozent entscheiden vollständig automatisiert."
+      ],
+      "woerter": 459
+    },
     {
       "id": "6adff0cb1ff34e0001d6af11",
       "slug": "4-ki-ergebnisse-pruefen-und-wer-fuer-den-chatbot-haftet",

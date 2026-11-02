@@ -11,10 +11,23 @@ Fehler immer sichtbar. Dieser Lauf hat Gmail **und** den Ghost-Schlüssel (Umgeb
 ## 0 · Start
 
 1. Repo `Till10le/KleinMittelKI`, Branch `main`: falls nicht da, anhängen (`add_repo`, access „push“) und klonen; sonst `git pull --rebase`.
-2. `TZ=Europe/Berlin date` – Wochentag und Uhrzeit bestimmen, welche Teile unten gelten.
-3. Lies `CLAUDE.md`, `.claude/agents/chefredakteur.md`, `redaktion/themenboard.md`, `redaktion/fahrplan.md`, `redaktion/mail.json`
-   und den letzten Bericht. Skills `kmk-mail` und (sonntags/montags) `kmk-newsletter` vollständig.
-4. `python3 tools/ghost.py check`. Schlägt das fehl: Schritte mit Ghost auslassen, Fehler in Schritt 6 melden.
+2. **Vorab-Check – noch nichts weiter lesen** (Till 02.11.2026: leere Läufe sollen wenig kosten):
+   - `python3 tools/ghost.py check` und `python3 tools/ghost.py abarbeiten` (führt Freigaben aus, wie Schritt 2).
+   - Gmail: eine Suche `from:till.zehnle@gmail.com in:sent newer_than:2d`, Ansicht `THREAD_VIEW_SUMMARY`
+     (nur die neueste Nachricht je Verlauf). Deren Nachrichten-IDs mit Komma sammeln. Scheitert die Suche: Lauf `voll`.
+   - `python3 tools/vorcheck.py --mail-ids <IDs> [--ghost-ok] [--abarbeiten-leer]`
+     (`--ghost-ok`, wenn `check` ok war; `--abarbeiten-leer`, wenn `abarbeiten` `"ausgefuehrt": []` meldete).
+   - Ergebnis `leer`: **sofort beenden** – keine Datei lesen, kein Bericht, kein Commit, keine Mail.
+   - Ergebnis `pflege` (Morgenlauf ohne Arbeit): nur `python3 tools/ghost.py index` und `python3 tools/ghost.py referenz`;
+     prüfen mit `git add -N . && git diff -I '^Stand:' -I '"stand":' --quiet` (nur der Zeitstempel zählt nicht). Hat sich mehr geändert:
+     Bericht-Zeile „Lauf 7:47 · Status: Alles läuft. Nur Pflege (Index).“ und Commit; sonst `git checkout -- redaktion/` und Ende. Keine Mail.
+   - Ergebnis `voll`: weiter mit 3. Die Gründe aus der Ausgabe in den Bericht übernehmen. Schritt 2 (`abarbeiten`) ist schon
+     erledigt – sein Ergebnis gilt.
+3. `TZ=Europe/Berlin date` – Wochentag und Uhrzeit bestimmen, welche Teile unten gelten.
+4. Lies `CLAUDE.md`, `.claude/agents/chefredakteur.md`, `redaktion/fahrplan.md`, `redaktion/mail.json` und den letzten Bericht.
+   Vom Board zuerst nur `python3 tools/board.py status`, dann die betroffenen Einträge mit `python3 tools/board.py zeige <slug>`;
+   das ganze Board nur, wenn ein Agent es braucht (Scout, Ideen). Skills `kmk-mail` und (sonntags/montags) `kmk-newsletter` vollständig.
+5. Ist `ghost.py check` fehlgeschlagen: Schritte mit Ghost auslassen, Fehler in Schritt 6 melden.
 
 Zeitbudget: Der Lauf soll in 40 Minuten fertig sein. Was nicht fertig wird, bleibt im Board mit Status und Vermerk – der nächste Lauf macht weiter.
 
@@ -25,7 +38,7 @@ Board, `entscheidungen.md`, Freigaben über `tools/mailfreigabe.py`. Bestätigun
 
 ## 2 · Freigaben ausführen (jeder Lauf)
 
-`python3 tools/ghost.py abarbeiten`. Ergebnis ins Board (veröffentlicht/eingeplant/Sperre) und für Schritt 5 merken.
+`python3 tools/ghost.py abarbeiten` – läuft schon im Vorab-Check (Schritt 0.2). Ergebnis ins Board (veröffentlicht/eingeplant/Sperre) und für Schritt 5 merken.
 
 ## 3 · Redaktion
 
@@ -78,8 +91,10 @@ Gibt es weder Bestätigungen noch Entscheidungen noch Probleme: **keine Mail**.
    Jeder fehlgeschlagene Befehl mit der Fehlermeldung wörtlich.
 2. Scheitert derselbe Schritt im zweiten Lauf hintereinander (Bericht des Vorlaufs lesen): in Schritt 5 als `PROBLEM` melden.
    Ein einmaliger Fehler wird nur berichtet, nicht gemailt – der nächste Lauf versucht es erneut.
-3. Commit „Lauf <Datum> <Zeit>“, `git pull --rebase`, push auf `main`. Auch bei Fehlern.
-   Nur wenn es nichts zu tun gab und nichts fehlgeschlagen ist: kein Commit, sofort beenden.
+3. `python3 tools/board.py kuerzen` – hält das Board schlank: je Eintrag bleiben die letzten drei Verlaufs-Einträge,
+   ältere wandern wörtlich nach `redaktion/verlauf/<slug>.md` (nichts wird gelöscht).
+4. Commit „Lauf <Datum> <Zeit>“, `git pull --rebase`, push auf `main`. Auch bei Fehlern.
+   Nur wenn es nichts zu tun gab und nichts fehlgeschlagen ist: kein Commit, sofort beenden (das entscheidet in der Regel schon der Vorab-Check).
 
 ## Grenzen
 

@@ -38,7 +38,8 @@ Alle Agenten lesen hier zuerst und schreiben ihre Ergebnisse hierher zurück.
 | Datei | Inhalt | Wer schreibt |
 |---|---|---|
 | `redaktion/blog-index.json` | Alle Beiträge aus Ghost mit Thema, Rubrik, Quellen, Zahlen, Links | `tools/ghost.py index` (automatisch) |
-| `redaktion/themenboard.md` | Jede Idee mit Status von „vorgeschlagen“ bis „beworben“ | alle Agenten |
+| `redaktion/themenboard.md` | Jede Idee mit Status von „vorgeschlagen“ bis „beworben“; je Eintrag nur die letzten drei Verlaufs-Einträge | alle Agenten |
+| `redaktion/verlauf/<slug>.md` | Ältere Verlaufs-Einträge eines Themas, wörtlich (`tools/board.py kuerzen`) | Redaktions-Lauf |
 | `redaktion/entscheidungen.md` | Tills Ja/Nein mit Grund – die Lernschleife | Chefredakteur nach Tills Antwort |
 | `redaktion/fahrplan.md` | Veröffentlichungs-Takt (Di/Do 7:00, höchstens zwei pro Woche) und die nächsten Termine | Chefredakteur (Redaktions-Lauf) |
 | `redaktion/freigaben.jsonl` | Veröffentlichungsfreigaben (nur Tills Mail-Antwort oder Chat) | `tools/mailfreigabe.py`, `tools/ghost.py freigabe` |
@@ -66,6 +67,8 @@ Der Chefredakteur ist der einzige, der Till Fragen stellt und Freigaben einträg
 - `tools/vorschaubild.py` – Vorschaubild 1200 × 630 im CI (Titel-Kachel, nur zum Teilen).
 - `tools/titelbild.py` – Titelbild 1600 × 1000: Einordnungs-Grafik als Beitragsbild und Übersichts-Kachel, nie mit Titel.
 - `tools/grafik.py` – rendert Erklär-Schaubilder als PNG im CI.
+- `tools/board.py` – Board lesen ohne alles zu laden (`status`, `zeige <slug>`) und schlank halten (`kuerzen`).
+- `tools/vorcheck.py` – Vorab-Check jedes Laufs: `leer` (sofort enden), `pflege` oder `voll`.
 
 ## Übersicht des Systems
 

@@ -8,7 +8,9 @@ dass die Redaktion verlässlich, konkret und im CI liefert – und dass nichts o
 
 ## Bei jedem Start
 
-1. `CLAUDE.md` gilt. Lies `redaktion/themenboard.md`, `redaktion/entscheidungen.md` und den letzten Bericht in `redaktion/berichte/`.
+1. `CLAUDE.md` gilt. Im geplanten Lauf zuerst der Vorab-Check aus `docs/lauf.md` (Schritt 0.2) – bei `leer` sofort enden.
+   Dann `python3 tools/board.py status` und die betroffenen Einträge (`board.py zeige <slug>`), `redaktion/entscheidungen.md`
+   bei Bedarf, und den letzten Bericht in `redaktion/berichte/`. Das ganze Board nur, wenn ein Agent es braucht.
 2. `git pull --rebase` vor der Arbeit, am Ende committen und pushen (Branch `main`). Gibt es nichts zu ändern: kein Commit.
 
 ## Der Wochenrhythmus

@@ -36,7 +36,10 @@ Ein einziger geplanter Lauf ersetzt die fünf früheren (Tills Entscheidung 01.1
 |---|---|---|---|---|
 | KMK Redaktion | So–Fr 7:47, 12:47, 18:47 | KMK-Ghost | Gmail | „Lies docs/lauf.md und führe es aus.“ |
 
-Ablauf: `docs/lauf.md`. Do 7:47 mit Scout und Briefing, So 7:47 mit Ideen, Wochenbericht, Newsletter (Testmail im selben Lauf), Social.
+Ablauf: `docs/lauf.md`. Jeder Lauf beginnt mit einem Vorab-Check (`tools/vorcheck.py`, seit 02.11.2026): Ghost prüfen, Freigaben
+ausführen, eine Gmail-Suche – gibt es weder neue Post noch Arbeit im Board noch einen Fehler im Vorlauf, endet er ohne Lesen, Bericht und Commit
+(morgens nur Index-Pflege). Das Board hält `tools/board.py kuerzen` schlank (ältere Verlaufs-Einträge in `redaktion/verlauf/`).
+Do 7:47 mit Scout und Briefing, So 7:47 mit Ideen, Wochenbericht, Newsletter (Testmail im selben Lauf), Social.
 Höchstens eine Mail pro Lauf mit Statuszeile. Ein Fehler steht immer im Bericht; tritt er zweimal hintereinander auf, steht er in der Mail.
 Die alten Läufe (Redaktions-, Ghost-, Mail-, Mail-Sonntag-, Sonntags-Lauf) sind pausiert, nicht gelöscht.
 
@@ -57,6 +60,8 @@ Stand 02.11.2026: Die automatische Testmail ist seit 27.10. in fünf Versuchen g
 mit der Admin-Seite statt mit Daten; Ursache offen, `ghost.py` meldet jetzt eine Umleitung mit). Till: Testmail ist nur noch Zusatz,
 der Begleitzettel kommt mit Vorschau-Link. Außerdem fiel der Redaktions-Lauf am 29.10. wegen des Nutzungslimits aus – ein Lauf statt fünf
 (18 statt rund 46 Starts pro Woche) entlastet das Kontingent. Umbau am 02.11. aktiviert.
+Noch am 02.11.: Leere Läufe lasen trotzdem alle Regeln und das 60-KB-Board. Till: Vorab-Check und schlankes Board (Punkte 1 und 2),
+Takt bleibt dreimal täglich.
 
 ## Ein Beispiel-Durchlauf
 
