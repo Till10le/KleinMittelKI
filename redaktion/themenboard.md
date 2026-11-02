@@ -267,8 +267,8 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Quelle: eigene Systemunterlagen + Hilfeseiten OpenAI (Tasks), Microsoft (Scheduled prompts), Anthropic (Scheduled tasks), abgerufen 25.10.2026 – siehe quellen.md
 - Warum für KMU: Prinzip übertragbar auf Ausschreibungen, Förderprogramme, Normen; fünf Schritte, Beispiel-Anfrage Malerbetrieb, drei Wege nach Ausstattung
 - Wichtig (Till, Chat 25.10.2026): Der Beitrag zeigt nur die Recherche. Nichts darüber, dass KI Texte oder Beiträge schreibt – und auch nicht, dass Till selbst schreibt; das bleibt offen.
-- Braucht von Till: nur noch „A ja“ (Aufwand/Kosten auf Tills Bitte aus den Chats eingeschätzt, 25.10.)
-- Verlauf: (ältere Einträge: redaktion/verlauf/ki-recherche-assistent-selbstversuch.md) 2026-10-25 Ghost-Lauf (18:47): Entwurf in Ghost angelegt, Vorschau: https://www.kleinmittelki.de/p/7ef917e2-ee8b-4cc9-b6e7-8e5a18f6a8da/ · 2026-10-25 Mail-Lauf (Abend): als B an Till gemailt (Verlauf 1a173f22500167ff, Vorschlag Do 7:00) · 2026-11-02 Lauf 12:47: als A erinnert (Mail 1a19be3873ddb3ea, Termin Di 3.11. bei „A ja“ bis 18:47, sonst Di 10.11.)
+- Braucht von Till: Review mit Till am 03.11. (Prozess hat sich geändert), danach „A ja“ oder Änderungen
+- Verlauf: (ältere Einträge: redaktion/verlauf/ki-recherche-assistent-selbstversuch.md) 2026-10-25 Ghost-Lauf (18:47): Entwurf in Ghost angelegt, Vorschau: https://www.kleinmittelki.de/p/7ef917e2-ee8b-4cc9-b6e7-8e5a18f6a8da/ · 2026-10-25 Mail-Lauf (Abend): als B an Till gemailt (Verlauf 1a173f22500167ff, Vorschlag Do 7:00) · 2026-11-02 Lauf 12:47: als A erinnert (Mail 1a19be3873ddb3ea, Termin Di 3.11. bei „A ja“ bis 18:47, sonst Di 10.11.) · 2026-11-02 Chat (abends): Till: nicht Di 3.11.; Selbstversuch wird am 03.11. gemeinsam nochmals reviewt, weil sich der Prozess geändert hat
 
 ### betriebsrat-ki-einfuehren
 - Status: vorgeschlagen
