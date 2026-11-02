@@ -7,5 +7,10 @@
   "status": "draft",
   "updated_at": "2026-11-01T20:47:55.000Z",
   "vorschau": "https://www.kleinmittelki.de/p/ba091482-a707-4fda-b51c-69955461cfd6/",
-  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6ae77b55619ac80001c1cc56"
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6ae77b55619ac80001c1cc56",
+  "entwurf_hash": "3955a5e925ae13a200fc3832204319c7cce043b0d61cac7719e97a10308e30b5",
+  "testmail_hash": "3955a5e925ae13a200fc3832204319c7cce043b0d61cac7719e97a10308e30b5",
+  "testmail_an": "till.zehnle@gmail.com",
+  "testmail_zeit": "2026-11-02T10:41:44+00:00",
+  "testmail_von_hand": "Till im Ghost-Editor, 02.11.2026 11:41"
 }

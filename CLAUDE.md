@@ -40,13 +40,18 @@ Alle Agenten lesen hier zuerst und schreiben ihre Ergebnisse hierher zurück.
 | `redaktion/blog-index.json` | Alle Beiträge aus Ghost mit Thema, Rubrik, Quellen, Zahlen, Links | `tools/ghost.py index` (automatisch) |
 | `redaktion/themenboard.md` | Jede Idee mit Status von „vorgeschlagen“ bis „beworben“ | alle Agenten |
 | `redaktion/entscheidungen.md` | Tills Ja/Nein mit Grund – die Lernschleife | Chefredakteur nach Tills Antwort |
-| `redaktion/fahrplan.md` | Veröffentlichungs-Takt (Di/Do 7:00, höchstens zwei pro Woche) und die nächsten Termine | Chefredakteur, Mail-Lauf |
+| `redaktion/fahrplan.md` | Veröffentlichungs-Takt (Di/Do 7:00, höchstens zwei pro Woche) und die nächsten Termine | Chefredakteur (Redaktions-Lauf) |
 | `redaktion/freigaben.jsonl` | Veröffentlichungsfreigaben (nur Tills Mail-Antwort oder Chat) | `tools/mailfreigabe.py`, `tools/ghost.py freigabe` |
-| `redaktion/mail.json` | Mail-Verläufe mit Till, verarbeitete Antworten | Mail-Lauf |
-| `redaktion/eingang/` | Recherche-Hinweise anderer Werkzeuge (z. B. ChatGPT), nur Material für den Scout | Mail-Lauf |
+| `redaktion/mail.json` | Mail-Verläufe mit Till, verarbeitete Antworten | Redaktions-Lauf |
+| `redaktion/eingang/` | Recherche-Hinweise anderer Werkzeuge (z. B. ChatGPT), nur Material für den Scout | Redaktions-Lauf |
 | `redaktion/themenspeicher.md` | Offene Ideen und Serien | Ideen-Agent, Till |
 | `redaktion/berichte/` | Tages- und Wochenberichte | Chefredakteur, Analyst |
 | `entwuerfe/<slug>/` | Beitrag als `beitrag.md`, Grafiken, Vorschaubild, Quellen | Autor, Grafik |
+
+## Der Lauf
+
+Ein einziger geplanter Lauf (So–Fr 7:47, 12:47, 18:47) macht alles: Post lesen, Freigaben ausführen, schreiben und prüfen,
+nach Ghost, höchstens eine Mail an Till. Ablauf: `docs/lauf.md`. Der Prompt der geplanten Aufgabe verweist nur darauf.
 
 ## Die Redaktion (`.claude/agents/`)
 
@@ -67,7 +72,7 @@ Der Chefredakteur ist der einzige, der Till Fragen stellt und Freigaben einträg
 `docs/uebersicht.html` ist die Gesamtübersicht für Till (Systemkarte, Takt, Ablauf, Spickzettel), veröffentlicht unter
 https://claude.ai/artifact/XKyusNKpi7LA2nyGiUGVJ1. **Wer das System ändert** (Läufe, Zeiten, Kanäle, Agenten, Regeln,
 Werkzeuge, Freigabe-Weg), passt im selben Commit `docs/uebersicht.html` und `docs/routinen.md` an und veröffentlicht die
-Seite neu unter derselben Adresse (Artifact-Werkzeug mit `url`). Geplante Läufe ändern das System nicht; der Sonntags-Lauf
+Seite neu unter derselben Adresse (Artifact-Werkzeug mit `url`). Geplante Läufe ändern das System nicht; der Sonntags-Teil des Laufs
 prüft nur, ob Übersicht und Wirklichkeit noch übereinstimmen.
 
 ## Sprache

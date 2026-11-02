@@ -116,8 +116,10 @@ def api(method: str, path: str, query: dict | None = None, body: dict | None = N
             try:
                 return json.loads(text)
             except json.JSONDecodeError:
+                ziel = r.geturl()
+                umgeleitet = f", umgeleitet nach {ziel}" if ziel != url else ""
                 raise GhostFehler(f"Ghost antwortet {r.status} auf {method} {path} ohne JSON "
-                                  f"(Content-Type {r.headers.get('Content-Type')}): {text[:300]}") from None
+                                  f"(Content-Type {r.headers.get('Content-Type')}{umgeleitet}): {text[:300]}") from None
     except urllib.error.HTTPError as e:
         detail = e.read().decode(errors="replace")
         try:
@@ -583,12 +585,23 @@ def cmd_testmail(a) -> None:
         p = api("PUT", f"posts/{p['id']}/", body={"posts": [{"lexical": lex, "updated_at": p["updated_at"]}]})["posts"][0]
     if p["status"] != "draft":
         raise GhostFehler(f"Newsletter ist '{p['status']}', keine Testmail.")
-    api("POST", f"email_previews/posts/{p['id']}/", body={"emails": [TESTMAIL_AN], "newsletter": _aktiver_newsletter()})
-    state.update({"updated_at": p["updated_at"], "testmail_hash": fingerabdruck, "testmail_an": TESTMAIL_AN,
-                  "testmail_zeit": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
-                  "intern_absaetze_entfernt": removed})
+    # Till 02.11.2026: Die Testmail ist nur Zusatz. Der Entwurf in Ghost zählt; sein Stand wird vor dem
+    # Testmail-Versuch festgehalten, damit der Begleitzettel auch ohne Testmail rausgehen kann.
+    state.update({"updated_at": p["updated_at"], "entwurf_hash": fingerabdruck, "intern_absaetze_entfernt": removed})
+    state.pop("testmail_fehler", None)
     (folder / "ghost.json").write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
-    print(json.dumps({k: state.get(k) for k in ("slug", "status", "vorschau", "testmail_hash", "testmail_an",
+    nl = _aktiver_newsletter()
+    try:
+        api("POST", f"email_previews/posts/{p['id']}/", query={"newsletter": nl},
+            body={"emails": [TESTMAIL_AN], "newsletter": nl})
+    except GhostFehler as e:
+        state["testmail_fehler"] = str(e)[:500]
+        (folder / "ghost.json").write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
+        raise
+    state.update({"testmail_hash": fingerabdruck, "testmail_an": TESTMAIL_AN,
+                  "testmail_zeit": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")})
+    (folder / "ghost.json").write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n")
+    print(json.dumps({k: state.get(k) for k in ("slug", "status", "vorschau", "entwurf_hash", "testmail_hash", "testmail_an",
                                                   "testmail_zeit")}, ensure_ascii=False, indent=2))
 
 # ---------- Blog-Index ----------

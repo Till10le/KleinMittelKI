@@ -14,17 +14,17 @@ Till will den Vorschlag **sonntags** so sehen, wie er bei den Lesern ankommt (25
 Testmail, er schreibt ggf. hin und her und gibt dann frei. Der Newsletter liegt dafür als **Entwurf** in Ghost; eingeplant
 wird er erst nach „N ja“, für **Dienstag 7:05** (der Hauptbeitrag geht um 7:00 online, so funktioniert sein Link schon).
 
-1. **Sonntag 9:47** (Sonntags-Lauf): Entwurf schreiben – `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md` mit Tag `#newsletter`,
-   Kategorie leer lassen, Prüfer prüft, dann Ghost-Lauf starten (wird das verweigert: der Ghost-Lauf um 12:47 holt es nach). Der legt den Entwurf an und schickt die Testmail
+1. **Sonntag 7:47** (Lauf, Sonntags-Teil): Entwurf schreiben – `entwuerfe/newsletter-JJJJ-MM-TT/beitrag.md` mit Tag `#newsletter`,
+   Kategorie leer lassen, Prüfer prüft, dann im selben Lauf Entwurf anlegen und Testmail schicken
    (`python3 tools/ghost.py testmail entwuerfe/<slug>`: nur an till.zehnle@gmail.com, INTERN entfernt, nichts eingeplant). Vorher prüfen, ob es für diesen Dienstag schon einen gibt
    (keine Dubletten). Themen der Vorwoche nicht wiederholen (frühere `newsletter-*`-Ordner und Index lesen).
-2. **Sobald die Testmail raus ist** (Mail-Lauf Sonntag): kurzer Begleitzettel an Till (Skill `kmk-mail`, Abschnitt Newsletter).
-3. **Sonntag 12:17, 15:17, 18:17, 21:17:** Tills Änderungswünsche einarbeiten, Prüfer erneut, Ghost-Lauf starten (neue Testmail),
+2. **Sobald der Entwurf in Ghost liegt** (im selben Lauf, `entwurf_hash` passt): kurzer Begleitzettel an Till mit Vorschau-Link
+   (Skill `kmk-mail`, Abschnitt Newsletter). Die Testmail ist nur Zusatz (Till 02.11.2026) – scheitert sie, geht der Begleitzettel trotzdem.
+3. **Jeder folgende Lauf (So 12:47, 18:47, Mo 7:47 …):** Tills Änderungswünsche einarbeiten, Prüfer erneut, neue Testmail,
    dann Begleitzettel zur neuen Fassung. Ghost erlaubt höchstens 10 Testmails pro Stunde.
 4. **„N ja“** → `tools/mailfreigabe.py … --art newsletter-text --text-hash <Fingerabdruck der zuletzt gemailten Fassung>`.
-   Der nächste Ghost-Lauf (12:47, 18:47, 21:47 bzw. Montag) legt den Entwurf an und plant ihn ein (`ghost.py abarbeiten`).
-   Bestätigung mit Vorschau-Link im nächsten Mail-Lauf. Spätestmögliche Freigabe: Montag 18:17.
-5. **„N stopp“** → `--art stopp`: der nächste Ghost-Lauf nimmt die Einplanung zurück (Entwurf bleibt).
+   Im selben Lauf plant `ghost.py abarbeiten` ihn ein; die Bestätigung steht in der Mail des Laufs. Spätestmögliche Freigabe: Montag 18:47.
+5. **„N stopp“** → `--art stopp`: der Lauf nimmt die Einplanung zurück (Entwurf bleibt).
 
 ## Aufbau einer Ausgabe
 
