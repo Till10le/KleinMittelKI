@@ -192,7 +192,8 @@
         "N": "newsletter-2026-11-03"
       },
       "fassungen": [],
-      "testmail_fehlt_gemeldet": "2026-11-01 15:17"
+      "testmail_fehlt_gemeldet": "2026-11-01 15:17",
+      "testmail_fehler_gemeldet": "2026-11-02 08:17 (Mail 1a19b225f263a1ec)"
     }
   ],
   "eigene_ids": [
@@ -218,7 +219,8 @@
     "1a17ab0291c36e7d",
     "1a17ac67e6fa0f3c",
     "1a17c3a48051b111",
-    "1a19779addc6b20f"
+    "1a19779addc6b20f",
+    "1a19b225f263a1ec"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
