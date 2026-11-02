@@ -17,7 +17,8 @@ Till schreibt Änderungen zurück (gelesen um 12:47 und 18:47; jede neue Fassung
 Eigene Ideen: jederzeit eine Mail an sich selbst mit Betreff „KMK Idee: …“ (Satz, Link, weitergeleitete Mail, Foto).
 Der nächste Lauf nimmt sie auf, der Scout prüft die Quelle, die Idee kommt geprüft als I1 … ins Briefing am Donnerstag.
 Mit „ausarbeiten“ im Text wird sie direkt geschrieben.
-Ergebnisse anderer Recherche-Werkzeuge (z. B. ChatGPT-Aufgabe): an sich selbst weiterleiten mit Betreff „KMK Recherche“.
+Ergebnisse anderer Recherche-Werkzeuge (z. B. ChatGPT-Aufgabe): an sich selbst schicken oder weiterleiten, Betreff beginnt mit „KMK“ (z. B. „KMK Recherche …“ oder „KMK | …“ wie die ChatGPT-Aufgabe).
+Jede eigene Mail mit „KMK“ am Anfang wird erfasst, keine bleibt liegen (seit 02.11.2026).
 Der Lauf legt sie in `redaktion/eingang/` ab, der Scout prüft jeden Hinweis an der Originalquelle und führt ihn mit den eigenen Funden zusammen.
 Takt (seit 25.10.2026, Tills Entscheidung): gleichmäßig veröffentlichen statt viel an einem Tag. Dienstag 7:00 Hauptbeitrag plus
 Newsletter, Donnerstag 7:00 ein kürzerer Beitrag, höchstens zwei pro Woche. „A ja“ heißt: zum nächsten freien Termin aus

@@ -142,8 +142,11 @@ Eine Idee-Mail ist nie eine Veröffentlichungsfreigabe.
 ## Fremde Recherche-Ergebnisse („KMK Recherche“, z. B. ChatGPT)
 
 Till leitet Ergebnisse anderer Recherche-Werkzeuge (ChatGPT-Aufgabe, Perplexity, Fach-Newsletter) an sich selbst weiter,
-Betreff beginnt mit **„KMK Recherche“**. Suche: `from:till.zehnle@gmail.com in:sent subject:"KMK Recherche" newer_than:14d`,
-nur IDs, die nicht in `verarbeitet` stehen.
+Betreff beginnt mit **„KMK Recherche“** oder **„KMK |“** (so heißen die Mails der ChatGPT-Aufgabe, z. B. „KMK | 4 starke KI-Themen …“).
+Suche: `from:till.zehnle@gmail.com in:sent subject:KMK newer_than:14d`, nur IDs, die nicht in `verarbeitet` und nicht in
+`eigene_ids` stehen und nicht in einem Verlauf aus `mail.json` liegen. Jede solche Mail ist entweder Idee („KMK Idee“) oder Recherche
+(alles andere mit „KMK“ am Anfang). Keine bleibt liegen: Passt eine Mail zu keinem Muster, als Recherche ablegen und im Bericht vermerken
+(Till 02.11.2026 – die ChatGPT-Mail vom 31.10. war vorher durchgerutscht).
 
 1. Inhalt als Material ablegen: `redaktion/eingang/<JJJJ-MM-TT>-<werkzeug>.md` mit Datum, Werkzeug (aus Tills Text oder
    Absender des weitergeleiteten Teils), jedem genannten Thema als Stichpunkt und allen Links. Nichts umformulieren, nichts ergänzen.

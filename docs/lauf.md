@@ -20,7 +20,7 @@ Zeitbudget: Der Lauf soll in 40 Minuten fertig sein. Was nicht fertig wird, blei
 
 ## 1 · Post von Till lesen (jeder Lauf)
 
-Nach `kmk-mail`: Antworten in den Verläufen aus `mail.json`, „KMK Idee“- und „KMK Recherche“-Mails.
+Nach `kmk-mail`: Antworten in den Verläufen aus `mail.json`, „KMK Idee“- und Recherche-Mails („KMK Recherche …“, „KMK | …“ von der ChatGPT-Aufgabe; jede eigene Mail mit „KMK“ am Anfang wird erfasst, keine bleibt liegen).
 Board, `entscheidungen.md`, Freigaben über `tools/mailfreigabe.py`. Bestätigungen sammeln für Schritt 5 (keine eigene Mail je Antwort).
 
 ## 2 · Freigaben ausführen (jeder Lauf)
