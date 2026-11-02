@@ -193,7 +193,23 @@
       },
       "fassungen": [],
       "testmail_fehlt_gemeldet": "2026-11-01 15:17",
-      "testmail_fehler_gemeldet": "2026-11-02 08:17 (Mail 1a19b225f263a1ec)"
+      "testmail_fehler_gemeldet": "2026-11-02 08:17 (Mail 1a19b225f263a1ec)",
+      "erledigt": {
+        "N": "Freigabe im Chat 02.11. 11:45, eingeplant Di 3.11. 7:05 (Lauf 02.11. 12:47), gemeldet (Mail 1a19be3873ddb3ea)"
+      }
+    },
+    {
+      "datum": "2026-11-02",
+      "thread_id": "1a19be3873ddb3ea",
+      "betreff": "KMK · Mo 2.11. · Newsletter #5 eingeplant",
+      "art": "redaktion",
+      "eintraege": {
+        "A": "ki-recherche-assistent-selbstversuch",
+        "B": "iab-betriebe-sehen-keine-ki-anwendung"
+      },
+      "erledigt": {
+        "N": "newsletter-2026-11-03 eingeplant Di 3.11. 7:05 (Lauf 02.11. 12:47), gemeldet"
+      }
     }
   ],
   "eigene_ids": [
@@ -220,7 +236,8 @@
     "1a17ac67e6fa0f3c",
     "1a17c3a48051b111",
     "1a19779addc6b20f",
-    "1a19b225f263a1ec"
+    "1a19b225f263a1ec",
+    "1a19be3873ddb3ea"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",

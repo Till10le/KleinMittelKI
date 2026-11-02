@@ -28,8 +28,8 @@ Wer etwas einträgt oder verschiebt, pflegt diese Tabelle. Status: `eingeplant` 
 |---|---|---|
 | So 25.10. 21:47 (Ausnahme) | D eu-eurobarometer-ki-unternehmen | veröffentlicht 25.10. (Ghost-Lauf 21:47) |
 | Di 27.10. 7:00 | A ki-ergebnisse-pruefen-leitfaden (7:00) + Newsletter #4 (7:05) | A in Ghost eingeplant (Ghost-Lauf 21:47); Newsletter Fassung 2 freigegeben (Mail 27.10. 01:06), Newsletter in Ghost eingeplant für 7:05 (Ghost-Lauf 27.10. 01:31), Till gemeldet (Mail 27.10. 01:35) · A veröffentlicht, Newsletter versendet (Ghost-Lauf 27.10. 7:47), gemeldet (Mail 27.10. 8:17) |
-| Do 29.10. 7:00 | – (C nicht-jedes-problem-braucht-ki schon am 25.10. 21:47 veröffentlicht, Freigabe stand auf „sofort“) | frei – Kandidat B iab-betriebe-sehen-keine-ki-anwendung, Till gefragt (Mail 26.10.) |
-| Di 03.11. 7:00 | Kandidat: ki-recherche-assistent-selbstversuch | wartet-auf-till |
-| Do 05.11. 7:00 | – (IAB rückt auf 29.10., falls Till „B ja“ schreibt) | frei |
+| Do 29.10. 7:00 | – (C nicht-jedes-problem-braucht-ki schon am 25.10. 21:47 veröffentlicht, Freigabe stand auf „sofort“) | leer geblieben (keine Freigabe) |
+| Di 03.11. 7:00 | Kandidat: ki-recherche-assistent-selbstversuch (7:00) + Newsletter #5 (7:05) | Beitrag wartet-auf-till (A, Mail 02.11.); Newsletter in Ghost eingeplant 7:05 (Lauf 02.11. 12:47) |
+| Do 05.11. 7:00 | Kandidat: iab-betriebe-sehen-keine-ki-anwendung | wartet-auf-till (B, Mail 02.11.) |
 | Di 10.11. 7:00 | – | frei |
 | Do 12.11. 7:00 | – | frei |
