@@ -1,10 +1,10 @@
 # Blog-Index
 
-Stand: 2026-11-02T13:38:29+00:00 · 33 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
+Stand: 2026-11-03T06:49:09+00:00 · 33 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
 
 | Datum | Status | Kategorie | Titel | Quellen | Zahlen |
 |---|---|---|---|---|---|
-| 2026-11-03 | scheduled |  | [#5: Was Betriebe bei KI bremst und wie viel Technik reicht](https://www.kleinmittelki.de/email/ba091482-a707-4fda-b51c-69955461cfd6/) | 1 | 5 |
+| 2026-11-03 | sent |  | [#5: Was Betriebe bei KI bremst und wie viel Technik reicht](https://www.kleinmittelki.de/email/ba091482-a707-4fda-b51c-69955461cfd6/) | 1 | 5 |
 | 2026-10-27 | sent |  | [#4: KI-Ergebnisse prüfen und wer für den Chatbot haftet](https://www.kleinmittelki.de/email/e8343e0e-f003-48de-98a4-721b5c80334a/) | 1 | 1 |
 | 2026-10-27 | published | Leitfäden | [KI irrt sich und klingt trotzdem sicher: So prüfst du KI-Ergebnisse im Betrieb](https://www.kleinmittelki.de/ki-ergebnisse-pruefen-leitfaden/) | 5 | 3 |
 | 2026-10-25 | published | Entwicklungen | [Nicht jedes Problem braucht KI. Manchmal reicht die einfachere Lösung.](https://www.kleinmittelki.de/nicht-jedes-problem-braucht-ki/) | 3 | 1 |
