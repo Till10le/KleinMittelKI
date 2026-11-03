@@ -243,12 +243,12 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Verlauf: 2026-10-25 Ideen (Sonntags-Lauf): vorgeschlagen
 
 ### newsletter-2026-11-03
-- Status: eingeplant
+- Status: versendet
 - Titel: „#5: Was Betriebe bei KI bremst und wie viel Technik reicht“
 - Versand: Dienstag 03.11.2026, 7:05 (erst nach Tills „N ja“)
 - Inhalt: 01 eu-eurobarometer-ki-unternehmen (live) · 02 nicht-jedes-problem-braucht-ki (live) · 03 Zahl „90 %“ (EU-Kommission IP/26/2160) · 04 Gedanke. Wird ki-recherche-assistent-selbstversuch vor Di freigegeben, kommt er als 01 dazu (Fassung 2).
 - Datei: entwuerfe/newsletter-2026-11-03/beitrag.md, Prüfung: pruefung.md
-- Verlauf: (ältere Einträge: redaktion/verlauf/newsletter-2026-11-03.md) 2026-11-01 21:47 Ghost-Lauf: Testmail erneut FEHLGESCHLAGEN (gleiche Antwort, text/html statt JSON; reproduzierbar, Fehler in ghost.py testmail prüfen); nächster Versuch Ghost-Lauf 7:47. · 2026-11-02 Till hat die Testmail von Hand in Ghost ausgelöst (11:41) und im Chat „N ja – einplanen“ gegeben → newsletter-text für Di 3.11. 7:05 (06:05Z) eingetragen (Fingerabdruck 3955a5e9…). Nächster Ghost-Lauf plant ein. · 2026-11-02 Lauf 12:47: in Ghost eingeplant für Di 3.11. 7:05 (06:05Z), Vorschau https://www.kleinmittelki.de/p/ba091482-a707-4fda-b51c-69955461cfd6/ · Till gemeldet (Mail 1a19be3873ddb3ea), A/B als Erinnerung.
+- Verlauf: (ältere Einträge: redaktion/verlauf/newsletter-2026-11-03.md) 2026-11-02 Till hat die Testmail von Hand in Ghost ausgelöst (11:41) und im Chat „N ja – einplanen“ gegeben → newsletter-text für Di 3.11. 7:05 (06:05Z) eingetragen (Fingerabdruck 3955a5e9…). Nächster Ghost-Lauf plant ein. · 2026-11-02 Lauf 12:47: in Ghost eingeplant für Di 3.11. 7:05 (06:05Z), Vorschau https://www.kleinmittelki.de/p/ba091482-a707-4fda-b51c-69955461cfd6/ · Till gemeldet (Mail 1a19be3873ddb3ea), A/B als Erinnerung. · 2026-11-03 Lauf 7:47/12:47: Newsletter laut Index versendet (sent), https://www.kleinmittelki.de/email/ba091482-a707-4fda-b51c-69955461cfd6/
 
 ### newsletter-2026-10-27
 - Status: versendet
@@ -268,7 +268,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Warum für KMU: Prinzip übertragbar auf Ausschreibungen, Förderprogramme, Normen; fünf Schritte, Beispiel-Anfrage Malerbetrieb, drei Wege nach Ausstattung
 - Wichtig (Till, Chat 25.10.2026): Der Beitrag zeigt nur die Recherche. Nichts darüber, dass KI Texte oder Beiträge schreibt – und auch nicht, dass Till selbst schreibt; das bleibt offen.
 - Braucht von Till: Review mit Till am 03.11. (Prozess hat sich geändert), danach „A ja“ oder Änderungen
-- Verlauf: (ältere Einträge: redaktion/verlauf/ki-recherche-assistent-selbstversuch.md) 2026-10-25 Ghost-Lauf (18:47): Entwurf in Ghost angelegt, Vorschau: https://www.kleinmittelki.de/p/7ef917e2-ee8b-4cc9-b6e7-8e5a18f6a8da/ · 2026-10-25 Mail-Lauf (Abend): als B an Till gemailt (Verlauf 1a173f22500167ff, Vorschlag Do 7:00) · 2026-11-02 Lauf 12:47: als A erinnert (Mail 1a19be3873ddb3ea, Termin Di 3.11. bei „A ja“ bis 18:47, sonst Di 10.11.) · 2026-11-02 Chat (abends): Till: nicht Di 3.11.; Selbstversuch wird am 03.11. gemeinsam nochmals reviewt, weil sich der Prozess geändert hat
+- Verlauf: (ältere Einträge: redaktion/verlauf/ki-recherche-assistent-selbstversuch.md) 2026-10-25 Mail-Lauf (Abend): als B an Till gemailt (Verlauf 1a173f22500167ff, Vorschlag Do 7:00) · 2026-11-02 Lauf 12:47: als A erinnert (Mail 1a19be3873ddb3ea, Termin Di 3.11. bei „A ja“ bis 18:47, sonst Di 10.11.) · 2026-11-02 Chat (abends): Till: nicht Di 3.11.; Selbstversuch wird am 03.11. gemeinsam nochmals reviewt, weil sich der Prozess geändert hat
 
 ### betriebsrat-ki-einfuehren
 - Status: vorgeschlagen
