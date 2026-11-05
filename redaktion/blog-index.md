@@ -1,6 +1,6 @@
 # Blog-Index
 
-Stand: 2026-11-03T06:49:09+00:00 · 33 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
+Stand: 2026-11-05T06:50:38+00:00 · 34 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
 
 | Datum | Status | Kategorie | Titel | Quellen | Zahlen |
 |---|---|---|---|---|---|
@@ -29,6 +29,7 @@ Stand: 2026-11-03T06:49:09+00:00 · 33 Beiträge (automatisch aus Ghost, nicht v
 | 2026-09-18 | published | Studien & Zahlen | [Mehr Umsatz durch KI? Was eine neue KfW-Studie zeigt.](https://www.kleinmittelki.de/kfw-studie-ki-unternehmenserfolg/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Werbung direkt in ChatGPT: Entsteht hier ein neuer Kanal für Unternehmen?](https://www.kleinmittelki.de/werbung-chatgpt-sponsored-agents/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Mit KI Unternehmenszahlen auswerten – ohne selbst ein Dashboard zu bauen?](https://www.kleinmittelki.de/ki-unternehmenszahlen-data-agent/) | 1 | 0 |
+| – | draft | KI in der Praxis | [Dreimal dieselbe Präsentation mit KI – und nur eine sieht nach KI aus](https://www.kleinmittelki.de/p/44ce46b5-17e6-411a-bef0-1940199a9d0d/) | 1 | 0 |
 | – | draft | KI in der Praxis | [Mein KI-Rechercheassistent: Die KI sucht. Ich entscheide.](https://www.kleinmittelki.de/p/7ef917e2-ee8b-4cc9-b6e7-8e5a18f6a8da/) | 3 | 0 |
 | – | draft | Studien & Zahlen | [Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz. Vielleicht suchen sie an der falschen Stelle.](https://www.kleinmittelki.de/p/49d77d59-3984-4501-99d4-d71e1b0198c1/) | 2 | 5 |
 | – | draft | KI in der Praxis | [Immobiliensuche mit KI: So habe ich ChatGPT, Notion und Excel kombiniert](https://www.kleinmittelki.de/p/152d747f-9b0a-41e2-af39-57ec34bdf2a7/) | 4 | 1 |

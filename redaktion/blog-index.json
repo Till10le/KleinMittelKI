@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-03T06:49:09+00:00",
-  "anzahl": 33,
+  "stand": "2026-11-05T06:50:38+00:00",
+  "anzahl": 34,
   "beitraege": [
     {
       "id": "6ae77b55619ac80001c1cc56",
@@ -821,6 +821,35 @@
       ],
       "zahlen": [],
       "woerter": 284
+    },
+    {
+      "id": "6aeb40e475eea100014ab6a7",
+      "slug": "dreimal-dieselbe-prasentation-mit-ki-und-nur-eine-sieht-nach-ki-aus",
+      "titel": "Dreimal dieselbe Präsentation mit KI – und nur eine sieht nach KI aus",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-11-04",
+      "kategorie": "KI in der Praxis",
+      "interne_tags": [
+        "#notiz"
+      ],
+      "teaser": "Ich habe Claude dieselben sechs Folien dreimal bauen lassen: ohne Vorgaben, mit Brandbook und mit Brandbook plus PowerPoint-Vorlage. Der Unterschied liegt nicht in der KI, sondern in dem, was du ihr mitgibst.",
+      "url": "https://www.kleinmittelki.de/p/44ce46b5-17e6-411a-bef0-1940199a9d0d/",
+      "zwischenueberschriften": [
+        "Welches Problem soll gelöst werden?",
+        "Wie lief der Test ab?",
+        "Was ist dabei herausgekommen?",
+        "Wo sind die Grenzen?",
+        "Mein Fazit"
+      ],
+      "quellen": [
+        "https://www.linkedin.com/posts/kloeckner_claude-style-guide-ugcPost-7522659531189882880-y-dr/"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-plakate-muessen-nicht-nach-ki-aussehen/"
+      ],
+      "zahlen": [],
+      "woerter": 1119
     },
     {
       "id": "6ade31474d491100016c4807",
