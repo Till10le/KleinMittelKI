@@ -35,7 +35,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Braucht von Till: Einschätzung in 2–3 Sätzen oder Freigabe des Vorschlags
 - Vorschlag „Eine Zahl, genau gelesen“: zahl „88 %“ · text „der Betriebe ohne KI sehen dafür keine passende Anwendung.“ · genau „Gemeint sind nur Betriebe, die KI weder nutzen noch planen – im zweiten Halbjahr 2025 zwei Drittel aller Betriebe. Selbstauskunft. Quelle: IAB, Oktober 2026.“ · link: Beitrag nach Veröffentlichung. Ändern nur nach Freigabe (Code-Injection, nicht per API).
 - Reihenfolge: vor nicht-jedes-problem-braucht-ki veröffentlichen
-- Verlauf: (ältere Einträge: redaktion/verlauf/iab-betriebe-sehen-keine-ki-anwendung.md) 2026-10-24 Chat: Till will neuen Titel, wählt „Fast 90 Prozent … an der falschen Stelle.“ → Titel, Teaser (wiederholte sonst die Überschrift) und Vorschaubild neu · 2026-10-25 Ghost-Lauf (7:47): Entwurf in Ghost angelegt, Vorschau: https://www.kleinmittelki.de/p/49d77d59-3984-4501-99d4-d71e1b0198c1/ · 2026-11-02 Lauf 12:47: als B erinnert (Mail 1a19be3873ddb3ea, Termin Do 5.11. 7:00)
+- Verlauf: (ältere Einträge: redaktion/verlauf/iab-betriebe-sehen-keine-ki-anwendung.md) 2026-10-25 Ghost-Lauf (7:47): Entwurf in Ghost angelegt, Vorschau: https://www.kleinmittelki.de/p/49d77d59-3984-4501-99d4-d71e1b0198c1/ · 2026-11-02 Lauf 12:47: als B erinnert (Mail 1a19be3873ddb3ea, Termin Do 5.11. 7:00) · 2026-11-05 Lauf 7:47: Do 5.11. ohne Freigabe verstrichen; im Briefing als B erinnert (Mail 1a1aa7c89c1cc391, „B ja“ = Do 12.11. 7:00)
 
 ### nicht-jedes-problem-braucht-ki
 - Status: veroeffentlicht
@@ -268,7 +268,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Warum für KMU: Prinzip übertragbar auf Ausschreibungen, Förderprogramme, Normen; fünf Schritte, Beispiel-Anfrage Malerbetrieb, drei Wege nach Ausstattung
 - Wichtig (Till, Chat 25.10.2026): Der Beitrag zeigt nur die Recherche. Nichts darüber, dass KI Texte oder Beiträge schreibt – und auch nicht, dass Till selbst schreibt; das bleibt offen.
 - Braucht von Till: Review mit Till am 03.11. (Prozess hat sich geändert), danach „A ja“ oder Änderungen
-- Verlauf: (ältere Einträge: redaktion/verlauf/ki-recherche-assistent-selbstversuch.md) 2026-10-25 Mail-Lauf (Abend): als B an Till gemailt (Verlauf 1a173f22500167ff, Vorschlag Do 7:00) · 2026-11-02 Lauf 12:47: als A erinnert (Mail 1a19be3873ddb3ea, Termin Di 3.11. bei „A ja“ bis 18:47, sonst Di 10.11.) · 2026-11-02 Chat (abends): Till: nicht Di 3.11.; Selbstversuch wird am 03.11. gemeinsam nochmals reviewt, weil sich der Prozess geändert hat
+- Verlauf: (ältere Einträge: redaktion/verlauf/ki-recherche-assistent-selbstversuch.md) 2026-11-02 Lauf 12:47: als A erinnert (Mail 1a19be3873ddb3ea, Termin Di 3.11. bei „A ja“ bis 18:47, sonst Di 10.11.) · 2026-11-02 Chat (abends): Till: nicht Di 3.11.; Selbstversuch wird am 03.11. gemeinsam nochmals reviewt, weil sich der Prozess geändert hat · 2026-11-05 Lauf 7:47: im Briefing als A erinnert (Mail 1a1aa7c89c1cc391, „A ja“ = Di 10.11. 7:00); Review vom 03.11. nicht im Repo dokumentiert
 
 ### betriebsrat-ki-einfuehren
 - Status: vorgeschlagen
@@ -303,6 +303,21 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Monatsrhythmus: Praxistest-Woche 3 (Di 17.11.) als Alternative zur Preisliste oder Woche 4 (Di 24.11.2026).
 - Braucht von Till: ja/nein zum Testaufbau, dann ca. 1 Stunde Test, Zählbogen, Screenshots, 2–3 Sätze Fazit.
 - Verlauf: 2026-11-01 Ideen (Sonntags-Lauf): vorgeschlagen
+
+### ki-agent-beeinflusst-entscheidungen
+- Status: vorgeschlagen
+- Hinweis aus ChatGPT (Eingang 2026-10-31, Punkt 1) – Original selbst gelesen, Zahlen geprüft
+- Titel (Arbeitstitel): „Die KI hat eine Tendenz – und plötzlich ist es deine Entscheidung“
+- Rubrik/Kategorie: Aktuell / Studien & Zahlen
+- Format: Nachricht (ca. 300 Wörter, ca. 2 Min. Lesezeit), Kennzahl-Grafik „86 % der Analyseentscheidungen“ (Bezug: Entscheidungen, nicht Personen)
+- Quelle: Anthropic Research, „How AI agents shape experts' judgment calls“, https://www.anthropic.com/research/agents-judgment-calls (27.10.2026)
+- Worum es geht: In einem Experiment von Anthropic arbeiteten 50 Datenanalysten mit einem KI-Agenten, der verdeckt je Analyseschritt eine zufällige Tendenz vertrat. Sie folgten ihm in 86 % der Entscheidungen (Zufall: etwa 50 %); nur 15 % nannten den Agenten als Quelle ihrer Argumente.
+- Warum für KMU: Wer als Inhaber oder Geschäftsführer (20–150 Leute) Preis-, Investitions- oder Personalfragen mit einem KI-Assistenten vorbereitet, übernimmt womöglich dessen Abwägung, ohne es zu merken. Einschränkung: Herstellerstudie, fiktiver Fall, Tendenz bewusst verstärkt, Teilnehmende waren Analysten, nicht Inhaber – die Übertragung ist unsere Ableitung.
+- Unsere Idee: „Die KI hat eine Tendenz – und plötzlich ist es deine Entscheidung“ – Nachricht mit drei einfachen Gegenmitteln aus der Studie (erst eigene Meinung notieren, KI für jede Option das stärkste Argument liefern lassen, festlegen, welche Entscheidungen beim Menschen bleiben); verlinkt auf ki-ergebnisse-pruefen-leitfaden.
+- Relevanz: 8/10 (Betroffenheit 1, Handlung 2, Quelle 2, Neuheit 1, Passung 2)
+- Braucht von Till: Einschätzung in 2–3 Sätzen (z. B. ob er bei eigenen Entscheidungen erst selbst abwägt oder die KI zuerst fragt)
+- Details: entwuerfe/ki-agent-beeinflusst-entscheidungen/quellen.md
+- Verlauf: 2026-11-05 Scout: vorgeschlagen (Hinweis aus ChatGPT; Zweitverwertung the-decoder nicht verwenden) · 2026-11-05 Lauf 7:47: als 1 im Briefing gemailt (Mail 1a1aa7c89c1cc391)
 
 ## Archiv
 

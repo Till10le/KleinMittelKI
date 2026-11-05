@@ -210,6 +210,25 @@
       "erledigt": {
         "N": "newsletter-2026-11-03 eingeplant Di 3.11. 7:05 (Lauf 02.11. 12:47), gemeldet"
       }
+    },
+    {
+      "datum": "2026-11-05",
+      "thread_id": "1a1aa7c89c1cc391",
+      "betreff": "KMK · Do 5.11. · Redaktionsbriefing",
+      "art": "redaktion",
+      "eintraege": {
+        "1": "ki-agent-beeinflusst-entscheidungen",
+        "A": "ki-recherche-assistent-selbstversuch",
+        "B": "iab-betriebe-sehen-keine-ki-anwendung"
+      },
+      "fragen_offen": [
+        {
+          "nr": "F1",
+          "slug": "(Ghost-Entwurf 44ce46b5-17e6-411a-bef0-1940199a9d0d, nicht im Board)",
+          "frage": "Neuer Entwurf „Dreimal dieselbe Präsentation mit KI …“ – von Till? prüfen und einplanen?",
+          "mail_id": "1a1aa7c89c1cc391"
+        }
+      ]
     }
   ],
   "eigene_ids": [
@@ -237,7 +256,8 @@
     "1a17c3a48051b111",
     "1a19779addc6b20f",
     "1a19b225f263a1ec",
-    "1a19be3873ddb3ea"
+    "1a19be3873ddb3ea",
+    "1a1aa7c89c1cc391"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
