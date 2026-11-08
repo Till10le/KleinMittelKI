@@ -355,7 +355,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Titel: „Dreimal dieselbe Präsentation mit KI – und nur eine sieht nach KI aus“
 - Rubrik/Kategorie: Praxistests / KI in der Praxis · Format: Praxistest („Selbst ausprobiert“)
 - Herkunft: Ghost-Entwurf 44ce46b5-… (F1 im Briefing 05.11.), von Till am 06.11.2026 10:06 selbst veröffentlicht; nicht über die Redaktion, keine Freigabe in freigaben.jsonl nötig. Text: redaktion/referenz/powerpoint-mit-ki-im-eigenen-design.html
-- Verlauf: 2026-11-08 Lauf 7:47: im Index als veröffentlicht gefunden, im Board nachgetragen, Fahrplan als Ausnahme vermerkt; als 01 in Newsletter #6 (Entwurf) · 2026-11-08 Social (Sonntags-Lauf): Paket in Arbeit (entwuerfe/powerpoint-mit-ki-im-eigenen-design/social.md)
+- Verlauf: 2026-11-08 Lauf 7:47: im Index als veröffentlicht gefunden, im Board nachgetragen, Fahrplan als Ausnahme vermerkt; als 01 in Newsletter #6 (Entwurf) · 2026-11-08 Social (Sonntags-Lauf): Paket vorbereitet (entwuerfe/powerpoint-mit-ki-im-eigenen-design/social.md: WhatsApp-Status Di 10.11., LinkedIn Do 12.11., Karussell 7 Folien; LinkedIn-Vorrat danach Do 19.11. nicht-jedes-problem, Do 26.11. eurobarometer). Social: vorbereitet, wartet auf Till. Nichts gepostet.
 
 ## Archiv
 
