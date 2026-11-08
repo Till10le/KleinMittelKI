@@ -44,7 +44,7 @@ wäre die nächste Ausgabe Dezember, dann braucht 03.11. einen Wissensbeitrag (K
 Puffer: genau ein fertiger Wissensartikel (der Prüf-Leitfaden); nach dem 27.10. ist der Puffer leer. Praxistest-Woche (17.11.) ohne Kandidat mit Ergebnissen.
 Ins Board als `vorgeschlagen`: `angebot-aus-preisliste-praxistest`, `ki-kompetenz-pflicht-mitarbeiter`.
 
-- [ ] **status-quo-november-2026** – Lagebericht „Status Quo“, Ausgabe November 2026 (Update des Lageberichts vom 21.09.2026)
+- [ ] **status-quo-november-2026** – (2026-11-08 Ideen: ins Board übernommen als `status-quo-dezember-2026`, Termin-Vorschlag Di 01.12.2026; Eintrag bleibt als Material) – Lagebericht „Status Quo“, Ausgabe November 2026 (Update des Lageberichts vom 21.09.2026)
   - Rubrik/Format: Wissen / Lageberichte, Lagebericht (ca. 900 Wörter, Abschnitte 01–05, je eine Kennzahl/Balkengrafik).
   - Für wen: Inhaber und Geschäftsführer 10–250 Beschäftigte, die wissen wollen, wo andere Betriebe stehen.
   - Neu seit September (alle schon von der Redaktion am Original gelesen, siehe Board-Einträge): IAB-Befragung (20.10.2026, Gründe der
@@ -102,6 +102,48 @@ Entwicklungen 6 – Wissen und Praxis bleiben dünn. Ins Board als `vorgeschlage
 - [ ] **lagebericht-rhythmus-entscheidung** – keine neue Idee, sondern Erinnerung: Die Frage „Status Quo monatlich oder vierteljährlich?“
   ist seit dem 25.10. offen und blockiert Woche 1. Vorschlag für das Donnerstags-Briefing (Chefredakteur): „Lagebericht vierteljährlich
   (nächster Dezember), Woche 1 sonst Wissen – ja/nein?“. Material für die nächste Ausgabe steht unter `status-quo-november-2026`.
+
+### Ideen-Agent, Sonntags-Lauf 2026-11-08
+
+Monatsrhythmus-Check: Di 10.11. (Woche 2, Wissen) → nur Kandidat A `ki-recherche-assistent-selbstversuch` (Praxistest, wartet auf Till);
+kein fertiger Wissensartikel. Di 17.11. (Woche 3, Praxistest) → `angebot-aus-preisliste-praxistest` und `stellenanzeige-mit-ki-praxistest`
+seit 25.10./01.11. ohne Antwort, keine Ergebnisse; Fahrplan frei. Di 24.11. (Woche 4) → nichts. Di 01.12. (Woche 1) → Lagebericht möglich.
+Puffer: 0 fertige Wissensartikel (Soll 1–2). Neu veröffentlicht seit letztem Lauf: Praxistest PowerPoint (06.11.) – Rubrik Praxis jetzt 3.
+Engpass ist nicht Ideenmangel, sondern Tills Antworten: 10 Einträge stehen auf `vorgeschlagen`. Deshalb diesmal Ideen, die wenig von Till brauchen.
+Wochenbericht KW 44 („Lagebericht November für Di 10.11.“) geprüft: passt nicht vor 01.12. (Gründe im Board-Eintrag).
+Ins Board als `vorgeschlagen`: `erste-ki-aufgabe-finden-selbsttest` (Wissens-Puffer für 17.11./24.11., braucht nur Einschätzung),
+`status-quo-dezember-2026` (Hauptbeitrag 01.12.). Netz in diesem Lauf gesperrt: bitkom.org, destatis.de, ifo.de, help.openai.com nicht abrufbar.
+
+- [ ] **behoerden-merkblatt-fristen-praxistest** – „Merkblatt, Bescheid, Frist: Liest die KI das Kleingedruckte richtig?“
+  - Rubrik/Format: Praxistests / KI in der Praxis, Praxistest (700–1.200 Wörter).
+  - Für wen: Inhaber 1–30 Beschäftigte ohne Verwaltungskraft (Handwerk, Dienstleister), die Schreiben von Kammer, Berufsgenossenschaft
+    oder Behörde von der KI zusammenfassen lassen.
+  - Testaufbau (unter einer Stunde): Redaktion sucht zwei öffentliche, frei abrufbare Dokumente ohne Personenbezug (z. B. Merkblatt einer
+    Handwerkskammer oder Berufsgenossenschaft mit Fristen und Pflichten) und erstellt vorab aus dem Original eine Soll-Liste (Fristen, Beträge,
+    Pflichten, Ausnahmen) als Zählbogen. Till lädt jedes Dokument in ChatGPT oder Claude, Prompt: „Fasse zusammen: Was muss ich bis wann tun?“
+    (ca. 25 Min.), zählt gegen die Soll-Liste: übersehene Fristen, erfundene Fristen/Beträge, falsche Zuordnung (ca. 20 Min.), Screenshots.
+  - Leser kann danach: entscheiden, ob KI-Zusammenfassungen von Pflichtschreiben bei ihm in die Stufe „nur mit Gegenlesen“ gehören.
+  - Abgrenzung: Prüf-Leitfaden (allgemein), `rechnungen-automatisch-erfassen` (Belege), `angebot-aus-preisliste-praxistest` (Preise). Keine echten Bescheide.
+  - Quelle: Dokumente noch nicht ausgewählt, nichts gelesen. Braucht von Till: ja/nein, ca. 45 Min. Test, Zählbogen, 2–3 Sätze Fazit. Relevanz vorläufig 8/10
+    (Betroffenheit 2, Handlung 2, Quelle 1, Neuheit 2, Passung 1 – dritter offener Praxistest-Vorschlag).
+- [ ] **ki-zeitersparnis-stoppuhr-praxistest** – „Spart KI wirklich Zeit? Zwei Büroaufgaben mit der Stoppuhr – Prüfzeit eingerechnet“
+  - Rubrik/Format: Praxistests / KI in der Praxis, Praxistest. Ergänzt Abschnitt „05 Wirkung“ des Lageberichts (dort nur Selbstauskünfte und
+    Zusammenhänge, z. B. KfW) um eine eigene, offen kleine Messung.
+  - Für wen: Inhaber und Büro 5–50 Beschäftigte, die wissen wollen, ob sich der Aufwand lohnt.
+  - Testaufbau (unter einer Stunde): zwei fiktive Aufgaben, die die Redaktion vorbereitet (Antwort auf eine Reklamations-Mail; Zusammenfassung
+    von Stichpunkten einer Besprechung). Till erledigt jede einmal ohne KI und eine gleichwertige Variante mit KI. Gemessen werden drei Zeiten
+    getrennt: Schreiben/Prompten, Prüfen und Korrigieren, Gesamt (ca. 40 Min.). Zählbogen + 2–3 Sätze, ob das Ergebnis gleich gut war.
+  - Leser kann danach: dieselbe Messung mit einer eigenen Aufgabe machen und Prüfzeit mitrechnen. Nur Tills Messwerte, nie geschätzt;
+    Grenze offen: n = 2, eine Person, Lerneffekt durch Wiederholung.
+  - Braucht von Till: ja/nein, ca. 45 Min., Zeiten, Fazit. Relevanz vorläufig 8/10 (Betroffenheit 2, Handlung 2, Quelle 1, Neuheit 2, Passung 1).
+- [ ] Ergänzung zu „Was KI wirklich kostet“ (Konzeptidee oben, nicht entschieden): als Rechenbeispiel „Was kostet KI einen 15-Personen-Betrieb
+  im Jahr?“ (Wissen / Leitfäden) mit Listenpreisen von den Preisseiten der Anbieter (ChatGPT Business, Claude Team, Microsoft 365 Copilot,
+  Gemini in Workspace) plus Einführungszeit. Begründung: Kosten sind im Eurobarometer 578 die meistgenannte Hürde (50 %, gelesen).
+  Preisseiten in diesem Lauf **nicht gelesen** (Netz gesperrt); Copilot-Nutzungsabrechnung: Deutschland zum Start ausgenommen (siehe oben).
+  Erst vorschlagen, wenn alle Preise am Original mit Stand-Datum gelesen sind. Relevanz vorläufig 7/10.
+- Verworfen in diesem Lauf (nicht vorgeschlagen): Anbieter-Checkliste zur Bitkom-PM „KI aus Deutschland“ (02.11.) – Original nicht lesbar,
+  Digital-Gipfel-Kontext mit politischen Forderungen des Verbands (Regel 4), und die Anbieterunterschiede stehen schon im Modelle-Beitrag (08.10.)
+  und in `kundendaten-in-ki-datenschutz`. Eigener Beitrag „Firmenkonto statt Privatkonto“ – Dublette zu `kundendaten-in-ki-datenschutz`.
 
 ## Erledigt
 

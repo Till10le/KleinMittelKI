@@ -319,6 +319,44 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Details: entwuerfe/ki-agent-beeinflusst-entscheidungen/quellen.md
 - Verlauf: 2026-11-05 Scout: vorgeschlagen (Hinweis aus ChatGPT; Zweitverwertung the-decoder nicht verwenden) · 2026-11-05 Lauf 7:47: als 1 im Briefing gemailt (Mail 1a1aa7c89c1cc391)
 
+### erste-ki-aufgabe-finden-selbsttest
+- Status: vorgeschlagen
+- Titel (Arbeitstitel): „Wo fange ich mit KI an? Ein Selbsttest: In 30 Minuten zur ersten Aufgabe im Betrieb“
+- Rubrik/Kategorie: Wissen / Leitfäden
+- Format: Anleitung (ca. 550 Wörter; H2 `Warum das gerade jetzt zählt` · `So machst du den Test` · `Worauf du bei den Antworten achtest` · `Ein Gedanke zum Mitnehmen`), eine Grafik: Auswahl-Raster „Wie oft? × Was kostet ein Fehler?“ (tools/grafik.py, Stufen wie im Prüf-Leitfaden)
+- Quelle: keine neue externe Quelle nötig. Aufhänger nur mit bereits gelesenen Originalen: IAB-Pressemitteilung vom 20.10.2026 (88 % der Betriebe, die KI weder nutzen noch planen, sehen keine passende Anwendung; Selbstauskunft, IAB-Betriebspanel 2. Halbjahr 2025 – gelesen für `iab-betriebe-sehen-keine-ki-anwendung`) und Bitkom September 2026 (Einsatzfelder der KI-Anwender, ab 20 Beschäftigten – gelesen für den Lagebericht 21.09.). Methode ist eigene Redaktionsarbeit, keine Studie.
+- Worum es geht: Der IAB-Entwurf endet mit dem Satz „eine Woche lang notieren, welche Büroaufgaben immer wiederkommen, und die häufigste ausprobieren“. Dieser Leitfaden macht daraus einen Selbsttest: wiederkehrende Aufgaben auflisten, je Aufgabe Häufigkeit, Minuten, Art der Daten (Kundendaten ja/nein) und Fehlerfolge notieren, mit dem Raster die erste Aufgabe wählen und mit dem Werkzeug testen, das der Betrieb schon hat.
+- Warum für KMU: Inhaber und Büro in Betrieben mit 1–50 Beschäftigten ohne IT-Abteilung, die „keine Anwendung sehen“ oder nicht wissen, wo sie anfangen sollen. Konkrete Prozesse: Anfragen beantworten, Angebotstexte, Rückfragen, Protokolle, Stellenanzeigen. Bisher beantwortet kein Beitrag die Frage „Womit fange ich an?“ (Index geprüft). Einschränkung offen nennen: Methode zur Orientierung, kein Nachweis, dass sich die Aufgabe rechnet.
+- Unsere Idee: „Wo fange ich mit KI an?“ – Selbsttest im Stil von „Frag eine KI nach deinem eigenen Unternehmen“ (20.09.), der den IAB-Befund in einen Schritt übersetzt; verlinkt auf iab-betriebe-sehen-keine-ki-anwendung, ki-ergebnisse-pruefen-leitfaden (Prüf-Stufen), nicht-jedes-problem-braucht-ki (wenn die einfachere Lösung reicht) und Schatten-KI (Werkzeug, das schon da ist). Kein Handels-Beispiel.
+- Was der Leser danach tun kann: eine konkrete erste Aufgabe festlegen, Daten und Prüfaufwand vorher einschätzen, diese Woche einen Versuch machen.
+- Relevanz: 9/10 (Betroffenheit 2, Handlung 2, Quelle 1, Neuheit 2, Passung 2) – Quelle 1, weil die Methode redaktionell ist und nur der Aufhänger auf Studien beruht; Passung 2: baut auf dem freigegebenen Prüf-Leitfaden und dem Selbsttest-Format auf, braucht keinen Test von Till. Dublettencheck: Index, Board, Themenspeicher, verlauf/ – kein Beitrag zum Einstieg; `kostenlose-ki-hilfe-fuer-betriebe` (Speicher) nennt Anlaufstellen, nicht die Aufgabe – gegenseitig verlinken.
+- Monatsrhythmus: Wissens-Puffer für Di 17.11. (Woche 3; Praxistests ohne Ergebnisse, Fahrplan erlaubt dann den anderen Typ) oder Di 24.11. (Woche 4). Am besten nach der Veröffentlichung von `iab-betriebe-sehen-keine-ki-anwendung`.
+- Braucht von Till: Einschätzung in 2–3 Sätzen. Eine eigene erste Aufgabe als Beispiel nur, wenn er sie selbst nennt – sonst bleibt das Beispiel fiktiv und als INTERN-Vorschlag markiert.
+- Verlauf: 2026-11-08 Ideen (Sonntags-Lauf): vorgeschlagen
+
+### status-quo-dezember-2026
+- Status: vorgeschlagen
+- Titel (Arbeitstitel): „KI im deutschen Mittelstand: Wo stehen wir im Dezember 2026?“ (Fortsetzung von „… im September 2026?“, 21.09.)
+- Rubrik/Kategorie: Wissen / Lageberichte
+- Format: Lagebericht (Serienkopf „Status Quo“, Ausgabe Dezember 2026; ca. 900 Wörter; Abschnitte 01 Verbreitung · 02 Anwendungen · 03 Integration · 04 Hürden · 05 Wirkung; je Abschnitt eine Kennzahl oder Balkengrafik; Box „Meine Einordnung“; „Quellen & Datenbasis“ mit Vergleichbarkeitshinweis)
+- Quelle: bereits von der Redaktion am Original gelesen: IAB-Forum/IAB-Pressemitteilung (20.10.2026, Gründe der Nichtnutzung), Flash Eurobarometer 578 (14.10.2026, Hürden nach Größenklasse), TÜV-Verband/BSI-PM (07.10.2026, KI-gestützte Angriffe, ab 20 Beschäftigten), Anthropic Research (27.10.2026, nur als Randnotiz zu „Wirkung“). **Nicht lesbar in diesem Lauf (Netz gesperrt):** Destatis IKT-Erhebung 2026 (Tabelle KI nach Größenklassen; laut Suchtreffer erschien die Vorjahres-Pressemitteilung im November 2024 – ob es 2026-Werte gibt, ungeprüft), ifo-Umfrage „Mehr als die Hälfte der Unternehmen nutzt KI“ (05.06.2026, laut Suchtreffer 54,5 % – **ungeprüft, nicht verwenden, bevor das Original gelesen ist**), Bitkom-PM 02.11.2026 „Unternehmen wollen KI aus Deutschland“ (laut ChatGPT-Eingang 603 Unternehmen ab 20 Beschäftigten – ungeprüft).
+- Worum es geht: Was sich seit September verändert hat: Gründe der Nichtnutzung (IAB), Hürden nach Betriebsgröße (Eurobarometer), neue Risiken (TÜV/BSI). Nur Zahlen aus gelesenen Originalen, verschiedene Grundgesamtheiten offen nebeneinander.
+- Warum für KMU: Inhaber und Geschäftsführer 10–250 Beschäftigte, die ihren eigenen Stand einordnen wollen. Einschränkung: Selbstauskünfte, verschiedene Größengrenzen (IAB alle Betriebe, Bitkom/TÜV ab 20), Erhebungen teils ein Jahr alt.
+- Unsere Idee: Prüfung des Analyst-Vorschlags „Lagebericht November als Hauptbeitrag“: **für Di 10.11. oder 17.11. passt er nicht** – Woche 1 im November ist vorbei, `iab-betriebe-sehen-keine-ki-anwendung` ist noch nicht veröffentlicht (der Lagebericht soll darauf verlinken, nicht ihn doppeln), die Rhythmus-Frage ist offen und die Destatis-Werte 2026 sind ungeprüft. **Stattdessen Ausgabe Dezember am Di 01.12.2026** (Woche 1): passt bei vierteljährlichem Rhythmus genau (September → Dezember), bei monatlichem ist November ohnehin verpasst. Ersetzt die Speicher-Idee `status-quo-november-2026`.
+- Was der Leser danach tun kann: eigenen Stand an Verbreitung und Hürden messen und den nächsten Schritt wählen (Verweis auf `erste-ki-aufgabe-finden-selbsttest`).
+- Relevanz: 8/10 (Betroffenheit 2, Handlung 1, Quelle 2, Neuheit 1, Passung 2) – Handlung 1, weil Orientierung statt Anleitung; Neuheit 1, weil Fortschreibung. Dublettencheck: einziger Lagebericht ist der vom 21.09.; IAB- und Eurobarometer-Beiträge nur zusammenfassen und verlinken.
+- Monatsrhythmus: Hauptbeitrag Di 01.12.2026, 7:00 (Woche 1). Recherche-Schluss ca. 24.11.; vorher Destatis/ifo/Bitkom am Original lesen (Netzfreigabe nötig).
+- Braucht von Till: ein Ja/Nein fürs Briefing: „Status Quo vierteljährlich – nächste Ausgabe Di 1.12., danach März 2027; Woche 1 sonst Wissen – ja/nein?“. Dazu 2–3 Sätze Einordnung (sonst Box „Meine Einordnung“ als INTERN-Vorschlag).
+- Verlauf: 2026-11-08 Ideen (Sonntags-Lauf): vorgeschlagen (aus Themenspeicher `status-quo-november-2026`, Wochenbericht KW 44 geprüft)
+
+### powerpoint-mit-ki-im-eigenen-design (Beitrag von Till, selbst in Ghost veröffentlicht)
+- Status: veroeffentlicht
+- Live: https://www.kleinmittelki.de/powerpoint-mit-ki-im-eigenen-design/
+- Titel: „Dreimal dieselbe Präsentation mit KI – und nur eine sieht nach KI aus“
+- Rubrik/Kategorie: Praxistests / KI in der Praxis · Format: Praxistest („Selbst ausprobiert“)
+- Herkunft: Ghost-Entwurf 44ce46b5-… (F1 im Briefing 05.11.), von Till am 06.11.2026 10:06 selbst veröffentlicht; nicht über die Redaktion, keine Freigabe in freigaben.jsonl nötig. Text: redaktion/referenz/powerpoint-mit-ki-im-eigenen-design.html
+- Verlauf: 2026-11-08 Lauf 7:47: im Index als veröffentlicht gefunden, im Board nachgetragen, Fahrplan als Ausnahme vermerkt; als 01 in Newsletter #6 (Entwurf) · 2026-11-08 Social (Sonntags-Lauf): Paket in Arbeit (entwuerfe/powerpoint-mit-ki-im-eigenen-design/social.md)
+
 ## Archiv
 
 (noch leer)
