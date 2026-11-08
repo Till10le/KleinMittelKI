@@ -242,6 +242,14 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Braucht von Till: Einschätzung in 2–3 Sätzen; ob er selbst schon Einweisungen gemacht hat (nur dann Ich-Form, sonst INTERN-Vorschlag).
 - Verlauf: 2026-10-25 Ideen (Sonntags-Lauf): vorgeschlagen
 
+### newsletter-2026-11-10
+- Status: newsletter-vorschlag
+- Titel: „#6: Folien ohne KI-Look und ein Recherche-Assistent“
+- Versand: Dienstag 10.11.2026, 7:05 (erst nach Tills „N ja“)
+- Inhalt: 01 powerpoint-mit-ki-im-eigenen-design (live seit 06.11.) · 02 ki-recherche-assistent-selbstversuch (nur wenn A für Di 10.11. 7:00 freigegeben wird, sonst Fassung 2 ohne 02) · 03 Zahl „86 %“ (Anthropic Research 27.10.2026 – nimmt Board-Thema ki-agent-beeinflusst-entscheidungen vorweg) · 04 Gedanke
+- Datei: entwuerfe/newsletter-2026-11-10/beitrag.md, Prüfung: pruefung.md
+- Verlauf: 2026-11-08 Lauf 7:47: Entwurf (Autor), Prüfer Runde 1 nicht bestanden (Rat in 03/04 widersprach der Quelle, „verdeckt“ ungenau), Runde 2 bestanden · 2026-11-08 Lauf 7:47: Entwurf in Ghost (Vorschau https://www.kleinmittelki.de/p/bd6a2494-782d-4723-84e9-d3047e17980e/), Testmail fehlgeschlagen (email_previews liefert HTML), Begleitzettel Fassung 1 gemailt (1a1b9f35f46a94b7, Fingerabdruck 6d556a28…)
+
 ### newsletter-2026-11-03
 - Status: versendet
 - Titel: „#5: Was Betriebe bei KI bremst und wie viel Technik reicht“

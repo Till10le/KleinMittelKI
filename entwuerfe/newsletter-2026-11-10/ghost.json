@@ -1,0 +1,14 @@
+{
+  "bilder": {},
+  "id": "6af01d6a2758a80001ce74b2",
+  "uuid": "bd6a2494-782d-4723-84e9-d3047e17980e",
+  "slug": "6-folien-ohne-ki-look-und-ein-recherche-assistent",
+  "titel": "#6: Folien ohne KI-Look und ein Recherche-Assistent",
+  "status": "draft",
+  "updated_at": "2026-11-08T06:57:47.000Z",
+  "vorschau": "https://www.kleinmittelki.de/p/bd6a2494-782d-4723-84e9-d3047e17980e/",
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6af01d6a2758a80001ce74b2",
+  "entwurf_hash": "6d556a28d786af8c9399e7824a2e35d8211ee2a6109b743b72759bb46c413c71",
+  "intern_absaetze_entfernt": 1,
+  "testmail_fehler": "Ghost antwortet 200 auf POST email_previews/posts/6af01d6a2758a80001ce74b2/ ohne JSON (Content-Type text/html; charset=utf-8): <!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta\n      http-equiv=\"Content-Security-Policy\"\n      content=\"default-src 'self'; img-src 'self' data:; media-src 'self' data:; object-src 'none'; style-src 'self' 'sha256-o4vzfmmUENEg4chMjjRP9EuW9ucGnGIGVdbl8d0SHQQ='; script-src 'self' 'sha256-a9bHdQG"
+}

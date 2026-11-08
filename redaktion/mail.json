@@ -229,6 +229,35 @@
           "mail_id": "1a1aa7c89c1cc391"
         }
       ]
+    },
+    {
+      "art": "redaktion",
+      "betreff": "KMK · So 8.11. · Newsletter #6, Fassung 1",
+      "datum": "2026-11-08",
+      "thread_id": "1a1b9f35f46a94b7",
+      "eintraege": {
+        "N": "newsletter-2026-11-10",
+        "A": "ki-recherche-assistent-selbstversuch",
+        "B": "iab-betriebe-sehen-keine-ki-anwendung",
+        "F2": "übersicht/regeln nachziehen (Wochenbericht KW 45)"
+      },
+      "fassungen": [
+        {
+          "nr": 1,
+          "hash": "6d556a28d786af8c9399e7824a2e35d8211ee2a6109b743b72759bb46c413c71",
+          "mail_id": "1a1b9f35f46a94b7"
+        }
+      ],
+      "erledigt": {
+        "F1": "Präsentations-Beitrag von Till selbst veröffentlicht 06.11., gemeldet"
+      },
+      "fragen_offen": [
+        {
+          "nr": "F2",
+          "frage": "Übersicht/Regeln nachziehen (N stopp, Mail oder Chat, 7:05, Status-Zeile vorcheck)?",
+          "mail_id": "1a1b9f35f46a94b7"
+        }
+      ]
     }
   ],
   "eigene_ids": [
@@ -257,7 +286,8 @@
     "1a19779addc6b20f",
     "1a19b225f263a1ec",
     "1a19be3873ddb3ea",
-    "1a1aa7c89c1cc391"
+    "1a1aa7c89c1cc391",
+    "1a1b9f35f46a94b7"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",

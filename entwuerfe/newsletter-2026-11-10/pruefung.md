@@ -42,3 +42,37 @@ Zwei inhaltliche Mängel im Zahlenblock bzw. Gedanken (Abschnitt 03/04). Alles a
 3. **Alternativ-Teaser A** hat 133 Zeichen, also knapp über 130. Er lässt sich kürzen, z. B. „Dreimal dieselbe Präsentation mit KI, ein Assistent, der sucht, aber nicht entscheidet, eine Zahl und ein Gedanke.“
 4. **02, „Ein grüner Status heißt nur …“:** Im Beitrag steht das als Hinweis von Anthropic, im Newsletter als eigene Feststellung. Das ist inhaltlich richtig. Wer genau sein will, schreibt: „Ein grüner Status heißt nur, dass der Lauf ohne technischen Fehler endete, so steht es auch bei Anthropic.“
 5. Mit der Zahl 86 % ist die Kennzahl des offenen Themas ki-agent-beeinflusst-entscheidungen schon einmal genannt. Der INTERN-Absatz weist Till darauf hin. Ok.
+
+---
+
+# Runde 2 (08.11.2026, Lauf So 7:47)
+
+Neu gelesen: überarbeiteter Entwurf `beitrag.md`. Original https://www.anthropic.com/research/agents-judgment-calls am 08.11.2026 erneut abgerufen (HTTP 200), die neuen Belegstellen selbst geprüft. `python3 tools/lexical.py` erneut gelaufen.
+
+## Ergebnis: BESTANDEN
+
+## Mängel aus Runde 1
+
+1. **Rat 03/04: behoben.**
+   - 03: „Lass dir bei einer Preis- oder Personalfrage von der KI für jede Option das stärkste Argument geben, nicht nur für eine.“ Im Original steht: „But they rarely made a strong case for why an expert might prefer the other option, which might have helped analysts make a better-informed choice. With only one side argued well, the analysts could adopt the agent’s assumptions …“ Dazu: „Agents could make the best case for each option“. Der Rat ist eine Ableitung, die der Befund stützt. Er widerspricht der Quelle nicht.
+   - 04: „Leg deshalb fest, welche Entscheidungen im Betrieb bei dir bleiben, und nimm dir dafür Zeit.“ Im Original steht: „Organizations will need to decide deliberately which decisions need a person’s own informed judgment, and give people the time and resources to form one.“ Das passt.
+   - Der Rat steht nicht mehr doppelt. Der Gedanke hat 35 Wörter (≤ 40).
+   - Die Streichung des alten Rats und der Grund (60 % Wechsel bei 38 Fällen) stehen im INTERN-Absatz. Die neuen Sätze sind als VORGESCHLAGEN markiert.
+2. **„verdeckt nahelegte“: behoben.** Neu steht da: „wie ein KI-Agent es empfahl. Seine Tendenz war per Münzwurf vorgegeben, ohne dass die Analysten es wussten.“ Im Original: „set up each analyst’s agent to favor one option on each decision, which the analysts weren’t told about. Which way the agents would ‚lean‘ would be decided by coin flip.“ Das stimmt.
+
+## Hinweise aus Runde 1
+
+- **„Der Haken“** kommt nur noch einmal vor (02). In 01 steht jetzt „Überrascht hat mich etwas anderes …“. Das deckt der veröffentlichte Beitrag („Mit dieser Stelle hatte ich nicht gerechnet … Mir war das nicht aufgefallen.“), und der Satz ist im INTERN als Vorschlag aufgeführt. Ok.
+- **Grüner Status:** steht jetzt als Hinweis von Anthropic („so steht es auch bei Anthropic“), wie im Beitrag A. Ok.
+- **Alternativ-Teaser A:** 114 Zeichen. Ok.
+- **Abhängigkeit von 02 vom offenen Review von A:** bleibt bestehen. Der INTERN-Absatz und die Checkliste regeln das (sonst Fassung 2). Das ist kein Mangel des Textes.
+
+## Erneut geprüft, unverändert ok
+
+- 86 %, etwa 50 %, 15 %, 50 Analysten, fiktiver Fall, bewusst verstärkte Tendenz, 27.10.2026: wörtlich im Original. Die Kopfzeile „Anthropic · Oktober 2026“ stimmt.
+- Titel 51 Zeichen, Teaser 123 Zeichen, Tag `#newsletter`, Kategorie leer. Keine Platzhalter. Schluss wörtlich.
+- lexical.py: 23 Knoten, vier Zwischenüberschriften wie in Runde 1, Frontmatter korrekt.
+
+## Hinweis (kein Mangel)
+
+- Der Rat „für jede Option das stärkste Argument“ ist bei den Autoren ein Gestaltungsvorschlag für Agenten, den sie selbst noch nicht getestet haben. Sie warnen, das könne Nutzer überfordern. Im Zahlenblock steht er als Folgerung „Für deinen Betrieb heißt das“, nicht als Studienergebnis. Das ist vertretbar. Till sollte nur wissen, dass es eine Ableitung ist.
