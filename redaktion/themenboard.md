@@ -35,7 +35,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Braucht von Till: Einschätzung in 2–3 Sätzen oder Freigabe des Vorschlags
 - Vorschlag „Eine Zahl, genau gelesen“: zahl „88 %“ · text „der Betriebe ohne KI sehen dafür keine passende Anwendung.“ · genau „Gemeint sind nur Betriebe, die KI weder nutzen noch planen – im zweiten Halbjahr 2025 zwei Drittel aller Betriebe. Selbstauskunft. Quelle: IAB, Oktober 2026.“ · link: Beitrag nach Veröffentlichung. Ändern nur nach Freigabe (Code-Injection, nicht per API).
 - Reihenfolge: vor nicht-jedes-problem-braucht-ki veröffentlichen
-- Verlauf: (ältere Einträge: redaktion/verlauf/iab-betriebe-sehen-keine-ki-anwendung.md) 2026-10-25 Ghost-Lauf (7:47): Entwurf in Ghost angelegt, Vorschau: https://www.kleinmittelki.de/p/49d77d59-3984-4501-99d4-d71e1b0198c1/ · 2026-11-02 Lauf 12:47: als B erinnert (Mail 1a19be3873ddb3ea, Termin Do 5.11. 7:00) · 2026-11-05 Lauf 7:47: Do 5.11. ohne Freigabe verstrichen; im Briefing als B erinnert (Mail 1a1aa7c89c1cc391, „B ja“ = Do 12.11. 7:00)
+- Verlauf: (ältere Einträge: redaktion/verlauf/iab-betriebe-sehen-keine-ki-anwendung.md) 2026-11-02 Lauf 12:47: als B erinnert (Mail 1a19be3873ddb3ea, Termin Do 5.11. 7:00) · 2026-11-05 Lauf 7:47: Do 5.11. ohne Freigabe verstrichen; im Briefing als B erinnert (Mail 1a1aa7c89c1cc391, „B ja“ = Do 12.11. 7:00) · 2026-11-09 Chat: Till will B diese Woche (Do 12.11.), versteht Grafik nicht → g1 neu als zwei Karten (viel/wenig Potenzial: nutzen KI / Betriebe ohne KI ohne Anwendung), Ghost-Entwurf aktualisiert; „B ja“ offen
 
 ### nicht-jedes-problem-braucht-ki
 - Status: veroeffentlicht
