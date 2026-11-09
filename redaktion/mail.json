@@ -270,6 +270,23 @@
           "mail_id": "1a1b9f35f46a94b7"
         }
       ]
+    },
+    {
+      "art": "redaktion",
+      "betreff": "KMK · Mo 9.11. · B und Newsletter #6 für morgen",
+      "datum": "2026-11-09",
+      "thread_id": "1a1c024b6f48189f",
+      "eintraege": {
+        "B": "iab-betriebe-sehen-keine-ki-anwendung",
+        "N": "newsletter-2026-11-10"
+      },
+      "fassungen": [
+        {
+          "nr": 3,
+          "hash": "335a848f6fc3b38545a7905220296bfd04931ff7c1295fe6d6005a32e2a5dec3",
+          "mail_id": "1a1c024b6f48189f"
+        }
+      ]
     }
   ],
   "eigene_ids": [
@@ -299,7 +316,8 @@
     "1a19b225f263a1ec",
     "1a19be3873ddb3ea",
     "1a1aa7c89c1cc391",
-    "1a1b9f35f46a94b7"
+    "1a1b9f35f46a94b7",
+    "1a1c024b6f48189f"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
@@ -311,7 +329,8 @@
     "1a19157a263d7611",
     "1a1a7ee5eb6d9db6",
     "1a1b0a97b27c7679",
-    "1a1b0a0e24f497ac"
+    "1a1b0a0e24f497ac",
+    "1a1bf675b2df722e"
   ],
   "vorschau_gemailt": [
     "olg-hamm-chatbot-haftung",
@@ -326,6 +345,7 @@
     "ki-ergebnisse-pruefen-leitfaden@2026-10-25T16:41:38.000Z",
     "ki-recherche-assistent-selbstversuch@2026-10-25T16:41:43.000Z",
     "ki-ergebnisse-pruefen-leitfaden@2026-10-25T17:19:52.000Z",
-    "ki-ergebnisse-pruefen-leitfaden@2026-10-25T17:39:35.000Z"
+    "ki-ergebnisse-pruefen-leitfaden@2026-10-25T17:39:35.000Z",
+    "iab-betriebe-sehen-keine-ki-anwendung@2026-11-09T08:33:51.000Z"
   ]
 }
