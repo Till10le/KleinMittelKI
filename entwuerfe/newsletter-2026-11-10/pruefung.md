@@ -76,3 +76,33 @@ Neu gelesen: überarbeiteter Entwurf `beitrag.md`. Original https://www.anthropi
 ## Hinweis (kein Mangel)
 
 - Der Rat „für jede Option das stärkste Argument“ ist bei den Autoren ein Gestaltungsvorschlag für Agenten, den sie selbst noch nicht getestet haben. Sie warnen, das könne Nutzer überfordern. Im Zahlenblock steht er als Folgerung „Für deinen Betrieb heißt das“, nicht als Studienergebnis. Das ist vertretbar. Till sollte nur wissen, dass es eine Ableitung ist.
+
+---
+
+# Fassung 2 (09.11.2026, Chat)
+
+Geprüft wurden nur die Änderungen gegenüber Runde 2: Abschnitt 02 (Recherche-Assistent) ist auf Tills Wunsch gestrichen, dazu kommen neuer Titel, Teaser, Einstieg und der INTERN-Absatz. Die Fakten der Zahl wurden nicht erneut am Original geprüft, das ist in Runde 2 geschehen.
+
+## Ergebnis: BESTANDEN
+
+## Geprüft
+
+- **Aufbau und Nummerierung:** Einstieg, dann 01 · Selbst ausprobiert, 02 · Eine Zahl, genau gelesen, 03 · Ein Gedanke zum Mitnehmen. Danach folgen Button, Trennlinie und der wörtliche Schluss. Das entspricht kmk-newsletter. Keine Nummer fehlt.
+- **Titel:** „#6: Dreimal dieselbe Präsentation mit KI“ hat 40 Zeichen (höchstens 60), ist sachlich und hält die Form `#<Nummer>: <Thema>` ein.
+- **Teaser:** 126 Zeichen, also im Rahmen von 105–130. Er zählt auf, was drinsteht, und erwähnt den Recherche-Assistenten nicht mehr.
+- **Einstieg:** „Hallo,“ steht als eigener Absatz, dann folgt ein Absatz „in dieser Ausgabe geht es um …“ mit zwei Sätzen. Er passt zu 01. Im INTERN-Absatz ist er als Vorschlag markiert.
+- **Gedanke ohne 02:** Er trägt weiter. „Vorlage“ greift 01 auf, „Umgekehrt richtest du dich leicht nach ihr“ greift die Zahl auf. Er hat 35 Wörter (höchstens 40).
+- **Verwaiste Bezüge:** Im sichtbaren Text kommt der Recherche-Assistent nicht mehr vor. Die Ausgabe von lexical.py habe ich danach durchsucht. Der einzige Treffer ist der Slug (siehe unten).
+- **lexical.py:** läuft fehlerfrei. Es entstehen 18 Knoten und drei Zwischenüberschriften (01–03). Das Frontmatter ist korrekt: Tag `#newsletter`, Kategorie leer.
+
+## Direkt korrigiert (formal, nur INTERN-Absatz)
+
+1. Die Liste VORGESCHLAGEN verwies noch auf den alten Einstieg („zwei Selbstversuche …“) und auf Sätze aus 02. Für Fassung 2 steht jetzt eine eigene, aktuelle Liste am Anfang. Der Vermerk zu Fassung 1 bleibt darunter stehen und ist als nicht mehr gültig gekennzeichnet.
+2. Die Alternativ-Titel und -Teaser A und B erwähnten den Assistenten bzw. die Vorauswahl. Für Fassung 2 gibt es jetzt zwei neue Alternativen. Die Teaser haben 126 und 130 Zeichen, die Titel 23 und 51 Zeichen.
+3. Die Checkliste hing noch an Beitrag A. Für Fassung 2 gibt es jetzt eine eigene Checkliste.
+
+## Hinweis (kein Mangel)
+
+- Der Slug `6-folien-ohne-ki-look-und-ein-recherche-assistent` nennt noch den Assistenten. Er bleibt bewusst so: `ghost.py draft` findet den bestehenden Entwurf über den Slug (ghost.json, id 6af01d6a…). Mit einem neuen Slug entstünde ein zweiter Entwurf. Der Newsletter geht nur per E-Mail, deshalb sieht kein Leser den Slug.
+- „Kriterien, Fragen“ im Gedanken stammte ursprünglich aus 02. Allgemein gelesen bleibt die Aussage richtig. Wer straffen will, schreibt: „Die KI richtet sich nach dem, was du ihr vorgibst.“
+- ghost.json zeigt noch den alten Titel. Der Entwurf in Ghost muss mit `ghost.py draft` aktualisiert werden, bevor die neue Testmail und der Begleitzettel rausgehen.

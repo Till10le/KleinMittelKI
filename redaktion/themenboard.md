@@ -244,11 +244,11 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 
 ### newsletter-2026-11-10
 - Status: newsletter-vorschlag
-- Titel: „#6: Folien ohne KI-Look und ein Recherche-Assistent“
+- Titel: „#6: Dreimal dieselbe Präsentation mit KI“ (Fassung 2)
 - Versand: Dienstag 10.11.2026, 7:05 (erst nach Tills „N ja“)
-- Inhalt: 01 powerpoint-mit-ki-im-eigenen-design (live seit 06.11.) · 02 ki-recherche-assistent-selbstversuch (nur wenn A für Di 10.11. 7:00 freigegeben wird, sonst Fassung 2 ohne 02) · 03 Zahl „86 %“ (Anthropic Research 27.10.2026 – nimmt Board-Thema ki-agent-beeinflusst-entscheidungen vorweg) · 04 Gedanke
+- Inhalt: 01 powerpoint-mit-ki-im-eigenen-design (live seit 06.11.) · 02 Zahl „86 %“ (Anthropic Research 27.10.2026 – nimmt Board-Thema ki-agent-beeinflusst-entscheidungen vorweg) · 03 Gedanke. Recherche-Assistent auf Tills Wunsch raus (Chat 09.11.: ein „Selbst ausprobiert“ pro Woche)
 - Datei: entwuerfe/newsletter-2026-11-10/beitrag.md, Prüfung: pruefung.md
-- Verlauf: 2026-11-08 Lauf 7:47: Entwurf (Autor), Prüfer Runde 1 nicht bestanden (Rat in 03/04 widersprach der Quelle, „verdeckt“ ungenau), Runde 2 bestanden · 2026-11-08 Lauf 7:47: Entwurf in Ghost (Vorschau https://www.kleinmittelki.de/p/bd6a2494-782d-4723-84e9-d3047e17980e/), Testmail fehlgeschlagen (email_previews liefert HTML), Begleitzettel Fassung 1 gemailt (1a1b9f35f46a94b7, Fingerabdruck 6d556a28…)
+- Verlauf: 2026-11-08 Lauf 7:47: Entwurf (Autor), Prüfer Runde 1 nicht bestanden (Rat in 03/04 widersprach der Quelle, „verdeckt“ ungenau), Runde 2 bestanden · 2026-11-08 Lauf 7:47: Entwurf in Ghost (Vorschau https://www.kleinmittelki.de/p/bd6a2494-782d-4723-84e9-d3047e17980e/), Testmail fehlgeschlagen (email_previews liefert HTML), Begleitzettel Fassung 1 gemailt (1a1b9f35f46a94b7, Fingerabdruck 6d556a28…) · 2026-11-09 Chat: Till: nur ein „Selbst ausprobiert“ pro Woche → Fassung 2 ohne Recherche-Assistent, Prüfer bestanden, Ghost-Entwurf aktualisiert (Fingerabdruck 978bea7c…), Testmail wieder fehlgeschlagen (email_previews liefert HTML); im Chat vorgelegt, „N ja“ offen
 
 ### newsletter-2026-11-03
 - Status: versendet
@@ -276,7 +276,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Warum für KMU: Prinzip übertragbar auf Ausschreibungen, Förderprogramme, Normen; fünf Schritte, Beispiel-Anfrage Malerbetrieb, drei Wege nach Ausstattung
 - Wichtig (Till, Chat 25.10.2026): Der Beitrag zeigt nur die Recherche. Nichts darüber, dass KI Texte oder Beiträge schreibt – und auch nicht, dass Till selbst schreibt; das bleibt offen.
 - Braucht von Till: Review mit Till am 03.11. (Prozess hat sich geändert), danach „A ja“ oder Änderungen
-- Verlauf: (ältere Einträge: redaktion/verlauf/ki-recherche-assistent-selbstversuch.md) 2026-11-02 Lauf 12:47: als A erinnert (Mail 1a19be3873ddb3ea, Termin Di 3.11. bei „A ja“ bis 18:47, sonst Di 10.11.) · 2026-11-02 Chat (abends): Till: nicht Di 3.11.; Selbstversuch wird am 03.11. gemeinsam nochmals reviewt, weil sich der Prozess geändert hat · 2026-11-05 Lauf 7:47: im Briefing als A erinnert (Mail 1a1aa7c89c1cc391, „A ja“ = Di 10.11. 7:00); Review vom 03.11. nicht im Repo dokumentiert
+- Verlauf: (ältere Einträge: redaktion/verlauf/ki-recherche-assistent-selbstversuch.md) 2026-11-02 Chat (abends): Till: nicht Di 3.11.; Selbstversuch wird am 03.11. gemeinsam nochmals reviewt, weil sich der Prozess geändert hat · 2026-11-05 Lauf 7:47: im Briefing als A erinnert (Mail 1a1aa7c89c1cc391, „A ja“ = Di 10.11. 7:00); Review vom 03.11. nicht im Repo dokumentiert · 2026-11-09 Chat: Till will den Beitrag nächste Woche (Di 17.11., Newsletter #7) – keine Freigabe, Review weiter offen
 
 ### betriebsrat-ki-einfuehren
 - Status: vorgeschlagen

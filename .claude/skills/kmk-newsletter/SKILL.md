@@ -40,6 +40,8 @@ Ausgabe 1 hatte noch einen anderen Aufbau und gilt nicht als Vorlage.
   als Vorschlag markieren, wenn nicht von Till)
 - Nummerierte Abschnitte `## 01 · …`, `## 02 · …` – je neuer Beitrag ein Abschnitt. Überschrift mit Art und Thema:
   `Neu im Blog: …`, `Selbst ausprobiert: …` (Praxistest), `Aktuell eingeordnet: …` (Nachricht).
+  **Höchstens ein `Selbst ausprobiert` je Ausgabe** (Till, Chat 09.11.2026: „pro Woche immer nur ein selbst ausprobiert“).
+  Ein zweiter Praxistest wandert in die nächste Ausgabe.
   Darunter 2–3 kurze Absätze (Worum geht es, was ist der Haken, was steht im Beitrag), dann die Bookmark-Karte:
   `:::bookmark <URL> | <Titel> | KLEIN. MITTEL. KI. | <Teaser>`
 - `## 0X · Eine Zahl, genau gelesen` – Zahlenblock (HTML, unten), nur mit belegter Zahl, darunter „Quelle: …“ mit Link

@@ -48,3 +48,6 @@ Nur der Chefredakteur schreibt hier, und nur, was Till tatsächlich gesagt hat. 
 - 2026-10-25 · Newsletter-Versand Di 7:05 statt 7:00, damit der Link zum Hauptbeitrag (7:00) schon geht · JA · „Okay.“ (Chat, auf den Vorschlag 7:05)
 - 2026-10-27 · newsletter-2026-10-27 (Fassung 2): einplanen Di 27.10. 7:05 · JA · „Ja Freigabe bitte einplanen.“ (Mail, Verlauf KMK-Newsletter · Di 27.10., Antwort auf Fassung 2)
 - 2026-11-02 · ki-recherche-assistent-selbstversuch: nicht am Di 3.11. 7:00; am 03.11. gemeinsam nochmals reviewen, weil sich der Prozess geändert hat · NEIN (vorerst) · „Nein wir lassen es so und wir Reviewen den selbstversuch morgen nochmal weil sich ja einiges am Prozess nun verändert hat“ (Chat)
+- 2026-11-09 · Newsletter: höchstens ein „Selbst ausprobiert“ pro Woche/Ausgabe · REGEL · „Ich möchte pro Woche immer nur ein selbst ausprobiert posten.“ (Chat) → in kmk-newsletter eingetragen
+- 2026-11-09 · newsletter-2026-11-10: nur Präsentations-Test, Recherche-Assistent raus (Fassung 2) · ÄNDERUNG · „diese Woche das Thema mit den Präsentation und nächste Woche dann mit dem Recherche Assistent“ (Chat). Noch keine Freigabe („N ja“ fehlt).
+- 2026-11-09 · ki-recherche-assistent-selbstversuch: nächste Woche (Di 17.11. 7:00 + Newsletter #7) statt Di 10.11. · TERMINWUNSCH, keine Freigabe · gleicher Chat-Satz. Review (Prozess geändert) weiter offen.
