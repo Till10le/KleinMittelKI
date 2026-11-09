@@ -52,3 +52,5 @@ Nur der Chefredakteur schreibt hier, und nur, was Till tatsächlich gesagt hat. 
 - 2026-11-09 · newsletter-2026-11-10: nur Präsentations-Test, Recherche-Assistent raus (Fassung 2) · ÄNDERUNG · „diese Woche das Thema mit den Präsentation und nächste Woche dann mit dem Recherche Assistent“ (Chat). Noch keine Freigabe („N ja“ fehlt).
 - 2026-11-09 · ki-recherche-assistent-selbstversuch: nächste Woche (Di 17.11. 7:00 + Newsletter #7) statt Di 10.11. · TERMINWUNSCH, keine Freigabe · gleicher Chat-Satz. Review (Prozess geändert) weiter offen.
 - 2026-11-09 · iab-betriebe-sehen-keine-ki-anwendung: diese Woche als „gelesen und eingeordnet“ nehmen, Grafik unverständlich · ÄNDERUNG, noch keine Freigabe · „Fertig B nehmen wir aber ich versteh die Grafik nicht“ (Chat). Grafik g1 neu: zwei Karten statt Tabelle mit gemischten Bezugsgrößen.
+- 2026-11-09 · iab-betriebe-sehen-keine-ki-anwendung: veröffentlichen Di 10.11. 7:00 · JA · „B ja“ (Mail, Verlauf KMK · Mo 9.11., 14:01)
+- 2026-11-09 · newsletter-2026-11-10 (Fassung 3): einplanen Di 10.11. 7:05 · JA · „N ja“ (Mail, Verlauf KMK · Mo 9.11., 14:01)

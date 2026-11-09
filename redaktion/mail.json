@@ -286,7 +286,11 @@
           "hash": "335a848f6fc3b38545a7905220296bfd04931ff7c1295fe6d6005a32e2a5dec3",
           "mail_id": "1a1c024b6f48189f"
         }
-      ]
+      ],
+      "erledigt": {
+        "B": "„B ja“ 14:01, eingeplant Di 10.11. 7:00 (Lauf 09.11. 18:47)",
+        "N": "„N ja“ 14:01 für Fassung 3, eingeplant Di 10.11. 7:05 (Lauf 09.11. 18:47)"
+      }
     }
   ],
   "eigene_ids": [
@@ -317,7 +321,8 @@
     "1a19be3873ddb3ea",
     "1a1aa7c89c1cc391",
     "1a1b9f35f46a94b7",
-    "1a1c024b6f48189f"
+    "1a1c024b6f48189f",
+    "1a1c16e490653c78"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
@@ -330,7 +335,8 @@
     "1a1a7ee5eb6d9db6",
     "1a1b0a97b27c7679",
     "1a1b0a0e24f497ac",
-    "1a1bf675b2df722e"
+    "1a1bf675b2df722e",
+    "1a1c0666e55205d8"
   ],
   "vorschau_gemailt": [
     "olg-hamm-chatbot-haftung",

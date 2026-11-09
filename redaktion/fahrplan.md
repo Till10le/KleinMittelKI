@@ -32,7 +32,7 @@ Wer etwas einträgt oder verschiebt, pflegt diese Tabelle. Status: `eingeplant` 
 | Di 03.11. 7:00 | nur Newsletter #5 (7:05); kein Hauptbeitrag (Till, Chat 02.11. abends: „wir lassen es so“) | Newsletter in Ghost eingeplant 7:05 (Lauf 02.11. 12:47); Newsletter versendet (Index, Lauf 03.11. 7:47); ki-recherche-assistent-selbstversuch wird am 03.11. mit Till nochmals reviewt, Termin danach |
 | Do 05.11. 7:00 | – (Kandidat B iab-betriebe-sehen-keine-ki-anwendung ohne Freigabe) | leer geblieben (keine Freigabe) |
 | Fr 06.11. 10:06 (Ausnahme, Till selbst) | powerpoint-mit-ki-im-eigenen-design („Dreimal dieselbe Präsentation mit KI …“) | von Till direkt in Ghost veröffentlicht (Index, Lauf 08.11. 7:47); außerhalb des Takts, zählt für KW 45 |
-| Di 10.11. 7:00 | Kandidat: iab-betriebe-sehen-keine-ki-anwendung (B, auf Tills Wunsch vorgezogen, Chat 09.11.) + Newsletter #6 (7:05, Fassung 3) | wartet-auf-till (B, N) |
+| Di 10.11. 7:00 | iab-betriebe-sehen-keine-ki-anwendung (B, auf Tills Wunsch vorgezogen, Chat 09.11.) + Newsletter #6 (7:05, Fassung 3) | eingeplant: B 7:00 und Newsletter 7:05 in Ghost (Freigabe „B ja“/„N ja“, Mail 09.11. 14:01; Lauf 09.11. 18:47) |
 | Do 12.11. 7:00 | – (B auf Di 10.11. vorgezogen) | frei |
 | Di 17.11. 7:00 | Kandidat: ki-recherche-assistent-selbstversuch (+ Newsletter #7 mit „Selbst ausprobiert“) – Review mit Till offen | wartet-auf-till (A) |
 | Do 19.11. 7:00 | – | frei |
