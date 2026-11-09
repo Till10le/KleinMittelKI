@@ -106,3 +106,48 @@ Geprüft wurden nur die Änderungen gegenüber Runde 2: Abschnitt 02 (Recherche-
 - Der Slug `6-folien-ohne-ki-look-und-ein-recherche-assistent` nennt noch den Assistenten. Er bleibt bewusst so: `ghost.py draft` findet den bestehenden Entwurf über den Slug (ghost.json, id 6af01d6a…). Mit einem neuen Slug entstünde ein zweiter Entwurf. Der Newsletter geht nur per E-Mail, deshalb sieht kein Leser den Slug.
 - „Kriterien, Fragen“ im Gedanken stammte ursprünglich aus 02. Allgemein gelesen bleibt die Aussage richtig. Wer straffen will, schreibt: „Die KI richtet sich nach dem, was du ihr vorgibst.“
 - ghost.json zeigt noch den alten Titel. Der Entwurf in Ghost muss mit `ghost.py draft` aktualisiert werden, bevor die neue Testmail und der Begleitzettel rausgehen.
+
+---
+
+# Fassung 3 (09.11.2026, Chat)
+
+Geprüft: der ganze Newsletter nach kmk-newsletter. Abschnitt 02 habe ich Satz für Satz gegen `entwuerfe/iab-betriebe-sehen-keine-ki-anwendung/beitrag.md` und `quellen.md` geprüft, den Beitrag selbst nicht verändert. Die Zahl in 03 habe ich nicht erneut am Original geprüft, das ist in Runde 2 geschehen, und der Text ist unverändert. `python3 tools/lexical.py` gelaufen. `redaktion/freigaben.jsonl` und `redaktion/fahrplan.md` gelesen.
+
+## Ergebnis: NICHT BESTANDEN
+
+Zwei inhaltliche Mängel (Gedanke, Titel). Nicht korrigiert, nur gemeldet. Alles andere ist ok. Zwei formale Lücken im INTERN-Absatz habe ich direkt ergänzt (siehe unten).
+
+## Mängel
+
+1. **04 · Der Gedanke greift 02 nicht auf.**
+   Fundstelle: „Die KI richtet sich nach dem, was du ihr gibst: Vorlage, Kriterien, Fragen. Umgekehrt richtest du dich leicht nach ihr. Leg deshalb fest, welche Entscheidungen im Betrieb bei dir bleiben, und nimm dir dafür Zeit.“
+   Problem: Laut kmk-newsletter soll der Gedanke die Themen der Ausgabe aufgreifen. Er bezieht sich auf 01 (Vorlage) und 03 (Zahl), aber nicht auf das neue Thema in 02 (wo KI im Betrieb ansetzt). Seit Fassung 3 steht 02 im Titel, im Teaser und im Einstieg. Nur der Gedanke lässt es aus.
+   Korrekturvorschlag (32 Wörter, wieder als VORGESCHLAGEN markieren): „Die KI richtet sich nach dem, was du ihr gibst. Such ihre Aufgabe deshalb zuerst in der Arbeit rund um dein Kerngeschäft, und leg fest, welche Entscheidungen im Betrieb bei dir bleiben.“ Der letzte Teil stützt sich weiter auf die Anthropic-Stelle aus Runde 2, der mittlere auf den Beitrag („Der Einstieg liegt selten im Handwerk selbst …“).
+
+2. **Titel · „Betriebe ohne Idee“ wertet ab und geht über den Beitrag hinaus.**
+   Fundstelle: `titel: "#6: Folien ohne KI-Look und Betriebe ohne Idee"`
+   Problem: Laut IAB sehen die Betriebe „keine passenden Anwendungsmöglichkeiten“. Der Beitrag sagt: „Vielleicht suchen sie an der falschen Stelle.“ „Ohne Idee“ klingt wie ein Urteil über genau die Leser, die der Newsletter erreichen will. kmk-newsletter verlangt einen sachlichen Betreff ohne Clickbait. So steht es weder in der Quelle noch im Beitrag.
+   Korrekturvorschlag: „#6: Folien ohne KI-Look und KI ohne Anwendungsfall“ (50 Zeichen) oder eine der Alternativen A/B im INTERN-Absatz.
+
+## Geprüft, ok
+
+- **02 gegen Beitrag und Quelle:** Jede Aussage steht im Beitrag und ist durch die IAB-Pressemitteilung gedeckt (quellen.md, Nr. 1). Im Einzelnen: Auswertung, warum Betriebe auf KI verzichten · 2. Halbjahr 2025 · zwei Drittel ohne KI und ohne Plan · 88 % sehen keine passende Anwendung · Wissen und Fachkräfte je rund ein Drittel (gekürzt, nichts hinzugefügt) · 85 % trotz hohem Potenzial · beide Grenzen (geschätzt, nicht gerechnet; Befragung ein Jahr alt) · Kerngeschäft gegenüber Anfragen, Angeboten, Rückfragen · Bäckerei mit drei Filialen · Test für eine Woche. Nichts geht über den Beitrag hinaus. Die Einzelwerte aus der Zweitverwertung kommen nicht vor.
+- **„ein Jahr alt“:** vertretbar. Die Befragung betrifft das 2. Halbjahr 2025, am 10.11.2026 liegt das rund 11 bis 16 Monate zurück. Die Formulierung ist wörtlich wie im Beitrag. Wer genauer sein will, schreibt „gut ein Jahr alt“, dann aber in beiden Texten (für den Beitrag entscheidet dessen Prüfer).
+- **Bookmark-Karte 02:** URL-Slug `iab-betriebe-sehen-keine-ki-anwendung`, Titel und Teaser wörtlich gleich mit dem Frontmatter des Beitrags. Karte 01 unverändert wie in Runde 1 geprüft.
+- **Überschrift 02:** „Aktuell eingeordnet:“ ist richtig, denn der Beitrag ist eine Nachricht (Studien & Zahlen, `#empfehlung`). Die Ausgabe hat nur ein „Selbst ausprobiert“.
+- **Aufbau und Nummerierung:** INTERN, „Hallo,“, Einstieg mit 2 Sätzen, 01 Selbst ausprobiert, 02 Aktuell eingeordnet (je 3 Absätze plus Karte), 03 Zahl mit Quelle-Zeile, 04 Gedanke (35 Wörter), Button, `---`, Schluss wörtlich, „Bis bald“, „Till“. lexical.py läuft fehlerfrei, vier Zwischenüberschriften 01–04, Frontmatter korrekt (Tag `#newsletter`, Kategorie leer).
+- **Titel/Teaser:** Titel 46 Zeichen (≤ 60), Teaser 124 Zeichen (105–130), Teaser ungleich Titel, zählt alle vier Teile auf.
+- **Wiederholungen:** „Auffällig“ einmal (02), „Der Haken“ gar nicht, „Überrascht“ einmal (01). „Im Beitrag stehen/steht“ in 01 und 02 ist die Wendung aus der Vorlage. Ok.
+- **Ich-Form/INTERN:** Einstieg und 02 sind als VORGESCHLAGEN aufgeführt. Der Hinweis, dass die Einordnung des Beitrags selbst ein Redaktionsvorschlag ist, steht drin. 02 enthält keine Ich-Sätze. Tills Chat-Wunsch ist wörtlich zitiert.
+- **Ton/Verbote, KMU-Bezug:** ok (Schreiner, Immobilienbüro, Bäckerei mit drei Filialen, Preis- und Personalfrage). Keine Platzhalter.
+
+## Direkt korrigiert (formal, nur INTERN-Absatz)
+
+1. Für Fassung 3 fehlten die zwei Alternativen für Titel und Teaser. Ergänzt: (A) „#6: KI-Folien im eigenen Design und KI ohne Anwendung“ (53 Zeichen), Teaser 129 Zeichen. (B) „#6: Was die KI von dir braucht und wo du sie einsetzt“ (53 Zeichen), Teaser 127 Zeichen. Beide als Vorschlag.
+2. Für Fassung 3 fehlte eine eigene Checkliste. Die von Fassung 2 nennt noch „01–03“. Ergänzt: Beitrag geprüft, freigegeben und für Di 7:00 eingeplant, sonst entfällt 02 und es gilt Fassung 2 · 02 und Karte passen zur freigegebenen Fassung · Abschnitte 01–04 · Links erreichbar (IAB erst ab 7:00) · INTERN entfernt. lexical.py läuft danach fehlerfrei.
+
+## Hinweise (kein Mangel)
+
+- **Abhängigkeit:** Für `iab-betriebe-sehen-keine-ki-anwendung` gibt es in `freigaben.jsonl` noch keine Freigabe, und `fahrplan.md` nennt noch Do 12.11. Ohne Freigabe und Einplanung auf Di 10.11. 7:00 führt die Karte in 02 ins Leere. Ändert der andere Prüfer Titel oder Teaser des Beitrags, muss die Karte nachgezogen werden.
+- **Drei ähnliche Prozentzahlen** in einer Ausgabe (88 % und 85 % in 02, 86 % in 03). Inhaltlich sauber getrennt, beim Überfliegen aber leicht zu verwechseln. Der Zahlenblock nennt Anthropic klar als Quelle. Ok.
+- **Slug** nennt weiter den Recherche-Assistenten. Das ist bewusst so (siehe Fassung 2).
