@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-08T06:50:23+00:00",
-  "anzahl": 34,
+  "stand": "2026-11-09T06:50:53+00:00",
+  "anzahl": 35,
   "beitraege": [
     {
       "id": "6aeb40e475eea100014ab6a7",
@@ -854,6 +854,41 @@
       ],
       "zahlen": [],
       "woerter": 284
+    },
+    {
+      "id": "6af01d6a2758a80001ce74b2",
+      "slug": "6-folien-ohne-ki-look-und-ein-recherche-assistent",
+      "titel": "#6: Folien ohne KI-Look und ein Recherche-Assistent",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-11-08",
+      "kategorie": "",
+      "interne_tags": [
+        "#newsletter",
+        "#zur-freigabe"
+      ],
+      "teaser": "Wie KI-Folien nach deinem Betrieb aussehen, wie ein KI-Assistent vorsortiert, eine Zahl und ein Gedanke für deinen Betrieb.",
+      "url": "https://www.kleinmittelki.de/p/bd6a2494-782d-4723-84e9-d3047e17980e/",
+      "zwischenueberschriften": [
+        "01 · Selbst ausprobiert: Dreimal dieselbe Präsentation mit KI",
+        "02 · Selbst ausprobiert: Ein KI-Assistent, der sucht, aber nicht entscheidet",
+        "03 · Eine Zahl, genau gelesen",
+        "04 · Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [
+        "https://www.anthropic.com/research/agents-judgment-calls"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/",
+        "https://www.kleinmittelki.de/ki-recherche-assistent-selbstversuch/",
+        "https://www.kleinmittelki.de/powerpoint-mit-ki-im-eigenen-design/"
+      ],
+      "zahlen": [
+        "03 · Eine Zahl, genau gelesen Anthropic · Oktober 2026 86 % der Analyseentscheidungen fielen so aus, wie ein KI-Agent es empfahl.",
+        "Ohne seinen Einfluss wären etwa 50 Prozent zu erwarten.",
+        "Nur 15 Prozent nannten den Agenten als Quelle ihrer Argumente."
+      ],
+      "woerter": 548
     },
     {
       "id": "6ade31474d491100016c4807",
