@@ -15,9 +15,9 @@ INTERN – vor Veröffentlichung entfernen: Thema ist Tills Idee (Chat 23.10.202
 
 Das Institut für Arbeitsmarkt- und Berufsforschung (IAB) hat am 20. Oktober 2026 ausgewertet, warum Betriebe auf KI verzichten. Grundlage ist das IAB-Betriebspanel aus dem zweiten Halbjahr 2025. Damals nutzten zwei Drittel der Betriebe keine KI und planten es auch nicht. 88 Prozent von ihnen sahen keine passenden Anwendungsmöglichkeiten. Fehlendes Wissen, fehlende Fachkräfte, inkompatible IT oder unzureichende Daten nannte jeweils nur rund ein Drittel. Auffällig: Selbst wo KI viele Tätigkeiten im Betrieb beschleunigen könnte, sehen 85 Prozent der Nichtnutzer keinen Einsatzzweck.
 
-![Schaubild mit zwei Karten: Betriebe mit viel KI-Potenzial: 41 Prozent nutzen KI, 85 Prozent der Betriebe ohne KI sehen keine passende Anwendung. Betriebe mit wenig KI-Potenzial: 13 Prozent nutzen KI, 91 Prozent der Betriebe ohne KI sehen keine passende Anwendung.](kmk-iab-ki-potenzial-g1.png "IAB-Betriebspanel, zweites Halbjahr 2025, veröffentlicht am 20.10.2026. Die Nutzungsanteile beziehen sich auf alle Betriebe einer Gruppe, die Anteile ohne passende Anwendung nur auf die Betriebe ohne KI. Potenzial meint, wie stark KI die im Betrieb ausgeübten Tätigkeiten beschleunigen könnte.")
+![Schaubild mit zwei Karten: Betriebe mit viel KI-Potenzial: 41 Prozent nutzen KI, 85 Prozent der Betriebe, die KI weder nutzen noch planen, sehen keine passende Anwendung. Betriebe mit wenig KI-Potenzial: 13 Prozent nutzen KI, 91 Prozent der Betriebe, die KI weder nutzen noch planen, sehen keine passende Anwendung.](kmk-iab-ki-potenzial-g1.png "IAB-Betriebspanel, zweites Halbjahr 2025, veröffentlicht am 20.10.2026. Die Nutzungsanteile beziehen sich auf alle Betriebe einer Gruppe, die Anteile ohne passende Anwendung nur auf die Betriebe, die KI weder nutzen noch planen. Potenzial meint, wie stark KI die im Betrieb ausgeübten Tätigkeiten beschleunigen könnte.")
 
-Was die Grafik zeigt: Wo KI viel könnte, nutzen sie deutlich mehr Betriebe. Unter den übrigen sieht aber fast jeder keine Anwendung, egal wie groß das Potenzial ist.
+Was die Grafik zeigt: Wo KI viel könnte, nutzen sie deutlich mehr Betriebe. Von den Betrieben, die KI weder nutzen noch planen, sieht aber die große Mehrheit keine Anwendung, auch wo das Potenzial groß ist.
 
 ## Meine Einordnung
 

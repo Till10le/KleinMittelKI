@@ -26,7 +26,7 @@ Im Beitrag stehen alle Folien zum Durchklicken, ein Design-Steckbrief und ein Au
 
 Das IAB hat ausgewertet, warum Betriebe auf KI verzichten. Im zweiten Halbjahr 2025 nutzten zwei Drittel der Betriebe keine KI und planten es auch nicht. 88 Prozent von ihnen sahen keine passende Anwendung. Fehlendes Wissen oder fehlende Fachkräfte nannte jeweils nur rund ein Drittel.
 
-Auffällig: Selbst wo KI viele Tätigkeiten beschleunigen könnte, sehen 85 Prozent der Betriebe ohne KI keinen Einsatzzweck. Zwei Grenzen gehören dazu: Das IAB hat geschätzt, was sich beschleunigen ließe, nicht, ob es sich rechnet. Und die Befragung ist ein Jahr alt.
+Auffällig: Selbst wo KI viele Tätigkeiten beschleunigen könnte, sehen 85 Prozent der Betriebe ohne KI und ohne Pläne dafür keinen Einsatzzweck. Zwei Grenzen gehören dazu: Das IAB hat geschätzt, was sich beschleunigen ließe, nicht, ob es sich rechnet. Und die Befragung ist ein Jahr alt.
 
 Im Beitrag steht, warum der Einstieg selten im Kerngeschäft liegt, sondern bei Anfragen, Angeboten und Rückfragen. Dazu ein Beispiel aus einer Bäckerei mit drei Filialen und ein einfacher Test für eine Woche.
 
