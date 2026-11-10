@@ -22,7 +22,7 @@ Bisher ging es hier im Blog meist um die Frage, ob und wie Betriebe KI einsetzen
 
 Jeder große Anbieter hat mehrere Modelle gleichzeitig im Angebot, gestaffelt wie Motorisierungen. Bei Anthropic, dem Hersteller von Claude, heißen sie Haiku, Sonnet und Opus, darüber steht Fable als stärkstes Modell. Abgerechnet wird nach Tokens, also Textbausteinen, getrennt nach dem, was hineingeht, und dem, was das Modell schreibt. Laut [Preisliste von Anthropic](https://platform.claude.com/docs/en/about-claude/pricing) kosten eine Million Tokens (Stand: November 2026):
 
-- **Claude Haiku 5.5:** 0,10 US-Dollar hinein, 0,50 US-Dollar hinaus
+- **Claude Haiku 5.5:** 0,10 US-Dollar hinein, 0,50 US-Dollar hinaus (bei Anfragen bis 100.000 Tokens)
 - **Claude Sonnet 5.5:** 2 US-Dollar hinein, 10 US-Dollar hinaus
 - **Claude Opus 5.5:** 4 US-Dollar hinein, 20 US-Dollar hinaus
 - **Claude Fable 5.2:** 8 US-Dollar hinein, 40 US-Dollar hinaus
@@ -45,7 +45,7 @@ Die meisten Betriebe nutzen ChatGPT oder Claude im Abo und zahlen pro Platz. Die
 
 **Strom:** Eine Studie der Hochschule München hat 14 offene Modelle mit 1.000 Fragen auf eigener Hardware gemessen. Modelle, die vor der Antwort ausführlich „nachdenken“, erzeugten [bis zu 50-mal so viel CO₂](https://www.frontiersin.org/news/2025/06/19/ai-prompts-50-times-more-co2-emissions) wie knapp antwortende Modelle. Im Schnitt schrieben sie 543,5 Denk-Tokens je Frage, die knappen Modelle 37,7. Die Studie betrifft offene Modelle, nicht ChatGPT oder Claude selbst. Die Richtung ist trotzdem klar, und der Rat des Autors Maximilian Dauner lautet sinngemäß: knapp antworten lassen und große Modelle nur für Aufgaben nutzen, die sie wirklich brauchen.
 
-**Geld:** Echte Euro geht es erst, wenn ein Betrieb eine eigene Anwendung über die Schnittstelle baut, die sogenannte API. Ein Beispiel: Eine Hausverwaltung lässt eingehende Mieteranfragen automatisch einsortieren, also Schaden, Nebenkosten oder Kündigung. Kommen viele solcher Anfragen zusammen, macht der Unterschied zwischen 0,35 und 14 US-Dollar je 1.000 Anfragen aus der Rechnung oben einen echten Posten.
+**Geld:** Um echte Euro geht es erst, wenn ein Betrieb eine eigene Anwendung über die Schnittstelle baut, die sogenannte API. Ein Beispiel: Eine Hausverwaltung lässt eingehende Mieteranfragen automatisch einsortieren, also Schaden, Nebenkosten oder Kündigung. Kommen viele solcher Anfragen zusammen, macht der Unterschied zwischen 0,35 und 14 US-Dollar je 1.000 Anfragen aus der Rechnung oben einen echten Posten.
 
 ![Schaubild: Abo und Schnittstelle im Vergleich, im Abo kostet die Modellwahl Limit, Wartezeit und Strom, in der Schnittstelle Geld](kmk-modellwahl-g2.png "Im Abo zahlst du die Modellwahl mit Limit und Wartezeit, über die Schnittstelle mit Geld.")
 
@@ -89,7 +89,7 @@ Für eigene Anwendungen über die Schnittstelle heißt diese Weiche Router. Fors
 
 Beide Zahlen stammen aus der Forschung mit Modellen und Preisen von 2023 und 2024. Sie zeigen das Prinzip, kein Versprechen. Wie viel ein Router spart, hängt vor allem davon ab, wie viele der eigenen Anfragen wirklich einfach sind. Deshalb gilt vor jedem Umbau: an echten Fällen aus dem eigenen Betrieb testen, nicht an Ranglisten. Das empfiehlt auch Anthropic. Und es lohnt sich die Frage aus dem Beitrag [Nicht jedes Problem braucht KI](https://www.kleinmittelki.de/nicht-jedes-problem-braucht-ki/): Steht das Merkmal schon im Betreff, reicht vielleicht eine Mailregel ganz ohne Modell.
 
-Zwei Hebel für Anwendungen über die Schnittstelle gibt es außerdem. Was nicht sofort fertig sein muss, etwa das nächtliche Einsortieren von Belegen, kann über die Stapelverarbeitung laufen: Antwort innerhalb von 24 Stunden, 50 Prozent Rabatt. Und laut Anthropic ist das Zwischenspeichern wiederkehrender Anweisungen, Prompt Caching genannt, in den eigenen Messungen meist der größte Hebel.
+Zwei Hebel für Anwendungen über die Schnittstelle gibt es außerdem. Was nicht sofort fertig sein muss, etwa das nächtliche Einsortieren von Belegen, kann über die Stapelverarbeitung laufen: Antwort meist innerhalb einer Stunde, spätestens nach 24 Stunden, dafür 50 Prozent Rabatt. Und laut Anthropic ist das Zwischenspeichern wiederkehrender Anweisungen, Prompt Caching genannt, in den eigenen Messungen meist der größte Hebel.
 
 ## Zum Ausprobieren: drei Aufgaben, zwei Stufen
 
