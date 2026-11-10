@@ -81,12 +81,17 @@ Text nicht nennen (Themenregel: keine Benchmark-Rennen), nur als Größenordnung
 
 ## 4. Anthropic Help Center: Nutzungsgrenzen in den Abos
 
-- https://support.claude.com/en/articles/9797557 (Abruf 10.11.2026, Ausschnitt aus Suche): Die Nutzungsgrenze hängt u. a.
+- https://support.claude.com/en/articles/9797557-usage-limit-best-practices (Abruf 10.11.2026, Ausschnitt aus Suche; laut Prüfer 10.11.: nennt Modellwahl als Faktor, aber weder Opus noch Sonnet und keine Alltagsempfehlung): Die Nutzungsgrenze hängt u. a.
   von Nachrichtenlänge, Dateigröße, Gesprächslänge, Werkzeugen (Recherche, Websuche) **und der Modellwahl** ab.
-- https://support.claude.com/en/articles/9267304-about-team-and-enterprise-plan-usage (Abruf 10.11.2026): Für Team- und
+- **VERALTET (Prüfrunde 1, 10.11.2026): Seite liefert HTTP 404, Aussage im Beitrag gestrichen.**
+  https://support.claude.com/en/articles/9267304-about-team-and-enterprise-plan-usage (Abruf 10.11.2026): Für Team- und
   Enterprise-Plätze (Standard) verbraucht Opus das Wochenlimit schneller als Sonnet; Anthropic empfiehlt Sonnet für den Alltag.
   **Achtung:** Seite nennt noch Opus 4.5 / Sonnet 4.5 („Updated this week“, kein Datum) → nur den Grundsatz verwenden,
   keine Modellnamen daraus.
+- https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan (Abruf 10.11.2026, Prüfer und Autor):
+  Fable-Modelle zählen auf Max, Ultra und Premium-Plätzen in Team/Enterprise gegen das Wochenlimit, verbrauchen es schneller als
+  andere Claude-Modelle, höchstens 50 % des Wochenlimits für Fable ohne Aufpreis. Auf Pro und Standard-Team-Plätzen sind
+  Fable-Modelle nicht in den Limits enthalten und laufen von Anfang an über nutzungsabhängiges Guthaben (usage credits).
 - Zweitquellen (nicht verwenden): Faktor „Opus ca. 5x schneller am Limit“ (usagebar.com) – nicht von Anthropic belegt.
 
 ## 5. OpenAI: Automatische Modellwahl in ChatGPT („Auto“)
