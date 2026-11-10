@@ -44,7 +44,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Verlauf: 2026-11-10 Chat: Idee von Till, Recherche (quellen.md), Thema von Till im Chat freigegeben („Ich gebe ihn jetzt schon frei“) → nächster Lauf: Autor, Grafik, Prüfer
 
 ### iab-betriebe-sehen-keine-ki-anwendung
-- Status: eingeplant
+- Status: veroeffentlicht
 - Idee von Till (Chat 23.10.2026, zwei fertige Entwürfe „Gelesen & eingeordnet“ aus einem anderen Werkzeug; Till: „Ja bitte beide Beiträge als Entwürfe anlegen. Perfekt für KMK machen!“)
 - Titel: „Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz. Vielleicht suchen sie an der falschen Stelle.“ (Till, Chat 24.10.2026; vorher „Ein Bäcker braucht keine KI …“ – gefiel ihm nicht)
 - Rubrik/Kategorie: Aktuell / Studien & Zahlen · Format: Nachricht · eine Grafik (Potenzial vs. Nutzung, nur Zahlen aus der IAB-Pressemitteilung)
@@ -53,7 +53,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Braucht von Till: Einschätzung in 2–3 Sätzen oder Freigabe des Vorschlags
 - Vorschlag „Eine Zahl, genau gelesen“: zahl „88 %“ · text „der Betriebe ohne KI sehen dafür keine passende Anwendung.“ · genau „Gemeint sind nur Betriebe, die KI weder nutzen noch planen – im zweiten Halbjahr 2025 zwei Drittel aller Betriebe. Selbstauskunft. Quelle: IAB, Oktober 2026.“ · link: Beitrag nach Veröffentlichung. Ändern nur nach Freigabe (Code-Injection, nicht per API).
 - Reihenfolge: vor nicht-jedes-problem-braucht-ki veröffentlichen
-- Verlauf: (ältere Einträge: redaktion/verlauf/iab-betriebe-sehen-keine-ki-anwendung.md) 2026-11-09 Chat: finale Prüfung – Grafik-Aussagen abgeschwächt („große Mehrheit“, „auch wo“), Bezugsgruppe „weder nutzen noch planen“, „gut ein Jahr alt“; Original (idw/iab) in dieser Sitzung nicht abrufbar, Werte aus quellen.md (gelesen 23.10.); Termin Di 10.11. 7:00; „B ja“ offen · 2026-11-09 Lauf 12:47: Vorschau (Stand 08:33:51) als B gemailt (1a1c024b6f48189f), Termin Di 10.11. 7:00; „B ja“ offen · 2026-11-09 Lauf 18:47: „B ja“ (Mail 1a1c0666e55205d8, 14:01) → Freigabe eingetragen, in Ghost eingeplant für Di 10.11. 7:00 (06:00Z)
+- Verlauf: (ältere Einträge: redaktion/verlauf/iab-betriebe-sehen-keine-ki-anwendung.md) 2026-11-09 Chat: finale Prüfung – Grafik-Aussagen abgeschwächt („große Mehrheit“, „auch wo“), Bezugsgruppe „weder nutzen noch planen“, „gut ein Jahr alt“; Original (idw/iab) in dieser Sitzung nicht abrufbar, Werte aus quellen.md (gelesen 23.10.); Termin Di 10.11. 7:00; „B ja“ offen · 2026-11-09 Lauf 12:47: Vorschau (Stand 08:33:51) als B gemailt (1a1c024b6f48189f), Termin Di 10.11. 7:00; „B ja“ offen · 2026-11-09 Lauf 18:47: „B ja“ (Mail 1a1c0666e55205d8, 14:01) → Freigabe eingetragen, in Ghost eingeplant für Di 10.11. 7:00 (06:00Z) · 2026-11-10 Lauf 12:47: veröffentlicht Di 10.11. 7:00 (Ghost published_at 06:00Z) → https://www.kleinmittelki.de/iab-betriebe-sehen-keine-ki-anwendung/
 
 ### nicht-jedes-problem-braucht-ki
 - Status: veroeffentlicht
@@ -261,12 +261,12 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Verlauf: 2026-10-25 Ideen (Sonntags-Lauf): vorgeschlagen
 
 ### newsletter-2026-11-10
-- Status: eingeplant
+- Status: versendet
 - Titel: „#6: Dreimal dieselbe Präsentation mit KI“ (Fassung 2)
 - Versand: Dienstag 10.11.2026, 7:05 (erst nach Tills „N ja“)
 - Inhalt: 01 powerpoint-mit-ki-im-eigenen-design (live seit 06.11.) · 02 Zahl „86 %“ (Anthropic Research 27.10.2026 – nimmt Board-Thema ki-agent-beeinflusst-entscheidungen vorweg) · 03 Gedanke. Recherche-Assistent auf Tills Wunsch raus (Chat 09.11.: ein „Selbst ausprobiert“ pro Woche)
 - Datei: entwuerfe/newsletter-2026-11-10/beitrag.md, Prüfung: pruefung.md
-- Verlauf: (ältere Einträge: redaktion/verlauf/newsletter-2026-11-10.md) 2026-11-09 Chat: Fassung 3 auf Tills Wunsch (01 PPT, 02 Aktuell eingeordnet: IAB), Prüfer: Titel und Gedanke korrigiert, Ghost aktualisiert (978→335a848f…), Testmail fehlgeschlagen; „N ja“ offen · 2026-11-09 Lauf 12:47: Fassung 3 gemailt (1a1c024b6f48189f, Fingerabdruck 335a848f…), keine neue Testmail (Fassung unverändert); „N ja“ offen, spätestens 18:47 · 2026-11-09 Lauf 18:47: „N ja“ (Mail 1a1c0666e55205d8) für Fassung 3 (335a848f…) → in Ghost eingeplant Di 10.11. 7:05 (06:05Z)
+- Verlauf: (ältere Einträge: redaktion/verlauf/newsletter-2026-11-10.md) 2026-11-09 Chat: Fassung 3 auf Tills Wunsch (01 PPT, 02 Aktuell eingeordnet: IAB), Prüfer: Titel und Gedanke korrigiert, Ghost aktualisiert (978→335a848f…), Testmail fehlgeschlagen; „N ja“ offen · 2026-11-09 Lauf 12:47: Fassung 3 gemailt (1a1c024b6f48189f, Fingerabdruck 335a848f…), keine neue Testmail (Fassung unverändert); „N ja“ offen, spätestens 18:47 · 2026-11-09 Lauf 18:47: „N ja“ (Mail 1a1c0666e55205d8) für Fassung 3 (335a848f…) → in Ghost eingeplant Di 10.11. 7:05 (06:05Z) · 2026-11-10 Lauf 12:47: versendet Di 10.11. 7:05 (Ghost status sent, 06:05Z)
 
 ### newsletter-2026-11-03
 - Status: versendet
