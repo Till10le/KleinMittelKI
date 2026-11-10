@@ -56,7 +56,7 @@ def letzter_status() -> str | None:
     teile = re.split(r"^## Lauf ", text, flags=re.M)
     if len(teile) < 2:
         return None
-    m = re.search(r"^Status:\s*(.+)$", teile[-1], flags=re.M)
+    m = re.search(r"^(?:Lauf [^\n]*?·\s*)?Status:\s*(.+)$", teile[-1], flags=re.M)
     return m.group(1).strip() if m else "keine Status-Zeile"
 
 
