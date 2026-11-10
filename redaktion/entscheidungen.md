@@ -54,3 +54,4 @@ Nur der Chefredakteur schreibt hier, und nur, was Till tatsächlich gesagt hat. 
 - 2026-11-09 · iab-betriebe-sehen-keine-ki-anwendung: diese Woche als „gelesen und eingeordnet“ nehmen, Grafik unverständlich · ÄNDERUNG, noch keine Freigabe · „Fertig B nehmen wir aber ich versteh die Grafik nicht“ (Chat). Grafik g1 neu: zwei Karten statt Tabelle mit gemischten Bezugsgrößen.
 - 2026-11-09 · iab-betriebe-sehen-keine-ki-anwendung: veröffentlichen Di 10.11. 7:00 · JA · „B ja“ (Mail, Verlauf KMK · Mo 9.11., 14:01)
 - 2026-11-09 · newsletter-2026-11-10 (Fassung 3): einplanen Di 10.11. 7:05 · JA · „N ja“ (Mail, Verlauf KMK · Mo 9.11., 14:01)
+- 2026-11-10 · modellwahl-kanonen-auf-spatzen: Thema ausarbeiten (Modellwahl für Firmen, die KI schon nutzen; PS/Sprit-Bild; Modelle-Beitrag vom 08.10. mitbewerben) · JA · „Ich gebe ihn jetzt schon frei.“ (Chat, nach Recherche-Auftrag „sauber recherchieren, saubere Zahlen“)

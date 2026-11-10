@@ -25,6 +25,24 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 
 ## Aktiv
 
+### modellwahl-kanonen-auf-spatzen
+- Status: freigegeben
+- Idee von Till (Chat 10.11.2026): Bisher geht es im Blog darum, dass Firmen KI nutzen sollen. Jetzt die Firmen ansprechen, die KI schon nutzen: Viele geben ihren Leuten Claude oder ChatGPT, und alles läuft über die größten Modelle, die am meisten Tokens verbrauchen. „Kanonen auf Spatzen.“ Zwei Lösungswege: Mitarbeitern sagen, welches Modell für welche Aufgabe – oder Technik davorschalten, die automatisch einschätzt, ob Opus nötig ist oder ein kleines Modell reicht.
+- Titel (Arbeitstitel): „Mit Kanonen auf Spatzen: Warum nicht jede KI-Aufgabe das stärkste Modell braucht“ (Alternative: „Mehr PS, mehr Sprit: So wählt dein Team das passende KI-Modell“)
+- Rubrik/Kategorie: Wissen / Leitfäden
+- Format: Langtext (ca. 1.900–2.000 Wörter, Box „Das Wichtigste in 30 Sekunden“, 4–5 Schaubilder im Karten-System, Abschnitt „Zum Ausprobieren“). Autor darf auf Anleitung kürzen, wenn es trägt.
+- Quelle: Recherche und Einordnung in entwuerfe/modellwahl-kanonen-auf-spatzen/quellen.md (10.11.2026). Kern: Anthropic-Preisliste und Modellwahl-Doku (platform.claude.com, 10.11.2026), RouteLLM (LMSYS/UC Berkeley, 01.07.2024), FrugalGPT (Stanford, 05/2023), Dauner/Socher (Hochschule München, Frontiers in Communication, 06/2025), OpenAI Help Center zu „Auto“.
+- Worum es geht: KI-Modelle gibt es in Größen wie Autos mit unterschiedlich viel PS. Das größte Claude-Modell kostet je Token bis zum 80-Fachen des kleinsten (Anthropic-Preisliste). Studien zeigen: Wer einfache Anfragen an kleinere Modelle schickt, spart in Tests 35 bis über 85 % der Kosten bei 95 % der Qualität (RouteLLM).
+- Warum für KMU: Betriebe mit 10–150 Leuten, die ChatGPT Business oder Claude Team eingeführt haben (Geschäftsführung, wer die Lizenzen verwaltet). Beim Abo zahlt man pro Platz – die Modellwahl entscheidet dort über Limits, Wartezeit und Strom, nicht über die Rechnung. Echte Euro geht es erst bei eigenen Anwendungen über die Schnittstelle (z. B. Rechnungen oder Anfragen automatisch sortieren). Einschränkung offen: Dass „viele“ Firmen überdimensioniert arbeiten, ist nicht durch Nutzungsdaten belegt → als Beobachtung formulieren.
+- Unsere Idee: „Mit Kanonen auf Spatzen“ – mit dem PS-Bild erklären (Kleinwagen, Mittelklasse, Sportwagen = Haiku/Sonnet/Opus bzw. Instant/Thinking/Pro; Sprit = Tokens, Limit, Strom), dann zwei belegte Wege für KMU: (1) Faustregel fürs Team mit konkreter Aufgabenliste je Stufe, Standardmodell festlegen, kurze Antworten bestellen, Dateien hochladen statt reinkopieren; (2) Technik davor: ChatGPT „Auto“ macht das schon, für eigene Anwendungen ein Router (RouteLLM, Kaskade nach FrugalGPT) – aber nur mit eigenem Test an 50–200 echten Fällen.
+- Pflicht-Gegenpunkt: Nicht übertreiben. Anthropic vergleicht nach Kosten je erledigter Aufgabe; ein kleines Modell, das scheitert, kostet Nacharbeit, und ein großes Modell auf niedriger Denkstufe kann pro Ergebnis kaum teurer sein. Für schwierige Aufgaben ist das große Modell richtig.
+- Interne Verlinkung (Tills Wunsch): „ChatGPT ist nicht das KI-Modell“ (08.10.2026, https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/) früh im Text als Grundlage verlinken; das Auto-Bild von dort (Marke/Fahrzeug/Motor) aufgreifen und um PS und Verbrauch erweitern. Im Social-Paket und Newsletter beide Beiträge zusammen bewerben. Auch „Nicht jedes Problem braucht KI“ verlinken.
+- Grafik-Ideen: (1) PS-Vergleich der drei Stufen mit Preis je 1.000 Anfragen (eigene Rechnung aus offizieller Preisliste, Annahmen nennen); (2) Ampel/Faustregel: welche Aufgabe auf welche Stufe; (3) Router-Prinzip: Anfrage → Weiche → kleines oder großes Modell; (4) Abo vs. Schnittstelle: wo die Modellwahl Geld kostet und wo Limits.
+- Vorsicht Themenregeln: keine Modell-Rangliste, keine Benchmark-Namen im Text; Testzahlen nur als Größenordnung mit „Herstellermessung“. Zahlen aus 2023/2024 (RouteLLM, FrugalGPT) als Prinzip, nicht als Versprechen. Modellnamen und Preise mit „Stand: November 2026“.
+- Relevanz: 9/10 (Betroffenheit 2, Handlung 2, Quelle 2, Neuheit 2, Passung 1)
+- Braucht von Till: Einschätzung in 2–3 Sätzen (welche Aufgaben er selbst klein bzw. groß rechnen lässt) – sonst INTERN-Vorschlag im Entwurf
+- Verlauf: 2026-11-10 Chat: Idee von Till, Recherche (quellen.md), Thema von Till im Chat freigegeben („Ich gebe ihn jetzt schon frei“) → nächster Lauf: Autor, Grafik, Prüfer
+
 ### iab-betriebe-sehen-keine-ki-anwendung
 - Status: eingeplant
 - Idee von Till (Chat 23.10.2026, zwei fertige Entwürfe „Gelesen & eingeordnet“ aus einem anderen Werkzeug; Till: „Ja bitte beide Beiträge als Entwürfe anlegen. Perfekt für KMK machen!“)
