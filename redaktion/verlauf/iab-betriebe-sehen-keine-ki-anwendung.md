@@ -8,3 +8,4 @@
 - 2026-11-02 Lauf 12:47: als B erinnert (Mail 1a19be3873ddb3ea, Termin Do 5.11. 7:00)
 - 2026-11-05 Lauf 7:47: Do 5.11. ohne Freigabe verstrichen; im Briefing als B erinnert (Mail 1a1aa7c89c1cc391, „B ja“ = Do 12.11. 7:00)
 - 2026-11-09 Chat: Till will B diese Woche (Do 12.11.), versteht Grafik nicht → g1 neu als zwei Karten (viel/wenig Potenzial: nutzen KI / Betriebe ohne KI ohne Anwendung), Ghost-Entwurf aktualisiert; „B ja“ offen
+- 2026-11-09 Chat: finale Prüfung – Grafik-Aussagen abgeschwächt („große Mehrheit“, „auch wo“), Bezugsgruppe „weder nutzen noch planen“, „gut ein Jahr alt“; Original (idw/iab) in dieser Sitzung nicht abrufbar, Werte aus quellen.md (gelesen 23.10.); Termin Di 10.11. 7:00; „B ja“ offen

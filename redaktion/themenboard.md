@@ -26,7 +26,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 ## Aktiv
 
 ### modellwahl-kanonen-auf-spatzen
-- Status: freigegeben
+- Status: wartet-auf-till
 - Idee von Till (Chat 10.11.2026): Bisher geht es im Blog darum, dass Firmen KI nutzen sollen. Jetzt die Firmen ansprechen, die KI schon nutzen: Viele geben ihren Leuten Claude oder ChatGPT, und alles läuft über die größten Modelle, die am meisten Tokens verbrauchen. „Kanonen auf Spatzen.“ Zwei Lösungswege: Mitarbeitern sagen, welches Modell für welche Aufgabe – oder Technik davorschalten, die automatisch einschätzt, ob Opus nötig ist oder ein kleines Modell reicht.
 - Titel (Arbeitstitel): „Mit Kanonen auf Spatzen: Warum nicht jede KI-Aufgabe das stärkste Modell braucht“ (Alternative: „Mehr PS, mehr Sprit: So wählt dein Team das passende KI-Modell“)
 - Rubrik/Kategorie: Wissen / Leitfäden
@@ -41,7 +41,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Vorsicht Themenregeln: keine Modell-Rangliste, keine Benchmark-Namen im Text; Testzahlen nur als Größenordnung mit „Herstellermessung“. Zahlen aus 2023/2024 (RouteLLM, FrugalGPT) als Prinzip, nicht als Versprechen. Modellnamen und Preise mit „Stand: November 2026“.
 - Relevanz: 9/10 (Betroffenheit 2, Handlung 2, Quelle 2, Neuheit 2, Passung 1)
 - Braucht von Till: Einschätzung in 2–3 Sätzen (welche Aufgaben er selbst klein bzw. groß rechnen lässt) – sonst INTERN-Vorschlag im Entwurf
-- Verlauf: 2026-11-10 Chat: Idee von Till, Recherche (quellen.md), Thema von Till im Chat freigegeben („Ich gebe ihn jetzt schon frei“) → nächster Lauf: Autor, Grafik, Prüfer
+- Verlauf: 2026-11-10 Chat: Idee von Till, Recherche (quellen.md), Thema von Till im Chat freigegeben („Ich gebe ihn jetzt schon frei“) → nächster Lauf: Autor, Grafik, Prüfer · 2026-11-10 Lauf 12:47: Autor, Grafik (4 Schaubilder, Titel-/Vorschaubild), Prüfer Runde 1 nicht bestanden (Opus-Limit-Aussage unbelegt, Abo-Rechnung zu pauschal, zu lang), Runde 2 bestanden; Ghost-Entwurf (Stand 12:04:40Z), Vorschau als C gemailt (1a1c558e6537cafd), Termin Do 12.11. 7:00; offen: „C ja“ + zwei [TILL]-Platzhalter
 
 ### iab-betriebe-sehen-keine-ki-anwendung
 - Status: veroeffentlicht
@@ -53,7 +53,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Braucht von Till: Einschätzung in 2–3 Sätzen oder Freigabe des Vorschlags
 - Vorschlag „Eine Zahl, genau gelesen“: zahl „88 %“ · text „der Betriebe ohne KI sehen dafür keine passende Anwendung.“ · genau „Gemeint sind nur Betriebe, die KI weder nutzen noch planen – im zweiten Halbjahr 2025 zwei Drittel aller Betriebe. Selbstauskunft. Quelle: IAB, Oktober 2026.“ · link: Beitrag nach Veröffentlichung. Ändern nur nach Freigabe (Code-Injection, nicht per API).
 - Reihenfolge: vor nicht-jedes-problem-braucht-ki veröffentlichen
-- Verlauf: (ältere Einträge: redaktion/verlauf/iab-betriebe-sehen-keine-ki-anwendung.md) 2026-11-09 Chat: finale Prüfung – Grafik-Aussagen abgeschwächt („große Mehrheit“, „auch wo“), Bezugsgruppe „weder nutzen noch planen“, „gut ein Jahr alt“; Original (idw/iab) in dieser Sitzung nicht abrufbar, Werte aus quellen.md (gelesen 23.10.); Termin Di 10.11. 7:00; „B ja“ offen · 2026-11-09 Lauf 12:47: Vorschau (Stand 08:33:51) als B gemailt (1a1c024b6f48189f), Termin Di 10.11. 7:00; „B ja“ offen · 2026-11-09 Lauf 18:47: „B ja“ (Mail 1a1c0666e55205d8, 14:01) → Freigabe eingetragen, in Ghost eingeplant für Di 10.11. 7:00 (06:00Z) · 2026-11-10 Lauf 12:47: veröffentlicht Di 10.11. 7:00 (Ghost published_at 06:00Z) → https://www.kleinmittelki.de/iab-betriebe-sehen-keine-ki-anwendung/
+- Verlauf: (ältere Einträge: redaktion/verlauf/iab-betriebe-sehen-keine-ki-anwendung.md) 2026-11-09 Lauf 12:47: Vorschau (Stand 08:33:51) als B gemailt (1a1c024b6f48189f), Termin Di 10.11. 7:00; „B ja“ offen · 2026-11-09 Lauf 18:47: „B ja“ (Mail 1a1c0666e55205d8, 14:01) → Freigabe eingetragen, in Ghost eingeplant für Di 10.11. 7:00 (06:00Z) · 2026-11-10 Lauf 12:47: veröffentlicht Di 10.11. 7:00 (Ghost published_at 06:00Z) → https://www.kleinmittelki.de/iab-betriebe-sehen-keine-ki-anwendung/
 
 ### nicht-jedes-problem-braucht-ki
 - Status: veroeffentlicht
@@ -266,7 +266,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Versand: Dienstag 10.11.2026, 7:05 (erst nach Tills „N ja“)
 - Inhalt: 01 powerpoint-mit-ki-im-eigenen-design (live seit 06.11.) · 02 Zahl „86 %“ (Anthropic Research 27.10.2026 – nimmt Board-Thema ki-agent-beeinflusst-entscheidungen vorweg) · 03 Gedanke. Recherche-Assistent auf Tills Wunsch raus (Chat 09.11.: ein „Selbst ausprobiert“ pro Woche)
 - Datei: entwuerfe/newsletter-2026-11-10/beitrag.md, Prüfung: pruefung.md
-- Verlauf: (ältere Einträge: redaktion/verlauf/newsletter-2026-11-10.md) 2026-11-09 Chat: Fassung 3 auf Tills Wunsch (01 PPT, 02 Aktuell eingeordnet: IAB), Prüfer: Titel und Gedanke korrigiert, Ghost aktualisiert (978→335a848f…), Testmail fehlgeschlagen; „N ja“ offen · 2026-11-09 Lauf 12:47: Fassung 3 gemailt (1a1c024b6f48189f, Fingerabdruck 335a848f…), keine neue Testmail (Fassung unverändert); „N ja“ offen, spätestens 18:47 · 2026-11-09 Lauf 18:47: „N ja“ (Mail 1a1c0666e55205d8) für Fassung 3 (335a848f…) → in Ghost eingeplant Di 10.11. 7:05 (06:05Z) · 2026-11-10 Lauf 12:47: versendet Di 10.11. 7:05 (Ghost status sent, 06:05Z)
+- Verlauf: (ältere Einträge: redaktion/verlauf/newsletter-2026-11-10.md) 2026-11-09 Lauf 12:47: Fassung 3 gemailt (1a1c024b6f48189f, Fingerabdruck 335a848f…), keine neue Testmail (Fassung unverändert); „N ja“ offen, spätestens 18:47 · 2026-11-09 Lauf 18:47: „N ja“ (Mail 1a1c0666e55205d8) für Fassung 3 (335a848f…) → in Ghost eingeplant Di 10.11. 7:05 (06:05Z) · 2026-11-10 Lauf 12:47: versendet Di 10.11. 7:05 (Ghost status sent, 06:05Z)
 
 ### newsletter-2026-11-03
 - Status: versendet

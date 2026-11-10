@@ -1,0 +1,32 @@
+{
+  "bilder": {
+    "kmk-modellwahl-g1.png": {
+      "hash": "88dc587495ddc35679cc50972af922548b38c55fc9061cf0afa288865a8a2f58",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/11/kmk-modellwahl-g1.png"
+    },
+    "kmk-modellwahl-g2.png": {
+      "hash": "38cfb2a46b94cb2277f13815359001f1c9eeab8d8e72bb24f708000bd2b4cb8c",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/11/kmk-modellwahl-g2.png"
+    },
+    "kmk-modellwahl-g3.png": {
+      "hash": "a47e43c1e4d54781b45be2604753f3183c11d18fc1602bc6eadade1c058efdf3",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/11/kmk-modellwahl-g3.png"
+    },
+    "kmk-modellwahl-g4.png": {
+      "hash": "39c1561af908e46ad3abffa7497ba539c1e5b239a4c3df6bb2f264bb608a13e3",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/11/kmk-modellwahl-g4.png"
+    }
+  },
+  "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/11/vorschaubild.png",
+  "vorschaubild_hash": "cfd341c7edca0dcc98cec30517d1feb71a1a926288507f0cdcccef052860f3eb",
+  "titelbild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/11/titel-modellwahl-kanonen-auf-spatzen.jpg",
+  "titelbild_hash": "5eaa1ac38aba991545f7c686be1666b809244c7e3a1166bf311954a79ea33019",
+  "id": "6af3085899393e0001be06a2",
+  "uuid": "427004d6-5a77-477a-a0f0-16a328ace633",
+  "slug": "modellwahl-kanonen-auf-spatzen",
+  "titel": "Mit Kanonen auf Spatzen: Warum nicht jede KI-Aufgabe das stärkste Modell braucht",
+  "status": "draft",
+  "updated_at": "2026-11-10T12:04:40.000Z",
+  "vorschau": "https://www.kleinmittelki.de/p/427004d6-5a77-477a-a0f0-16a328ace633/",
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6af3085899393e0001be06a2"
+}

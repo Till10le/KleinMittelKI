@@ -291,6 +291,31 @@
         "B": "„B ja“ 14:01, eingeplant Di 10.11. 7:00 (Lauf 09.11. 18:47)",
         "N": "„N ja“ 14:01 für Fassung 3, eingeplant Di 10.11. 7:05 (Lauf 09.11. 18:47)"
       }
+    },
+    {
+      "art": "redaktion",
+      "betreff": "KMK · Di 10.11. · B online, Newsletter raus, Vorschau C",
+      "datum": "2026-11-10",
+      "thread_id": "1a1c558e6537cafd",
+      "eintraege": {
+        "C": "modellwahl-kanonen-auf-spatzen"
+      },
+      "erledigt": {
+        "B": "online Di 10.11. 7:00, gemeldet",
+        "N": "Newsletter #6 versendet 7:05, gemeldet"
+      },
+      "fragen_offen": [
+        {
+          "nr": "C1",
+          "slug": "modellwahl-kanonen-auf-spatzen",
+          "frage": "Name/Voreinstellung der automatischen Modellwahl in ChatGPT Business ([TILL]-Platzhalter 1)"
+        },
+        {
+          "nr": "C2",
+          "slug": "modellwahl-kanonen-auf-spatzen",
+          "frage": "Tills Einschätzung 2–3 Sätze ([TILL]-Platzhalter 2) oder „ohne Einschätzung“"
+        }
+      ]
     }
   ],
   "eigene_ids": [
@@ -322,7 +347,8 @@
     "1a1aa7c89c1cc391",
     "1a1b9f35f46a94b7",
     "1a1c024b6f48189f",
-    "1a1c16e490653c78"
+    "1a1c16e490653c78",
+    "1a1c558e6537cafd"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
@@ -352,6 +378,7 @@
     "ki-recherche-assistent-selbstversuch@2026-10-25T16:41:43.000Z",
     "ki-ergebnisse-pruefen-leitfaden@2026-10-25T17:19:52.000Z",
     "ki-ergebnisse-pruefen-leitfaden@2026-10-25T17:39:35.000Z",
-    "iab-betriebe-sehen-keine-ki-anwendung@2026-11-09T08:33:51.000Z"
+    "iab-betriebe-sehen-keine-ki-anwendung@2026-11-09T08:33:51.000Z",
+    "modellwahl-kanonen-auf-spatzen@2026-11-10T12:04:40.000Z"
   ]
 }

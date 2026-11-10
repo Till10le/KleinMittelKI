@@ -92,3 +92,36 @@ Pauschalaussage zur Abo-Rechnung, die der Hersteller widerlegt, und der Text ist
 2. Preisliste: bei Haiku 5.5 „(bei Anfragen bis 100.000 Tokens)“ ergänzt. Laut Preisliste kostet Haiku darüber 0,50/2,50 $.
 3. Stapelverarbeitung: „Antwort innerhalb von 24 Stunden“ → „Antwort meist innerhalb einer Stunde, spätestens nach
    24 Stunden, dafür 50 Prozent Rabatt“ (Batch-Doku: „most batches completing within 1 hour … after 24 hours“).
+
+---
+
+## Runde 2
+
+- Datum: 10.11.2026 (Redaktions-Lauf Di 12:47, Prüfrunde 2, letzte Runde)
+- Ergebnis: **BESTANDEN**
+
+Frisch gelesen: beitrag.md, kmk-modellwahl-g2.png (und g2-social), quellen.md Abschnitt 4.
+
+| Mangel / Hinweis | Stand |
+|---|---|
+| M1 Opus/Sonnet-Limit | behoben. Text stützt sich jetzt auf „Usage limit best practices“ (Modellwahl als Faktor) und die Fable-Seite. Die Opus/Sonnet-Aussage ist gestrichen, auch in g2 („Das stärkste Modell verbraucht das Wochenlimit schneller“). Quellenliste angepasst, 9267304 entfernt. In quellen.md ist der alte Eintrag als VERALTET markiert und nicht gelöscht. Im INTERN-Absatz vermerkt. |
+| M2 Rechnung bleibt gleich | behoben. Eingeschränkt im Absatz zu Beginn von „Was der Sprit kostet“, in der Box („meist nicht über die Rechnung“), in g2 („Rechnung meist gleich“) und im Schlussabschnitt (Ausnahme Zusatzguthaben). Deckt sich mit der Fable-Seite. |
+| M3 Länge | behoben. Rund 1.970 Wörter bis „Quellen“ (vorher rund 2.050), 2.110 mit Quellenliste. Liegt im Rahmen 1.900–2.000. |
+| H1 Sonnet | übernommen („Sonnet für Alltagsarbeit wie Texte und Datenanalyse“, entspricht der Auswahlmatrix). |
+| H2 doppelter Kopf | übernommen (Box-Kopf „Die eigene Faustregel in einer halben Stunde“). |
+
+Nichts Neues kaputt: Zahlen unverändert und weiter quellengleich (Preise, 0,35/7/14/28 $, 85/91 %, 4,3-fach, 7 %,
+0,49/0,57/1,40 $, 7/25 und 25/25, RouteLLM, FrugalGPT 98 %). Links auf die Originale, beide neuen Help-Center-Links
+erreichbar. Keine Ich-Form außerhalb der Platzhalter. Die zwei `[TILL: …]` sind bewusst offen und im INTERN-Absatz genannt.
+Ton sachlich. g2 im Baukasten: Titel als Aussage, Fußzeile mit Stand und Quelle, Lime-Kante. Alt-Text und Bildunterschrift
+passen zur neuen Fassung.
+
+Direkt korrigiert in Runde 2:
+1. Schlussabschnitt: „Für die meisten Betriebe mit Abo geht es bei der Modellwahl meist nicht um …“ → doppeltes „meist“
+   gestrichen.
+2. Absatz **Limits**: Fable-Aussage auf den Geltungsbereich der Quelle eingeschränkt: „Wo Fable im Limit enthalten ist,
+   etwa auf Premium-Plätzen im Team-Abo, verbraucht es das Wochenlimit schneller als die anderen Claude-Modelle.“ Auf
+   Standard-Team-Plätzen zählt Fable laut Anthropic nicht gegen das Limit; das steht schon im Absatz davor.
+
+Offen, kein Prüfmangel: lmsys.org, arxiv.org, frontiersin.org und help.openai.com waren in dieser Umgebung nicht erreichbar.
+Die Angaben daraus stimmen mit quellen.md überein; Till wird das offen gemeldet.

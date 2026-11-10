@@ -39,7 +39,7 @@ In ChatGPT heißen die Stufen anders, das Prinzip ist dasselbe: Es gibt schnelle
 
 Die meisten Betriebe nutzen ChatGPT oder Claude im Abo und zahlen pro Platz. Solange niemand Zusatzguthaben nutzt, ändert sich die Rechnung am Monatsende nicht. Ausnahme: Das stärkste Claude-Modell läuft auf Standard-Plätzen im Team-Abo nur über solches Guthaben. Sonst wird der Sprit in anderer Währung bezahlt.
 
-**Limits:** Laut [Anthropic](https://support.claude.com/en/articles/9797557-usage-limit-best-practices) hängt die Nutzungsgrenze unter anderem von der Länge der Nachrichten, der Größe der Dateien und von der Modellwahl ab. Beim stärksten Modell schreibt Anthropic es [ausdrücklich](https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan): Fable verbraucht das Wochenlimit schneller als die anderen Claude-Modelle. Wer morgens für jede Kleinigkeit das größte Modell nimmt, steht nachmittags bei der wichtigen Auswertung womöglich an der Grenze.
+**Limits:** Laut [Anthropic](https://support.claude.com/en/articles/9797557-usage-limit-best-practices) hängt die Nutzungsgrenze unter anderem von der Länge der Nachrichten, der Größe der Dateien und von der Modellwahl ab. Beim stärksten Modell schreibt Anthropic es [ausdrücklich](https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan): Wo Fable im Limit enthalten ist, etwa auf Premium-Plätzen im Team-Abo, verbraucht es das Wochenlimit schneller als die anderen Claude-Modelle. Wer morgens für jede Kleinigkeit das größte Modell nimmt, steht nachmittags bei der wichtigen Auswertung womöglich an der Grenze.
 
 **Wartezeit:** Kleine Modelle antworten schneller. Anthropic empfiehlt Haiku ausdrücklich für die niedrigste Wartezeit. Bei vielen Anfragen am Tag merkt man das.
 
@@ -103,7 +103,7 @@ Zwei Hebel für Anwendungen über die Schnittstelle gibt es außerdem. Was nicht
 
 ## Was das für den Mittelstand bedeutet
 
-Für die meisten Betriebe mit Abo geht es bei der Modellwahl meist nicht um die Rechnung, sondern um Limits, Wartezeit und Strom. Ausnahme ist Zusatzguthaben, etwa für das stärkste Claude-Modell. Die Faustregel aus Weg 1 ist in einer Teamrunde erledigt und kostet nichts.
+Für die meisten Betriebe mit Abo geht es bei der Modellwahl nicht um die Rechnung, sondern um Limits, Wartezeit und Strom. Ausnahme ist Zusatzguthaben, etwa für das stärkste Claude-Modell. Die Faustregel aus Weg 1 ist in einer Teamrunde erledigt und kostet nichts.
 
 Anders sieht es aus, sobald ein Betrieb eigene Abläufe über die Schnittstelle automatisiert, etwa Anfragen sortieren oder Rechnungsdaten auslesen. Dann wird die Modellwahl zu einer Kostenfrage, die sich mit jedem Monat wiederholt. Hier lohnt der Test mit echten Fällen, bevor das größte Modell fest eingebaut wird, und die Frage nach Stapelverarbeitung und Zwischenspeicher.
 
