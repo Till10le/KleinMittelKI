@@ -1,7 +1,80 @@
 {
-  "stand": "2026-11-09T06:50:53+00:00",
+  "stand": "2026-11-10T06:50:07+00:00",
   "anzahl": 35,
   "beitraege": [
+    {
+      "id": "6af01d6a2758a80001ce74b2",
+      "slug": "6-folien-ohne-ki-look-und-ein-recherche-assistent",
+      "titel": "#6: Folien ohne KI-Look und KI ohne Anwendungsfall",
+      "status": "sent",
+      "veroeffentlicht": "2026-11-10",
+      "geaendert": "2026-11-10",
+      "kategorie": "",
+      "interne_tags": [
+        "#newsletter"
+      ],
+      "teaser": "Wie KI-Folien nach deinem Betrieb aussehen, warum so viele Betriebe keine Anwendung für KI sehen, eine Zahl und ein Gedanke.",
+      "url": "https://www.kleinmittelki.de/email/bd6a2494-782d-4723-84e9-d3047e17980e/",
+      "zwischenueberschriften": [
+        "01 · Selbst ausprobiert: Dreimal dieselbe Präsentation mit KI",
+        "02 · Aktuell eingeordnet: Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz",
+        "03 · Eine Zahl, genau gelesen",
+        "04 · Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [
+        "https://www.anthropic.com/research/agents-judgment-calls"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/",
+        "https://www.kleinmittelki.de/iab-betriebe-sehen-keine-ki-anwendung/",
+        "https://www.kleinmittelki.de/powerpoint-mit-ki-im-eigenen-design/"
+      ],
+      "zahlen": [
+        "02 · Aktuell eingeordnet: Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz Das IAB hat ausgewertet, warum Betriebe auf KI verzichten.",
+        "88 Prozent von ihnen sahen keine passende Anwendung.",
+        "Auffällig: Selbst wo KI viele Tätigkeiten beschleunigen könnte, sehen 85 Prozent der Betriebe ohne KI und ohne Pläne dafür keinen Einsatzzweck.",
+        "Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz.",
+        "03 · Eine Zahl, genau gelesen Anthropic · Oktober 2026 86 % der Analyseentscheidungen fielen so aus, wie ein KI-Agent es empfahl.",
+        "Ohne seinen Einfluss wären etwa 50 Prozent zu erwarten.",
+        "Nur 15 Prozent nannten den Agenten als Quelle ihrer Argumente."
+      ],
+      "woerter": 548
+    },
+    {
+      "id": "6adda6244d491100016c4702",
+      "slug": "iab-betriebe-sehen-keine-ki-anwendung",
+      "titel": "Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz. Vielleicht suchen sie an der falschen Stelle.",
+      "status": "published",
+      "veroeffentlicht": "2026-11-10",
+      "geaendert": "2026-11-10",
+      "kategorie": "Studien & Zahlen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "Laut IAB fehlt vielen Betrieben weder Geld noch Technik, sondern ein Anwendungsfall. Der liegt oft nicht im Kerngeschäft, sondern daneben.",
+      "url": "https://www.kleinmittelki.de/iab-betriebe-sehen-keine-ki-anwendung/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://iab-forum.de/weshalb-die-meisten-betriebe-kuenstliche-intelligenz-noch-nicht-nutzen/",
+        "https://idw-online.de/de/news879376"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-mittelstand-lagebericht-september-2026/"
+      ],
+      "zahlen": [
+        "88 Prozent von ihnen sahen keine passenden Anwendungsmöglichkeiten.",
+        "Auffällig: Selbst wo KI viele Tätigkeiten im Betrieb beschleunigen könnte, sehen 85 Prozent der Nichtnutzer keinen Einsatzzweck.",
+        "Dass Bitkom im September nur auf 30 Prozent fehlende Anwendungsfälle kam, widerspricht dem nicht: Dort wurden nur Unternehmen ab 20 Beschäftigten befragt.",
+        "Zum Originalartikel Weshalb die meisten Betriebe Künstliche Intelligenz (noch) nicht nutzen Originalveröffentlichung vom 20.10.2026 IAB-Forum Fast 90 Prozent der Betriebe ohne KI-Nutzung sehen keine Anwendungsmöglichkeiten Originalveröffentlichung vom 20.10.2026 IAB, Pressemitteilung"
+      ],
+      "woerter": 423
+    },
     {
       "id": "6aeb40e475eea100014ab6a7",
       "slug": "powerpoint-mit-ki-im-eigenen-design",
@@ -856,41 +929,6 @@
       "woerter": 284
     },
     {
-      "id": "6af01d6a2758a80001ce74b2",
-      "slug": "6-folien-ohne-ki-look-und-ein-recherche-assistent",
-      "titel": "#6: Folien ohne KI-Look und ein Recherche-Assistent",
-      "status": "draft",
-      "veroeffentlicht": "",
-      "geaendert": "2026-11-08",
-      "kategorie": "",
-      "interne_tags": [
-        "#newsletter",
-        "#zur-freigabe"
-      ],
-      "teaser": "Wie KI-Folien nach deinem Betrieb aussehen, wie ein KI-Assistent vorsortiert, eine Zahl und ein Gedanke für deinen Betrieb.",
-      "url": "https://www.kleinmittelki.de/p/bd6a2494-782d-4723-84e9-d3047e17980e/",
-      "zwischenueberschriften": [
-        "01 · Selbst ausprobiert: Dreimal dieselbe Präsentation mit KI",
-        "02 · Selbst ausprobiert: Ein KI-Assistent, der sucht, aber nicht entscheidet",
-        "03 · Eine Zahl, genau gelesen",
-        "04 · Ein Gedanke zum Mitnehmen"
-      ],
-      "quellen": [
-        "https://www.anthropic.com/research/agents-judgment-calls"
-      ],
-      "interne_links": [
-        "https://www.kleinmittelki.de/",
-        "https://www.kleinmittelki.de/ki-recherche-assistent-selbstversuch/",
-        "https://www.kleinmittelki.de/powerpoint-mit-ki-im-eigenen-design/"
-      ],
-      "zahlen": [
-        "03 · Eine Zahl, genau gelesen Anthropic · Oktober 2026 86 % der Analyseentscheidungen fielen so aus, wie ein KI-Agent es empfahl.",
-        "Ohne seinen Einfluss wären etwa 50 Prozent zu erwarten.",
-        "Nur 15 Prozent nannten den Agenten als Quelle ihrer Argumente."
-      ],
-      "woerter": 548
-    },
-    {
       "id": "6ade31474d491100016c4807",
       "slug": "ki-recherche-assistent-selbstversuch",
       "titel": "Mein KI-Rechercheassistent: Die KI sucht. Ich entscheide.",
@@ -923,43 +961,6 @@
       ],
       "zahlen": [],
       "woerter": 1483
-    },
-    {
-      "id": "6adda6244d491100016c4702",
-      "slug": "iab-betriebe-sehen-keine-ki-anwendung",
-      "titel": "Fast 90 Prozent der Betriebe ohne KI sehen keinen Einsatz. Vielleicht suchen sie an der falschen Stelle.",
-      "status": "draft",
-      "veroeffentlicht": "",
-      "geaendert": "2026-10-25",
-      "kategorie": "Studien & Zahlen",
-      "interne_tags": [
-        "#empfehlung",
-        "#zur-freigabe"
-      ],
-      "teaser": "Laut IAB fehlt vielen Betrieben weder Geld noch Technik, sondern ein Anwendungsfall. Der liegt oft nicht im Kerngeschäft, sondern daneben.",
-      "url": "https://www.kleinmittelki.de/p/49d77d59-3984-4501-99d4-d71e1b0198c1/",
-      "zwischenueberschriften": [
-        "Was ist passiert?",
-        "Meine Einordnung",
-        "Was bedeutet das für den Mittelstand?",
-        "Ein Gedanke zum Mitnehmen",
-        "Zum Originalartikel"
-      ],
-      "quellen": [
-        "https://iab-forum.de/weshalb-die-meisten-betriebe-kuenstliche-intelligenz-noch-nicht-nutzen/",
-        "https://idw-online.de/de/news879376"
-      ],
-      "interne_links": [
-        "https://www.kleinmittelki.de/ki-mittelstand-lagebericht-september-2026/"
-      ],
-      "zahlen": [
-        "Bewusst weggelassen, weil nur in einer Zweitverwertung (Smart Up News) lesbar: die Einzelwerte 36/34/33/32/30/7 Prozent und der Vergleich nach Betriebsgröße.",
-        "88 Prozent von ihnen sahen keine passenden Anwendungsmöglichkeiten.",
-        "Auffällig: Selbst wo KI viele Tätigkeiten im Betrieb beschleunigen könnte, sehen 85 Prozent der Nichtnutzer keinen Einsatzzweck.",
-        "Dass Bitkom im September nur auf 30 Prozent fehlende Anwendungsfälle kam, widerspricht dem nicht: Dort wurden nur Unternehmen ab 20 Beschäftigten befragt.",
-        "Zum Originalartikel Weshalb die meisten Betriebe Künstliche Intelligenz (noch) nicht nutzen Originalveröffentlichung vom 20.10.2026 IAB-Forum Fast 90 Prozent der Betriebe ohne KI-Nutzung sehen keine Anwendungsmöglichkeiten Originalveröffentlichung vom 20.10.2026 IAB, Pressemitteilung"
-      ],
-      "woerter": 516
     },
     {
       "id": "6ab29a197af57d000189c7bd",
