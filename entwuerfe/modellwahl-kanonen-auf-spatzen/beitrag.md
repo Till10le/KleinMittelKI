@@ -31,7 +31,7 @@ Je Token kostet Sonnet damit das 20-Fache von Haiku, Opus das 40-Fache und Fable
 
 Was das in Euro und Cent heißt, zeigt eine einfache Rechnung. Angenommen, eine typische Anfrage schickt 2.000 Tokens hinein und bekommt 300 zurück. Dann kosten 1.000 solcher Anfragen mit Haiku 5.5 rund 0,35 US-Dollar, mit Sonnet 5.5 rund 7 US-Dollar, mit Opus 5.5 rund 14 US-Dollar und mit Fable 5.2 rund 28 US-Dollar. Die Annahme ist von uns gewählt, die Preise sind die offiziellen. Andere Längen verschieben die Beträge, nicht das Verhältnis.
 
-[GRAFIK: PS-Vergleich der Modellstufen als Kleinwagen, Mittelklasse, Sportwagen (optional vierte Zeile Fable als Spitzenmodell). Je Stufe Preis je 1 Mio. Tokens hinein/hinaus und Preis je 1.000 Anfragen: Haiku 5.5 0,10 $ / 0,50 $ → 0,35 $; Sonnet 5.5 2 $ / 10 $ → 7 $; Opus 5.5 4 $ / 20 $ → 14 $; Fable 5.2 8 $ / 40 $ → 28 $. Fußzeile: „Eigene Rechnung, Annahme 2.000 Tokens hinein, 300 hinaus · Stand: 10.11.2026 · Quelle: Anthropic-Preisliste“. Keine Rangliste nach Testergebnissen, nur Preis und Einsatzzweck laut Anthropic.]
+![Schaubild: Vier Claude-Modelle von Haiku 5.5 bis Fable 5.2 mit Preis je 1 Million Tokens, Preis je 1.000 Anfragen und Einsatzzweck laut Anthropic](kmk-modellwahl-g1.png "Gleiche Marke, vier Motoren: Der Preis wächst mit der Größe, die Zuordnung zum Einsatz stammt von Anthropic. Je 1.000 Anfragen ist eine eigene Rechnung mit 2.000 Tokens hinein und 300 hinaus.")
 
 In ChatGPT heißen die Stufen anders, das Prinzip ist dasselbe: Es gibt schnelle Antworten und Modelle, die länger nachdenken. Seit April 2026 lassen sich Modell und Denkstufe in ChatGPT Plus, Pro und Business laut [OpenAI](https://help.openai.com/en/articles/6825453-chatgpt-release-notes) direkt im Eingabefeld wählen.
 
@@ -47,7 +47,7 @@ Die meisten Betriebe nutzen ChatGPT oder Claude im Abo und zahlen pro Platz. Die
 
 **Geld:** Echte Euro geht es erst, wenn ein Betrieb eine eigene Anwendung über die Schnittstelle baut, die sogenannte API. Ein Beispiel: Eine Hausverwaltung lässt eingehende Mieteranfragen automatisch einsortieren, also Schaden, Nebenkosten oder Kündigung. Kommen viele solcher Anfragen zusammen, macht der Unterschied zwischen 0,35 und 14 US-Dollar je 1.000 Anfragen aus der Rechnung oben einen echten Posten.
 
-[GRAFIK: Abo vs. Schnittstelle in zwei Spalten (g-vergleich). Links „Abo (ChatGPT Business, Claude Team)“: Preis pro Platz, Modellwahl kostet Limit, Wartezeit, Strom; Anthropic: Opus verbraucht das Wochenlimit schneller als Sonnet. Rechts „Schnittstelle (eigene Anwendung)“: Preis je Token, Modellwahl kostet Geld; Beispiel je 1.000 Anfragen 0,35 $ (Haiku 5.5) bis 14 $ (Opus 5.5), eigene Rechnung. Merksatz etwa: „Im Abo zahlst du mit Limit, in der Schnittstelle mit Geld.“ Quelle: Anthropic Help Center, Anthropic-Preisliste, Stand 10.11.2026.]
+![Schaubild: Abo und Schnittstelle im Vergleich, im Abo kostet die Modellwahl Limit, Wartezeit und Strom, in der Schnittstelle Geld](kmk-modellwahl-g2.png "Im Abo zahlst du die Modellwahl mit Limit und Wartezeit, über die Schnittstelle mit Geld.")
 
 ## Billig ist nicht immer günstig
 
@@ -69,7 +69,7 @@ Der einfachste Weg kostet keine Technik, nur eine Absprache. Wer im Betrieb die 
 
 Liegt die kleine Stufe bei einer Aufgabe daneben, geht es eine Stufe höher. Das Ziel ist nur, dass niemand mehr aus Gewohnheit für jede Kleinigkeit das Größte nimmt.
 
-[GRAFIK: Ampel/Faustregel als Stufenliste (g-stufen oder g-tabelle) mit drei Stufen Klein/Mittel/Groß und je drei bis vier Beispielaufgaben aus dem Abschnitt „Weg 1“. Leitfrage als Merksatz, etwa: „Was kostet es, wenn die Antwort danebenliegt?“ Keine Zahlen. Fußzeile: „Vereinfachte Darstellung, Zuordnung als Faustregel nach Einsatzempfehlungen von Anthropic · Stand: 10.11.2026“.]
+![Stufenmodell mit drei Stufen: Klein, Mittel und Groß mit Beispielaufgaben für jede Stufe und der Leitfrage, was eine falsche Antwort kostet](kmk-modellwahl-g3.png "Eine Faustregel, kein Gesetz: Liegt die kleine Stufe daneben, geht die Aufgabe eine Stufe höher.")
 
 Zwei weitere Gewohnheiten sparen unabhängig vom Modell.
 
@@ -85,7 +85,7 @@ In ChatGPT gibt es das bereits, die Auswahl heißt „Auto“. In den [Release N
 
 Für eigene Anwendungen über die Schnittstelle heißt diese Weiche Router. Forschende der UC Berkeley haben 2024 mit [RouteLLM](https://www.lmsys.org/blog/2024-07-01-routellm) gezeigt, wie viel das bringen kann: Je nach Testaufgaben sanken die Kosten um 35 Prozent, 45 Prozent oder um über 85 Prozent gegenüber „alles an das große Modell“, bei 95 Prozent von dessen Qualität. In einem der Tests reichte es dafür, 26 Prozent der Anfragen an das große Modell zu schicken, nach zusätzlichem Training 14 Prozent. Eine Stanford-Gruppe hatte 2023 mit [FrugalGPT](https://arxiv.org/abs/2305.05176) ein verwandtes Prinzip beschrieben, die Kaskade: erst das günstige Modell fragen, nur wenn die Antwort nicht reicht, das nächstgrößere. Die Preise der Anbieter unterschieden sich damals um zwei Größenordnungen, die Ersparnis lag unter Laborbedingungen bei bis zu 98 Prozent.
 
-[GRAFIK: Router-Prinzip als Ablauf links → rechts (g-spalten--pfeile): Anfrage → Weiche („Wie schwer ist das?“) → oben kleines Modell (einfach), unten großes Modell (schwierig). Darunter Kennzahl als Größenordnung: „RouteLLM 2024: 35 bis über 85 % weniger Kosten bei 95 % der Qualität“ mit Hinweis „Forschung mit damaligen Modellen, kein Versprechen“. Fußzeile: „Vereinfachte Darstellung · Quelle: LMSYS/UC Berkeley, 01.07.2024 · Stand: 10.11.2026“.]
+![Schaubild: Ein Router prüft jede Anfrage und schickt einfache an ein kleines, schwierige an ein großes Modell, dazu die Ergebnisse von RouteLLM 2024](kmk-modellwahl-g4.png "Das Prinzip zählt, nicht die Zahl: Wie viel ein Router spart, hängt davon ab, wie viele deiner Anfragen wirklich einfach sind.")
 
 Beide Zahlen stammen aus der Forschung mit Modellen und Preisen von 2023 und 2024. Sie zeigen das Prinzip, kein Versprechen. Wie viel ein Router spart, hängt vor allem davon ab, wie viele der eigenen Anfragen wirklich einfach sind. Deshalb gilt vor jedem Umbau: an echten Fällen aus dem eigenen Betrieb testen, nicht an Ranglisten. Das empfiehlt auch Anthropic. Und es lohnt sich die Frage aus dem Beitrag [Nicht jedes Problem braucht KI](https://www.kleinmittelki.de/nicht-jedes-problem-braucht-ki/): Steht das Merkmal schon im Betreff, reicht vielleicht eine Mailregel ganz ohne Modell.
 
