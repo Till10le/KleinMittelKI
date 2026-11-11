@@ -1,6 +1,6 @@
 # Blog-Index
 
-Stand: 2026-11-10T06:50:07+00:00 · 35 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
+Stand: 2026-11-11T06:50:06+00:00 · 36 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
 
 | Datum | Status | Kategorie | Titel | Quellen | Zahlen |
 |---|---|---|---|---|---|
@@ -32,6 +32,7 @@ Stand: 2026-11-10T06:50:07+00:00 · 35 Beiträge (automatisch aus Ghost, nicht v
 | 2026-09-18 | published | Studien & Zahlen | [Mehr Umsatz durch KI? Was eine neue KfW-Studie zeigt.](https://www.kleinmittelki.de/kfw-studie-ki-unternehmenserfolg/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Werbung direkt in ChatGPT: Entsteht hier ein neuer Kanal für Unternehmen?](https://www.kleinmittelki.de/werbung-chatgpt-sponsored-agents/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Mit KI Unternehmenszahlen auswerten – ohne selbst ein Dashboard zu bauen?](https://www.kleinmittelki.de/ki-unternehmenszahlen-data-agent/) | 1 | 0 |
+| – | draft | Leitfäden | [Mit Kanonen auf Spatzen: Warum nicht jede KI-Aufgabe das stärkste Modell braucht](https://www.kleinmittelki.de/p/427004d6-5a77-477a-a0f0-16a328ace633/) | 11 | 7 |
 | – | draft | KI in der Praxis | [Mein KI-Rechercheassistent: Die KI sucht. Ich entscheide.](https://www.kleinmittelki.de/p/7ef917e2-ee8b-4cc9-b6e7-8e5a18f6a8da/) | 3 | 0 |
 | – | draft | KI in der Praxis | [Immobiliensuche mit KI: So habe ich ChatGPT, Notion und Excel kombiniert](https://www.kleinmittelki.de/p/152d747f-9b0a-41e2-af39-57ec34bdf2a7/) | 4 | 1 |
 | – | draft |  | [INTERN – Status Quo: Fahrplan und Datenquellen](https://www.kleinmittelki.de/p/1f393daa-2f6d-4292-ad61-4404dee388d5/) | 0 | 0 |
