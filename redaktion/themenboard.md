@@ -41,7 +41,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Vorsicht Themenregeln: keine Modell-Rangliste, keine Benchmark-Namen im Text; Testzahlen nur als Größenordnung mit „Herstellermessung“. Zahlen aus 2023/2024 (RouteLLM, FrugalGPT) als Prinzip, nicht als Versprechen. Modellnamen und Preise mit „Stand: November 2026“.
 - Relevanz: 9/10 (Betroffenheit 2, Handlung 2, Quelle 2, Neuheit 2, Passung 1)
 - Braucht von Till: Einschätzung in 2–3 Sätzen (welche Aufgaben er selbst klein bzw. groß rechnen lässt) – sonst INTERN-Vorschlag im Entwurf
-- Verlauf: 2026-11-10 Chat: Idee von Till, Recherche (quellen.md), Thema von Till im Chat freigegeben („Ich gebe ihn jetzt schon frei“) → nächster Lauf: Autor, Grafik, Prüfer · 2026-11-10 Lauf 12:47: Autor, Grafik (4 Schaubilder, Titel-/Vorschaubild), Prüfer Runde 1 nicht bestanden (Opus-Limit-Aussage unbelegt, Abo-Rechnung zu pauschal, zu lang), Runde 2 bestanden; Ghost-Entwurf (Stand 12:04:40Z), Vorschau als C gemailt (1a1c558e6537cafd), Termin Do 12.11. 7:00; offen: „C ja“ + zwei [TILL]-Platzhalter
+- Verlauf: 2026-11-10 Chat: Idee von Till, Recherche (quellen.md), Thema von Till im Chat freigegeben („Ich gebe ihn jetzt schon frei“) → nächster Lauf: Autor, Grafik, Prüfer · 2026-11-10 Lauf 12:47: Autor, Grafik (4 Schaubilder, Titel-/Vorschaubild), Prüfer Runde 1 nicht bestanden (Opus-Limit-Aussage unbelegt, Abo-Rechnung zu pauschal, zu lang), Runde 2 bestanden; Ghost-Entwurf (Stand 12:04:40Z), Vorschau als C gemailt (1a1c558e6537cafd), Termin Do 12.11. 7:00; offen: „C ja“ + zwei [TILL]-Platzhalter · 2026-11-12 Lauf 7:47: Do 12.11. ohne Freigabe leer geblieben, Kandidat rückt auf Do 19.11. 7:00; im Briefing erinnert
 
 ### iab-betriebe-sehen-keine-ki-anwendung
 - Status: veroeffentlicht

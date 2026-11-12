@@ -316,6 +316,32 @@
           "frage": "Tills Einschätzung 2–3 Sätze ([TILL]-Platzhalter 2) oder „ohne Einschätzung“"
         }
       ]
+    },
+    {
+      "art": "redaktion",
+      "betreff": "KMK · Do 12.11. · Keine neuen Themen: Quellen gesperrt, C wartet",
+      "datum": "2026-11-12",
+      "thread_id": "1a1ce86e39fd096f",
+      "eintraege": {
+        "A": "ki-recherche-assistent-selbstversuch",
+        "C": "modellwahl-kanonen-auf-spatzen"
+      },
+      "fragen_offen": [
+        {
+          "nr": "C1",
+          "slug": "modellwahl-kanonen-auf-spatzen",
+          "frage": "Name/Voreinstellung der automatischen Modellwahl in ChatGPT Business ([TILL]-Platzhalter 1)"
+        },
+        {
+          "nr": "C2",
+          "slug": "modellwahl-kanonen-auf-spatzen",
+          "frage": "Tills Einschätzung 2–3 Sätze ([TILL]-Platzhalter 2) oder „ohne Einschätzung“"
+        },
+        {
+          "nr": "PROBLEM",
+          "frage": "Quellen-Domains in Umgebung KMK-Ghost freigeben"
+        }
+      ]
     }
   ],
   "eigene_ids": [
@@ -348,7 +374,8 @@
     "1a1b9f35f46a94b7",
     "1a1c024b6f48189f",
     "1a1c16e490653c78",
-    "1a1c558e6537cafd"
+    "1a1c558e6537cafd",
+    "1a1ce86e39fd096f"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
@@ -362,7 +389,8 @@
     "1a1b0a97b27c7679",
     "1a1b0a0e24f497ac",
     "1a1bf675b2df722e",
-    "1a1c0666e55205d8"
+    "1a1c0666e55205d8",
+    "1a1cbfedc8ebeefd"
   ],
   "vorschau_gemailt": [
     "olg-hamm-chatbot-haftung",
