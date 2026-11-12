@@ -26,7 +26,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 ## Aktiv
 
 ### modellwahl-kanonen-auf-spatzen
-- Status: wartet-auf-till
+- Status: eingeplant
 - Idee von Till (Chat 10.11.2026): Bisher geht es im Blog darum, dass Firmen KI nutzen sollen. Jetzt die Firmen ansprechen, die KI schon nutzen: Viele geben ihren Leuten Claude oder ChatGPT, und alles läuft über die größten Modelle, die am meisten Tokens verbrauchen. „Kanonen auf Spatzen.“ Zwei Lösungswege: Mitarbeitern sagen, welches Modell für welche Aufgabe – oder Technik davorschalten, die automatisch einschätzt, ob Opus nötig ist oder ein kleines Modell reicht.
 - Titel (Arbeitstitel): „Mit Kanonen auf Spatzen: Warum nicht jede KI-Aufgabe das stärkste Modell braucht“ (Alternative: „Mehr PS, mehr Sprit: So wählt dein Team das passende KI-Modell“)
 - Rubrik/Kategorie: Wissen / Leitfäden
@@ -41,7 +41,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Vorsicht Themenregeln: keine Modell-Rangliste, keine Benchmark-Namen im Text; Testzahlen nur als Größenordnung mit „Herstellermessung“. Zahlen aus 2023/2024 (RouteLLM, FrugalGPT) als Prinzip, nicht als Versprechen. Modellnamen und Preise mit „Stand: November 2026“.
 - Relevanz: 9/10 (Betroffenheit 2, Handlung 2, Quelle 2, Neuheit 2, Passung 1)
 - Braucht von Till: Einschätzung in 2–3 Sätzen (welche Aufgaben er selbst klein bzw. groß rechnen lässt) – sonst INTERN-Vorschlag im Entwurf
-- Verlauf: (ältere Einträge: redaktion/verlauf/modellwahl-kanonen-auf-spatzen.md) 2026-11-12 Lauf 7:47: Do 12.11. ohne Freigabe leer geblieben, Kandidat rückt auf Do 19.11. 7:00; im Briefing erinnert · 2026-11-12 Chat abends: Till „Beitrag super, erneut prüfen“; Prüfer Runde 3 nicht bestanden (ChatGPT „Auto“ überholt), Till schickt Screenshots seines ChatGPT-Kontos → Absatz „Weg 2“ und Box neu, Haiku-Quelle ergänzt, g1 neu; Runde 4 bestanden; Ghost-Entwurf aktualisiert; offen: „C ja“, Bestätigung Business-Konto, [TILL]-Platzhalter im Schluss · 2026-11-12 Chat später: Screenshots waren privat, nicht Business; Till wählt neutrale Formulierung, INTERN raus (archiviert in quellen.md), Schluss-Einschätzung auf Tills Wunsch von der Redaktion formuliert; Runde 5 bestanden; Ghost-Entwurf aktualisiert; offen: nur „C ja“ (Termin Do 19.11. 7:00)
+- Verlauf: (ältere Einträge: redaktion/verlauf/modellwahl-kanonen-auf-spatzen.md) 2026-11-12 Chat abends: Till „Beitrag super, erneut prüfen“; Prüfer Runde 3 nicht bestanden (ChatGPT „Auto“ überholt), Till schickt Screenshots seines ChatGPT-Kontos → Absatz „Weg 2“ und Box neu, Haiku-Quelle ergänzt, g1 neu; Runde 4 bestanden; Ghost-Entwurf aktualisiert; offen: „C ja“, Bestätigung Business-Konto, [TILL]-Platzhalter im Schluss · 2026-11-12 Chat später: Screenshots waren privat, nicht Business; Till wählt neutrale Formulierung, INTERN raus (archiviert in quellen.md), Schluss-Einschätzung auf Tills Wunsch von der Redaktion formuliert; Runde 5 bestanden; Ghost-Entwurf aktualisiert; offen: nur „C ja“ (Termin Do 19.11. 7:00) · 2026-11-12 Chat: Till „bitte morgen 07:00 veröffetlichen“ → Freigabe eingetragen, in Ghost eingeplant Fr 13.11. 7:00 (06:00Z)
 
 ### iab-betriebe-sehen-keine-ki-anwendung
 - Status: veroeffentlicht
