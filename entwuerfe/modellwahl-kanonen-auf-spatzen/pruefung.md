@@ -125,3 +125,121 @@ Direkt korrigiert in Runde 2:
 
 Offen, kein Prüfmangel: lmsys.org, arxiv.org, frontiersin.org und help.openai.com waren in dieser Umgebung nicht erreichbar.
 Die Angaben daraus stimmen mit quellen.md überein; Till wird das offen gemeldet.
+
+---
+
+## Runde 3 (Till-Wunsch 12.11.)
+
+- Datum: 12.11.2026 (auf Tills Wunsch im Chat: vollständige, unabhängige Prüfung „ob alles perfekt passt und korrekt ist“)
+- Prüfer: Prüfer-Agent, unabhängig, Quellen neu abgerufen
+- Ergebnis: **NICHT BESTANDEN**
+
+Grund: Alles, was sich heute prüfen ließ, stimmt: Preise, Modellnamen, eigene Rechnung, Faktoren, Anthropic-Messungen,
+Help-Center-Aussagen, interne Links, Grafiken, Titel- und Vorschaubild, Ghost-Vorschau. Ein Abschnitt ist aber
+wahrscheinlich überholt (ChatGPT „Auto“, M1), und vier Quellen-Hosts sind in dieser Umgebung gesperrt. Deren Angaben
+konnten nicht neu geprüft werden und gelten deshalb nicht als bestanden.
+
+### Mängel
+
+**M1 – ChatGPT „Auto“ und Admin-Umleitung wahrscheinlich überholt (Punkt 1, 3)**
+- Fundstellen: Abschnitt „Weg 2: Technik, die vorher entscheidet“, Absatz 2 („In ChatGPT gibt es das bereits, die Auswahl
+  heißt ‚Auto‘. In den Release Notes für Enterprise beschreibt OpenAI, dass Administratoren die automatische Weiterleitung
+  auf ein kleineres Denkmodell lenken können. … Wer ‚Auto‘ stehen lässt, überlässt die Wahl dem Anbieter. Wer fest das
+  größte Modell einstellt, schaltet die Weiche ab.“); Box „Das Wichtigste in 30 Sekunden“, Punkt 5 („In ChatGPT gibt es
+  das schon“).
+- Befund: help.openai.com ist gesperrt (siehe unten), Original nicht lesbar. Laut Suchergebnissen (WebSearch, 12.11.2026)
+  steht in den „ChatGPT Enterprise and Edu release notes“ ein Eintrag vom **28.10.2026**: Das automatische Umschalten von
+  Instant auf höhere Denkstufen sei für Enterprise und Edu eingestellt. Die zugehörige Einstellung erscheine nicht mehr unter
+  Workspace settings > Models. Wer mehr Denkleistung braucht, wählt die Denkstufe jetzt selbst im Modellwähler. Für Plus und Pro meldet eine
+  Zweitquelle (mixed-news.com) dasselbe schon ab 14.09.2026. Für Business ist nichts gefunden. quellen.md stützt sich nur auf
+  einen Such-Ausschnitt vom 10.11. mit Einträgen vom 18.03. und 26.06.2026. Diese älteren Einträge sind wohl überholt.
+- Korrektur (Vorschlag, inhaltlich, nicht direkt geändert): Vor der Freigabe die beiden OpenAI-Release-Notes im offenen Netz
+  lesen. Bestätigt sich der Eintrag vom 28.10., Absatz 2 etwa so fassen: „OpenAI hat in ChatGPT eine solche Weiche
+  eingeführt, die automatische Auswahl ‚Auto‘. Für Enterprise-Konten hat OpenAI das automatische Umschalten auf höhere
+  Denkstufen im Oktober 2026 wieder eingestellt; dort wählt man die Denkstufe jetzt selbst. [TILL: …]“ Dazu den Satz zu
+  „Auto stehen lassen / Weiche abschalten“ streichen oder an den Stand im Business-Konto anpassen. In der Box Punkt 5
+  „In ChatGPT gibt es das schon“ ersetzen durch z. B. „Für eigene Anwendungen heißt das Router. Vorher an echten Fällen
+  testen.“ Der vorhandene `[TILL: …]`-Platzhalter deckt nur den Namen ab, nicht diese inhaltliche Änderung. Bitte auch
+  quellen.md Abschnitt 5 nachziehen (alte Einträge als VERALTET markieren, nicht löschen).
+
+**M2 – Einsatzzweck von Haiku steht in keiner verlinkten Quelle (Punkt 3)**
+- Fundstelle: „Gleiche Marke, unterschiedliche Motoren“, Absatz nach der Preisliste („Haiku für viele, zeitkritische
+  Aufgaben wie Einordnen, Herausziehen und Weiterleiten“); ebenso g1 (Haiku-Zeile).
+- Befund: Die Aussage stimmt, steht aber wörtlich nur auf „What’s new in Claude Haiku 5.5“ („built for high-volume,
+  latency-sensitive work such as classification, routing, extraction, and subagent tasks“). Die verlinkte Preisliste sagt
+  nur „Haiku for simple tasks“, „Choosing the right model“ nur „lowest latency and price“.
+- Korrektur: In die Quellenliste aufnehmen:
+  „[Anthropic, Claude-Dokumentation: What’s new in Claude Haiku 5.5 (abgerufen 12.11.2026)](https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5)“,
+  ebenso in quellen.md.
+
+### Hinweise (kein Mangel, zur Entscheidung)
+
+- H1: g1, Sonnet-Zeile: „die meisten Anwendungen, Alltagsarbeit“. Den Text hat Runde 1 (H1) auf „Alltagsarbeit wie Texte
+  und Datenanalyse“ umgestellt, die Grafik nicht. „Most production workloads“ steht so in der Preisliste. „Choosing the
+  right model“ sagt aber „Most workloads start with Claude Opus 5.5“. Vorschlag: in g1 „Alltagsarbeit: Texte,
+  Datenanalyse“ (Grafik-Agent, mit `--social` neu rendern).
+- H2: Stapelverarbeitung „spätestens nach 24 Stunden“: Laut Batch-Doku *verfallen* Anfragen, die nach 24 Stunden nicht fertig
+  sind. Genauer: „Antwort meist innerhalb einer Stunde, höchstens 24 Stunden Laufzeit, dafür 50 Prozent Rabatt“.
+- H3: „Anthropic nennt den Denkaufwand innerhalb eines Modells **deshalb** oft den besseren Hebel“: Das „deshalb“ ist eine
+  Verknüpfung von uns, bei Anthropic steht der Satz für sich („Tuning effort is often a better lever than switching
+  models“). Vorschlag: „deshalb“ streichen.
+- H4: „Um echte Euro geht es erst …“ bei Beträgen in US-Dollar. Vorschlag: „Um echtes Geld geht es erst …“.
+- H5: Kopf der Quellenliste „zuletzt geprüft am 10.11.2026“: Nach Behebung von M1 und nach Prüfung der gesperrten Quellen
+  auf das neue Datum setzen. Heute wurden nur die Anthropic-Seiten neu geprüft, deshalb ist das Datum nicht geändert.
+- H6: Länge: Nach meiner Zählung (ohne INTERN, Platzhalter, Code) rund 1.870 Wörter bis „Quellen“, 2.000 mit Quellenliste.
+  Das liegt im Rahmen, wenn man wie in Runde 1/2 mit der Quellenliste zählt. Ghost zeigt „10 Min. Lesezeit“, weil der
+  INTERN-Absatz noch mitgezählt wird.
+- H7: „Fable als stärkstes Modell“: genau genommen „most capable model open to all customers“. Claude Mythos 5.2 hat
+  dieselben Fähigkeiten und denselben Preis, ist aber nur für verifizierte Organisationen zugänglich. Für KMU ohne
+  Belang, deshalb kein Mangel.
+
+### Je Quelle: neu geprüft am 12.11.2026?
+
+| Quelle | Neu geprüft | Ergebnis |
+|---|---|---|
+| Anthropic Pricing (platform.claude.com) | ja (HTTP 200) | Haiku 5.5 0,10/0,50 $ (bis 100.000 Tokens), Sonnet 5.5 2/10 $, Opus 5.5 4/20 $, Fable 5.2 8/40 $ unverändert. Keine neueren Modelle. „Haiku for simple tasks, Sonnet for most production workloads, Opus for the most complex reasoning“ |
+| Anthropic Choosing the right model | ja (200) | Matrix, Haiku „lowest latency and price“, Sonnet Alltagsarbeit/Datenanalyse/Texte, Effort „often a better lever“, Test mit eigenen Daten: ok |
+| Anthropic Optimizing for cost and intelligence | ja (200, ganze Seite) | 85/91 %, ein Zwanzigstel, 7 %, 4,3-fach, „directional, not guarantees“, 0,49/0,57/1,40 $ und 2,8-fach (gegenüber Einzeiler), Genauigkeit innerhalb der Messschwankung, 1.862 Zeilen, 7/25 bei 5,01 $, 25/25 bei 0,40 $, ein Zwölftel, Caching „usually the largest lever“: alles ok |
+| Anthropic Batch processing (nicht verlinkt, Beleg für 1 h/24 h/50 %) | ja (200) | ok, siehe H2 |
+| Anthropic What’s new in Haiku 5.5 (nicht verlinkt) | ja (200) | Beleg für Haiku-Einsatz, siehe M2 |
+| Help Center 9797557 Usage limit best practices | ja (200) | Faktoren inkl. „Model choice“, „Message length“, „File attachment size“: ok |
+| Help Center 15424964 Claude Fable models on your plan | ja (200) | Max/Ultra/Premium-Plätze: im Limit, „use them faster than other Claude models“, bis 50 %. Pro und Standard-Team: nicht im Limit, nur über „usage credits“: ok |
+| OpenAI ChatGPT Enterprise and Edu Release Notes | **nein**: curl „CONNECT tunnel failed, response 403“; WebFetch „getaddrinfo ENOTFOUND help.openai.com … outside the session's allowed network domains“ | nur Suchergebnisse, siehe M1 |
+| OpenAI ChatGPT Release Notes (April 2026, Modellwahl im Eingabefeld) | **nein**: wie oben (403 / ENOTFOUND help.openai.com) | nur Drittquelle (ClickUp-Changelog) bestätigt „April 2026, Plus, Pro, Business“; Original ungeprüft |
+| LMSYS RouteLLM-Blog | **nein**: curl 403; WebFetch „getaddrinfo ENOTFOUND www.lmsys.org“ | Suchergebnisse (Berkeley-Projektseite) bestätigen über 85/45/35 % und 95 %; 26 %/14 % ungeprüft |
+| arXiv FrugalGPT | **nein**: curl 403; WebFetch „getaddrinfo ENOTFOUND arxiv.org“ | „bis zu 98 %“ ungeprüft |
+| Frontiers Pressemitteilung | **nein**: curl 403; WebFetch „getaddrinfo ENOTFOUND www.frontiersin.org“ | Suchergebnisse bestätigen 14 Modelle, 1.000 Fragen, bis zu 50-mal CO₂; Dauners Rat ungeprüft |
+| DOI 10.3389/fcomm.2025.1572947 | **nein**: curl 403 (doi.org) | ungeprüft |
+| Intern: chatgpt-claude-gemini-ki-modelle-erklaert | ja (200) | richtiger Beitrag („ChatGPT ist nicht das KI-Modell …“) |
+| Intern: nicht-jedes-problem-braucht-ki | ja (200) | richtiger Beitrag, Mailregel-Gedanke steht dort |
+
+Eigene Rechnung nachgerechnet: (2.000 × Preis hinein + 300 × Preis hinaus) / 1 Mio. × 1.000 = 0,35 / 7 / 14 / 28 US-Dollar,
+stimmt. Faktoren 20/40/80 stimmen für Eingabe und Ausgabe. 1,40/0,49 = 2,86 (Quelle „2.8 times“). 5,01/0,40 = 12,5 („about a
+twelfth“).
+
+### Checkliste
+
+| Nr. | Ergebnis |
+|---|---|
+| 1 | Mangel M1. Anthropic-Zahlen ok (neu geprüft). OpenAI, RouteLLM, FrugalGPT, Frontiers nicht neu prüfbar (Sperre) |
+| 2 | ok (Herstellermessung, offene Modelle, API statt Chat, Annahme 2.000/300, Forschung 2023/2024) |
+| 3 | Mangel M2 (Beleg Haiku-Einsatz fehlt in der Liste). Sonst Originale verlinkt |
+| 4 | ok. Keine Ich-Form außerhalb von INTERN und `[TILL: …]`. „Welche würde ich so verschicken“ in Schritt 3 ist die Frage des Lesers an sich selbst |
+| 5 | ok, zwei `[TILL: …]` bewusst offen, im INTERN genannt, nicht angefasst |
+| 6 | ok. H2 nach Langtext, Teaser 152 Zeichen, ungleich Titel. Länge siehe H6 |
+| 7 | ok (Wissen / Leitfäden, `#wissen`) |
+| 8 | entfällt |
+| 9 | ok, keine Verbotswörter, kein CTA, kein Handel, kein Arbeitgeber |
+| 10 | ok (10–150 Leute, Ingenieurbüro mit 40, Hausverwaltung, Büroleitung) |
+| 11 | ok. g1–g4 und Social-Kacheln angesehen: Werte gleich Text und Quelle, Titel als Aussage, Fußzeile mit Stand und Quelle, Lime-Kante, Alt-Texte und Bildunterschriften. Siehe H1 |
+| 12 | ok, Vorschaubild drei Zeilen, Logo, Lime-Kante |
+| 12a | ok, Titelbild ohne Titel, Stufen S/M/L, ein Merksatz, keine Zahl, Kategorie „Leitfäden“ |
+| 13 | ok. Ghost-Vorschau erreichbar (200): Titel, Teaser, Titelbild als feature_image, 9 H2 in richtiger Reihenfolge, beide Kästen, Prompt-Kasten, 4 Schaubilder mit Bildunterschriften. Bild-Hashes in ghost.json gleich den lokalen Dateien. og/twitter-Bild = vorschaubild.png. INTERN und `[TILL` erwartungsgemäß noch sichtbar (Entwurf). Die Korrektur unten ist noch nicht in Ghost (`draft` nicht ausgeführt, kein Auftrag) |
+| 14 | ok, Aufbau wie Langtext-Referenzen (Box, 4 PNG, Schlussfolge) |
+
+### Direkt korrigiert in beitrag.md (Runde 3)
+
+1. „Was das in **Euro** und Cent heißt, zeigt eine einfache Rechnung“ → „Was das in **Dollar** und Cent heißt …“. Die Rechnung
+   steht durchgehend in US-Dollar.
+
+Die Korrektur ist nur lokal. Sie geht erst mit dem nächsten `ghost.py draft` nach Ghost.

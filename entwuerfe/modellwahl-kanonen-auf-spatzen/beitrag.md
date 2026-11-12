@@ -29,7 +29,7 @@ Jeder große Anbieter hat mehrere Modelle gleichzeitig im Angebot, gestaffelt wi
 
 Je Token kostet Sonnet damit das 20-Fache von Haiku, Opus das 40-Fache und Fable das 80-Fache. Anthropic beschreibt auch, wofür die Stufen gedacht sind: Haiku für viele, zeitkritische Aufgaben wie Einordnen, Herausziehen und Weiterleiten, Sonnet für Alltagsarbeit wie Texte und Datenanalyse, Opus und Fable für das anspruchsvollste Denken und lange Aufgaben, bei denen ein Agent selbstständig viele Schritte erledigt.
 
-Was das in Euro und Cent heißt, zeigt eine einfache Rechnung. Angenommen, eine typische Anfrage schickt 2.000 Tokens hinein und bekommt 300 zurück. Dann kosten 1.000 solcher Anfragen mit Haiku 5.5 rund 0,35 US-Dollar, mit Sonnet 5.5 rund 7 US-Dollar, mit Opus 5.5 rund 14 US-Dollar und mit Fable 5.2 rund 28 US-Dollar. Die Annahme ist von uns gewählt, die Preise sind die offiziellen. Andere Längen verschieben die Beträge, nicht das Verhältnis.
+Was das in Dollar und Cent heißt, zeigt eine einfache Rechnung. Angenommen, eine typische Anfrage schickt 2.000 Tokens hinein und bekommt 300 zurück. Dann kosten 1.000 solcher Anfragen mit Haiku 5.5 rund 0,35 US-Dollar, mit Sonnet 5.5 rund 7 US-Dollar, mit Opus 5.5 rund 14 US-Dollar und mit Fable 5.2 rund 28 US-Dollar. Die Annahme ist von uns gewählt, die Preise sind die offiziellen. Andere Längen verschieben die Beträge, nicht das Verhältnis.
 
 ![Schaubild: Vier Claude-Modelle von Haiku 5.5 bis Fable 5.2 mit Preis je 1 Million Tokens, Preis je 1.000 Anfragen und Einsatzzweck laut Anthropic](kmk-modellwahl-g1.png "Gleiche Marke, vier Motoren: Der Preis wächst mit der Größe, die Zuordnung zum Einsatz stammt von Anthropic. Je 1.000 Anfragen ist eine eigene Rechnung mit 2.000 Tokens hinein und 300 hinaus.")
 
