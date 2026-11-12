@@ -282,3 +282,32 @@ nicht neu geprüft. Der `[TILL: …]`-Platzhalter im Schluss ist bewusst offen u
 
 Hinweise: Bitte Till weiter bestätigen lassen, dass die Screenshots aus ChatGPT Business stammen (steht im INTERN).
 Korrekturen nur lokal; sie gehen erst mit dem nächsten `ghost.py draft` nach Ghost.
+
+---
+
+## Runde 5 – 12.11.2026 (Endfassung)
+
+**Ergebnis: BESTANDEN** (für die Änderungen nach Runde 4; drei kleine Korrekturen direkt eingearbeitet, siehe unten).
+Wie in Runde 4: help.openai.com in der Lauf-Umgebung gesperrt, nicht neu geprüft.
+
+### Geprüfte Änderungen
+
+| Punkt | Ergebnis |
+|---|---|
+| INTERN-Absatz entfernt | ok. Wörtlich in quellen.md archiviert. Im Beitrag kein „INTERN“, kein `[TILL`, kein `[GRAFIK`, kein Redaktionshinweis mehr |
+| Weg 2, ChatGPT-Absatz | im Kern ok und neutral. „Modell und Denkaufwand im Eingabefeld“ gedeckt durch OpenAI Release Notes 28.04.2026 (Plus, Pro, Business; im Text Zeile 34 verlinkt). **„hängt vom Abo ab“ war zu weit:** gestützt nur auf Suchausschnitte von help.openai.com, Original nicht gelesen (Regel 3). „Stand 12.11.2026 lohnt deshalb …“ hängte ein Datum an eine Empfehlung statt an einen Fakt. Beides direkt korrigiert (1) |
+| Box Punkt 5 | ok („In ChatGPT lohnt ein Blick, was im eigenen Konto eingestellt ist.“), passt zum Absatz, behauptet nichts Abo-Spezifisches |
+| Schlussabsatz „Meine Einschätzung“ | ok mit Korrektur. Kern („viele Betriebe schießen mit Kanonen auf Spatzen“, zwei Wege) deckt sich mit Tills Idee vom 10.11.; keine erfundenen Erfahrungen oder Messwerte. Der Grund „weil das größte Modell eingestellt ist“ ging über Tills Satz („Mitarbeiter nutzen für alles das größte Modell“) hinaus und ist als Voreinstellung nicht belegt; „ihr“ statt Duzen. Direkt korrigiert (2), (3). Die Gewichtung „einfachster Anfang: Faustregel; Technik erst bei eigenen Anwendungen“ ist Redaktionsformulierung auf Tills ausdrücklichen Wunsch (quellen.md, Nachtrag 12.11.) und entspricht dem Fazit des Beitrags; Till bestätigt sie mit der Freigabe |
+| Format | ok. Ich-Form nur im Fazit (kmk-schreibstil), Abschnittsfolge unverändert, Leitfäden/#wissen, Teaser unverändert |
+| Ghost-Tauglichkeit, Länge | ok. Keine Reste, Frontmatter vollständig; rund 2.000 Wörter Fließtext ohne HTML-Blöcke, gegenüber Runde 4 etwa 190 Wörter kürzer (INTERN raus) |
+
+### Direkt korrigiert in beitrag.md (Runde 5)
+
+1. Weg 2: „…, hängt vom Abo ab, und OpenAI ändert das immer wieder. Stand 12.11.2026 lohnt deshalb ein Blick ins eigene
+   Konto.“ → „…, ist von außen nicht immer zu erkennen, und OpenAI ändert die Auswahl immer wieder. Deshalb lohnt ein
+   Blick ins eigene Konto.“
+2. Schluss: „weil das größte Modell eingestellt ist“ → „weil im Team für alles das größte Modell läuft“ (Tills Wortlaut)
+3. Schluss: „wenn ihr eigene Anwendungen baut“ → „wenn dein Betrieb eigene Anwendungen baut“ (Duzen)
+
+Hinweis für die Vorschau-Mail: Till ausdrücklich auf den Absatz „Meine Einschätzung“ hinweisen, da er von der Redaktion
+formuliert ist. Korrekturen nur lokal; sie gehen erst mit dem nächsten `ghost.py draft` nach Ghost.

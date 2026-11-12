@@ -161,3 +161,15 @@ https://www.frontiersin.org/news/2025/06/19/ai-prompts-50-times-more-co2-emissio
   den Namens-Decoder (Opus/Sonnet/Haiku, Pro/Flash). Neuer Beitrag baut darauf auf: gleiche Motoren, jetzt mit PS und Verbrauch.
   Bewerben: früh im Text verlinken und im Newsletter/Social als „Grundlage“ mitnennen (Tills Wunsch, Chat 10.11.2026).
 - Passend auch: „Nicht jedes Problem braucht KI“ (gleiche Denkrichtung: einfachste ausreichende Lösung).
+
+
+## Archiv: INTERN-Absatz aus beitrag.md (am 12.11.2026 auf Tills Wunsch aus dem Entwurf genommen, hier wörtlich erhalten)
+
+INTERN – vor Veröffentlichung entfernen: Thema und Bild „Kanonen auf Spatzen“ sind deine Idee (Chat 10.11.2026), ebenso die zwei Wege (Faustregel fürs Team, Technik davor). Eine eigene Einschätzung von dir liegt noch nicht vor. Deshalb steht im Schlussabschnitt ein Platzhalter [TILL: …] statt einer Ich-Passage; im ganzen Text gibt es sonst keine Ich-Form. Redaktionelle Vorschläge, bitte ersetzen oder freigeben: die Einstiegsszene (Ingenieurbüro mit 40 Leuten, Terminbestätigung), die Zuordnung der Beispielaufgaben zu den drei Stufen (angelehnt an Anthropics Einsatzempfehlungen und an deinen Modelle-Beitrag vom 08.10.), das Beispiel Hausverwaltung mit Kundenanfragen über die Schnittstelle, die fünf Schritte unter „Zum Ausprobieren“ samt Beispiel-Prompt und der Gedanke zum Mitnehmen. Die Preise je 1.000 Anfragen sind eine eigene Rechnung aus der offiziellen Preisliste mit einer angenommenen Anfrage von 2.000 Tokens hinein und 300 hinaus; die Annahme steht im Text. Dass viele Betriebe überdimensioniert arbeiten, ist nicht durch Nutzungsdaten belegt und deshalb als Beobachtung formuliert. Der frühere zweite Platzhalter (ChatGPT „Auto“) ist erledigt: Der Absatz in „Weg 2“ beschreibt jetzt die Auswahl nach deinen Screenshots vom 12.11.2026 (Chat: zwei Modelle plus Regler Denkaufwand; Work: „Standard – Empfohlene Modellauswahl“ plus mehrere Modelle). Annahme: Die Screenshots stammen aus ChatGPT Business – bitte bestätigen. Die Aussage über die Enterprise-Admin-Umleitung ist gestrichen (überholt, Original nicht lesbar). Nach Prüfrunde 1 geändert: Die Aussage „Opus verbraucht das Wochenlimit schneller als Sonnet“ ist gestrichen (Quelle nicht mehr erreichbar); belegt ist nur, dass Fable das Limit schneller verbraucht und auf Standard-Team-Plätzen nur über Zusatzguthaben läuft.
+
+## Nachtrag 12.11.2026 abends (Chat mit Till)
+- Tills Screenshots stammen aus seinem **privaten** ChatGPT-Konto, nicht aus Business. Stand Business unklar (help.openai.com gesperrt,
+  Suchergebnisse widersprüchlich: Business-Notes 26.06.2026 „Instant kann automatisch auf Medium umschalten“; Enterprise/Edu
+  28.10.2026 und Plus/Pro 14.09.2026 automatisches Umschalten eingestellt). Till wählt „Weg 1“: neutral, ohne abo-genaue Aussage.
+- Schlussabsatz „Meine Einschätzung“: Formulierung der Redaktion auf Tills ausdrücklichen Wunsch („schreib am ende auch meine
+  einschätzung“), gestützt auf seine Idee vom 10.11. (viele Unternehmen schießen mit Kanonen auf Spatzen; zwei Wege). Till bestätigt mit der Freigabe.
