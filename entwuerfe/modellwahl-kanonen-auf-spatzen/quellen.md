@@ -96,6 +96,13 @@ Text nicht nennen (Themenregel: keine Benchmark-Rennen), nur als Größenordnung
 
 ## 5. OpenAI: Automatische Modellwahl in ChatGPT („Auto“)
 
+**Nachtrag 12.11.2026 (Prüfrunde 3, Tills Screenshots im Chat):** Die Einträge unten zu „Auto“ und zur Admin-Umleitung
+sind **VERALTET** (nicht gelöscht). Laut Suchergebnissen hat OpenAI das automatische Umschalten für Enterprise/Edu am
+28.10.2026 eingestellt; Original (help.openai.com) in der Lauf-Umgebung gesperrt, deshalb im Text nicht verwendet.
+Stand laut Tills eigenem ChatGPT-Konto (Screenshots 12.11.2026, Annahme Business): Chat – zwei Modelle (GPT-6, GPT-5.6 Sol)
+und Regler „Denkaufwand“ (bis „Hoch“); Work – „Standard · Empfohlene Modellauswahl“ plus GPT-6.1 Sol, GPT-6.1 Terra,
+GPT-6 Astra, GPT-6 Sol, GPT-6 Luna, GPT-5.6 Sol, GPT-5.6 Terra. Keine sichtbare „Auto“-Weiche. Modellnamen im Text nicht genannt.
+
 - ChatGPT Enterprise/Edu Release Notes, https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes
   (Ausschnitt aus Suche, Abruf 10.11.2026): 26.06.2026 vereinfachte Modellauswahl („Balance aus Tempo und Denkaufwand“);
   Admin-Einstellung „Redirect Auto Router to Thinking mini“ – die automatische Weiterleitung kann auf ein kleineres

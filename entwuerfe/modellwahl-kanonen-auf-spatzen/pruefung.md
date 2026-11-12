@@ -243,3 +243,42 @@ twelfth“).
    steht durchgehend in US-Dollar.
 
 Die Korrektur ist nur lokal. Sie geht erst mit dem nächsten `ghost.py draft` nach Ghost.
+
+---
+
+## Runde 4 – 12.11.2026
+
+**Ergebnis: BESTANDEN** (für die Änderungen nach Runde 3; zwei kleine Korrekturen direkt eingearbeitet, siehe unten).
+Offen und nicht als Mangel dieser Runde gewertet: OpenAI, LMSYS, arXiv, Frontiers, doi in der Lauf-Umgebung gesperrt,
+nicht neu geprüft. Der `[TILL: …]`-Platzhalter im Schluss ist bewusst offen und nicht angefasst.
+
+### Geprüfte Änderungen
+
+| Punkt | Ergebnis |
+|---|---|
+| M1 Weg 2 (Screenshots Till 12.11.2026) | im Kern ok, Enterprise-Release-Notes aus Text und Liste raus. Drei Formulierungen gingen über die Screenshots hinaus, direkt korrigiert (1) |
+| M1 Box Punkt 5 | „Im ChatGPT-Abo entscheidest du derzeit selbst“ widersprach dem Work-Bereich mit Voreinstellung „Standard“, direkt korrigiert (2) |
+| M1 INTERN / quellen.md | ok. Primärbeobachtung und Annahme „Business“ vermerkt, alte Einträge als VERALTET markiert, nicht gelöscht |
+| M2 Haiku-5.5-Seite in der Liste | ok. Wie „Choosing the right model“ nur in der Liste, nicht im Text verlinkt; das ist bisherige Praxis |
+| H1 g1 | ok. g1.png und g1-social.png angesehen: Sonnet „Mittelklasse · Alltagsarbeit: Texte, Datenanalyse“, Stand 12.11.2026, Werte unverändert, Lime-Kante, Fußzeile vollständig |
+| H2 Stapelverarbeitung | ok („meist innerhalb einer Stunde, höchstens 24 Stunden Laufzeit, 50 Prozent Rabatt“) |
+| H3, H4 | ok |
+| Quellenliste gegen Text | ok. Jede im Text verlinkte Quelle steht in der Liste; Listeneinträge ohne Textlink (Choosing a model, Haiku 5.5) sind Belege. Zeile 36 (April 2026, Modellwahl im Eingabefeld, OpenAI Release Notes) passt zum neuen Absatz |
+| Ton, Länge | ok. Keine Floskeln, Duzen durchgehend, Länge praktisch unverändert |
+
+### Direkt korrigiert in beitrag.md (Runde 4)
+
+1. Weg 2, Absatz ChatGPT:
+   - „übernimmt so eine Weiche die Wahl derzeit nicht sichtbar“ → „Im Chat von ChatGPT Business ist derzeit keine solche
+     Weiche einstellbar.“ (holpriger Satz; auf den Chat beschränkt, weil offen ist, was „Standard“ im Work-Bereich intern tut)
+   - „Regler für den Denkaufwand von gering bis hoch“ → „mit drei Stufen“ (sichtbar sind drei Stufen und die Einstellung
+     „Hoch“; die Bezeichnung der untersten Stufe ist nicht belegt)
+   - „Die Weiche seid ihr selbst“ → „Im Chat bist du selbst die Weiche“ (Leser werden geduzt; Work hat mit „Standard“ eine
+     Voreinstellung)
+   - „fährt jede Aufgabe mit voller Leistung“ → „rechnet jede Aufgabe mit hohem Denkaufwand“ (ob „Hoch“ die höchste Stufe
+     ist, zeigt der Screenshot nicht sicher)
+2. Box Punkt 5: „Im ChatGPT-Abo entscheidest du derzeit selbst.“ → „Im ChatGPT-Chat wählst du Modell und Denkaufwand
+   derzeit selbst.“
+
+Hinweise: Bitte Till weiter bestätigen lassen, dass die Screenshots aus ChatGPT Business stammen (steht im INTERN).
+Korrekturen nur lokal; sie gehen erst mit dem nächsten `ghost.py draft` nach Ghost.
