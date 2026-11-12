@@ -20,7 +20,7 @@ Dieser Beitrag richtet sich an Betriebe, die schon dabei sind: Betriebe mit 10 b
 
 ## Gleiche Marke, unterschiedliche Motoren
 
-Jeder große Anbieter hat mehrere Modelle gleichzeitig im Angebot, gestaffelt wie Motorisierungen. Bei Anthropic, dem Hersteller von Claude, heißen sie Haiku, Sonnet und Opus, darüber steht Fable als stärkstes Modell. Abgerechnet wird nach Tokens, also Textbausteinen, getrennt nach dem, was hineingeht, und dem, was das Modell schreibt. Laut [Preisliste von Anthropic](https://platform.claude.com/docs/en/about-claude/pricing) kosten eine Million Tokens (Stand: November 2026):
+Jeder große Anbieter hat mehrere Modelle gleichzeitig im Angebot, gestaffelt wie Motorisierungen. Bei Anthropic, dem Hersteller von Claude, heißen sie Haiku, Sonnet und Opus, darüber steht Fable als stärkstes Modell. Abgerechnet wird nach Tokens, also Textbausteinen, getrennt nach dem, was hineingeht, und dem, was das Modell schreibt. Laut [Preisliste von Anthropic](https://platform.claude.com/docs/en/about-claude/pricing) kosten eine Million Tokens (Stand: 12.11.2026; Preise und Modelle ändern sich laufend):
 
 - **Claude Haiku 5.5:** 0,10 US-Dollar hinein, 0,50 US-Dollar hinaus (bei Anfragen bis 100.000 Tokens)
 - **Claude Sonnet 5.5:** 2 US-Dollar hinein, 10 US-Dollar hinaus
@@ -81,7 +81,7 @@ Zwei weitere Gewohnheiten sparen unabhängig vom Modell.
 
 Der zweite Weg nimmt dem Team die Entscheidung ab: Eine Weiche schaut sich jede Anfrage an und schickt sie entweder an ein kleines oder an ein großes Modell.
 
-Im Chat von ChatGPT Business ist derzeit keine solche Weiche einstellbar. Stand November 2026 stehen dort zwei Modelle zur Auswahl, dazu ein Regler für den Denkaufwand mit drei Stufen. Im Bereich „Work“ gibt es mehrere Modelle und die Voreinstellung „Standard“, die ChatGPT als empfohlene Modellauswahl bezeichnet. Für Betriebe, die nur das Abo nutzen, heißt das: Im Chat bist du selbst die Weiche. Wer den Denkaufwand dauerhaft auf „Hoch“ stehen lässt, rechnet jede Aufgabe mit hohem Denkaufwand, auch die Rechtschreibprüfung.
+Im Chat von ChatGPT Business ist derzeit keine solche Weiche einstellbar. Stand 12.11.2026 stehen dort zwei Modelle zur Auswahl, dazu ein Regler für den Denkaufwand mit drei Stufen. Im Bereich „Work“ gibt es mehrere Modelle und die Voreinstellung „Standard“, die ChatGPT als empfohlene Modellauswahl bezeichnet. Diese Auswahl ändert OpenAI immer wieder; wie sie bei dir gerade aussieht, zeigt ein Blick ins eigene Konto. Für Betriebe, die nur das Abo nutzen, heißt das: Im Chat bist du selbst die Weiche. Wer den Denkaufwand dauerhaft auf „Hoch“ stehen lässt, rechnet jede Aufgabe mit hohem Denkaufwand, auch die Rechtschreibprüfung.
 
 Für eigene Anwendungen über die Schnittstelle heißt diese Weiche Router. Forschende der UC Berkeley haben 2024 mit [RouteLLM](https://www.lmsys.org/blog/2024-07-01-routellm) gezeigt, wie viel das bringen kann: Je nach Testaufgaben sanken die Kosten um 35 Prozent, 45 Prozent oder um über 85 Prozent gegenüber „alles an das große Modell“, bei 95 Prozent von dessen Qualität. In einem der Tests reichte es dafür, 26 Prozent der Anfragen an das große Modell zu schicken, nach zusätzlichem Training 14 Prozent. Eine Stanford-Gruppe beschrieb 2023 mit [FrugalGPT](https://arxiv.org/abs/2305.05176) die verwandte Kaskade: erst das günstige Modell fragen, nur wenn nötig das nächstgrößere, unter Laborbedingungen mit bis zu 98 Prozent Ersparnis.
 
