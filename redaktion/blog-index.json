@@ -1,7 +1,59 @@
 {
-  "stand": "2026-11-12T06:51:37+00:00",
+  "stand": "2026-11-13T06:51:18+00:00",
   "anzahl": 36,
   "beitraege": [
+    {
+      "id": "6af3085899393e0001be06a2",
+      "slug": "modellwahl-kanonen-auf-spatzen",
+      "titel": "Mit Kanonen auf Spatzen: Warum nicht jede KI-Aufgabe das stärkste Modell braucht",
+      "status": "published",
+      "veroeffentlicht": "2026-11-13",
+      "geaendert": "2026-11-13",
+      "kategorie": "Leitfäden",
+      "interne_tags": [
+        "#wissen"
+      ],
+      "teaser": "Wer seinem Team ChatGPT oder Claude gibt, lässt oft alles über dasselbe Modell laufen. Wann das Limits, Strom und Geld kostet und wie es passender geht.",
+      "url": "https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/",
+      "zwischenueberschriften": [
+        "Gleiche Marke, unterschiedliche Motoren",
+        "Was der Sprit kostet: Limits, Wartezeit und Strom",
+        "Billig ist nicht immer günstig",
+        "Weg 1: Eine Faustregel fürs Team",
+        "Weg 2: Technik, die vorher entscheidet",
+        "Zum Ausprobieren: drei Aufgaben, zwei Stufen",
+        "Was das für den Mittelstand bedeutet",
+        "Ein Gedanke zum Mitnehmen",
+        "Quellen"
+      ],
+      "quellen": [
+        "https://arxiv.org/abs/2305.05176",
+        "https://doi.org/10.3389/fcomm.2025.1572947",
+        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+        "https://platform.claude.com/docs/en/about-claude/models/choosing-a-model",
+        "https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence",
+        "https://platform.claude.com/docs/en/about-claude/pricing",
+        "https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5",
+        "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan",
+        "https://support.claude.com/en/articles/9797557-usage-limit-best-practices",
+        "https://www.frontiersin.org/news/2025/06/19/ai-prompts-50-times-more-co2-emissions",
+        "https://www.lmsys.org/blog/2024-07-01-routellm"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/",
+        "https://www.kleinmittelki.de/nicht-jedes-problem-braucht-ki/"
+      ],
+      "zahlen": [
+        "Modelle, die vor der Antwort ausführlich „nachdenken“, erzeugten bis zu 50-mal so viel CO₂ wie knapp antwortende Modelle.",
+        "In einem Test mit schwierigen Prüfungsfragen beantwortete Haiku 5.5 85 Prozent richtig, Opus 5.5 und Sonnet 5.5 je 91 Prozent.",
+        "In einem Programmier-Test löste Opus 5.5 auf niedriger Denkstufe etwa so viele Aufgaben wie Sonnet 5.5 auf Standardstufe, für etwa 7 Prozent mehr je gelöster Aufgabe.",
+        "Forschende der UC Berkeley haben 2024 mit RouteLLM gezeigt, wie viel das bringen kann: Je nach Testaufgaben sanken die Kosten um 35 Prozent, 45 Prozent oder um über 85 Prozent gegenüber „alles an das große Modell“, bei 95 Prozent von dessen Qualität.",
+        "In einem der Tests reichte es dafür, 26 Prozent der Anfragen an das große Modell zu schicken, nach zusätzlichem Training 14 Prozent.",
+        "Eine Stanford-Gruppe beschrieb 2023 mit FrugalGPT die verwandte Kaskade: erst das günstige Modell fragen, nur wenn nötig das nächstgrößere, unter Laborbedingungen mit bis zu 98 Prozent Ersparnis.",
+        "Was nicht sofort fertig sein muss, etwa das nächtliche Einsortieren von Belegen, kann über die Stapelverarbeitung laufen: Antwort meist innerhalb einer Stunde, höchstens 24 Stunden Laufzeit, dafür 50 Prozent Rabatt."
+      ],
+      "woerter": 2172
+    },
     {
       "id": "6af01d6a2758a80001ce74b2",
       "slug": "6-folien-ohne-ki-look-und-ein-recherche-assistent",
@@ -927,59 +979,6 @@
       ],
       "zahlen": [],
       "woerter": 284
-    },
-    {
-      "id": "6af3085899393e0001be06a2",
-      "slug": "modellwahl-kanonen-auf-spatzen",
-      "titel": "Mit Kanonen auf Spatzen: Warum nicht jede KI-Aufgabe das stärkste Modell braucht",
-      "status": "draft",
-      "veroeffentlicht": "",
-      "geaendert": "2026-11-10",
-      "kategorie": "Leitfäden",
-      "interne_tags": [
-        "#wissen",
-        "#zur-freigabe"
-      ],
-      "teaser": "Wer seinem Team ChatGPT oder Claude gibt, lässt oft alles über dasselbe Modell laufen. Wann das Limits, Strom und Geld kostet und wie es passender geht.",
-      "url": "https://www.kleinmittelki.de/p/427004d6-5a77-477a-a0f0-16a328ace633/",
-      "zwischenueberschriften": [
-        "Gleiche Marke, unterschiedliche Motoren",
-        "Was der Sprit kostet: Limits, Wartezeit und Strom",
-        "Billig ist nicht immer günstig",
-        "Weg 1: Eine Faustregel fürs Team",
-        "Weg 2: Technik, die vorher entscheidet",
-        "Zum Ausprobieren: drei Aufgaben, zwei Stufen",
-        "Was das für den Mittelstand bedeutet",
-        "Ein Gedanke zum Mitnehmen",
-        "Quellen"
-      ],
-      "quellen": [
-        "https://arxiv.org/abs/2305.05176",
-        "https://doi.org/10.3389/fcomm.2025.1572947",
-        "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-and-edu-release-notes",
-        "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
-        "https://platform.claude.com/docs/en/about-claude/models/choosing-a-model",
-        "https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence",
-        "https://platform.claude.com/docs/en/about-claude/pricing",
-        "https://support.claude.com/en/articles/15424964-claude-fable-models-on-your-plan",
-        "https://support.claude.com/en/articles/9797557-usage-limit-best-practices",
-        "https://www.frontiersin.org/news/2025/06/19/ai-prompts-50-times-more-co2-emissions",
-        "https://www.lmsys.org/blog/2024-07-01-routellm"
-      ],
-      "interne_links": [
-        "https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/",
-        "https://www.kleinmittelki.de/nicht-jedes-problem-braucht-ki/"
-      ],
-      "zahlen": [
-        "Modelle, die vor der Antwort ausführlich „nachdenken“, erzeugten bis zu 50-mal so viel CO₂ wie knapp antwortende Modelle.",
-        "In einem Test mit schwierigen Prüfungsfragen beantwortete Haiku 5.5 85 Prozent richtig, Opus 5.5 und Sonnet 5.5 je 91 Prozent.",
-        "In einem Programmier-Test löste Opus 5.5 auf niedriger Denkstufe etwa so viele Aufgaben wie Sonnet 5.5 auf Standardstufe, für etwa 7 Prozent mehr je gelöster Aufgabe.",
-        "Forschende der UC Berkeley haben 2024 mit RouteLLM gezeigt, wie viel das bringen kann: Je nach Testaufgaben sanken die Kosten um 35 Prozent, 45 Prozent oder um über 85 Prozent gegenüber „alles an das große Modell“, bei 95 Prozent von dessen Qualität.",
-        "In einem der Tests reichte es dafür, 26 Prozent der Anfragen an das große Modell zu schicken, nach zusätzlichem Training 14 Prozent.",
-        "Eine Stanford-Gruppe beschrieb 2023 mit FrugalGPT die verwandte Kaskade: erst das günstige Modell fragen, nur wenn nötig das nächstgrößere, unter Laborbedingungen mit bis zu 98 Prozent Ersparnis.",
-        "Was nicht sofort fertig sein muss, etwa das nächtliche Einsortieren von Belegen, kann über die Stapelverarbeitung laufen: Antwort meist innerhalb einer Stunde, spätestens nach 24 Stunden, dafür 50 Prozent Rabatt."
-      ],
-      "woerter": 2345
     },
     {
       "id": "6ade31474d491100016c4807",

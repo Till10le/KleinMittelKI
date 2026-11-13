@@ -5,3 +5,4 @@
 - 2026-11-10 Chat: Idee von Till, Recherche (quellen.md), Thema von Till im Chat freigegeben („Ich gebe ihn jetzt schon frei“) → nächster Lauf: Autor, Grafik, Prüfer
 - 2026-11-10 Lauf 12:47: Autor, Grafik (4 Schaubilder, Titel-/Vorschaubild), Prüfer Runde 1 nicht bestanden (Opus-Limit-Aussage unbelegt, Abo-Rechnung zu pauschal, zu lang), Runde 2 bestanden; Ghost-Entwurf (Stand 12:04:40Z), Vorschau als C gemailt (1a1c558e6537cafd), Termin Do 12.11. 7:00; offen: „C ja“ + zwei [TILL]-Platzhalter
 - 2026-11-12 Lauf 7:47: Do 12.11. ohne Freigabe leer geblieben, Kandidat rückt auf Do 19.11. 7:00; im Briefing erinnert
+- 2026-11-12 Chat abends: Till „Beitrag super, erneut prüfen“; Prüfer Runde 3 nicht bestanden (ChatGPT „Auto“ überholt), Till schickt Screenshots seines ChatGPT-Kontos → Absatz „Weg 2“ und Box neu, Haiku-Quelle ergänzt, g1 neu; Runde 4 bestanden; Ghost-Entwurf aktualisiert; offen: „C ja“, Bestätigung Business-Konto, [TILL]-Platzhalter im Schluss

@@ -342,6 +342,21 @@
           "frage": "Quellen-Domains in Umgebung KMK-Ghost freigeben"
         }
       ]
+    },
+    {
+      "art": "redaktion",
+      "betreff": "KMK · Fr 13.11. · C ist online",
+      "datum": "2026-11-13",
+      "thread_id": "1a1d3aceb475d25b",
+      "eintraege": {
+        "A": "ki-recherche-assistent-selbstversuch"
+      },
+      "fragen_offen": [
+        {
+          "nr": "PROBLEM",
+          "frage": "Quellen-Domains in Umgebung KMK-Ghost freigeben"
+        }
+      ]
     }
   ],
   "eigene_ids": [
@@ -375,7 +390,8 @@
     "1a1c024b6f48189f",
     "1a1c16e490653c78",
     "1a1c558e6537cafd",
-    "1a1ce86e39fd096f"
+    "1a1ce86e39fd096f",
+    "1a1d3aceb475d25b"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
