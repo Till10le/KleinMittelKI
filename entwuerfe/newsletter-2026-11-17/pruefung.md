@@ -35,3 +35,13 @@ Ein inhaltlicher Mangel (Grundlage-Absatz). Ein Zeichenzahl-Mangel im INTERN-Abs
 - **Ton / Verbote:** ok. Keine Floskeln, kein Hype, keine Gefühlswörter, keine Rhythmus-Versprechen, keine Vertriebs-CTAs, kein Bezug zu Arbeitgeber oder Handel.
 - **KMU-Bezug:** ok. Ingenieurbüro mit 40 Leuten, Hausverwaltung, Auftragsliste und Stundentabelle, Teamrunde.
 - **lexical.py:** ok, läuft durch.
+
+## Runde 2 (15.11.2026)
+
+Geprüft: `git diff`. Geändert ist nur der Grundlage-Absatz in 01, sonst nichts. Die Korrektur der Alternative A aus Runde 1 ist erhalten.
+
+- **Mangel 1:** behoben. Neuer Satz: „… und warum jeder Anbieter seine Modelle in große, mittlere und kleine staffelt.“ Er ist durch den Oktober-Beitrag belegt, durch die Bildunterschrift „Jeder Anbieter staffelt seine Modelle.“, den Satz „gestaffelt wie Motorisierungen bei einem Auto“ und die Grafik „große, mittlere und kleine Modelle von OpenAI, Anthropic und Google“. „Fahrzeug/Motor“ war schon belegt.
+- `python3 tools/lexical.py` läuft durch (rc 0).
+- Alle übrigen Punkte aus Runde 1 bleiben ok.
+
+## Ergebnis Runde 2: BESTANDEN

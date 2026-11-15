@@ -357,6 +357,23 @@
           "frage": "Quellen-Domains in Umgebung KMK-Ghost freigeben"
         }
       ]
+    },
+    {
+      "art": "redaktion",
+      "betreff": "KMK · So 15.11. · Newsletter #7, Fassung 1",
+      "datum": "2026-11-15",
+      "thread_id": "1a1ddff14d4639c7",
+      "eintraege": {
+        "N": "newsletter-2026-11-17",
+        "A": "ki-recherche-assistent-selbstversuch"
+      },
+      "fassungen": [
+        {
+          "nr": 1,
+          "hash": "9ec5c917c50755c048f7316b3daec38209b8acfd1a06dd41f7700cce6b55e208",
+          "mail_id": "1a1ddff14d4639c7"
+        }
+      ]
     }
   ],
   "eigene_ids": [
@@ -391,7 +408,8 @@
     "1a1c16e490653c78",
     "1a1c558e6537cafd",
     "1a1ce86e39fd096f",
-    "1a1d3aceb475d25b"
+    "1a1d3aceb475d25b",
+    "1a1ddff14d4639c7"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",

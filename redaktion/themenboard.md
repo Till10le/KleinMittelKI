@@ -41,7 +41,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Vorsicht Themenregeln: keine Modell-Rangliste, keine Benchmark-Namen im Text; Testzahlen nur als Größenordnung mit „Herstellermessung“. Zahlen aus 2023/2024 (RouteLLM, FrugalGPT) als Prinzip, nicht als Versprechen. Modellnamen und Preise mit „Stand: November 2026“.
 - Relevanz: 9/10 (Betroffenheit 2, Handlung 2, Quelle 2, Neuheit 2, Passung 1)
 - Braucht von Till: Einschätzung in 2–3 Sätzen (welche Aufgaben er selbst klein bzw. groß rechnen lässt) – sonst INTERN-Vorschlag im Entwurf
-- Verlauf: (ältere Einträge: redaktion/verlauf/modellwahl-kanonen-auf-spatzen.md) 2026-11-12 Chat später: Screenshots waren privat, nicht Business; Till wählt neutrale Formulierung, INTERN raus (archiviert in quellen.md), Schluss-Einschätzung auf Tills Wunsch von der Redaktion formuliert; Runde 5 bestanden; Ghost-Entwurf aktualisiert; offen: nur „C ja“ (Termin Do 19.11. 7:00) · 2026-11-12 Chat: Till „bitte morgen 07:00 veröffetlichen“ → Freigabe eingetragen, in Ghost eingeplant Fr 13.11. 7:00 (06:00Z) · 2026-11-13 Lauf 7:47: veröffentlicht 7:00 (Ghost published_at 06:00Z), https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/; Till per Mail gemeldet; Social-Paket im Sonntags-Teil · 2026-11-15 Social (Sonntags-Lauf): Paket vorbereitet (entwuerfe/modellwahl-kanonen-auf-spatzen/social.md, zusammen mit „ChatGPT ist nicht das KI-Modell“: WhatsApp-Status Di 17.11., LinkedIn Do 19.11. vorgeschlagen, Vorrat rückt: Do 26.11. nicht-jedes-problem, Do 03.12. eurobarometer; Karussell 7 Folien). Social: vorbereitet, wartet auf Till. Nichts gepostet.
+- Verlauf: (ältere Einträge: redaktion/verlauf/modellwahl-kanonen-auf-spatzen.md) 2026-11-12 Chat: Till „bitte morgen 07:00 veröffetlichen“ → Freigabe eingetragen, in Ghost eingeplant Fr 13.11. 7:00 (06:00Z) · 2026-11-13 Lauf 7:47: veröffentlicht 7:00 (Ghost published_at 06:00Z), https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/; Till per Mail gemeldet; Social-Paket im Sonntags-Teil · 2026-11-15 Social (Sonntags-Lauf): Paket vorbereitet (entwuerfe/modellwahl-kanonen-auf-spatzen/social.md, zusammen mit „ChatGPT ist nicht das KI-Modell“: WhatsApp-Status Di 17.11., LinkedIn Do 19.11. vorgeschlagen, Vorrat rückt: Do 26.11. nicht-jedes-problem, Do 03.12. eurobarometer; Karussell 7 Folien). Social: vorbereitet, wartet auf Till. Nichts gepostet.
 
 ### iab-betriebe-sehen-keine-ki-anwendung
 - Status: veroeffentlicht
@@ -259,6 +259,14 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Monatsrhythmus: Wissens-Puffer; passt in Woche 2 oder 4 (Di 10.11. oder 24.11.2026).
 - Braucht von Till: Einschätzung in 2–3 Sätzen; ob er selbst schon Einweisungen gemacht hat (nur dann Ich-Form, sonst INTERN-Vorschlag).
 - Verlauf: 2026-10-25 Ideen (Sonntags-Lauf): vorgeschlagen
+
+### newsletter-2026-11-17
+- Status: newsletter-vorschlag
+- Titel: „#7: Welches KI-Modell für welche Aufgabe?“ (Fassung 1)
+- Versand: Dienstag 17.11.2026, 7:05 (erst nach Tills „N ja“, spätestens Mo 16.11. 18:47)
+- Inhalt: 01 modellwahl-kanonen-auf-spatzen (live seit 13.11.) + Grundlage chatgpt-claude-gemini-ki-modelle-erklaert (08.10.) · 02 Zahl „7 von 25“ (Anthropic-Doku „Optimizing for cost and intelligence“, Abruf 15.11.2026) · 03 Gedanke. ki-recherche-assistent-selbstversuch ohne Freigabe nicht im Text (INTERN: bei „A ja“ bis Mo 18:47 Abschnitt „Selbst ausprobiert“ ergänzen)
+- Datei: entwuerfe/newsletter-2026-11-17/beitrag.md, Prüfung: pruefung.md
+- Verlauf: 2026-11-15 Lauf 7:47: Autor, Prüfer Runde 1 nicht bestanden (Opus/Sonnet/Haiku nicht im Oktober-Beitrag belegt), Runde 2 bestanden; `ghost.py testmail`: Entwurf angelegt (Vorschau https://www.kleinmittelki.de/p/c9e4f758-1e91-4da5-b7fa-de164d2a749e/, entwurf_hash 9ec5c917…), Testmail fehlgeschlagen (nur Zusatz); Fassung 1 gemailt (1a1ddff14d4639c7)
 
 ### newsletter-2026-11-10
 - Status: versendet
