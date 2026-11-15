@@ -22,7 +22,7 @@ Im Beitrag stehen die Preise der Claude-Modelle, eine Faustregel in drei Stufen 
 
 :::bookmark https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/ | Mit Kanonen auf Spatzen: Warum nicht jede KI-Aufgabe das stärkste Modell braucht | KLEIN. MITTEL. KI. | Wer seinem Team ChatGPT oder Claude gibt, lässt oft alles über dasselbe Modell laufen. Wann das Limits, Strom und Geld kostet und wie es passender geht.
 
-Wer erst einmal wissen will, was ein KI-Modell überhaupt ist: Im Beitrag vom Oktober steht, warum ChatGPT das Fahrzeug ist und das Modell der Motor, und wofür Namen wie Opus, Sonnet und Haiku stehen.
+Wer erst einmal wissen will, was ein KI-Modell überhaupt ist: Im Beitrag vom Oktober steht, warum ChatGPT das Fahrzeug ist und das Modell der Motor, und warum jeder Anbieter seine Modelle in große, mittlere und kleine staffelt.
 
 :::bookmark https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/ | ChatGPT ist nicht das KI-Modell. Was hinter ChatGPT, Claude und Gemini steckt | KLEIN. MITTEL. KI. | Welche Anbieter es gibt, wie Unterschiede zwischen KI-Modellen entstehen – und was ein „neues Modell“ für deinen Betrieb ändert.
 
