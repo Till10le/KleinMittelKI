@@ -145,6 +145,61 @@ Ins Board als `vorgeschlagen`: `erste-ki-aufgabe-finden-selbsttest` (Wissens-Puf
   Digital-Gipfel-Kontext mit politischen Forderungen des Verbands (Regel 4), und die Anbieterunterschiede stehen schon im Modelle-Beitrag (08.10.)
   und in `kundendaten-in-ki-datenschutz`. Eigener Beitrag „Firmenkonto statt Privatkonto“ – Dublette zu `kundendaten-in-ki-datenschutz`.
 
+### Ideen-Agent, Sonntags-Lauf 2026-11-15
+
+Monatsrhythmus-Check: Di 17.11. (Woche 3, Praxistest) → `ki-recherche-assistent-selbstversuch` (wartet-auf-till, Review offen; Tills
+Terminwunsch 09.11.) – in Sicht, aber ohne Freigabe. Di 24.11. (Woche 4, Wissen oder zweiter Praxistest) → **frei**; Kandidaten nur
+`vorgeschlagen` (`erste-ki-aufgabe-finden-selbsttest`, neu `ki-vorlagen-fuers-team`). Di 01.12. (Woche 1) → `status-quo-dezember-2026`
+vorgeschlagen, Rhythmus-Frage seit 25.10. offen. Puffer: 0 fertige Wissensartikel (Soll 1–2), dritter Lauf in Folge. Rubrik-Mix laut Index
+(22 veröffentlicht): Entwicklungen 7, Studien & Zahlen 5, Leitfäden 4, KI in der Praxis 3, Grundlagen 2, Lageberichte 1 – Grundlagen am dünnsten.
+Praxistest-Vorrat ist groß (sechs offene Vorschläge/Speicher-Ideen, alle ohne Ergebnisse) und Till will höchstens ein „Selbst ausprobiert“
+pro Woche → diesmal vor allem Wissensbeiträge, die wenig von Till brauchen. Ins Board als `vorgeschlagen`: `ki-vorlagen-fuers-team`,
+`ki-ansprechpartner-im-betrieb`. Netz in diesem Lauf: lesbar support.claude.com, claude.com; **gesperrt (403/DNS)** developers.google.com,
+support.google.com, privacy.claude.com, help.openai.com, openai.com, workspaceupdates.googleblog.com, bsi.bund.de, bitkom.org, eur-lex.europa.eu,
+bundesnetzagentur.de, mittelstand-digital.de, datenschutzkonferenz-online.de.
+
+- [ ] **ki-gedaechtnis-kontext-training** – „Merkt sich die KI, was ich ihr sage? Gesprächsverlauf, Gedächtnis und Training einfach erklärt“
+  - Rubrik/Format: Wissen / Grundlagen, Langtext (ca. 1.900 Wörter, Box „Das Wichtigste in 30 Sekunden“, 4 Schaubilder: Kontextfenster als
+    Notizzettel, Gedächtnis/Anweisungen über Gespräche hinweg, Training als „Lernen für alle“, Privat- vs. Firmenkonto).
+  - Für wen: Inhaber, Büro und Sachbearbeitung in Betrieben 5–100 Beschäftigte, die fragen „Lernt die KI aus unseren Angeboten?“ oder sich
+    wundern, warum die KI in langen Chats Vorgaben vergisst. Füllt die dünnste Rubrik (Grundlagen).
+  - Abgrenzung: `kundendaten-in-ki-datenschutz` (Speicher) sagt, **was** eingegeben werden darf (Leitfaden); dieser Beitrag erklärt, **was mit der
+    Eingabe passiert** (Grundlagen). Beide gegenseitig verlinken; Till entscheidet, ob es einer oder zwei Beiträge werden.
+  - Quellen: gelesen 15.11.2026 nur Claude Help Center zu Projekten und Personalisierung (siehe Board `ki-vorlagen-fuers-team`) – sagt **nichts**
+    zu Training oder Erinnerung an frühere Chats. **Nicht lesbar:** privacy.claude.com (Training bei Free/Pro/Max vs. Team), help.openai.com
+    (Memory, Datenkontrollen), Google-Hilfe zu Gemini-Aktivitäten. Ein Suchergebnis-Snippet nennt Regeln für Privat- und Firmenkonten bei Anthropic –
+    **nicht verwenden, bevor das Original gelesen ist.**
+  - Leser kann danach: in seinem Werkzeug die Einstellungen zu Verlauf, Gedächtnis und Training finden und eine Teamregel ableiten.
+  - Braucht von Till: Einschätzung; Netzfreigabe für die Hilfeseiten der drei Anbieter. Relevanz vorläufig 7/10 (Betroffenheit 2, Handlung 2, Quelle 0, Neuheit 1, Passung 2).
+- [ ] **gleiche-frage-fuenfmal-praxistest** – „Fünfmal dieselbe Frage: Gibt die KI jedes Mal dieselbe Antwort?“
+  - Rubrik/Format: Praxistests / KI in der Praxis, Praxistest (700–1.200 Wörter). Ergänzt den Prüf-Leitfaden um die Frage der Beständigkeit.
+  - Für wen: Inhaber und Büro 5–50 Beschäftigte, die KI für Einschätzungen nutzen (welches Angebot ist besser, ist die Mail freundlich genug,
+    was steht im Vertrag), nicht nur für Texte.
+  - Testaufbau (unter einer Stunde): Redaktion bereitet drei fiktive Aufgaben ohne Personenbezug vor (A: zwei kurze Lieferantenangebote vergleichen
+    und eines empfehlen; B: eine Kundenmail auf einer Skala 1–5 als „verärgert“ einstufen; C: eine Rechenfrage mit eindeutiger Lösung, z. B.
+    Stundensatz × Stunden + Material). Till stellt jede Aufgabe fünfmal in **neuen** Chats im selben Werkzeug (ca. 25 Min.) und trägt in einen
+    Zählbogen ein: Empfehlung gleich/anders, Skalenwert, Rechenergebnis richtig/falsch, Begründung widersprüchlich ja/nein (ca. 15 Min.);
+    Screenshots von zwei abweichenden Antworten. 2–3 Sätze Fazit.
+  - Leser kann danach: wichtige Einschätzungen zweimal stellen und Abweichung als Warnsignal nutzen; entscheiden, welche Aufgaben er nur mit
+    eigener Gegenprüfung abgibt (Verweis Prüf-Leitfaden-Stufen).
+  - Grenzen offen: ein Werkzeug, n = 5 je Aufgabe, keine Statistik. Nur Tills Ergebnisse, nie vorab vermuten. Abgrenzung: `angebot-aus-preisliste-praxistest`
+    (erfundene Positionen), `ki-agent-beeinflusst-entscheidungen` (Tendenz der KI, Studie) – hier: Schwankung zwischen Durchläufen.
+  - Braucht von Till: ja/nein, ca. 45 Min., Zählbogen, Screenshots, Fazit. Relevanz vorläufig 8/10 (Betroffenheit 2, Handlung 2, Quelle 1, Neuheit 2, Passung 1 – siebter offener Praxistest-Vorschlag, deshalb nicht ins Board).
+- [ ] **update-check-september-beitraege** – Update-Vorschlag, kein neuer Beitrag. Drei Beiträge vom 18.–20.09.2026 beschreiben schnell veränderliche Angebote:
+  „Werbung direkt in ChatGPT“ (Quelle openai.com, 18.09.), „Claude verbindet sich jetzt mit Shopify, Stripe und Co.“ (Quelle claude.com, 18.09.) und
+  der Selbsttest „Frag eine KI nach deinem eigenen Unternehmen“ (20.09., ohne Quellenangaben im Index). Vorschlag: vor dem nächsten Bewerben (Social-Vorrat,
+  Newsletter-Rückblick) Originale erneut lesen, Stand-Zeile ergänzen, Veraltetes markieren statt löschen. In diesem Lauf nicht geprüft (openai.com gesperrt;
+  claude.com lesbar, aber nicht gegen den Beitrag abgeglichen). Braucht von Till: nur Ja zum Vorgehen.
+- [ ] Ergänzung zu „Was kostet KI einen 15-Personen-Betrieb im Jahr?“ (Speicher 08.11.): **Claude-Preise am Original gelesen** (https://claude.com/pricing,
+  abgerufen 15.11.2026): Team Standard 20 $/Platz/Monat bei Jahreszahlung, 25 $ bei Monatszahlung; Team Premium 100 $ bzw. 125 $; 2–150 Plätze,
+  mindestens 2; Pro 17 $/Monat bei Jahreszahlung (200 $ im Voraus) bzw. 20 $; Max ab 100 $. Währung auf der Seite nur „$“ (vermutlich US-Dollar,
+  nicht ausdrücklich), „Prices shown don't include applicable tax“. ChatGPT-, Copilot- und Gemini-Preisseiten weiter **nicht gelesen** (gesperrt).
+  Erst vorschlagen, wenn alle vier mit Stand-Datum vorliegen.
+- Verworfen in diesem Lauf (nicht vorgeschlagen): „KI-Regeln fürs Team auf einer Seite“ – Dublette zu `ki-kompetenz-pflicht-mitarbeiter` (Prüfliste für
+  einen nachweisbaren Stand) und Schatten-KI; als Baustein in `ki-ansprechpartner-im-betrieb` (Aufgabe 1) aufgegangen. „Website für KI-Assistenten
+  lesbar machen“ – Nähe zu `ki-suche-falsche-aussagen-ueber-betrieb` (Board) und Selbsttest 20.09., Google-Doku (developers.google.com) nicht lesbar;
+  erst nach Lesen der Google-Hinweise als Ergänzung zum Selbsttest prüfen.
+
 ## Erledigt
 
 - [x] 2026-10-08 Azubis fragen die KI – wird dein Betrieb empfohlen?
