@@ -261,12 +261,12 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Verlauf: 2026-10-25 Ideen (Sonntags-Lauf): vorgeschlagen
 
 ### newsletter-2026-11-17
-- Status: newsletter-vorschlag
+- Status: eingeplant
 - Titel: „#7: Welches KI-Modell für welche Aufgabe?“ (Fassung 1)
 - Versand: Dienstag 17.11.2026, 7:05 (erst nach Tills „N ja“, spätestens Mo 16.11. 18:47)
 - Inhalt: 01 modellwahl-kanonen-auf-spatzen (live seit 13.11.) + Grundlage chatgpt-claude-gemini-ki-modelle-erklaert (08.10.) · 02 Zahl „7 von 25“ (Anthropic-Doku „Optimizing for cost and intelligence“, Abruf 15.11.2026) · 03 Gedanke. ki-recherche-assistent-selbstversuch ohne Freigabe nicht im Text (INTERN: bei „A ja“ bis Mo 18:47 Abschnitt „Selbst ausprobiert“ ergänzen)
 - Datei: entwuerfe/newsletter-2026-11-17/beitrag.md, Prüfung: pruefung.md
-- Verlauf: 2026-11-15 Lauf 7:47: Autor, Prüfer Runde 1 nicht bestanden (Opus/Sonnet/Haiku nicht im Oktober-Beitrag belegt), Runde 2 bestanden; `ghost.py testmail`: Entwurf angelegt (Vorschau https://www.kleinmittelki.de/p/c9e4f758-1e91-4da5-b7fa-de164d2a749e/, entwurf_hash 9ec5c917…), Testmail fehlgeschlagen (nur Zusatz); Fassung 1 gemailt (1a1ddff14d4639c7)
+- Verlauf: 2026-11-15 Lauf 7:47: Autor, Prüfer Runde 1 nicht bestanden (Opus/Sonnet/Haiku nicht im Oktober-Beitrag belegt), Runde 2 bestanden; `ghost.py testmail`: Entwurf angelegt (Vorschau https://www.kleinmittelki.de/p/c9e4f758-1e91-4da5-b7fa-de164d2a749e/, entwurf_hash 9ec5c917…), Testmail fehlgeschlagen (nur Zusatz); Fassung 1 gemailt (1a1ddff14d4639c7) · 2026-11-16 Lauf 12:47: Tills „N ja“ (Mail 1a1e419e76709d63, 11:24Z) – Eintrag vom Auto-Modus abgelehnt, nicht umgangen · 2026-11-16 Lauf 18:47: Freigabe eingetragen (Fassung 1, Hash 9ec5c917…), `abarbeiten` → in Ghost eingeplant Di 17.11. 7:05 (06:05Z)
 
 ### newsletter-2026-11-10
 - Status: versendet

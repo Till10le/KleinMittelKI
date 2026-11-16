@@ -4,11 +4,12 @@
   "uuid": "c9e4f758-1e91-4da5-b7fa-de164d2a749e",
   "slug": "7-welches-ki-modell-fuer-welche-aufgabe",
   "titel": "#7: Welches KI-Modell für welche Aufgabe?",
-  "status": "draft",
-  "updated_at": "2026-11-15T06:56:59.000Z",
+  "status": "scheduled",
+  "updated_at": "2026-11-16T17:48:49.000Z",
   "vorschau": "https://www.kleinmittelki.de/p/c9e4f758-1e91-4da5-b7fa-de164d2a749e/",
   "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6af957b852d1110001b41686",
   "entwurf_hash": "9ec5c917c50755c048f7316b3daec38209b8acfd1a06dd41f7700cce6b55e208",
   "intern_absaetze_entfernt": 1,
-  "testmail_fehler": "Ghost antwortet 200 auf POST email_previews/posts/6af957b852d1110001b41686/ ohne JSON (Content-Type text/html; charset=utf-8): <!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta\n      http-equiv=\"Content-Security-Policy\"\n      content=\"default-src 'self'; img-src 'self' data:; media-src 'self' data:; object-src 'none'; style-src 'self' 'sha256-o4vzfmmUENEg4chMjjRP9EuW9ucGnGIGVdbl8d0SHQQ='; script-src 'self' 'sha256-a9bHdQG"
+  "testmail_fehler": "Ghost antwortet 200 auf POST email_previews/posts/6af957b852d1110001b41686/ ohne JSON (Content-Type text/html; charset=utf-8): <!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta\n      http-equiv=\"Content-Security-Policy\"\n      content=\"default-src 'self'; img-src 'self' data:; media-src 'self' data:; object-src 'none'; style-src 'self' 'sha256-o4vzfmmUENEg4chMjjRP9EuW9ucGnGIGVdbl8d0SHQQ='; script-src 'self' 'sha256-a9bHdQG",
+  "published_at": "2026-11-17T06:05:00.000Z"
 }
