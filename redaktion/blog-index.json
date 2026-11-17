@@ -1,7 +1,36 @@
 {
-  "stand": "2026-11-16T06:49:25+00:00",
+  "stand": "2026-11-17T06:49:53+00:00",
   "anzahl": 37,
   "beitraege": [
+    {
+      "id": "6af957b852d1110001b41686",
+      "slug": "7-welches-ki-modell-fuer-welche-aufgabe",
+      "titel": "#7: Welches KI-Modell für welche Aufgabe?",
+      "status": "sent",
+      "veroeffentlicht": "2026-11-17",
+      "geaendert": "2026-11-17",
+      "kategorie": "",
+      "interne_tags": [
+        "#newsletter"
+      ],
+      "teaser": "Warum nicht jede KI-Aufgabe das stärkste Modell braucht, was hinter ChatGPT und Claude steckt, eine Zahl und ein Gedanke.",
+      "url": "https://www.kleinmittelki.de/email/c9e4f758-1e91-4da5-b7fa-de164d2a749e/",
+      "zwischenueberschriften": [
+        "01 · Neu im Blog: Mit Kanonen auf Spatzen",
+        "02 · Eine Zahl, genau gelesen",
+        "03 · Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [
+        "https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/",
+        "https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/",
+        "https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/"
+      ],
+      "zahlen": [],
+      "woerter": 467
+    },
     {
       "id": "6af3085899393e0001be06a2",
       "slug": "modellwahl-kanonen-auf-spatzen",
@@ -979,36 +1008,6 @@
       ],
       "zahlen": [],
       "woerter": 284
-    },
-    {
-      "id": "6af957b852d1110001b41686",
-      "slug": "7-welches-ki-modell-fuer-welche-aufgabe",
-      "titel": "#7: Welches KI-Modell für welche Aufgabe?",
-      "status": "draft",
-      "veroeffentlicht": "",
-      "geaendert": "2026-11-15",
-      "kategorie": "",
-      "interne_tags": [
-        "#newsletter",
-        "#zur-freigabe"
-      ],
-      "teaser": "Warum nicht jede KI-Aufgabe das stärkste Modell braucht, was hinter ChatGPT und Claude steckt, eine Zahl und ein Gedanke.",
-      "url": "https://www.kleinmittelki.de/p/c9e4f758-1e91-4da5-b7fa-de164d2a749e/",
-      "zwischenueberschriften": [
-        "01 · Neu im Blog: Mit Kanonen auf Spatzen",
-        "02 · Eine Zahl, genau gelesen",
-        "03 · Ein Gedanke zum Mitnehmen"
-      ],
-      "quellen": [
-        "https://platform.claude.com/docs/en/about-claude/models/optimizing-for-cost-and-intelligence"
-      ],
-      "interne_links": [
-        "https://www.kleinmittelki.de/",
-        "https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/",
-        "https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/"
-      ],
-      "zahlen": [],
-      "woerter": 467
     },
     {
       "id": "6ade31474d491100016c4807",
