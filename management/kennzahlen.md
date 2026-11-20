@@ -22,12 +22,44 @@ Messort: Box von Head of KMI, `curl` und Repo-Auswertung, jeweils eine Messung.
 | Newsletter-Anmeldeformular | auf Startseite und jedem Beitrag; kein Portal-Skript, keine eigene Seite (`/newsletter/` = 404) | | | Seitenquelltext, `curl` |
 | `robots.txt`, RSS, `llms.txt` | vorhanden; RSS liefert 15 Einträge | | | `curl` |
 
+## Aus Ghost (Admin API, nur lesen)
+
+Gemessen am 20.11.2026, 17:12 UTC mit `python3 tools/ghost.py kennzahlen` (nur GET, Claude-Sitzung in „KMK-Ghost“, Aufgabe AUD-001).
+Fortschreibung: Befehl erneut ausführen, neue Spalte rechts anhängen.
+
+| Kennzahl | 20.11.2026 | Quelle |
+|---|---|---|
+| Mitglieder gesamt | 22 | `members/` (Seitenangabe `total`) |
+| davon frei / bezahlt / geschenkt | 22 / 0 / 0 | `members/?filter=status:…` |
+| Newsletter-Abos „KLEIN. MITTEL. KI.“ (aktiv) | 22 (22) | `newsletters/?include=count.members,count.active_members` |
+| Beiträge veröffentlicht · nur Newsletter (`sent`) · eingeplant · Entwürfe · gesamt | 22 · 7 · 0 · 10 · 39 | `posts/?filter=status:…` |
+
+Hinweis: Unter den 22 Mitgliedern ist Tills eigene Kontrolladresse (Mitglieder-Notiz „Redaktions-Kontrolle Newsletter“, seit 27.10.).
+
+### Newsletter je Versand
+
+Öffnungsrate = geöffnet / zugestellt. Klickrate = Mitglieder mit mindestens einem Klick (Ghost `count.clicks`) / zugestellt.
+Öffnungen sind ein Näherungswert (Apple Mail Privacy Protection meldet Öffnungen automatisch).
+
+| Versand | Ausgabe | Empfänger | zugestellt | geöffnet | Öffnungsrate | Klicker | Klickrate |
+|---|---|---|---|---|---|---|---|
+| 17.11.2026 | #7: Welches KI-Modell für welche Aufgabe? | 22 | 22 | 12 | 54,5 % | 4 | 18,2 % |
+| 10.11.2026 | #6: Folien ohne KI-Look und KI ohne Anwendungsfall | 22 | 22 | 12 | 54,5 % | 3 | 13,6 % |
+| 03.11.2026 | #5: Was Betriebe bei KI bremst und wie viel Technik reicht | 22 | 22 | 12 | 54,5 % | 2 | 9,1 % |
+| 27.10.2026 | #4: KI-Ergebnisse prüfen und wer für den Chatbot haftet | 22 | 22 | 13 | 59,1 % | 4 | 18,2 % |
+| 20.10.2026 | #3: Was KI-Agenten können und warum gepflegtes Wissen zählt | 18 | 18 | 12 | 66,7 % | 4 | 22,2 % |
+| 13.10.2026 | #2: Protokoll per KI – was gut lief und wo die Fehler steckten | 15 | 14 (1 fehlgeschlagen) | 9 | 64,3 % | 2 | 14,3 % |
+| 06.10.2026 | #1: KI-Plakate müssen nicht nach KI aussehen | 8 | 8 | 6 | 75,0 % | 3 | 37,5 % |
+
+Beobachtung (keine Bewertung): Die Empfängerzahl steht seit dem 27.10. bei 22; geöffnet haben seitdem je 12–13.
+Nicht lesbar mit dem Integrations-Schlüssel: `emails/` (Ghost: „API tokens do not have permission to access this endpoint“), Seitenaufrufe/Besucher.
+
 ## Nicht verfügbar
 
 | Kennzahl | Grund |
 |---|---|
-| Mitglieder / Newsletter-Abonnenten (gesamt, frei, bezahlt) | Kein Ghost-Admin- oder Content-Schlüssel auf der Box; er liegt nur in der Claude-Umgebung „KMK-Ghost“. `tools/ghost.py` hat keinen Lesebefehl dafür (Aufgabe AUD-001) |
-| Öffnungs- und Klickrate der Newsletter | wie oben |
+| Mitglieder / Newsletter-Abonnenten (gesamt, frei, bezahlt) | **Überholt 20.11.2026:** jetzt gemessen, siehe „Aus Ghost“. Ursprünglich: Kein Ghost-Admin- oder Content-Schlüssel auf der Box; er liegt nur in der Claude-Umgebung „KMK-Ghost“. `tools/ghost.py` hat keinen Lesebefehl dafür (Aufgabe AUD-001) |
+| Öffnungs- und Klickrate der Newsletter | **Überholt 20.11.2026:** jetzt gemessen, siehe „Aus Ghost“. Ursprünglich: wie oben |
 | Seitenaufrufe, Besucher, Herkunft | Ghost Analytics nur mit Admin-Zugang einsehbar; kein Zugang |
 | Google-Klicks, Impressionen, Position, Indexabdeckung | Search Console kennt `kleinmittelki.de` nicht (das Konto sieht nur `sc-domain:tributoo.com`); Aufgabe SEO-001 |
 | Anzahl indexierter Seiten | `site:`-Suche lieferte keine Ergebnisse (kein Beleg für oder gegen Indexierung); Search Console fehlt |

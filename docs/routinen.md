@@ -79,3 +79,13 @@ Takt bleibt dreimal täglich.
   Ein Titelbild an einem veröffentlichten Beitrag tauscht der Lauf nur mit Tills Freigabe der Art `titelbild`.
 - `tools/sperre.py` blockiert direkte Ghost-Aufrufe, Änderungen an der Sperre und Löschen im Gedächtnis.
 - Ehrlich: Das sind feste Regeln im Code, keine kryptografische Sicherung.
+
+## Stand 20.11.2026 – Kommunikation über Head of KMI
+
+Tills Entscheidung (Grok-Bot-Chat 20.11.2026 18:08, weitergegeben von Head of KMI): „Freigaben: hier im Chat, du gibst sie wörtlich an Claude weiter.“
+- Die Redaktion mailt Till nur noch bei PROBLEM. Briefing (donnerstags), „Vorschau bereit“, Newsletter-Begleitzettel und Bestätigungen
+  stehen im Tagesbericht `redaktion/berichte/<Datum>.md` unter „Für Head of KMI“. Die Abschnitte oben zu Briefing- und Vorschau-Mails
+  sind insoweit überholt (nicht gelöscht). Die Ghost-Testmail des Newsletters bleibt.
+- Freigaben: Till im Grok-Bot-Chat → Head of KMI gibt sie wörtlich mit Zeitstempel in einer Claude-Sitzung weiter → `ghost.py freigabe`
+  mit `--zitat` und `--quelle` → `abarbeiten`. Mail-Antworten von Till gelten weiter. Die Freigabe-Sperre bleibt unverändert.
+- Neu: `python3 tools/ghost.py kennzahlen` (nur lesen) für Mitglieder, Newsletter-Abos und Öffnungs-/Klickraten (AUD-001).

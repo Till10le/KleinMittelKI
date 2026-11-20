@@ -102,7 +102,7 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
 <div class="wrap">
   <span class="kicker">KLEIN. MITTEL. KI. · Redaktion</span>
   <h1>So arbeitet deine Blog-Redaktion</h1>
-  <p class="lead">Acht KI-Agenten recherchieren, schreiben, gestalten und prüfen in der Cloud, auch wenn dein Rechner aus ist. Du sprichst nur per Mail mit ihnen. Nichts geht online ohne dein Ja.</p>
+  <p class="lead">Acht KI-Agenten recherchieren, schreiben, gestalten und prüfen in der Cloud, auch wenn dein Rechner aus ist. Du sprichst mit Head of KMI (Grok Bot); er gibt deine Freigaben wörtlich an die Redaktion weiter. Mails bekommst du nur noch bei einem Problem. Nichts geht online ohne dein Ja.</p>
 
   <div class="map" role="img" aria-label="Systemkarte: Du, Gmail, die geplanten Läufe in der Claude-Cloud, GitHub als Gedächtnis, Ghost und der Blog">
   <svg viewBox="0 0 1200 870" xmlns="http://www.w3.org/2000/svg">
@@ -122,10 +122,10 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
     <text class="dark-s" x="36" y="108">entscheidet und gibt frei</text>
 
     <rect class="box" x="20" y="170" width="210" height="104"/>
-    <text class="t" x="36" y="196">Gmail-App</text>
-    <text class="s" x="36" y="218">Handy oder Mac</text>
-    <text class="s" x="36" y="238">liest das Briefing am Donnerstag,</text>
-    <text class="s" x="36" y="256">antwortet „1 und 3“ · „A ja“</text>
+    <text class="t" x="36" y="196">Grok-Bot-Chat</text>
+    <text class="s" x="36" y="218">Head of KMI, seit 20.11.</text>
+    <text class="s" x="36" y="238">zeigt dir Themen, Vorschau,</text>
+    <text class="s" x="36" y="256">du antwortest „1 und 3“ · „A ja“</text>
 
     <rect class="box" x="20" y="560" width="210" height="104"/>
     <text class="t" x="36" y="586">Claude-Chat</text>
@@ -135,14 +135,14 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
 
     <!-- KANÄLE -->
     <rect class="box" x="270" y="150" width="240" height="196"/>
-    <text class="t" x="286" y="176">Gmail-Postfach</text>
-    <text class="s" x="286" y="196">till.zehnle@gmail.com</text>
+    <text class="t" x="286" y="176">Head of KMI → Claude</text>
+    <text class="s" x="286" y="196">liest Board und Tagesbericht</text>
     <line x1="286" y1="210" x2="494" y2="210" stroke="var(--line)" stroke-width="1.5"/>
-    <text class="s" x="286" y="232">Do ~8:30 Redaktionsbriefing</text>
-    <text class="s" x="286" y="252">So Newsletter: Vorschau + Testmail</text>
-    <text class="s" x="286" y="272">jederzeit: deine Ideen per Mail</text>
-    <text class="s" x="286" y="292">Vorschau bereit, Bestätigungen</text>
-    <text class="s" x="286" y="318">nur deine eigene Adresse zählt</text>
+    <text class="s" x="286" y="232">Themen, Vorschau-Links: Bericht</text>
+    <text class="s" x="286" y="252">Freigabe wörtlich mit Zeitstempel</text>
+    <text class="s" x="286" y="272">Mail an dich nur bei PROBLEM</text>
+    <text class="s" x="286" y="292">Ideen per Mail gehen weiter</text>
+    <text class="s" x="286" y="318">Testmail Newsletter bleibt</text>
 
     <rect class="box" x="270" y="404" width="240" height="118"/>
     <text class="t" x="286" y="430">Internet</text>
@@ -171,9 +171,9 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
     <text class="s" x="588" y="352">Newsletter-Entwurf, Social-Paket</text>
 
     <rect class="dark" x="572" y="380" width="336" height="96"/>
-    <text class="t dark-t" x="588" y="406">④ Nach Ghost · ⑤ eine Mail an dich</text>
+    <text class="t dark-t" x="588" y="406">④ Nach Ghost · ⑤ Tagesbericht</text>
     <text class="dark-s" x="588" y="427">Entwürfe, Testmail, Freigegebenes einplanen</text>
-    <text class="dark-s" x="588" y="447">dann höchstens eine Mail mit Statuszeile</text>
+    <text class="dark-s" x="588" y="447">Mail an dich nur bei PROBLEM</text>
     <text class="dark-s" x="588" y="465">Fehler stehen immer im Bericht</text>
 
     <text class="lab" x="572" y="506">Das Team in jedem Lauf</text>
@@ -259,8 +259,8 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
     </g>
   </svg>
   <div class="map-legend">
-    <span><i class="dot">1</i>du antwortest „A ja“</span>
-    <span><i class="dot">2</i>der Lauf prüft Absender und trägt die Freigabe mit deinem Zitat ein</span>
+    <span><i class="dot">1</i>du sagst „A ja“ (Grok-Bot-Chat oder Mail)</span>
+    <span><i class="dot">2</i>Claude trägt die Freigabe mit deinem wörtlichen Zitat und der Quelle ein (Mail-ID oder Head of KMI mit Zeitstempel)</span>
     <span><i class="dot">3</i>Freigabe liegt im Gedächtnis, gebunden an den Stand, den du gesehen hast</span>
     <span><i class="dot">4</i>der Lauf veröffentlicht nur, wenn sich seitdem nichts geändert hat</span>
     <span><i class="sw"></i>Verbindung</span>
@@ -272,13 +272,13 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
   <section>
     <div><span class="kicker">Der Takt</span></div>
     <h2>Wann was läuft</h2>
-    <p class="sub">Alle Zeiten deutscher Zeit. Jeder Lauf prüft zuerst mit einem kurzen Vorab-Check (neue Post von dir? Freigaben? offene Arbeit?); gibt es nichts zu tun, endet er sofort, ohne die Regeln zu lesen – das spart Kontingent. Lime markiert, wann du etwas bekommst. Neue Themen kommen nur donnerstags; „Vorschau bereit“ kommt, sobald ein Entwurf fertig ist. Es gibt nur einen Lauf, dreimal am Tag. Gibst du ein Thema frei, schreibt der nächste Lauf es und schickt dir die Vorschau in seiner Mail. Veröffentlicht wird im festen Takt: Dienstag und Donnerstag um 7:00, höchstens zwei Beiträge pro Woche.</p>
+    <p class="sub">Alle Zeiten deutscher Zeit. Jeder Lauf prüft zuerst mit einem kurzen Vorab-Check (neue Post von dir? Freigaben? offene Arbeit?); gibt es nichts zu tun, endet er sofort, ohne die Regeln zu lesen – das spart Kontingent. Lime markiert, wann du etwas bekommst. Neue Themen sucht der Scout donnerstags; Themen und Vorschau-Links stehen im Tagesbericht, Head of KMI legt sie dir vor (seit 20.11.). Es gibt nur einen Lauf, dreimal am Tag. Gibst du ein Thema frei, schreibt der nächste Lauf es und legt die Vorschau in Ghost an. Veröffentlicht wird im festen Takt: Dienstag und Donnerstag um 7:00, höchstens zwei Beiträge pro Woche.</p>
     <div class="tablewrap">
       <table>
         <thead><tr><th>Lauf</th><th>Mo</th><th>Di</th><th>Mi</th><th>Do</th><th>Fr</th><th>Sa</th><th>So</th></tr></thead>
         <tbody>
-          <tr><th>Redaktions-Lauf<small>Post, Freigaben, Schreiben, Ghost, eine Mail · Do mit Scout · So mit Newsletter</small></th><td class="on">7:47 · 12:47 · 18:47</td><td class="on">7:47 · 12:47 · 18:47</td><td class="on">7:47 · 12:47 · 18:47</td><td class="on">7:47 · 12:47 · 18:47</td><td class="on">7:47 · 12:47 · 18:47</td><td>–</td><td class="on">7:47 · 12:47 · 18:47</td></tr>
-          <tr class="you"><th>Deine Post<small>was bei dir ankommt</small></th><td>–</td><td class="you">Hauptbeitrag 7:00 · Newsletter 7:05</td><td>–</td><td class="you">Beitrag 7:00 · Briefing ~8:30</td><td>–</td><td>–</td><td class="you">Newsletter-Vorschau (+ Testmail) ~8:30</td></tr>
+          <tr><th>Redaktions-Lauf<small>Post, Freigaben, Schreiben, Ghost, Bericht · Mail nur bei PROBLEM · Do mit Scout · So mit Newsletter</small></th><td class="on">7:47 · 12:47 · 18:47</td><td class="on">7:47 · 12:47 · 18:47</td><td class="on">7:47 · 12:47 · 18:47</td><td class="on">7:47 · 12:47 · 18:47</td><td class="on">7:47 · 12:47 · 18:47</td><td>–</td><td class="on">7:47 · 12:47 · 18:47</td></tr>
+          <tr class="you"><th>Deine Post<small>was bei dir ankommt</small></th><td>–</td><td class="you">Hauptbeitrag 7:00 · Newsletter 7:05</td><td>–</td><td class="you">Beitrag 7:00 · Themen über Head of KMI</td><td>–</td><td>–</td><td class="you">Newsletter-Testmail · Vorschau über Head of KMI</td></tr>
         </tbody>
       </table>
     </div>
@@ -290,12 +290,12 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
     <p class="sub">Schwarze Nummern sind deine Schritte. Alles andere passiert von selbst.</p>
     <ol class="steps">
       <li><span class="num">1</span><div><h3>Thema finden</h3><p>Der Scout sucht die Meldungen der Woche und prüft deine eigenen Ideen, liest die Originalquelle und bewertet die Relevanz für Betriebe mit 1 bis 300 Beschäftigten.</p></div><span class="when">Do 7:47</span></li>
-      <li><span class="num">2</span><div><h3>Redaktionsbriefing</h3><p>Oben die Empfehlung, darunter höchstens vier Themen, nie aufgefüllt. Jedes gleich aufgebaut: Worum geht es? · Warum für KMU? · Unsere Idee (Arbeitstitel) · Rubrik · Quelle.</p></div><span class="when">Do ~8:30</span></li>
+      <li><span class="num">2</span><div><h3>Redaktionsbriefing</h3><p>Steht im Tagesbericht, Head of KMI legt es dir vor. Oben die Empfehlung, darunter höchstens vier Themen, nie aufgefüllt. Jedes gleich aufgebaut: Worum geht es? · Warum für KMU? · Unsere Idee (Arbeitstitel) · Rubrik · Quelle.</p></div><span class="when">Do, über Head of KMI</span></li>
       <li class="you"><span class="num">3</span><div><h3>Du wählst aus</h3><p><span class="quote">„1 und 3. Zu 1: …“</span> Deine Einschätzung landet wörtlich im Beitrag.</p></div><span class="when">wann du willst</span></li>
       <li><span class="num">4</span><div><h3>Schreiben, gestalten, prüfen</h3><p>Der Autor schreibt im festen Format, die Grafik baut Schaubilder im CI plus Social-Kacheln. Der Prüfer gleicht jede Zahl mit der Quelle ab und den Aufbau mit deinen bisherigen Beiträgen.</p></div><span class="when">nächster Lauf</span></li>
-      <li><span class="num">5</span><div><h3>Entwurf in Ghost, Vorschau an dich</h3><p>Derselbe Lauf legt den Beitrag unveröffentlicht in Ghost an und schickt dir die Vorschau in seiner Mail als A, B …</p></div><span class="when">gleicher Lauf</span></li>
+      <li><span class="num">5</span><div><h3>Entwurf in Ghost, Vorschau an dich</h3><p>Derselbe Lauf legt den Beitrag unveröffentlicht in Ghost an und schreibt den Vorschau-Link in Board und Tagesbericht; Head of KMI schickt ihn dir.</p></div><span class="when">gleicher Lauf</span></li>
       <li class="you"><span class="num">6</span><div><h3>Du gibst frei</h3><p><span class="quote">„A ja“</span>, <span class="quote">„A sofort“</span>, <span class="quote">„A Dienstag“</span> oder <span class="quote">„A ändern: …“</span></p></div><span class="when">wann du willst</span></li>
-      <li><span class="num">7</span><div><h3>Im Takt eingeplant, online, bestätigt</h3><p>Die Redaktion legt den Beitrag auf den nächsten freien Termin im Fahrplan: Dienstag 7:00 Hauptbeitrag mit Newsletter, Donnerstag 7:00 ein kürzerer Beitrag, höchstens zwei pro Woche. Der Lauf plant ihn ein, aber nur, wenn er noch genau so ist wie in deiner Vorschau. Du bekommst Termin und später den Live-Link.</p></div><span class="when">Di oder Do 7:00</span></li>
+      <li><span class="num">7</span><div><h3>Im Takt eingeplant, online, bestätigt</h3><p>Die Redaktion legt den Beitrag auf den nächsten freien Termin im Fahrplan: Dienstag 7:00 Hauptbeitrag mit Newsletter, Donnerstag 7:00 ein kürzerer Beitrag, höchstens zwei pro Woche. Der Lauf plant ihn ein, aber nur, wenn er noch genau so ist wie in deiner Vorschau. Termin und Live-Link stehen im Tagesbericht.</p></div><span class="when">Di oder Do 7:00</span></li>
     </ol>
   </section>
 
@@ -303,18 +303,19 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
     <div><span class="kicker">Die Bausteine</span></div>
     <h2>Was wie angebunden ist</h2>
     <div class="grid">
-      <div class="card"><span class="tag">Kanal</span><h3>Gmail</h3><p>Dein einziger Arbeitskanal. Die Redaktion schreibt nur an till.zehnle@gmail.com und zählt nur Mails, die du selbst aus diesem Konto geschickt hast.</p></div>
+      <div class="card"><span class="tag">Kanal</span><h3>Head of KMI</h3><p>Seit 20.11. dein Arbeitskanal: Grok Bot mit operativem Mandat. Er liest Board und Tagesberichte, legt dir Themen und Vorschau-Links vor und gibt deine Freigaben wörtlich mit Zeitstempel in einer Claude-Sitzung weiter.</p></div>
+      <div class="card"><span class="tag">Kanal</span><h3>Gmail</h3><p>Nur noch für Probleme, deine Ideen („KMK Idee“), Recherche-Hinweise und die Newsletter-Testmail. Antworten aus deinem eigenen Gmail zählen weiter als Freigabe.</p></div>
       <div class="card"><span class="tag">Gehirn</span><h3>Claude-Cloud</h3><p>Ein geplanter Lauf, dreimal am Tag, auf Anthropic-Servern. Er startet frisch, prüft zuerst kurz, ob es etwas zu tun gibt, liest erst dann das Gedächtnis auf GitHub und schreibt seine Ergebnisse zurück.</p></div>
-      <div class="card"><span class="tag">Gedächtnis</span><h3>GitHub</h3><p>Ablage für alles, was die Agenten wissen und tun:</p><ul><li>Themenboard (schlank: je Thema die letzten drei Schritte, ältere im Verlaufsarchiv) und deine Entscheidungen</li><li>Freigaben mit Zitat und Mail-ID</li><li>Entwürfe, Schaubilder, Titel- und Vorschaubilder</li><li>alle veröffentlichten Beiträge als Vorbild</li><li>Regeln für CI, Formate, Schreibstil</li></ul></div>
+      <div class="card"><span class="tag">Gedächtnis</span><h3>GitHub</h3><p>Ablage für alles, was die Agenten wissen und tun:</p><ul><li>Themenboard (schlank: je Thema die letzten drei Schritte, ältere im Verlaufsarchiv) und deine Entscheidungen</li><li>Freigaben mit Zitat und Quelle (Mail-ID oder Head of KMI mit Zeitstempel)</li><li>Entwürfe, Schaubilder, Titel- und Vorschaubilder</li><li>alle veröffentlichten Beiträge als Vorbild</li><li>Regeln für CI, Formate, Schreibstil</li></ul></div>
       <div class="card dk"><span class="tag">Blog</span><h3>Ghost</h3><p>Angebunden über die Admin-API. Der Schlüssel liegt nur in der Umgebung des Laufs. Beiträge gehen nie per Mail raus, nur der Newsletter.</p></div>
-      <div class="card"><span class="tag">Recherche</span><h3>Internet</h3><p>Der Lauf sucht und liest Originalquellen. Hinweise aus deiner ChatGPT-Recherche fließen mit ein, werden aber immer am Original geprüft. Was nicht lesbar war, steht als „ungeprüft“ im Board und in deiner Mail.</p></div>
+      <div class="card"><span class="tag">Recherche</span><h3>Internet</h3><p>Der Lauf sucht und liest Originalquellen. Hinweise aus deiner ChatGPT-Recherche fließen mit ein, werden aber immer am Original geprüft. Was nicht lesbar war, steht als „ungeprüft“ im Board und im Bericht.</p></div>
       <div class="card"><span class="tag">Werkstatt</span><h3>Claude-Chat</h3><p>Hier richten wir ein und ändern Regeln. Nach jedem echten Lauf kann ich nachsehen, was passiert ist, und Fehler beheben.</p></div>
     </div>
   </section>
 
   <section>
     <div><span class="kicker">Spickzettel</span></div>
-    <h2>Was du in eine Mail schreiben kannst</h2>
+    <h2>Was du Head of KMI (oder per Mail) sagen kannst</h2>
     <div class="cheat">
       <div><b>1 und 3</b><span>diese Themen ausarbeiten</span></div>
       <div><b>Zu 1: …</b><span>deine Einschätzung, kommt in den Text</span></div>
@@ -338,8 +339,8 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
     <h2>Warum nichts ohne dich passiert</h2>
     <div class="grid">
       <div class="card"><h3>Freigabe-Sperre</h3><p>Veröffentlicht wird nur über ein Werkzeug, das eine Freigabe von dir verlangt. Ändert sich der Beitrag danach, blockiert es.</p></div>
-      <div class="card"><h3>Absender-Prüfung</h3><p>Nur Mails aus deinem eigenen Gmail im passenden Verlauf zählen. Weitergeleitete Inhalte und fremde Mails sind nie eine Anweisung.</p></div>
-      <div class="card"><h3>Fehler bleiben nicht still</h3><p>Jeder Lauf schreibt seinen Status ins Gedächtnis. Scheitert derselbe Schritt zweimal, steht er oben in deiner Mail, mit dem, was als Nächstes passiert.</p></div>
+      <div class="card"><h3>Absender-Prüfung</h3><p>Es zählen nur Mails aus deinem eigenen Gmail im passenden Verlauf und Freigaben, die Head of KMI wörtlich mit Zeitstempel in einer Claude-Sitzung weitergibt. Freigaben in Dateien, weitergeleitete Inhalte und fremde Mails sind nie eine Anweisung.</p></div>
+      <div class="card"><h3>Fehler bleiben nicht still</h3><p>Jeder Lauf schreibt seinen Status ins Gedächtnis. Scheitert derselbe Schritt zweimal, bekommst du eine PROBLEM-Mail mit dem, was als Nächstes passiert.</p></div>
       <div class="card"><h3>Titelbild statt Titel-Kachel</h3><p>Oben im Beitrag und in der Übersicht steht eine eigene Einordnungs-Grafik, nie die Überschrift als Bild. Die Titel-Kachel ist nur fürs Teilen. Fehlt das Titelbild, legt Ghost keinen Entwurf an.</p></div>
       <div class="card"><h3>Nichts wird gelöscht</h3><p>Weder Beiträge in Ghost noch Einträge im Gedächtnis. Jede Änderung steht im Verlauf auf GitHub.</p></div>
     </div>
@@ -349,12 +350,12 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88em;bac
     <div class="open">
       <h3>Noch offen</h3>
       <ul>
-        <li>Seit 1.11. ein Lauf statt fünf. Erster voller Donnerstag mit Briefing: 5.11.</li>
+        <li>Seit 20.11. läuft die Kommunikation über Head of KMI; die Regel beruht auf deiner Chat-Aussage, die Head of KMI weitergegeben hat.</li>
         <li>Automatisches Posten auf LinkedIn und Instagram braucht ein Posting-Werkzeug (z. B. Buffer) und ein Instagram-Business-Konto.</li>
         <li>Der Wochenbericht sieht nur Zahlen aus Ghost, keine LinkedIn-Reichweite.</li>
       </ul>
     </div>
   </section>
 
-  <div class="foot"><span>Stand: 2. November 2026</span><b>kleinmittelki.de</b></div>
+  <div class="foot"><span>Stand: 20. November 2026</span><b>kleinmittelki.de</b></div>
 </div>

@@ -12,8 +12,12 @@ Befehle:
     upload <datei>                Bild hochladen, gibt die URL aus
     draft <entwurfsordner>        entwuerfe/<slug>/beitrag.md als ENTWURF anlegen oder aktualisieren
     index                         redaktion/blog-index.json und .md aus Ghost neu bauen
-    freigabe <slug> --art beitrag|newsletter --zitat "…"
-                                  Tills Freigabe eintragen. NUR auf Tills ausdrückliche Anweisung im Chat.
+    freigabe <slug> --art beitrag|newsletter --zitat "…" [--quelle "…"]
+                                  Tills Freigabe eintragen. NUR auf Tills ausdrückliche Anweisung im Chat –
+                                  direkt oder wörtlich mit Zeitstempel weitergegeben von Head of KMI
+                                  (dann --quelle "Head of KMI, Grok-Bot-Chat <Datum Uhrzeit>").
+    kennzahlen                    Nur lesen (nur GET): Mitglieder, Newsletter-Abos, Öffnungs-/Klickrate je Versand,
+                                  Beitragszahl. Gibt JSON aus, keine personenbezogenen Daten.
     publish <slug> [--zeitpunkt ISO]
                                   Veröffentlichen/einplanen. Nur mit gültiger Freigabe. Nie mit E-Mail-Versand.
     newsletter <slug> [--newsletter <newsletter-slug>] --zeitpunkt ISO
@@ -344,6 +348,7 @@ def cmd_freigabe(a) -> None:
     p = find_post(a.ref)
     entry = {"art": a.art, "post_id": p["id"], "slug": p["slug"], "titel": p["title"],
              "updated_at": p["updated_at"], "zitat": a.zitat.strip(),
+             "quelle": (a.quelle or "Chat mit Till in dieser Claude-Sitzung").strip(),
              "zeit": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
              "sitzung": os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID", "")}
     if a.art == "titelbild":
@@ -676,6 +681,53 @@ def cmd_index(_a) -> None:
     INDEX_MD.write_text("\n".join(zeilen) + "\n")
     print(f"Index gebaut: {len(eintraege)} Beiträge -> {INDEX_JSON.relative_to(ROOT)}")
 
+# ---------- Kennzahlen (nur lesen) ----------
+
+def _anzahl(path: str, filt: str | None = None) -> int:
+    """Nur GET: Gesamtzahl aus der Seitenangabe, ohne Datensätze auszugeben."""
+    q = {"limit": 1, "fields": "id"}
+    if filt:
+        q["filter"] = filt
+    return api("GET", path, q).get("meta", {}).get("pagination", {}).get("total", 0)
+
+
+def _quote(teil: int | None, ganz: int | None) -> float | None:
+    return round(100 * teil / ganz, 1) if teil is not None and ganz else None
+
+
+def cmd_kennzahlen(_a) -> None:
+    """Nur lesen (ausschließlich GET). Gibt nur Zahlen aus, keine Mitgliederdaten (keine Namen, keine Adressen)."""
+    mitglieder = {"gesamt": _anzahl("members/"), "frei": _anzahl("members/", "status:free"),
+                  "bezahlt": _anzahl("members/", "status:paid"), "geschenkt": _anzahl("members/", "status:comped")}
+    newsletter = []
+    for n in api("GET", "newsletters/", {"limit": "all", "include": "count.members,count.active_members,count.posts"})["newsletters"]:
+        c = n.get("count") or {}
+        newsletter.append({"slug": n["slug"], "name": n["name"], "status": n["status"],
+                           "abos": c.get("members"), "abos_aktiv": c.get("active_members"), "ausgaben": c.get("posts")})
+    versand = []
+    for p in api("GET", "posts/", {"limit": "all", "filter": "status:[published,sent]", "formats": "mobiledoc",
+                                   "include": "email,count.clicks", "order": "published_at desc"})["posts"]:
+        e = p.get("email")
+        if not e:
+            continue
+        zugestellt = e.get("delivered_count") or e.get("email_count")
+        klicks = (p.get("count") or {}).get("clicks")
+        versand.append({"datum": (e.get("submitted_at") or "")[:10], "slug": p["slug"], "titel": p["title"],
+                        "empfaenger": e.get("email_count"), "zugestellt": e.get("delivered_count"),
+                        "fehlgeschlagen": e.get("failed_count"), "geoeffnet": e.get("opened_count"),
+                        "oeffnungsrate_prozent": _quote(e.get("opened_count"), zugestellt),
+                        "klicker": klicks, "klickrate_prozent": _quote(klicks, zugestellt),
+                        "oeffnungen_gemessen": e.get("track_opens"), "klicks_gemessen": e.get("track_clicks")})
+    beitraege = {s_: _anzahl("posts/", f"status:{s_}") for s_ in ("published", "sent", "scheduled", "draft")}
+    beitraege["gesamt"] = _anzahl("posts/")
+    print(json.dumps({"stand": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+                      "mitglieder": mitglieder, "newsletter": newsletter, "beitraege": beitraege,
+                      "versand": versand,
+                      "hinweis": "Öffnungsrate = geöffnet / zugestellt; Klickrate = Mitglieder mit mindestens einem Klick "
+                                 "(Ghost count.clicks) / zugestellt. Öffnungen sind wegen Apple Mail Privacy Protection "
+                                 "nur ein Näherungswert."},
+                     ensure_ascii=False, indent=2))
+
 # ---------- CLI ----------
 
 def main(argv=None) -> int:
@@ -691,12 +743,15 @@ def main(argv=None) -> int:
     s = sub.add_parser("referenz"); s.add_argument("--auch", nargs="*", help="zusätzliche Slugs (z. B. Vorlagen-Entwürfe)")
     s.set_defaults(fn=cmd_referenz)
     s = sub.add_parser("freigabe"); s.add_argument("ref"); s.add_argument("--art", required=True, choices=["beitrag", "newsletter", "titelbild"])
-    s.add_argument("--zitat", required=True); s.set_defaults(fn=cmd_freigabe)
+    s.add_argument("--zitat", required=True)
+    s.add_argument("--quelle", help='Woher die Freigabe stammt, z. B. "Head of KMI, Grok-Bot-Chat 20.11.2026 18:08"')
+    s.set_defaults(fn=cmd_freigabe)
     s = sub.add_parser("publish"); s.add_argument("ref"); s.add_argument("--zeitpunkt"); s.set_defaults(fn=cmd_publish)
     s = sub.add_parser("newsletter"); s.add_argument("ref"); s.add_argument("--newsletter")
     s.add_argument("--zeitpunkt", required=True); s.set_defaults(fn=cmd_newsletter)
     sub.add_parser("abarbeiten").set_defaults(fn=cmd_abarbeiten)
     s = sub.add_parser("testmail"); s.add_argument("ordner"); s.set_defaults(fn=cmd_testmail)
+    sub.add_parser("kennzahlen").set_defaults(fn=cmd_kennzahlen)
     a = ap.parse_args(argv)
     try:
         a.fn(a)

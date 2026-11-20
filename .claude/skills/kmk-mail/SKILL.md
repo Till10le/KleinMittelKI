@@ -5,6 +5,11 @@ description: Wie die KMK-Redaktion per Gmail mit Till spricht – Redaktionsbrie
 
 # Mail mit Till
 
+> **Seit 20.11.2026 gilt vorrangig:** Mails an Till nur noch bei **PROBLEM** (`docs/lauf.md` Schritt 5). Briefing, „Vorschau bereit“,
+> Newsletter-Begleitzettel und Bestätigungen gehen **nicht** mehr per Mail, sondern in den Tagesbericht (Abschnitt „Für Head of KMI“) –
+> in den Formaten unten. Head of KMI (Grok Bot) legt sie Till vor und gibt seine Freigaben wörtlich mit Zeitstempel in einer
+> Claude-Sitzung weiter. Antworten, Ideen- und Recherche-Mails von Till werden weiter gelesen und ausgewertet wie unten beschrieben.
+
 Till entscheidet per Mail. Er bekommt **donnerstags** das Redaktionsbriefing mit neuen Themen, eine kurze
 „Vorschau bereit“-Mail, sobald ein Entwurf fertig ist, und **sonntags** den Newsletter-Vorschlag für Dienstag.
 Der **Redaktions-Lauf** (`docs/lauf.md`) schickt und liest Mails – höchstens eine neue Mail pro Lauf, die Teile unten sind Abschnitte darin (Gmail-Connector, Konto `till.zehnle@gmail.com`). Absender und Empfänger
