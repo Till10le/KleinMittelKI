@@ -1,0 +1,46 @@
+# Aufgaben
+
+Stand: 20.11.2026. Bereiche: Audience · SEO · Content · Distribution · Brand · Analytics · Ops.
+Verantwortlich: HoKMI = Head of KMI, Claude = Redaktion, Till = Freigabe/Entscheidung.
+Status: geplant · vorbereitet · umgesetzt · geprüft (Definition in `README.md`). Neue Aufgaben unten anhängen, IDs nie wiederverwenden.
+
+## Heute erledigt (20.11.2026)
+
+| ID | Bereich | Aufgabe | Verantw. | Status | Datum | Ergebnis / Beleg |
+|---|---|---|---|---|---|---|
+| OPS-001 | Ops | Netzwerkzugriff der Claude-Umgebung „KMK-Ghost“ auf „Vollständig“ gestellt (vorher nur Ghost- und Blog-Domains) | HoKMI | umgesetzt | 20.11. | claude.ai bestätigte das Speichern. **Wirkung ungeprüft**, Prüfung siehe OPS-005 |
+| OPS-002 | Ops | Werktags-Check-Routine eingerichtet (Mo–Fr gegen 9:00, Start Mo 23.11.); meldet nur Themenvorschläge, Vorschau-Links oder Probleme | HoKMI | umgesetzt | 20.11. | Routine angelegt; erster Lauf steht aus |
+| OPS-003 | Ops | Aufgaben- und Ergebnissystem `management/` angelegt | HoKMI | umgesetzt | 20.11. | dieser Ordner (Commit „management: Aufgaben- und Ergebnissystem (Head of KMI)“) |
+| ANA-001 | Analytics | Bestandsaufnahme: Repo, Freigabe-Mechanik, Zugänge, öffentlicher SEO-Check (22 Beiträge, Sitemap, Meta, Schema) | HoKMI | umgesetzt | 20.11. | Werte in `kennzahlen.md`, Schwächen unten als SEO-001 … SEO-006 |
+
+## Offene Punkte aus den Berichten
+
+| ID | Bereich | Aufgabe | Verantw. | Status | Datum | Ergebnis / Beleg |
+|---|---|---|---|---|---|---|
+| OPS-005 | Ops | Netzzugang verifizieren: Erster Lauf nach der Umstellung (So 22.11. 7:47) muss `curl https://www.zew.de/` ohne 403 schaffen; im Tagesbericht festhalten. Bleibt 403: Domain-Liste statt „Vollständig“ prüfen | Claude (Lauf), HoKMI (Kontrolle Mo 23.11.) | geplant | 20.11. | bisher: `curl: (56) CONNECT tunnel failed, response 403` (Bericht 20.11. 7:47) |
+| OPS-006 | Ops | Ghost-Testmail scheitert seit 27.10. (`email_previews` liefert Admin-HTML statt Daten, Ursache offen; Till: nur Zusatz, Vorschau-Link reicht) | Claude | geplant | 27.10. | `docs/routinen.md` Stand 02.11.; kein Fix bekannt. Zuerst prüfen, ob es mit der Netz-Umstellung zusammenhängt (ungeprüfte Vermutung) |
+| OPS-007 | Ops | Übersicht/Regeln nachziehen (Wochenbericht KW46, Punkte 2–5 und 7): „N stopp“ im Spickzettel; „einziger Arbeitskanal“ stimmt nicht (Chat-Freigaben kamen vor); Abschnitt „Noch offen“ (Briefing 5.11.); `routinen.md` 8:20 statt ~8:30 und `kmk-newsletter` „Dienstag 7 Uhr“; `routinen.md` zur Netz-Lage | Claude | geplant | 15.11. | Till hat auf Frage F2 (Mail 08.11.) nicht geantwortet; Änderungen betreffen nur interne Doku und `docs/uebersicht.html` |
+| OPS-008 | Ops | Neu in KW46: Steht im letzten Bericht ein PROBLEM, stuft `vorcheck.py` jeden Folgelauf als `voll` ein (kostet Kontingent). `lauf.md` regelt das nicht | Claude | geplant | 15.11. | Wochenbericht KW46, Abschnitt „Übersicht prüfen“, Punkt 3 |
+| OPS-009 | Ops | Wöchentlicher Managementbericht an Till (Ergebnisse, erledigte Aufgaben, Experimente, Erkenntnisse, Entscheidungen). Vorschlag: freitags, erster Bericht Fr 27.11. | HoKMI | geplant | 20.11. | – |
+| OPS-010 | Ops | Entscheidung für Till: Wie kommen Chat-Freigaben an Head of KMI in den Lauf? Vorschlag: Freigaben bleiben Mail-Antwort oder Claude-Sitzung (Status quo); Themenwahl per Chat dürfte Head of KMI als Mail-Antwortentwurf an Till zurückspielen. Selbst eintragen in `freigaben.jsonl` darf Head of KMI nicht | Till | geplant | 20.11. | `CLAUDE.md` Regel 1; `tools/ghost.py freigabe` ist nur für Claude-Sitzungen mit Tills Anweisung vorgesehen |
+| CON-001 | Content | Beitrag A `ki-recherche-assistent-selbstversuch`: Review mit Till seit 03.11. offen, für Di 24.11. vorgesehen, noch keine Freigabe | Till | geplant | 03.11. | Fahrplan Zeile Di 24.11. `wartet-auf-till`; `entscheidungen.md` 02.11. |
+| CON-002 | Content | Themenwahl für Di 24.11. / Do 26.11. (Vorrat: nur 1 von 4 Terminen belegt). Kandidaten ohne eigenen Test von Till: `eu-produkthaftung-software-ki` (gilt ab 09.12.2026), `ki-suche-falsche-aussagen-ueber-betrieb`, ZEW-Befragung (noch ungeprüft), `ki-kompetenz-pflicht-mitarbeiter` | Till (wählt), Claude (frischt Quellen auf) | vorbereitet | 20.11. | Auswahlkarte an Till offen; Quellen im Board stammen vom Oktober |
+| CON-003 | Content | Update-Vermerk im Beitrag vom 08.10. prüfen: „Faktor 100“, aktuelle Preisliste ergibt 80 | Claude (Prüfung), Till (Freigabe der Änderung) | geplant | 10.11. | Hinweis im Wochenbericht KW46; Änderung an veröffentlichtem Inhalt braucht Freigabe |
+
+## SEO, Wachstum, Distribution (Vorschläge von Head of KMI, alle „geplant“)
+
+Änderungen an veröffentlichten Inhalten oder Seiteneinstellungen gehen erst nach Tills Freigabe in Ghost.
+
+| ID | Bereich | Aufgabe | Verantw. | Status | Datum | Ergebnis / Beleg |
+|---|---|---|---|---|---|---|
+| SEO-001 | SEO | **Search Console für kleinmittelki.de einrichten** und Sitemap einreichen. Heute gibt es keine Daten: Das verbundene Konto sieht nur `sc-domain:tributoo.com` (ohne Verifizierung). Verifizierung (DNS oder Meta-Tag) macht Till oder Ghost-Code-Injection nach Freigabe | HoKMI (Vorbereitung), Till (Verifizierung) | geplant | 20.11. | `list_sites` am 20.11. |
+| SEO-002 | SEO | **Titel kürzen:** 9 von 22 Beiträgen haben einen Seitentitel über 60 Zeichen (bis 104). Nur das Ghost-Feld „Meta-Titel“ ändern, Überschrift bleibt | Claude (Vorschlagsliste), Till (Freigabe) | geplant | 20.11. | Liste: modellwahl-kanonen-auf-spatzen 80, iab-betriebe… 104, ki-ergebnisse-pruefen-leitfaden 78, nicht-jedes-problem… 70, eu-eurobarometer… 73, olg-hamm… 81, wenn-der-meister… 66, chatgpt-claude-gemini… 77, wenn-azubis… 64 |
+| SEO-003 | SEO | **Interne Verlinkung:** 6 von 22 Beiträgen verlinken im Text auf keinen anderen Beitrag (ki-agenten…, wenn-der-meister…, chatgpt-claude-gemini…, wenn-azubis…, protokoll-per-ki…, schatten-ki…); der Rest meist nur auf einen. Je 2–3 Links auf thematisch nahe Beiträge; neue Beiträge verlinken auf Vorgänger | Claude (Vorschlag), Till (Freigabe) | geplant | 20.11. | Messung am 20.11. aus dem Artikel-HTML (Link-Bereich per Muster erkannt, vor Umsetzung gegenzuprüfen) |
+| SEO-004 | SEO | **Seiten ohne Suchwert:** `/willkommen/` ohne Meta-Beschreibung und in der Sitemap; Tag-Seiten (`/tag/…`, 6) neben den Rubrikseiten (`/wissen/…`, `/aktuell/…`) doppeln Themenseiten, ohne eigenes Vorschaubild, Beschreibung 83–99 Zeichen. Vorschlag: `/willkommen/` auf noindex, Tag-Seiten auf noindex oder gleiche Beschreibung | Till (Freigabe), Claude (Umsetzung) | geplant | 20.11. | Sitemap und Meta-Check 20.11. |
+| SEO-005 | SEO | **Autor-Signal:** Strukturierte Daten nennen Till als Autor, aber `sameAs` ist leer. LinkedIn-Profil (und ggf. weitere) in Ghost-Autorprofil eintragen. Till nennt die URL | Till (URL, Freigabe), Claude | geplant | 20.11. | Article-JSON-LD, 20.11. |
+| SEO-006 | Audience | **Newsletter-Landingpage** `/newsletter/` (heute 404; der Menüpunkt springt zu `/#newsletter`). Eigene Adresse zum Teilen in LinkedIn und Mails. Neue Seite: Freigabe nötig | HoKMI (Entwurf), Till (Freigabe) | geplant | 20.11. | `curl` 404 am 20.11. |
+| SEO-007 | SEO | Slug-Regel für neue Beiträge: höchstens 5–6 Wörter, Hauptbegriff vorn. Fünf Altbeiträge haben Slugs von 53–75 Zeichen; **nicht ändern** (URL-Wechsel nur mit Weiterleitung) | Claude (Regel in `kmk-themen`/`kmk-formate`) | geplant | 20.11. | – |
+| AUD-001 | Audience | **Kennzahlen lesbar machen:** `tools/ghost.py` bekommt einen reinen Lesebefehl (nur GET) für Mitglieder (gesamt, frei/bezahlt), Newsletter-Abos, Öffnungsrate und Klickrate je Versand, Beitragszahl; Ausgabe nach `management/kennzahlen.md`. Admin-Schlüssel liegt nur in „KMK-Ghost“ | Claude | geplant | 20.11. | Wochenbericht KW46: „Öffnungsraten, Abonnenten, Aufrufe, Klicks nicht verfügbar“ |
+| DIS-001 | Distribution | LinkedIn als Hauptkanal: Pro Beitrag ein LinkedIn-Post-Entwurf (Skill `kmk-social`) mit Link, 1 Kernzahl, 1 Frage an Geschäftsführer; Till bekommt ihn mit dem Vorschau-Link zur Freigabe. Gemessen wird Klicks aus LinkedIn (UTM-Parameter) | Claude (Entwurf), Till (Freigabe) | geplant | 20.11. | – |
+| CON-004 | Content | Themen nach Suchabsicht priorisieren: 8 von 22 Beiträgen sind kurze Nachrichten (300–500 Wörter, Rubrik Entwicklungen/Studien). Mehr zeitlose Leitfäden zu Fragen, die Geschäftsführer googeln (z. B. Kosten, Datenschutz, Pflichten). Erst nach SEO-001 mit echten Suchanfragen belegen | HoKMI | geplant | 20.11. | Rubrikzahlen: Entwicklungen 7, Studien & Zahlen 5, Leitfäden 4, KI in der Praxis 3, Grundlagen 2, Lageberichte 1 |
+| ANA-002 | Analytics | `kennzahlen.md` wöchentlich fortschreiben (freitags, vor dem Managementbericht) | HoKMI | geplant | 20.11. | – |
