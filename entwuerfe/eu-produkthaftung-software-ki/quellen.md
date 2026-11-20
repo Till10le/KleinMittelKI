@@ -260,3 +260,34 @@ Artikel 1 = neues Produkthaftungsgesetz (ProdHaftG), wörtlich bzw. eng am Wortl
    ausdrücklich → im Beitrag als offene Auslegungsfrage.
 4. Reine B2B-Bürosoftware: Schäden an beruflich genutzten Daten und Sachen sind nach § 1 nicht erfasst; Personenschäden schon.
    Vertragliche Haftung bleibt unberührt (§ 21 Abs. 2).
+
+---
+
+## Nachtrag 2026-11-20, Runde 2 (Autor): KMU-Schwelle für Art. 12 Abs. 2
+
+- **Empfehlung der Kommission 2003/361/EG vom 6. Mai 2003** betreffend die Definition der Kleinstunternehmen sowie der kleinen
+  und mittleren Unternehmen, ABl. L 124 vom 20.5.2003, S. 36. Amtliches PDF (DE) gelesen über das Amt für Veröffentlichungen:
+  http://publications.europa.eu/resource/celex/32003H0361 (Accept: application/pdf) → cellar 6ca8d655-126b-4a42-ada4-e9058fa45155
+  (abgerufen 20.11.2026). Im Beitrag verlinkt: https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32003H0361
+- Anhang, **Artikel 2 Abs. 2**, wörtlich: „Innerhalb der Kategorie der KMU wird ein kleines Unternehmen als ein Unternehmen definiert,
+  das weniger als 50 Personen beschäftigt und dessen Jahresumsatz bzw. Jahresbilanz 10 Mio. EUR nicht übersteigt.“
+- Anhang, **Artikel 2 Abs. 3**, wörtlich: „… ein Kleinstunternehmen als ein Unternehmen definiert, das weniger als 10 Personen
+  beschäftigt und dessen Jahresumsatz bzw. Jahresbilanz 2 Mio. EUR nicht überschreitet.“
+- Anhang, Art. 2 Abs. 1: KMU insgesamt „weniger als 250 Personen“, Jahresumsatz höchstens 50 Mio. EUR oder Jahresbilanzsumme
+  höchstens 43 Mio. EUR (nur zur Einordnung, im Beitrag nicht verwendet).
+- Anhang, Art. 5: Mitarbeiterzahl = Jahresarbeitseinheiten (JAE). Anhang, Art. 4 Abs. 2: Statuswechsel erst nach Über-/Unterschreiten
+  in zwei aufeinanderfolgenden Geschäftsjahren (nur zur Einordnung).
+- **Richtlinie (EU) 2024/2853, Art. 12 Abs. 2** (siehe Abschnitt C oben): Größe wird beurteilt „zusammen mit gegebenenfalls allen
+  Partnerunternehmen … und verbundenen Unternehmen“, und zwar „zum Zeitpunkt des Inverkehrbringens dieser Softwarekomponente“;
+  zusätzlich muss der Verzicht vertraglich vereinbart sein.
+- Deutsches Gesetz (BGBl. 2026 I Nr. 321): **keine eigene Vorschrift** zum Rückgriffsverzicht; nur § 15 Satz 2 („soweit nichts
+  anderes bestimmt ist“). Im Beitrag: „Regel der Richtlinie, das deutsche Gesetz hat dazu keine eigene Vorschrift.“
+- Hinweisquelle (nicht zitiert): KMU-Definition der EU-Kommission,
+  https://single-market-economy.ec.europa.eu/smes/sme-fundamentals/sme-definition_de (vom Prüfer genannt).
+
+### Altes Gesetz: Fundstelle und Wortlaut § 10 (für die Präzisierung im Beitrag)
+- Fundstelle: Produkthaftungsgesetz vom 15. Dezember 1989 (BGBl. I S. 2198), zuletzt geändert durch Art. 5 des Gesetzes vom
+  17. Juli 2017 (BGBl. I S. 2421) – wörtlich so in § 23 ProdHaftG neu (BGBl. 2026 I Nr. 321) zitiert.
+- § 10 Abs. 1 alt, wörtlich: „Sind Personenschäden durch ein Produkt oder gleiche Produkte mit demselben Fehler verursacht worden,
+  so haftet der Ersatzpflichtige nur bis zu einem Höchstbetrag von 85 Millionen Euro.“ → Gesamt-Höchstbetrag je Serienfehler,
+  nicht je Geschädigtem.
