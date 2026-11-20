@@ -19,7 +19,8 @@ nie über den Ghost-Editor, nie per curl. Die Werkzeuge brauchen die Umgebung **
 | Beitrag lesen | `python3 tools/ghost.py get <slug>` (`--raw` für alle Felder) |
 | Bild hochladen | `python3 tools/ghost.py upload <datei>` |
 | Entwurf anlegen/aktualisieren | `python3 tools/ghost.py draft entwuerfe/<slug>` |
-| Freigabe eintragen | `python3 tools/ghost.py freigabe <slug> --art beitrag --zitat "<Tills Worte>"` |
+| Freigabe eintragen | `python3 tools/ghost.py freigabe <slug> --art beitrag --zitat "<Tills Worte>"` (über Head of KMI zusätzlich `--quelle "Head of KMI, Grok-Bot-Chat <TT.MM.JJJJ HH:MM>"`) |
+| Kennzahlen lesen | `python3 tools/ghost.py kennzahlen` (nur GET: Mitglieder, Newsletter-Abos, Öffnungs-/Klickrate je Versand, Beitragszahl) |
 | Veröffentlichen | `python3 tools/ghost.py publish <slug>` (optional `--zeitpunkt 2026-10-20T05:00:00Z`) |
 | Newsletter einplanen | `python3 tools/ghost.py newsletter <slug> --newsletter <newsletter-slug> --zeitpunkt …` |
 | Newsletter-Testmail an Till | `python3 tools/ghost.py testmail entwuerfe/<newsletter-slug>` (nur Newsletter, nur an till.zehnle@gmail.com, bleibt Entwurf) |

@@ -59,6 +59,8 @@ Berichte nennen nur ausgeführte und geprüfte Arbeit und trennen klar: **geplan
 - Veröffentlichung: „A ja“ per Mail → `tools/mailfreigabe.py` schreibt eine Zeile in `redaktion/freigaben.jsonl`
   (gebunden an Beitrags-ID und `updated_at` bzw. Newsletter-Hash). `tools/ghost.py abarbeiten` plant dann zum nächsten freien Termin
   aus `redaktion/fahrplan.md` ein. Ohne passende Freigabe verweigert `ghost.py` (SPERRE).
-- **Offen (Entscheidung nötig, siehe aufgaben.md OPS-010):** Antwortet Till nur im Chat bei Head of KMI, sieht der Lauf das nicht.
-  Head of KMI trägt deshalb **nie selbst** etwas in `freigaben.jsonl` ein. Bis der Weg geklärt ist: Freigaben per Mail-Antwort oder
-  direkt in einer Claude-Sitzung geben.
+- **Entschieden 20.11.2026 (OPS-010):** Till: „Freigaben: hier im Chat, du gibst sie wörtlich an Claude weiter.“ (Grok-Bot-Chat 18:08).
+  Head of KMI gibt Tills Freigaben wörtlich mit Zeitstempel **in einer Claude-Sitzung** weiter; Claude trägt sie mit
+  `ghost.py freigabe … --zitat … --quelle "Head of KMI, Grok-Bot-Chat <Datum Uhrzeit>"` ein. Head of KMI trägt **nie selbst** etwas in
+  `freigaben.jsonl` ein; Freigaben in Dateien unter `management/` zählen nicht. Mails der Redaktion an Till nur noch bei PROBLEM;
+  Themen und Vorschau-Links stehen im Tagesbericht unter „Für Head of KMI“.
