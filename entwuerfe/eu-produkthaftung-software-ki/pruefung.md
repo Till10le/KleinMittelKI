@@ -110,3 +110,39 @@ Drei Mängel verhindern trotzdem die Freigabe. Zwei davon sind schnell behoben (
 Interne Links: alle drei Ziele sind veröffentlicht, die URLs stimmen mit `redaktion/blog-index.json` überein
 (chatgpt-claude-gemini-ki-modelle-erklaert, olg-hamm-chatbot-haftung, ai-act-ki-bilder-kennzeichnen). Die Aussage zum
 OLG Hamm (Mai 2026, irreführende geschäftliche Handlung) deckt sich mit dem veröffentlichten Beitrag (Urteil 12.05.2026).
+
+---
+
+## Runde 2 – 20.11.2026: BESTANDEN
+
+Geprüft wurden nur die geänderten Stellen und die neuen Belege (Stand nach Commit ebdfa25). Den Fahrplan regelt der
+Chefredakteur, er ist nicht Teil dieser Prüfung.
+
+**Gegen die Originale gelesen**
+- Empfehlung 2003/361/EG: Amtliches PDF über publications.europa.eu, ABl. L 124/36 vom 20.5.2003, „vom 6. Mai 2003“.
+  Anhang Art. 2 Abs. 2 und 3 stimmen wörtlich mit `quellen.md` überein. Kleines Unternehmen: weniger als 50 Personen,
+  Jahresumsatz bzw. Jahresbilanz höchstens 10 Mio. EUR. Der Beitragssatz zu Art. 12 Abs. 2 ist korrekt. Dazu gehören auch
+  „Partner- und verbundene Unternehmen mitgerechnet“ (RL Art. 12 Abs. 2 a) und der Hinweis, dass das deutsche Gesetz
+  keine eigene Vorschrift hat.
+- 85 Mio. Euro: Die Formulierung „durch ein Produkt oder gleiche Produkte mit demselben Fehler insgesamt“ entspricht
+  § 10 Abs. 1 alt.
+- BGBl. 1989 I S. 2198: entspricht der Fundstelle in § 23 neu.
+- Gekürzte Sätze zu § 9 Abs. 2, § 16, § 17, § 19, § 20 und Erwägungsgrund 51 stimmen mit dem Wortlaut überein.
+  Die 25-Jahre-Regel ist gestrichen, „grundsätzlich“ trägt das.
+
+**Format, Ton, Technik**
+- Fließtext 1.417 Wörter (vorher rund 1.880). Das liegt bewusst unter dem Langtext-Rahmen, entspricht Tills Kürzungswunsch
+  und ist im INTERN-Absatz begründet. Zwei Grafiken sind begründet, die Entscheidung liegt bei Till.
+- Titel 94 Zeichen, Teaser 141 Zeichen. Durchgehend geduzt. Ich-Form nur im markierten Absatz „Für mich passt …“.
+  Keine Platzhalter, keine CTAs, kein Handel.
+- `python3 tools/lexical.py`: fehlerfrei, 9 H2, 38 Knoten.
+- Vorschaubild angesehen: neuer Titel in drei Zeilen, Kategorie, Logo, Lime-Kante. Titelbild und Grafik sind unverändert
+  (in Runde 1 geprüft).
+
+**Direkt korrigiert**
+1. INTERN: „deshalb muss das Vorschaubild neu gerendert werden“ → „Vorschaubild ist neu gerendert.“ (war veraltet)
+2. Updates: „sieht sie dort ausdrücklich nicht vor“ → „sieht die Richtlinie ausdrücklich nicht vor“ (Bezug eindeutig).
+
+**Hinweis ohne Einfluss auf das Ergebnis**
+- Teaser „… was du vor dem Stichtag prüfen kannst“: Nach dem 9.12. wirkt das auf der Übersichtskarte veraltet. Bei
+  Gelegenheit auf „… was du jetzt prüfen kannst“ ändern, auch nachträglich möglich.

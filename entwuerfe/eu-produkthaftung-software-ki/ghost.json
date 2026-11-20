@@ -1,0 +1,20 @@
+{
+  "bilder": {
+    "kmk-produkthaftung-g1.png": {
+      "hash": "f778657080d15c18c528a59a76cdb2ad0e679bd454a2a387a12856f32229191c",
+      "url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/11/kmk-produkthaftung-g1.png"
+    }
+  },
+  "vorschaubild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/11/vorschaubild-1.png",
+  "vorschaubild_hash": "30e984ce68fd2dca2c9fab10850102834e561821e4f8e8a03da91a04459df9d0",
+  "titelbild_url": "https://storage.ghost.io/c/21/ce/21ce7042-8409-412c-8993-487e5282e70b/content/images/2026/11/titel-eu-produkthaftung-software-ki.jpg",
+  "titelbild_hash": "0bfe3ed139de58825a113dfcc7a0d26972d45bbd55c89548d3324274fc41d76a",
+  "id": "6b00856644c3dd0001dc17be",
+  "uuid": "2f923142-bc28-4375-925a-a2465525f725",
+  "slug": "eu-produkthaftung-software-ki",
+  "titel": "Software gilt ab 9. Dezember als Produkt: Was die neue Produkthaftung für deinen Betrieb heißt",
+  "status": "draft",
+  "updated_at": "2026-11-20T17:37:42.000Z",
+  "vorschau": "https://www.kleinmittelki.de/p/2f923142-bc28-4375-925a-a2465525f725/",
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6b00856644c3dd0001dc17be"
+}
