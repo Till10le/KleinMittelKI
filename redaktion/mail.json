@@ -389,6 +389,21 @@
           "frage": "Quellen-Domains in Umgebung KMK-Ghost freigeben"
         }
       ]
+    },
+    {
+      "art": "redaktion",
+      "betreff": "KMK · Fr 20.11. · Netz geht wieder, 3 Entwürfe von außen",
+      "datum": "2026-11-20",
+      "thread_id": "1a1fa13bc47a6b17",
+      "eintraege": {
+        "A": "ki-recherche-assistent-selbstversuch"
+      },
+      "fragen_offen": [
+        {
+          "nr": "übernehmen",
+          "frage": "Drei Ghost-Entwürfe von außerhalb der Redaktion übernehmen? (preisrunde-mit-ki-praxistest, pwc-mittelstand-ki-controlling, eu-produkthaftung-software-ki)"
+        }
+      ]
     }
   ],
   "eigene_ids": [
@@ -426,7 +441,8 @@
     "1a1d3aceb475d25b",
     "1a1ddff14d4639c7",
     "1a1e57a3f8cff692",
-    "1a1f29244fb8aa3f"
+    "1a1f29244fb8aa3f",
+    "1a1fa13bc47a6b17"
   ],
   "verarbeitet": [
     "1a153a1b83bc9cc0",
