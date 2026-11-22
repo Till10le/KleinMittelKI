@@ -200,6 +200,49 @@ bundesnetzagentur.de, mittelstand-digital.de, datenschutzkonferenz-online.de.
   lesbar machen“ – Nähe zu `ki-suche-falsche-aussagen-ueber-betrieb` (Board) und Selbsttest 20.09., Google-Doku (developers.google.com) nicht lesbar;
   erst nach Lesen der Google-Hinweise als Ergänzung zum Selbsttest prüfen.
 
+### Ideen-Agent, Sonntags-Lauf 2026-11-22
+
+Monatsrhythmus-Check: Di 24.11. (Woche 4) → offen, Till wählt zwischen seinen eigenen Entwürfen `pwc-mittelstand-ki-controlling` und
+`preisrunde-mit-ki-praxistest` (Fahrplan); `eu-produkthaftung-software-ki` von Till abgelehnt („0,0 Mehrwert für KMUs“, Chat 20.11. 19:06 laut
+Fahrplan; in `entscheidungen.md` steht bisher nur die Themenwahl durch Head of KMI, die Ablehnung fehlt dort noch → Chefredakteur nachtragen).
+Di 01.12. (Woche 1) → `ki-recherche-assistent-selbstversuch` (Review offen) und `status-quo-dezember-2026` (vorgeschlagen), Rhythmus-Frage seit 25.10. offen.
+Puffer: weiter 0 fertige Wissensartikel (vierter Lauf in Folge). Do 26.11. und Do 03.12. frei.
+**Lehre aus der Ablehnung:** Regelungsthemen ohne konkrete Handlung im Alltag eines 20–150-Personen-Betriebs fallen bei Till durch. Freigegeben hat er
+bisher, was ein Betrieb morgen selbst anwenden kann (Prüf-Leitfaden, Modellwahl) und eigene Selbstversuche. Deshalb in diesem Lauf keine Rechts-/Pflicht-Ideen.
+Hinweis an den Chefredakteur: `ki-kompetenz-pflicht-mitarbeiter` (Board, Pflicht aus dem AI Act) läuft Gefahr, dasselbe Urteil zu bekommen – vor dem
+Vorlegen auf die Prüfliste („Was tust du diese Woche?“) zuspitzen oder zurückstellen. Außerdem: Tills Entwurf `preisrunde-mit-ki-praxistest` handelt laut Teaser
+von einem „Händler“ – Regel 4 (keine Themen aus dem Handel) vor dem Vorlegen ansprechen.
+Ins Board als `vorgeschlagen`: `monatszahlen-mit-ki-pruefen-praxistest`, `ki-zugaenge-im-team-verteilen`.
+Netz in diesem Lauf: lesbar platform.claude.com, claude.com, support.claude.com.
+
+- [ ] **monatszahlen-mit-ki-pruefen-praxistest** – im Board (Details dort).
+- [ ] **ki-zugaenge-im-team-verteilen** – im Board (Details dort).
+- [ ] **arbeitsanweisung-aus-stichpunkten-praxistest** – „Aus Stichpunkten eine Arbeitsanweisung: Was ergänzt die KI, das nie jemand gesagt hat?“
+  - Rubrik/Format: Praxistests / KI in der Praxis, Praxistest (700–1.200 Wörter).
+  - Für wen: Meister, Schichtleiter und Inhaber in Produktion, Werkstatt und Handwerk mit 20–150 Beschäftigten, die Abläufe für neue Leute oder
+    Aushilfen schriftlich festhalten wollen (Maschine rüsten, Fahrzeug übergeben, Material annehmen) und dafür keine Zeit haben.
+  - Testaufbau (unter einer Stunde): Redaktion schreibt zwei fiktive Stichpunktlisten zu harmlosen Abläufen (z. B. „Werkstattwagen am Abend aufräumen und
+    Leihwerkzeug zurückbuchen“, „Lieferung annehmen und Lieferschein prüfen“) mit absichtlich fehlenden Schritten und einer Soll-Liste. Till lässt ChatGPT oder
+    Claude daraus je eine Arbeitsanweisung machen (ca. 15 Min.), einmal mit dem Zusatz „Ergänze nichts, frag nach, wenn etwas fehlt“. Zählbogen (ca. 25 Min.):
+    übernommene Schritte, ergänzte Schritte (sinnvoll / erfunden), gestellte Rückfragen, Unterschied mit und ohne Zusatz. Keine Sicherheits- oder
+    Gefahrstoffabläufe – dort darf eine KI-Ergänzung nicht ungeprüft stehen; das als Grenze offen nennen.
+  - Leser kann danach: Stichpunkte vom Meister in einen Entwurf verwandeln lassen und wissen, dass jeder ergänzte Schritt vom Fachmann gegengelesen wird.
+  - Abgrenzung: „Wenn der Meister in Rente geht“ (Nachricht, Wissensmanagement allgemein), Prüf-Leitfaden (allgemein); hier ein konkreter Schreibauftrag.
+  - Quelle: keine externe nötig. Braucht von Till: Ja/Nein, ca. 40 Min., Zählbogen, Fazit. Relevanz vorläufig 8/10 (Betroffenheit 2, Handlung 2, Quelle 1,
+    Neuheit 2, Passung 1 – Praxistest-Vorrat ist groß, deshalb nicht ins Board).
+- [ ] **update-modelle-beitrag-preisfaktor** – Update-Vorschlag für „ChatGPT ist nicht das KI-Modell“ (08.10.2026), kein neuer Beitrag.
+  - Hinweis Prüfer/Autor 10.11.: Der Beitrag nennt laut Tagesbericht „Faktor 100“ zwischen größtem und kleinstem Claude-Modell (Wortlaut im Beitrag in diesem
+    Lauf **nicht** nachgelesen; Blog-Index enthält die Zahl nicht).
+  - Am Original gelesen 22.11.2026 (https://platform.claude.com/docs/en/about-claude/pricing, „All prices are in USD“, Seite ohne Datum): Claude Fable 5.2
+    8 $ Eingabe / 40 $ Ausgabe je Million Tokens, Claude Opus 5.5 4 $ / 20 $, Claude Sonnet 5.5 2 $ / 10 $, Claude Haiku 5.5 (Prompts bis 100.000 Tokens)
+    0,10 $ / 0,50 $. Größtes allgemein verfügbares zu kleinstem Modell damit Faktor 80 (Eingabe und Ausgabe), Opus 5.5 zu Haiku 5.5 Faktor 40.
+    Achtung: Fable 5.1 und Fable 5 stehen noch mit 10 $ / 50 $ in der Liste (Faktor 100 zu Haiku 5.5) – möglicherweise war das der Stand zum 08.10.
+  - Vorschlag: Satz um „Stand: November 2026“ ergänzen bzw. auf „rund 80-fach (Stand 22.11.2026)“ ändern, alten Wert als überholt markieren statt löschen.
+    Vorher Beitrag in Ghost lesen und klären, welches Modellpaar gemeint war. Braucht von Till: Ja zur Änderung am veröffentlichten Beitrag (Freigabe-Pflicht).
+- Verworfen in diesem Lauf (nicht vorgeschlagen): „Sammelpostfach info@ von KI vorsortieren lassen“ – zu nah an `kundenanfragen-antworten-praxistest`
+  (frage-an-till); als Variante dort einbringen, falls Till den Test macht. „Einarbeitung neuer Mitarbeiter mit KI-Wissensbasis“ – Nähe zu „Wenn der Meister in
+  Rente geht“ und `ki-vorlagen-fuers-team`. Jede Idee zu Pflichten/Regulierung (Produkthaftung, AI-Act-Folgethemen) – nach Tills Ablehnung vom 20.11. vorerst nicht.
+
 ## Erledigt
 
 - [x] 2026-10-08 Azubis fragen die KI – wird dein Betrieb empfohlen?
