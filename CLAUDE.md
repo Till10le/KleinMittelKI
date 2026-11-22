@@ -68,7 +68,7 @@ Geschäftsführer-Bot, Mandat seit 20.11.2026, `management/README.md`) steuert, 
 ## Werkzeuge (`tools/`)
 
 - `tools/ghost.py` – Ghost Admin API: lesen, Entwürfe anlegen/ändern, Bilder hochladen, Index bauen,
-  Kennzahlen lesen (`kennzahlen`, nur GET), veröffentlichen nur mit Freigabe. Braucht `GHOST_URL` und `GHOST_ADMIN_API_KEY` (Umgebung „KMK-Ghost“).
+  Kennzahlen lesen (`kennzahlen`, nur GET), SEO-Paket umsetzen (`seo`, nur freigegebene Punkte), veröffentlichen nur mit Freigabe. Braucht `GHOST_URL` und `GHOST_ADMIN_API_KEY` (Umgebung „KMK-Ghost“).
 - `tools/lexical.py` – macht aus `beitrag.md` Ghosts Editor-Format. Nie im Ghost-Editor tippen.
 - `tools/vorschaubild.py` – Vorschaubild 1200 × 630 im CI (Titel-Kachel, nur zum Teilen).
 - `tools/titelbild.py` – Titelbild 1600 × 1000: Einordnungs-Grafik als Beitragsbild und Übersichts-Kachel, nie mit Titel.

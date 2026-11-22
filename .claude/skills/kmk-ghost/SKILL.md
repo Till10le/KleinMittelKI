@@ -20,6 +20,7 @@ nie über den Ghost-Editor, nie per curl. Die Werkzeuge brauchen die Umgebung **
 | Bild hochladen | `python3 tools/ghost.py upload <datei>` |
 | Entwurf anlegen/aktualisieren | `python3 tools/ghost.py draft entwuerfe/<slug>` |
 | Freigabe eintragen | `python3 tools/ghost.py freigabe <slug> --art beitrag --zitat "<Tills Worte>"` (über Head of KMI zusätzlich `--quelle "Head of KMI, Grok-Bot-Chat <TT.MM.JJJJ HH:MM>"`) |
+| SEO-Paket umsetzen | `python3 tools/ghost.py seo` (Probe, nur lesen) · `seo --ausfuehren` · `seo --live` (Gegenprobe). Freigabe: `ghost.py freigabe management/seo-paket.md --art seo --umfang T1-T9,L1-L6[,S1-S2] [--linkedin URL] --zitat "…" --quelle "…"` |
 | Kennzahlen lesen | `python3 tools/ghost.py kennzahlen` (nur GET: Mitglieder, Newsletter-Abos, Öffnungs-/Klickrate je Versand, Beitragszahl) |
 | Veröffentlichen | `python3 tools/ghost.py publish <slug>` (optional `--zeitpunkt 2026-10-20T05:00:00Z`) |
 | Newsletter einplanen | `python3 tools/ghost.py newsletter <slug> --newsletter <newsletter-slug> --zeitpunkt …` |
@@ -38,6 +39,10 @@ nie über den Ghost-Editor, nie per curl. Die Werkzeuge brauchen die Umgebung **
 - `publish` und `newsletter` laufen nur mit einer Freigabe aus `redaktion/freigaben.jsonl`, die **zum aktuellen Stand**
   des Beitrags passt. Jede Änderung nach der Freigabe macht sie ungültig. Der INTERN-Absatz wird beim Veröffentlichen
   entfernt, `#zur-freigabe` ebenso. Offene Platzhalter (`[TILL: …]`, `{{…}}`) blockieren.
+- `seo` ändert an **veröffentlichten** Beiträgen nur zwei Dinge: das Feld `meta_title` (T…) und Links auf Ankertexte, die
+  wörtlich im zitierten Satz stehen (L…); der Text bleibt zeichengleich (wird nach dem Speichern verglichen). Dazu LinkedIn/Website
+  im Autorprofil (S…) – das verweigert Ghost dem Integrationsschlüssel aber (403), Till trägt es selbst ein. Nur Punkte aus einer
+  Freigabe der Art `seo`, gebunden an den Inhalt dieser Punkte in `management/seo-paket.md`; `abarbeiten` führt sie nicht aus.
 - Beiträge gehen **nie** per E-Mail raus. Nur `newsletter` verschickt, und nur mit Freigabe der Art `newsletter`.
 - Es gibt keinen Löschbefehl. Ein Hook (`tools/sperre.py`) blockiert direkte API-Aufrufe und Änderungen an der Sperre.
 

@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-22T06:50:01+00:00",
-  "anzahl": 40,
+  "stand": "2026-11-22T19:20:17+00:00",
+  "anzahl": 41,
   "beitraege": [
     {
       "id": "6af957b852d1110001b41686",
@@ -436,7 +436,7 @@
       "titel": "KI-Agenten: Was nach dem Chatbot kommt und was KMU davon haben",
       "status": "published",
       "veroeffentlicht": "2026-10-18",
-      "geaendert": "2026-10-18",
+      "geaendert": "2026-11-22",
       "kategorie": "Grundlagen",
       "interne_tags": [
         "#wissen"
@@ -468,9 +468,13 @@
         "https://www.weforum.org/publications/ai-agents-in-action-a-playbook-for-trusted-adoption-authorization-and-scaling/",
         "https://zapier.com/agents"
       ],
-      "interne_links": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/",
+        "https://www.kleinmittelki.de/nicht-jedes-problem-braucht-ki/",
+        "https://www.kleinmittelki.de/olg-hamm-chatbot-haftung/"
+      ],
       "zahlen": [],
-      "woerter": 1977
+      "woerter": 1980
     },
     {
       "id": "6ad39cb5bb342700019d7c6a",
@@ -478,7 +482,7 @@
       "titel": "Wenn der Meister in Rente geht: Was KI im Wissensmanagement wirklich leistet",
       "status": "published",
       "veroeffentlicht": "2026-10-18",
-      "geaendert": "2026-10-18",
+      "geaendert": "2026-11-22",
       "kategorie": "Entwicklungen",
       "interne_tags": [
         "#empfehlung"
@@ -498,9 +502,12 @@
         "https://openai.com/enterprise-privacy/",
         "https://www.handelsblatt.com/unternehmen/industrie/ki-im-wissensmanagement-wie-ki-das-wissen-von-industrieunternehmen-sichert-01/100247981.html"
       ],
-      "interne_links": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-unternehmenszahlen-data-agent/",
+        "https://www.kleinmittelki.de/nicht-jedes-problem-braucht-ki/"
+      ],
       "zahlen": [],
-      "woerter": 459
+      "woerter": 461
     },
     {
       "id": "6ac66183a389f50001809195",
@@ -538,7 +545,7 @@
       "titel": "Wenn Azubis die KI fragen: Wird dein Betrieb empfohlen?",
       "status": "published",
       "veroeffentlicht": "2026-10-08",
-      "geaendert": "2026-10-08",
+      "geaendert": "2026-11-22",
       "kategorie": "Entwicklungen",
       "interne_tags": [
         "#empfehlung"
@@ -555,9 +562,12 @@
       "quellen": [
         "https://www.handwerksblatt.de/betriebsfuehrung/mit-ki-leichter-fachkraefte-fuer-den-handwerksbetrieb-finden"
       ],
-      "interne_links": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/frag-eine-ki-nach-deinem-eigenen-unternehmen-ein-selbsttest-in-20-minuten/",
+        "https://www.kleinmittelki.de/werbung-chatgpt-sponsored-agents/"
+      ],
       "zahlen": [],
-      "woerter": 303
+      "woerter": 304
     },
     {
       "id": "6ac0d93dfdaa30000132ac72",
@@ -565,7 +575,7 @@
       "titel": "ChatGPT ist nicht das KI-Modell. Was hinter ChatGPT, Claude und Gemini steckt",
       "status": "published",
       "veroeffentlicht": "2026-10-08",
-      "geaendert": "2026-10-12",
+      "geaendert": "2026-11-22",
       "kategorie": "Grundlagen",
       "interne_tags": [
         "#wissen"
@@ -607,11 +617,15 @@
         "https://www.anthropic.com/constitution",
         "https://www.microsoft.com/en-us/copilot/blog/2025/09/24/expanding-model-choice-in-microsoft-365-copilot/"
       ],
-      "interne_links": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/iab-betriebe-sehen-keine-ki-anwendung/",
+        "https://www.kleinmittelki.de/ki-ergebnisse-pruefen-leitfaden/",
+        "https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/"
+      ],
       "zahlen": [
         "DeepSeek-V4.1-Flash hat 552 Milliarden Parameter und gehört damit ins Rechenzentrum, nicht auf den Büro-PC."
       ],
-      "woerter": 1919
+      "woerter": 1920
     },
     {
       "id": "6ab0e7dbde9ff00001cac4c9",
@@ -707,7 +721,7 @@
       "titel": "Protokoll per KI: Ein Selbstversuch, zwei Fehler und eine klare Lehre für Betriebe",
       "status": "published",
       "veroeffentlicht": "2026-09-21",
-      "geaendert": "2026-10-05",
+      "geaendert": "2026-11-22",
       "kategorie": "KI in der Praxis",
       "interne_tags": [
         "#notiz"
@@ -724,9 +738,13 @@
       "quellen": [
         "https://noota.io/"
       ],
-      "interne_links": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ki-ergebnisse-pruefen-leitfaden/",
+        "https://www.kleinmittelki.de/powerpoint-mit-ki-im-eigenen-design/",
+        "https://www.kleinmittelki.de/wenn-der-meister-in-rente-geht-was-ki-im-wissensmanagement-wirklich-leistet/"
+      ],
       "zahlen": [],
-      "woerter": 719
+      "woerter": 722
     },
     {
       "id": "6ab0f9c0de9ff00001cac50a",
@@ -784,7 +802,7 @@
       "titel": "Schatten-KI: Deine Mitarbeiter nutzen KI vielleicht längst. Weißt du, wofür?",
       "status": "published",
       "veroeffentlicht": "2026-09-21",
-      "geaendert": "2026-09-22",
+      "geaendert": "2026-11-22",
       "kategorie": "Studien & Zahlen",
       "interne_tags": [
         "#empfehlung"
@@ -801,13 +819,17 @@
       "quellen": [
         "https://www.iwkoeln.de/studien/barbara-engels-andrea-hammermann-schatten-ki-beschaeftigte-sind-schneller-als-ihre-betriebe.html"
       ],
-      "interne_links": [],
+      "interne_links": [
+        "https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/",
+        "https://www.kleinmittelki.de/eu-eurobarometer-ki-unternehmen/",
+        "https://www.kleinmittelki.de/iab-betriebe-sehen-keine-ki-anwendung/"
+      ],
       "zahlen": [
         "Von den 2.793 Befragten, die KI beruflich nutzen, verwenden 29,1 Prozent auch Anwendungen, die ihr Arbeitgeber nicht bereitgestellt hat.",
         "In Betrieben mit weniger als 50 Beschäftigten sind es 33,5 Prozent, in Unternehmen ab 250 Beschäftigten 25,5 Prozent.",
         "Der überraschendste Befund steckt aber weiter hinten: Wo Beschäftigte eine starke Förderung ihrer KI-Kompetenzen durch den Arbeitgeber wahrnehmen, nutzen 44,5 Prozent auch nicht bereitgestellte Tools, ohne wahrgenommene Förderung sind es 21,3 Prozent."
       ],
-      "woerter": 322
+      "woerter": 325
     },
     {
       "id": "6aafa9ae39cfae0001a49c68",
@@ -1008,6 +1030,40 @@
       ],
       "zahlen": [],
       "woerter": 284
+    },
+    {
+      "id": "6b0291f5b547ca0001413a91",
+      "slug": "8-was-die-ki-ueber-deinen-betrieb-erzaehlt",
+      "titel": "#8: Was die KI über deinen Betrieb erzählt",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-11-22",
+      "kategorie": "",
+      "interne_tags": [
+        "#newsletter",
+        "#zur-freigabe"
+      ],
+      "teaser": "Was eine KI über deinen Betrieb sagt, wie du das in 20 Minuten prüfst, eine Zahl zur Suche per KI-Chat und ein Gedanke.",
+      "url": "https://www.kleinmittelki.de/p/78be8b3b-1acd-46b1-9ddf-4f2807ff76fe/",
+      "zwischenueberschriften": [
+        "01 · Aus dem Archiv: Was die KI über deinen Betrieb erzählt",
+        "02 · Eine Zahl, genau gelesen",
+        "03 · Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [
+        "https://www.bitkom.org/Presse/Presseinformation/Internet-Suche-Wandel-Haelfte-nutzt-KI-Chats"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/",
+        "https://www.kleinmittelki.de/frag-eine-ki-nach-deinem-eigenen-unternehmen-ein-selbsttest-in-20-minuten/",
+        "https://www.kleinmittelki.de/wenn-azubis-die-ki-fragen-wird-dein-betrieb-empfohlen/"
+      ],
+      "zahlen": [
+        "02 · Eine Zahl, genau gelesen Bitkom · November 2025 50 % der Internetnutzerinnen und -nutzer in Deutschland verwenden zumindest gelegentlich KI-Chats statt klassischer Suchmaschinen.",
+        "„Zumindest gelegentlich“ zählt mit: Überwiegend per KI suchen 7 Prozent, ausschließlich 5 Prozent.",
+        "47 Prozent nutzen weiter nur die klassische Suche."
+      ],
+      "woerter": 454
     },
     {
       "id": "6b00856644c3dd0001dc17be",

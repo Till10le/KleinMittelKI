@@ -26,6 +26,11 @@ Befehle:
     abarbeiten                    Alle offenen Freigaben ausführen (auch die per Mail von tools/mailfreigabe.py).
     testmail <newsletter-ordner>  Newsletter als Entwurf anlegen/aktualisieren (ohne INTERN) und Ghosts Testmail
                                   NUR an till.zehnle@gmail.com schicken. Plant nichts ein, verschickt nichts an Abonnenten.
+    freigabe management/seo-paket.md --art seo --umfang T1-T9,L1-L6[,S1-S2] [--linkedin URL] --zitat "…" --quelle "…"
+                                  Tills Freigabe für Punkte aus dem SEO-Paket (gebunden an den Inhalt dieser Punkte).
+    seo [--ausfuehren | --live]   SEO-Paket umsetzen: nur Meta-Titel (T…), Links auf bestehende Ankertexte (L…) und
+                                  LinkedIn/Website im Autorprofil (S…), nur freigegebene Punkte. Ohne Schalter Probe
+                                  (nur lesen); --ausfuehren ändert und prüft danach live; --live prüft nur die Live-Seiten.
 
 Es gibt bewusst keinen Löschbefehl.
 """
@@ -345,6 +350,8 @@ def _freigaben() -> list[dict]:
 def cmd_freigabe(a) -> None:
     if len(a.zitat.strip()) < 3:
         raise GhostFehler("Ohne wörtliches Zitat von Tills Freigabe wird nichts eingetragen.")
+    if a.art == "seo":
+        return _seo_freigabe_eintragen(a)
     p = find_post(a.ref)
     entry = {"art": a.art, "post_id": p["id"], "slug": p["slug"], "titel": p["title"],
              "updated_at": p["updated_at"], "zitat": a.zitat.strip(),
@@ -366,7 +373,7 @@ def cmd_freigabe(a) -> None:
 
 
 def _pruefe_freigabe(p: dict, art: str) -> dict:
-    passend = [f for f in _freigaben() if f["post_id"] == p["id"] and f["art"] == art]
+    passend = [f for f in _freigaben() if f.get("post_id") == p["id"] and f["art"] == art]
     if not passend:
         raise GhostFehler(f"SPERRE: Keine Freigabe ({art}) für '{p['slug']}'. Erst Till fragen.")
     gueltig = [f for f in passend if f["updated_at"] == p["updated_at"]]
@@ -520,6 +527,8 @@ def cmd_abarbeiten(_a) -> None:
     ergebnisse = []
     gesehen = set()
     for f in reversed(_freigaben()):
+        if f["art"] == "seo":
+            continue  # SEO-Paket: nur über `ghost.py seo --ausfuehren`
         key = (f.get("slug") or f.get("post_id"), f["art"] == "titelbild")
         if key in gesehen:
             continue
@@ -728,6 +737,344 @@ def cmd_kennzahlen(_a) -> None:
                                  "nur ein Näherungswert."},
                      ensure_ascii=False, indent=2))
 
+# ---------- SEO-Paket (Till 22.11.2026 über Head of KMI: T1–T9 und L1–L6 umsetzen) ----------
+
+SEO_PAKET = ROOT / "management" / "seo-paket.md"
+TEXT_TYPEN = ("text", "extended-text")
+
+
+def _seo_paket(pfad: Path = SEO_PAKET) -> dict:
+    """Liest Meta-Titel (T…) und interne Links (L…) aus management/seo-paket.md."""
+    titel, links, autor = {}, {}, {}
+    gruppe = slug = None
+    for zeile in pfad.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"###\s+(L\d+)\s+·\s+(\S+)", zeile)
+        if m:
+            gruppe, slug = m.group(1), m.group(2)
+            continue
+        if not zeile.startswith("| "):
+            continue
+        z = [c.strip() for c in zeile.strip().strip("|").split("|")]
+        if re.fullmatch(r"T\d+", z[0]) and len(z) == 6:
+            titel[z[0]] = {"nr": z[0], "slug": z[1], "meta_title": z[4]}
+        elif re.fullmatch(r"S\d+", z[0]) and len(z) == 4:
+            autor[z[0]] = {"nr": z[0], "zeile": " | ".join(z[1:])}
+        elif re.fullmatch(r"L\d+\.\d+", z[0]) and len(z) == 6 and gruppe and z[0].startswith(gruppe + "."):
+            ziel = re.search(r"\]\((https://www\.kleinmittelki\.de/[^)\s]+)\)", z[4])
+            if not ziel:
+                raise GhostFehler(f"{z[0]}: Zielbeitrag ohne Link auf kleinmittelki.de")
+            links[z[0]] = {"nr": z[0], "gruppe": gruppe, "slug": slug, "satz": z[2], "anker": z[3],
+                           "url": ziel.group(1)}
+    return {"titel": titel, "links": links, "autor": autor}
+
+
+def _seo_umfang(text: str) -> list[str]:
+    """„T1-T9,L1-L6“ → ['T1', …, 'T9', 'L1', …, 'L6'] (Gruppen, nicht Einzel-Links)."""
+    out = []
+    for teil in re.split(r"[,\s]+", text.replace("–", "-").strip()):
+        if not teil:
+            continue
+        m = re.fullmatch(r"([TLS])(\d+)(?:-\1?(\d+))?", teil)
+        if not m:
+            raise GhostFehler(f"Umfang nicht lesbar: {teil!r} (erwartet z. B. T1-T9,L1-L6,S1-S2)")
+        a, b = int(m.group(2)), int(m.group(3) or m.group(2))
+        out += [f"{m.group(1)}{i}" for i in range(a, b + 1)]
+    return out
+
+
+def _seo_punkte(umfang: list[str], paket: dict) -> list[dict]:
+    punkte = []
+    for nr in umfang:
+        if nr.startswith("T"):
+            if nr not in paket["titel"]:
+                raise GhostFehler(f"{nr} steht nicht in {SEO_PAKET.relative_to(ROOT)}")
+            punkte.append({"art": "meta_title"} | paket["titel"][nr])
+        elif nr.startswith("S"):
+            if nr not in paket["autor"]:
+                raise GhostFehler(f"{nr} steht nicht in {SEO_PAKET.relative_to(ROOT)}")
+            punkte.append({"art": "autor", "slug": "author/till"} | paket["autor"][nr])
+        else:
+            teil = [l for l in paket["links"].values() if l["gruppe"] == nr]
+            if not teil:
+                raise GhostFehler(f"{nr} steht nicht in {SEO_PAKET.relative_to(ROOT)}")
+            punkte += [{"art": "link"} | l for l in teil]
+    return punkte
+
+
+def _seo_hash(punkte: list[dict]) -> str:
+    return hashlib.sha256(json.dumps(punkte, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+
+
+def _seo_freigabe() -> dict:
+    """Neueste Freigabe der Art seo; gilt nur, wenn die Punkte im Paket seitdem unverändert sind."""
+    f = [x for x in _freigaben() if x.get("art") == "seo"]
+    if not f:
+        raise GhostFehler("SPERRE: Keine Freigabe (seo) für das SEO-Paket. Erst Till fragen.")
+    f = f[-1]
+    punkte = _seo_punkte(f["umfang"], _seo_paket())
+    if _seo_hash(punkte) != f.get("paket_hash"):
+        raise GhostFehler("SPERRE: Die freigegebenen Punkte in management/seo-paket.md wurden nach Tills Freigabe "
+                          "geändert. Neu freigeben lassen.")
+    return f | {"punkte": punkte}
+
+
+def _text_von(n: dict) -> str:
+    if n.get("type") in TEXT_TYPEN:
+        return n.get("text", "")
+    if n.get("type") == "linebreak":
+        return "\n"
+    return "".join(_text_von(c) for c in n.get("children", []) or [])
+
+
+def _bloecke(n: dict):
+    """Alle Knoten, deren Kinder Text tragen (Absatz, Überschrift, Listenpunkt, Zitat)."""
+    kids = n.get("children", []) or []
+    if any(c.get("type") in TEXT_TYPEN for c in kids):
+        yield n
+    for c in kids:
+        yield from _bloecke(c)
+
+
+def _link_setzen(doc: dict, l: dict) -> str:
+    """Setzt einen Link auf den Ankertext im zitierten Satz. Text bleibt gleich. Gibt 'gesetzt' oder 'schon da' zurück."""
+    treffer = [b for b in _bloecke(doc["root"]) if l["satz"] in _text_von(b)]
+    if len(treffer) != 1:
+        raise GhostFehler(f"{l['nr']}: Satz {len(treffer)}-mal gefunden (erwartet genau einmal): {l['satz'][:60]}…")
+    block = treffer[0]
+    voll = _text_von(block)
+    if voll.count(l["satz"]) != 1:
+        raise GhostFehler(f"{l['nr']}: Satz mehrfach im Absatz")
+    if l["satz"].count(l["anker"]) != 1:
+        raise GhostFehler(f"{l['nr']}: Ankertext nicht genau einmal im Satz")
+    start = voll.index(l["satz"]) + l["satz"].index(l["anker"])
+    ende = start + len(l["anker"])
+    pos = 0
+    kids = block["children"]
+    for i, c in enumerate(kids):
+        t = _text_von(c)
+        if pos <= start and ende <= pos + len(t):
+            if c.get("type") == "link":
+                if c.get("url") == l["url"] and t == l["anker"]:
+                    return "schon da"
+                raise GhostFehler(f"{l['nr']}: Ankertext liegt schon in einem anderen Link ({c.get('url')})")
+            if c.get("type") not in TEXT_TYPEN:
+                raise GhostFehler(f"{l['nr']}: Ankertext liegt in einem Knoten vom Typ {c.get('type')}")
+            a, b = start - pos, ende - pos
+            neu = []
+            if a > 0:
+                neu.append(c | {"text": t[:a]})
+            neu.append(lexical._link(l["url"], [c | {"text": t[a:b]}]))
+            if b < len(t):
+                neu.append(c | {"text": t[b:]})
+            block["children"] = kids[:i] + neu + kids[i + 1:]
+            return "gesetzt"
+        pos += len(t)
+    raise GhostFehler(f"{l['nr']}: Ankertext reicht über mehrere Formatierungen (z. B. fett/normal); nicht automatisch setzbar")
+
+
+def _live(url: str) -> str:
+    sep = "&" if "?" in url else "?"
+    req = urllib.request.Request(f"{url}{sep}seo-check={int(time.time())}", headers={"User-Agent": "KMK-Redaktion-Check"})
+    with urllib.request.urlopen(req, context=_ssl_context(), timeout=60) as r:
+        return r.read().decode(errors="replace")
+
+
+def _nur_text(html: str | None) -> str:
+    """Sichtbarer Text ohne Tags; anders als _plain ohne Leerzeichen an Tag-Grenzen (Link vor Satzzeichen)."""
+    t = re.sub(r"<(script|style)[^>]*>.*?</\1>", "", html or "", flags=re.S)
+    return __import__("html").unescape(re.sub(r"<[^>]+>", "", t))
+
+
+def _linkedin_name(url: str) -> str:
+    m = re.fullmatch(r"https://(?:[a-z]{2,3}\.)?linkedin\.com/in/([A-Za-z0-9\-_%]+)/?", (url or "").strip())
+    if not m:
+        raise GhostFehler(f"LinkedIn-URL nicht erkannt: {url!r} (erwartet https://de.linkedin.com/in/<name>)")
+    return m.group(1)
+
+
+def _same_as(html: str) -> list[str]:
+    """sameAs des Autors aus dem Article-JSON-LD einer Beitragsseite."""
+    out = []
+    for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
+        try:
+            d = json.loads(block)
+        except json.JSONDecodeError:
+            continue
+        for x in d if isinstance(d, list) else [d]:
+            autor = x.get("author") if isinstance(x, dict) else None
+            for a_ in autor if isinstance(autor, list) else [autor]:
+                if isinstance(a_, dict):
+                    out += a_.get("sameAs") or []
+    return out
+
+
+def _seo_live_pruefen(punkte: list[dict], linkedin: str | None = None) -> list[dict]:
+    """Nur lesen: öffentliche Seiten abrufen, <title>, Links und sameAs im Quelltext prüfen."""
+    erg, cache = [], {}
+
+    def seite(url: str) -> str:
+        if url not in cache:
+            cache[url] = _live(url)
+        return cache[url]
+
+    for pk in punkte:
+        url = f"{PUBLIC_SITE}/{pk['slug']}/"
+        try:
+            if pk["art"] == "autor":
+                if pk["nr"] != "S2":
+                    continue  # S1 (Eintrag) wird über S2 (sameAs) live geprüft
+                beispiel = next((x["slug"] for x in punkte if x["art"] != "autor"), "nicht-jedes-problem-braucht-ki")
+                sa = _same_as(seite(f"{PUBLIC_SITE}/{beispiel}/"))
+                name = _linkedin_name(linkedin) if linkedin else None
+                ok = bool(name) and any(f"linkedin.com/in/{name}" in x for x in sa)
+                erg.append({"nr": "S1/S2", "slug": beispiel, "live": "ok" if ok else "FEHLT", "sameAs": sa})
+                continue
+            html = seite(url)
+        except Exception as e:  # noqa: BLE001
+            erg.append({"nr": pk["nr"], "slug": pk["slug"], "live": "FEHLER", "grund": str(e)[:200]})
+            continue
+        if pk["art"] == "meta_title":
+            m = re.search(r"<title>(.*?)</title>", html, re.S)
+            ist = _plain(m.group(1)) if m else None
+            erg.append({"nr": pk["nr"], "slug": pk["slug"], "live": "ok" if ist == pk["meta_title"] else "ABWEICHUNG",
+                        "title_tag": ist})
+        else:
+            ok = any(_plain(x) == pk["anker"] for x in
+                     re.findall(r'<a [^>]*href="' + re.escape(pk["url"]) + r'"[^>]*>(.*?)</a>', html, re.S))
+            erg.append({"nr": pk["nr"], "slug": pk["slug"], "live": "ok" if ok else "FEHLT",
+                        "anker": pk["anker"], "ziel": pk["url"]})
+    return erg
+
+
+def _seo_beitraege(punkte: list[dict], ausfuehren: bool, fehler: list[str]) -> list[dict]:
+    """T… und L…: je Beitrag ein PUT, nur meta_title und lexical (Links); Text bleibt gleich."""
+    je_beitrag: dict[str, list[dict]] = {}
+    for pk in punkte:
+        if pk["art"] != "autor":
+            je_beitrag.setdefault(pk["slug"], []).append(pk)
+    ergebnisse = []
+    for slug, pks in je_beitrag.items():
+        try:
+            p = find_post(slug, formats="lexical,html")
+            if p["status"] != "published":
+                raise GhostFehler(f"{slug}: Status {p['status']}, nur veröffentlichte Beiträge")
+            doc = json.loads(p["lexical"])
+            update, schritte = {}, []
+            for pk in pks:
+                if pk["art"] == "meta_title":
+                    if len(pk["meta_title"]) > 60:
+                        raise GhostFehler(f"{pk['nr']}: Meta-Titel über 60 Zeichen")
+                    if p.get("meta_title") == pk["meta_title"]:
+                        schritte.append({"nr": pk["nr"], "ergebnis": "schon da"})
+                    else:
+                        update["meta_title"] = pk["meta_title"]
+                        schritte.append({"nr": pk["nr"], "ergebnis": "setzen", "vorher": p.get("meta_title"),
+                                         "nachher": pk["meta_title"]})
+                else:
+                    r = _link_setzen(doc, pk)
+                    schritte.append({"nr": pk["nr"], "ergebnis": "setzen" if r == "gesetzt" else r,
+                                     "anker": pk["anker"], "ziel": pk["url"]})
+                    if r == "gesetzt":
+                        update["lexical"] = json.dumps(doc, ensure_ascii=False)
+            eintrag = {"slug": slug, "schritte": schritte}
+            if update and ausfuehren:
+                vorher_text = _nur_text(p.get("html"))
+                update["updated_at"] = p["updated_at"]
+                q = api("PUT", f"posts/{p['id']}/", body={"posts": [update]}, query={"formats": "html"})["posts"][0]
+                eintrag.update({"geaendert": sorted(k for k in update if k != "updated_at"),
+                                "updated_at": q["updated_at"], "status": q["status"],
+                                "text_unveraendert": _nur_text(q.get("html")) == vorher_text})
+                if not eintrag["text_unveraendert"]:
+                    fehler.append(f"{slug}: Beitragstext weicht nach dem Setzen der Links ab – von Hand prüfen")
+            elif update:
+                eintrag["probe"] = "würde ändern: " + ", ".join(sorted(update))
+            ergebnisse.append(eintrag)
+        except GhostFehler as e:
+            fehler.append(str(e))
+    return ergebnisse
+
+
+def _seo_autor(punkte: list[dict], linkedin: str | None, ausfuehren: bool, fehler: list[str]) -> dict | None:
+    """S1: Feld LinkedIn im Autorprofil „till“. S2: sameAs prüfen; fehlt es, dieselbe URL ins Feld Website."""
+    nrs = {pk["nr"] for pk in punkte if pk["art"] == "autor"}
+    if not nrs:
+        return None
+    if not linkedin:
+        fehler.append("S1/S2 freigegeben, aber keine LinkedIn-URL in der Freigabe")
+        return None
+    name = _linkedin_name(linkedin)
+    u = api("GET", "users/slug/till/")["users"][0]
+    erg = {"autor": "till", "linkedin_vorher": u.get("linkedin"), "website_vorher": u.get("website")}
+    try:
+        if "S1" in nrs and u.get("linkedin") != name:
+            erg["S1"] = f"setzen: linkedin = {name}"
+            if ausfuehren:
+                u = api("PUT", f"users/{u['id']}/", body={"users": [{"linkedin": name}]})["users"][0]
+                erg["linkedin_nachher"] = u.get("linkedin")
+        elif "S1" in nrs:
+            erg["S1"] = "schon da"
+        if "S2" in nrs and ausfuehren:
+            time.sleep(5)
+            beispiel = next((pk["slug"] for pk in punkte if pk["art"] != "autor"), "nicht-jedes-problem-braucht-ki")
+            sa = _same_as(_live(f"{PUBLIC_SITE}/{beispiel}/"))
+            erg["sameAs_nach_S1"] = sa
+            if any(f"linkedin.com/in/{name}" in x for x in sa):
+                erg["S2"] = "sameAs enthält LinkedIn, Website nicht nötig"
+            elif u.get("website") and u.get("website") != linkedin:
+                fehler.append(f"S2: sameAs ohne LinkedIn, Feld Website ist schon belegt ({u.get('website')}) – nicht überschrieben")
+            else:
+                u = api("PUT", f"users/{u['id']}/", body={"users": [{"website": linkedin}]})["users"][0]
+                erg["S2"] = f"sameAs ohne LinkedIn → Website = {linkedin}"
+                erg["website_nachher"] = u.get("website")
+    except GhostFehler as e:
+        hinweis = (" – der Admin-Schlüssel der Integration darf das Autorprofil nicht ändern. Till trägt es in Ghost ein "
+                   "(Einstellungen → Staff → Till Zehnle → LinkedIn), danach `ghost.py seo --live`.") if " 403 " in str(e) else ""
+        fehler.append(f"Autorprofil: {e}{hinweis}")
+    return erg
+
+
+def cmd_seo(a) -> None:
+    """SEO-Paket: Probe (nur lesen), --ausfuehren (nur freigegebene Punkte) oder --live (Gegenprobe, nur lesen)."""
+    f = _seo_freigabe()
+    punkte = f["punkte"]
+    if a.live:
+        print(json.dumps({"live": _seo_live_pruefen(punkte, f.get("linkedin"))}, ensure_ascii=False, indent=2))
+        return
+    fehler: list[str] = []
+    out = {"freigabe": {"zitat": f["zitat"], "quelle": f["quelle"], "umfang": f["umfang"]},
+           "modus": "ausgeführt" if a.ausfuehren else "Probe (nichts geändert)",
+           "beitraege": _seo_beitraege(punkte, a.ausfuehren, fehler),
+           "autorprofil": _seo_autor(punkte, f.get("linkedin"), a.ausfuehren, fehler)}
+    if a.ausfuehren:
+        time.sleep(5)
+        out["live"] = _seo_live_pruefen(punkte, f.get("linkedin"))
+    out["fehler"] = fehler
+    print(json.dumps(out, ensure_ascii=False, indent=2))
+    if fehler:
+        raise GhostFehler(f"{len(fehler)} Fehler, siehe oben")
+
+
+def _seo_freigabe_eintragen(a) -> None:
+    pfad = (ROOT / a.ref).resolve() if not Path(a.ref).is_absolute() else Path(a.ref)
+    if pfad != SEO_PAKET.resolve():
+        raise GhostFehler(f"SEO-Freigaben nur für {SEO_PAKET.relative_to(ROOT)}")
+    if not a.umfang:
+        raise GhostFehler("--umfang fehlt (z. B. T1-T9,L1-L6)")
+    umfang = _seo_umfang(a.umfang)
+    punkte = _seo_punkte(umfang, _seo_paket())
+    if any(x.startswith("S") for x in umfang):
+        _linkedin_name(a.linkedin or "")
+    entry = {"art": "seo", "paket": str(SEO_PAKET.relative_to(ROOT)), "umfang": umfang,
+             "punkte_anzahl": len(punkte), "paket_hash": _seo_hash(punkte), "zitat": a.zitat.strip(),
+             "quelle": (a.quelle or "Chat mit Till in dieser Claude-Sitzung").strip(),
+             "zeit": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
+             "sitzung": os.environ.get("CLAUDE_CODE_REMOTE_SESSION_ID", "")}
+    if a.linkedin:
+        entry["linkedin"] = a.linkedin.strip()
+    with FREIGABEN.open("a") as f:
+        f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    print(json.dumps(entry, ensure_ascii=False, indent=2))
+
 # ---------- CLI ----------
 
 def main(argv=None) -> int:
@@ -742,7 +1089,10 @@ def main(argv=None) -> int:
     sub.add_parser("index").set_defaults(fn=cmd_index)
     s = sub.add_parser("referenz"); s.add_argument("--auch", nargs="*", help="zusätzliche Slugs (z. B. Vorlagen-Entwürfe)")
     s.set_defaults(fn=cmd_referenz)
-    s = sub.add_parser("freigabe"); s.add_argument("ref"); s.add_argument("--art", required=True, choices=["beitrag", "newsletter", "titelbild"])
+    s = sub.add_parser("freigabe"); s.add_argument("ref")
+    s.add_argument("--art", required=True, choices=["beitrag", "newsletter", "titelbild", "seo"])
+    s.add_argument("--umfang", help="nur --art seo: Punkte aus management/seo-paket.md, z. B. T1-T9,L1-L6,S1-S2")
+    s.add_argument("--linkedin", help="nur --art seo mit S1/S2: Tills LinkedIn-URL, wie er sie geschickt hat")
     s.add_argument("--zitat", required=True)
     s.add_argument("--quelle", help='Woher die Freigabe stammt, z. B. "Head of KMI, Grok-Bot-Chat 20.11.2026 18:08"')
     s.set_defaults(fn=cmd_freigabe)
@@ -752,6 +1102,10 @@ def main(argv=None) -> int:
     sub.add_parser("abarbeiten").set_defaults(fn=cmd_abarbeiten)
     s = sub.add_parser("testmail"); s.add_argument("ordner"); s.set_defaults(fn=cmd_testmail)
     sub.add_parser("kennzahlen").set_defaults(fn=cmd_kennzahlen)
+    s = sub.add_parser("seo"); g_ = s.add_mutually_exclusive_group()
+    g_.add_argument("--ausfuehren", action="store_true", help="freigegebene Punkte in Ghost umsetzen, danach live prüfen")
+    g_.add_argument("--live", action="store_true", help="nur lesen: Live-Seiten gegenprüfen")
+    s.set_defaults(fn=cmd_seo)
     a = ap.parse_args(argv)
     try:
         a.fn(a)

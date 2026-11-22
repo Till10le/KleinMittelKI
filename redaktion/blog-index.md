@@ -1,6 +1,6 @@
 # Blog-Index
 
-Stand: 2026-11-22T06:50:01+00:00 · 40 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
+Stand: 2026-11-22T19:20:17+00:00 · 41 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
 
 | Datum | Status | Kategorie | Titel | Quellen | Zahlen |
 |---|---|---|---|---|---|
@@ -34,6 +34,7 @@ Stand: 2026-11-22T06:50:01+00:00 · 40 Beiträge (automatisch aus Ghost, nicht v
 | 2026-09-18 | published | Studien & Zahlen | [Mehr Umsatz durch KI? Was eine neue KfW-Studie zeigt.](https://www.kleinmittelki.de/kfw-studie-ki-unternehmenserfolg/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Werbung direkt in ChatGPT: Entsteht hier ein neuer Kanal für Unternehmen?](https://www.kleinmittelki.de/werbung-chatgpt-sponsored-agents/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Mit KI Unternehmenszahlen auswerten – ohne selbst ein Dashboard zu bauen?](https://www.kleinmittelki.de/ki-unternehmenszahlen-data-agent/) | 1 | 0 |
+| – | draft |  | [#8: Was die KI über deinen Betrieb erzählt](https://www.kleinmittelki.de/p/78be8b3b-1acd-46b1-9ddf-4f2807ff76fe/) | 1 | 3 |
 | – | draft | Leitfäden | [Software gilt ab 9. Dezember als Produkt: Was die neue Produkthaftung für deinen Betrieb heißt](https://www.kleinmittelki.de/p/2f923142-bc28-4375-925a-a2465525f725/) | 6 | 3 |
 | – | draft | KI in der Praxis | [Preisrunde mit KI: 59 Artikel, 15 neue Preise und drei Regeln, die niemand bestellt hatte](https://www.kleinmittelki.de/p/54bba5a7-5ac2-4a5b-abd9-3c4de2957f35/) | 0 | 12 |
 | – | draft | Studien & Zahlen | [Drei Viertel nutzen KI, nur jeder Neunte spart damit. Vielleicht liegt der Hebel im Controlling.](https://www.kleinmittelki.de/p/e9495d9f-86d1-4b25-b9fc-14a6beeaec38/) | 2 | 7 |

@@ -89,3 +89,12 @@ Tills Entscheidung (Grok-Bot-Chat 20.11.2026 18:08, weitergegeben von Head of KM
 - Freigaben: Till im Grok-Bot-Chat → Head of KMI gibt sie wörtlich mit Zeitstempel in einer Claude-Sitzung weiter → `ghost.py freigabe`
   mit `--zitat` und `--quelle` → `abarbeiten`. Mail-Antworten von Till gelten weiter. Die Freigabe-Sperre bleibt unverändert.
 - Neu: `python3 tools/ghost.py kennzahlen` (nur lesen) für Mitglieder, Newsletter-Abos und Öffnungs-/Klickraten (AUD-001).
+
+## Stand 22.11.2026 – SEO-Paket
+
+Till (Grok-Bot-Chat 22.11.2026 20:11, weitergegeben von Head of KMI): „Okay umsetzen“ für `management/seo-paket.md`.
+- Neu: `python3 tools/ghost.py seo` (Probe), `seo --ausfuehren`, `seo --live`. Ändert an veröffentlichten Beiträgen nur `meta_title`
+  und Links auf bestehende Ankertexte; Text bleibt zeichengleich. Freigabe der Art `seo` über `ghost.py freigabe management/seo-paket.md
+  --art seo --umfang …`, gebunden an den Inhalt der Punkte. `abarbeiten` überspringt sie; geplante Läufe führen `seo` nicht aus.
+- Umgesetzt 22.11.: T1–T9, L1–L6 (live geprüft). S1/S2 (LinkedIn im Autorprofil): Ghost erlaubt das dem Integrationsschlüssel nicht (403);
+  Till trägt es selbst ein, danach `ghost.py seo --live`.

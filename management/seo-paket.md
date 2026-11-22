@@ -1,6 +1,13 @@
 # SEO-Paket zur gesammelten Freigabe (SEO-002, SEO-003, SEO-005)
 
 Stand: 20.11.2026 · erstellt von der Claude-Redaktion für Head of KMI · Status: **vorbereitet**, nichts ist umgesetzt.
+
+> **22.11.2026 – Freigabe und Umsetzung.** Till (Grok-Bot-Chat 22.11.2026 20:11, wörtlich weitergegeben von Head of KMI): „Okay umsetzen“;
+> LinkedIn-URL 20:12: https://de.linkedin.com/in/tillzehnle. Eingetragen mit `ghost.py freigabe management/seo-paket.md --art seo
+> --umfang T1-T9,L1-L6,S1-S2` (gebunden an den Inhalt der Punkte; wer T/L/S-Zeilen ändert, braucht eine neue Freigabe).
+> **T1–T9 und L1–L6: umgesetzt und live geprüft** (`ghost.py seo --ausfuehren`, Gegenprobe `ghost.py seo --live`: 25 von 25 ok).
+> **S1/S2: nicht umgesetzt** – Ghost verweigert dem Integrationsschlüssel Änderungen am Autorprofil (403). Till trägt LinkedIn selbst ein.
+> Der Text unten ist der freigegebene Stand und bleibt unverändert.
 An veröffentlichten Beiträgen und am Autorprofil wurde nichts geändert. Umsetzung erst nach Tills Freigabe (Freigabegrenze 1 in
 `management/README.md`), danach Ghost-Änderungen über `tools/ghost.py` (heute gibt es dafür keinen Befehl. Dafür braucht es einen
 neuen Befehl `meta`/`links`, der die Freigabe prüft, oder Till ändert die Felder selbst im Ghost-Editor).
