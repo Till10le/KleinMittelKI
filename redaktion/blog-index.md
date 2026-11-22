@@ -1,6 +1,6 @@
 # Blog-Index
 
-Stand: 2026-11-19T06:50:42+00:00 · 37 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
+Stand: 2026-11-22T06:50:01+00:00 · 40 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
 
 | Datum | Status | Kategorie | Titel | Quellen | Zahlen |
 |---|---|---|---|---|---|
@@ -34,6 +34,9 @@ Stand: 2026-11-19T06:50:42+00:00 · 37 Beiträge (automatisch aus Ghost, nicht v
 | 2026-09-18 | published | Studien & Zahlen | [Mehr Umsatz durch KI? Was eine neue KfW-Studie zeigt.](https://www.kleinmittelki.de/kfw-studie-ki-unternehmenserfolg/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Werbung direkt in ChatGPT: Entsteht hier ein neuer Kanal für Unternehmen?](https://www.kleinmittelki.de/werbung-chatgpt-sponsored-agents/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Mit KI Unternehmenszahlen auswerten – ohne selbst ein Dashboard zu bauen?](https://www.kleinmittelki.de/ki-unternehmenszahlen-data-agent/) | 1 | 0 |
+| – | draft | Leitfäden | [Software gilt ab 9. Dezember als Produkt: Was die neue Produkthaftung für deinen Betrieb heißt](https://www.kleinmittelki.de/p/2f923142-bc28-4375-925a-a2465525f725/) | 6 | 3 |
+| – | draft | KI in der Praxis | [Preisrunde mit KI: 59 Artikel, 15 neue Preise und drei Regeln, die niemand bestellt hatte](https://www.kleinmittelki.de/p/54bba5a7-5ac2-4a5b-abd9-3c4de2957f35/) | 0 | 12 |
+| – | draft | Studien & Zahlen | [Drei Viertel nutzen KI, nur jeder Neunte spart damit. Vielleicht liegt der Hebel im Controlling.](https://www.kleinmittelki.de/p/e9495d9f-86d1-4b25-b9fc-14a6beeaec38/) | 2 | 7 |
 | – | draft | KI in der Praxis | [Mein KI-Rechercheassistent: Die KI sucht. Ich entscheide.](https://www.kleinmittelki.de/p/7ef917e2-ee8b-4cc9-b6e7-8e5a18f6a8da/) | 3 | 0 |
 | – | draft | KI in der Praxis | [Immobiliensuche mit KI: So habe ich ChatGPT, Notion und Excel kombiniert](https://www.kleinmittelki.de/p/152d747f-9b0a-41e2-af39-57ec34bdf2a7/) | 4 | 1 |
 | – | draft |  | [INTERN – Status Quo: Fahrplan und Datenquellen](https://www.kleinmittelki.de/p/1f393daa-2f6d-4292-ad61-4404dee388d5/) | 0 | 0 |

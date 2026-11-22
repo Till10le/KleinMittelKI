@@ -1,6 +1,6 @@
 {
-  "stand": "2026-11-19T06:50:42+00:00",
-  "anzahl": 37,
+  "stand": "2026-11-22T06:50:01+00:00",
+  "anzahl": 40,
   "beitraege": [
     {
       "id": "6af957b852d1110001b41686",
@@ -1008,6 +1008,127 @@
       ],
       "zahlen": [],
       "woerter": 284
+    },
+    {
+      "id": "6b00856644c3dd0001dc17be",
+      "slug": "eu-produkthaftung-software-ki",
+      "titel": "Software gilt ab 9. Dezember als Produkt: Was die neue Produkthaftung für deinen Betrieb heißt",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-11-20",
+      "kategorie": "Leitfäden",
+      "interne_tags": [
+        "#wissen",
+        "#zur-freigabe"
+      ],
+      "teaser": "Hersteller haften künftig auch für fehlerhafte Software, Updates und KI-Funktionen. Wen das trifft und was du jetzt prüfen kannst.",
+      "url": "https://www.kleinmittelki.de/p/2f923142-bc28-4375-925a-a2465525f725/",
+      "zwischenueberschriften": [
+        "Was sich am 9. Dezember ändert",
+        "Wer betroffen ist und wer eher nicht",
+        "Updates: Die Verantwortung endet nicht an der Laderampe",
+        "Was für Produkte gilt, die schon verkauft sind",
+        "Wenn es vor Gericht geht",
+        "Was du jetzt prüfen kannst",
+        "Was das für den Mittelstand bedeutet",
+        "Ein Gedanke zum Mitnehmen",
+        "Quellen"
+      ],
+      "quellen": [
+        "https://dserver.bundestag.de/brd/2026/0584-26.pdf",
+        "https://dserver.bundestag.de/brd/2026/0584-26B.pdf",
+        "https://eur-lex.europa.eu/eli/dir/2024/2853/oj/deu",
+        "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32003H0361",
+        "https://www.gesetze-im-internet.de/prodhaftg/",
+        "https://www.recht.bund.de/eli/bund/bgbl-1/2026/321"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/ai-act-ki-bilder-kennzeichnen/",
+        "https://www.kleinmittelki.de/chatgpt-claude-gemini-ki-modelle-erklaert/",
+        "https://www.kleinmittelki.de/olg-hamm-chatbot-haftung/"
+      ],
+      "zahlen": [
+        "Bisher haftete ein Hersteller für Personenschäden durch ein Produkt oder gleiche Produkte mit demselben Fehler insgesamt nur bis 85 Millionen Euro.",
+        "Bei Sachschäden trug der Geschädigte die ersten 500 Euro selbst (§§ 10 und 11 des alten Gesetzes).",
+        "Die Richtlinie sieht ausdrücklich vor, dass ein Hersteller mit einem Softwarezulieferer, der ein Kleinst- oder Kleinunternehmen ist (nach EU-Definition weniger als 50 Beschäftigte und höchstens 10 Millionen Euro Jahresumsatz oder Jahresbilanz, Partner- und verbundene Unternehmen mitgerechnet), vereinbaren kann, auf den Rückgriff zu verzichten (Art."
+      ],
+      "woerter": 2233
+    },
+    {
+      "id": "6b007c2b44c3dd0001dc17b4",
+      "slug": "preisrunde-mit-ki-praxistest",
+      "titel": "Preisrunde mit KI: 59 Artikel, 15 neue Preise und drei Regeln, die niemand bestellt hatte",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-11-20",
+      "kategorie": "KI in der Praxis",
+      "interne_tags": [
+        "#notiz",
+        "#zur-freigabe"
+      ],
+      "teaser": "Ein Händler will Verkaufspreise per KI erhöhen, ohne Excel anzufassen. Gerechnet war schnell – die eigentliche Arbeit steckte in einer Regel, die man zweimal lesen kann.",
+      "url": "https://www.kleinmittelki.de/p/54bba5a7-5ac2-4a5b-abd9-3c4de2957f35/",
+      "zwischenueberschriften": [
+        "Welches Problem soll gelöst werden?",
+        "Wie lief der Test ab?",
+        "Was ist dabei herausgekommen?",
+        "Wo sind die Grenzen?",
+        "Mein Fazit"
+      ],
+      "quellen": [],
+      "interne_links": [],
+      "zahlen": [
+        "Die Zahlen stammen aus dem geprüften Lauf vom 09.11.2026, in der Fassung nach der Nachprüfung (15 von 59 Artikeln, im Schnitt +7,7 %).",
+        "„Plus 10 Prozent, aber nicht über ,99“ klingt eindeutig und ist es nicht.",
+        "Er wollte eine Preisrunde machen: alle Verkaufspreise um 10 Prozent erhöhen, ausgenommen Fokusartikel und Eigenmarken.",
+        "Gemeint war das Zweite: Aus 1,99 Euro werden nie 2,19 Euro.",
+        "Vor jeder Ausgabe prüft das Programm automatisch: kein Preis gesenkt, keiner um mehr als 10 Prozent erhöht, keine Euro-Schwelle überschritten, Fokusartikel unverändert, jeder Artikel genau einmal bewertet.",
+        "Von 59 Artikeln bekamen 15 einen neuen Preis, im Schnitt 7,7 Prozent mehr.",
+        "Typische Sprünge: von 2,49 auf 2,69 Euro, von 1,49 auf 1,59 Euro, von 1,69 auf 1,79 Euro.",
+        "Dazu 21 Artikel, die heute 1,99 Euro kosten.",
+        "Mit 10 Prozent mehr wären sie über 2 Euro gerutscht, das verhindert die Schwelle.",
+        "Und ein Saisonartikel zu 24,99 Euro, aus demselben Grund.",
+        "Die geplanten 10 Prozent kommen so in der Summe nie an.",
+        "Preisendung: Alle neuen Preise enden auf 9 Cent und werden abgerundet, damit es nie mehr als 10 Prozent werden."
+      ],
+      "woerter": 964
+    },
+    {
+      "id": "6b007bf144c3dd0001dc17ac",
+      "slug": "pwc-mittelstand-ki-controlling",
+      "titel": "Drei Viertel nutzen KI, nur jeder Neunte spart damit. Vielleicht liegt der Hebel im Controlling.",
+      "status": "draft",
+      "veroeffentlicht": "",
+      "geaendert": "2026-11-20",
+      "kategorie": "Studien & Zahlen",
+      "interne_tags": [
+        "#empfehlung",
+        "#zur-freigabe"
+      ],
+      "teaser": "PwC hat 400 Mittelständler befragt: KI ist im Alltag angekommen, in den Kosten aber kaum. Ausgerechnet der Bereich mit den besten Voraussetzungen wird bisher kaum genutzt.",
+      "url": "https://www.kleinmittelki.de/p/e9495d9f-86d1-4b25-b9fc-14a6beeaec38/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://www.pwc.de/de/mittelstand/chancen-fuer-ki-im-mittelstand/vom-pilot-zur-wertschoepfung.html",
+        "https://www.pwc.de/de/pressemitteilungen/2026/mittelstand-gelingt-es-noch-nicht-ki-strategisch-einzusetzen-und-betriebswirtschaftlich-zu-nutzen.html"
+      ],
+      "interne_links": [],
+      "zahlen": [
+        "Befragt wurden von April bis Juni 400 mittelständische Unternehmen mit mehr als 50 Millionen Euro Jahresumsatz.",
+        "74 Prozent nutzen KI-Tools externer Anbieter, aber nur 23 Prozent haben KI in interne Prozesse eingebunden, in großem Umfang sogar nur 3 bis 5 Prozent.",
+        "Knapp 70 Prozent sehen keinen Einfluss auf ihre Kosten, 11 Prozent melden sinkende, 16 Prozent steigende.",
+        "Als größte Hürden nennen die Befragten Datensicherheit und ethische Fragen (71 Prozent), fehlende Fachkräfte mit KI-Kompetenz (69 Prozent) und eine unübersichtliche Tool-Landschaft (fast 60 Prozent).",
+        "Trotzdem haben sich 43 Prozent damit noch gar nicht befasst, nur 10 Prozent haben dort KI eingebunden.",
+        "Wer KI dagegen fest in Abläufe einbaut, meldet fast doppelt so oft sinkende Kosten: 21 statt 11 Prozent.",
+        "Wichtig ist, wer befragt wurde: Unternehmen ab 50 Millionen Euro Umsatz."
+      ],
+      "woerter": 409
     },
     {
       "id": "6ade31474d491100016c4807",
