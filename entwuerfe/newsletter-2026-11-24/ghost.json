@@ -1,0 +1,14 @@
+{
+  "bilder": {},
+  "id": "6b0291f5b547ca0001413a91",
+  "uuid": "78be8b3b-1acd-46b1-9ddf-4f2807ff76fe",
+  "slug": "8-was-die-ki-ueber-deinen-betrieb-erzaehlt",
+  "titel": "#8: Was die KI über deinen Betrieb erzählt",
+  "status": "draft",
+  "updated_at": "2026-11-22T06:55:52.000Z",
+  "vorschau": "https://www.kleinmittelki.de/p/78be8b3b-1acd-46b1-9ddf-4f2807ff76fe/",
+  "admin": "https://klein-mittel-ki.ghost.io/ghost/#/editor/post/6b0291f5b547ca0001413a91",
+  "entwurf_hash": "064e59f8c672899de49c34a2ecffc4bb312c75a4de0fae359223cb5e0331864b",
+  "intern_absaetze_entfernt": 1,
+  "testmail_fehler": "Ghost antwortet 200 auf POST email_previews/posts/6b0291f5b547ca0001413a91/ ohne JSON (Content-Type text/html; charset=utf-8): <!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta\n      http-equiv=\"Content-Security-Policy\"\n      content=\"default-src 'self'; img-src 'self' data:; media-src 'self' data:; object-src 'none'; style-src 'self' 'sha256-o4vzfmmUENEg4chMjjRP9EuW9ucGnGIGVdbl8d0SHQQ='; script-src 'self' 'sha256-a9bHdQG"
+}
