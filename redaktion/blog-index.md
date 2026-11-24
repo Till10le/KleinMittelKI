@@ -1,9 +1,12 @@
 # Blog-Index
 
-Stand: 2026-11-22T19:20:17+00:00 · 41 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
+Stand: 2026-11-24T06:49:21+00:00 · 42 Beiträge (automatisch aus Ghost, nicht von Hand ändern)
 
 | Datum | Status | Kategorie | Titel | Quellen | Zahlen |
 |---|---|---|---|---|---|
+| 2026-11-24 | published |  | [#8: Die Ablage, die für mich mitdenkt](https://www.kleinmittelki.de/8-die-ablage-die-fuer-mich-mitdenkt/) | 1 | 8 |
+| 2026-11-23 | published | KI in der Praxis | [Die Ablage, die mitdenkt: Mein KI-Selbstversuch mit dem Papierkram](https://www.kleinmittelki.de/ki-ablage-selbstversuch/) | 1 | 5 |
+| 2026-11-23 | published | Studien & Zahlen | [Drei Viertel nutzen KI, nur jeder Neunte spart damit. Vielleicht liegt der Hebel im Controlling.](https://www.kleinmittelki.de/pwc-mittelstand-ki-controlling/) | 2 | 7 |
 | 2026-11-17 | sent |  | [#7: Welches KI-Modell für welche Aufgabe?](https://www.kleinmittelki.de/email/c9e4f758-1e91-4da5-b7fa-de164d2a749e/) | 1 | 0 |
 | 2026-11-13 | published | Leitfäden | [Mit Kanonen auf Spatzen: Warum nicht jede KI-Aufgabe das stärkste Modell braucht](https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/) | 11 | 7 |
 | 2026-11-10 | sent |  | [#6: Folien ohne KI-Look und KI ohne Anwendungsfall](https://www.kleinmittelki.de/email/bd6a2494-782d-4723-84e9-d3047e17980e/) | 1 | 7 |
@@ -34,10 +37,8 @@ Stand: 2026-11-22T19:20:17+00:00 · 41 Beiträge (automatisch aus Ghost, nicht v
 | 2026-09-18 | published | Studien & Zahlen | [Mehr Umsatz durch KI? Was eine neue KfW-Studie zeigt.](https://www.kleinmittelki.de/kfw-studie-ki-unternehmenserfolg/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Werbung direkt in ChatGPT: Entsteht hier ein neuer Kanal für Unternehmen?](https://www.kleinmittelki.de/werbung-chatgpt-sponsored-agents/) | 1 | 0 |
 | 2026-09-18 | published | Entwicklungen | [Mit KI Unternehmenszahlen auswerten – ohne selbst ein Dashboard zu bauen?](https://www.kleinmittelki.de/ki-unternehmenszahlen-data-agent/) | 1 | 0 |
-| – | draft |  | [#8: Was die KI über deinen Betrieb erzählt](https://www.kleinmittelki.de/p/78be8b3b-1acd-46b1-9ddf-4f2807ff76fe/) | 1 | 3 |
 | – | draft | Leitfäden | [Software gilt ab 9. Dezember als Produkt: Was die neue Produkthaftung für deinen Betrieb heißt](https://www.kleinmittelki.de/p/2f923142-bc28-4375-925a-a2465525f725/) | 6 | 3 |
 | – | draft | KI in der Praxis | [Preisrunde mit KI: 59 Artikel, 15 neue Preise und drei Regeln, die niemand bestellt hatte](https://www.kleinmittelki.de/p/54bba5a7-5ac2-4a5b-abd9-3c4de2957f35/) | 0 | 12 |
-| – | draft | Studien & Zahlen | [Drei Viertel nutzen KI, nur jeder Neunte spart damit. Vielleicht liegt der Hebel im Controlling.](https://www.kleinmittelki.de/p/e9495d9f-86d1-4b25-b9fc-14a6beeaec38/) | 2 | 7 |
 | – | draft | KI in der Praxis | [Mein KI-Rechercheassistent: Die KI sucht. Ich entscheide.](https://www.kleinmittelki.de/p/7ef917e2-ee8b-4cc9-b6e7-8e5a18f6a8da/) | 3 | 0 |
 | – | draft | KI in der Praxis | [Immobiliensuche mit KI: So habe ich ChatGPT, Notion und Excel kombiniert](https://www.kleinmittelki.de/p/152d747f-9b0a-41e2-af39-57ec34bdf2a7/) | 4 | 1 |
 | – | draft |  | [INTERN – Status Quo: Fahrplan und Datenquellen](https://www.kleinmittelki.de/p/1f393daa-2f6d-4292-ad61-4404dee388d5/) | 0 | 0 |

@@ -1,7 +1,122 @@
 {
-  "stand": "2026-11-22T19:20:17+00:00",
-  "anzahl": 41,
+  "stand": "2026-11-24T06:49:21+00:00",
+  "anzahl": 42,
   "beitraege": [
+    {
+      "id": "6b0291f5b547ca0001413a91",
+      "slug": "8-die-ablage-die-fuer-mich-mitdenkt",
+      "titel": "#8: Die Ablage, die für mich mitdenkt",
+      "status": "published",
+      "veroeffentlicht": "2026-11-24",
+      "geaendert": "2026-11-24",
+      "kategorie": "",
+      "interne_tags": [
+        "#newsletter"
+      ],
+      "teaser": "Eine KI-Ablage, die für mich mitdenkt, warum kaum ein Mittelständler mit KI spart, was eine KI über deinen Betrieb erzählt, eine Zahl und ein Gedanke.",
+      "url": "https://www.kleinmittelki.de/8-die-ablage-die-fuer-mich-mitdenkt/",
+      "zwischenueberschriften": [
+        "01 · Praxistest: Die Ablage, die mitdenkt",
+        "02 · Aktuell eingeordnet: Drei Viertel nutzen KI, nur jeder Neunte spart damit",
+        "03 · Aus dem Archiv: Was die KI über deinen Betrieb erzählt",
+        "04 · Eine Zahl, genau gelesen",
+        "05 · Ein Gedanke zum Mitnehmen"
+      ],
+      "quellen": [
+        "https://www.bitkom.org/Presse/Presseinformation/Internet-Suche-Wandel-Haelfte-nutzt-KI-Chats"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/",
+        "https://www.kleinmittelki.de/frag-eine-ki-nach-deinem-eigenen-unternehmen-ein-selbsttest-in-20-minuten/",
+        "https://www.kleinmittelki.de/ki-ablage-selbstversuch/",
+        "https://www.kleinmittelki.de/pwc-mittelstand-ki-controlling/",
+        "https://www.kleinmittelki.de/wenn-azubis-die-ki-fragen-wird-dein-betrieb-empfohlen/"
+      ],
+      "zahlen": [
+        "In der ersten Woche hat sie eine Beitragserhöhung um 11,4 Prozent gefunden und gleich den Kündigungsentwurf ins Postfach gelegt, dazu einen Versicherungstarif, der nicht mehr passt, und eine Förderfrist, die ich nicht auf dem Schirm hatte.",
+        "02 · Aktuell eingeordnet: Drei Viertel nutzen KI, nur jeder Neunte spart damit PwC hat 400 Mittelständler mit mehr als 50 Millionen Euro Umsatz befragt.",
+        "74 Prozent nutzen KI-Tools, aber nur 23 Prozent haben KI fest in ihre Abläufe eingebaut.",
+        "Knapp 70 Prozent sehen keinen Einfluss auf ihre Kosten, nur 11 Prozent melden sinkende.",
+        "Trotzdem haben dort erst 10 Prozent KI eingebunden.",
+        "04 · Eine Zahl, genau gelesen Bitkom · November 2025 50 % der Internetnutzerinnen und -nutzer in Deutschland verwenden zumindest gelegentlich KI-Chats statt klassischer Suchmaschinen.",
+        "„Zumindest gelegentlich“ zählt mit: Überwiegend per KI suchen 7 Prozent, ausschließlich 5 Prozent.",
+        "47 Prozent nutzen weiter nur die klassische Suche."
+      ],
+      "woerter": 796
+    },
+    {
+      "id": "6b03ecf4b4027c0001511a61",
+      "slug": "ki-ablage-selbstversuch",
+      "titel": "Die Ablage, die mitdenkt: Mein KI-Selbstversuch mit dem Papierkram",
+      "status": "published",
+      "veroeffentlicht": "2026-11-23",
+      "geaendert": "2026-11-23",
+      "kategorie": "KI in der Praxis",
+      "interne_tags": [
+        "#notiz"
+      ],
+      "teaser": "Ich kann nicht programmieren. Trotzdem habe ich mit KI in einer Woche eine Ablage gebaut, die jeden Brief liest, Fristen im Blick behält und für mich mitdenkt.",
+      "url": "https://www.kleinmittelki.de/ki-ablage-selbstversuch/",
+      "zwischenueberschriften": [
+        "Welches Problem soll gelöst werden?",
+        "Wie lief der Test ab?",
+        "Was ist dabei herausgekommen?",
+        "Was heißt das für deinen Betrieb?",
+        "Und der Datenschutz?",
+        "Wo sind die Grenzen?",
+        "Mein Fazit"
+      ],
+      "quellen": [
+        "https://privacy.claude.com/en/articles/7996868-is-my-data-used-for-model-training"
+      ],
+      "interne_links": [
+        "https://www.kleinmittelki.de/modellwahl-kanonen-auf-spatzen/"
+      ],
+      "zahlen": [
+        "Eine Beitragserhöhung um 11,4 Prozent: Die Ablage wies auf das Sonderkündigungsrecht hin und legte gleich einen Kündigungsentwurf in meinem Mail-Postfach an.",
+        "Auffälligkeiten: eine Rechnung, die mindestens 15 Prozent teurer ist als im Vorjahr, eine mögliche doppelte Rechnung, zwei Verträge, wo einer reicht.",
+        "Von rund 200 Ablageschritten landeten 16 im Ordner „Zu prüfen“, etwa 8 Prozent.",
+        "Überrascht hat mich trotzdem eines: Nur 18 Prozent der Dokumente kamen mit dem kleinen, günstigen Modell aus.",
+        "Darin ein Schreiben des Anbieters der Zeiterfassung: Das Abo wird um 18 Prozent teurer und verlängert sich in sechs Wochen automatisch um ein Jahr."
+      ],
+      "woerter": 1897
+    },
+    {
+      "id": "6b007bf144c3dd0001dc17ac",
+      "slug": "pwc-mittelstand-ki-controlling",
+      "titel": "Drei Viertel nutzen KI, nur jeder Neunte spart damit. Vielleicht liegt der Hebel im Controlling.",
+      "status": "published",
+      "veroeffentlicht": "2026-11-23",
+      "geaendert": "2026-11-23",
+      "kategorie": "Studien & Zahlen",
+      "interne_tags": [
+        "#empfehlung"
+      ],
+      "teaser": "PwC hat 400 Mittelständler befragt: KI ist im Alltag angekommen, in den Kosten aber kaum. Ausgerechnet der Bereich mit den besten Voraussetzungen wird bisher kaum genutzt.",
+      "url": "https://www.kleinmittelki.de/pwc-mittelstand-ki-controlling/",
+      "zwischenueberschriften": [
+        "Was ist passiert?",
+        "Meine Einordnung",
+        "Was bedeutet das für den Mittelstand?",
+        "Ein Gedanke zum Mitnehmen",
+        "Zum Originalartikel"
+      ],
+      "quellen": [
+        "https://www.pwc.de/de/mittelstand/chancen-fuer-ki-im-mittelstand/vom-pilot-zur-wertschoepfung.html",
+        "https://www.pwc.de/de/pressemitteilungen/2026/mittelstand-gelingt-es-noch-nicht-ki-strategisch-einzusetzen-und-betriebswirtschaftlich-zu-nutzen.html"
+      ],
+      "interne_links": [],
+      "zahlen": [
+        "Befragt wurden von April bis Juni 400 mittelständische Unternehmen mit mehr als 50 Millionen Euro Jahresumsatz.",
+        "74 Prozent nutzen KI-Tools externer Anbieter, aber nur 23 Prozent haben KI in interne Prozesse eingebunden, in großem Umfang sogar nur 3 bis 5 Prozent.",
+        "Knapp 70 Prozent sehen keinen Einfluss auf ihre Kosten, 11 Prozent melden sinkende, 16 Prozent steigende.",
+        "Als größte Hürden nennen die Befragten Datensicherheit und ethische Fragen (71 Prozent), fehlende Fachkräfte mit KI-Kompetenz (69 Prozent) und eine unübersichtliche Tool-Landschaft (fast 60 Prozent).",
+        "Trotzdem haben sich 43 Prozent damit noch gar nicht befasst, nur 10 Prozent haben dort KI eingebunden.",
+        "Wer KI dagegen fest in Abläufe einbaut, meldet fast doppelt so oft sinkende Kosten: 21 statt 11 Prozent.",
+        "Wichtig ist, wer befragt wurde: Unternehmen ab 50 Millionen Euro Umsatz."
+      ],
+      "woerter": 349
+    },
     {
       "id": "6af957b852d1110001b41686",
       "slug": "7-welches-ki-modell-fuer-welche-aufgabe",
@@ -162,7 +277,7 @@
       "titel": "Dreimal dieselbe Präsentation mit KI – und nur eine sieht nach KI aus",
       "status": "published",
       "veroeffentlicht": "2026-11-06",
-      "geaendert": "2026-11-06",
+      "geaendert": "2026-11-23",
       "kategorie": "KI in der Praxis",
       "interne_tags": [
         "#notiz"
@@ -1032,40 +1147,6 @@
       "woerter": 284
     },
     {
-      "id": "6b0291f5b547ca0001413a91",
-      "slug": "8-was-die-ki-ueber-deinen-betrieb-erzaehlt",
-      "titel": "#8: Was die KI über deinen Betrieb erzählt",
-      "status": "draft",
-      "veroeffentlicht": "",
-      "geaendert": "2026-11-22",
-      "kategorie": "",
-      "interne_tags": [
-        "#newsletter",
-        "#zur-freigabe"
-      ],
-      "teaser": "Was eine KI über deinen Betrieb sagt, wie du das in 20 Minuten prüfst, eine Zahl zur Suche per KI-Chat und ein Gedanke.",
-      "url": "https://www.kleinmittelki.de/p/78be8b3b-1acd-46b1-9ddf-4f2807ff76fe/",
-      "zwischenueberschriften": [
-        "01 · Aus dem Archiv: Was die KI über deinen Betrieb erzählt",
-        "02 · Eine Zahl, genau gelesen",
-        "03 · Ein Gedanke zum Mitnehmen"
-      ],
-      "quellen": [
-        "https://www.bitkom.org/Presse/Presseinformation/Internet-Suche-Wandel-Haelfte-nutzt-KI-Chats"
-      ],
-      "interne_links": [
-        "https://www.kleinmittelki.de/",
-        "https://www.kleinmittelki.de/frag-eine-ki-nach-deinem-eigenen-unternehmen-ein-selbsttest-in-20-minuten/",
-        "https://www.kleinmittelki.de/wenn-azubis-die-ki-fragen-wird-dein-betrieb-empfohlen/"
-      ],
-      "zahlen": [
-        "02 · Eine Zahl, genau gelesen Bitkom · November 2025 50 % der Internetnutzerinnen und -nutzer in Deutschland verwenden zumindest gelegentlich KI-Chats statt klassischer Suchmaschinen.",
-        "„Zumindest gelegentlich“ zählt mit: Überwiegend per KI suchen 7 Prozent, ausschließlich 5 Prozent.",
-        "47 Prozent nutzen weiter nur die klassische Suche."
-      ],
-      "woerter": 454
-    },
-    {
       "id": "6b00856644c3dd0001dc17be",
       "slug": "eu-produkthaftung-software-ki",
       "titel": "Software gilt ab 9. Dezember als Produkt: Was die neue Produkthaftung für deinen Betrieb heißt",
@@ -1148,43 +1229,6 @@
         "Preisendung: Alle neuen Preise enden auf 9 Cent und werden abgerundet, damit es nie mehr als 10 Prozent werden."
       ],
       "woerter": 964
-    },
-    {
-      "id": "6b007bf144c3dd0001dc17ac",
-      "slug": "pwc-mittelstand-ki-controlling",
-      "titel": "Drei Viertel nutzen KI, nur jeder Neunte spart damit. Vielleicht liegt der Hebel im Controlling.",
-      "status": "draft",
-      "veroeffentlicht": "",
-      "geaendert": "2026-11-20",
-      "kategorie": "Studien & Zahlen",
-      "interne_tags": [
-        "#empfehlung",
-        "#zur-freigabe"
-      ],
-      "teaser": "PwC hat 400 Mittelständler befragt: KI ist im Alltag angekommen, in den Kosten aber kaum. Ausgerechnet der Bereich mit den besten Voraussetzungen wird bisher kaum genutzt.",
-      "url": "https://www.kleinmittelki.de/p/e9495d9f-86d1-4b25-b9fc-14a6beeaec38/",
-      "zwischenueberschriften": [
-        "Was ist passiert?",
-        "Meine Einordnung",
-        "Was bedeutet das für den Mittelstand?",
-        "Ein Gedanke zum Mitnehmen",
-        "Zum Originalartikel"
-      ],
-      "quellen": [
-        "https://www.pwc.de/de/mittelstand/chancen-fuer-ki-im-mittelstand/vom-pilot-zur-wertschoepfung.html",
-        "https://www.pwc.de/de/pressemitteilungen/2026/mittelstand-gelingt-es-noch-nicht-ki-strategisch-einzusetzen-und-betriebswirtschaftlich-zu-nutzen.html"
-      ],
-      "interne_links": [],
-      "zahlen": [
-        "Befragt wurden von April bis Juni 400 mittelständische Unternehmen mit mehr als 50 Millionen Euro Jahresumsatz.",
-        "74 Prozent nutzen KI-Tools externer Anbieter, aber nur 23 Prozent haben KI in interne Prozesse eingebunden, in großem Umfang sogar nur 3 bis 5 Prozent.",
-        "Knapp 70 Prozent sehen keinen Einfluss auf ihre Kosten, 11 Prozent melden sinkende, 16 Prozent steigende.",
-        "Als größte Hürden nennen die Befragten Datensicherheit und ethische Fragen (71 Prozent), fehlende Fachkräfte mit KI-Kompetenz (69 Prozent) und eine unübersichtliche Tool-Landschaft (fast 60 Prozent).",
-        "Trotzdem haben sich 43 Prozent damit noch gar nicht befasst, nur 10 Prozent haben dort KI eingebunden.",
-        "Wer KI dagegen fest in Abläufe einbaut, meldet fast doppelt so oft sinkende Kosten: 21 statt 11 Prozent.",
-        "Wichtig ist, wer befragt wurde: Unternehmen ab 50 Millionen Euro Umsatz."
-      ],
-      "woerter": 409
     },
     {
       "id": "6ade31474d491100016c4807",
