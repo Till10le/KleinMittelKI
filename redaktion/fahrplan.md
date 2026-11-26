@@ -37,7 +37,8 @@ Wer etwas einträgt oder verschiebt, pflegt diese Tabelle. Status: `eingeplant` 
 | Fr 13.11. 7:00 (Ausnahme, Till selbst) | C modellwahl-kanonen-auf-spatzen | eingeplant in Ghost (Freigabe im Chat 12.11. abends: „bitte morgen 07:00 veröffetlichen“) · veröffentlicht 7:00 (Lauf 13.11. 7:47) |
 | Di 17.11. 7:00 | Kandidat: ki-recherche-assistent-selbstversuch (+ Newsletter #7 mit „Selbst ausprobiert“) – Review mit Till offen | wartet-auf-till (A) · Newsletter #7 Fassung 1 ohne A gemailt (Lauf 15.11. 7:47) · „N ja“ (Mail 16.11. 11:24Z) eingetragen, Newsletter in Ghost eingeplant 7:05 (Lauf 16.11. 18:47); kein Hauptbeitrag, A ohne Freigabe · Newsletter versendet 7:05 (Lauf 18.11. 7:47) |
 | Do 19.11. 7:00 | – (C auf Tills Wunsch schon Fr 13.11.) | leer geblieben (kein Kandidat; Lauf 19.11. 7:47) |
-| Di 24.11. 7:00 | offen: Till entscheidet bis Sa 21.11. zwischen pwc-mittelstand-ki-controlling und preisrunde-mit-ki-praxistest (beide Tills eigene Ghost-Entwürfe, Chat 20.11.; Preisrunde braucht Haukes Okay). eu-produkthaftung-software-ki von Till abgelehnt (Chat 20.11. 19:06: „0,0 Mehrwert für KMUs“), bleibt nur Entwurf. ki-recherche-assistent-selbstversuch auf Di 01.12. + Newsletter #8 (7:05) | wartet-auf-till |
-| Do 26.11. 7:00 | – | frei |
+| Mo 23.11. (Ausnahme, Till selbst) | pwc-mittelstand-ki-controlling | von Till direkt in Ghost veröffentlicht (Index, Lauf 26.11. 7:47); zählt für KW 48 |
+| Di 24.11. 7:00 | – kein Hauptbeitrag. pwc-mittelstand-ki-controlling hat Till selbst am Mo 23.11. in Ghost veröffentlicht (Index); preisrunde-mit-ki-praxistest bleibt Entwurf. eu-produkthaftung-software-ki von Till abgelehnt (Chat 20.11. 19:06: „0,0 Mehrwert für KMUs“), bleibt nur Entwurf. Newsletter #8 ohne „N ja“ | leer geblieben; Newsletter #8 nicht versendet (keine Freigabe; Lauf 26.11. 7:47) |
+| Do 26.11. 7:00 | – | leer geblieben (kein Kandidat; Lauf 26.11. 7:47) |
 | Di 01.12. 7:00 | Kandidat: ki-recherche-assistent-selbstversuch (Review mit Till offen seit 03.11.) | wartet-auf-till |
 | Do 03.12. 7:00 | – | frei |
