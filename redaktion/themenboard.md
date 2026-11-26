@@ -268,7 +268,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Inhalt: 01 Aus dem Archiv: frag-eine-ki-nach-deinem-eigenen-unternehmen-ein-selbsttest-in-20-minuten (20.09.) + wenn-azubis-die-ki-fragen-wird-dein-betrieb-empfohlen (08.10.) · 02 Zahl „50 %“ (Bitkom, Presseinfo 20.11.2025) · 03 Gedanke. Kein Hauptbeitrag freigegeben; bei Freigabe bis Mo 18:47 Abschnitt ergänzen (INTERN)
 - Vorschau: https://www.kleinmittelki.de/p/78be8b3b-1acd-46b1-9ddf-4f2807ff76fe/ · Ghost-ID 6b0291f5b547ca0001413a91
 - Datei: entwuerfe/newsletter-2026-11-24/beitrag.md, Prüfung: pruefung.md
-- Verlauf: 2026-11-22 Lauf 7:47: Autor Fassung 1, Prüfer bestanden (ein Tippfehler direkt behoben), `ghost.py testmail` → Entwurf angelegt, Testmail gescheitert (bekannt, OPS-006: `email_previews` liefert HTML statt JSON); Vorschau-Link im Bericht für Head of KMI
+- Verlauf: 2026-11-22 Lauf 7:47: Autor Fassung 1, Prüfer bestanden (ein Tippfehler direkt behoben), `ghost.py testmail` → Entwurf angelegt, Testmail gescheitert (bekannt, OPS-006: `email_previews` liefert HTML statt JSON); Vorschau-Link im Bericht für Head of KMI · 2026-11-26 Lauf 7:47: Termin Di 24.11. 7:05 verstrichen ohne „N ja“ – nicht versendet, Entwurf bleibt in Ghost (nichts gelöscht). Neue Ausgabe kommt mit dem Sonntags-Teil 29.11. für Di 01.12.
 
 ### newsletter-2026-11-17
 - Status: versendet
@@ -391,7 +391,7 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Relevanz: 8/10 (Betroffenheit 2, Handlung 1, Quelle 2, Neuheit 1, Passung 2) – Handlung 1, weil Orientierung statt Anleitung; Neuheit 1, weil Fortschreibung. Dublettencheck: einziger Lagebericht ist der vom 21.09.; IAB- und Eurobarometer-Beiträge nur zusammenfassen und verlinken.
 - Monatsrhythmus: Hauptbeitrag Di 01.12.2026, 7:00 (Woche 1). Recherche-Schluss ca. 24.11.; vorher Destatis/ifo/Bitkom am Original lesen (Netzfreigabe nötig).
 - Braucht von Till: ein Ja/Nein fürs Briefing: „Status Quo vierteljährlich – nächste Ausgabe Di 1.12., danach März 2027; Woche 1 sonst Wissen – ja/nein?“. Dazu 2–3 Sätze Einordnung (sonst Box „Meine Einordnung“ als INTERN-Vorschlag).
-- Verlauf: 2026-11-08 Ideen (Sonntags-Lauf): vorgeschlagen (aus Themenspeicher `status-quo-november-2026`, Wochenbericht KW 44 geprüft)
+- Verlauf: 2026-11-08 Ideen (Sonntags-Lauf): vorgeschlagen (aus Themenspeicher `status-quo-november-2026`, Wochenbericht KW 44 geprüft) · 2026-11-26 Scout (Lauf 7:47): Destatis-Werte 2026 am Original gelesen (PM 408, 24.11.2026: 37 % ab 10 Beschäftigten; 33/49/73 % nach Größe; Hürden der Erwäger) → Board `destatis-ki-nutzung-2026`, quellen.md dort; ifo und Bitkom 02.11. weiter ungelesen; für Abschnitt 05 „Wirkung“ als Randnotiz möglich: Anthropic „Working with AI“ (23.11.2026, https://www.anthropic.com/research/working-with-ai, gelesen; 66 Interviews bei 58 US-Kunden, qualitativ, Herstellerforschung – Engpässe beim Prüfen und in nachgelagerten Schritten)
 
 ### powerpoint-mit-ki-im-eigenen-design (Beitrag von Till, selbst in Ghost veröffentlicht)
 - Status: veroeffentlicht
@@ -462,6 +462,36 @@ Daneben: `newsletter-vorschlag` (Sonntag per Mail an Till), `verworfen` (mit Gru
 - Monatsrhythmus: Wissens-Puffer für Do 26.11./Di 08.12. – kommt ohne Tills Test aus.
 - Braucht von Till: Einschätzung in 2–3 Sätzen (Ist ungleiche Nutzung im Team das, was er in Betrieben sieht?). Eigene Erfahrungen nur, wenn er sie nennt. Netzfreigabe für die Preisseiten von OpenAI, Microsoft, Google, falls ein zweites Beispiel gewünscht ist.
 - Verlauf: 2026-11-22 Ideen (Sonntags-Lauf): vorgeschlagen
+
+### zew-chefs-nutzen-ki-erwartung
+- Status: vorgeschlagen
+- Titel (Arbeitstitel): „Wer als Chef selbst KI nutzt, hält sie für wichtiger. Was sagt das über die anderen?“
+- Rubrik/Kategorie: Aktuell / Studien & Zahlen
+- Format: Nachricht (Gelesen & eingeordnet), Kennzahl-Grafik „86 % vs. 40 %“
+- Quelle: ZEW Mannheim, „KI kritisch für eigene Wettbewerbsfähigkeit“ (18.11.2026), https://www.zew.de/das-zew/aktuelles/ki-kritisch-fuer-eigene-wettbewerbsfaehigkeit, dazu ZEW-Branchenreport Informationswirtschaft November 2026 (PDF, S. 3) – beide selbst gelesen
+- Worum es geht: Das ZEW hat rund 1.300 Unternehmen ab 5 Beschäftigten aus Informationswirtschaft und Industrie gefragt, wie wichtig KI in drei Jahren für ihre Wettbewerbsfähigkeit ist. In der Informationswirtschaft sagen 74 % (sehr) wichtig, in der Industrie 47 %. Von den Geschäftsführern, die selbst täglich oder mehrmals pro Woche KI nutzen, sehen etwa 86 % einen (sehr) wichtigen Zusammenhang, bei seltener Nutzung nur 40 %.
+- Warum für KMU: Spricht Inhaber direkt an – die Einschätzung hängt am eigenen Ausprobieren. Betrifft wissensintensive Dienstleister (Steuerberater, Ingenieur- und Architekturbüros, Agenturen) und Industriebetriebe; Kleinbetriebe 5–19 Beschäftigte sehen KI seltener als wichtig. Einschränkung offen: Erwartung, keine Wirkung; Zusammenhang, kein Beweis (kann auch umgekehrt sein); nur zwei Wirtschaftsbereiche, kein Handwerk.
+- Unsere Idee: „Wer als Chef selbst KI nutzt, hält sie für wichtiger“ – die Zahl ehrlich lesen (Henne oder Ei?) und daraus eine kleine Handlung ableiten: eine Woche lang eine eigene Chefaufgabe mit KI erledigen, bevor man über den Betrieb entscheidet; verlinkt Selbsttest „Frag eine KI nach deinem Unternehmen“ und Tills Selbstversuche.
+- Relevanz: 8/10 (Betroffenheit 2, Handlung 1, Quelle 2, Neuheit 2, Passung 1) – Handlung 1: Korrelation, Handlung nur als Anregung; Passung 1: fünfte Studie in zehn Wochen. Dublettencheck: kein Beitrag zu Erwartungen oder zur KI-Nutzung der Geschäftsführung; Abgrenzung zu Verbreitungsbeiträgen (Bitkom 18.09., Lagebericht 21.09., Eurobarometer 25.10., IAB 10.11., PwC 23.11.) – die messen Nutzung/Hürden/Kosten, ZEW die Erwartung nach eigener Nutzung der Chefs.
+- Braucht von Till: Einschätzung in 2–3 Sätzen (Deckt sich das mit Gesprächen mit Inhabern? Wie hat sich seine eigene Sicht durchs Ausprobieren verändert?) – sonst INTERN-Vorschlag
+- Von dir hilfreich: ein eigener Satz, wann du selbst angefangen hast, KI täglich zu nutzen (nur wenn du ihn nennen willst)
+- Details: entwuerfe/zew-chefs-nutzen-ki-erwartung/quellen.md (Grafikwerte je Größenklasse nur aus PDF-Text abgelesen, vor Verwendung prüfen)
+- Verlauf: 2026-11-26 Scout (Lauf 7:47): vorgeschlagen · Hinweis aus ChatGPT (Eingang 18.11.), am Original geprüft
+
+### destatis-ki-nutzung-2026
+- Status: vorgeschlagen
+- Titel (Arbeitstitel): „Jeder dritte kleine Betrieb nutzt jetzt KI. Wer nicht startet, dem fehlt vor allem Wissen“
+- Rubrik/Kategorie: Aktuell / Studien & Zahlen (alternativ: Kern von Abschnitt 01/04 in `status-quo-dezember-2026`)
+- Format: Nachricht, Kennzahl-Grafik nach Größenklasse 2025 → 2026 (23→33 / 36→49 / 57→73 %)
+- Quelle: Destatis, Pressemitteilung Nr. 408 (24.11.2026), https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_408_52911.html – selbst gelesen; GENESIS-Tabellen 52911 nicht gelesen
+- Worum es geht: Laut amtlicher IKT-Erhebung nutzen 2026 37 % der Unternehmen ab 10 Beschäftigten KI (2025: 26 %). Kleine Unternehmen (10–49) 33 %, mittlere (50–249) 49 %, große 73 %. Von den Nichtnutzern haben 18 % KI erwogen; sie nennen vor allem fehlendes Wissen (65 %), Datenschutz (61 %) und unklare Rechtsfolgen (60 %), zu hohe Kosten nur 36 %.
+- Warum für KMU: Amtliche Zahlen genau in der Zielgruppe 10–249 Beschäftigte, mit Vorjahresvergleich; Kosten sind nicht die Haupthürde, sondern Wissen und Rechtsfragen – das kann ein Betrieb selbst angehen. Einschränkung offen: keine Betriebe unter 10 Beschäftigten; Gründe nur von der kleinen Gruppe, die KI erwogen hat (nicht von allen Nichtnutzern); keine Aussage über Nutzen oder Tiefe; Gründe nicht nach Größe.
+- Unsere Idee: „Jeder dritte kleine Betrieb nutzt jetzt KI“ – die amtliche Zahl neben Bitkom/IAB/PwC sauber einordnen (verschiedene Grundgesamtheiten) und zeigen, dass die Haupthürden Wissen und Recht sind, nicht Geld; verlinkt Leitfaden KI-Ergebnisse prüfen und Lagebericht. **Update-Vorschlag dazu:** im Lagebericht September (Destatis-Grafik 2025) Vermerk „Neue Werte 2026: …“ ergänzen.
+- Relevanz: 7/10 (Betroffenheit 2, Handlung 1, Quelle 2, Neuheit 1, Passung 1) – Neuheit 1: Verbreitung und Hürden schon in fünf Beiträgen seit September (Bitkom, Lagebericht mit Destatis 2025, Eurobarometer, IAB, PwC); neu sind nur die amtlichen 2026-Werte. Passung 1: Gefahr der Studienmüdigkeit. Dublettencheck: gleiche Datenquelle wie die Grafik im Lagebericht September (Vorjahr) → Update dort; inhaltlich nah an IAB (Gründe der Nichtnutzung) und Eurobarometer (Hürden).
+- Empfehlung Scout: lieber als Datenbasis in `status-quo-dezember-2026` als eigene Nachricht – dort waren genau diese Werte als „ungeprüft, nachlesen“ vermerkt. Eigene Nachricht nur, wenn Till den Lagebericht nicht will.
+- Braucht von Till: Wahl „eigene Nachricht oder in den Status Quo Dezember“; Einschätzung in 2–3 Sätzen
+- Details: entwuerfe/destatis-ki-nutzung-2026/quellen.md
+- Verlauf: 2026-11-26 Scout (Lauf 7:47): vorgeschlagen · Hinweis aus ChatGPT (Eingang 25.11.), am Original geprüft
 
 ## Archiv
 
